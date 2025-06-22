@@ -161,7 +161,7 @@ const Header = () => {
           {/* Slide 1 */}
           <div id="slide1" className="carousel-item w-full h-full snap-center relative flex-shrink-0">
             <img
-              src="https://images.unsplash.com/photo-1525396524423-64f7b55f5b33?q=80&w=2030&auto=format&fit=crop"
+              src="https://i.ibb.co/bj2Wpwzy/green-plane-ecofriendly-environment.jpg"
               className="object-cover w-full h-full"
               alt="Welcome"
             />
