@@ -1,16 +1,19 @@
 import { useEffect, useRef } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { FaPassport, FaPlaneDeparture, FaSuitcaseRolling, FaStar } from 'react-icons/fa';
 import logo from '../../assets/Eammu_logo.png';
 
 const Header = () => {
   const carouselRef = useRef(null);
 
+  // Autoplay carousel every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       const slides = carouselRef.current?.querySelectorAll('.carousel-item');
       if (!slides?.length) return;
 
       const container = carouselRef.current;
+      // Find current slide by comparing scrollLeft with offsetLeft of slides
       const currentIndex = [...slides].findIndex(
         (slide) => slide.offsetLeft >= container.scrollLeft
       );
@@ -27,6 +30,7 @@ const Header = () => {
     return () => clearInterval(interval);
   }, []);
 
+  // Scroll to specific slide on button click
   const scrollToSlide = (id) => {
     const el = document.getElementById(id);
     const container = carouselRef.current;
@@ -37,6 +41,14 @@ const Header = () => {
       });
     }
   };
+
+  // Services links for slide 1
+  const serviceLinks = [
+    { icon: <FaPassport className="text-2xl text-[#005a31]" />, title: 'Visa Services', link: '/visaservices' },
+    { icon: <FaPlaneDeparture className="text-2xl text-[#005a31]" />, title: 'Air Tickets', link: '/airtickets' },
+    { icon: <FaSuitcaseRolling className="text-2xl text-[#005a31]" />, title: 'Tour Packages', link: '/tourpackages' },
+    { icon: <FaStar className="text-2xl text-[#005a31]" />, title: 'Special Offers', link: '/offers' },
+  ];
 
   return (
     <>
@@ -158,20 +170,37 @@ const Header = () => {
           ref={carouselRef}
           className="carousel w-full h-full flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory scroll-smooth scrollbar-hide"
         >
-          {/* Slide 1 */}
+          {/* Slide 1 - Updated */}
           <div id="slide1" className="carousel-item w-full h-full snap-center relative flex-shrink-0">
             <img
               src="https://i.ibb.co/bj2Wpwzy/green-plane-ecofriendly-environment.jpg"
               className="object-cover w-full h-full"
               alt="Welcome"
             />
-            <div className="absolute inset-0 bg-black/30 flex items-center justify-center text-white text-center px-6">
+            <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center text-white text-center px-6">
               <div>
                 <h1 className="text-5xl font-bold mb-4">Welcome to Eammu</h1>
                 <p className="text-lg mb-6">Your partner in digital innovation and global mobility.</p>
                 <Link to="/about" className="btn bg-white text-[#005a31] hover:bg-[#005a31] hover:text-white border border-[#005a31]">
                   Explore More
                 </Link>
+                {/* 4 Service Links */}
+                <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
+  {serviceLinks.map((service, idx) => (
+    <Link
+      key={idx}
+      to={service.link}
+      className="group flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow hover:bg-[#005a31] hover:text-white transition text-[#005a31]"
+    >
+      {/* Icon with group-hover */}
+      <span className="text-2xl text-[#005a31] group-hover:text-white">
+        {service.icon}
+      </span>
+      <span className="mt-2 font-medium text-sm md:text-base">{service.title}</span>
+    </Link>
+  ))}
+</div>
+
               </div>
             </div>
             <div className="absolute left-5 right-5 top-1/2 flex justify-between transform -translate-y-1/2">
