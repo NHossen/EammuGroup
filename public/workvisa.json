@@ -1,0 +1,112 @@
+[
+    {
+      "id": 1,
+      "countryName": "Work To Europe",
+      "visaType": "Work Visa",
+      "title": "How to get a job in Europe from Bangladesh",
+      "image": "https://i.ytimg.com/vi/0Y0vik97_V0/maxresdefault.jpg",
+      "processingTime": "2 months",
+      "requirements": "Job offer, valid passport, sponsorship certificate",
+      "fees": {
+        "application": "£450",
+        "priorityProcessing": "£800"
+      },
+      "contactInfo": {
+        "embassyEmail": "workvisa@ukembassy.gov",
+        "embassyPhone": "+44 20 1234 5678"
+      },
+      "additionalInfo": "Embark on a professional journey in the United Kingdom with a work visa."
+    },
+    {
+      "id": 2,
+      "countryName": "Work To Australia",
+      "visaType": "Work Visa",
+      "title": "Australian Career Path",
+      "image": "https://www.oysterworldwide.com/panel/wp-content/uploads/Guide-1.jpg",
+      "processingTime": "3 months",
+      "requirements": "Job offer, valid passport, skills assessment",
+      "fees": {
+        "application": "AUD 600",
+        "expressProcessing": "AUD 1,200"
+      },
+      "contactInfo": {
+        "embassyEmail": "workvisa@ausembassy.gov",
+        "embassyPhone": "+61 2 1234 5678"
+      },
+      "additionalInfo": "Forge your career path in Australia with a work visa."
+    },
+
+    {
+      "id": 3,
+      "countryName": "Work To Canada",
+      "visaType": "Work Visa",
+      "title": "Canadian Professional Gateway",
+      "image": "https://texasreview.in/blog/wp-content/uploads/2019/12/Work-Live-in-Canada-fb.png",
+      "processingTime": "4 months",
+      "requirements": "Job offer, proof of funds, language proficiency",
+      "fees": {
+        "application": "CAD 155",
+        "priorityProcessing": "CAD 500"
+      },
+      "contactInfo": {
+        "embassyEmail": "workvisa@canadaembassy.gov",
+        "embassyPhone": "+1 613-238-5335"
+      },
+      "additionalInfo": "Open doors to professional opportunities in Canada with a work visa."
+    },
+    {
+      "id": 4,
+      "countryName": "Work To Dubai",
+      "visaType": "Work Visa",
+      "title": "How to get a job in Dubai from Bangladesh",
+      "image": "https://wise.com/imaginary-v2/finding-a-job-in-dubai-uae-metro.jpg",
+      "processingTime": "3 months",
+      "requirements": "Job offer, valid passport, recognized qualifications",
+      "fees": {
+        "application": "€400",
+        "expeditedProcessing": "€700"
+      },
+      "contactInfo": {
+        "embassyEmail": "workvisa@germanyembassy.gov",
+        "embassyPhone": "+49 30 1817 0"
+      },
+      "additionalInfo": "Seize job opportunities in Germany with a work visa."
+    },
+    
+      {
+        "id": 5,
+        "countryName": "Work To Portugal",
+        "visaType": "How to get a job in Portugal from Bangladesh",
+        "title": "Kiwi Career Adventure",
+        "image": "https://images.prismic.io/localyze-poc/1b24acc9-5996-4ccc-967b-27a9e600d4d6_hero-blog-portugal.jpeg?auto=compress,format",
+        "processingTime": "2 months",
+        "requirements": "Job offer, valid passport, health clearance",
+        "fees": {
+          "application": "NZD 400",
+          "urgentProcessing": "NZD 800"
+        },
+        "contactInfo": {
+          "embassyEmail": "workvisa@nzembassy.gov",
+          "embassyPhone": "+64 4 471 2252"
+        },
+        "additionalInfo": "Embark on a career adventure in New Zealand with a work visa."
+      },
+      {
+        "id": 6,
+        "countryName": "Work To Singapore",
+        "visaType": "Employment Pass",
+        "title": "Singapore Work Experience",
+        "image": "https://ischoolconnect.com/blog/wp-content/uploads/2022/07/Singapore-work-visa-1.png",
+        "processingTime": "2 months",
+        "requirements": "Job offer, valid passport, educational qualifications",
+        "fees": {
+          "application": "SGD 300",
+          "expressProcessing": "SGD 500"
+        },
+        "contactInfo": {
+          "embassyEmail": "workpass@singembassy.gov",
+          "embassyPhone": "+65 6235 8855"
+        },
+        "additionalInfo": "Gain valuable work experience in Singapore with an Employment Pass."
+      }
+]

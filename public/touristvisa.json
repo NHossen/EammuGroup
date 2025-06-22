@@ -1,0 +1,94 @@
+[
+    {
+      "id": 1,
+      "countryName": "Travel To United States",
+      "visaType": "Tourist Visa",
+      "title": "Explore the USA",
+      "image": "https://tamarathiessen.com/wp-content/uploads/2021/08/US-TRAVEL.jpg",
+      "processingTime": "2 weeks",
+      "requirements": "Valid passport, completed application form, proof of funds",
+      "fees": {
+        "application": "$160",
+        "expeditedProcessing": "$500"
+      },
+      "contactInfo": {
+        "embassyEmail": "consular@usembassy.gov",
+        "embassyPhone": "+1-202-555-1212"
+      },
+      "additionalInfo": "Tourist visas allow you to explore the diverse attractions of the United States."
+    },
+    {
+      "id": 2,
+      "countryName": "Travel To United Kingdom",
+      "visaType": "Tourist Visa",
+      "title": "Discover Britain",
+      "image": "https://www.libertytravel.com/sites/default/files/styles/full_size/public/uk%20tours-hero.jpg?itok=bSMZOnnB",
+      "processingTime": "3 weeks",
+      "requirements": "Valid passport, completed visa application form, travel itinerary",
+      "fees": {
+        "application": "£95",
+        "priorityProcessing": "£220"
+      },
+      "contactInfo": {
+        "embassyEmail": "visa@ukembassy.gov",
+        "embassyPhone": "+44 20 1234 5678"
+      },
+      "additionalInfo": "Explore the rich history and culture of the United Kingdom with a tourist visa."
+    },
+    {
+      "id": 3,
+      "countryName": " Travel To Schengen Country",
+      "visaType": "Tourist Visa",
+      "title": "The Schengen Visa is a visa that allows travelers to visit multiple countries within the Schengen Area, which includes 27 European countries ",
+      "image": "https://www.schengenvisaitinerary.com/blog/wp-content/uploads/2019/07/blog-post-copy-785x520.jpg",
+      "processingTime": "1 month",
+      "requirements": "Valid passport, visa application form, return flight ticket",
+      "fees": {
+        "application": "€80",
+        "expressProcessing": "€150"
+      },
+      "contactInfo": {
+        "embassyEmail": "consular@ausembassy.gov",
+        "embassyPhone": "+61 2 1234 5678"
+      },
+      "additionalInfo": "Experience the beauty of Australia with a tourist visa."
+    },
+    {
+        "id": 4,
+        "countryName": "Travel To Canada",
+        "visaType": "Tourist Visa",
+        "title": "Maple Adventure",
+        "image": "https://www.immigration.ca/wp-content/uploads/2021/12/Canada-immigration_378179980-scaled-1-768x452.jpeg",
+        "processingTime": "4 weeks",
+        "requirements": "Valid passport, completed visa application form, proof of accommodation",
+        "fees": {
+          "application": "CAD 100",
+          "rushProcessing": "CAD 250"
+        },
+        "contactInfo": {
+          "embassyEmail": "visas@canadaembassy.gov",
+          "embassyPhone": "+1-613-555-6789"
+        },
+        "additionalInfo": "Explore the stunning landscapes and vibrant cities of Canada with a tourist visa."
+      },
+
+      {
+        "id": 5,
+        "countryName": "Travel To Japan",
+        "visaType": "Tourist Visa",
+        "title": "Land of the Rising Sun",
+        "image": "https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/02/a0002487/img/basic/a0002487_main.jpg",
+        "processingTime": "2 weeks",
+        "requirements": "Valid passport, visa application form, hotel reservation",
+        "fees": {
+          "application": "¥6,000",
+          "expeditedProcessing": "¥10,000"
+        },
+        "contactInfo": {
+          "embassyEmail": "consular@japanembassy.gov",
+          "embassyPhone": "+81 3 1234 5678"
+        },
+        "additionalInfo": "Experience the unique blend of tradition and modernity in Japan with a tourist visa."
+      }
+  ]
+  
