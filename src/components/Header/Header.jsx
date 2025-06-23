@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { FaPassport, FaPlaneDeparture, FaSuitcaseRolling, FaStar } from 'react-icons/fa';
-import logo from '../../assets/Eammu_logo.png';
+import logo from '../../assets/eammu.png';
 
 const Header = () => {
   const carouselRef = useRef(null);
@@ -25,7 +25,7 @@ const Header = () => {
           behavior: 'smooth',
         });
       }
-    }, 5000);
+    }, 8000);
 
     return () => clearInterval(interval);
   }, []);
@@ -190,16 +190,19 @@ const Header = () => {
     <Link
       key={idx}
       to={service.link}
-      className="group flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow hover:bg-[#005a31] hover:text-white transition text-[#005a31]"
+      className="group flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow transition-colors duration-300 hover:bg-[#005a31]"
     >
       {/* Icon with group-hover */}
-      <span className="text-2xl text-[#005a31] group-hover:text-white">
+      <span className="text-2xl text-[#005a31] transition-colors duration-300 group-hover:text-white">
         {service.icon}
       </span>
-      <span className="mt-2 font-medium text-sm md:text-base">{service.title}</span>
+      <span className="mt-2 font-medium text-sm md:text-base text-[#005a31] transition-colors duration-300 group-hover:text-white">
+        {service.title}
+      </span>
     </Link>
   ))}
 </div>
+
 
               </div>
             </div>
