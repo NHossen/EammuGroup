@@ -1,4 +1,5 @@
 
+import Carousel from "../Carousel/carousel";
 import Caresoul_BG_Mix from "./Caresoul_BG_Mix";
 import EammuHeading_1 from "./EammuHeading_1";
 import EammuImmigrationHeading_2 from "./EammuImmigrationHeading_2";
@@ -18,7 +19,8 @@ const Home = () => {
     return (
         <div>
 
-      <EammuHeading_1></EammuHeading_1>
+          <Carousel></Carousel>
+
       {/* Eammu Immigration Services Heading Section */}
       <EammuImmigrationHeading_2></EammuImmigrationHeading_2>
       {/* <!-- Carousel list --> */}

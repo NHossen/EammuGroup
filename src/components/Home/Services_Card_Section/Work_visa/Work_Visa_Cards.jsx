@@ -16,7 +16,7 @@ const Work_Visa_Cards = () => {
     },[])
 
     return (
-        <div>
+        <div className="px-4 container mx-auto">
             {/* Work visa */}
 <h1 className="text-center text-4xl font-bold my-6">Top  Countries for Work</h1>
 

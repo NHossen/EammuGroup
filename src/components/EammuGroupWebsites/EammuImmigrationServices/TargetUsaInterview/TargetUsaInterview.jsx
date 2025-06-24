@@ -2,7 +2,7 @@
 
 const TargetUsaInterview = () => {
     return (
-        <div>
+        <div className="px-4 container mx-auto">
  <div className=" min-h-screen">
 
 {/* Navigation Bar */}

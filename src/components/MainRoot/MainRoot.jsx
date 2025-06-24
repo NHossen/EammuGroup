@@ -3,14 +3,21 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 
+
 const MainRoot = () => {
     return (
         <div className=" ">
             <Header></Header>
-            <div className="px-4 container mx-auto">
+            <div>
+               <div className="">
                   <Outlet></Outlet>
-                  <Footer></Footer>
+                  <div className="px-4 container mx-auto">
+                    <Footer></Footer>
+                  </div>
+                  
+            </div> 
             </div>
+            
           
         </div>
     );

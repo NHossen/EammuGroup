@@ -61,7 +61,7 @@ const Eammu_Carousel = () => {
   ];
 
   return (
-    <div>
+    <div >
       <h1 className="text-center font-bold text-4xl">Our Services</h1>
       <div
         className="carousel w-full min-h-[80vh] my-6 overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory relative"

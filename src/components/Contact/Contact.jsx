@@ -2,7 +2,7 @@
 
 const Contact = () => {
     return (
-        <div>
+        <div className="px-4 container mx-auto">
 
 
           {/* Contact Us */}

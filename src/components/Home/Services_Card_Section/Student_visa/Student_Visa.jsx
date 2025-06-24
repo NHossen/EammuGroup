@@ -4,9 +4,9 @@ const Student_Visa = ({student}) => {
   const { id,countryName, universityName, description,image } = student;
  
   return (
-    <div>
-      <div>
-        <div>
+    
+     
+        <div className="px-4 container mx-auto">
           <div className="card card-compact h-96 bg-base-100 shadow-xl">
             <figure>
               <img
@@ -25,8 +25,8 @@ const Student_Visa = ({student}) => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      
+    
   );
 };
 

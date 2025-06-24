@@ -2,7 +2,7 @@
 
 const Our_Succsses_State = () => {
     return (
-        <div>
+        <div className="px-4 container mx-auto">
             <div className="grid lg:grid-cols-4 grid-cols-2 my-12">
   
   <div className="stat text-center">

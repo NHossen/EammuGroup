@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 const EammuImmigrationHeading_2 = () => {
     return (
-        <div>
+        <div className="px-4 container mx-auto">
             <div className="hero min-h-[80vh]  ">
   <div className="hero-content text-center">
   <div className="max-w-6xl">

@@ -2,7 +2,7 @@
 
 const About = () => {
   return (
-    <div>
+    <div className="px-4 container mx-auto">
         {/* About Eammu */}
 
         <div>

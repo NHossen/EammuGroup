@@ -14,7 +14,7 @@ const Tourist_Visa_Cards = () => {
         .then(data=>setTourists(data));
     },[])
     return (
-        <div>
+        <div className="px-4 container mx-auto">
             {/* Tourist visa */}
 
 <h1 className="text-center text-4xl font-bold my-6">Top Favorite  Countries for Tourist</h1>

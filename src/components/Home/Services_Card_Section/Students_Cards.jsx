@@ -14,7 +14,7 @@ const Students_Cards = () => {
         .then(data=>setStudents(data));
     },[])
     return (
-        <div>
+        <div className="px-4 container mx-auto">
                   {/* Student visa */}
 <h1 className="text-center text-4xl font-bold my-6">Students Favorite Top Countries for Higher Education</h1>
 

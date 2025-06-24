@@ -6,7 +6,7 @@ const Work_VIsa_Card = ({work}) => {
     return (
         <div>
 
-            <div>
+            <div className="px-4 container mx-auto">
         <div>
           <div className="card card-compact h-96 bg-base-100 shadow-xl">
             <figure>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Tourist_Visa = ({tourist}) => {
     const { id,countryName, title, description,image } = tourist;
     return (
-        <div>
+        <div className="px-4 container mx-auto">
                   <div>
         <div>
           <div className="card card-compact h-96 bg-base-100 shadow-xl">

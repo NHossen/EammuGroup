@@ -4,7 +4,7 @@
 const Details_More = () => {
 
     return (
-        <div>
+        <div className="px-4 container mx-auto">
             <h1>University Details Of : </h1>
             
         </div>

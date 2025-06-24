@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 const Immigration_Header_Section = () => {
     return (
-        <div>
+        <div className="px-4 container mx-auto">
                         <div className="flex items-center">
   <div className="flex-1">
    <Link> <a className="text-2xl font-bold">Eammu Immigration Services</a></Link>

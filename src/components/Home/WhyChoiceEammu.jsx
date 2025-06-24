@@ -2,7 +2,7 @@
 
 const WhyChoiceEammu = () => {
     return (
-        <div>
+        <div className="px-4 container mx-auto">
             
 <div className="collapse collapse-arrow bg-base-200 my-6">
   <input type="radio" name="my-accordion-2" checked="checked" /> 
