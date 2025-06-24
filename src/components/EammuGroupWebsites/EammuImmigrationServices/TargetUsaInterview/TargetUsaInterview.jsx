@@ -1,5 +1,3 @@
-
-
 const TargetUsaInterview = () => {
     return (
         <div className="px-4 container mx-auto">

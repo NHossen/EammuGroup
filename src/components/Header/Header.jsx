@@ -1,5 +1,13 @@
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/eammu.png';
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarCollapse,
+  NavbarLink,
+  NavbarToggle,
+  Button,
+} from 'flowbite-react';
 
 const Header = () => {
   return (
@@ -9,82 +17,77 @@ const Header = () => {
         <p className="text-white text-sm">📢 Important Notice: Check out our latest visa offers!</p>
       </div>
 
-      {/* Fixed Navbar */}
-      <div className="w-full fixed top-10 left-0 z-40 bg-base-100 shadow">
-        <div className="p-3 container mx-auto">
-          <div className="navbar">
-            {/* Navbar Start */}
-            <div className="navbar-start">
-              <div className="dropdown">
-                <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
-                </div>
-                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box w-52">
-                  <li>
-                    <NavLink to="/" className={({ isActive }) => isActive ? 'text-[#005a31] underline' : ''}>Home</NavLink>
-                  </li>
-                  <li>
-                    <a>Our Services</a>
-                    <ul className="menu xl:menu-horizontal lg:min-w-max bg-base-200 rounded-box">
-                      <li><Link to="/visaservices" className="hover:text-[#005a31]">Visa Services</Link></li>
-                      <li><Link to="/airtickets" className="hover:text-[#005a31]">Air Ticket</Link></li>
-                      <li><Link to="/tourpackages" className="hover:text-[#005a31]">Tour Packages</Link></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <NavLink to="/about" className={({ isActive }) => isActive ? 'text-[#005a31] underline' : ''}>About Us</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/contact" className={({ isActive }) => isActive ? 'text-[#005a31] underline' : ''}>Contact Us</NavLink>
-                  </li>
-                </ul>
-              </div>
-              <a href="https://eammu.com/">
-                <img className="w-[220px]" src={logo} alt="Eammu Logo" />
-              </a>
-            </div>
+      {/* Main Navbar */}
+      <div className="w-full fixed top-10 left-0 z-40 bg-white shadow-md">
+        <div className="container mx-auto px-4">
+          <Navbar fluid rounded>
+            {/* Brand */}
+            <NavbarBrand href="/">
+              <img src={logo} className="h-10 mr-3" alt="Eammu Logo" />
+            </NavbarBrand>
 
-            {/* Navbar Center */}
-            <div className="navbar-center hidden lg:flex">
-              <ul className="menu menu-horizontal px-1">
-                <li>
-                  <NavLink to="/" className={({ isActive }) => isActive ? 'text-[#005a31] underline' : ''}>Home</NavLink>
-                </li>
-                <li>
-                  <details>
-                    <summary>Our Services</summary>
-                    <ul className="menu bg-base-200 rounded-box">
-                      <li><Link to="/visaservices" className="hover:text-[#005a31]">Visa Services</Link></li>
-                      <li><Link to="/airtickets" className="hover:text-[#005a31]">Air Ticket</Link></li>
-                      <li><Link to="/tourpackages" className="hover:text-[#005a31]">Tour Packages</Link></li>
-                    </ul>
-                  </details>
-                </li>
-                <li>
-                  <NavLink to="/about" className={({ isActive }) => isActive ? 'text-[#005a31] underline' : ''}>About Us</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/contact" className={({ isActive }) => isActive ? 'text-[#005a31] underline' : ''}>Contact Us</NavLink>
-                </li>
-              </ul>
-            </div>
-
-            {/* Navbar End */}
-            <div className="navbar-end">
+            {/* Right Side */}
+            <div className="flex md:order-2">
               <Link to="/contact">
-                <span className="btn bg-[#005a31] text-white hover:bg-white hover:text-[#005a31] hover:shadow-md hover:border-2 hover:border-[#005a31]">
+                <Button className="bg-[#005a31] hover:bg-white hover:text-[#005a31] hover:border hover:border-[#005a31] text-white">
                   Enroll Now
-                </span>
+                </Button>
               </Link>
+              <NavbarToggle />
             </div>
-          </div>
+
+            {/* Links */}
+            <NavbarCollapse>
+              <NavbarLink as={NavLink} to="/" className="text-[#005a31] hover:underline">
+                Home
+              </NavbarLink>
+
+              {/* Responsive Dropdown */}
+              <div className="relative group">
+                <NavbarLink as="div" className="text-[#005a31] cursor-pointer">
+                  Our Services
+                </NavbarLink>
+                <div className="lg:absolute lg:top-6 lg:left-0 hidden lg:group-hover:block bg-white rounded shadow-md z-50">
+                  <ul className="py-2 px-4 space-y-1 lg:w-48">
+                    <li>
+                      <Link to="/visaservices" className="block text-[#005a31] hover:underline">
+                        Visa Services
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/airtickets" className="block text-[#005a31] hover:underline">
+                        Air Ticket
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/tourpackages" className="block text-[#005a31] hover:underline">
+                        Tour Packages
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Mobile dropdown manually shown */}
+                <div className="block lg:hidden mt-2 space-y-1">
+                  <Link to="/visaservices" className="block text-[#005a31] pl-4 hover:underline">Visa Services</Link>
+                  <Link to="/airtickets" className="block text-[#005a31] pl-4 hover:underline">Air Ticket</Link>
+                  <Link to="/tourpackages" className="block text-[#005a31] pl-4 hover:underline">Tour Packages</Link>
+                </div>
+              </div>
+
+              <NavbarLink as={NavLink} to="/about" className="text-[#005a31] hover:underline">
+                About Us
+              </NavbarLink>
+              <NavbarLink as={NavLink} to="/contact" className="text-[#005a31] hover:underline">
+                Contact Us
+              </NavbarLink>
+            </NavbarCollapse>
+          </Navbar>
         </div>
       </div>
 
-      {/* Spacer to prevent overlap */}
-      <div className="h-[122px]"></div>
+      {/* Spacer to push content below navbar */}
+      <div className="h-[100px]"></div>
     </>
   );
 };
