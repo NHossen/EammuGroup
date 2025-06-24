@@ -14,7 +14,11 @@ const Header = () => {
     <>
       {/* Fixed Notice Bar */}
       <div className="w-full h-10 bg-[#005a31] fixed top-0 left-0 z-50 flex items-center justify-center">
-        <p className="text-white text-sm">📢 Important Notice: Check out our latest visa offers!</p>
+        <p className="text-white text-sm">
+  📢 <strong className="text-yellow-400">Important Notice:</strong> We're <span className="text-green-200 font-semibold">open now</span>! Enjoy <span className="text-yellow-300 font-bold">20% OFF</span> + <span className="text-blue-200 font-semibold">FREE Visa Assistance</span>. One place for everything — <span className="underline">Tourist Visas</span>, <span className="underline">Student Visas</span>, and the <span className="underline">Cheapest Air Tickets</span>!
+</p>
+
+
       </div>
 
       {/* Main Navbar */}
@@ -80,6 +84,9 @@ const Header = () => {
               </NavbarLink>
               <NavbarLink as={NavLink} to="/contact" className="text-[#005a31] hover:underline">
                 Contact Us
+              </NavbarLink>
+              <NavbarLink as={NavLink} to="/blogs" className="text-[#005a31] hover:underline">
+                Blogs
               </NavbarLink>
             </NavbarCollapse>
           </Navbar>

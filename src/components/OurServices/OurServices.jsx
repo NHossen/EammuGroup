@@ -2,7 +2,7 @@
 
 const OurServices = () => {
     return (
-        <div>
+        <div className="px-4 container mx-auto">
             <h1>Our Services List</h1>
         </div>
     );

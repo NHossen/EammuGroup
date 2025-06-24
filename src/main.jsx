@@ -28,6 +28,8 @@ import VisaServices from './components/OurServices/VisaServices.jsx';
 import AirTickets from './components/OurServices/AirTickets.jsx';
 import TourPackages from './components/OurServices/TourPackages.jsx';
 import Offer from './components/OurServices/Offer.jsx';
+import Blogs from './components/Blogs/Blogs.jsx';
+import MessageFromLeadingTeam from './components/Home/MessageFromLeadingTeam.jsx';
 
 // Routing Setup
 const router = createBrowserRouter([
@@ -51,9 +53,11 @@ const router = createBrowserRouter([
       { path: '/targetusavisainterview', element: <TargetUsaInterview /> },
       { path: '/eammufashion', element: <EammuFashion /> },
 
-      // Useful Links
+      // Useful Links MessageFromLeadingTeam
       { path: '/eammunewsfeeds', element: <EammuNewsfeeds /> },
       { path: '/eammucareers', element: <EammuCareers /> },
+      { path: '/blogs', element: <Blogs /> },
+      { path: '/messagefromleadingteam', element: <MessageFromLeadingTeam /> },
 
       // Auth
       { path: '/signup', element: <SignUp /> },
