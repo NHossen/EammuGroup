@@ -1,11 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
 
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
+import { HelmetProvider } from 'react-helmet-async'; // ✅ Add this
+
+// Page Imports
 import About from './components/About/About.jsx';
 import Contact from './components/Contact/Contact.jsx';
 import MainRoot from './components/MainRoot/MainRoot.jsx';
@@ -22,76 +26,41 @@ import LogIn from './components/SignupLogin/LogIn/LogIn.jsx';
 import Details_More from './components/Home/Services_Card_Section/Student_visa/Details_More.jsx';
 import VisaServices from './components/OurServices/VisaServices.jsx';
 
+// Routing Setup
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainRoot></MainRoot>,
-    errorElement:<ErrorPage></ErrorPage>,
-    children:[
-      {
-        path:'/',
-        element:<Home></Home>
-      },
-      {
-        path:'/about',
-        element:<About></About>
-      },
-      {
-        path:'/ourServices',
-        element:<OurServices></OurServices>
-      },
-      {
-        path:'/visaservices',
-        element:<VisaServices></VisaServices>
-      },
-      {
-        path:'/contact',
-        element:<Contact></Contact>
-      },
-      {
-        path:'/eammuimmigrationservices',
-        element:<EammuImmigrationServices></EammuImmigrationServices>
-      },
-      {
-        path:'/university_details/:id',
-        element:<Details_More></Details_More>,
-      },
-      // Sub Organization of Eammu Immigration Services
-      {
-        path:'/targetusavisainterview',
-        element:<TargetUsaInterview></TargetUsaInterview>
-      },
-      {
-        path:'/eammufashion',
-        element:<EammuFashion></EammuFashion>
-      },
-   
-      // Eammu Use Full Links
-      {
-        path:'/eammunewsfeeds',
-        element:<EammuNewsfeeds></EammuNewsfeeds>
-      },
-      {
-        path:'/eammucareers',
-        element:<EammuCareers></EammuCareers>
-      },
-      // SignUp And LogIn
-      {
-        path:'/signup',
-        element:<SignUp></SignUp>
-      },
-      {
-        path:'/login',
-        element:<LogIn></LogIn>
-      },
+    element: <MainRoot />,
+    errorElement: <ErrorPage />,
+    children: [
+      { path: '/', element: <Home /> },
+      { path: '/about', element: <About /> },
+      { path: '/ourServices', element: <OurServices /> },
+      { path: '/visaservices', element: <VisaServices /> },
+      { path: '/contact', element: <Contact /> },
+      { path: '/eammuimmigrationservices', element: <EammuImmigrationServices /> },
+      { path: '/university_details/:id', element: <Details_More /> },
 
-    ]
+      // Sub-services
+      { path: '/targetusavisainterview', element: <TargetUsaInterview /> },
+      { path: '/eammufashion', element: <EammuFashion /> },
+
+      // Useful Links
+      { path: '/eammunewsfeeds', element: <EammuNewsfeeds /> },
+      { path: '/eammucareers', element: <EammuCareers /> },
+
+      // Auth
+      { path: '/signup', element: <SignUp /> },
+      { path: '/login', element: <LogIn /> },
+    ],
   },
-
 ]);
 
+// Render App
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}></RouterProvider>
-  </React.StrictMode>,
-)
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
+  </React.StrictMode>
+);

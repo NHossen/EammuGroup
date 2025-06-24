@@ -1,111 +1,118 @@
-
+import { Helmet } from 'react-helmet-async';
 
 const About_Eammu_Immigration = () => {
-    return (
-        <div >
-                      <div className="container mx-auto px-8 py-16">
-      <h1 className="text-4xl font-bold mb-4">About Eammu Immigration Services</h1>
+  return (
+    <>
+      <Helmet>
+        <title>About Eammu Immigration Services | Global Visa & Migration Experts</title>
+        <meta
+          name="description"
+          content="Learn about Eammu Immigration Services — your trusted partner for global immigration, student visas, work permits, and relocation support across Canada, UK, UAE, Europe, and beyond."
+        />
+        <meta
+          name="keywords"
+          content="Eammu Immigration, visa consultant Bangladesh, study abroad, immigration to Canada, UAE visa, work visa, student visa agency, green card, migration help"
+        />
+      </Helmet>
 
-      <div className="space-y-6">
-        <p className="text-lg">
-          Established in 2018, Eammu Immigration Services is a globally recognized Immigration Visa Consultant. With a
-          strong presence in over 50 company-owned and managed offices across India, UAE, UK, Australia, and Canada, we
-          have been dedicated to shaping successful overseas careers.
-        </p>
-
-        <div className="flex items-center space-x-2">
-          <span className="text-green-500">Global Presence</span>
-          <p>
-            Our 1500+ committed employees serve over 10,00,000 happy customers each year. Word-of-mouth referrals
-            constitute more than 50% of our client base, a testament to the trust and satisfaction we deliver.
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <section className="mb-12">
+          <h1 className="text-4xl font-extrabold text-green-800 mb-6">
+            About Eammu Immigration Services
+          </h1>
+          <p className="text-lg text-gray-700 max-w-3xl">
+            Established in 2018, <strong>Eammu Immigration Services</strong> is a globally recognized name in immigration consultancy,
+            guiding thousands toward successful overseas careers. With over 50 offices across Bangladesh, UAE, UK, Canada, and Australia,
+            Eammu proudly serves clients with transparency, efficiency, and heart.
           </p>
-        </div>
+        </section>
 
-        <div className="flex items-center space-x-2">
-          <span className="text-blue-500">Affordable and Success-Driven</span>
-          <p>
-            At Eammu Immigration Services, we prioritize affordability. Our service fee is structured so that we are
-            paid only upon successfully completing the visa processing. Our core competence lies in visa documentation
-            expertise, particularly in green cards.
-          </p>
-        </div>
-
-        <div className="flex items-center space-x-2">
-          <span className="text-purple-500">Expertise and Processing Volume</span>
-          <p>
-            We process the highest number of immigration cases in India, backed by thousands of successful case
-            studies. This wealth of experience enables us to handle any type of case with precision and efficiency.
-          </p>
-        </div>
-
-        <hr className="my-8" />
-
-        <div className="flex items-center space-x-2">
-          <span className="text-yellow-500">Trust and Transparency</span>
-          <p>
-            What sets us apart is the trust our brand exudes and the transparency of our process. Our commitment is
-            reinforced by a proper legal agreement, including a clear refund policy for added peace of mind.
-          </p>
-        </div>
-
-        <div className="space-y-4">
-          <h2 className="text-2xl mt-6">Eammu Immigration Services</h2>
-          <p>
-            At Eammu Immigration Services, we are dedicated to ensuring your journey to Europe is as smooth as can be.
-            Here is why choosing us makes all the difference:
-          </p>
-
-          <div className="grid grid-cols-2 gap-4">
-            <div className="flex items-center space-x-2">
-              <span className="text-teal-500">Comprehensive Travel Support</span>
+        <section className="space-y-6 mb-12">
+          <div className="text-lg text-gray-700 space-y-4">
+            <div className="flex flex-col">
+              <span className="text-green-600 font-bold">🌍 Global Presence</span>
               <p>
-                From visa applications to travel arrangements, our team provides comprehensive support to make your
-                journey hassle-free.
+                1500+ team members, 1M+ happy clients, and a reputation built on referrals — our impact spans continents.
               </p>
             </div>
 
-            <div className="flex items-center space-x-2">
-              <span className="text-teal-500">Seamless Travel Planning</span>
+            <div className="flex flex-col">
+              <span className="text-blue-600 font-bold">💸 Affordable & Success-Based</span>
               <p>
-                Our seamless travel planning ensures that every detail, from flights to accommodations, is meticulously
-                organized.
+                We only get paid when you're successful — no hidden fees, no upfront costs. Our results speak for themselves.
               </p>
             </div>
 
-            <div className="flex items-center space-x-2">
-              <span className="text-teal-500">Expert Guidance</span>
+            <div className="flex flex-col">
+              <span className="text-purple-600 font-bold">📂 Document Expertise</span>
               <p>
-                Rely on our team of experts for guidance on visa processes, documentation, and any other queries you may
-                have.
+                Whether it's for a green card, student visa, or work permit, our documentation support is unmatched in accuracy and compliance.
               </p>
             </div>
 
-            <div className="flex items-center space-x-2">
-              <span className="text-teal-500">24/7 Support</span>
+            <div className="flex flex-col">
+              <span className="text-yellow-600 font-bold">✅ Trust & Legal Transparency</span>
               <p>
-                Our commitment to your journey does not end. We provide round-the-clock support for any issues or
-                concerns you may encounter.
+                All agreements are legally backed with clear refund policies, ensuring complete peace of mind.
               </p>
             </div>
           </div>
+        </section>
 
-          <hr className="my-8" />
-
-          <h2 className="text-xl mt-6">Connect with Us to Commence Your Unforgettable Journey!</h2>
-          <div className="space-y-4">
-            <p>Call/WhatsApp: +8801701699743, +971507078334</p>
-            <p>Email: eammuimmigration@gmail.com</p>
-            <a href="http://www.eammu.com" className="text-blue-500" target="_blank" rel="noopener noreferrer">
-              Website: www.eammu.com
-            </a>
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold text-green-700 mb-4">
+            Why Choose Eammu Immigration Services?
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-700 text-base">
+            {[
+              {
+                title: 'Comprehensive Travel Support',
+                description:
+                  'We don’t stop at visas. From booking flights to arranging accommodation — we’ve got you covered.',
+              },
+              {
+                title: 'Seamless Planning',
+                description:
+                  'Your journey is mapped out in advance — safe, quick, and efficient from start to settlement.',
+              },
+              {
+                title: 'Expert Legal Guidance',
+                description:
+                  'Our consultants and lawyers advise you on eligibility, legal routes, and documentation success rates.',
+              },
+              {
+                title: '24/7 Support',
+                description:
+                  'Your concerns are our priority — we’re reachable anytime through phone, WhatsApp, or email.',
+              },
+            ].map((item, i) => (
+              <div key={i} className="bg-white p-4 rounded-lg shadow">
+                <h3 className="font-bold text-teal-700 mb-1">{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
+            ))}
           </div>
+        </section>
 
-          <button className="bg-[#082208] text-white px-6 py-2 rounded-full mt-6">Get Started</button>
-        </div>
-      </div>
-    </div>
-        </div>
-    );
+        <section className="mt-16 bg-gray-50 p-6 rounded-lg shadow-sm text-center">
+          <h2 className="text-2xl font-bold mb-4 text-green-800">
+            Connect with Us to Start Your Immigration Journey
+          </h2>
+          <p className="text-gray-700 mb-6">
+            Whether you're applying for a student visa, work permit, PR, or spouse visa — we're here to support you every step of the way.
+          </p>
+          <div className="text-gray-700 space-y-2 text-base">
+            <p><strong>📞 Phone/WhatsApp:</strong> +8801701699743, +971507078334</p>
+            <p><strong>📧 Email:</strong> <a href="mailto:eammuimmigration@gmail.com" className="text-blue-600 underline">eammuimmigration@gmail.com</a></p>
+            <p><strong>🌐 Website:</strong> <a href="https://www.eammu.com" target="_blank" rel="noreferrer" className="text-blue-600 underline">www.eammu.com</a></p>
+          </div>
+          <button className="mt-6 bg-green-800 text-white px-6 py-3 rounded-full hover:bg-green-900 transition">
+            Get Started
+          </button>
+        </section>
+      </main>
+    </>
+  );
 };
 
 export default About_Eammu_Immigration;

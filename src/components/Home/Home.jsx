@@ -1,7 +1,6 @@
 
 import Carousel from "../Carousel/carousel";
 import Caresoul_BG_Mix from "./Caresoul_BG_Mix";
-import EammuHeading_1 from "./EammuHeading_1";
 import EammuImmigrationHeading_2 from "./EammuImmigrationHeading_2";
 import Eammu_Carousel from "./Eammu_Carousel";
 import MessageFromLeadingTeam from "./MessageFromLeadingTeam";

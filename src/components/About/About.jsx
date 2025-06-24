@@ -1,197 +1,126 @@
-
+import { Helmet } from 'react-helmet-async';
 
 const About = () => {
   return (
-    <div className="px-4 container mx-auto">
-        {/* About Eammu */}
+    <>
+      <Helmet>
+        <title>About Eammu | Global Immigration, IT, Events & Innovation</title>
+        <meta
+          name="description"
+          content="Learn about Eammu's global services including immigration, IT solutions, fashion, agriculture, and events. Established in 2022, Eammu leads with innovation across industries."
+        />
+        <meta
+          name="keywords"
+          content="Eammu, Eammu Immigration Services, Eammu Fashion, Eammu IT, event management, digital marketing, poultry farm, textile industry, global visa, study abroad, Bangladesh immigration company"
+        />
+      </Helmet>
 
-        <div>
-        <div className=" min-h-screen p-8">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-semibold mb-8 text-center">Eammu: Shaping Tomorrow s Landscape Through Innovation</h1>
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-20">
 
-        <div className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Company Overview:</h2>
-          <p className="text-gray-700">
-            Eammu, established in 2022, stands as a beacon of dynamism and innovation in the ever-evolving landscape of business. As a trailblazer in digital transformation, our commitment to excellence is evident in our diverse range of services that cater to the intricate needs of today dynamic markets.
+        {/* Header */}
+        <section className="space-y-8">
+          <h1 className="text-4xl font-extrabold text-center text-green-800">
+            About Eammu — Shaping the Future with Innovation
+          </h1>
+          <p className="text-lg text-center text-gray-700 max-w-4xl mx-auto">
+            Welcome to Eammu — a visionary brand transforming the global landscape through smart solutions in immigration,
+            technology, events, agriculture, and fashion. Established in 2022, our mission is to deliver impactful, ethical,
+            and sustainable services that empower individuals and businesses across borders.
           </p>
-        </div>
+        </section>
 
-        <div className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Eammu Core Services:</h2>
+        {/* Company Values */}
+        <section className="space-y-6">
+          <h2 className="text-2xl font-bold">Why Eammu?</h2>
+          <ul className="list-disc list-inside space-y-2 text-gray-700 text-lg">
+            <li>🌍 Global Presence: Serving clients in Bangladesh, UAE, Canada, UK, and beyond</li>
+            <li>💡 Innovation First: Always adapting, always improving</li>
+            <li>🤝 Transparency & Trust: Our brand is built on results and reliability</li>
+            <li>🚀 Empowering Youth: Creating opportunities for students, workers, and entrepreneurs</li>
+          </ul>
+        </section>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/** Eammu Immigration Services */}
-            <div className="bg-white p-6 rounded shadow-md">
-              <h3 className="text-xl font-semibold mb-4">Eammu Immigration Services</h3>
-              <p className="text-gray-700">
-                At Eammu, our Immigration Services go beyond conventional consultancy. We provide comprehensive guidance for individuals and businesses, navigating the complexities of immigration seamlessly. Our personalized approach ensures a smooth transition to new horizons.
+        {/* Core Divisions */}
+        <section className="space-y-10">
+          <h2 className="text-3xl font-bold mb-6 text-green-700">Our Key Divisions</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-gray-800 text-base">
+
+            <div className="bg-white shadow-md rounded p-6">
+              <h3 className="text-xl font-semibold mb-2">Eammu Immigration Services</h3>
+              <p>
+                Trusted by thousands, our immigration experts assist with student visas, work permits, visit visas, PR, and
+                business migration. We specialize in Canada, UK, UAE, Australia, and Europe immigration programs with guaranteed
+                documentation support.
               </p>
             </div>
 
-            {/** Eammu IT & Marketing Solutions */}
-            <div className="bg-white p-6 rounded shadow-md">
-              <h3 className="text-xl font-semibold mb-4">Eammu IT & Marketing Solutions</h3>
-              <p className="text-gray-700">
-                Eammu IT & Marketing Solutions harness the power of technology to propel businesses forward. From bespoke website development and immersive digital marketing campaigns to advanced data analytics, we empower our clients with the tools necessary for success in the digital age.
+            <div className="bg-white shadow-md rounded p-6">
+              <h3 className="text-xl font-semibold mb-2">Eammu IT & Marketing</h3>
+              <p>
+                From website and app development to digital marketing, SEO, and lead generation — our IT division empowers
+                businesses with smart tech. Tailored solutions for travel, education, retail, and startups.
               </p>
             </div>
 
-            {/** Eammu Event Management */}
-            <div className="bg-white p-6 rounded shadow-md">
-              <h3 className="text-xl font-semibold mb-4">Eammu Event Management</h3>
-              <p className="text-gray-700">
-                Eammu Event Management is synonymous with creativity and precision. Our team meticulously plans and executes events, from corporate functions to social gatherings and product launches, ensuring every detail is curated to perfection, leaving a lasting impression.
+            <div className="bg-white shadow-md rounded p-6">
+              <h3 className="text-xl font-semibold mb-2">Eammu Event Management</h3>
+              <p>
+                Whether it's a wedding, corporate seminar, or product launch — our team delivers stunning events with branding,
+                logistics, decoration, and full coordination. We believe in moments that matter.
               </p>
             </div>
 
-            {/** Eammu Dairy & Poultry Farm */}
-            <div className="bg-white p-6 rounded shadow-md">
-              <h3 className="text-xl font-semibold mb-4">Eammu Dairy & Poultry Farm</h3>
-              <p className="text-gray-700">
-                At Eammu Dairy & Poultry Farm, we prioritize quality and sustainability. Our state-of-the-art facilities not only produce fresh and wholesome products but also emphasize the well-being of our livestock. From farm to table, we ensure excellence in every aspect.
+            <div className="bg-white shadow-md rounded p-6">
+              <h3 className="text-xl font-semibold mb-2">Eammu Fashion</h3>
+              <p>
+                A modern apparel brand that blends tradition and trend. Our collections include ethnic wear, formal and street
+                styles designed in Bangladesh and Dubai, crafted for elegance and affordability.
               </p>
             </div>
 
-            {/** Eammu Fashion */}
-            <div className="bg-white p-6 rounded shadow-md">
-              <h3 className="text-xl font-semibold mb-4">Eammu Fashion</h3>
-              <p className="text-gray-700">
-                Eammu Fashion sets the standard for style and innovation. Our fashion line encompasses clothing and accessories that reflect the latest trends, marrying aesthetics with quality and craftsmanship. Eammu Fashion is not just a brand; it is a statement of elegance and contemporary flair.
+            <div className="bg-white shadow-md rounded p-6">
+              <h3 className="text-xl font-semibold mb-2">Eammu Dairy & Poultry</h3>
+              <p>
+                Committed to food quality, we produce farm-fresh milk, eggs, and poultry with ethical farming practices and
+                sustainable operations in rural Bangladesh.
               </p>
             </div>
 
-            {/** Eammu Textile & Industry */}
-            <div className="bg-white p-6 rounded shadow-md">
-              <h3 className="text-xl font-semibold mb-4">Eammu Textile & Industry</h3>
-              <p className="text-gray-700">
-                Eammu Textile & Industry is a symbol of manufacturing excellence. Our cutting-edge facilities produce top-tier textiles, contributing significantly to the growth and development of the industry. Sustainability, innovation, and quality are the cornerstones of our manufacturing ethos.
+            <div className="bg-white shadow-md rounded p-6">
+              <h3 className="text-xl font-semibold mb-2">Eammu Textile & Industry</h3>
+              <p>
+                As part of Bangladesh’s export backbone, our textile unit delivers premium fabrics for garments, home
+                furnishings, and uniforms — maintaining eco-friendly production standards.
               </p>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Our Unwavering Commitment:</h2>
-          <p className="text-gray-700">
-            Eammu is synonymous with excellence. Our commitment to delivering value through innovative solutions is unwavering. We constantly strive to exceed expectations, pushing the boundaries of conventional norms. At Eammu, excellence is not an option; it is the standard by which we measure our success.
+        {/* Our Vision */}
+        <section className="space-y-6">
+          <h2 className="text-3xl font-bold text-green-700">Our Vision</h2>
+          <p className="text-lg text-gray-700 max-w-4xl">
+            To become a globally admired brand that drives growth for individuals and enterprises. Through innovation, teamwork,
+            and service, we empower our clients to achieve their dreams — be it migration, career growth, entrepreneurship, or
+            lifestyle upgrade.
           </p>
-        </div>
+        </section>
 
-        <div>
-          <h2 className="text-2xl font-semibold mb-4">Embark on the Journey of Innovation:</h2>
-          <p className="text-gray-700">
-            Eammu invites you to be part of a community that thrives on challenges, fosters creativity, and consistently raises the bar. Join us on a journey where innovation knows no bounds. Together, let shape tomorrow  landscape and exceed expectations. Eammu is not just a company; it is a testament to the limitless possibilities of innovation.
-          </p>
-        </div>
-      </div>
-    </div>
-
-        </div>
-        {/* Eammu Immigration About Section */}
-        <div className="container mx-auto px-8 py-16">
-      <h1 className="text-4xl font-bold mb-4">About Eammu Immigration Services</h1>
-
-      <div className="space-y-6">
-        <p className="text-lg">
-          Established in 2018, Eammu Immigration Services is a globally recognized Immigration Visa Consultant. With a
-          strong presence in over 50 company-owned and managed offices across India, UAE, UK, Australia, and Canada, we
-          have been dedicated to shaping successful overseas careers.
-        </p>
-
-        <div className="flex items-center space-x-2">
-          <span className="text-green-500">Global Presence</span>
-          <p>
-            Our 1500+ committed employees serve over 10,00,000 happy customers each year. Word-of-mouth referrals
-            constitute more than 50% of our client base, a testament to the trust and satisfaction we deliver.
-          </p>
-        </div>
-
-        <div className="flex items-center space-x-2">
-          <span className="text-blue-500">Affordable and Success-Driven</span>
-          <p>
-            At Eammu Immigration Services, we prioritize affordability. Our service fee is structured so that we are
-            paid only upon successfully completing the visa processing. Our core competence lies in visa documentation
-            expertise, particularly in green cards.
-          </p>
-        </div>
-
-        <div className="flex items-center space-x-2">
-          <span className="text-purple-500">Expertise and Processing Volume</span>
-          <p>
-            We process the highest number of immigration cases in India, backed by thousands of successful case
-            studies. This wealth of experience enables us to handle any type of case with precision and efficiency.
-          </p>
-        </div>
-
-        <hr className="my-8" />
-
-        <div className="flex items-center space-x-2">
-          <span className="text-yellow-500">Trust and Transparency</span>
-          <p>
-            What sets us apart is the trust our brand exudes and the transparency of our process. Our commitment is
-            reinforced by a proper legal agreement, including a clear refund policy for added peace of mind.
-          </p>
-        </div>
-
-        <div className="space-y-4">
-          <h2 className="text-2xl mt-6">Eammu Immigration Services</h2>
-          <p>
-            At Eammu Immigration Services, we are dedicated to ensuring your journey to Europe is as smooth as can be.
-            Here is why choosing us makes all the difference:
-          </p>
-
-          <div className="grid grid-cols-2 gap-4">
-            <div className="flex items-center space-x-2">
-              <span className="text-teal-500">Comprehensive Travel Support</span>
-              <p>
-                From visa applications to travel arrangements, our team provides comprehensive support to make your
-                journey hassle-free.
-              </p>
-            </div>
-
-            <div className="flex items-center space-x-2">
-              <span className="text-teal-500">Seamless Travel Planning</span>
-              <p>
-                Our seamless travel planning ensures that every detail, from flights to accommodations, is meticulously
-                organized.
-              </p>
-            </div>
-
-            <div className="flex items-center space-x-2">
-              <span className="text-teal-500">Expert Guidance</span>
-              <p>
-                Rely on our team of experts for guidance on visa processes, documentation, and any other queries you may
-                have.
-              </p>
-            </div>
-
-            <div className="flex items-center space-x-2">
-              <span className="text-teal-500">24/7 Support</span>
-              <p>
-                Our commitment to your journey does not end. We provide round-the-clock support for any issues or
-                concerns you may encounter.
-              </p>
-            </div>
-          </div>
-
-          <hr className="my-8" />
-
-          <h2 className="text-xl mt-6">Connect with Us to Commence Your Unforgettable Journey!</h2>
-          <div className="space-y-4">
-            <p>Call/WhatsApp: +8801701699743, +971507078334</p>
-            <p>Email: eammuimmigration@gmail.com</p>
-            <a href="http://www.eammu.com" className="text-blue-500" target="_blank" rel="noopener noreferrer">
-              Website: www.eammu.com
-            </a>
-          </div>
-
-          <button className="bg-[#082208] text-white px-6 py-2 rounded-full mt-6">Get Started</button>
-        </div>
-      </div>
-    </div> 
-    </div>
-   
+        {/* Immigration Contact Block */}
+        <section className="bg-[#f4fdf7] rounded-lg p-6 space-y-4">
+          <h2 className="text-2xl font-bold">Contact Eammu Immigration Services</h2>
+          <p>Need a visa or expert immigration help? We're here 24/7.</p>
+          <ul className="space-y-2 text-gray-700 text-base">
+            <li><strong>📞 Call/WhatsApp:</strong> +8801701699743, +971507078334</li>
+            <li><strong>📧 Email:</strong> eammuimmigration@gmail.com</li>
+            <li><strong>🌐 Website:</strong> <a href="https://www.eammu.com" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">www.eammu.com</a></li>
+          </ul>
+          <button className="bg-green-800 text-white px-6 py-3 rounded-full hover:bg-green-900 transition">
+            Start Your Journey Now
+          </button>
+        </section>
+      </main>
+    </>
   );
 };
 
