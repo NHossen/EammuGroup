@@ -44,7 +44,7 @@ const Carousel = () => {
     { icon: <FaPassport />, title: 'Visa Services', link: '/visaservices' },
     { icon: <FaPlaneDeparture />, title: 'Air Tickets', link: '/airtickets' },
     { icon: <FaSuitcaseRolling />, title: 'Tour Packages', link: '/tourpackages' },
-    { icon: <FaStar />, title: 'Special Offers', link: '/offers' },
+    { icon: <FaStar />, title: 'Special Offers', link: '/offer' },
   ];
 
   return (
@@ -63,7 +63,7 @@ const Carousel = () => {
           <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center text-white text-center px-6">
             <div>
               <h1 className="text-5xl font-bold mb-4">Welcome to Eammu</h1>
-              <p className="text-lg mb-6">Your partner in digital innovation and global mobility.</p>
+              <p className="text-lg mb-6 font-bold">Connecting You To The World — Your Travel And Global Mobility Partner.</p>
              <Link 
   to="/about" 
   className="btn bg-white text-[#005a31] hover:bg-[#005a31] hover:text-white border border-[#005a31]"

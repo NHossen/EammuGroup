@@ -25,6 +25,9 @@ import SignUp from './components/SignupLogin/SignUp/SignUp.jsx';
 import LogIn from './components/SignupLogin/LogIn/LogIn.jsx';
 import Details_More from './components/Home/Services_Card_Section/Student_visa/Details_More.jsx';
 import VisaServices from './components/OurServices/VisaServices.jsx';
+import AirTickets from './components/OurServices/AirTickets.jsx';
+import TourPackages from './components/OurServices/TourPackages.jsx';
+import Offer from './components/OurServices/Offer.jsx';
 
 // Routing Setup
 const router = createBrowserRouter([
@@ -37,6 +40,9 @@ const router = createBrowserRouter([
       { path: '/about', element: <About /> },
       { path: '/ourServices', element: <OurServices /> },
       { path: '/visaservices', element: <VisaServices /> },
+      { path: '/airtickets', element: <AirTickets /> },
+      { path: '/tourpackages', element: <TourPackages /> },
+      { path: '/offer', element: <Offer /> },
       { path: '/contact', element: <Contact /> },
       { path: '/eammuimmigrationservices', element: <EammuImmigrationServices /> },
       { path: '/university_details/:id', element: <Details_More /> },
