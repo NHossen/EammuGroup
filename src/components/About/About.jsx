@@ -4,7 +4,7 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Eammu | Global Immigration, IT, Events & Innovation</title>
+        <title> Eammu | Global Immigration, IT, Events & Innovation</title>
         <meta
           name="description"
           content="Learn about Eammu's global services including immigration, IT solutions, fashion, agriculture, and events. Established in 2022, Eammu leads with innovation across industries."

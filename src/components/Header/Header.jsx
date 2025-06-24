@@ -43,7 +43,7 @@ const Header = () => {
               </NavbarLink>
 
               {/* Responsive Dropdown */}
-              <div className="relative group">
+              <div className="relative group hidden">
                 <NavbarLink as="div" className="text-[#005a31] cursor-pointer">
                   Our Services
                 </NavbarLink>

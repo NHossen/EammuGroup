@@ -18,7 +18,7 @@ const Tourist_Visa = ({tourist}) => {
               <h2 className="">{title}</h2>
               <p>{description}</p>
               <div className="card-actions">
-                <Link to={`/university_details/${id}`}><button className="hover:shadow-[#122712] hover:shadow-lg btn text-lg hover:bg-[#072504] hover:text-[#ffffff] bg-white text-[#072504]  border-[1.5px] border-[#072504]">Learn More</button></Link>
+                <Link to={`/university_details/${id}`}><button className="hover:shadow-[#005a31] hover:shadow-lg btn text-lg hover:bg-[#005a31] hover:text-[#ffffff] bg-white text-[#005a31]  border-[1.5px] border-[#005a31]">Learn More</button></Link>
                 
               </div>
             </div>

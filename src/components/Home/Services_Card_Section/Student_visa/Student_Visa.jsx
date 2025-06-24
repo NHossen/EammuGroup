@@ -1,32 +1,28 @@
 import { Link } from "react-router-dom";
 
-const Student_Visa = ({student}) => {
-  const { id,countryName, universityName, description,image } = student;
- 
+const Student_Visa = ({ student }) => {
+  const { id, region, countries, description, image } = student;
+
   return (
-    
-     
-        <div className="px-4 container mx-auto">
-          <div className="card card-compact h-96 bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src={image}
-                alt="University_Photo"
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">{countryName}</h2>
-              <h2 className="card-title">{universityName}</h2>
-              <p>{description}</p>
-              <div className="card-actions">
-                <Link to={`/university_details/${id}`}><button className="hover:shadow-[#122712] hover:shadow-lg btn text-lg hover:bg-[#072504] hover:text-[#ffffff] bg-white text-[#072504]  border-[1.5px] border-[#072504]">Learn More</button></Link>
-                
-              </div>
-            </div>
-          </div>
+    <div className="card card-compact h-96 bg-base-100 shadow-xl">
+      <figure>
+        <img src={image} alt={`${region} photo`} className="object-cover h-48 w-full" />
+      </figure>
+      <div className="card-body">
+        <h2 className="card-title text-[#005a31]">{region}</h2>
+        <h3 className="text-md font-semibold text-[#005a31]">
+          Countries: {countries.join(", ")}
+        </h3>
+        <p className="text-gray-700">{description}</p>
+        <div className="card-actions">
+          <Link to={`/university_details/${id}`}>
+            <button className="btn text-lg bg-white text-[#005a31] border-[1.5px] border-[#005a31] hover:bg-[#005a31] hover:text-white hover:shadow-lg hover:shadow-[#005a31] transition-all duration-300 px-6 py-2 rounded-md">
+              Learn More
+            </button>
+          </Link>
         </div>
-      
-    
+      </div>
+    </div>
   );
 };
 

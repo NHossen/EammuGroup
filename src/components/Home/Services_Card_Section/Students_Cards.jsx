@@ -1,38 +1,41 @@
 import { useEffect, useState } from "react";
 import Student_Visa from "./Student_visa/Student_Visa";
 
-
 const Students_Cards = () => {
-    const [students,setStudents]=useState([]);
+  const [students, setStudents] = useState([]);
+  const [dataLength, setDataLength] = useState(3);
 
-    // Show All Button Data Selection
-    const [dataLength,setDataLength]=useState(3);
+  useEffect(() => {
+    fetch("/studentvisa.json") // fetching from your file
+      .then((res) => res.json())
+      .then((data) => setStudents(data))
+      .catch((error) => console.error("Failed to fetch data:", error));
+  }, []);
 
-    useEffect(()=>{
-        fetch('studentvisa.json')
-        .then(res=>res.json())
-        .then(data=>setStudents(data));
-    },[])
-    return (
-        <div className="px-4 container mx-auto">
-                  {/* Student visa */}
-<h1 className="text-center text-4xl font-bold my-6">Students Favorite Top Countries for Higher Education</h1>
+  return (
+    <div className="px-4 container mx-auto">
+      <h2 className="text-center text-3xl md:text-4xl font-bold text-[#005a31] my-6">
+        Best Countries for Higher Studies
+      </h2>
 
-{/* Formating */}
-<div className="grid lg:grid-cols-3 gap-4">
-     {
-        students.slice(0,dataLength).map(student=> <Student_Visa key={student.id} student={student}></Student_Visa>)
-     }
-</div>
-<div className="flex justify-center my-3">
-    <div className={dataLength === students.length && 'hidden'}>
-     <button onClick={()=>setDataLength(students.length)} className="hover:shadow-[#122712] hover:shadow-lg btn text-lg hover:bg-[#072504] hover:text-[#ffffff] bg-white text-[#072504]  border-[1.5px] border-[#072504]">See All</button>   
-    </div>
-    
-</div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {students.slice(0, dataLength).map((student) => (
+          <Student_Visa key={student.id} student={student} />
+        ))}
+      </div>
 
+      {dataLength < students.length && (
+        <div className="flex justify-center mt-8">
+          <button
+            onClick={() => setDataLength(students.length)}
+            className="btn text-lg font-semibold text-[#005a31] border border-[#005a31] bg-white hover:bg-[#005a31] hover:text-white hover:shadow-md hover:shadow-[#122712] transition-all duration-300 px-6 py-2 rounded-md"
+          >
+            See All
+          </button>
         </div>
-    );
+      )}
+    </div>
+  );
 };
 
 export default Students_Cards;

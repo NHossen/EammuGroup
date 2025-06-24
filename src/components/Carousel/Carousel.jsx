@@ -64,9 +64,14 @@ const Carousel = () => {
             <div>
               <h1 className="text-5xl font-bold mb-4">Welcome to Eammu</h1>
               <p className="text-lg mb-6">Your partner in digital innovation and global mobility.</p>
-              <Link to="/about" className="btn bg-white text-[#005a31] hover:bg-[#005a31] hover:text-white border border-[#005a31]">
-                Explore More
-              </Link>
+             <Link 
+  to="/about" 
+  className="btn bg-white text-[#005a31] hover:bg-[#005a31] hover:text-white border border-[#005a31]"
+  style={{ pointerEvents: 'auto', position: 'relative', zIndex: 10 }}
+>
+  Explore More
+</Link>
+
 
               {/* Service Links */}
               <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">

@@ -27,7 +27,7 @@ const Tourist_Visa_Cards = () => {
 </div>
 <div className="flex justify-center my-3">
     <div className={dataLength === tourists.length && 'hidden'}>
-     <button onClick={()=>setDataLength(tourists.length)} className="hover:shadow-[#122712] hover:shadow-lg btn text-lg hover:bg-[#072504] hover:text-[#ffffff] bg-white text-[#072504]  border-[1.5px] border-[#072504]">See All</button>   
+     <button onClick={()=>setDataLength(tourists.length)} className="hover:shadow-[#005a31] hover:shadow-lg btn text-lg hover:bg-[#005a31] hover:text-[#ffffff] bg-white text-[#005a31]  border-[1.5px] border-[#005a31]">See All</button>   
     </div>
     
 </div>

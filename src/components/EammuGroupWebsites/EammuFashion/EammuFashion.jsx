@@ -1,19 +1,29 @@
-
+import { Helmet } from 'react-helmet-async';
 
 const EammuFashion = () => {
   return (
     <div className="px-4 container mx-auto py-12">
-      {/* Page Heading */}
+      {/* SEO Meta Tags */}
+      <Helmet>
+        <title>Eammu Fashion | Traditional & Modern Wear in Bangladesh</title>
+        <meta name="description" content="Discover premium fashion for men, women, and kids at Eammu Fashion — from Panjabi to Western styles. Launching soon in Cumilla & online!" />
+        <meta name="keywords" content="Eammu Fashion, Panjabi, Kabli, Hijab, Kurtis, Men's Wear, Women's Fashion, Cumilla Fashion Store, Bangladesh Clothing, Eid Collection" />
+        <meta property="og:title" content="Eammu Fashion | Traditional & Modern Wear in Bangladesh" />
+        <meta property="og:description" content="Launching soon: Eammu Fashion store in Cumilla and online! Explore premium clothing for all." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.eammu.com/fashion" />
+        <meta property="og:image" content="https://yourdomain.com/eammu-fashion-preview.jpg" />
+      </Helmet>
+
+      {/* Page Content */}
       <div className="text-center mb-10">
-        <h1 className="text-4xl font-bold text-[#005a31] mb-4">
-          Welcome to Eammu Fashion
-        </h1>
+        <h1 className="text-4xl font-bold text-[#005a31] mb-4">Welcome to Eammu Fashion</h1>
         <p className="text-gray-600 text-lg">
           Discover the perfect blend of tradition and modern trends with Eammu Fashion — your upcoming go-to destination for quality clothing in Bangladesh and beyond.
         </p>
       </div>
 
-      {/* Introduction */}
+      {/* Who We Are */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold text-[#005a31] mb-2">Who We Are</h2>
         <p className="text-gray-700">
@@ -29,7 +39,7 @@ const EammuFashion = () => {
         </p>
       </section>
 
-      {/* What to Expect */}
+      {/* Coming Soon */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold text-[#005a31] mb-2">Coming Soon at Eammu Fashion</h2>
         <ul className="list-disc pl-6 text-gray-700 space-y-2">
@@ -41,12 +51,10 @@ const EammuFashion = () => {
         </ul>
       </section>
 
-      {/* Business Expansion */}
+      {/* Locations */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold text-[#005a31] mb-2">Where You'll Find Us</h2>
-        <p className="text-gray-700">
-          Eammu Fashion will be launching both online and offline stores:
-        </p>
+        <p className="text-gray-700">Eammu Fashion will be launching both online and offline stores:</p>
         <ul className="list-disc pl-6 text-gray-700 mt-2">
           <li>🛍️ Flagship Store in Cumilla Cantonment (Coming 2025)</li>
           <li>🌐 E-commerce Website with Nationwide Delivery</li>
@@ -57,9 +65,7 @@ const EammuFashion = () => {
       {/* Social Media */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold text-[#005a31] mb-2">Follow Us</h2>
-        <p className="text-gray-700">
-          Be the first to get updates on launches, offers, and new arrivals:
-        </p>
+        <p className="text-gray-700">Be the first to get updates on launches, offers, and new arrivals:</p>
         <ul className="list-disc pl-6 text-blue-600 mt-2">
           <li><a href="[Facebook Link]" target="_blank" rel="noopener noreferrer">Facebook</a></li>
           <li><a href="[Instagram Link]" target="_blank" rel="noopener noreferrer">Instagram</a></li>
@@ -67,7 +73,7 @@ const EammuFashion = () => {
         </ul>
       </section>
 
-      {/* Call to Action */}
+      {/* CTA */}
       <div className="text-center mt-10">
         <p className="text-xl font-semibold text-gray-800 mb-4">
           Stay tuned — the Eammu Fashion experience is almost here!
