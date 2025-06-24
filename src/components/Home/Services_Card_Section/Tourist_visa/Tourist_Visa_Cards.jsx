@@ -17,7 +17,7 @@ const Tourist_Visa_Cards = () => {
         <div className="px-4 container mx-auto">
             {/* Tourist visa */}
 
-<h1 className="text-center text-4xl font-bold my-6">Top Favorite  Countries for Tourist</h1>
+<h1 className="text-center text-4xl font-bold my-6 text-[#005a31]">Best Countries for Tourist Visa</h1>
 
 {/* Formating */}
 <div className="grid lg:grid-cols-3 gap-4">

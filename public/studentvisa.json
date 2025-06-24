@@ -33,5 +33,54 @@
     "countries": ["United Arab Emirates"],
     "description": "Dubai offers dynamic business, education, and living opportunities in the Middle East.",
     "image": "https://images.unsplash.com/photo-1508051123996-69f8caf4891e?auto=format&fit=crop&w=1470&q=80"
+  },
+  {
+    "id": 6,
+    "region": "Asia",
+    "countries": ["Japan", "South Korea", "Malaysia", "Singapore", "China"],
+    "description": "Asia is rapidly becoming a hub for quality education, innovation, and affordable tuition for international students.",
+    "image": "https://images.unsplash.com/photo-1578926375605-eaf7559b1458?auto=format&fit=crop&w=1470&q=80"
+  },
+  {
+    "id": 7,
+    "region": "Eastern Europe",
+    "countries": ["Russia", "Poland", "Hungary", "Czech Republic", "Romania"],
+    "description": "Eastern Europe offers affordable, high-quality education and diverse cultural experiences for international students.",
+    "image": "https://images.unsplash.com/photo-1604668915840-496f4ac8bca2?auto=format&fit=crop&w=1470&q=80"
+  },
+  {
+    "id": 8,
+    "region": "New Zealand",
+    "countries": ["New Zealand"],
+    "description": "New Zealand is known for its welcoming environment, high education standards, and post-study work opportunities.",
+    "image": "https://images.unsplash.com/photo-1547721064-da6cfb341d50?auto=format&fit=crop&w=1470&q=80"
+  },
+  {
+    "id": 9,
+    "region": "Ireland",
+    "countries": ["Ireland"],
+    "description": "Ireland offers globally recognized degrees, vibrant student life, and strong ties to tech and finance industries.",
+    "image": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1470&q=80"
+  },
+  {
+    "id": 10,
+    "region": "Turkey",
+    "countries": ["Turkey"],
+    "description": "Turkey bridges Europe and Asia with affordable education, cultural richness, and growing English-taught programs.",
+    "image": "https://images.unsplash.com/photo-1505159940484-eb2b9f929c05?auto=format&fit=crop&w=1470&q=80"
+  },
+  {
+    "id": 11,
+    "region": "South America",
+    "countries": ["Brazil", "Argentina", "Chile", "Colombia", "Peru"],
+    "description": "South America offers affordable tuition, cultural diversity, and growing English-taught programs in renowned universities.",
+    "image": "https://images.unsplash.com/photo-1588361861136-bd6b1e9d3c0a?auto=format&fit=crop&w=1470&q=80"
+  },
+  {
+    "id": 12,
+    "region": "Africa",
+    "countries": ["South Africa", "Egypt", "Morocco", "Kenya", "Nigeria"],
+    "description": "Africa’s top universities provide unique academic opportunities, especially in fields like development, medicine, and technology.",
+    "image": "https://images.unsplash.com/photo-1535914254981-b5012eebbd15?auto=format&fit=crop&w=1470&q=80"
   }
 ]

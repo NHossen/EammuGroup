@@ -108,5 +108,131 @@
           "embassyPhone": "+65 6235 8855"
         },
         "additionalInfo": "Gain valuable work experience in Singapore with an Employment Pass."
-      }
+      },
+      {
+    "id": 7,
+    "countryName": "Work To Germany",
+    "visaType": "Job Seeker Visa",
+    "title": "Work in Germany from Bangladesh",
+    "image": "https://static.deutsche-welle.com/image/56426691_303.jpg",
+    "processingTime": "2 to 3 months",
+    "requirements": "Degree, valid passport, proof of funds, resume",
+    "fees": {
+      "application": "€75",
+      "priorityProcessing": "€150"
+    },
+    "contactInfo": {
+      "embassyEmail": "jobs@germanembassy.gov",
+      "embassyPhone": "+49 30 1817 0"
+    },
+    "additionalInfo": "Germany offers high demand jobs in engineering, IT, and healthcare sectors."
+  },
+  {
+    "id": 8,
+    "countryName": "Work To Poland",
+    "visaType": "National Work Visa (D Type)",
+    "title": "Start Your Career in Poland",
+    "image": "https://cdn.visaindex.com/images/countries/poland-flag.jpg",
+    "processingTime": "2 months",
+    "requirements": "Job contract, valid passport, work permit",
+    "fees": {
+      "application": "PLN 440",
+      "expeditedProcessing": "PLN 700"
+    },
+    "contactInfo": {
+      "embassyEmail": "visa@polandembassy.gov",
+      "embassyPhone": "+48 22 123 4567"
+    },
+    "additionalInfo": "Poland is a growing hub for manufacturing, tech, and logistics jobs."
+  },
+  {
+    "id": 9,
+    "countryName": "Work To Romania",
+    "visaType": "Long-Stay Visa (D/AM)",
+    "title": "Work Permit Opportunities in Romania",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Palace_of_the_Parliament_-_panoramio_%284%29.jpg",
+    "processingTime": "2–3 months",
+    "requirements": "Job offer, passport, background check",
+    "fees": {
+      "application": "RON 300",
+      "urgentProcessing": "RON 500"
+    },
+    "contactInfo": {
+      "embassyEmail": "workvisa@romaniaembassy.gov",
+      "embassyPhone": "+40 21 123 4567"
+    },
+    "additionalInfo": "Romania offers work opportunities in hospitality, construction, and care work."
+  },
+  {
+    "id": 10,
+    "countryName": "Work To Czech Republic",
+    "visaType": "Employee Card",
+    "title": "Get a Work Visa for Czechia",
+    "image": "https://www.praguemorning.cz/wp-content/uploads/2021/11/CZ-flag.jpg",
+    "processingTime": "3 months",
+    "requirements": "Job contract, passport, accommodation proof",
+    "fees": {
+      "application": "CZK 2,500",
+      "priorityProcessing": "CZK 5,000"
+    },
+    "contactInfo": {
+      "embassyEmail": "employee@czembassy.gov",
+      "embassyPhone": "+420 2 1234 5678"
+    },
+    "additionalInfo": "Czech Republic is attractive for IT and manufacturing sector professionals."
+  },
+  {
+    "id": 11,
+    "countryName": "Work To Italy",
+    "visaType": "Seasonal Work Visa",
+    "title": "Work Seasonally in Italy",
+    "image": "https://www.state.gov/wp-content/uploads/2023/07/shutterstock_1502648132v2.jpg",
+    "processingTime": "2 months",
+    "requirements": "Seasonal job offer, passport, employer sponsorship",
+    "fees": {
+      "application": "€116",
+      "fastTrack": "€200"
+    },
+    "contactInfo": {
+      "embassyEmail": "seasonal@italyembassy.gov",
+      "embassyPhone": "+39 06 1234 5678"
+    },
+    "additionalInfo": "Italy opens seasonal visa quotas for agriculture and tourism sectors annually."
+  },
+  {
+    "id": 12,
+    "countryName": "Work To Hungary",
+    "visaType": "Work Visa (D-Type)",
+    "title": "Hungarian Work Opportunities",
+    "image": "https://cdn.britannica.com/64/166464-050-75823A95/Flag-Hungary.jpg",
+    "processingTime": "1.5 to 2 months",
+    "requirements": "Job contract, passport, education documents",
+    "fees": {
+      "application": "HUF 40,000",
+      "priorityProcessing": "HUF 80,000"
+    },
+    "contactInfo": {
+      "embassyEmail": "work@hungaryembassy.gov",
+      "embassyPhone": "+36 1 234 5678"
+    },
+    "additionalInfo": "Hungary offers work permits in factories, IT, and service sectors."
+  },
+  {
+    "id": 13,
+    "countryName": "Work To New Zealand",
+    "visaType": "Essential Skills Work Visa",
+    "title": "NZ Skilled Jobs from Bangladesh",
+    "image": "https://www.newzealand.com/assets/Tourism-NZ/Auckland/92c3383f24/img-1535802683-4536-23707-p-1600x1200.jpg",
+    "processingTime": "2 to 3 months",
+    "requirements": "Job offer, medical clearance, proof of skills",
+    "fees": {
+      "application": "NZD 495",
+      "urgentProcessing": "NZD 950"
+    },
+    "contactInfo": {
+      "embassyEmail": "visa@nzembassy.gov",
+      "embassyPhone": "+64 4 472 2029"
+    },
+    "additionalInfo": "New Zealand actively invites workers in construction, healthcare, and agriculture."
+  }
 ]

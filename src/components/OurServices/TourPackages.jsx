@@ -7,70 +7,70 @@ const domesticTours = [
     name: "Cox's Bazar Beach Tour",
     description: "Relax at the longest natural sea beach in the world.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Cox's_Bazar_Beach_in_Bangladesh.JPG/1280px-Cox's_Bazar_Beach_in_Bangladesh.JPG",
+      "https://images.unsplash.com/photo-1665651147145-664ebda525e7?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y294JTIwYmF6YXIlMjBzZWElMjBiZWFjaHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     id: 2,
     name: "Sajek Valley Tour",
     description: "Explore the serene hills and tribal culture of Sajek.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/9/9f/Sajek_Valley_Bangladesh_03.jpg",
+      "https://www.tourgroupbd.com/upload/event/1658569515_event.jpg",
   },
   {
     id: 3,
     name: "Saint Martin’s Island",
     description: "Visit the beautiful coral island in the Bay of Bengal.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Saint_Martin_Island_Bangladesh_-_DSC_0025.JPG/1280px-Saint_Martin_Island_Bangladesh_-_DSC_0025.JPG",
+      "https://media.istockphoto.com/id/474259514/photo/boat-on-the-tropical-beach.jpg?s=612x612&w=0&k=20&c=1ersoGRQdPK6WLy498-QF33Bvi04VK__1G8IoufvR9E=",
   },
   {
     id: 4,
     name: "Sundarbans Mangrove Forest",
     description: "Discover the world’s largest mangrove forest and Royal Bengal Tigers.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/2/2f/Sundarbans_scenery.jpg",
+      "https://dialogue.earth/content/uploads/2023/04/Spotted-deer-in-Bangladesh_Alamy_P98FYF-scaled.jpg",
   },
   {
     id: 5,
     name: "Rangamati Lake Tour",
     description: "Enjoy boating and natural beauty at the Kaptai Lake.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/d/d0/Kaptai_Lake_Scenery.jpg",
+      "https://www.thefinancetoday.net/uploads/shares/Rangamati_hanging_Bridge-2019-12-24-12-47-02.jpg",
   },
   {
     id: 6,
     name: "Dhaka City Tour",
     description: "Explore historic and modern attractions of Bangladesh’s capital.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/6/67/Dhaka_Skyline_2021.jpg",
+      "https://www.pelago.com/img/products/BD-Bangladesh/full-day-dhaka-city-tour-/bd27718c-6e89-4fb7-aec2-119456a9dc4e_full-day-dhaka-city-tour-.jpg",
   },
   {
     id: 7,
     name: "Srimangal Tea Garden Tour",
     description: "Visit lush tea gardens and enjoy peaceful nature.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/a/a1/Sreemangal_Tea_Garden_in_Sylhet_Division.jpg",
+      "https://scontent.ffjr8-1.fna.fbcdn.net/v/t39.30808-6/487726886_2481008968910263_4848329487875071199_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=H8r6Y_nG_DQQ7kNvwGdv_Rk&_nc_oc=AdkDK0rPBibETlIpRViVXyEBvm3BlhR9hfvpwojOx6_CLCTGGL23hSuOv2viIvbRGFg&_nc_zt=23&_nc_ht=scontent.ffjr8-1.fna&_nc_gid=NSN83sMmze0vcbPf37LesA&oh=00_AfOSqgqAlZNzxbjf-SJ7BHjc48_EzlGmxLXnxptKx3f6Nw&oe=6860D0C1",
   },
   {
     id: 8,
     name: "Kuakata Sea Beach",
     description: "Witness both sunrise and sunset over the sea.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/3/3e/Kuakata_Beach_Bangladesh.jpg",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/17/9e/7d/kuakata-beach.jpg?w=800&h=500&s=1",
   },
   {
     id: 9,
     name: "Paharpur Buddhist Monastery",
     description: "Explore ancient archaeological site and UNESCO heritage.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/d/d3/Paharpur_Buddhist_Monastery_02.jpg",
+      "https://koryogroup.com/uploads/blog/1635/original-Paharpur_Buddhist_Monastery.jpg?1736904759",
   },
   {
     id: 10,
     name: "Mahasthangarh Archaeological Site",
     description: "Visit one of the oldest archaeological sites in Bangladesh.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/5/5a/Mahasthangarh_Ruins.jpg",
+      "https://travel.discoverybangladesh.com/images/mohasthangar-musume.jpg",
   },
   // Add 2 more for total 12
   {
@@ -78,14 +78,14 @@ const domesticTours = [
     name: "Jaflong Hill Tour",
     description: "Enjoy scenic hills and river views in Sylhet.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/9/98/Jaflong_Sylhet_Bangladesh.jpg",
+      "https://lh7-us.googleusercontent.com/Qwm8-h9c0_tfgaKoMtpxxKmYoQdzfAcIuNdHhj6q42OFs3ZLJrcokrnll0nsq2fWcsku_jYtLdpkyzh6kt-feHbPt-m0A7jaf5kecFNXrX5zhiMS0ZsaaghTb2my-8qpTJGF5Bm7dP2edv55M8w43LY",
   },
   {
     id: 12,
     name: "Lalakhal Waterfall & Tea Garden",
     description: "Discover crystal clear blue water and tea plantations.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/7/7e/Lalakhal_Bangladesh_03.jpg",
+      "https://sylhettouristguide.com/assets/image/place/lalakhal/finger.jpg",
   },
 ];
 
@@ -95,70 +95,70 @@ const internationalTours = [
     name: "Dubai City Tour",
     description: "Experience the luxury and futuristic skyline of Dubai.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/9/90/Dubai_Skyline_2015.jpg",
+      "https://cdn-imgix.headout.com/media/images/ec59e7719a396a4519efc6edcf9d2d41-Museum%20of%20the%20Future%20Dubai%20Tickets%201.jpg?auto=format&w=1069.6000000000001&h=687.6&q=90&fit=crop&ar=14%3A9&crop=faces",
   },
   {
     id: 2,
     name: "Malaysia Cultural Tour",
     description: "Explore Malaysia’s rich culture and natural beauty.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/f/f6/Malaysia_Culture.jpg",
+      "https://heritagetours.co/wp-content/uploads/2020/06/2-2.jpg",
   },
   {
     id: 3,
     name: "Singapore City Highlights",
     description: "Visit Marina Bay Sands, Gardens by the Bay, and more.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/e/e6/Singapore_Skyline.jpg",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/b3/2d/e2.jpg",
   },
   {
     id: 4,
     name: "Thailand Beach Getaway",
     description: "Relax on pristine beaches and enjoy vibrant nightlife.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/1/14/Phuket_Beach_Thailand_03.jpg",
+      "https://hnj-website.s3.amazonaws.com/uploads/2015/09/thai-traditional-wooden-longtail-boat-and-blue-sky-in-Maya-bay-Thailand-1024x673.jpg",
   },
   {
     id: 5,
     name: "Japan Cherry Blossom Tour",
     description: "Experience Japan’s famous sakura season and culture.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/3/38/Cherry_Blossoms_in_Brussels_park.jpg",
+      "https://assets.tripsmiths.com/images/default/523234-shutterstock-1513825088.jpg",
   },
   {
     id: 6,
     name: "Turkey Istanbul Experience",
     description: "Discover the blend of Europe and Asia in Istanbul.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/4/4f/Istanbul_Skyline_-_2012.jpg",
+      "https://www.tooistanbul.com/wp-content/uploads/2020/10/Screen-Shot-2020-10-15-at-16.19.22.png",
   },
   {
     id: 7,
     name: "Switzerland Alpine Tour",
     description: "Explore stunning mountain landscapes and ski resorts.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/2/2b/Swiss_Alps_view_from_Gornergrat.jpg",
+      "https://t4.ftcdn.net/jpg/02/81/14/83/360_F_281148366_Uw03PoKAGUZIAWecL5Op35YPMa7os2uC.jpg",
   },
   {
     id: 8,
     name: "France Paris Tour",
     description: "Visit the Eiffel Tower, Louvre, and romantic city sights.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg",
+      "https://www.royalcaribbean.com/media-assets/pmc/content/dam/shore-x/paris-le-havre-leh/lh17-paris-sightseeing-without-lunch/stock-photo-skyline-of-paris-with-eiffel-tower-at-sunset-in-paris-france-eiffel-tower-is-one-of-the-most-752725282.jpg?w=1920",
   },
   {
     id: 9,
     name: "United Kingdom London Highlights",
     description: "See Buckingham Palace, Big Ben, and historic landmarks.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/c/cd/London_Montage_L.jpg",
+      "https://www.airpano.com/files/london-video_big.jpg",
   },
   {
     id: 10,
     name: "Maldives Beach Paradise",
     description: "Relax in luxurious overwater bungalows in Maldives.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/2/22/Maldives_overwater_bungalows.jpg",
+      "https://i0.wp.com/jyoshankar.com/wp-content/uploads/2020/02/jyoshankar_travelblogger_maldives_hideawaybeachresortandspa_luxuryresorts_9.jpg?fit=2000%2C1333&ssl=1",
   },
   // Add 2 more for total 12
   {
@@ -166,14 +166,14 @@ const internationalTours = [
     name: "Italy Rome and Venice",
     description: "Explore ancient ruins and romantic canals.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/f/f2/Collage_of_Rome.jpg",
+      "https://media.istockphoto.com/id/539115110/photo/colosseum-in-rome-and-morning-sun-italy.jpg?s=612x612&w=0&k=20&c=9NtFxHI3P2IBWRY9t0NrfPZPR4iusHmVLbXg2Cjv9Fs=",
   },
   {
     id: 12,
     name: "Greece Santorini Tour",
     description: "Visit iconic whitewashed buildings and beautiful sunsets.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/9/9e/Santorini_Caldera_view.jpg",
+      "https://lp-cms-production.imgix.net/2024-06/iStock-166471469.jpg?auto=format,compress&q=72&fit=crop",
   },
 ];
 

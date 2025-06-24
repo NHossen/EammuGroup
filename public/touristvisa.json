@@ -89,6 +89,132 @@
           "embassyPhone": "+81 3 1234 5678"
         },
         "additionalInfo": "Experience the unique blend of tradition and modernity in Japan with a tourist visa."
-      }
+      },
+       {
+    "id": 6,
+    "countryName": "Travel To Australia",
+    "visaType": "Tourist Visa",
+    "title": "Down Under Adventures",
+    "image": "https://www.australia.com/content/australia/en_us/places/sydney-and-surrounds/guide-to-sydney/_jcr_content/image.adapt.1200.HIGH.jpg",
+    "processingTime": "3 weeks",
+    "requirements": "Valid passport, visa application, financial proof, itinerary",
+    "fees": {
+      "application": "AUD 150",
+      "priorityProcessing": "AUD 300"
+    },
+    "contactInfo": {
+      "embassyEmail": "info@australiaembassy.gov",
+      "embassyPhone": "+61 2 1234 5678"
+    },
+    "additionalInfo": "Australia is known for its vibrant cities and natural wonders—perfect for tourism."
+  },
+  {
+    "id": 7,
+    "countryName": "Travel To Turkey",
+    "visaType": "Tourist Visa",
+    "title": "Explore Historic Turkey",
+    "image": "https://www.state.gov/wp-content/uploads/2019/04/Turkey-2109x1406.jpg",
+    "processingTime": "1 week (e-Visa)",
+    "requirements": "Valid passport, e-visa application, hotel reservation",
+    "fees": {
+      "application": "$50",
+      "expeditedProcessing": "$90"
+    },
+    "contactInfo": {
+      "embassyEmail": "tourist@turkishembassy.gov",
+      "embassyPhone": "+90 312 123 4567"
+    },
+    "additionalInfo": "Enjoy the fusion of Europe and Asia, from Istanbul to Cappadocia."
+  },
+  {
+    "id": 8,
+    "countryName": "Travel To Malaysia",
+    "visaType": "Tourist Visa",
+    "title": "Truly Asia Experience",
+    "image": "https://www.malaysia.travel/storage/photos/1/9/1/191/thumbnail/384x234/b2b5b9d4d43044a36ef8784b3b424d78.jpg",
+    "processingTime": "5-7 working days",
+    "requirements": "Valid passport, confirmed return ticket, accommodation details",
+    "fees": {
+      "application": "MYR 100",
+      "expressProcessing": "MYR 200"
+    },
+    "contactInfo": {
+      "embassyEmail": "info@malaysiaembassy.gov",
+      "embassyPhone": "+60 3 8888 1234"
+    },
+    "additionalInfo": "Malaysia offers a blend of culture, cuisine, and modern life."
+  },
+  {
+    "id": 9,
+    "countryName": "Travel To Thailand",
+    "visaType": "Tourist Visa",
+    "title": "Amazing Thailand",
+    "image": "https://www.tripsavvy.com/thmb/_cYF-0Yg7l5pGpWgxiX2pckZ8Dw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-523142831-5bfc0f0d46e0fb0026c4fc2f.jpg",
+    "processingTime": "5-10 business days",
+    "requirements": "Valid passport, visa application, proof of financial means",
+    "fees": {
+      "application": "THB 1,000",
+      "expeditedProcessing": "THB 2,000"
+    },
+    "contactInfo": {
+      "embassyEmail": "touristvisa@thaiembassy.gov",
+      "embassyPhone": "+66 2 123 4567"
+    },
+    "additionalInfo": "Thailand welcomes tourists with warm hospitality and scenic beauty."
+  },
+  {
+    "id": 10,
+    "countryName": "Travel To South Korea",
+    "visaType": "Tourist Visa",
+    "title": "Discover Korea",
+    "image": "https://english.visitkorea.or.kr/static/front/images/open_graph.jpg",
+    "processingTime": "2 weeks",
+    "requirements": "Valid passport, visa application, travel schedule, financial documents",
+    "fees": {
+      "application": "KRW 40,000",
+      "expeditedProcessing": "KRW 80,000"
+    },
+    "contactInfo": {
+      "embassyEmail": "koreanvisa@embassy.kr",
+      "embassyPhone": "+82 2 123 4567"
+    },
+    "additionalInfo": "From Seoul to Jeju, South Korea blends tradition with cutting-edge life."
+  },
+  {
+    "id": 11,
+    "countryName": "Travel To Singapore",
+    "visaType": "Tourist Visa",
+    "title": "The Garden City",
+    "image": "https://cdn.britannica.com/44/94444-050-84E7A40F/Singapore.jpg",
+    "processingTime": "3 to 5 working days",
+    "requirements": "Valid passport, return flight ticket, accommodation proof",
+    "fees": {
+      "application": "SGD 30",
+      "expeditedProcessing": "SGD 60"
+    },
+    "contactInfo": {
+      "embassyEmail": "visa@singaporeembassy.gov",
+      "embassyPhone": "+65 1234 5678"
+    },
+    "additionalInfo": "Singapore is a global hub of modernity, greenery, and safety for travelers."
+  },
+  {
+    "id": 12,
+    "countryName": "Travel To Qatar",
+    "visaType": "Tourist Visa",
+    "title": "Discover Qatar",
+    "image": "https://www.qatarairways.com/content/dam/images/renditions/horizontal-1/people/qtr-talent-qa-01.jpg",
+    "processingTime": "3–7 business days",
+    "requirements": "Passport valid for 6 months, travel bookings, accommodation",
+    "fees": {
+      "application": "QAR 100",
+      "expeditedProcessing": "QAR 200"
+    },
+    "contactInfo": {
+      "embassyEmail": "visasupport@qatrembassy.gov",
+      "embassyPhone": "+974 4456 7890"
+    },
+    "additionalInfo": "Qatar is an emerging travel destination with rich culture and modern appeal."
+  }
   ]
   

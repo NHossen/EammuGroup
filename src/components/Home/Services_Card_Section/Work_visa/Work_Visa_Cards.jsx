@@ -18,7 +18,7 @@ const Work_Visa_Cards = () => {
     return (
         <div className="px-4 container mx-auto">
             {/* Work visa */}
-<h1 className="text-center text-4xl font-bold my-6">Top  Countries for Work</h1>
+<h1 className="text-center text-4xl font-bold my-6 text-[#005a31]">Work Visa Oppurtunity</h1>
 
 <div className="grid lg:grid-cols-3 gap-4">
      {

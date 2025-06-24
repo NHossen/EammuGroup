@@ -5,52 +5,52 @@ const countries = [
   {
     name: "USA",
     description: "Tourist, Student, and Work visa services for the United States with guidance through DS-160 and I-20 support.",
-    image: "https://images.unsplash.com/photo-1534438327271-0a4b5b4e0e5e?auto=format&fit=crop&w=1470&q=80",
+    image: "https://visadone.com/wp-content/uploads/2023/02/USA-VISA.png",
   },
   {
     name: "United Kingdom",
     description: "Expert support for UK Student visas, Visitor visas, and Skilled Worker routes.",
-    image: "https://images.unsplash.com/photo-1580164631896-18732f1b6f9d?auto=format&fit=crop&w=1470&q=80",
+    image: "https://visaguy.ae/wp-content/uploads/2021/08/1920x1080-uk.jpg",
   },
   {
     name: "Europe (Schengen)",
     description: "Multiple Schengen countries covered under one visa – ideal for students, tourists, and job seekers.",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80",
+    image: "https://www.babaaztravels.com/wp-content/uploads/2023/05/Schengen-Visit-Visa-Requirements-Babaaz-Travels.jpeg",
   },
   {
     name: "Canada",
     description: "We assist with SDS and Non-SDS streams, visitor visas, and work permits for Canada.",
-    image: "https://images.unsplash.com/photo-1529516546053-9f1183f53e32?auto=format&fit=crop&w=1470&q=80",
+    image: "https://pelicanmigration.com/wp-content/uploads/2024/01/Canada-Visitor-Visa.jpg",
   },
   {
     name: "Japan",
     description: "Student and visitor visa assistance with high-quality documentation and embassy submission tips.",
-    image: "https://images.unsplash.com/photo-1549692520-acc6669e2f0c?auto=format&fit=crop&w=1470&q=80",
+    image: "https://www.babaaztravels.com/wp-content/uploads/2022/04/japan.jpg",
   },
   {
     name: "Albania",
     description: "New trending destination for work and student visas. Visa documentation made easy.",
-    image: "https://images.unsplash.com/photo-1635865235149-8700c6a82e4a?auto=format&fit=crop&w=1470&q=80",
+    image: "https://www.shutterstock.com/image-vector/albania-visa-open-stamped-passport-600nw-2615269851.jpg",
   },
   {
     name: "Dubai (UAE)",
     description: "Tourist visas, freelance permits, and employment visas for UAE. Fast processing.",
-    image: "https://images.unsplash.com/photo-1508051123996-69f8caf4891e?auto=format&fit=crop&w=1470&q=80",
+    image: "https://canadiangeographic.ca/wp-content/uploads/2022/10/dubai-skyline-1440x1011.jpg",
   },
   {
     name: "Malaysia",
     description: "Tourist and student visa processing for Malaysia with university admission help.",
-    image: "https://images.unsplash.com/photo-1604450277824-d960bede54fd?auto=format&fit=crop&w=1470&q=80",
+    image: "https://travelobiz.com/wp-content/uploads/2023/01/Malaysia-eVisa-with-Map.jpg",
   },
   {
     name: "Thailand & Singapore",
     description: "Seamless processing for Thailand and Singapore tourist and short-term business visas.",
-    image: "https://images.unsplash.com/photo-1580894732444-df28c5b7b25b?auto=format&fit=crop&w=1470&q=80",
+    image: "https://www.tmtvisaservicephuket.com/wp-content/uploads/2024/10/Living-Or-Working-In-Thailand-Vs-Singapore-tmt-visa-service-thailand.jpg",
   },
   {
     name: "Hajj & Umrah",
     description: "Affordable and premium packages for Umrah and Hajj with all required documents and tickets.",
-    image: "https://images.unsplash.com/photo-1597686832163-1b7dbbaf6e1b?auto=format&fit=crop&w=1470&q=80",
+    image: "https://umrahtransport.com/wp-content/uploads/2025/03/how-long-is-umrah-closed-after-hajj.jpg",
   },
 ];
 
