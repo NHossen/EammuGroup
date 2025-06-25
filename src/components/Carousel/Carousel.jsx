@@ -61,7 +61,7 @@ const Carousel = () => {
           <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center text-white text-center px-6">
             <div>
               <h1 className="text-5xl font-bold mb-4">Welcome to Eammu</h1>
-              <p className="text-lg mb-6 font-bold">Connecting You To The World — Your Travel And Global Mobility Partner.</p>
+              <p className="text-lg font-bold mb-6">Connecting You To The World — Your Travel And Global Mobility Partner.</p>
               <Link 
                 to="/about" 
                 className="btn bg-white text-[#005a31] hover:bg-[#005a31] hover:text-white border border-[#005a31]"
@@ -104,10 +104,10 @@ const Carousel = () => {
             <div>
               <h2 className="text-4xl font-semibold mb-4">Trusted by Thousands — Your Journey Begins Here</h2>
               <ul className="text-lg space-y-2">
-                <li>🥇 98% Visa Success Rate</li>
-                <li>🤝 Partnerships with 30+ Countries</li>
-                <li>📞 24/7 Support in Bengali, English & Arabic</li>
-                <li>🏆 5+ Years of Immigration Experience</li>
+                <li className='text-lg font-bold'>🥇 98% Visa Success Rate</li>
+                <li className='text-lg font-bold'>🤝 Partnerships with 30+ Countries</li>
+                <li className='text-lg font-bold'>📞 24/7 Support in Bengali, English & Arabic</li>
+                <li className='text-lg font-bold'>🏆 5+ Years of Immigration Experience</li>
               </ul>
             </div>
           </div>
@@ -127,7 +127,7 @@ const Carousel = () => {
           <div className="absolute inset-0 bg-black/30 flex items-center justify-center text-white px-6 text-center">
             <div>
               <h2 className="text-3xl font-bold mb-2">Work, Study, or Travel — We Take You There</h2>
-              <p className="text-lg mb-4">
+              <p className="text-lg font-bold mb-4">
                 🇺🇸 USA, 🇨🇦 Canada, 🇬🇧 UK, 🇪🇺 Schengen, 🇦🇺 Australia, 🇯🇵 Japan, 🇲🇾 Malaysia<br />
                 🕋 Hajj & Umrah (Special Umrah 2025 Offer!)
               </p>
@@ -153,10 +153,10 @@ const Carousel = () => {
             <div>
               <h2 className="text-4xl font-bold mb-3">Real Stories. Real Success.</h2>
               <ul className="text-lg space-y-2">
-                <li>🎓 Students Visa Approved</li>
-                <li>👷 Workers Departing to Europe & UAE</li>
-                <li>✈️ Group Tour to Thailand | Photos & Memories</li>
-                <li>📸 See Our Client Testimonials & Video Stories</li>
+                <li className='text-lg font-bold'>🎓 Students Visa Approved</li>
+                <li className='text-lg font-bold'>👷 Workers Departing to Europe & UAE</li>
+                <li className='text-lg font-bold'>✈️ Group Tour to Thailand | Photos & Memories</li>
+                <li className='text-lg font-bold'>📸 See Our Client Testimonials & Video Stories</li>
               </ul>
               <Link to="/testimonials" className="btn bg-white text-[#005a31] hover:bg-[#005a31] hover:text-white border border-[#005a31] mt-4">
                 Customer Review
