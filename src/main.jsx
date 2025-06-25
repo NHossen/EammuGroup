@@ -30,6 +30,12 @@ import TourPackages from './components/OurServices/TourPackages.jsx';
 import Offer from './components/OurServices/Offer.jsx';
 import Blogs from './components/Blogs/Blogs.jsx';
 import MessageFromLeadingTeam from './components/Home/MessageFromLeadingTeam.jsx';
+import EammuItMarketing from './components/EammuGroupWebsites/EammuItMarketing/EammuItMarketing.jsx';
+import EammuEvent from './components/EammuGroupWebsites/EammuEvent/EammuEvent.jsx';
+import EammuDairy from './components/EammuGroupWebsites/EammuDairy/EammuDairy.jsx';
+import EammuTextile from './components/EammuGroupWebsites/EammuTextile/EammuTextile.jsx';
+import FlyZoo from './components/EammuGroupWebsites/FlyZoo/FlyZoo.jsx';
+import EammuTerms from './components/EammuUsefulLinks/EammuTerms/EammuTerms.jsx';
 
 // Routing Setup
 const router = createBrowserRouter([
@@ -49,15 +55,21 @@ const router = createBrowserRouter([
       { path: '/eammuimmigrationservices', element: <EammuImmigrationServices /> },
       { path: '/university_details/:id', element: <Details_More /> },
 
-      // Sub-services
+      // Sub-services 
       { path: '/targetusavisainterview', element: <TargetUsaInterview /> },
       { path: '/eammufashion', element: <EammuFashion /> },
+      { path: '/eammumarketing', element: <EammuItMarketing /> },
+      { path: '/eammuevent', element: <EammuEvent /> },
+      { path: '/eammudairy', element: <EammuDairy /> },
+      { path: '/eammutextile', element: <EammuTextile /> },
+      { path: '/flyzoo', element: <FlyZoo /> },
 
       // Useful Links MessageFromLeadingTeam
       { path: '/eammunewsfeeds', element: <EammuNewsfeeds /> },
       { path: '/eammucareers', element: <EammuCareers /> },
       { path: '/blogs', element: <Blogs /> },
       { path: '/messagefromleadingteam', element: <MessageFromLeadingTeam /> },
+      { path: '/eammuterms', element: <EammuTerms /> },
 
       // Auth
       { path: '/signup', element: <SignUp /> },

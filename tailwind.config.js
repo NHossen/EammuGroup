@@ -8,7 +8,11 @@ export default {
     ".flowbite-react\\class-list.json"
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'pulse-slow': 'pulse 4s ease-in-out infinite',
+      },
+    },
   },
   plugins: [require("daisyui"), flowbiteReact],
 }

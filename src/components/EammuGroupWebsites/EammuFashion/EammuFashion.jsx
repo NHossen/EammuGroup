@@ -15,12 +15,19 @@ const EammuFashion = () => {
         <meta property="og:image" content="https://yourdomain.com/eammu-fashion-preview.jpg" />
       </Helmet>
 
-      {/* Page Content */}
+      {/* Page Heading */}
       <div className="text-center mb-10">
         <h1 className="text-4xl font-bold text-[#005a31] mb-4">Welcome to Eammu Fashion</h1>
         <p className="text-gray-600 text-lg">
           Discover the perfect blend of tradition and modern trends with Eammu Fashion — your upcoming go-to destination for quality clothing in Bangladesh and beyond.
         </p>
+      </div>
+
+      {/* Visual Showcase */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <img src="https://i.ibb.co/hFzMT7f/panjabi.jpg" alt="Panjabi Style" className="rounded-lg shadow" />
+        <img src="https://i.ibb.co/wYKPNjw/women-fashion.jpg" alt="Women Style" className="rounded-lg shadow" />
+        <img src="https://i.ibb.co/VvFVL3L/kids.jpg" alt="Kids Wear" className="rounded-lg shadow" />
       </div>
 
       {/* Who We Are */}
@@ -39,7 +46,7 @@ const EammuFashion = () => {
         </p>
       </section>
 
-      {/* Coming Soon */}
+      {/* Coming Soon Collection */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold text-[#005a31] mb-2">Coming Soon at Eammu Fashion</h2>
         <ul className="list-disc pl-6 text-gray-700 space-y-2">
@@ -51,7 +58,7 @@ const EammuFashion = () => {
         </ul>
       </section>
 
-      {/* Locations */}
+      {/* Store Locations */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold text-[#005a31] mb-2">Where You'll Find Us</h2>
         <p className="text-gray-700">Eammu Fashion will be launching both online and offline stores:</p>
@@ -67,9 +74,9 @@ const EammuFashion = () => {
         <h2 className="text-2xl font-semibold text-[#005a31] mb-2">Follow Us</h2>
         <p className="text-gray-700">Be the first to get updates on launches, offers, and new arrivals:</p>
         <ul className="list-disc pl-6 text-blue-600 mt-2">
-          <li><a href="[Facebook Link]" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-          <li><a href="[Instagram Link]" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-          <li><a href="[TikTok Link]" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">TikTok</a></li>
         </ul>
       </section>
 

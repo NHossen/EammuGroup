@@ -1,4 +1,4 @@
-
+import { Helmet } from "react-helmet-async";
 import Carousel from "../Carousel/carousel";
 import Caresoul_BG_Mix from "./Caresoul_BG_Mix";
 import EammuImmigrationHeading_2 from "./EammuImmigrationHeading_2";
@@ -12,42 +12,68 @@ import Work_Visa_Cards from "./Services_Card_Section/Work_visa/Work_Visa_Cards";
 import TargetUsaSection from "./TargetUsaSection";
 import WhyChoiceEammu from "./WhyChoiceEammu";
 
-
-
 const Home = () => {
-    return (
-        <div>
+  return (
+    <div>
+      {/* SEO Helmet */}
+      <Helmet>
+        <title>Welcome to Eammu Immigration & Travel Services</title>
+        <meta
+          name="description"
+          content="Explore student, tourist, and work visa services by Eammu. We offer expert immigration help for USA, Canada, UK, Europe, and more."
+        />
+        <meta
+          name="keywords"
+          content="Eammu Immigration, Study Visa, Work Visa, Tourist Visa, Visa Consultancy, USA Visa, Canada Visa, UK Immigration, Bangladesh Visa Help"
+        />
+        <meta property="og:title" content="Eammu Immigration & Visa Services" />
+        <meta
+          property="og:description"
+          content="Visa consultancy for students, tourists, and workers. Partner with Eammu for global visa solutions."
+        />
+        <meta property="og:url" content="https://www.eammu.com/" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://yourdomain.com/images/eammu-home-banner.jpg"
+        />
+      </Helmet>
 
-          <Carousel></Carousel>
+      {/* Hero Carousel */}
+      <Carousel />
 
-      {/* Eammu Immigration Services Heading Section */}
-      <EammuImmigrationHeading_2></EammuImmigrationHeading_2>
-      {/* <!-- Carousel list --> */}
-      {/* Our Services */}
-      <Eammu_Carousel></Eammu_Carousel>
-        {/* Services Card */}
-        <Students_Cards></Students_Cards>
-        <Tourist_Visa_Cards></Tourist_Visa_Cards>
-        <Work_Visa_Cards></Work_Visa_Cards>
+      {/* Immigration Services Heading */}
+      <EammuImmigrationHeading_2 />
 
-      {/* Target Usa Visa Interview Preparation */}
-      <TargetUsaSection></TargetUsaSection>
+      {/* Service Highlights Carousel */}
+      <Eammu_Carousel />
 
-      {/* Registration With Eammu As A Agents */}
-      <Registration_Agents></Registration_Agents>
+      {/* Services Cards */}
+      <Students_Cards />
+      <Tourist_Visa_Cards />
+      <Work_Visa_Cards />
 
-      {/* Message From Leading Team */}
-      <MessageFromLeadingTeam></MessageFromLeadingTeam>
-      {/* Why Choice Us */}
-      <WhyChoiceEammu></WhyChoiceEammu>
-      {/* Caresoul_BG_Mix */}
-      <Caresoul_BG_Mix></Caresoul_BG_Mix>
-        {/* Our_Succsses_State */}
-        <Our_Succsses_State></Our_Succsses_State>
+      {/* USA Visa Interview Help */}
+      <TargetUsaSection />
 
+      {/* Agent Registration */}
+      <Registration_Agents />
 
-        </div>
-    );
+      {/* Leadership Message */}
+      <MessageFromLeadingTeam />
+
+      {/* Why Choose Us */}
+      <WhyChoiceEammu />
+
+      {/* Background Carousel */}
+      <Caresoul_BG_Mix />
+
+      {/* Success States */}
+      <Our_Succsses_State />
+      
+
+    </div>
+  );
 };
 
 export default Home;

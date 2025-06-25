@@ -10,11 +10,12 @@ const Footer = () => {
                     <header className="text-2xl text-[#4b4b4b] font-bold mb-2">Eammu Group Websites</header>
                     <Link className='mb-[6px]' to='/'><a className="link link-hover hover:text-[#005a31]">Eammu</a></Link>
                     <Link className='mb-[6px]' to='/eammuimmigrationservices'><a className="link link-hover hover:text-[#005a31]">Eammu Immigration Services</a></Link>
-                    <Link className='mb-[6px]' to='/about'><a className="link link-hover hover:text-[#005a31]">Eammu IT & Marketing Solutions</a></Link>
-                    <Link className='mb-[6px]' to='/about'><a className="link link-hover hover:text-[#005a31]">Eammu Event Management</a></Link>
-                    <Link className='mb-[6px]' to='/about'><a className="link link-hover hover:text-[#005a31]">Eammu Dairy & Poultry Farm</a></Link>
+                    <Link className='mb-[6px]' to='/eammumarketing'><a className="link link-hover hover:text-[#005a31]">Eammu IT & Marketing Solutions</a></Link>
+                    <Link className='mb-[6px]' to='/eammuevent'><a className="link link-hover hover:text-[#005a31]">Eammu Event Management</a></Link>
+                    <Link className='mb-[6px]' to='/eammudairy'><a className="link link-hover hover:text-[#005a31]">Eammu Dairy & Poultry Farm</a></Link>
                     <Link className='mb-[6px]' to='/eammufashion'><a className="link link-hover hover:text-[#005a31]">Eammu Fashion</a></Link>
-                    <Link className='mb-[6px]' to='/about'><a className="link link-hover hover:text-[#005a31]">Eammu Textile & Industry</a></Link>
+                    <Link className='mb-[6px]' to='/eammutextile'><a className="link link-hover hover:text-[#005a31]">Eammu Textile & Industry</a></Link>
+                    <Link className='mb-[6px]' to='/flyzoo'><a className="link link-hover hover:text-[#005a31]">Flyzoo</a></Link>
                 </nav>
 
                 {/* Useful Links Section */}
@@ -24,17 +25,17 @@ const Footer = () => {
                     <Link className='mb-[6px]' to='/about'><a className="link link-hover hover:text-[#005a31]">Eammu Recent Projects</a></Link>
                     <Link className='mb-[6px]' to='/messagefromleadingteam'><a className="link link-hover hover:text-[#005a31]">Our Leading Team</a></Link>
                     <Link className='mb-[6px]' to='/eammucareers'><a className="link link-hover hover:text-[#005a31]">Careers</a></Link>
-                    <Link className='mb-[6px]' to='/about'><a className="link link-hover hover:text-[#005a31]">Terms of use & Privacy policy</a></Link>
+                    <Link className='mb-[6px]' to='/eammuterms'><a className="link link-hover hover:text-[#005a31]">Terms of use & Privacy policy</a></Link>
                     <Link className='mb-[6px]' to='/about'><a className="link link-hover hover:text-[#005a31]">Why Choose Us</a></Link>
                 </nav>
 
                 {/* Social Media Section */}
                 <nav className='text-[#696969] font-light text-[18px] '>
                     <header className="text-2xl text-[#4b4b4b] font-bold mb-2">Eammu Social Media</header>
-                    <a className="link link-hover hover:text-[#005a31] mb-[6px]" href="https://facebook.com/eammu" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a className="link link-hover hover:text-[#005a31] mb-[6px]" href="https://facebook.com/eammuimmigrationservices" target="_blank" rel="noopener noreferrer">Facebook</a>
                     <a className="link link-hover hover:text-[#005a31] mb-[6px]" href="https://twitter.com/eammu" target="_blank" rel="noopener noreferrer">Twitter</a>
-                    <a className="link link-hover hover:text-[#005a31] mb-[6px]" href="https://linkedin.com/company/eammu" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <a className="link link-hover hover:text-[#005a31] mb-[6px]" href="https://instagram.com/eammu" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a className="link link-hover hover:text-[#005a31] mb-[6px]" href="https://linkedin.com/company/eammu-immigration-services" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a className="link link-hover hover:text-[#005a31] mb-[6px]" href="https://instagram.com/eammutour" target="_blank" rel="noopener noreferrer">Instagram</a>
                 </nav>
 
                 {/* Newsletter Section */}
@@ -69,7 +70,7 @@ const Footer = () => {
             {/* Copyright Bottom */}
             <div className="lg:flex justify-around items-center text-center my-16">
                 <p>
-                    © Copyright 2024 <a className='text-[#005a31] hover:text-gray-600 font-bold' href="https://eammu.com/" target="_blank" rel="noopener noreferrer">Eammu</a>, All rights reserved.
+                    © Copyright 2022 <a className='text-[#005a31] hover:text-gray-600 font-bold' href="https://www.eammu.com/" target="_blank" rel="noopener noreferrer">Eammu</a>, All rights reserved.
                 </p>
                 <h1 className='text-[#005a31] lg:text-[26px] text-[20px] lg:mt-0 mt-2'>Something New..!</h1>
             </div>
