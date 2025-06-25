@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import Carousel from "../Carousel/carousel";
 import Caresoul_BG_Mix from "./Caresoul_BG_Mix";
 import EammuImmigrationHeading_2 from "./EammuImmigrationHeading_2";
 import Eammu_Carousel from "./Eammu_Carousel";
@@ -11,6 +10,7 @@ import Tourist_Visa_Cards from "./Services_Card_Section/Tourist_visa/Tourist_Vis
 import Work_Visa_Cards from "./Services_Card_Section/Work_visa/Work_Visa_Cards";
 import TargetUsaSection from "./TargetUsaSection";
 import WhyChoiceEammu from "./WhyChoiceEammu";
+import Carousel from "../Carousel/Carousel";
 
 const Home = () => {
   return (
@@ -40,7 +40,7 @@ const Home = () => {
       </Helmet>
 
       {/* Hero Carousel */}
-      <Carousel />
+      <Carousel></Carousel>
 
       {/* Immigration Services Heading */}
       <EammuImmigrationHeading_2 />
