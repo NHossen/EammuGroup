@@ -55,7 +55,7 @@ const countries = [
   {
     name: "Australia",
     description: "Student, work, and tourist visa assistance with pathways to permanent residency.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/b/b9/Australia_Flag_Map.svg",
+    image: "https://www.kkday.com/en-sg/blog/wp-content/uploads/Aussie-VTL-1170x680.jpg",
   },
   {
     name: "New Zealand",

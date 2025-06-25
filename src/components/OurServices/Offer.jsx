@@ -6,31 +6,31 @@ const offers = [
     id: 1,
     title: "Summer Special Discount",
     description: "Get 15% off on all international tour packages booked before July 31.",
-    image: "https://images.unsplash.com/photo-1600891963935-c3b9b4c9c453?auto=format&fit=crop&w=800&q=80",
+    image: "https://img.freepik.com/premium-vector/summer-sale-template-clipart-poster-summer-promo-limited-time-offer-with-watermelon-ice-cream_572288-4518.jpg?semt=ais_hybrid&w=740",
   },
   {
     id: 2,
     title: "Student Visa Promo",
     description: "Flat $100 off on student visa processing fees for select countries.",
-    image: "https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=800&q=80",
+    image: "https://www.shutterstock.com/image-vector/limited-offer-banner-sale-clock-600nw-1912324219.jpg",
   },
   {
     id: 3,
     title: "Early Bird Flight Deal",
     description: "Book your air tickets 3 months in advance and save up to 20%.",
-    image: "https://images.unsplash.com/photo-1506617420156-8e4536971650?auto=format&fit=crop&w=800&q=80",
+    image: "https://dynamicimagesae.rehlat.com/DynamicImages/DealsAndOffers/DealsInfo/644_202404301235006641.jpg",
   },
   {
     id: 4,
     title: "Family Tour Package Offer",
     description: "Book for 4 or more family members and get special group discounts.",
-    image: "https://images.unsplash.com/photo-1606788075765-c8497d41e25a?auto=format&fit=crop&w=800&q=80",
+    image: "https://offercdn.paytm.com/blog/2023/03/friends-family-app.png",
   },
   {
     id: 5,
-    title: "Work Visa Fast Track",
-    description: "Fast-track your work visa application with zero extra charge for June.",
-    image: "https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=800&q=80",
+    title: "Fast Track Travel Offer",
+    description: "Fast Track Travel Offer visa application with zero extra charge for June.",
+    image: "https://dynamicimagesae.rehlat.com/DynamicImages/DealsAndOffers/DealsInfo/664_202305100952564008.jpg",
   },
 ];
 

@@ -44,16 +44,19 @@ const AirTickets = () => {
 
       {/* Call to Action */}
       <div className="text-center mt-12">
-        <p className="text-xl font-medium text-gray-800 mb-4">
-          Need tickets today? Contact our team directly to book your flight!
-        </p>
-        <a
-          href="https://wa.me/YOUR_NUMBER" // replace with your WhatsApp/contact link
-          className="inline-block bg-[#005a31] text-white px-6 py-2 rounded-full hover:bg-[#003e24] transition"
-        >
-          Book Now
-        </a>
-      </div>
+  <p className="text-xl font-medium text-gray-800 mb-4">
+    Need tickets today? Contact our team directly to book your flight!
+  </p>
+  <a
+    href="https://wa.me/8801631312524?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block bg-[#005a31] text-white px-6 py-2 rounded-full hover:bg-[#003e24] transition"
+  >
+    Book Now on WhatsApp
+  </a>
+</div>
+
     </div>
   );
 };

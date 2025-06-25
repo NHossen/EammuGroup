@@ -25,9 +25,9 @@ const EammuFashion = () => {
 
       {/* Visual Showcase */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-        <img src="https://i.ibb.co/hFzMT7f/panjabi.jpg" alt="Panjabi Style" className="rounded-lg shadow" />
-        <img src="https://i.ibb.co/wYKPNjw/women-fashion.jpg" alt="Women Style" className="rounded-lg shadow" />
-        <img src="https://i.ibb.co/VvFVL3L/kids.jpg" alt="Kids Wear" className="rounded-lg shadow" />
+        <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2024/SEPTEMBER/9/AqOsZhUa_04de791acf874a8fb4e99f1c018d5835.jpg" alt="Panjabi Style" className="rounded-lg shadow" />
+        <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/29407926/2024/5/7/fe50718e-3bfb-4068-9f29-457b2441f4791715093101854Sarees1.jpg" alt="Women Style" className="rounded-lg shadow" />
+        <img src="https://assets.vogue.in/photos/5f214a9d9ffca08d18483816/master/w_1600%2Cc_limit/Neha%2520Mehra%25201.jpg" alt="Kids Wear" className="rounded-lg shadow" />
       </div>
 
       {/* Who We Are */}

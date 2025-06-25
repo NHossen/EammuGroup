@@ -120,7 +120,7 @@ const Carousel = () => {
         {/* Slide 3 */}
         <div id="slide3" className="carousel-item w-full h-full snap-center relative flex-shrink-0">
           <img
-            src="https://images.unsplash.com/photo-1562577309-2592ab84b1bc"
+            src="https://cdn.ama.ab.ca/amatravelinternal/articles/images/double-decker-london.jpg"
             className="object-cover w-full h-full"
             alt="Global Visa Destinations - Eammu Services"
           />
