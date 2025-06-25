@@ -4,83 +4,83 @@
     "region": "Europe",
     "countries": ["United Kingdom", "Germany", "France", "Netherlands", "Sweden"],
     "description": "Explore top countries in Europe for higher education, work, and immigration opportunities.",
-    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80"
+    "image": "https://www.jeduka.com/storage/newsletter/1600848331_student%20visa%20for%20europe.jpg"
   },
   {
     "id": 2,
     "region": "USA",
     "countries": ["United States of America"],
     "description": "Discover opportunities in the USA for students and professionals worldwide.",
-    "image": "https://media.licdn.com/dms/image/v2/D5612AQF1NUQDRrFi5A/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1701335341398?e=2147483647&v=beta&t=LrrX57mT4RVr9RZ8wqmcD7daZRG1ZjdBUJDO6HKU7_s"
+    "image": "https://assets.studies-overseas.com/usa_student_visa_83cb435b41.png"
   },
   {
     "id": 3,
     "region": "Australia",
     "countries": ["Australia"],
     "description": "Learn about Australia's best cities and universities for international study and work.",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1470&q=80"
+    "image": "https://www.rapidmigration.com.au/wp-content/uploads/2021/09/student-visa.jpg"
   },
   {
     "id": 4,
     "region": "Canada",
     "countries": ["Canada"],
     "description": "Canada welcomes students and workers with great education systems and immigration pathways.",
-    "image": "https://images.unsplash.com/photo-1529516546053-9f1183f53e32?auto=format&fit=crop&w=1470&q=80"
+    "image": "https://www.go.study/assets/canada/study-visa-for-canada.jpg"
   },
   {
     "id": 5,
     "region": "Dubai",
     "countries": ["United Arab Emirates"],
     "description": "Dubai offers dynamic business, education, and living opportunities in the Middle East.",
-    "image": "https://images.unsplash.com/photo-1508051123996-69f8caf4891e?auto=format&fit=crop&w=1470&q=80"
+    "image": "https://www.eurobuddypvtltd.com/img/services/151174680_275708143908340_2076240972052370200_n.jpg"
   },
   {
     "id": 6,
-    "region": "Asia",
+    "region": "China",
     "countries": ["Japan", "South Korea", "Malaysia", "Singapore", "China"],
-    "description": "Asia is rapidly becoming a hub for quality education, innovation, and affordable tuition for international students.",
-    "image": "https://images.unsplash.com/photo-1578926375605-eaf7559b1458?auto=format&fit=crop&w=1470&q=80"
+    "description": "China is rapidly becoming a hub for quality education, innovation, and affordable tuition for international students.",
+    "image": "https://ruhegr.com/wp-content/uploads/2021/11/study-in-china-header-1024x614-1.png"
   },
   {
     "id": 7,
-    "region": "Eastern Europe",
+    "region": "Japan",
     "countries": ["Russia", "Poland", "Hungary", "Czech Republic", "Romania"],
-    "description": "Eastern Europe offers affordable, high-quality education and diverse cultural experiences for international students.",
-    "image": "https://images.unsplash.com/photo-1604668915840-496f4ac8bca2?auto=format&fit=crop&w=1470&q=80"
+    "description": "Japan offers affordable, high-quality education and diverse cultural experiences for international students.",
+    "image": "https://www.siecindia.com/uploads/blog/blog_04c227a908cb77a7b8b3bb2791ea4bf6_1721732771study-in-japan.jpg"
   },
   {
     "id": 8,
     "region": "New Zealand",
     "countries": ["New Zealand"],
     "description": "New Zealand is known for its welcoming environment, high education standards, and post-study work opportunities.",
-    "image": "https://images.unsplash.com/photo-1547721064-da6cfb341d50?auto=format&fit=crop&w=1470&q=80"
+    "image": "https://www.jeduka.com/storage/newsletter/1599288264_STUDY_IN_New_Zealand.jpg"
   },
   {
     "id": 9,
-    "region": "Ireland",
-    "countries": ["Ireland"],
-    "description": "Ireland offers globally recognized degrees, vibrant student life, and strong ties to tech and finance industries.",
-    "image": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1470&q=80"
+    "region": "Russia",
+    "countries": ["Russia"],
+    "description": "Russia offers globally recognized degrees, vibrant student life, and strong ties to tech and finance industries.",
+    "image": "https://www.britannicaoverseas.com/uploads/blogs/study-in-russia_1742025452.webp"
   },
   {
     "id": 10,
     "region": "Turkey",
     "countries": ["Turkey"],
     "description": "Turkey bridges Europe and Asia with affordable education, cultural richness, and growing English-taught programs.",
-    "image": "https://images.unsplash.com/photo-1505159940484-eb2b9f929c05?auto=format&fit=crop&w=1470&q=80"
+    "image": "https://www.jeduka.com/storage/newsletter/1608964171_Study%20in%20Turkey.jpg"
   },
   {
     "id": 11,
-    "region": "South America",
+    "region": "Germany",
     "countries": ["Brazil", "Argentina", "Chile", "Colombia", "Peru"],
-    "description": "South America offers affordable tuition, cultural diversity, and growing English-taught programs in renowned universities.",
-    "image": "https://images.unsplash.com/photo-1588361861136-bd6b1e9d3c0a?auto=format&fit=crop&w=1470&q=80"
+    "description": "Germany offers affordable tuition, cultural diversity, and growing English-taught programs in renowned universities.",
+    "image": "https://www.joinincampus.com/storage/newsletter/1606541125_Study_in_Germany.jpg"
   },
   {
     "id": 12,
-    "region": "Africa",
+    "region": "Hungary",
     "countries": ["South Africa", "Egypt", "Morocco", "Kenya", "Nigeria"],
-    "description": "Africa’s top universities provide unique academic opportunities, especially in fields like development, medicine, and technology.",
-    "image": "https://images.unsplash.com/photo-1535914254981-b5012eebbd15?auto=format&fit=crop&w=1470&q=80"
+    "description": "Hungarys top universities provide unique academic opportunities, especially in fields like development, medicine, and technology.",
+    "image": "https://careeroclock.com/wp-content/uploads/2025/02/Study-In-Hungary.jpg"
   }
 ]
