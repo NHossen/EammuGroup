@@ -36,6 +36,7 @@ import EammuDairy from './components/EammuGroupWebsites/EammuDairy/EammuDairy.js
 import EammuTextile from './components/EammuGroupWebsites/EammuTextile/EammuTextile.jsx';
 import FlyZoo from './components/EammuGroupWebsites/FlyZoo/FlyZoo.jsx';
 import EammuTerms from './components/EammuUsefulLinks/EammuTerms/EammuTerms.jsx';
+import Testimonials from './components/Testimonials/Testimonials.jsx';
 
 // Routing Setup
 const router = createBrowserRouter([
@@ -64,12 +65,13 @@ const router = createBrowserRouter([
       { path: '/eammutextile', element: <EammuTextile /> },
       { path: '/flyzoo', element: <FlyZoo /> },
 
-      // Useful Links MessageFromLeadingTeam
+      // Useful Links MessageFromLeadingTeam /testimonials
       { path: '/eammunewsfeeds', element: <EammuNewsfeeds /> },
       { path: '/eammucareers', element: <EammuCareers /> },
       { path: '/blogs', element: <Blogs /> },
       { path: '/messagefromleadingteam', element: <MessageFromLeadingTeam /> },
       { path: '/eammuterms', element: <EammuTerms /> },
+      { path: '/testimonials', element: <Testimonials /> },
 
       // Auth
       { path: '/signup', element: <SignUp /> },

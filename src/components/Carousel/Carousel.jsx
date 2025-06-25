@@ -1,4 +1,3 @@
-
 import { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaPassport, FaPlaneDeparture, FaSuitcaseRolling, FaStar } from 'react-icons/fa';
@@ -6,7 +5,6 @@ import { FaPassport, FaPlaneDeparture, FaSuitcaseRolling, FaStar } from 'react-i
 const Carousel = () => {
   const carouselRef = useRef(null);
 
-  // Auto-scroll every 8 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       const slides = carouselRef.current?.querySelectorAll('.carousel-item');
@@ -58,22 +56,19 @@ const Carousel = () => {
           <img
             src="https://i.ibb.co/bj2Wpwzy/green-plane-ecofriendly-environment.jpg"
             className="object-cover w-full h-full"
-            alt="Welcome"
+            alt="Welcome to Eammu - Your Travel Partner"
           />
           <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center text-white text-center px-6">
             <div>
               <h1 className="text-5xl font-bold mb-4">Welcome to Eammu</h1>
               <p className="text-lg mb-6 font-bold">Connecting You To The World — Your Travel And Global Mobility Partner.</p>
-             <Link 
-  to="/about" 
-  className="btn bg-white text-[#005a31] hover:bg-[#005a31] hover:text-white border border-[#005a31]"
-  style={{ pointerEvents: 'auto', position: 'relative', zIndex: 10 }}
->
-  Explore More
-</Link>
-
-
-              {/* Service Links */}
+              <Link 
+                to="/about" 
+                className="btn bg-white text-[#005a31] hover:bg-[#005a31] hover:text-white border border-[#005a31]"
+                style={{ pointerEvents: 'auto', position: 'relative', zIndex: 10 }}
+              >
+                Explore More
+              </Link>
               <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
                 {serviceLinks.map((service, idx) => (
                   <Link
@@ -101,17 +96,18 @@ const Carousel = () => {
         {/* Slide 2 */}
         <div id="slide2" className="carousel-item w-full h-full snap-center relative flex-shrink-0">
           <img
-            src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?q=80&w=1170&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1570129477492-45c003edd2be"
             className="object-cover w-full h-full"
-            alt="Services"
+            alt="Why Choose Eammu - Trusted Immigration Partner"
           />
-          <div className="absolute inset-0 bg-[#005a31]/30 flex items-center justify-center text-white text-center px-6">
+          <div className="absolute inset-0 bg-[#005a31]/40 flex items-center justify-center text-white text-center px-6">
             <div>
-              <h2 className="text-4xl font-semibold mb-4">Our Services</h2>
+              <h2 className="text-4xl font-semibold mb-4">Trusted by Thousands — Your Journey Begins Here</h2>
               <ul className="text-lg space-y-2">
-                <li>🌍 Immigration & Visa Support</li>
-                <li>💻 Web & Marketing Solutions</li>
-                <li>✈️ Global Tour Packages</li>
+                <li>🥇 98% Visa Success Rate</li>
+                <li>🤝 Partnerships with 30+ Countries</li>
+                <li>📞 24/7 Support in Bengali, English & Arabic</li>
+                <li>🏆 5+ Years of Immigration Experience</li>
               </ul>
             </div>
           </div>
@@ -124,15 +120,20 @@ const Carousel = () => {
         {/* Slide 3 */}
         <div id="slide3" className="carousel-item w-full h-full snap-center relative flex-shrink-0">
           <img
-            src="https://plus.unsplash.com/premium_photo-1661963475189-e022934dceb7?q=80&w=1384&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1562577309-2592ab84b1bc"
             className="object-cover w-full h-full"
-            alt="Testimonials"
+            alt="Global Visa Destinations - Eammu Services"
           />
           <div className="absolute inset-0 bg-black/30 flex items-center justify-center text-white px-6 text-center">
             <div>
-              <h2 className="text-3xl font-semibold mb-2">What Our Clients Say</h2>
-              <p className="italic mb-4">"Eammu helped me get my student visa smoothly. Their service is excellent and transparent!"</p>
-              <span>- Mahira Aleen, Bangladesh</span>
+              <h2 className="text-3xl font-bold mb-2">Work, Study, or Travel — We Take You There</h2>
+              <p className="text-lg mb-4">
+                🇺🇸 USA, 🇨🇦 Canada, 🇬🇧 UK, 🇪🇺 Schengen, 🇦🇺 Australia, 🇯🇵 Japan, 🇲🇾 Malaysia<br />
+                🕋 Hajj & Umrah (Special Umrah 2025 Offer!)
+              </p>
+              <Link to="/visaservices" className="btn bg-white text-[#005a31] hover:bg-[#005a31] hover:text-white border border-[#005a31]">
+                Explore Countries
+              </Link>
             </div>
           </div>
           <div className="absolute left-5 right-5 top-1/2 flex justify-between transform -translate-y-1/2">
@@ -144,16 +145,21 @@ const Carousel = () => {
         {/* Slide 4 */}
         <div id="slide4" className="carousel-item w-full h-full snap-center relative flex-shrink-0">
           <img
-            src="https://plus.unsplash.com/premium_photo-1661963591821-a7787fd6a4f7?q=80&w=1170&auto=format&fit=crop"
+            src="https://polaristravel.az/images/blog/travel-insurance-blog.jpeg"
             className="object-cover w-full h-full"
-            alt="CTA"
+            alt="Client Testimonials - Real Success Stories"
           />
-          <div className="absolute inset-0 bg-[#005a31]/30 flex items-center justify-center text-white px-6 text-center">
+          <div className="absolute inset-0 bg-[#005a31]/40 flex items-center justify-center text-white px-6 text-center">
             <div>
-              <h2 className="text-4xl font-bold mb-3">Let’s Get Started!</h2>
-              <p className="mb-6">Ready to transform your future with Eammu?</p>
-              <Link to="/contact" className="btn bg-white text-[#005a31] hover:bg-[#005a31] hover:text-white border border-[#005a31]">
-                Contact Us Now
+              <h2 className="text-4xl font-bold mb-3">Real Stories. Real Success.</h2>
+              <ul className="text-lg space-y-2">
+                <li>🎓 Students Visa Approved</li>
+                <li>👷 Workers Departing to Europe & UAE</li>
+                <li>✈️ Group Tour to Thailand | Photos & Memories</li>
+                <li>📸 See Our Client Testimonials & Video Stories</li>
+              </ul>
+              <Link to="/testimonials" className="btn bg-white text-[#005a31] hover:bg-[#005a31] hover:text-white border border-[#005a31] mt-4">
+                Customer Review
               </Link>
             </div>
           </div>
@@ -162,6 +168,7 @@ const Carousel = () => {
             <button className="btn btn-circle" onClick={() => scrollToSlide("slide1")}>❯</button>
           </div>
         </div>
+
       </div>
     </div>
   );
