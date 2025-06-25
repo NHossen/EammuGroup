@@ -145,7 +145,7 @@ const Carousel = () => {
         {/* Slide 4 */}
         <div id="slide4" className="carousel-item w-full h-full snap-center relative flex-shrink-0">
           <img
-            src="https://polaristravel.az/images/blog/travel-insurance-blog.jpeg"
+            src="https://images.unsplash.com/photo-1747276737245-b10e95175577?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             className="object-cover w-full h-full"
             alt="Client Testimonials - Real Success Stories"
           />
