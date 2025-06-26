@@ -36,7 +36,7 @@ const EammuTextile = () => {
         </p>
         <img
           className="rounded-lg mt-6 mx-auto w-full max-w-3xl"
-          src="https://images.unsplash.com/photo-1581579185169-87926e6cdd5b?auto=format&fit=crop&w=1470&q=80"
+          src="https://curiosityuntamed.com/wp-content/uploads/2021/01/Learn-About.jpg"
           alt="Eammu Textile Production"
         />
       </div>
