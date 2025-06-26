@@ -11,19 +11,20 @@ const Footer = () => {
     <div className="mb-8">
       <h4 className="text-xl font-semibold text-[#005a31] mb-4">We Accept</h4>
       <div className="flex flex-wrap justify-center items-center gap-6">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="VISA" className="h-8 sm:h-10" />
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="MasterCard" className="h-8 sm:h-10" />
-        <img src="https://www.logo.wine/a/logo/BKash/BKash-bKash-Logo.wine.svg" alt="bKash" className="h-8 sm:h-10" />
-        <img src="https://miro.medium.com/v2/resize:fit:1400/1*1JMzKz_LENBDkVN83qyE0Q.png" alt="Rocket" className="h-8 sm:h-10" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="VISA" className="h-4 sm:h-10" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="MasterCard" className="h-4 sm:h-10" />
+        <img src="https://www.logo.wine/a/logo/BKash/BKash-bKash-Logo.wine.svg" alt="bKash" className="h-10 sm:h-10" />
+        <img src="https://miro.medium.com/v2/resize:fit:1400/1*1JMzKz_LENBDkVN83qyE0Q.png" alt="Rocket" className="h-10 sm:h-10" />
       </div>
     </div>
 
-    {/* Certifications */}
+    {/* Certifications  */}
     <div>
       <h4 className="text-xl font-semibold text-[#005a31] mb-4">Certified & Approved</h4>
       <div className="flex flex-wrap justify-center items-center gap-6">
         <img src="https://www.alliancealliance.com/wp-content/uploads/2018/03/IATA-icon.png" alt="IATA Approved" className="h-8 sm:h-10" />
         <img src="https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/product-categories/security-identity-compliance/compliance/approved/images/9f85a551-bd1b-4f4e-b831-b4e007d98a38.84c734e79f09168de3a939175a1d477caf47d179.png" alt="Govt Approved" className="h-8 sm:h-10" />
+        <img src="https://i.ibb.co/3yPCJrz7/Screenshot-2025-06-26-174513.png" alt="IATA Approved" className="h-8 sm:h-10" />
       </div>
     </div>
 
