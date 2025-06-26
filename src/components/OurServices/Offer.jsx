@@ -38,7 +38,7 @@ const Offer = () => {
   return (
     <div className="px-4 container mx-auto py-10">
       <Helmet>
-        <title>Offers - Eammu Immigration & Tours</title>
+        <title>Eammu - Offers </title>
         <meta
           name="description"
           content="Check out the latest offers from Eammu — including discounts on tourist visas, student visas, air tickets, and family tour packages."

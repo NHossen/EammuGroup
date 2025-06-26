@@ -5,7 +5,7 @@ const AirTickets = () => {
   return (
     <div className="px-4 container mx-auto py-10">
       <Helmet>
-        <title>Air Ticket Services | Eammu Immigration</title>
+        <title>Air Ticket Services | Eammu </title>
         <meta name="description" content="Book domestic and international air tickets with Eammu. Currently offering offline booking. IATA & API booking features coming soon." />
       </Helmet>
 

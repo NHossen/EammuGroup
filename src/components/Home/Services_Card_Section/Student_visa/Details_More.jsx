@@ -48,9 +48,14 @@ const Details_More = () => {
         </div>
 
         <div className="text-center mt-6">
-          <button className="bg-[#005a31] text-white hover:bg-white hover:text-[#005a31] hover:border hover:border-[#005a31] px-6 py-3 rounded-full font-semibold transition duration-300">
-            Contact Eammu Now
-          </button>
+         <a
+    href="https://wa.me/8801631312524?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block bg-[#005a31] text-white px-6 py-2 rounded-full hover:bg-[#003e24] transition"
+  >
+    Contact Now
+  </a>
         </div>
       </div>
     </div>

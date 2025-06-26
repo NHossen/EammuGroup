@@ -52,7 +52,7 @@ const EammuCareers = () => {
 
           {/* Placeholder link — replace `your-google-form-link` */}
           <a
-            href="https://forms.gle/your-google-form-link"
+            href="https://forms.gle/a2UU8sNva7FZKp8g6"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-green-800 text-white px-6 py-3 rounded-full hover:bg-green-900 transition"

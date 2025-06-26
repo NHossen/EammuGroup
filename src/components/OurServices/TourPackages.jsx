@@ -182,7 +182,7 @@ const TourPackages = () => {
     <HelmetProvider>
       <>
         <Helmet>
-          <title>Tour Packages - Domestic & International | Eammu Tours</title>
+          <title> Eammu Tour Packages - Domestic & International </title>
           <meta
             name="description"
             content="Discover popular domestic and international tour packages for Bangladeshis offered by Eammu Tours. From Cox's Bazar to Dubai, explore top destinations with us."

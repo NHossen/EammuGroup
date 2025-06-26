@@ -106,7 +106,7 @@ const Blogs = () => {
   return (
     <div className="px-4 container mx-auto py-10">
       <Helmet>
-        <title>Blogs - Eammu & Travel News</title>
+        <title>Eammu Blogs - Visa And Travel News</title>
         <meta
           name="description"
           content="Stay updated with the latest visa news, travel tips, immigration offers, and student opportunities with Eammu."
