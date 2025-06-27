@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 
 const countries = [
   {
@@ -158,23 +159,21 @@ const countries = [
     image: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg",
   },
   {
-  name: "Mexico",
-  description: "Tourist and business visa assistance for Mexico with streamlined processing.",
-  image: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg",
-},
-{
-  name: "Brazil",
-  description: "Work, study, and tourist visa services for Brazil with local embassy support.",
-  image: "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg",
-},
-
+    name: "Mexico",
+    description: "Tourist and business visa assistance for Mexico with streamlined processing.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg",
+  },
+  {
+    name: "Brazil",
+    description: "Work, study, and tourist visa services for Brazil with local embassy support.",
+    image: "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg",
+  },
 ];
 
 const VisaServices = () => {
   return (
     <div className="px-4 container mx-auto py-10">
       <Helmet>
-        {/* Basic SEO */}
         <title>Visa Services | Eammu Immigration - USA, UK, Europe & More</title>
         <meta
           name="description"
@@ -185,8 +184,6 @@ const VisaServices = () => {
           content="Visa services, Tourist visa, Student visa, Work visa, USA visa, UK visa, Europe visa, Canada visa, Japan visa, Hajj visa, Umrah visa, immigration, Eammu Immigration"
         />
         <meta name="author" content="Eammu Immigration Services" />
-
-        {/* Open Graph / Facebook */}
         <meta property="og:title" content="Visa Services | Eammu Immigration" />
         <meta
           property="og:description"
@@ -198,8 +195,6 @@ const VisaServices = () => {
           property="og:image"
           content="https://visadone.com/wp-content/uploads/2023/02/USA-VISA.png"
         />
-
-        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Visa Services | Eammu Immigration" />
         <meta
@@ -212,7 +207,6 @@ const VisaServices = () => {
         />
       </Helmet>
 
-      {/* Page Title */}
       <header className="text-center mb-10">
         <h1 className="text-4xl font-bold text-[#005a31] mb-4">Visa Services by Eammu Immigration</h1>
         <p className="text-gray-700 text-lg max-w-3xl mx-auto">
@@ -221,7 +215,6 @@ const VisaServices = () => {
         </p>
       </header>
 
-      {/* Visa Cards Section */}
       <section aria-label="Visa service countries" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {countries.map((country, index) => (
           <article
@@ -251,20 +244,30 @@ const VisaServices = () => {
         ))}
       </section>
 
-      {/* Future Feature */}
+      {/* Bottom Call to Action */}
       <section className="mt-12 bg-[#f4f4f4] p-6 rounded-md text-center" aria-live="polite">
         <h2 className="text-2xl font-bold text-[#005a31] mb-3">What's Coming Next?</h2>
-        <p className="text-gray-700 max-w-xl mx-auto">
+        <p className="text-gray-700 max-w-xl mx-auto mb-4">
           We are working on launching a powerful <strong>Visa Requirements Search API</strong> — where you can select any country and see updated visa requirements instantly. You will also be able to view visa cards, filter by purpose, and apply directly online through Eammu!
         </p>
+
         <a
-    href="https://wa.me/8801631312524?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-block bg-[#005a31] text-white px-6 py-2 rounded-full hover:bg-[#003e24] transition"
-  >
-    Book Now on WhatsApp
-  </a>
+          href="https://wa.me/8801631312524?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-[#005a31] text-white px-6 py-2 rounded-full hover:bg-[#003e24] transition"
+        >
+          Book Now on WhatsApp
+        </a>
+
+        <div className="mt-4">
+          <Link
+            to="/"
+            className="inline-block bg-white border border-green-800 text-green-800 px-6 py-3 rounded-full hover:bg-green-100 transition"
+          >
+            Back to Home
+          </Link>
+        </div>
       </section>
     </div>
   );

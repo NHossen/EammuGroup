@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Link } from 'react-router-dom';
 
 const domesticTours = [
   {
@@ -250,6 +251,31 @@ const TourPackages = () => {
               ))}
             </div>
           </section>
+            {/* Bottom Call to Action */}
+                <section className="mt-12 bg-[#f4f4f4] p-6 rounded-md text-center" aria-live="polite">
+                  <h2 className="text-2xl font-bold text-[#005a31] mb-3">What's Coming Next?</h2>
+                  <p className="text-gray-700 max-w-xl mx-auto mb-4">
+                    We are working on launching a powerful <strong>Tour Packages Search API</strong> — where you can select any country and see updated Tour Packages instantly. You will also be able to view visa cards, filter by purpose, and apply directly online through Eammu!
+                  </p>
+          
+                  <a
+                    href="https://wa.me/8801631312524?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-[#005a31] text-white px-6 py-2 rounded-full hover:bg-[#003e24] transition"
+                  >
+                    Book Now on WhatsApp
+                  </a>
+          
+                  <div className="mt-4">
+                    <Link
+                      to="/"
+                      className="inline-block bg-white border border-green-800 text-green-800 px-6 py-3 rounded-full hover:bg-green-100 transition"
+                    >
+                      Back to Home
+                    </Link>
+                  </div>
+                </section>
         </div>
       </>
     </HelmetProvider>

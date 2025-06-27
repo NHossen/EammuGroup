@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { Link } from 'react-router-dom';
 
 const offers = [
   {
@@ -67,6 +68,28 @@ const Offer = () => {
           </div>
         ))}
       </div>
+         {/* Call to Action & Back to Home */}
+            <div className="text-center mt-12">
+              <p className="text-xl font-medium text-gray-800 mb-4">
+                Need Offer today? Contact our team directly to book your Tour!
+              </p>
+              <a
+                href="https://wa.me/8801631312524?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-[#005a31] text-white px-6 py-2 rounded-full hover:bg-[#003e24] transition mb-4"
+              >
+                Book Now on WhatsApp
+              </a>
+              <div className="mt-4">
+                <Link
+                  to="/"
+                  className="inline-block bg-white border border-green-800 text-green-800 px-6 py-3 rounded-full hover:bg-green-100 transition"
+                >
+                  Back to Home
+                </Link>
+              </div>
+            </div>
     </div>
   );
 };

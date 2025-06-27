@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   return (
@@ -42,9 +43,9 @@ const Contact = () => {
 
               <p>
                 <strong>WhatsApp & Phone:</strong><br />
-                +880 16 3131-2524<br />
-                +880 17 0169-9743<br />
-                +971 50 707 8334 (UAE Office)
+                <a href="tel:+8801631312524" className="hover:underline">+880 16 3131-2524</a><br />
+                <a href="tel:+8801701699743" className="hover:underline">+880 17 0169-9743</a><br />
+                <a href="tel:+971507078334" className="hover:underline">+971 50 707 8334 (UAE Office)</a>
               </p>
 
               <p>
@@ -139,6 +140,23 @@ const Contact = () => {
             View on Google Maps
           </a>
         </section>
+
+        {/* Final CTA Buttons */}
+        <div className="text-center mt-12 space-x-4">
+          <a
+            href="tel:+8801631312524"
+            className="inline-block bg-green-800 text-white px-6 py-3 rounded-full hover:bg-green-900 transition"
+          >
+            📞 Call Now
+          </a>
+
+          <Link
+            to="/"
+            className="inline-block bg-white border border-green-800 text-green-800 px-6 py-3 rounded-full hover:bg-green-100 transition"
+          >
+            ⬅ Back to Home
+          </Link>
+        </div>
       </main>
     </>
   );
