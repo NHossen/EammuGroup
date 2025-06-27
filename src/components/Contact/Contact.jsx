@@ -63,13 +63,13 @@ const Contact = () => {
             <div>
               <p className="text-gray-800 font-semibold">Follow Us:</p>
               <div className="flex gap-4 mt-2">
-                <a href="https://facebook.com/eammu" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                <a href="https://facebook.com/eammuimmigrationservices" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
                   Facebook
                 </a>
-                <a href="https://instagram.com/eammu" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:underline">
+                <a href="https://instagram.com/eammutour" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:underline">
                   Instagram
                 </a>
-                <a href="https://linkedin.com/company/eammu" target="_blank" rel="noopener noreferrer" className="text-blue-800 hover:underline">
+                <a href="https://linkedin.com/company/eammu-immigration-services" target="_blank" rel="noopener noreferrer" className="text-blue-800 hover:underline">
                   LinkedIn
                 </a>
               </div>

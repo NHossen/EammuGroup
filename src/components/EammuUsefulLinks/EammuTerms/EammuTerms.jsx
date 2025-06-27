@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { Link } from 'react-router-dom';
 
 const EammuTerms = () => {
   return (
@@ -78,7 +79,7 @@ const EammuTerms = () => {
               href="mailto:info@eammu.com"
               className="text-blue-600 underline ml-1"
             >
-              info@eammu.com
+              eammuimmigration@gmail.com
             </a>
             .
           </li>
@@ -111,11 +112,20 @@ const EammuTerms = () => {
           For any questions regarding our terms or privacy practices, please contact us at:
         </p>
         <ul className="list-disc pl-6 text-gray-700 mt-2">
-          <li>Email: <a className="text-blue-600 underline" href="mailto:info@eammu.com">info@eammu.com</a></li>
+          <li>Email: <a className="text-blue-600 underline" href="mailto:info@eammu.com">eammuimmigration@gmail.com</a></li>
           <li>Phone: +88016 31 31 25 24</li>
           <li>Office: Cumilla Cantonment, Bangladesh</li>
         </ul>
       </section>
+
+
+      {/* ✅ CTA Button */}
+                <Link
+                  to="/"
+                  className="inline-block bg-green-800 text-white px-6 py-3 rounded-full hover:bg-green-900 transition"
+                >
+                  Back to Home
+                </Link>
 
       {/* Footer Note */}
       <div className="text-center text-sm text-gray-500 mt-12">

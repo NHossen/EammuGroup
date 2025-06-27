@@ -257,12 +257,14 @@ const VisaServices = () => {
         <p className="text-gray-700 max-w-xl mx-auto">
           We are working on launching a powerful <strong>Visa Requirements Search API</strong> — where you can select any country and see updated visa requirements instantly. You will also be able to view visa cards, filter by purpose, and apply directly online through Eammu!
         </p>
-        <button
-          className="mt-6 bg-[#005a31] text-white px-6 py-2 rounded-md hover:bg-[#003e24] transition"
-          aria-label="Notify me on Visa Requirements API launch"
-        >
-          Notify Me on Launch
-        </button>
+        <a
+    href="https://wa.me/8801631312524?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block bg-[#005a31] text-white px-6 py-2 rounded-full hover:bg-[#003e24] transition"
+  >
+    Book Now on WhatsApp
+  </a>
       </section>
     </div>
   );
