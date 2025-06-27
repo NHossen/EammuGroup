@@ -26,7 +26,7 @@ const EammuImmigrationHeading_2 = () => {
             Premier Study Abroad Agency Cumilla, Bangladesh | Excellence in Education Consultancy Services
           </h2>
           <p className="text-base text-gray-700 leading-relaxed mb-6">
-            Eammu Immigration Services, based in Cumilla, Bangladesh, is a trusted educational consultancy firm with over six years of experience. Since 2012, we’ve been guiding students to top global universities, securing scholarships and financial aid.
+            Eammu Immigration Services, based in Cumilla, Bangladesh, is a trusted educational consultancy firm with over six years of experience. Since 2022, we’ve been guiding students to top global universities, securing scholarships and financial aid.
             <br /><br />
             We provide the cheapest airfares, visa documentation support, and customized group tour packages — creating seamless and memorable travel experiences.
             <br /><br />
