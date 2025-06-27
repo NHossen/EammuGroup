@@ -29,7 +29,7 @@ const Immigration_Header_Section = () => {
       </Helmet>
 
       {/* Top Section */}
-      <div className="flex items-center justify-between flex-wrap gap-y-4">
+      <div className="flex items-center justify-between flex-wrap gap-y-4 mt-6">
         <div className="flex-1">
           <Link to="/">
             <h1 className="text-2xl md:text-3xl font-bold text-[#005a31]">

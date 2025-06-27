@@ -5,7 +5,7 @@ const About_Eammu_Immigration = () => {
   return (
     <>
       <Helmet>
-        <title>About Eammu Immigration Services | Global Visa,Student Visa & Migration Experts</title>
+        <title>About Eammu Immigration Services | Global Visa, Student Visa & Migration Experts</title>
         <meta
           name="description"
           content="Learn about Eammu Immigration Services — your trusted partner for global immigration, student visas, work permits, and relocation support across Canada, UK, UAE, Europe, and beyond."
@@ -16,23 +16,25 @@ const About_Eammu_Immigration = () => {
         />
       </Helmet>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
-
+      <main className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+        
         {/* Header */}
         <section className="text-center space-y-6">
-          <h1 className="text-4xl font-extrabold text-green-800">About Eammu Immigration Services</h1>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+          <h1 className="text-3xl sm:text-4xl font-extrabold text-green-800">
+            About Eammu Immigration Services
+          </h1>
+          <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
             Founded in 2022, <strong>Eammu Immigration Services</strong> is one of Bangladesh’s fastest-growing global visa consultancies. With over 50 local & international offices, we proudly help thousands achieve their dreams of studying, working, and living abroad.
           </p>
           <img
             src="https://visaindex.s3.eu-central-1.amazonaws.com/wp-content/uploads/2023/10/13203351/What-is-Smart-Tourism-1200x492.webp"
             alt="Eammu Immigration"
-            className="rounded-lg shadow-lg max-w-4xl mx-auto"
+            className="rounded-lg shadow-lg w-full max-w-4xl mx-auto"
           />
         </section>
 
         {/* Core Values */}
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
             {
               title: '🌍 Global Reach',
@@ -65,7 +67,7 @@ const About_Eammu_Immigration = () => {
         {/* Services Offered */}
         <section className="space-y-6">
           <h2 className="text-2xl font-bold text-green-700">What We Help You With</h2>
-          <ul className="list-disc list-inside text-gray-700 text-lg space-y-2">
+          <ul className="list-disc pl-6 text-gray-700 text-base space-y-2">
             <li>🎓 Student Visa (Canada, UK, Russia, Australia, UAE & Europe)</li>
             <li>🛠️ Skilled Worker Migration & Work Permits</li>
             <li>💼 Business & Investment Migration</li>
@@ -75,8 +77,8 @@ const About_Eammu_Immigration = () => {
           </ul>
         </section>
 
-        {/* Why Choose Us */}
-        <section className="space-y-8">
+        {/* Why Clients Trust Us */}
+        <section className="space-y-6">
           <h2 className="text-2xl font-semibold text-green-800">Why Clients Trust Eammu</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
@@ -97,7 +99,7 @@ const About_Eammu_Immigration = () => {
                 desc: 'No hidden fees — clear service packages and installment plans for all clients.',
               },
             ].map((item, i) => (
-              <div key={i} className="bg-gray-50 p-4 rounded shadow">
+              <div key={i} className="bg-gray-50 p-5 rounded shadow">
                 <h3 className="text-lg font-semibold text-green-700 mb-1">{item.title}</h3>
                 <p className="text-sm text-gray-600">{item.desc}</p>
               </div>
@@ -105,8 +107,8 @@ const About_Eammu_Immigration = () => {
           </div>
         </section>
 
-        {/* Contact Section */}
-        <section className="mt-16 bg-[#f4fdf7] p-6 rounded-lg shadow-sm text-center">
+        {/* Contact & CTA */}
+        <section className="bg-[#f4fdf7] p-6 sm:p-10 rounded-lg shadow text-center">
           <h2 className="text-2xl font-bold mb-4 text-green-800">
             Connect with Eammu Immigration Experts
           </h2>
@@ -118,7 +120,7 @@ const About_Eammu_Immigration = () => {
             <p><strong>📧 Email:</strong> <a href="mailto:eammuimmigration@gmail.com" className="text-blue-600 underline">eammuimmigration@gmail.com</a></p>
             <p><strong>🌐 Website:</strong> <a href="https://www.eammu.com" target="_blank" rel="noreferrer" className="text-blue-600 underline">www.eammu.com</a></p>
           </div>
-          <div className="mt-6 flex justify-center gap-4">
+          <div className="mt-6 flex flex-col sm:flex-row justify-center gap-4">
             <a
               href="https://wa.me/8801631312524?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
               target="_blank"
