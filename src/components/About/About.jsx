@@ -29,7 +29,7 @@ const About = () => {
             and sustainable services that empower individuals and businesses across borders.
           </p>
           <img
-            src="https://scontent.ffjr8-1.fna.fbcdn.net/v/t39.30808-6/473016382_122252070710017871_5970025600395878035_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=86c6b0&_nc_ohc=mv0cXi9d-ZMQ7kNvwEYlYvy&_nc_oc=AdnRYZlVPqIlpoPJN6vvpovByie93FWj9Yfor_ujLBk9L1ghrLCxR3CEIq7rOJjwzwk&_nc_zt=23&_nc_ht=scontent.ffjr8-1.fna&_nc_gid=M6LL1b1yo7TeiM1AayHqfw&oh=00_AfOfbyNEWAv8sQ83z1DC-Om4TNvAQaZwTjTlYBVb8_nnOA&oe=68641D8B"
+            src="https://i.ibb.co/VcH0yBHW/473016382-122252070710017871-5970025600395878035-n.jpg"
             alt="Eammu banner"
             className="w-full h-64 object-cover rounded-lg shadow-md"
           />
@@ -54,7 +54,7 @@ const About = () => {
             {/* Immigration */}
             <div className="bg-white shadow-md rounded p-4">
               <img
-                src="https://scontent.ffjr1-5.fna.fbcdn.net/v/t39.30808-6/481769971_122262749468017871_3083837242661680362_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=i8056g3KbkYQ7kNvwEKO58u&_nc_oc=Adm-ZbQbU-TQN5dWMstFKZIZ2G83TumZFl60LsMRixuT1hgiCHRUfbwLF1K3INhMR9w&_nc_zt=23&_nc_ht=scontent.ffjr1-5.fna&_nc_gid=d2zaouLb8a7ba6vJL4XS3Q&oh=00_AfOBH8hpiDmeEw8SwVfexGywVrhGUB8iVMPOXmtSEcdQLA&oe=68641BE4"
+                src="https://i.ibb.co/ymnSDKYb/481769971-122262749468017871-3083837242661680362-n.jpg"
                 alt="Immigration Services"
                 className="rounded mb-4 w-full h-40 object-cover"
               />
