@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main Pages -->
+  <url>
+    <loc>https://eammu.com/</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://eammu.com/about</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://eammu.com/contact</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://eammu.com/ourServices</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://eammu.com/visaservices</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://eammu.com/airtickets</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://eammu.com/tourpackages</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://eammu.com/offer</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Group Sites -->
+  <url>
+    <loc>https://eammu.com/eammuimmigrationservices</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://eammu.com/eammufashion</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://eammu.com/eammumarketing</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://eammu.com/eammuevent</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://eammu.com/eammudairy</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://eammu.com/eammutextile</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://eammu.com/flyzoo</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Services / Sub-Services -->
+  <url>
+    <loc>https://eammu.com/targetusavisainterview</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://eammu.com/university_details/sample-id</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.60</priority>
+  </url>
+
+  <!-- Useful Links -->
+  <url>
+    <loc>https://eammu.com/eammunewsfeeds</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://eammu.com/eammucareers</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://eammu.com/blogs</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://eammu.com/messagefromleadingteam</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://eammu.com/eammuterms</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://eammu.com/testimonials</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Auth Pages -->
+  <url>
+    <loc>https://eammu.com/signup</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://eammu.com/login</loc>
+    <lastmod>2025-07-01</lastmod>
+    <priority>0.50</priority>
+  </url>
+
+</urlset>
