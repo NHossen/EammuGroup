@@ -37,6 +37,7 @@ import EammuTextile from './components/EammuGroupWebsites/EammuTextile/EammuText
 import FlyZoo from './components/EammuGroupWebsites/FlyZoo/FlyZoo.jsx';
 import EammuTerms from './components/EammuUsefulLinks/EammuTerms/EammuTerms.jsx';
 import Testimonials from './components/Testimonials/Testimonials.jsx';
+import WhyChoiceEammu from './components/Home/WhyChoiceEammu.jsx';
 
 // Routing Setup
 const router = createBrowserRouter([
@@ -72,6 +73,7 @@ const router = createBrowserRouter([
       { path: '/messagefromleadingteam', element: <MessageFromLeadingTeam /> },
       { path: '/eammuterms', element: <EammuTerms /> },
       { path: '/testimonials', element: <Testimonials /> },
+      { path: '/whychoiceeammu', element: <WhyChoiceEammu /> },
 
       // Auth
       { path: '/signup', element: <SignUp /> },
