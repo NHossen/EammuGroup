@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import OurServices from "../../OurServices/OurServices";
 
 const FlyZoo = () => {
   return (
@@ -40,6 +41,10 @@ const FlyZoo = () => {
           src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1470&q=80"
           alt="FlyZoo Holiday Preview"
         />
+      </div>
+
+      <div>
+        <OurServices />
       </div>
 
       {/* Coming Soon Features */}

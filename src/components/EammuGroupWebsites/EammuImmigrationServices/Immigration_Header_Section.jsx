@@ -20,7 +20,7 @@ const Immigration_Header_Section = () => {
           property="og:description"
           content="Reliable visa services for students, tourists, and professionals. Apply confidently with Eammu."
         />
-        <meta property="og:url" content="https://www.eammu.com/immigration" />
+        <meta property="og:url" content="https://www.eammu.com/eammuimmigrationservices" />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"

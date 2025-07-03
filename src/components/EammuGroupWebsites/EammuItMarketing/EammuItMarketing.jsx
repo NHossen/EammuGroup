@@ -20,7 +20,7 @@ const EammuItMarketing = () => {
           content="Grow your business with Eammu IT & Marketing — your one-stop solution for websites, marketing, branding, and more."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.eammu.com/it-marketing" />
+        <meta property="og:url" content="https://www.eammu.com/eammumarketing" />
         <meta
           property="og:image"
           content="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1470&q=80"

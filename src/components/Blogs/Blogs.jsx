@@ -115,6 +115,7 @@ const Blogs = () => {
           name="keywords"
           content="student visa, tourist visa, travel blog, immigration news, visa update, Bangladesh visa support"
         />
+        <link rel="canonical" href="https://www.eammu.com/blogs" />
       </Helmet>
 
       <h1 className="text-4xl font-bold text-[#005a31] text-center mb-8">Latest Blog Posts</h1>

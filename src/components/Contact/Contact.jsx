@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
@@ -14,21 +15,32 @@ const Contact = () => {
           name="keywords"
           content="Eammu contact, visa support, immigration help, contact Eammu, study abroad consultant, Cumilla immigration office"
         />
+        <link rel="canonical" href="https://www.eammu.com/contact" />
       </Helmet>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-20">
-
         {/* Contact Heading */}
-        <section className="text-center">
+        <motion.section
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center"
+        >
           <h1 className="text-4xl font-extrabold mb-4 text-green-800">Contact Eammu</h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             We’re here to assist you — whether you’re planning to study abroad, apply for a visa, need IT consultation,
             or want to collaborate with our team.
           </p>
-        </section>
+        </motion.section>
 
         {/* Contact Grid */}
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <motion.section
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-10"
+        >
           {/* Contact Info */}
           <div className="space-y-6">
             <h2 className="text-2xl font-bold mb-2">Reach Us Directly</h2>
@@ -78,7 +90,12 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             <h2 className="text-2xl font-bold mb-4">Send Us a Message</h2>
             <form className="space-y-4">
               <div>
@@ -124,11 +141,17 @@ const Contact = () => {
                 Send Message
               </button>
             </form>
-          </div>
-        </section>
+          </motion.div>
+        </motion.section>
 
         {/* Optional Map or CTA */}
-        <section className="text-center mt-20">
+        <motion.section
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="text-center mt-20"
+        >
           <h2 className="text-2xl font-bold mb-4">Looking for our office?</h2>
           <p className="text-gray-600 mb-6">Visit us in Cumilla, Bangladesh or reach our UAE branch for fast-track support.</p>
           <a
@@ -139,10 +162,16 @@ const Contact = () => {
           >
             View on Google Maps
           </a>
-        </section>
+        </motion.section>
 
         {/* Final CTA Buttons */}
-        <div className="text-center mt-12 space-x-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="text-center mt-12 space-x-4"
+        >
           <a
             href="tel:+8801631312524"
             className="inline-block bg-green-800 text-white px-6 py-3 rounded-full hover:bg-green-900 transition"
@@ -156,7 +185,7 @@ const Contact = () => {
           >
             ⬅ Back to Home
           </Link>
-        </div>
+        </motion.div>
       </main>
     </>
   );

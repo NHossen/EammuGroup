@@ -21,7 +21,7 @@ const EammuEvent = () => {
           content="Plan your wedding, tour launch, business conference or festival with Eammu Event — expert event planners based in Cumilla."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.eammu.com/events" />
+        <meta property="og:url" content="https://www.eammu.com/eammuevent" />
         <meta property="og:image" content="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1470&q=80" />
       </Helmet>
 

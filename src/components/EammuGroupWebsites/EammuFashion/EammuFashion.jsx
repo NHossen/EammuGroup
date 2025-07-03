@@ -11,8 +11,8 @@ const EammuFashion = () => {
         <meta property="og:title" content="Eammu Fashion | Traditional & Modern Wear in Bangladesh" />
         <meta property="og:description" content="Launching soon: Eammu Fashion store in Cumilla and online! Explore premium clothing for all." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.eammu.com/fashion" />
-        <meta property="og:image" content="https://yourdomain.com/eammu-fashion-preview.jpg" />
+        <meta property="og:url" content="https://www.eammu.com/eammufashion" />
+        <meta property="og:image" content="https://assets.vogue.in/photos/5f214a9d9ffca08d18483816/master/w_1600%2Cc_limit/Neha%2520Mehra%25201.jpg" />
       </Helmet>
 
       {/* Page Heading */}

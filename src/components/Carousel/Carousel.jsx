@@ -67,7 +67,7 @@ const Carousel = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Eammu | Work, Study & Travel Visas" />
         <meta name="twitter:description" content="From UAE to Europe — let Eammu manage your visa and travel goals." />
-        <meta name="twitter:image" content="https://www.eammu.com/eammuicon.jpg" />
+        <meta name="twitter:image" content="https://www.eammu.com/es.jpg" />
       </Helmet>
     <div className="relative w-full h-[90vh] overflow-hidden">
       <div

@@ -20,7 +20,7 @@ const EammuTextile = () => {
           content="Based in Bangladesh, Eammu Textile delivers excellence in textile manufacturing, garment exports, and sustainable production."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.eammu.com/textile" />
+        <meta property="og:url" content="https://www.eammu.com/eammutextile" />
         <meta
           property="og:image"
           content="https://images.unsplash.com/photo-1581579185169-87926e6cdd5b?auto=format&fit=crop&w=1470&q=80"

@@ -21,8 +21,8 @@ const EammuDairy = () => {
           content="Buy organic milk, farm eggs, local poultry, and more from Eammu Dairy — your trusted local farm."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.eammu.com/dairy" />
-        <meta property="og:image" content="https://yourdomain.com/images/eammu-dairy-preview.jpg" />
+        <meta property="og:url" content="https://www.eammu.com/eammudairy" />
+        <meta property="og:image" content="https://static.vecteezy.com/system/resources/previews/047/547/980/non_2x/dairy-products-horizontal-banner-with-nature-landscape-summer-rural-landscape-with-set-of-milk-products-from-farm-and-herd-cows-design-elements-for-infographics-websites-and-print-media-vector.jpg" />
       </Helmet>
 
       {/* Page Heading */}

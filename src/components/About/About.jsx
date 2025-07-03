@@ -14,6 +14,7 @@ const About = () => {
           name="keywords"
           content="Eammu, Eammu Immigration Services, Eammu Fashion, Eammu IT, event management, digital marketing, poultry farm, textile industry, global visa, study abroad, Bangladesh immigration company"
         />
+        <link rel="canonical" href="https://www.eammu.com/about" />
       </Helmet>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-20">
