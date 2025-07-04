@@ -5,14 +5,14 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>Eammu | Global Immigration, IT, Events & Innovation</title>
+        <title>Eammu | Tourism, Global Immigration, IT, Events & Innovation</title>
         <meta
           name="description"
           content="Learn about Eammu's global services including immigration, IT solutions, fashion, agriculture, and events. Established in 2022, Eammu leads with innovation across industries."
         />
         <meta
           name="keywords"
-          content="Eammu, Eammu Immigration Services, Eammu Fashion, Eammu IT, event management, digital marketing, poultry farm, textile industry, global visa, study abroad, Bangladesh immigration company"
+          content="Eammu, Eammu Immigration Services, Tourist Visa, Eammu Fashion, Eammu IT, event management, digital marketing, poultry farm, textile industry, global visa, study abroad, Bangladesh immigration company, Tourism Company, Travel Agency"
         />
         <link rel="canonical" href="https://www.eammu.com/about" />
       </Helmet>

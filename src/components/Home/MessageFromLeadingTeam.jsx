@@ -46,7 +46,7 @@ const MessageFromLeadingTeam = () => {
   return (
     <section className="px-4 py-12 container mx-auto" aria-labelledby="team-heading">
       <Helmet>
-        <title>Meet Our Leadership Team | Eammu Immigration Services</title>
+        <title>Eammu Leadership Team | Meet With Our Leadership</title>
         <meta
           name="description"
           content="Learn about the leadership team at Eammu Immigration Services, including global visa experts and customer service managers dedicated to helping you."

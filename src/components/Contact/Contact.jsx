@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Eammu | Immigration, IT & Travel Services</title>
+        <title>Contact Eammu | Visa, Immigration, IT & Travel Services</title>
         <meta
           name="description"
           content="Get in touch with Eammu for immigration, student visas, tech support, and global travel services. Reach us via phone, email, or WhatsApp."

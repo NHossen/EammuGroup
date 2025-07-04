@@ -8,7 +8,7 @@ const EammuCareers = () => {
         <title>Careers at Eammu | Join Our Growing Global Team</title>
         <meta
           name="description"
-          content="Explore exciting career opportunities at Eammu. We're hiring in immigration services, marketing, IT, events, and more. Submit your CV today."
+          content="Explore exciting career opportunities at Eammu. We're hiring in Travel Expert, Visa Expert, immigration services, marketing, IT, events, and more. Submit your CV today."
         />
         <meta
           name="keywords"

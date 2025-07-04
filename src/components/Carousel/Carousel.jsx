@@ -49,7 +49,7 @@ const Carousel = () => {
   return (
     <>
     <Helmet>
-        <title>Eammu | Visa, Immigration & Travel Services</title>
+        <title>Eammu | Visa, Student Visa, Immigration & Travel Services</title>
         <meta
           name="description"
           content="Explore visa, immigration, and travel services to USA, UK, Canada, Europe, Japan, UAE and more. Trusted by thousands globally."

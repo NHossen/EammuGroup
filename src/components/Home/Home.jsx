@@ -17,7 +17,7 @@ const Home = () => {
     <div>
       {/* SEO Helmet */}
       <Helmet>
-        <title>Welcome to Eammu Immigration & Travel Services</title>
+        <title>Welcome to Eammu & Travel Services | Student Visa, Tourist Visa, Work Visa</title>
         <meta
           name="description"
           content="Explore student, tourist, and work visa services by Eammu. We offer expert immigration help for USA, Canada, UK, Europe, and more."

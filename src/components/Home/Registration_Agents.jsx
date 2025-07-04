@@ -14,7 +14,7 @@ const Registration_Agents = () => {
           content="visa agent Bangladesh, travel agency partner, no investment business, visa ticketing commission, agentship registration, Eammu Immigration Services"
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.eammu.com/agents" />
+        <link rel="canonical" href="https://www.eammu.com" />
       </Helmet>
 
       <div className="card lg:card-side bg-base-100 shadow-xl">
