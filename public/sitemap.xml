@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <!-- Main Pages -->
   <url>
     <loc>https://eammu.com/</loc>
@@ -43,7 +42,7 @@
     <priority>0.85</priority>
   </url>
 
-  <!-- Group Sites -->
+  <!-- Group Pages -->
   <url>
     <loc>https://eammu.com/eammuimmigrationservices</loc>
     <lastmod>2025-07-01</lastmod>
@@ -80,19 +79,17 @@
     <priority>0.75</priority>
   </url>
 
-  <!-- Services / Sub-Services -->
+  <!-- Services & Resources -->
   <url>
     <loc>https://eammu.com/targetusavisainterview</loc>
     <lastmod>2025-07-01</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://eammu.com/university_details/sample-id</loc>
+    <loc>https://eammu.com/university_details/1</loc>
     <lastmod>2025-07-01</lastmod>
     <priority>0.60</priority>
   </url>
-
-  <!-- Useful Links -->
   <url>
     <loc>https://eammu.com/eammunewsfeeds</loc>
     <lastmod>2025-07-01</lastmod>
@@ -124,16 +121,10 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- Auth Pages -->
+  <!-- Optional (only if content exists) -->
   <url>
-    <loc>https://eammu.com/signup</loc>
+    <loc>https://eammu.com/whychoiceeammu</loc>
     <lastmod>2025-07-01</lastmod>
-    <priority>0.50</priority>
+    <priority>0.80</priority>
   </url>
-  <url>
-    <loc>https://eammu.com/login</loc>
-    <lastmod>2025-07-01</lastmod>
-    <priority>0.50</priority>
-  </url>
-
 </urlset>
