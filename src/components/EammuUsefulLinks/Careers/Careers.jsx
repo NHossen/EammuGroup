@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
-const EammuCareers = () => {
+const Careers = () => {
   return (
     <>
       <Helmet>
@@ -90,4 +90,4 @@ const EammuCareers = () => {
   );
 };
 
-export default EammuCareers;
+export default Careers;

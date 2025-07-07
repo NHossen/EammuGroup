@@ -53,7 +53,7 @@ const Footer = () => {
                     <Link className='mb-[6px]' to='/eammunewsfeeds'><a className="link link-hover hover:text-[#005a31]">Eammu Newsfeeds</a></Link>
                     <Link className='mb-[6px]' to='/about'><a className="link link-hover hover:text-[#005a31]">Eammu Recent Projects</a></Link>
                     <Link className='mb-[6px]' to='/messagefromleadingteam'><a className="link link-hover hover:text-[#005a31]">Our Leading Team</a></Link>
-                    <Link className='mb-[6px]' to='/eammucareers'><a className="link link-hover hover:text-[#005a31]">Careers</a></Link>
+                    <Link className='mb-[6px]' to='/careers'><a className="link link-hover hover:text-[#005a31]">Careers</a></Link>
                     <Link className='mb-[6px]' to='/eammuterms'><a className="link link-hover hover:text-[#005a31]">Terms of use & Privacy policy</a></Link>
                     <Link className='mb-[6px]' to='/whychoiceeammu'><a className="link link-hover hover:text-[#005a31]">Why Choose Us</a></Link>
                 </nav>
