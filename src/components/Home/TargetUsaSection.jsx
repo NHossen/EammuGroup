@@ -16,13 +16,13 @@ const TargetUsaSection = () => {
         />
         <meta name="author" content="Eammu" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.eammu.com/targetusavisainterview" />
+        <link rel="canonical" href="https://eammu.com/targetusavisainterview" />
 
         {/* Open Graph for Facebook/LinkedIn */}
         <meta property="og:title" content="Target USA | US Visa Interview Preparation by Eammu" />
         <meta property="og:description" content="Master your F1 visa interview with Target USA by Eammu. Learn dress codes, mock questions, and interview strategies." />
         <meta property="og:image" content="https://i.ibb.co/Dtg4HWy/d-ISCUSSION.jpg" />
-        <meta property="og:url" content="https://www.eammu.com/targetusavisainterview" />
+        <meta property="og:url" content="https://eammu.com/targetusavisainterview" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Eammu" />
 

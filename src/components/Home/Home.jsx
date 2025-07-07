@@ -31,11 +31,11 @@ const Home = () => {
           property="og:description"
           content="Visa consultancy for students, tourists, and workers. Partner with Eammu for global visa solutions."
         />
-        <meta property="og:url" content="https://www.eammu.com/" />
+        <meta property="og:url" content="https://eammu.com/" />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://yourdomain.com/images/eammu-home-banner.jpg"
+          content="https://eammu.com/images/eammu-home-banner.jpg"
         />
       </Helmet>
 

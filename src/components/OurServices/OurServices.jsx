@@ -44,7 +44,7 @@ const OurServices = () => {
           name="description"
           content="Explore the full range of services by Eammu Immigration Services. Visa support, study abroad guidance, tour packages, and more from Bangladesh and UAE."
         />
-        <link rel="canonical" href="https://www.eammu.com/ourServices" />
+        <link rel="canonical" href="https://eammu.com/ourServices" />
       </Helmet>
 
       <h1 className="text-4xl md:text-5xl font-bold text-center text-[#005a31] mb-10">

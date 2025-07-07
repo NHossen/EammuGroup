@@ -61,13 +61,13 @@ const Carousel = () => {
         <meta name="author" content="Eammu Immigration Services" />
         <meta property="og:title" content="Eammu - Trusted Visa & Immigration Services" />
         <meta property="og:description" content="Work, study, or travel — we help you get there. 98% visa success rate. Expert support in UAE & Bangladesh." />
-        <meta property="og:image" content="https://www.eammu.com/eammuicon.jpg" />
-        <meta property="og:url" content="https://www.eammu.com" />
+        <meta property="og:image" content="https://eammu.com/eammuicon.jpg" />
+        <meta property="og:url" content="https://eammu.com" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Eammu | Work, Study & Travel Visas" />
         <meta name="twitter:description" content="From UAE to Europe — let Eammu manage your visa and travel goals." />
-        <meta name="twitter:image" content="https://www.eammu.com/es.jpg" />
+        <meta name="twitter:image" content="https://eammu.com/es.jpg" />
       </Helmet>
     <div className="relative w-full h-[90vh] overflow-hidden">
       <div

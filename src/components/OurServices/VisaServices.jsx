@@ -190,7 +190,7 @@ const VisaServices = () => {
           content="Expert visa processing for Tourist, Student, Work visas with Eammu Immigration. Serving USA, UK, Europe, Canada, Japan, and more."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.eammu.com/visa-services" />
+        <meta property="og:url" content="https://eammu.com/visa-services" />
         <meta
           property="og:image"
           content="https://visadone.com/wp-content/uploads/2023/02/USA-VISA.png"

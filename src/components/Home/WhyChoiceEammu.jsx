@@ -17,13 +17,13 @@ const WhyChoiceEammu = () => {
         />
         <meta name="author" content="Eammu Immigration Services" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.eammu.com/whychooseus" />
+        <link rel="canonical" href="https://eammu.com/whychooseus" />
 
         {/* Open Graph for Facebook/LinkedIn */}
         <meta property="og:title" content="Why Choose Eammu Immigration Services" />
         <meta property="og:description" content="Explore what makes Eammu your trusted immigration and travel partner. Proven success in visas, tours, and student guidance." />
-        <meta property="og:image" content="https://www.eammu.com/eammuicon.jpg" />
-        <meta property="og:url" content="https://www.eammu.com/whychooseus" />
+        <meta property="og:image" content="https://eammu.com/eammuicon.jpg" />
+        <meta property="og:url" content="https://eammu.com/whychooseus" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Eammu Immigration Services" />
 
@@ -31,7 +31,7 @@ const WhyChoiceEammu = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Why Eammu? | Trusted Visa & Travel Services" />
         <meta name="twitter:description" content="See why thousands trust Eammu Immigration for study, work, and travel visa support." />
-        <meta name="twitter:image" content="https://www.eammu.com/eammuicon.jpg" />
+        <meta name="twitter:image" content="https://eammu.com/eammuicon.jpg" />
         <meta name="twitter:site" content="@eammuimmigration" />
       </Helmet>
 
