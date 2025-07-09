@@ -6,7 +6,7 @@ const AirTickets = () => {
   return (
     <div className="px-4 container mx-auto py-10">
       <Helmet>
-        <title>Air Ticket Services | Eammu</title>
+        <title>Air Tickets | Eammu</title>
         <meta
           name="description"
           content="Book domestic and international air tickets with Eammu. Currently offering offline booking. IATA & API booking features coming soon."
@@ -15,7 +15,7 @@ const AirTickets = () => {
 
       {/* Page Header */}
       <div className="text-center mb-10">
-        <h1 className="text-4xl font-bold text-[#005a31] mb-4">Air Ticket Services</h1>
+        <h1 className="text-4xl font-bold text-[#005a31] mb-4">Air Tickets</h1>
         <p className="text-gray-700 text-lg max-w-2xl mx-auto">
           Eammu now offers reliable <strong>air ticket booking services</strong> for domestic and international flights. Whether you're flying for education, tourism, or work — we help you get the best deals and routes, offline.
         </p>

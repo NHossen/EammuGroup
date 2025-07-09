@@ -5,7 +5,7 @@ const TargetUsaSection = () => {
   return (
     <div>
       <Helmet>
-        <title>Target USA Visa Interview Preparation | Eammu Immigration Services</title>
+        <title>Target USA Visa Interview Preparation | Travel Expert, Student Visa, Tourist Visa Assistance</title>
         <meta
           name="description"
           content="Target USA Visa Interview Preparation by Eammu offers expert coaching, mock interviews, dress code tips, and question guidance to help students succeed in their US F1 visa interview."
@@ -14,17 +14,17 @@ const TargetUsaSection = () => {
           name="keywords"
           content="USA visa interview, F1 visa interview, visa coaching Bangladesh, student visa interview questions, Eammu interview preparation, Target USA, US student visa consultancy"
         />
-        <meta name="author" content="Eammu Immigration Services" />
+        <meta name="author" content="Eammu" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.eammu.com/targetusavisainterview" />
+        <link rel="canonical" href="https://eammu.com/targetusavisainterview" />
 
         {/* Open Graph for Facebook/LinkedIn */}
         <meta property="og:title" content="Target USA | US Visa Interview Preparation by Eammu" />
         <meta property="og:description" content="Master your F1 visa interview with Target USA by Eammu. Learn dress codes, mock questions, and interview strategies." />
         <meta property="og:image" content="https://i.ibb.co/Dtg4HWy/d-ISCUSSION.jpg" />
-        <meta property="og:url" content="https://www.eammu.com/targetusavisainterview" />
+        <meta property="og:url" content="https://eammu.com/targetusavisainterview" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Eammu Immigration Services" />
+        <meta property="og:site_name" content="Eammu" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />

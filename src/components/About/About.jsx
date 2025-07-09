@@ -5,16 +5,16 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>Eammu | Global Immigration, IT, Events & Innovation</title>
+        <title>Eammu | Tourism, Global Immigration, IT, Events & Innovation</title>
         <meta
           name="description"
           content="Learn about Eammu's global services including immigration, IT solutions, fashion, agriculture, and events. Established in 2022, Eammu leads with innovation across industries."
         />
         <meta
           name="keywords"
-          content="Eammu, Eammu Immigration Services, Eammu Fashion, Eammu IT, event management, digital marketing, poultry farm, textile industry, global visa, study abroad, Bangladesh immigration company"
+          content="Eammu, Eammu Immigration Services, Tourist Visa, Eammu Fashion, Eammu IT, event management, digital marketing, poultry farm, textile industry, global visa, study abroad, Bangladesh immigration company, Tourism Company, Travel Agency"
         />
-        <link rel="canonical" href="https://www.eammu.com/about" />
+        <link rel="canonical" href="https://eammu.com/about" />
       </Helmet>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-20">
@@ -156,7 +156,7 @@ const About = () => {
           <ul className="space-y-2 text-gray-700 text-base">
             <li><strong>📞 Call/WhatsApp:</strong> +8801701699743, +971507078334</li>
             <li><strong>📧 Email:</strong> eammuimmigration@gmail.com</li>
-            <li><strong>🌐 Website:</strong> <a href="https://www.eammu.com" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">www.eammu.com</a></li>
+            <li><strong>🌐 Website:</strong> <a href="https://eammu.com" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">www.eammu.com</a></li>
           </ul>
           <a
             href="https://wa.me/8801701699743"

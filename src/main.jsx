@@ -20,7 +20,6 @@ import EammuImmigrationServices from './components/EammuGroupWebsites/EammuImmig
 import EammuFashion from './components/EammuGroupWebsites/EammuFashion/EammuFashion.jsx';
 import TargetUsaInterview from './components/EammuGroupWebsites/EammuImmigrationServices/TargetUsaInterview/TargetUsaInterview.jsx';
 import EammuNewsfeeds from './components/EammuUsefulLinks/EammuNewsfeeds/EammuNewsfeeds.jsx';
-import EammuCareers from './components/EammuUsefulLinks/EammuCareers/EammuCareers.jsx';
 import SignUp from './components/SignupLogin/SignUp/SignUp.jsx';
 import LogIn from './components/SignupLogin/LogIn/LogIn.jsx';
 import Details_More from './components/Home/Services_Card_Section/Student_visa/Details_More.jsx';
@@ -38,6 +37,7 @@ import FlyZoo from './components/EammuGroupWebsites/FlyZoo/FlyZoo.jsx';
 import EammuTerms from './components/EammuUsefulLinks/EammuTerms/EammuTerms.jsx';
 import Testimonials from './components/Testimonials/Testimonials.jsx';
 import WhyChoiceEammu from './components/Home/WhyChoiceEammu.jsx';
+import Careers from './components/EammuUsefulLinks/Careers/Careers.jsx';
 
 // Routing Setup
 const router = createBrowserRouter([
@@ -68,7 +68,7 @@ const router = createBrowserRouter([
 
       // Useful Links MessageFromLeadingTeam /testimonials
       { path: '/eammunewsfeeds', element: <EammuNewsfeeds /> },
-      { path: '/eammucareers', element: <EammuCareers /> },
+      { path: '/careers', element: <Careers /> },
       { path: '/blogs', element: <Blogs /> },
       { path: '/messagefromleadingteam', element: <MessageFromLeadingTeam /> },
       { path: '/eammuterms', element: <EammuTerms /> },

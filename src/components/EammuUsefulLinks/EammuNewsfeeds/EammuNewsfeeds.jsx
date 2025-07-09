@@ -8,7 +8,7 @@ const EammuNewsfeeds = () => {
         <title>Eammu Newsfeeds | Latest Immigration & Travel Updates</title>
         <meta
           name="description"
-          content="Stay tuned for Eammu Newsfeeds! Get the latest updates on immigration policies, student visas, travel alerts, and global opportunities."
+          content="Stay tuned for Eammu Newsfeeds! Get the latest updates on immigration policies, Tourist Visa, student visas, travel alerts, and global opportunities."
         />
         <meta
           name="keywords"

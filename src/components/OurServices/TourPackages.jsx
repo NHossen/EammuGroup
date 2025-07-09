@@ -50,7 +50,7 @@ const domesticTours = [
     name: "Srimangal Tea Garden Tour",
     description: "Visit lush tea gardens and enjoy peaceful nature.",
     image:
-      "https://scontent.ffjr8-1.fna.fbcdn.net/v/t39.30808-6/487726886_2481008968910263_4848329487875071199_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=H8r6Y_nG_DQQ7kNvwGdv_Rk&_nc_oc=AdkDK0rPBibETlIpRViVXyEBvm3BlhR9hfvpwojOx6_CLCTGGL23hSuOv2viIvbRGFg&_nc_zt=23&_nc_ht=scontent.ffjr8-1.fna&_nc_gid=NSN83sMmze0vcbPf37LesA&oh=00_AfOSqgqAlZNzxbjf-SJ7BHjc48_EzlGmxLXnxptKx3f6Nw&oe=6860D0C1",
+      "https://pathfriend-bd.com/wp-content/uploads/2021/01/Sreemangal-Tea-Estate-and-Museum.gif",
   },
   {
     id: 8,

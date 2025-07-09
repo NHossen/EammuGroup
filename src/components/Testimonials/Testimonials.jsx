@@ -103,7 +103,7 @@ const Testimonials = () => {
           property="og:description"
           content="Discover what our satisfied clients say about Eammu Immigration Services. Real success stories and reviews."
         />
-        <meta property="og:url" content="https://www.eammu.com/testimonials" />
+        <meta property="og:url" content="https://eammu.com/testimonials" />
         <meta property="og:type" content="website" />
       </Helmet>
 

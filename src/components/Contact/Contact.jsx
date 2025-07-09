@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Eammu | Immigration, IT & Travel Services</title>
+        <title>Contact Eammu | Visa, Immigration, IT & Travel Services</title>
         <meta
           name="description"
           content="Get in touch with Eammu for immigration, student visas, tech support, and global travel services. Reach us via phone, email, or WhatsApp."
@@ -15,7 +15,7 @@ const Contact = () => {
           name="keywords"
           content="Eammu contact, visa support, immigration help, contact Eammu, study abroad consultant, Cumilla immigration office"
         />
-        <link rel="canonical" href="https://www.eammu.com/contact" />
+        <link rel="canonical" href="https://eammu.com/contact" />
       </Helmet>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-20">
@@ -155,7 +155,7 @@ const Contact = () => {
           <h2 className="text-2xl font-bold mb-4">Looking for our office?</h2>
           <p className="text-gray-600 mb-6">Visit us in Cumilla, Bangladesh or reach our UAE branch for fast-track support.</p>
           <a
-            href="https://www.google.com/maps?q=Gomoti+Tower,+Cumilla"
+            href="https://google.com/maps?q=Gomoti+Tower,+Cumilla"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition"
