@@ -99,7 +99,7 @@ const Footer = () => {
             {/* Copyright Bottom */}
             <div className="lg:flex justify-around items-center text-center my-16">
                 <p>
-                    © Copyright 2022 <a className='text-[#005a31] hover:text-gray-600 font-bold' href="https://www.eammu.com/" target="_blank" rel="noopener noreferrer">Eammu</a>, All rights reserved.
+                    © Copyright 2022 <a className='text-[#005a31] hover:text-gray-600 font-bold' href="https://eammu.com/" target="_blank" rel="noopener noreferrer">Eammu</a>, All rights reserved.
                 </p>
                 <h1 className='text-[#005a31] lg:text-[26px] text-[20px] lg:mt-0 mt-2'>Something New..!</h1>
             </div>
