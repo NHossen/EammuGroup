@@ -1,8 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
 const AirTickets = () => {
+  // 🆕 State to hold search parameters
+  const [searchParams, setSearchParams] = useState({
+    from: '',
+    to: '',
+    date: '',
+  });
+
+  // 🆕 State to hold fetched flight results
+  const [flights, setFlights] = useState([]);
+
+  // 🆕 Input handler
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setSearchParams((prev) => ({ ...prev, [name]: value }));
+  };
+
+  // 🆕 Fetch flights - Dummy API URL (replace with real one later)
+  const fetchFlights = async () => {
+    try {
+      const response = await fetch(
+        `https://api.example.com/flights?from=${searchParams.from}&to=${searchParams.to}&date=${searchParams.date}`
+      );
+      const data = await response.json();
+      setFlights(data.flights || []);
+    } catch (error) {
+      console.error('Error fetching flights:', error);
+    }
+  };
+
+  // 🆕 Form submission
+  const handleSearch = (e) => {
+    e.preventDefault();
+    fetchFlights();
+  };
+
   return (
     <div className="px-4 container mx-auto py-10">
       <Helmet>
@@ -13,7 +48,7 @@ const AirTickets = () => {
         />
       </Helmet>
 
-      {/* Page Header */}
+      {/* ✅ Page Header */}
       <div className="text-center mb-10">
         <h1 className="text-4xl font-bold text-[#005a31] mb-4">Air Tickets</h1>
         <p className="text-gray-700 text-lg max-w-2xl mx-auto">
@@ -21,7 +56,73 @@ const AirTickets = () => {
         </p>
       </div>
 
-      {/* ✈️ Visual Section */}
+      {/* 🆕 Flight Search Form */}
+      <form
+        onSubmit={handleSearch}
+        className="bg-white p-6 rounded-lg shadow mb-10 grid md:grid-cols-4 gap-4 items-end"
+      >
+        <div>
+          <label className="block mb-1 font-medium text-gray-700">From</label>
+          <input
+            type="text"
+            name="from"
+            value={searchParams.from}
+            onChange={handleInputChange}
+            className="w-full border rounded p-2"
+            placeholder="City or Airport"
+            required
+          />
+        </div>
+        <div>
+          <label className="block mb-1 font-medium text-gray-700">To</label>
+          <input
+            type="text"
+            name="to"
+            value={searchParams.to}
+            onChange={handleInputChange}
+            className="w-full border rounded p-2"
+            placeholder="City or Airport"
+            required
+          />
+        </div>
+        <div>
+          <label className="block mb-1 font-medium text-gray-700">Date</label>
+          <input
+            type="date"
+            name="date"
+            value={searchParams.date}
+            onChange={handleInputChange}
+            className="w-full border rounded p-2"
+            required
+          />
+        </div>
+        <div>
+          <button
+            type="submit"
+            className="w-full bg-[#005a31] text-white py-2 px-4 rounded hover:bg-[#003e24] transition"
+          >
+            Search
+          </button>
+        </div>
+      </form>
+
+      {/* 🆕 Display Search Results */}
+      {flights.length > 0 && (
+        <div className="space-y-4 mb-10">
+          {flights.map((flight, idx) => (
+            <div key={idx} className="border p-4 rounded shadow-sm bg-gray-50">
+              <h3 className="text-lg font-semibold text-[#005a31]">
+                {flight.airline} - {flight.flightNumber}
+              </h3>
+              <p>{flight.from} → {flight.to}</p>
+              <p>Departure: {flight.departureTime}</p>
+              <p>Price: {flight.price}</p>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* ✅ Visual Section */}
       <div className="grid md:grid-cols-2 gap-6 mb-10">
         <img
           src="https://e3.365dm.com/24/07/1600x900/skynews-plane-cloud_6626642.jpg?20240715110714"
@@ -35,7 +136,7 @@ const AirTickets = () => {
         />
       </div>
 
-      {/* Current Services */}
+      {/* ✅ Current Services */}
       <section className="bg-gray-50 p-6 rounded-lg mb-10">
         <h2 className="text-2xl font-semibold text-[#005a31] mb-3">Our Current Services</h2>
         <ul className="list-disc pl-6 text-gray-800 space-y-2">
@@ -46,7 +147,7 @@ const AirTickets = () => {
         </ul>
       </section>
 
-      {/* Coming Soon Features */}
+      {/* ✅ Coming Soon Features */}
       <section className="bg-white p-6 rounded-lg shadow-md">
         <h2 className="text-2xl font-semibold text-[#005a31] mb-3">Coming Soon at Eammu</h2>
         <p className="text-gray-700 mb-4">
@@ -60,7 +161,7 @@ const AirTickets = () => {
         </ul>
       </section>
 
-      {/* Call to Action & Back to Home */}
+      {/* ✅ Call to Action */}
       <div className="text-center mt-12">
         <p className="text-xl font-medium text-gray-800 mb-4">
           Need tickets today? Contact our team directly to book your flight!
