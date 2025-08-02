@@ -43,7 +43,7 @@ const Details_More = () => {
             <p><strong>📍 BD Office:</strong> <a href="tel:+8801701699743" className="hover:underline">+880 1701 699 743</a></p>
             <p><strong>📍 UAE Office:</strong> <a href="tel:+971507078334" className="hover:underline">+971 50 707 8334</a></p>
             <p><strong>✉️ Email:</strong> <a href="mailto:eammuimmigration@gmail.com" className="hover:underline">eammuimmigration@gmail.com</a></p>
-            <p><strong>🌐 Website:</strong> <a href="https://www.eammu.com" target="_blank" rel="noreferrer" className="hover:underline">www.eammu.com</a></p>
+            <p><strong>🌐 Website:</strong> <a href="https://eammu.com/" target="_blank" rel="noreferrer" className="hover:underline">www.eammu.com</a></p>
           </div>
         </div>
 
