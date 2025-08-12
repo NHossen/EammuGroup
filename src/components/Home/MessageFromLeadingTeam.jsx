@@ -6,15 +6,15 @@ const MessageFromLeadingTeam = () => {
       name: "Naeem Hossen",
       role: "Global Visa Expert & Air Ticket Specialist",
       image:
-        "https://i.ibb.co/hxKph5xG/513826752-2571065443237948-8433664019789292699-n.jpg",
+        "https://i.ibb.co/Qjr5x7KW/Whats-App-Image-2025-08-12-at-11-05-24-PM-1.jpg",
       description:
         "Naeem is an experienced global visa advisor specializing in air ticketing and destination consulting. He leads Eammu's vision for global travel and immigration strategy.",
     },
     {
-      name: "Sana Ullah Thasin",
+      name: "Sana Ullah Tahsin",
       role: "Student Visa Expert & Customer Service Manager",
       image:
-        "https://i.ibb.co/nsbGwJ4K/497478223-2378373822548199-2151584947092917211-n.jpg",
+        "https://i.ibb.co/997F5dSp/Whats-App-Image-2025-08-12-at-10-53-20-PM.jpg",
       description:
         "Sana specializes in student visa guidance for the USA, UK, Canada, and other countries. She manages customer service, providing personalized support to every student.",
     },

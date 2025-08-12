@@ -11,8 +11,8 @@ const WhatsAppFloatingButton = () => {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with us on WhatsApp"
-      className="fixed bottom-6 right-6 z-50 bg-gradient-to-br from-[#25D366] to-[#128C7E] shadow-lg rounded-full p-4 hover:scale-110 transition-transform duration-300 ease-in-out animate-pulse-slow"
-      style={{ boxShadow: "0 6px 12px rgba(37, 211, 102, 0.6)" }}
+      className="fixed bottom-6 right-6 z-50 bg-gradient-to-br from-[#0cd456] to-[#c4fa00] shadow-lg rounded-full p-4 hover:scale-110 transition-transform duration-300 ease-in-out animate-pulse-slow"
+      style={{ boxShadow: "0 6px 12px rgba(45, 211, 102, 0.6)" }}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

@@ -20,7 +20,7 @@ const Registration_Agents = () => {
       <div className="card lg:card-side bg-base-100 shadow-xl">
         <figure>
           <img
-            className="lg:w-[400px]"
+            className="lg:w-full"
             src="https://i.ibb.co/9GWRJvf/agentship.jpg"
             alt="eammuimmigrationservicesagent"
           />
