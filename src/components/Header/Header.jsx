@@ -35,11 +35,16 @@ const Header = () => {
 
               {/* CTA Button and Toggle */}
               <div className="flex md:order-2 items-center gap-1 sm:gap-2 flex-wrap">
-                <Link to="/contact">
-                  <Button className="bg-[#005a31] text-white hover:bg-white hover:text-[#005a31] hover:border hover:border-[#005a31] text-xs sm:text-sm px-2 sm:px-4 py-1 sm:py-2">
-                    Enroll Now
-                  </Button>
-                </Link>
+              <a
+  href="https://docs.google.com/forms/d/e/1FAIpQLSdZAJNm8GBFBQuxp_hoYsl8o-zQ2z5P7a7itLBcd4UHkDm7UA/viewform?usp=pp_url"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button className="bg-[#005a31] text-white hover:bg-white hover:text-[#005a31] hover:border hover:border-[#005a31] text-xs sm:text-sm px-2 sm:px-4 py-1 sm:py-2">
+    Enroll Now
+  </Button>
+</a>
+
                 <NavbarToggle />
               </div>
 
