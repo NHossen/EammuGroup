@@ -16,7 +16,9 @@ const Header = () => {
   return (
     <>
       {/* 🔹 Fixed Notice Bar */}
-      <div className="w-full fixed top-0 left-0 z-50 bg-[#005a31] flex items-center justify-center px-2 py-2">
+      <div className="w-full fixed top-0 left-0 z-50 bg-[#005a31]
+flex flex-wrap items-center justify-center gap-1
+px-2 py-2">
         <p className="text-white text-sm text-center leading-snug sm:text-base sm:px-4">
           📢
           Enjoy <span className="text-yellow-300 font-bold">20% OFF</span> +
@@ -44,7 +46,7 @@ const Header = () => {
       </div>
 
       {/* 🔹 Fixed Navbar Below Notice */}
-      <div className="w-full justify-between fixed left-0 z-40 bg-white shadow-md top-[66px] sm:top-[45px]">
+      <div className="w-full fixed left-0 z-40 bg-white shadow-md top-[65px] sm:top-[40px]">
         <div>
           <Navbar>
             
