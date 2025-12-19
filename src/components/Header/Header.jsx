@@ -21,7 +21,7 @@ const Header = () => {
           📢
           Enjoy <span className="text-yellow-300 font-bold">20% OFF</span> +
           <span className="text-blue-200 font-semibold"> FREE Visa Assistance</span>.
-          One place for everything — <span className="text-yellow-300 font-bold">With Eammu</span>!
+          One place for everything — <span className="text-yellow-300 font-bold">With Eammu</span> !
           
         </p>
         {/* 🔥 Translation Toggle Button */}
@@ -44,7 +44,7 @@ const Header = () => {
       </div>
 
       {/* 🔹 Fixed Navbar Below Notice */}
-      <div className="w-full fixed left-0 z-40 bg-white shadow-md top-[72px] sm:top-[40px]">
+      <div className="w-full fixed left-0 z-40 bg-white shadow-md top-[66px] sm:top-[45px]">
         <div>
           <Navbar>
             
