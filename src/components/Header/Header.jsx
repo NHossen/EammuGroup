@@ -54,13 +54,13 @@ const Header = () => {
             </NavbarBrand>
 
             {/* 🔹 RIGHT SIDE ACTIONS */}
-            <div className="flex md:order-2 items-center gap-1 sm:gap-2 relative">
+            <div className="flex md:order-2 items-center gap-1 sm:gap-2 flex-wrap">
 
               
 
               {/* CTA Button */}
               <Link to="/contact">
-                <Button className="bg-[#005a31] text-white hover:bg-white hover:text-[#005a31] hover:border hover:border-[#005a31]">
+                <Button className="relative flex items-center justify-center rounded-lg text-center font-medium focus:outline-none focus:ring-4 h-10 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 bg-[#005a31] text-white hover:bg-white hover:text-[#005a31] hover:border hover:border-[#005a31] text-xs sm:text-sm px-2 sm:px-4 py-1 sm:py-2">
                   Enroll Now
                 </Button>
               </Link>
