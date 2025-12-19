@@ -16,28 +16,45 @@ const Home = () => {
   return (
     <div>
       {/* SEO Helmet */}
-      <Helmet>
-        <title>Welcome to Eammu & Travel Services | Student Visa, Tourist Visa, Work Visa</title>
-        <meta
-          name="description"
-          content="Explore student, tourist, and work visa services by Eammu. We offer expert immigration help for USA, Canada, UK, Europe, and more."
-        />
-        <meta
-          name="keywords"
-          content="Eammu Immigration, Study Visa, Work Visa, Tourist Visa, Visa Consultancy, USA Visa, Canada Visa, UK Immigration, Bangladesh Visa Help"
-        />
-        <meta property="og:title" content="Eammu Immigration & Visa Services" />
-        <meta
-          property="og:description"
-          content="Visa consultancy for students, tourists, and workers. Partner with Eammu for global visa solutions."
-        />
-        <meta property="og:url" content="https://eammu.com/" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://eammu.com/images/eammu-home-banner.jpg"
-        />
-      </Helmet>
+   <Helmet>
+  <title>Eammu Immigration & Travel Services | Student, Tourist, Work Visa & Cheap Air Tickets</title>
+
+  <meta
+    name="description"
+    content="Eammu offers expert student, tourist, and work visa services along with the cheapest air tickets worldwide. Trusted consultancy for USA, UK, Canada, Europe, UAE, and more."
+  />
+  <meta
+    name="keywords"
+    content="Eammu Immigration, Student Visa, Work Visa, Tourist Visa, Visa Consultancy, Cheap Air Tickets, Flight Booking, USA Visa, Canada Visa, UK Visa, Europe Visa, UAE Visa"
+  />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Eammu Immigration & Travel Services" />
+  <meta
+    property="og:description"
+    content="Visa consultancy for students, tourists, and workers. Plus, get the cheapest air tickets worldwide with Eammu."
+  />
+  <meta property="og:url" content="https://eammu.com/" />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://eammu.com/images/eammu-home-banner.jpg"
+  />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Eammu Immigration & Travel Services" />
+  <meta
+    name="twitter:description"
+    content="Apply for student, tourist, and work visas and get the cheapest air tickets worldwide with Eammu Immigration Services."
+  />
+  <meta
+    name="twitter:image"
+    content="https://eammu.com/images/eammu-home-banner.jpg"
+  />
+</Helmet>
+
+
 
       {/* Hero Carousel */}
       <Carousel></Carousel>

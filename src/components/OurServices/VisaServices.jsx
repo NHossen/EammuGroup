@@ -11,7 +11,7 @@ const countries = [
   {
     name: "United Kingdom",
     description: "Expert support for UK Student visas, Visitor visas, and Skilled Worker routes.",
-    image: "https://visaguy.ae/wp-content/uploads/2021/08/1920x1080-uk.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkgBKQsFv4LdWUzfgaoMj5srhPn0vAuU9X6Q&s",
   },
   {
     name: "Europe (Schengen)",
@@ -170,96 +170,170 @@ const countries = [
   },
 ];
 
+const popularRoutes = [
+  {
+    name: "USA",
+    image: "https://visadone.com/wp-content/uploads/2023/02/USA-VISA.png",
+  },
+  {
+    name: "UK",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkgBKQsFv4LdWUzfgaoMj5srhPn0vAuU9X6Q&s",
+  },
+  {
+    name: "Europe (Schengen)",
+    image: "https://www.babaaztravels.com/wp-content/uploads/2023/05/Schengen-Visit-Visa-Requirements-Babaaz-Travels.jpeg",
+  },
+  {
+    name: "Canada",
+    image: "https://pelicanmigration.com/wp-content/uploads/2024/01/Canada-Visitor-Visa.jpg",
+  },
+  {
+    name: "Japan",
+    image: "https://www.babaaztravels.com/wp-content/uploads/2022/04/japan.jpg",
+  },
+];
+
 const VisaServices = () => {
+  const jsonLD = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Visa Services",
+    "provider": {
+      "@type": "Organization",
+      "name": "Eammu Immigration Services",
+      "url": "https://eammu.com",
+      "logo": "https://eammu.com/images/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/eammu",
+        "https://www.instagram.com/eammu",
+        "https://www.linkedin.com/company/eammu"
+      ]
+    },
+    "areaServed": countries.map(c => ({ "@type": "Country", "name": c.name })),
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Visa Services Catalog",
+      "itemListElement": countries.map(c => ({
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": `${c.name} Visa Services`, "description": c.description }
+      }))
+    }
+  };
+
   return (
     <div className="px-4 container mx-auto py-10">
       <Helmet>
-        <title>Visa Services | Eammu Immigration - USA, UK, Europe & More</title>
+        <title>Visa Services | Eammu Immigration - USA, UK, Europe, Canada & More</title>
         <meta
           name="description"
-          content="Professional visa services by Eammu Immigration for Tourist, Student, and Work visas across USA, UK, Europe, Canada, Japan, and more. Hajj and Umrah packages also available."
+          content="Eammu Immigration provides professional Tourist, Student, and Work visa services across USA, UK, Europe, Canada, Japan, UAE, Malaysia, and more. Hajj & Umrah packages available. Apply online now."
         />
         <meta
           name="keywords"
-          content="Visa services, Tourist visa, Student visa, Work visa, USA visa, UK visa, Europe visa, Canada visa, Japan visa, Hajj visa, Umrah visa, immigration, Eammu Immigration"
+          content="Visa services, Tourist visa, Student visa, Work visa, USA visa, UK visa, Europe visa, Canada visa, Japan visa, UAE visa, Malaysia visa, Hajj visa, Umrah visa, immigration services, Eammu Immigration"
         />
         <meta name="author" content="Eammu Immigration Services" />
         <meta property="og:title" content="Visa Services | Eammu Immigration" />
-        <meta
-          property="og:description"
-          content="Expert visa processing for Tourist, Student, Work visas with Eammu Immigration. Serving USA, UK, Europe, Canada, Japan, and more."
-        />
+        <meta property="og:description" content="Expert visa processing for Tourist, Student, and Work visas with Eammu Immigration. Serving USA, UK, Europe, Canada, Japan, UAE, and more." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://eammu.com/visa-services" />
-        <meta
-          property="og:image"
-          content="https://visadone.com/wp-content/uploads/2023/02/USA-VISA.png"
-        />
+        <meta property="og:image" content="https://visadone.com/wp-content/uploads/2023/02/USA-VISA.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Visa Services | Eammu Immigration" />
-        <meta
-          name="twitter:description"
-          content="Professional visa services by Eammu Immigration for Tourist, Student, and Work visas worldwide."
-        />
-        <meta
-          name="twitter:image"
-          content="https://visadone.com/wp-content/uploads/2023/02/USA-VISA.png"
-        />
+        <meta name="twitter:description" content="Professional visa services by Eammu Immigration for Tourist, Student, and Work visas worldwide." />
+        <meta name="twitter:image" content="https://visadone.com/wp-content/uploads/2023/02/USA-VISA.png" />
+        <script type="application/ld+json">{JSON.stringify(jsonLD)}</script>
       </Helmet>
 
+      {/* Header */}
       <header className="text-center mb-10">
         <h1 className="text-4xl font-bold text-[#005a31] mb-4">Visa Services by Eammu Immigration</h1>
         <p className="text-gray-700 text-lg max-w-3xl mx-auto">
-          Eammu Immigration offers expert visa processing services for{' '}
-          <strong>Tourist, Student, and Work Visas</strong>. We currently support visa applications for more than 25 countries and provide professional assistance at every step — from documentation to embassy submission.
+          Eammu Immigration provides expert assistance for <strong>Tourist, Student, and Work visas</strong> across over 25 countries including 
+          <Link to="/visa-services#USA" className="text-[#005a31] underline"> USA</Link>, 
+          <Link to="/visa-services#UK" className="text-[#005a31] underline"> UK</Link>, 
+          <Link to="/visa-services#Europe" className="text-[#005a31] underline"> Europe</Link>, 
+          <Link to="/visa-services#Canada" className="text-[#005a31] underline"> Canada</Link>, and more. Full guidance from documentation to embassy submission.
         </p>
       </header>
 
+      {/* Visa Cards with Book Now */}
       <section aria-label="Visa service countries" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {countries.map((country, index) => (
           <article
             key={index}
-            className="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300"
+            className="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300 flex flex-col justify-between hover:-translate-y-1"
             tabIndex={0}
             aria-labelledby={`country-title-${index}`}
           >
             <img
               src={country.image}
-              alt={`Flag and representation of ${country.name}`}
+              alt={`${country.name} visa services`}
               className="h-48 w-full object-cover"
               loading="lazy"
               width="400"
               height="240"
             />
-            <div className="p-4">
-              <h2
-                id={`country-title-${index}`}
-                className="text-xl font-bold text-[#005a31] mb-2"
+            <div className="p-4 flex flex-col justify-between flex-1">
+              <div>
+                <h2 id={`country-title-${index}`} className="text-xl font-bold text-[#005a31] mb-2">{country.name} Visa Services</h2>
+                <p className="text-gray-700 text-sm mb-4">{country.description}</p>
+              </div>
+              <a
+                href={`https://wa.me/8801631312524?text=Hello%2C%20I%20would%20like%20to%20book%20a%20${encodeURIComponent(country.name)}%20visa%20service.`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-[#005a31] text-white text-center px-4 py-2 rounded-full hover:bg-[#003e24] transition transform hover:scale-105"
               >
-                {country.name}
-              </h2>
-              <p className="text-gray-700 text-sm">{country.description}</p>
+                Book Now
+              </a>
             </div>
           </article>
         ))}
       </section>
 
-      {/* Bottom Call to Action */}
-      <section className="mt-12 bg-[#f4f4f4] p-6 rounded-md text-center" aria-live="polite">
-        <h2 className="text-2xl font-bold text-[#005a31] mb-3">What's Coming Next?</h2>
-        <p className="text-gray-700 max-w-xl mx-auto mb-4">
-          We are working on launching a powerful <strong>Visa Requirements Search API</strong> — where you can select any country and see updated visa requirements instantly. You will also be able to view visa cards, filter by purpose, and apply directly online through Eammu!
-        </p>
+      {/* Popular Routes & Deals */}
+      <section className="mt-12">
+        <h2 className="text-3xl font-bold text-[#005a31] text-center mb-6">Popular Routes & Deals</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {popularRoutes.map((route, index) => (
+            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1 flex flex-col">
+              <img
+                src={route.image}
+                alt={`${route.name} visa`}
+                className="h-48 w-full object-cover"
+                loading="lazy"
+              />
+              <div className="p-4 flex flex-col flex-1 justify-between">
+                <h3 className="text-xl font-semibold text-[#005a31] mb-2">{route.name}</h3>
+                <a
+                  href={`https://wa.me/8801631312524?text=Hello%2C%20I%20would%20like%20to%20book%20a%20${encodeURIComponent(route.name)}%20visa%20service.`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[#005a31] text-white text-center px-4 py-2 rounded-full hover:bg-[#003e24] transition transform hover:scale-105"
+                >
+                  Book Now
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
 
+      {/* Bottom CTA */}
+      <section className="mt-12 bg-[#f4f4f4] p-6 rounded-md text-center" aria-live="polite">
+        <h2 className="text-2xl font-bold text-[#005a31] mb-3">Book Your Visa Consultation Today</h2>
+        <p className="text-gray-700 max-w-xl mx-auto mb-4">
+          Get your visa processed with expert guidance. We provide end-to-end support for <strong>student, work, and tourist visas</strong>, Hajj & Umrah, and group travel visas. Fast, reliable, and affordable.
+        </p>
         <a
-          href="https://wa.me/8801631312524?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+          href="https://wa.me/8801631312524?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20visa%20services."
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-[#005a31] text-white px-6 py-2 rounded-full hover:bg-[#003e24] transition"
+          className="inline-block bg-[#005a31] text-white px-6 py-2 rounded-full hover:bg-[#003e24] transition mb-4"
         >
-          Book Now on WhatsApp
+          Contact on WhatsApp
         </a>
-
         <div className="mt-4">
           <Link
             to="/"

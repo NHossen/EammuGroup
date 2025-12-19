@@ -33,9 +33,11 @@ const Immigration_Header_Section = () => {
         <div className="flex-1">
           <Link to="/">
             <h1 className="text-2xl md:text-3xl font-bold text-[#005a31]">
-              Eammu Immigration Services
+              Eammu Holidays
             </h1>
+            
           </Link>
+          <p>Student, Tourist & Work Visa Services by Eammu - Trusted visa consultancy for USA, UK, Canada, Europe, UAE, and more.</p>
         </div>
 
         {/* Search Bar */}

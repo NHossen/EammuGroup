@@ -117,7 +117,7 @@ const internationalTours = [
     name: "Thailand Beach Getaway",
     description: "Relax on pristine beaches and enjoy vibrant nightlife.",
     image:
-      "https://hnj-website.s3.amazonaws.com/uploads/2015/09/thai-traditional-wooden-longtail-boat-and-blue-sky-in-Maya-bay-Thailand-1024x673.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROFQFZx4d9Qqu7gn_yr544ZbTC3vdZYUBIkw&s",
   },
   {
     id: 5,
@@ -179,27 +179,96 @@ const internationalTours = [
 ];
 
 const TourPackages = () => {
+  const jsonLD = {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": "Eammu Tour Packages",
+    "provider": {
+      "@type": "Organization",
+      "name": "Eammu Tours",
+      "url": "https://eammu.com",
+      "sameAs": [
+        "https://www.facebook.com/eammu",
+        "https://www.instagram.com/eammu",
+        "https://www.linkedin.com/company/eammu"
+      ]
+    },
+    "hasPart": [
+      ...internationalTours.map(tour => ({
+        "@type": "TouristTrip",
+        "name": tour.name,
+        "description": tour.description,
+        "image": tour.image
+      })),
+      ...domesticTours.map(tour => ({
+        "@type": "TouristTrip",
+        "name": tour.name,
+        "description": tour.description,
+        "image": tour.image
+      }))
+    ]
+  };
+
   return (
     <HelmetProvider>
       <>
         <Helmet>
-          <title> Eammu Tour Packages - Domestic & International </title>
+          <title>Eammu Tour Packages - International & Domestic Tours</title>
           <meta
             name="description"
-            content="Discover popular domestic and international tour packages for Bangladeshis offered by Eammu Tours. From Cox's Bazar to Dubai, explore top destinations with us."
+            content="Explore popular International and Domestic Tour Packages offered by Eammu Tours. From Dubai and Japan to Cox's Bazar and Sundarbans, discover top destinations with Eammu."
           />
           <meta
             name="keywords"
-            content="Domestic tours Bangladesh, International tours for Bangladeshis, Travel packages, Eammu Tours"
+            content="International tours, Domestic tours Bangladesh, Travel packages, Eammu Tours, Dubai tours, Japan tours, Cox's Bazar, Sundarbans, Bangladesh tours"
           />
           <meta name="author" content="Eammu Tours" />
+
+          {/* JSON-LD Structured Data */}
+          <script type="application/ld+json">{JSON.stringify(jsonLD)}</script>
         </Helmet>
 
         <div className="px-4 container mx-auto py-10">
           <h1 className="text-4xl font-bold text-[#005a31] mb-10 text-center">
-            Our Popular Tour Packages Domestic And International
+            Our Popular Tour Packages
           </h1>
 
+          {/* International Tours First */}
+          <section className="mb-14">
+            <h2 className="text-3xl font-semibold text-[#005a31] mb-6">
+              International Tours
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+              {internationalTours.map((tour) => (
+                <div
+                  key={tour.id}
+                  className="card bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 flex flex-col"
+                >
+                  <img
+                    src={tour.image}
+                    alt={tour.name}
+                    className="h-48 w-full object-cover"
+                  />
+                  <div className="p-5 flex flex-col flex-1 justify-between">
+                    <h3 className="text-xl font-semibold text-[#005a31] mb-2">
+                      {tour.name}
+                    </h3>
+                    <p className="text-gray-700 mb-4">{tour.description}</p>
+                    <a
+                      href={`https://wa.me/8801631312524?text=Hello%2C%20I%20would%20like%20to%20book%20a%20${encodeURIComponent(tour.name)}%20tour.`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block bg-[#005a31] text-white px-4 py-2 rounded-full hover:bg-[#003e24] transition transform hover:scale-105 text-center"
+                    >
+                      Book Now
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Domestic Tours */}
           <section className="mb-14">
             <h2 className="text-3xl font-semibold text-[#005a31] mb-6">
               Domestic Tours
@@ -208,74 +277,57 @@ const TourPackages = () => {
               {domesticTours.map((tour) => (
                 <div
                   key={tour.id}
-                  className="card bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+                  className="card bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 flex flex-col"
                 >
                   <img
                     src={tour.image}
                     alt={tour.name}
                     className="h-48 w-full object-cover"
                   />
-                  <div className="p-5">
+                  <div className="p-5 flex flex-col flex-1 justify-between">
                     <h3 className="text-xl font-semibold text-[#005a31] mb-2">
                       {tour.name}
                     </h3>
-                    <p className="text-gray-700">{tour.description}</p>
+                    <p className="text-gray-700 mb-4">{tour.description}</p>
+                    <a
+                      href={`https://wa.me/8801631312524?text=Hello%2C%20I%20would%20like%20to%20book%20a%20${encodeURIComponent(tour.name)}%20tour.`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block bg-[#005a31] text-white px-4 py-2 rounded-full hover:bg-[#003e24] transition transform hover:scale-105 text-center"
+                    >
+                      Book Now
+                    </a>
                   </div>
                 </div>
               ))}
             </div>
           </section>
 
-          <section>
-            <h2 className="text-3xl font-semibold text-[#005a31] mb-6">
-              International Tours
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-              {internationalTours.map((tour) => (
-                <div
-                  key={tour.id}
-                  className="card bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
-                >
-                  <img
-                    src={tour.image}
-                    alt={tour.name}
-                    className="h-48 w-full object-cover"
-                  />
-                  <div className="p-5">
-                    <h3 className="text-xl font-semibold text-[#005a31] mb-2">
-                      {tour.name}
-                    </h3>
-                    <p className="text-gray-700">{tour.description}</p>
-                  </div>
-                </div>
-              ))}
+          {/* Bottom CTA */}
+          <section className="mt-12 bg-[#f4f4f4] p-6 rounded-md text-center" aria-live="polite">
+            <h2 className="text-2xl font-bold text-[#005a31] mb-3">What's Coming Next?</h2>
+            <p className="text-gray-700 max-w-xl mx-auto mb-4">
+              We are working on launching a powerful <strong>Tour Packages Search API</strong> — select any country, view updated packages instantly, filter by purpose, and book directly online through Eammu!
+            </p>
+
+            <a
+              href="https://wa.me/8801631312524?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-[#005a31] text-white px-6 py-2 rounded-full hover:bg-[#003e24] transition mb-4"
+            >
+              Book Now on WhatsApp
+            </a>
+
+            <div className="mt-4">
+              <Link
+                to="/"
+                className="inline-block bg-white border border-green-800 text-green-800 px-6 py-3 rounded-full hover:bg-green-100 transition"
+              >
+                Back to Home
+              </Link>
             </div>
           </section>
-            {/* Bottom Call to Action */}
-                <section className="mt-12 bg-[#f4f4f4] p-6 rounded-md text-center" aria-live="polite">
-                  <h2 className="text-2xl font-bold text-[#005a31] mb-3">What's Coming Next?</h2>
-                  <p className="text-gray-700 max-w-xl mx-auto mb-4">
-                    We are working on launching a powerful <strong>Tour Packages Search API</strong> — where you can select any country and see updated Tour Packages instantly. You will also be able to view visa cards, filter by purpose, and apply directly online through Eammu!
-                  </p>
-          
-                  <a
-                    href="https://wa.me/8801631312524?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block bg-[#005a31] text-white px-6 py-2 rounded-full hover:bg-[#003e24] transition"
-                  >
-                    Book Now on WhatsApp
-                  </a>
-          
-                  <div className="mt-4">
-                    <Link
-                      to="/"
-                      className="inline-block bg-white border border-green-800 text-green-800 px-6 py-3 rounded-full hover:bg-green-100 transition"
-                    >
-                      Back to Home
-                    </Link>
-                  </div>
-                </section>
         </div>
       </>
     </HelmetProvider>

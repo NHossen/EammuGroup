@@ -64,7 +64,7 @@ const Footer = () => {
                     <a className="link link-hover hover:text-[#005a31] mb-[6px]" href="https://facebook.com/eammuimmigrationservices" target="_blank" rel="noopener noreferrer">Facebook</a>
                     <a className="link link-hover hover:text-[#005a31] mb-[6px]" href="https://twitter.com/eammu" target="_blank" rel="noopener noreferrer">Twitter</a>
                     <a className="link link-hover hover:text-[#005a31] mb-[6px]" href="https://linkedin.com/company/eammu-immigration-services" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <a className="link link-hover hover:text-[#005a31] mb-[6px]" href="https://instagram.com/eammutour" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a className="link link-hover hover:text-[#005a31] mb-[6px]" href="https://instagram.com/eammuholidaysv  " target="_blank" rel="noopener noreferrer">Instagram</a>
                 </nav>
 
                 {/* Newsletter Section */}
