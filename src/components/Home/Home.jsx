@@ -15,24 +15,24 @@ import Carousel from "../Carousel/Carousel";
 const Home = () => {
   return (
     <div>
-      {/* SEO Helmet */}
-   <Helmet>
-  <title>Eammu Immigration & Travel Services | Student, Tourist, Work Visa & Cheap Air Tickets</title>
+<Helmet>
+  <title>Eammu Immigration & Visa Services | Student, Tourist & Work Visa Experts</title>
 
   <meta
     name="description"
-    content="Eammu offers expert student, tourist, and work visa services along with the cheapest air tickets worldwide. Trusted consultancy for USA, UK, Canada, Europe, UAE, and more."
+    content="Eammu Immigration Services offers expert student, tourist, and work visa support for USA, Canada, UK, Europe, UAE, and more. Trusted visa consultancy from Bangladesh and UAE."
   />
   <meta
     name="keywords"
-    content="Eammu Immigration, Student Visa, Work Visa, Tourist Visa, Visa Consultancy, Cheap Air Tickets, Flight Booking, USA Visa, Canada Visa, UK Visa, Europe Visa, UAE Visa"
+    content="Eammu Immigration, Student Visa, Work Visa, Tourist Visa, Visa Consultancy, USA Visa, Canada Visa, UK Visa, Europe Visa, UAE Visa, Bangladesh Immigration Services"
   />
+  <meta name="robots" content="index, follow" />
 
   {/* Open Graph */}
-  <meta property="og:title" content="Eammu Immigration & Travel Services" />
+  <meta property="og:title" content="Eammu Immigration & Visa Services" />
   <meta
     property="og:description"
-    content="Visa consultancy for students, tourists, and workers. Plus, get the cheapest air tickets worldwide with Eammu."
+    content="Trusted visa consultancy for students, tourists, and professionals. Apply for USA, UK, Canada, Europe, UAE visas with Eammu."
   />
   <meta property="og:url" content="https://eammu.com/" />
   <meta property="og:type" content="website" />
@@ -43,16 +43,17 @@ const Home = () => {
 
   {/* Twitter Card */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Eammu Immigration & Travel Services" />
+  <meta name="twitter:title" content="Eammu Immigration & Visa Services" />
   <meta
     name="twitter:description"
-    content="Apply for student, tourist, and work visas and get the cheapest air tickets worldwide with Eammu Immigration Services."
+    content="Apply for student, tourist, and work visas worldwide with Eammu Immigration Services. Trusted consultants from Bangladesh & UAE."
   />
   <meta
     name="twitter:image"
     content="https://eammu.com/images/eammu-home-banner.jpg"
   />
 </Helmet>
+
 
 
 

@@ -30,9 +30,9 @@ const About = () => {
             and sustainable services that empower individuals and businesses across borders.
           </p>
           <img
-            src="https://i.ibb.co/VcH0yBHW/473016382-122252070710017871-5970025600395878035-n.jpg"
+            src="https://i.ibb.co/YF7bmqfg/521388962-122289260780017871-6426815952586296550-n.jpg"
             alt="Eammu banner"
-            className="w-full h-64 object-cover rounded-lg shadow-md"
+            className="w-full h-40 md:h[400] lg:h-[550px] object-cover rounded-lg shadow-md"
           />
         </section>
 

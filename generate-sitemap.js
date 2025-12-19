@@ -22,7 +22,7 @@ const pages = [
   { url: '/flyzoo', changefreq: 'monthly', priority: 0.75 },
   { url: '/targetusavisainterview', changefreq: 'monthly', priority: 0.75 },
   { url: '/eammunewsfeeds', changefreq: 'weekly', priority: 0.7 },
-  { url: '/eammucareers', changefreq: 'weekly', priority: 0.75 },
+  { url: '/careers', changefreq: 'weekly', priority: 0.75 },
   { url: '/blogs', changefreq: 'weekly', priority: 0.75 },
   { url: '/messagefromleadingteam', changefreq: 'monthly', priority: 0.7 },
   { url: '/eammuterms', changefreq: 'monthly', priority: 0.6 },

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const destinations = [
   { name: "USA", link: "/visa-services#usa", image: "https://visadone.com/wp-content/uploads/2023/02/USA-VISA.png", price: "From $450" },
-  { name: "UK", link: "/visa-services#uk", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkgBKQsFv4LdWUzfgaoMj5srhPn0vAuU9X6Q&s", price: "From $500" },
+  { name: "UK", link: "/visa-services#uk", image: "https://visaguy.ae/wp-content/uploads/2021/08/1920x1080-uk.jpg", price: "From $500" },
   { name: "Canada", link: "/visa-services#canada", image: "https://pelicanmigration.com/wp-content/uploads/2024/01/Canada-Visitor-Visa.jpg", price: "From $470" },
   { name: "Europe (Schengen)", link: "/visa-services#europe", image: "https://www.babaaztravels.com/wp-content/uploads/2023/05/Schengen-Visit-Visa-Requirements-Babaaz-Travels.jpeg", price: "From $400" },
   { name: "Australia", link: "/visa-services#australia", image: "https://www.kkday.com/en-sg/blog/wp-content/uploads/Aussie-VTL-1170x680.jpg", price: "From $600" },
@@ -122,7 +122,7 @@ const AirTickets = () => {
         </ul>
       </section>
 
-     {/* Popular Routes & Deals with Hover Animation */}
+{/* Popular Routes & Deals with Hover Animation */}
 <section className="mb-10">
   <h2 className="text-2xl font-semibold text-[#005a31] mb-6 text-center">Popular Routes & Deals</h2>
   <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">

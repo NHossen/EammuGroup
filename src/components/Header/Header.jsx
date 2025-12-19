@@ -21,7 +21,7 @@ const Header = () => {
           📢
           Enjoy <span className="text-yellow-300 font-bold">20% OFF</span> +
           <span className="text-blue-200 font-semibold"> FREE Visa Assistance</span>.
-          One place for everything — <span className="text-yellow-300 font-bold">With Eammu</span> !
+          One place for everything — <span className="text-yellow-300 font-bold">With Eammu</span>!
           
         </p>
         {/* 🔥 Translation Toggle Button */}
