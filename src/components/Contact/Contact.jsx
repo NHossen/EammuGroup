@@ -26,7 +26,7 @@ const offices = [
   },
   {
     location: "Tbilisi, Georgia",
-    address: "Eammu Georgia Office, Tbilisi",
+    address: "Eammu , Floor 5 ,Levan Gotua Street #3, Tbilisi,Georgia",
     phone: ["+995574446218"],
     whatsapp: "+995574446218",
     map: "https://www.google.com/maps?q=Tbilisi,+Georgia&output=embed",
