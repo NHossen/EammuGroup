@@ -44,7 +44,7 @@ const Header = () => {
       </div>
 
       {/* 🔹 Fixed Navbar Below Notice */}
-      <div className="w-full fixed left-0 z-40 bg-white shadow-md top-[66px] sm:top-[45px]">
+      <div className="w-full justify-between fixed left-0 z-40 bg-white shadow-md top-[66px] sm:top-[45px]">
         <div>
           <Navbar>
             
