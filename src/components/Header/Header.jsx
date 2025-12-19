@@ -115,7 +115,7 @@ const Header = () => {
       </div>
 
       {/* OFFSET FOR PAGE CONTENT */}
-      <div className="pt-[130px] sm:pt-[100px]"></div>
+      <div className="pt-[100px] sm:pt-[100px]"></div>
     </>
   );
 };
