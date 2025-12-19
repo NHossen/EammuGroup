@@ -16,9 +16,7 @@ const Header = () => {
   return (
     <>
       {/* 🔹 Fixed Notice Bar */}
-      <div className="w-full fixed top-0 left-0 z-50 bg-[#005a31]
-flex flex-wrap items-center justify-center gap-1
-px-2 py-2">
+      <div className="w-full fixed top-0 left-0 z-50 bg-[#005a31] flex items-center justify-center px-2 py-2">
         <p className="text-white text-sm text-center leading-snug sm:text-base sm:px-4">
           📢
           Enjoy <span className="text-yellow-300 font-bold">20% OFF</span> +
@@ -45,76 +43,65 @@ px-2 py-2">
               )}
       </div>
 
-      {/* 🔹 Fixed Navbar Below Notice */}
       <div className="w-full fixed left-0 z-40 bg-white shadow-md top-[65px] sm:top-[40px]">
-        <div>
-          <Navbar>
-            
-            {/* Logo */}
-            <NavbarBrand href="/">
-              <img src={logo} className="h-10 mr-3" alt="Eammu Logo" />
-            </NavbarBrand>
+  <Navbar className="min-w-0">
+    
+    {/* Logo */}
+    <NavbarBrand href="/">
+      <img
+        src={logo}
+        className="h-9 min-[370px]:h-10 mr-1 min-[370px]:mr-3"
+        alt="Eammu Logo"
+      />
+    </NavbarBrand>
 
-            {/* 🔹 RIGHT SIDE ACTIONS */}
-            <div className="flex md:order-2 items-center gap-2 relative">
+    {/* RIGHT SIDE ACTIONS */}
+    <div className="flex md:order-2 items-center gap-1 min-[370px]:gap-2 relative">
 
-              
+      {/* CTA Button */}
+      <Link to="/contact">
+        <Button
+          size="xs"
+          className="
+            bg-[#005a31] text-white
+            hover:bg-white hover:text-[#005a31]
+            hover:border hover:border-[#005a31]
+            px-2 min-[370px]:px-4
+            text-xs min-[370px]:text-sm
+            whitespace-nowrap
+          "
+        >
+          <span className="hidden min-[370px]:inline">Enroll Now</span>
+          <span className="inline min-[370px]:hidden">Enroll</span>
+        </Button>
+      </Link>
 
-              {/* CTA Button */}
-              <Link to="/contact">
-                <Button className="bg-[#005a31] text-white hover:bg-white hover:text-[#005a31] hover:border hover:border-[#005a31]">
-                  Enroll Now
-                </Button>
-              </Link>
+      {/* Mobile Menu Toggle */}
+      <NavbarToggle />
+    </div>
 
-              {/* Mobile Menu Toggle */}
-              <NavbarToggle />
-            </div>
+    {/* Navigation Links */}
+    <NavbarCollapse>
+      <NavbarLink as={NavLink} to="/" className="text-[#005a31] hover:underline">
+        Home
+      </NavbarLink>
 
-            {/* Navigation Links */}
-            <NavbarCollapse>
-              <NavbarLink as={NavLink} to="/" className="text-[#005a31] hover:underline">
-                Home
-              </NavbarLink>
+      <NavbarLink as={NavLink} to="/about" className="text-[#005a31] hover:underline">
+        About Us
+      </NavbarLink>
 
-              {/* Services Section */}
-              <div className="relative group hidden">
-                <NavbarLink as="div" className="text-[#005a31] cursor-pointer">
-                  Our Services
-                </NavbarLink>
+      <NavbarLink as={NavLink} to="/contact" className="text-[#005a31] hover:underline">
+        Contact Us
+      </NavbarLink>
 
-                {/* Desktop Dropdown */}
-                <div className="hidden lg:absolute lg:top-6 lg:left-0 lg:group-hover:block bg-white rounded shadow-md z-50">
-                  <ul className="py-2 px-4 space-y-1 lg:w-48">
-                    <li><Link to="/visaservices" className="block text-[#005a31] hover:underline">Visa Services</Link></li>
-                    <li><Link to="/airtickets" className="block text-[#005a31] hover:underline">Air Ticket</Link></li>
-                    <li><Link to="/tourpackages" className="block text-[#005a31] hover:underline">Tour Packages</Link></li>
-                  </ul>
-                </div>
+      <NavbarLink as={NavLink} to="/blogs" className="text-[#005a31] hover:underline">
+        Blogs
+      </NavbarLink>
+    </NavbarCollapse>
 
-                {/* Mobile Dropdown */}
-                <div className="block lg:hidden mt-2 space-y-1 pl-4">
-                  <Link to="/visaservices" className="block text-[#005a31] hover:underline">Visa Services</Link>
-                  <Link to="/airtickets" className="block text-[#005a31] hover:underline">Air Ticket</Link>
-                  <Link to="/tourpackages" className="block text-[#005a31] hover:underline">Tour Packages</Link>
-                </div>
-              </div>
+  </Navbar>
+</div>
 
-              <NavbarLink as={NavLink} to="/about" className="text-[#005a31] hover:underline">
-                About Us
-              </NavbarLink>
-
-              <NavbarLink as={NavLink} to="/contact" className="text-[#005a31] hover:underline">
-                Contact Us
-              </NavbarLink>
-
-              <NavbarLink as={NavLink} to="/blogs" className="text-[#005a31] hover:underline">
-                Blogs
-              </NavbarLink>
-            </NavbarCollapse>
-          </Navbar>
-        </div>
-      </div>
 
       {/* OFFSET FOR PAGE CONTENT */}
       <div className="pt-[100px] sm:pt-[100px]"></div>
