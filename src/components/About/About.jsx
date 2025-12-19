@@ -5,16 +5,50 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>Eammu | Tourism, Global Immigration, IT, Events & Innovation</title>
+        <title>Eammu | Global Immigration, Travel, Tours & Business Services</title>
         <meta
           name="description"
-          content="Learn about Eammu's global services including immigration, IT solutions, fashion, agriculture, and events. Established in 2022, Eammu leads with innovation across industries."
+          content="Discover Eammu's global services including immigration, student & work visas, travel & tour packages, IT solutions, fashion, agriculture, and event management. Serving clients in Dubai, Bangladesh, Europe, and beyond."
         />
         <meta
           name="keywords"
-          content="Eammu, Eammu Immigration Services, Tourist Visa, Eammu Fashion, Eammu IT, event management, digital marketing, poultry farm, textile industry, global visa, study abroad, Bangladesh immigration company, Tourism Company, Travel Agency"
+          content="Eammu, Immigration Services, Student Visa, Work Visa, Tourist Visa, Travel Agency, Tour Packages, IT Solutions, Event Management, Fashion, Agriculture, Bangladesh, Dubai, Europe"
         />
         <link rel="canonical" href="https://eammu.com/about" />
+
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": ["Organization", "LocalBusiness"],
+            "name": "Eammu Immigration Services And Eammu Holidays",
+            "url": "https://eammu.com",
+            "logo": "https://i.ibb.co/YF7bmqfg/521388962-122289260780017871-6426815952586296550-n.jpg",
+            "description": "Eammu provides global immigration, travel, tour packages, IT, fashion, events, and agriculture services. Offices in Dubai, Bangladesh, Europe, and Armenia.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Nakheel Center, Deira",
+              "addressLocality": "Dubai",
+              "addressRegion": "Dubai",
+              "postalCode": "00000",
+              "addressCountry": "UAE"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+8801631312524",
+              "contactType": "Customer Service",
+              "availableLanguage": ["English", "Arabic", "Bengali"]
+            },
+            "sameAs": [
+              "https://facebook.com/eammuimmigrationservices/",
+              "https://instagram.com/eammuholidays",
+              "https://youtube.com/@eammuholidays/",
+              "https://linkedin.com/company/eammu-immigration-services/"
+            ]
+          }
+          `}
+        </script>
       </Helmet>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-20">
@@ -22,76 +56,82 @@ const About = () => {
         {/* Header */}
         <section className="space-y-8 text-center">
           <h1 className="text-4xl font-extrabold text-green-800">
-            About Eammu — Shaping the Future with Innovation
+            About Eammu — Your Trusted Global Immigration & Travel Partner
           </h1>
           <p className="text-lg text-gray-700 max-w-4xl mx-auto">
-            Welcome to Eammu — a visionary brand transforming the global landscape through smart solutions in immigration,
-            technology, events, agriculture, and fashion. Established in 2022, our mission is to deliver impactful, ethical,
-            and sustainable services that empower individuals and businesses across borders.
+            Established in 2022, Eammu is a leading brand offering professional immigration services, visa assistance, travel and tour packages, IT solutions, event management, fashion, and agricultural ventures. We serve clients in Bangladesh, Dubai, Europe, and around the world with integrity and innovation.
           </p>
           <img
             src="https://i.ibb.co/YF7bmqfg/521388962-122289260780017871-6426815952586296550-n.jpg"
-            alt="Eammu banner"
-            className="w-full h-40 md:h[400] lg:h-[550px] object-cover rounded-lg shadow-md"
+            alt="Eammu Company Overview Banner"
+            className="w-full h-40 md:h-[400px] lg:h-[550px] object-cover rounded-lg shadow-md"
           />
         </section>
 
         {/* Company Values */}
         <section className="space-y-6">
-          <h2 className="text-2xl font-bold">Why Eammu?</h2>
+          <h2 className="text-2xl font-bold">Why Choose Eammu?</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700 text-lg">
-            <li>🌍 Global Presence: Serving clients in Bangladesh, UAE, Canada, UK, and beyond</li>
-            <li>💡 Innovation First: Always adapting, always improving</li>
-            <li>🤝 Transparency & Trust: Our brand is built on results and reliability</li>
-            <li>🚀 Empowering Youth: Creating opportunities for students, workers, and entrepreneurs</li>
+            <li>🌍 Global Presence: Serving clients in Bangladesh, UAE, Canada, UK, and Europe</li>
+            <li>💡 Innovation First: Advanced solutions in immigration, travel, IT, and events</li>
+            <li>🤝 Transparency & Trust: Reliable services with proven results</li>
+            <li>🚀 Empowering Youth: Opportunities for students, workers, and entrepreneurs</li>
           </ul>
         </section>
 
         {/* Core Divisions */}
         <section className="space-y-10">
-          <h2 className="text-3xl font-bold text-green-700 mb-6">Our Key Divisions</h2>
+          <h2 className="text-3xl font-bold text-green-700 mb-6">Our Key Services</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-gray-800">
 
             {/* Immigration */}
             <div className="bg-white shadow-md rounded p-4">
               <img
                 src="https://i.ibb.co/ymnSDKYb/481769971-122262749468017871-3083837242661680362-n.jpg"
-                alt="Immigration Services"
+                alt="Eammu Immigration Services"
                 className="rounded mb-4 w-full h-40 object-cover"
               />
-              <h3 className="text-xl font-semibold mb-2">Eammu Immigration Services</h3>
+              <h3 className="text-xl font-semibold mb-2">Immigration & Visa Services</h3>
               <p>
-                Trusted by thousands, our immigration experts assist with student visas, work permits, visit visas, PR, and
-                business migration. We specialize in Canada, UK, UAE, Australia, and Europe immigration programs with guaranteed
-                documentation support.
+                Expert assistance for student visas, work permits, visit visas, PR, and business migration. Serving UAE, Canada, UK, Australia, and Europe with reliable documentation support.
               </p>
+              <Link
+                to="/visa"
+                className="text-green-800 font-medium hover:underline mt-2 block"
+              >
+                Apply for Visa
+              </Link>
             </div>
 
             {/* IT & Marketing */}
             <div className="bg-white shadow-md rounded p-4">
               <img
                 src="https://www.marenkoeppen.com/wp-content/uploads/marenkoeppen_IT-Marketing_web-1.png"
-                alt="IT & Marketing"
+                alt="Eammu IT Solutions"
                 className="rounded mb-4 w-full h-40 object-cover"
               />
-              <h3 className="text-xl font-semibold mb-2">Eammu IT & Marketing</h3>
+              <h3 className="text-xl font-semibold mb-2">IT & Digital Marketing</h3>
               <p>
-                From website and app development to digital marketing, SEO, and lead generation — our IT division empowers
-                businesses with smart tech. Tailored solutions for travel, education, retail, and startups.
+                Website & app development, SEO, digital marketing, and lead generation for travel, education, and startup businesses.
               </p>
+              <Link
+                to="/tour-packages"
+                className="text-green-800 font-medium hover:underline mt-2 block"
+              >
+                Explore Tour Packages
+              </Link>
             </div>
 
             {/* Events */}
             <div className="bg-white shadow-md rounded p-4">
               <img
-                src="https://cdn-cjhkj.nitrocdn.com/krXSsXVqwzhduXLVuGLToUwHLNnSxUxO/assets/images/optimized/rev-d98e8d7/spotme.com/wp-content/uploads/2020/07/Hero-1.jpg"
-                alt="Event Management"
+                src="https://onewayeventproductions.com/wp-content/uploads/2019/05/1WAYAVBestPracticesEventManagment.jpeg"
+                alt="Event Management Services"
                 className="rounded mb-4 w-full h-40 object-cover"
               />
-              <h3 className="text-xl font-semibold mb-2">Eammu Event Management</h3>
+              <h3 className="text-xl font-semibold mb-2">Event Management</h3>
               <p>
-                Whether it's a wedding, corporate seminar, or product launch — our team delivers stunning events with branding,
-                logistics, decoration, and full coordination. We believe in moments that matter.
+                Weddings, corporate events, and launches with branding, logistics, decoration, and full coordination services.
               </p>
             </div>
 
@@ -99,13 +139,12 @@ const About = () => {
             <div className="bg-white shadow-md rounded p-4">
               <img
                 src="https://i1.adis.ws/i/canon/pro-fashion-photography-technique-tips-1-new_e6eef04e6fe9434e9d9427a0220ef27c.jpeg"
-                alt="Fashion"
+                alt="Eammu Fashion Brand"
                 className="rounded mb-4 w-full h-40 object-cover"
               />
-              <h3 className="text-xl font-semibold mb-2">Eammu Fashion</h3>
+              <h3 className="text-xl font-semibold mb-2">Fashion & Apparel</h3>
               <p>
-                A modern apparel brand that blends tradition and trend. Our collections include ethnic wear, formal and street
-                styles designed in Bangladesh and Dubai, crafted for elegance and affordability.
+                Trendy and traditional clothing collections crafted in Bangladesh & Dubai, blending style, elegance, and affordability.
               </p>
             </div>
 
@@ -113,13 +152,12 @@ const About = () => {
             <div className="bg-white shadow-md rounded p-4">
               <img
                 src="https://img-cdn.krishijagran.com/82661/dairy-schemes.jpg"
-                alt="Dairy & Poultry"
+                alt="Eammu Dairy and Poultry"
                 className="rounded mb-4 w-full h-40 object-cover"
               />
-              <h3 className="text-xl font-semibold mb-2">Eammu Dairy & Poultry</h3>
+              <h3 className="text-xl font-semibold mb-2">Dairy & Poultry</h3>
               <p>
-                Committed to food quality, we produce farm-fresh milk, eggs, and poultry with ethical farming practices and
-                sustainable operations in rural Bangladesh.
+                Ethical farming for fresh milk, eggs, and poultry. Sustainable operations in Bangladesh for quality produce.
               </p>
             </div>
 
@@ -127,13 +165,12 @@ const About = () => {
             <div className="bg-white shadow-md rounded p-4">
               <img
                 src="https://media.licdn.com/dms/image/v2/C4E12AQFme5sHmaKbdQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1611920248385?e=2147483647&v=beta&t=2DQAML71MQH_IOrVjnDd_236Gm2agN1GyW9IukvkhJU"
-                alt="Textile Industry"
+                alt="Eammu Textile Industry"
                 className="rounded mb-4 w-full h-40 object-cover"
               />
-              <h3 className="text-xl font-semibold mb-2">Eammu Textile & Industry</h3>
+              <h3 className="text-xl font-semibold mb-2">Textile & Industry</h3>
               <p>
-                As part of Bangladesh’s export backbone, our textile unit delivers premium fabrics for garments, home
-                furnishings, and uniforms — maintaining eco-friendly production standards.
+                Premium fabrics and eco-friendly manufacturing for garments, home furnishings, and uniforms.
               </p>
             </div>
           </div>
@@ -143,16 +180,14 @@ const About = () => {
         <section className="space-y-6">
           <h2 className="text-3xl font-bold text-green-700">Our Vision</h2>
           <p className="text-lg text-gray-700 max-w-4xl">
-            To become a globally admired brand that drives growth for individuals and enterprises. Through innovation, teamwork,
-            and service, we empower our clients to achieve their dreams — be it migration, career growth, entrepreneurship, or
-            lifestyle upgrade.
+            To be a globally recognized brand driving growth and empowerment through innovation, teamwork, and top-quality services in immigration, travel, business, and lifestyle.
           </p>
         </section>
 
-        {/* Immigration Contact Block */}
+        {/* Contact */}
         <section className="bg-[#f4fdf7] rounded-lg p-6 space-y-4 shadow-md">
           <h2 className="text-2xl font-bold">Contact Eammu Immigration Services</h2>
-          <p>Need a visa or expert immigration help? We're here 24/7.</p>
+          <p>Need a visa or expert immigration help? Contact our team now.</p>
           <ul className="space-y-2 text-gray-700 text-base">
             <li><strong>📞 Call/WhatsApp:</strong> +8801701699743, +971507078334</li>
             <li><strong>📧 Email:</strong> eammuimmigration@gmail.com</li>
@@ -168,7 +203,7 @@ const About = () => {
           </a>
         </section>
 
-        {/* Back to Home Button */}
+        {/* Back to Home */}
         <div className="text-center mt-12">
           <Link
             to="/"

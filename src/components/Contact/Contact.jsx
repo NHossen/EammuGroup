@@ -2,6 +2,37 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
+const offices = [
+  {
+    location: "Cumilla, Bangladesh",
+    address: "Office No-178, 1st Floor, Gomoti Tower, Cantonment, Cumilla",
+    phone: ["+8801631312524", "+8801701699743"],
+    whatsapp: "+8801631312524",
+    map: "https://www.google.com/maps?q=Gomoti+Tower,+Cumilla&output=embed",
+  },
+  {
+    location: "Business Bay, Dubai, UAE",
+    address: "Business Bay, Dubai, United Arab Emirates",
+    phone: ["+971507078334"],
+    whatsapp: "+971507078334",
+    map: "https://www.google.com/maps?q=Business+Bay,+Dubai&output=embed",
+  },
+  {
+    location: "Lambron 39, Yerevan, Armenia",
+    address: "Eammu Holidays, Lambron 39, Yerevan",
+    phone: ["+37494810585"],
+    whatsapp: "+37494810585",
+    map: "https://www.google.com/maps?q=Lambron+39,+Yerevan&output=embed",
+  },
+  {
+    location: "Tbilisi, Georgia",
+    address: "Eammu Georgia Office, Tbilisi",
+    phone: ["+995574446218"],
+    whatsapp: "+995574446218",
+    map: "https://www.google.com/maps?q=Tbilisi,+Georgia&output=embed",
+  },
+];
+
 const Contact = () => {
   return (
     <>
@@ -13,12 +44,13 @@ const Contact = () => {
         />
         <meta
           name="keywords"
-          content="Eammu contact, visa support, immigration help, contact Eammu, study abroad consultant, Cumilla immigration office"
+          content="Eammu contact, visa support, immigration help, contact Eammu, study abroad consultant, Cumilla immigration office, Dubai, Armenia, Georgia office"
         />
         <link rel="canonical" href="https://eammu.com/contact" />
       </Helmet>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-20">
+
         {/* Contact Heading */}
         <motion.section
           initial={{ opacity: 0, y: -30 }}
@@ -33,7 +65,7 @@ const Contact = () => {
           </p>
         </motion.section>
 
-        {/* Contact Grid */}
+        {/* Contact Info & Form Grid */}
         <motion.section
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -41,49 +73,56 @@ const Contact = () => {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-2 gap-10"
         >
-          {/* Contact Info */}
-          <div className="space-y-6">
-            <h2 className="text-2xl font-bold mb-2">Reach Us Directly</h2>
+          {/* Office Info */}
+          <div className="space-y-8">
+            {offices.map((office, idx) => (
+              <div key={idx} className="bg-[#f4fdf7] rounded-lg p-6 shadow-md">
+                <h2 className="text-2xl font-bold mb-2">{office.location}</h2>
+                <p className="text-gray-700 mb-2">{office.address}</p>
+                <p className="text-gray-700 mb-2">
+                  <strong>Phone:</strong>{" "}
+                  {office.phone.map((p, i) => (
+                    <span key={i}>
+                      <a href={`tel:${p}`} className="hover:underline">{p}</a>{i < office.phone.length - 1 ? ", " : ""}
+                    </span>
+                  ))}
+                </p>
+                <p className="text-gray-700 mb-2">
+                  <strong>WhatsApp:</strong>{" "}
+                  <a href={`https://wa.me/${office.whatsapp.replace(/\D/g,'')}`} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                    {office.whatsapp}
+                  </a>
+                </p>
+                <div className="w-full h-48 mt-2 rounded overflow-hidden border">
+                  <iframe
+                    src={office.map}
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title={`Map - ${office.location}`}
+                  ></iframe>
+                </div>
+              </div>
+            ))}
 
-            <div className="text-gray-700 space-y-4">
-              <p>
-                <strong>Email:</strong>{' '}
-                <a href="mailto:eammuimmigration@gmail.com" className="text-blue-600 underline">
-                  eammuimmigration@gmail.com
-                </a>
-              </p>
-
-              <p>
-                <strong>WhatsApp & Phone:</strong><br />
-                <a href="tel:+8801631312524" className="hover:underline">+880 16 3131-2524</a><br />
-                <a href="tel:+8801701699743" className="hover:underline">+880 17 0169-9743</a><br />
-                <a href="tel:+971507078334" className="hover:underline">+971 50 707 8334 (UAE Office)</a>
-              </p>
-
-              <p>
-                <strong>Address:</strong><br />
-                Office No-178, 1st Floor, Gomoti Tower, Cantonment, Cumilla, Bangladesh
-              </p>
-
-              <p>
-                <strong>Business Hours:</strong><br />
-                Sunday – Thursday: 10:00 AM – 6:00 PM<br />
-                Friday: Closed<br />
-                Saturday: 11:00 AM – 3:00 PM
-              </p>
-            </div>
-
+            {/* Follow Us */}
             <div>
               <p className="text-gray-800 font-semibold">Follow Us:</p>
-              <div className="flex gap-4 mt-2">
-                <a href="https://facebook.com/eammuimmigrationservices" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+              <div className="flex flex-wrap gap-4 mt-2">
+                 <a href="https://facebook.com/eammuimmigrationservices" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
                   Facebook
                 </a>
-                <a href="https://instagram.com/eammutour" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:underline">
+                <a href="https://instagram.com/eammuholidays" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:underline">
                   Instagram
                 </a>
                 <a href="https://linkedin.com/company/eammu-immigration-services" target="_blank" rel="noopener noreferrer" className="text-blue-800 hover:underline">
                   LinkedIn
+                </a>
+                <a href="https://www.youtube.com/@Eammutour" target="_blank" rel="noopener noreferrer" className="text-red-800 hover:underline">
+                  Youtube
                 </a>
               </div>
             </div>
@@ -136,32 +175,12 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="bg-green-800 text-white px-6 py-3 rounded-md hover:bg-green-900 transition"
+                className="w-full bg-green-800 text-white px-6 py-3 rounded-md hover:bg-green-900 transition"
               >
                 Send Message
               </button>
             </form>
           </motion.div>
-        </motion.section>
-
-        {/* Optional Map or CTA */}
-        <motion.section
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="text-center mt-20"
-        >
-          <h2 className="text-2xl font-bold mb-4">Looking for our office?</h2>
-          <p className="text-gray-600 mb-6">Visit us in Cumilla, Bangladesh or reach our UAE branch for fast-track support.</p>
-          <a
-            href="https://google.com/maps?q=Gomoti+Tower,+Cumilla"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition"
-          >
-            View on Google Maps
-          </a>
         </motion.section>
 
         {/* Final CTA Buttons */}
@@ -170,18 +189,18 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-center mt-12 space-x-4"
+          className="mt-12 flex flex-col sm:flex-row justify-center items-center gap-4"
         >
           <a
-            href="tel:+8801631312524"
-            className="inline-block bg-green-800 text-white px-6 py-3 rounded-full hover:bg-green-900 transition"
+            href="https://wa.me/8801631312524"
+            className="w-full sm:w-auto text-center bg-green-800 text-white px-6 py-3 rounded-full hover:bg-green-900 transition"
           >
-            📞 Call Now
+            📞 WhatsApp/Call Now
           </a>
 
           <Link
             to="/"
-            className="inline-block bg-white border border-green-800 text-green-800 px-6 py-3 rounded-full hover:bg-green-100 transition"
+            className="w-full sm:w-auto text-center bg-white border border-green-800 text-green-800 px-6 py-3 rounded-full hover:bg-green-100 transition"
           >
             ⬅ Back to Home
           </Link>

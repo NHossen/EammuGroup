@@ -39,11 +39,85 @@ const Offer = () => {
   return (
     <div className="px-4 container mx-auto py-10">
       <Helmet>
-        <title>Eammu - Offers </title>
+        {/* Basic SEO */}
+        <title>Eammu Offers - Tourist, Student & Work Visa Discounts</title>
         <meta
           name="description"
-          content="Check out the latest offers from Eammu — including discounts on tourist visas, student visas, air tickets, and family tour packages."
+          content="Check out the latest offers from Eammu Immigration Services — discounts on tourist visas, student visas, air tickets, and family tour packages. Book now!"
         />
+        <meta
+          name="keywords"
+          content="Eammu offers, visa discounts, tourist visa, student visa, work visa, tour package discounts, travel deals"
+        />
+        <link rel="canonical" href="https://eammu.com/offers" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Eammu Offers - Tourist, Student & Work Visa Discounts" />
+        <meta property="og:description" content="Check the latest Eammu offers including discounts on tourist visas, student visas, and travel packages." />
+        <meta property="og:image" content="https://eammu.com/eammuicon.jpg" />
+        <meta property="og:url" content="https://eammu.com/offers" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Eammu Offers - Tourist, Student & Work Visa Discounts" />
+        <meta name="twitter:description" content="Check out Eammu’s latest offers for tourist visas, student visas, and travel packages. Book today!" />
+        <meta name="twitter:image" content="https://eammu.com/eammuicon.jpg" />
+
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Eammu Current Offers",
+            "description": "Latest discounts and promotional offers from Eammu Immigration Services",
+            "itemListElement": offers.map((offer, index) => ({
+              "@type": "Offer",
+              "position": index + 1,
+              "name": offer.title,
+              "description": offer.description,
+              "image": offer.image,
+              "url": "https://eammu.com/offers",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock"
+            }))
+          })}
+        </script>
+
+        {/* FAQ Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How can I book Eammu offers?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You can book any current offers directly via WhatsApp or by contacting Eammu offices in Dubai, India, Armenia, or Bangladesh."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are these offers available for all countries?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Offers may vary based on tour package or visa type. Please check the details of each offer before booking."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I combine multiple offers?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No, offers are generally not combinable unless explicitly mentioned."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <h1 className="text-4xl font-bold text-[#005a31] mb-10 text-center">
@@ -60,6 +134,7 @@ const Offer = () => {
               src={image}
               alt={title}
               className="w-full h-52 object-cover"
+              loading="lazy"
             />
             <div className="p-5">
               <h2 className="text-xl font-semibold text-[#005a31] mb-2">{title}</h2>
@@ -68,28 +143,29 @@ const Offer = () => {
           </div>
         ))}
       </div>
-         {/* Call to Action & Back to Home */}
-            <div className="text-center mt-12">
-              <p className="text-xl font-medium text-gray-800 mb-4">
-                Need Offer today? Contact our team directly to book your Tour!
-              </p>
-              <a
-                href="https://wa.me/8801631312524?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-[#005a31] text-white px-6 py-2 rounded-full hover:bg-[#003e24] transition mb-4"
-              >
-                Book Now on WhatsApp
-              </a>
-              <div className="mt-4">
-                <Link
-                  to="/"
-                  className="inline-block bg-white border border-green-800 text-green-800 px-6 py-3 rounded-full hover:bg-green-100 transition"
-                >
-                  Back to Home
-                </Link>
-              </div>
-            </div>
+
+      {/* Call to Action & Back to Home */}
+      <div className="text-center mt-12">
+        <p className="text-xl font-medium text-gray-800 mb-4">
+          Need an offer today? Contact our team directly to book your Tour!
+        </p>
+        <a
+          href="https://wa.me/8801631312524?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-[#005a31] text-white px-6 py-2 rounded-full hover:bg-[#003e24] transition mb-4"
+        >
+          Book Now on WhatsApp
+        </a>
+        <div className="mt-4">
+          <Link
+            to="/"
+            className="inline-block bg-white border border-green-800 text-green-800 px-6 py-3 rounded-full hover:bg-green-100 transition"
+          >
+            Back to Home
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };

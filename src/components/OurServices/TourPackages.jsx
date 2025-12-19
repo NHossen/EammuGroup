@@ -188,9 +188,9 @@ const TourPackages = () => {
       "name": "Eammu Tours",
       "url": "https://eammu.com",
       "sameAs": [
-        "https://www.facebook.com/eammu",
-        "https://www.instagram.com/eammu",
-        "https://www.linkedin.com/company/eammu"
+        "https://www.facebook.com/eammuholidays",
+        "https://www.instagram.com/eammuholidays",
+        "https://www.linkedin.com/company/eammu-immigration-services"
       ]
     },
     "hasPart": [
