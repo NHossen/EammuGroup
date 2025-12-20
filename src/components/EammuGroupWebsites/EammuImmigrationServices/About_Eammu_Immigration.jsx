@@ -5,14 +5,14 @@ const About_Eammu_Immigration = () => {
   return (
     <>
       <Helmet>
-        <title>About Eammu Immigration Services | Global Visa, Student Visa & Migration Experts</title>
+        <title>Eammu Holidays | Global Visa, Student Visa & Migration Experts</title>
         <meta
           name="description"
-          content="Learn about Eammu Immigration Services — your trusted partner for global immigration, student visas, work permits, and relocation support across Canada, UK, UAE, Europe, and beyond."
+          content="Learn about Eammu Holidays — your trusted partner for global immigration, student visas, work permits, and relocation support across Canada, UK, UAE, Europe, and beyond."
         />
         <meta
           name="keywords"
-          content="Eammu Immigration, visa consultant Bangladesh, study abroad, immigration to Canada, UAE visa, work visa, student visa agency, green card, migration help"
+          content="Eammu Holidays, visa consultant Bangladesh, study abroad, immigration to Canada, UAE visa, work visa, student visa agency, green card, migration help"
         />
       </Helmet>
 

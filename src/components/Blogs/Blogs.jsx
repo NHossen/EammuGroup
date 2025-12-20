@@ -16,7 +16,7 @@ const blogPosts = [
     summary: "Get updated on the recent reforms and how they impact Bangladeshi applicants.",
     fullContent: `In 2025, the U.S. introduced digital documentation for H1-B, made STEM graduates a priority, and removed the wage-level lottery. This makes skilled professionals from Bangladesh more eligible.`,
     date: "2025-06-18",
-    image: "https://peoplemanagingpeople.com/wp-content/uploads/sites/3/2024/11/PMP-%E2%80%93-Ultimate-Guide-%E2%80%93-work-permit-usa-Kim-Behnke-featured-image.jpg",
+    image: "https://www.visafq.com/public/medies/Mar_2024/1710238523.65f02b3b6149f.webp",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const blogPosts = [
     summary: "Step-by-step process for applying and getting your European tourist visa approved.",
     fullContent: `You'll need bank statements, travel insurance, return flight tickets, hotel bookings, and a cover letter. Apply via the embassy or VFS. Start 1-2 months in advance.`,
     date: "2025-06-15",
-    image: "https://www.siecindia.com/uploads/blog/blog_0a4a0e64f1443e8e81723174a080dec8_1712320618schednge.jpg",
+    image: "https://www.babaaztravels.com/wp-content/uploads/2023/05/Schengen-Visit-Visa-Requirements-Babaaz-Travels.jpeg",
   },
   {
     id: 4,
@@ -48,7 +48,7 @@ const blogPosts = [
     summary: "The UK introduces new policies for international job seekers.",
     fullContent: "In 2025, the UK will streamline the Skilled Worker visa system. More roles will be added to the shortage occupation list, and salary thresholds will be adjusted for fresh graduates. Our blog explains how to prepare and apply.",
     date: "2025-06-08",
-    image: "https://globalogy.in/wp-content/uploads/2023/08/GAE-work-visa.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzQhefbuXemjXeLKByhLOw25ieVHQym_casw&s",
   },
   {
     id: 7,

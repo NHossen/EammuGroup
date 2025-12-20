@@ -1,130 +1,156 @@
-import { Helmet } from 'react-helmet-async';
-import { Link } from 'react-router-dom';
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 const EammuEvent = () => {
   return (
-    <div className="px-4 container mx-auto py-10">
+    <div className="px-4 container mx-auto py-12">
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>Eammu Event Management | Wedding, Corporate & Cultural Events</title>
+        <title>
+          Eammu Event Management | Wedding, Corporate & Cultural Event Planner in Bangladesh
+        </title>
         <meta
           name="description"
-          content="Eammu Event Management organizes weddings, corporate events, cultural functions, and more — creatively & professionally across Bangladesh."
+          content="Eammu Event Management offers professional wedding planning, corporate events, cultural programs, photography, catering, and full event solutions across Bangladesh."
         />
         <meta
           name="keywords"
-          content="Eammu Event, Event Planning, Wedding Organizer, Corporate Events, Cultural Shows, Bangladesh Event Management"
+          content="Eammu Event Management, Wedding Planner Bangladesh, Corporate Event Organizer, Cultural Events, Cumilla Event Planner, Event Management Company"
         />
-        <meta property="og:title" content="Eammu Event Management" />
+        <link rel="canonical" href="https://www.eammu.com/eammuevent" />
+
+        <meta property="og:title" content="Eammu Event Management | Make Your Event Memorable" />
         <meta
           property="og:description"
-          content="Plan your wedding, tour launch, business conference or festival with Eammu Event — expert event planners based in Cumilla."
+          content="From weddings to corporate conferences — Eammu Event Management delivers creative, reliable & premium event solutions across Bangladesh."
+        />
+        <meta
+          property="og:image"
+          content="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1470&q=80"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.eammu.com/eammuevent" />
-        <meta property="og:image" content="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1470&q=80" />
       </Helmet>
 
-      {/* Page Heading */}
-      <div className="text-center mb-10">
-        <h1 className="text-4xl font-bold text-[#005a31] mb-4">Eammu Event Management</h1>
-        <p className="text-gray-600 text-lg">
-          Professional, Creative & Memorable — Your Event, Our Responsibility.
+      {/* Hero Section */}
+      <section className="text-center mb-14">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-[#005a31] mb-4">
+          Eammu Event Management
+        </h1>
+        <p className="text-gray-700 text-lg md:text-xl max-w-3xl mx-auto">
+          Professional • Creative • Reliable Event Planning for Weddings, Corporate Programs
+          & Cultural Celebrations Across Bangladesh
         </p>
-        <img
-          className="rounded-lg mt-6 mx-auto w-full max-w-4xl h-64 object-cover"
-          src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1470&q=80"
-          alt="Event Banner"
-        />
-      </div>
 
-      {/* Offline Services Info */}
-      <section className="mb-12 bg-white p-6 rounded-lg shadow-md">
-        <h2 className="text-2xl font-semibold text-[#005a31] mb-4">📞 We’re Offering Offline Services</h2>
+        <img
+          src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1470&q=80"
+          alt="Eammu Event Management Banner"
+          className="rounded-xl mt-8 mx-auto w-full max-w-5xl h-72 object-cover shadow-lg"
+        />
+      </section>
+
+      {/* Offline Booking Notice */}
+      <section className="mb-14 bg-white p-6 md:p-8 rounded-xl shadow-md">
+        <h2 className="text-2xl font-semibold text-[#005a31] mb-4">
+          📞 Offline Event Booking & Consultation
+        </h2>
         <p className="text-gray-700 text-lg">
-          Currently, our bookings and event planning are handled offline to ensure customized attention. Whether it’s a wedding,
-          brand launch, religious function, or private celebration — our Cumilla-based team is ready to serve.
+          To ensure premium quality and personalized planning, Eammu Event Management
+          currently offers <strong>offline booking & consultation</strong>. Our expert team
+          works closely with you to design, plan, and execute your event perfectly.
         </p>
+
         <ul className="list-disc pl-6 mt-4 space-y-2 text-gray-700">
-          <li>🤝 Meet in person or discuss via WhatsApp/Phone</li>
-          <li>📋 Personalized quotes based on your event size</li>
-          <li>🧠 Creative theme proposals with budget matching</li>
-          <li>📍 Based in Cumilla, operating all over Bangladesh</li>
+          <li>One-to-one consultation via phone, WhatsApp or in-person</li>
+          <li>Customized event planning based on budget & theme</li>
+          <li>Vendor coordination, decoration & logistics handled end-to-end</li>
+          <li>Based in Cumilla — serving events all over Bangladesh</li>
         </ul>
       </section>
 
-      {/* Services Section */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold text-[#005a31] mb-4">🎯 Our Services</h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          <ul className="list-disc pl-6 text-gray-700 space-y-2">
-            <li>💍 Wedding Planning & Decoration</li>
-            <li>🏢 Corporate Events & Conferences</li>
-            <li>🎉 Birthday & Anniversary Celebrations</li>
-            <li>🎤 Cultural Events & Concerts</li>
-            <li>📸 Photography & Videography</li>
+      {/* Services */}
+      <section className="mb-14">
+        <h2 className="text-3xl font-semibold text-[#005a31] mb-6">
+          🎯 Our Event Management Services
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <ul className="list-disc pl-6 text-gray-700 space-y-3 text-lg">
+            <li>💍 Wedding Planning, Stage & Venue Decoration</li>
+            <li>🏢 Corporate Events, Seminars & Conferences</li>
+            <li>🎉 Birthday, Anniversary & Private Celebrations</li>
+            <li>🎤 Cultural Programs, Concerts & Shows</li>
+            <li>📸 Professional Photography & Videography</li>
             <li>🍽️ Catering & Hospitality Management</li>
           </ul>
+
           <img
             src="https://cdn.greenvelope.com/blog/wp-content/uploads/outdoor-wedding-aisle.jpeg"
-            alt="Wedding Setup"
-            className="rounded-lg shadow-md"
+            alt="Wedding Event Setup"
+            className="rounded-xl shadow-md w-full h-64 object-cover"
           />
         </div>
       </section>
 
       {/* Why Choose Us */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold text-[#005a31] mb-4">🌟 Why Choose Eammu?</h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          <p className="text-gray-700 text-lg">
-            At Eammu Event, we blend precision with imagination. With a background in executing corporate summits,
-            cultural festivals, and family events — we understand how to handle big expectations with small details.
-            Let us manage your logistics, vendors, stage design, and more.
+      <section className="mb-14">
+        <h2 className="text-3xl font-semibold text-[#005a31] mb-6">
+          🌟 Why Choose Eammu Event Management?
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <p className="text-gray-700 text-lg leading-relaxed">
+            With hands-on experience in weddings, corporate summits, and large cultural
+            programs, Eammu Event Management focuses on precision, creativity, and flawless
+            execution. From concept to completion, we handle every detail so you can enjoy
+            your special day stress-free.
           </p>
+
           <img
             src="https://windowsonthelake.com/wp-content/uploads/2022/09/christening-1499314_1920-1-1024x683.jpg"
-            alt="Corporate Event"
-            className="rounded-lg shadow-md"
+            alt="Corporate & Cultural Event"
+            className="rounded-xl shadow-md w-full h-64 object-cover"
           />
         </div>
       </section>
 
-      {/* Coming Soon */}
-      <section className="mb-12 bg-gray-50 p-6 rounded-lg">
-        <h2 className="text-2xl font-semibold text-[#005a31] mb-4">🚀 Coming Soon</h2>
-        <ul className="list-disc pl-6 text-gray-700 space-y-2 text-base">
-          <li>🌐 Online Event Booking Portal</li>
-          <li>📅 Real-Time Availability Calendar</li>
-          <li>📱 Mobile App for Event Planning & Progress Tracking</li>
-          <li>🖼️ Event Gallery with Video & Testimonials</li>
+      {/* Future Features */}
+      <section className="mb-16 bg-gray-50 p-6 md:p-8 rounded-xl">
+        <h2 className="text-3xl font-semibold text-[#005a31] mb-4">
+          🚀 What’s Coming Next
+        </h2>
+
+        <ul className="list-disc pl-6 text-gray-700 space-y-2 text-lg">
+          <li>Online Event Booking & Quotation System</li>
+          <li>Live Event Gallery with Photos & Videos</li>
+          <li>Client Testimonials & Event Case Studies</li>
+          <li>Dedicated Event Planning Mobile App</li>
         </ul>
       </section>
 
       {/* CTA */}
-      <div className="text-center mt-10">
-        <p className="text-xl font-semibold text-gray-800 mb-4">
-          Planning a wedding, conference, or celebration in 2025? Let us help you make it unforgettable.
+      <section className="text-center">
+        <p className="text-xl md:text-2xl font-semibold text-gray-800 mb-6">
+          Planning a wedding, corporate event or celebration With Eammu
         </p>
+
         <a
-          href="https://wa.me/8801631312524?text=Hello%20Eammu%20Event%20Team%2C%20I%27m%20interested%20in%20booking%20a%20service."
+          href="https://wa.me/8801631312524?text=Hello%20Eammu%20Event%20Team%2C%20I%20want%20to%20book%20an%20event%20consultation."
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#005a31] text-white px-6 py-2 rounded-full hover:bg-[#003e24] transition"
+          className="inline-block bg-[#005a31] text-white px-8 py-3 rounded-full text-lg hover:bg-[#003e24] transition"
         >
-          Book a Free Consultation
+          📞 Book a Free Event Consultation
         </a>
 
-        {/* Back to Home */}
         <div className="mt-6">
           <Link
             to="/"
             className="inline-block bg-white border border-green-800 text-green-800 px-6 py-3 rounded-full hover:bg-green-100 transition"
           >
-            Back to Home
+            ⬅ Back to Home
           </Link>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

@@ -6,14 +6,14 @@ const Immigration_Header_Section = () => {
     <div className="px-4 container mx-auto py-6">
       {/* SEO Helmet */}
       <Helmet>
-        <title>Eammu Immigration Services | Global Visa Experts</title>
+        <title>Eammu Holidays | Global Visa Experts</title>
         <meta
           name="description"
           content="Explore global visa services by Eammu Immigration. We provide expert support for student, tourist, and work visas for the USA, Canada, UK, Europe, and more."
         />
         <meta
           name="keywords"
-          content="Eammu Immigration, Visa Consultancy, Work Visa, Student Visa, Tourist Visa, USA Visa, Canada Immigration, UK Study Visa, Europe Visa Agent"
+          content="Eammu Holidays, Visa Consultancy, Work Visa, Student Visa, Tourist Visa, USA Visa, Canada Immigration, UK Study Visa, Europe Visa Agent"
         />
         <meta property="og:title" content="Eammu Immigration Services" />
         <meta

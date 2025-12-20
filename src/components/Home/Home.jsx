@@ -63,11 +63,13 @@ const Home = () => {
       {/* Immigration Services Heading */}
       <EammuImmigrationHeading_2 />
 
-      {/* Agent Registration */}
-      <Registration_Agents />
+      
 
       {/* Service Highlights Carousel */}
       <Eammu_Carousel />
+
+      {/* Agent Registration */}
+      <Registration_Agents />
 
       {/* Services Cards */}
       <Students_Cards />

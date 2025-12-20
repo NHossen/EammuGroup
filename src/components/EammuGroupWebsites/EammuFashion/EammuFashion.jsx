@@ -80,15 +80,24 @@ const EammuFashion = () => {
         </ul>
       </section>
 
-      {/* CTA */}
-      <div className="text-center mt-10">
-        <p className="text-xl font-semibold text-gray-800 mb-4">
+     {/* CTA */}
+      <section className="text-center mt-10">
+        <p className="text-xl md:text-2xl font-semibold text-gray-800 mb-6">
           Stay tuned — the Eammu Fashion experience is almost here!
         </p>
-        <button className="bg-[#005a31] text-white px-6 py-2 rounded-full hover:bg-[#003e24] transition">
-          Notify Me on Launch
+        <button className="bg-[#005a31] text-white px-8 py-3 rounded-full text-lg hover:bg-[#003e24] transition">
+          📢 Notify Me on Launch
         </button>
-      </div>
+      </section>
+
+      {/* Suggested Next: Photo Album / Video Section */}
+      <section className="mt-16">
+        <h2 className="text-3xl font-semibold text-[#005a31] mb-4 text-center">📸 Fashion Gallery</h2>
+        <p className="text-gray-700 text-center mb-6">
+          Showcase latest collections, events, and customer styles here. You can use a **carousel or masonry gallery**.
+        </p>
+        {/* Future: Embed YouTube video testimonial section below this */}
+      </section>
     </div>
   );
 };
