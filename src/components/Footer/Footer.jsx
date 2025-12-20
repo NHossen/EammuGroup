@@ -38,7 +38,7 @@ const Footer = () => {
                 <nav className='text-[#696969] font-light text-[18px] '>
                     <header className="text-2xl text-[#4b4b4b] font-bold mb-2">Eammu Group Websites</header>
                     <Link className='mb-[6px]' to='/'><a className="link link-hover hover:text-[#005a31]">Eammu</a></Link>
-                    <Link className='mb-[6px]' to='/eammuimmigrationservices'><a className="link link-hover hover:text-[#005a31]">Eammu Immigration Services</a></Link>
+                    <Link className='mb-[6px]' to='/eammuimmigrationservices'><a className="link link-hover hover:text-[#005a31]">Eammu Holidays</a></Link>
                     <Link className='mb-[6px]' to='/eammumarketing'><a className="link link-hover hover:text-[#005a31]">Eammu IT & Marketing Solutions</a></Link>
                     <Link className='mb-[6px]' to='/eammuevent'><a className="link link-hover hover:text-[#005a31]">Eammu Event Management</a></Link>
                     <Link className='mb-[6px]' to='/eammudairy'><a className="link link-hover hover:text-[#005a31]">Eammu Dairy & Poultry Farm</a></Link>

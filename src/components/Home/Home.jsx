@@ -63,6 +63,9 @@ const Home = () => {
       {/* Immigration Services Heading */}
       <EammuImmigrationHeading_2 />
 
+      {/* Agent Registration */}
+      <Registration_Agents />
+
       {/* Service Highlights Carousel */}
       <Eammu_Carousel />
 
@@ -71,11 +74,12 @@ const Home = () => {
       <Tourist_Visa_Cards />
       <Work_Visa_Cards />
 
+
+
       {/* USA Visa Interview Help */}
       <TargetUsaSection />
 
-      {/* Agent Registration */}
-      <Registration_Agents />
+      
 
       {/* Leadership Message */}
       <MessageFromLeadingTeam />

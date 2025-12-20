@@ -16,6 +16,7 @@
     "@material-tailwind/react": "^2.1.8",
     "flowbite": "^3.1.2",
     "flowbite-react": "^0.11.8",
+    "framer-motion": "^12.23.26",
     "i18next": "^25.7.2",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",

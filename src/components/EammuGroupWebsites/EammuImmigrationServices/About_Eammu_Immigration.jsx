@@ -21,10 +21,10 @@ const About_Eammu_Immigration = () => {
         {/* Header */}
         <section className="text-center space-y-6">
           <h1 className="text-3xl sm:text-4xl font-extrabold text-green-800">
-            About Eammu Immigration Services
+            About Eammu Holidays
           </h1>
           <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
-            Founded in 2022, <strong>Eammu Immigration Services</strong> is one of Bangladesh’s fastest-growing global visa consultancies. With over 50 local & international offices, we proudly help thousands achieve their dreams of studying, working, and living abroad.
+            Founded in 2022, <strong>Eammu Holidays</strong> is one of Bangladesh’s fastest-growing global visa consultancies. With over 50 local & international offices, we proudly help thousands achieve their dreams of studying, working, and living abroad.
           </p>
           <img
             src="https://visaindex.s3.eu-central-1.amazonaws.com/wp-content/uploads/2023/10/13203351/What-is-Smart-Tourism-1200x492.webp"

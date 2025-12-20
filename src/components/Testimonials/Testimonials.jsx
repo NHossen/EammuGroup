@@ -2,131 +2,156 @@ import { Helmet } from "react-helmet-async";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 
 const reviews = [
-  {
-    name: "Md. Rahim Uddin",
-    rating: 5,
-    review: "Excellent service! Thanks to Eammu, I got my visa approved smoothly.",
-  },
-  {
-    name: "Fatima Begum",
-    rating: 4.5,
-    review: "Very supportive staff and quick processing. Highly recommended Eammu.",
-  },
-  {
-    name: "Abdul Karim",
-    rating: 5,
-    review: "Professional and reliable. Eammu made my immigration process hassle-free.",
-  },
-  {
-    name: "Ayesha Sultana",
-    rating: 4,
-    review: "Good guidance and support throughout my student visa application with Eammu.",
-  },
-  {
-    name: "Jamal Hossain",
-    rating: 5,
-    review: "Fast and clear communication. Great experience with Eammu Immigration Services.",
-  },
-  {
-    name: "Nasima Khatun",
-    rating: 4.5,
-    review: "Friendly staff and very helpful. Thank you, Eammu, for the support!",
-  },
-  {
-    name: "Sajjad Ali",
-    rating: 5,
-    review: "Highly professional team with excellent knowledge and service from Eammu.",
-  },
-  {
-    name: "Monira Akter",
-    rating: 4,
-    review: "Good service but a bit slow on some processes. Overall satisfied with Eammu.",
-  },
-  {
-    name: "Shakil Ahmed",
-    rating: 5,
-    review: "Got my work visa approved quickly thanks to the help from Eammu.",
-  },
-  {
-    name: "Nusrat Jahan",
-    rating: 4.5,
-    review: "Helpful and patient staff. Eammu answered all my questions clearly.",
-  },
-  {
-    name: "Tariq Mahmud",
-    rating: 5,
-    review: "Trusted company. I highly recommend Eammu for visa services.",
-  },
-  {
-    name: "Salma Parvin",
-    rating: 4,
-    review: "Good service but wish response time was faster. Still very helpful, Eammu.",
-  },
+  { name: "Md. Rahim Uddin", rating: 5, review: "Excellent service! Thanks to Eammu, I got my visa approved smoothly." },
+  { name: "Fatima Begum", rating: 4.5, review: "Very supportive staff and quick processing. Highly recommended Eammu." },
+  { name: "Abdul Karim", rating: 5, review: "Professional and reliable. Eammu made my immigration process hassle-free." },
+  { name: "Ayesha Sultana", rating: 4, review: "Good guidance and support throughout my student visa application with Eammu." },
+  { name: "Jamal Hossain", rating: 5, review: "Fast and clear communication. Great experience with Eammu Immigration Services." },
+  { name: "Nasima Khatun", rating: 4.5, review: "Friendly staff and very helpful. Thank you, Eammu, for the support!" },
+  { name: "Sajjad Ali", rating: 5, review: "Highly professional team with excellent knowledge and service from Eammu." },
+  { name: "Monira Akter", rating: 4, review: "Good service but a bit slow on some processes. Overall satisfied with Eammu." },
+  { name: "Shakil Ahmed", rating: 5, review: "Got my work visa approved quickly thanks to the help from Eammu." },
+  { name: "Nusrat Jahan", rating: 4.5, review: "Helpful and patient staff. Eammu answered all my questions clearly." },
+  { name: "Tariq Mahmud", rating: 5, review: "Trusted company. I highly recommend Eammu for visa services." },
+  { name: "Salma Parvin", rating: 4, review: "Good service but wish response time was faster. Still very helpful." },
 ];
 
-// Helper to render stars based on rating
+// ⭐ Star Renderer
 const renderStars = (rating) => {
   const stars = [];
-  const fullStars = Math.floor(rating);
-  const halfStar = rating % 1 >= 0.5;
-  const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
+  const full = Math.floor(rating);
+  const half = rating % 1 >= 0.5;
+  const empty = 5 - full - (half ? 1 : 0);
 
-  for (let i = 0; i < fullStars; i++) {
-    stars.push(<FaStar key={"full-" + i} className="text-yellow-400" />);
-  }
-  if (halfStar) {
-    stars.push(<FaStarHalfAlt key="half" className="text-yellow-400" />);
-  }
-  for (let i = 0; i < emptyStars; i++) {
-    stars.push(<FaRegStar key={"empty-" + i} className="text-yellow-400" />);
-  }
+  for (let i = 0; i < full; i++) stars.push(<FaStar key={`f-${i}`} />);
+  if (half) stars.push(<FaStarHalfAlt key="h" />);
+  for (let i = 0; i < empty; i++) stars.push(<FaRegStar key={`e-${i}`} />);
 
   return stars;
 };
 
 const Testimonials = () => {
+  // ⭐ Average Rating
+  const avgRating =
+    (reviews.reduce((acc, r) => acc + r.rating, 0) / reviews.length).toFixed(1);
+
+  // ⭐ Review Schema (SEO Gold)
+  const reviewSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Eammu Immigration Services",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": avgRating,
+      "reviewCount": reviews.length,
+    },
+    "review": reviews.map((r) => ({
+      "@type": "Review",
+      "author": { "@type": "Person", "name": r.name },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": r.rating,
+        "bestRating": "5",
+      },
+      "reviewBody": r.review,
+    })),
+  };
+
   return (
-    <div className="px-4 container mx-auto py-8">
-      {/* SEO Helmet */}
+    <section className="px-4 container mx-auto py-14">
+      {/* SEO */}
       <Helmet>
-        <title>Customer Reviews & Testimonials | Eammu Immigration Services</title>
+        <title>Client Reviews & Testimonials | Eammu Immigration Services Bangladesh</title>
         <meta
           name="description"
-          content="Read genuine customer reviews and testimonials about Eammu Immigration Services. Trusted visa experts providing seamless immigration support for Bangladeshis."
+          content="Read real client reviews of Eammu Immigration Services. Trusted visa consultancy in Bangladesh with proven success in student, work, and tourist visas."
         />
         <meta
           name="keywords"
-          content="Eammu Immigration Reviews, Customer Testimonials, Visa Success Stories, Bangladesh Immigration Services, Visa Consultancy Feedback"
+          content="Eammu Reviews, Immigration Testimonials Bangladesh, Visa Consultancy Reviews, Student Visa Success, Work Visa Bangladesh"
         />
-        <meta property="og:title" content="Customer Reviews - Eammu Immigration" />
+        <meta property="og:title" content="Eammu Immigration Services Reviews" />
         <meta
           property="og:description"
-          content="Discover what our satisfied clients say about Eammu Immigration Services. Real success stories and reviews."
+          content="Discover why thousands trust Eammu Immigration Services. Real customer reviews, real visa success stories."
         />
-        <meta property="og:url" content="https://eammu.com/testimonials" />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://eammu.com/testimonials" />
+        <script type="application/ld+json">
+          {JSON.stringify(reviewSchema)}
+        </script>
       </Helmet>
 
-      <h1 className="text-3xl font-bold text-[#005a31] mb-8 text-center">
-        Testimonials & Customer Reviews
-      </h1>
+      {/* Header */}
+      <div className="text-center max-w-3xl mx-auto mb-12">
+        <h1 className="text-4xl font-bold text-[#005a31] mb-3">
+          What Our Clients Say About Eammu
+        </h1>
+        <p className="text-gray-600 text-lg">
+          Real experiences from students, professionals, and travelers who trusted
+          Eammu Immigration Services for their global journey.
+        </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {reviews.map(({ name, rating, review }, idx) => (
-          <div
-            key={idx}
-            className="bg-white rounded-lg shadow-md p-6 border border-gray-200 hover:shadow-lg transition-shadow duration-300"
+        <div className="mt-4 flex justify-center items-center gap-2 text-yellow-400 text-lg">
+          {renderStars(avgRating)}
+          <span className="text-gray-700 font-semibold ml-2">
+            {avgRating}/5 from {reviews.length}+ reviews
+          </span>
+        </div>
+      </div>
+
+      {/* Reviews Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        {reviews.map((r, i) => (
+          <article
+            key={i}
+            className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
           >
-            <div className="flex items-center mb-3">
-              <div className="text-yellow-400 flex">{renderStars(rating)}</div>
+            <div className="flex text-yellow-400 mb-3">
+              {renderStars(r.rating)}
             </div>
-            <p className="text-gray-700 mb-4">&quot;{review}&quot;</p>
-            <h3 className="text-[#005a31] font-semibold text-lg">{name}</h3>
-            <p className="text-sm text-gray-500">Reviewed Eammu Immigration Services - Bangladesh</p>
-          </div>
+            <p className="text-gray-700 mb-4 italic">
+              “{r.review}”
+            </p>
+            <h3 className="text-[#005a31] font-semibold text-lg">
+              {r.name}
+            </h3>
+            <p className="text-sm text-gray-500">
+              Verified Client · Eammu Holidays
+            </p>
+          </article>
         ))}
       </div>
+      <section className="mt-16">
+  <h2 className="text-3xl font-bold text-center text-[#005a31] mb-8">
+    🎥 Video Testimonials From Our Clients
+  </h2>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
+      <iframe
+        className="w-full h-full"
+        src="https://www.youtube.com/watch?v=9RE1nwL9SqM"
+        title="Client Testimonial Eammu"
+        frameBorder="0"
+        allowFullScreen
+      ></iframe>
     </div>
+
+    <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
+      <iframe
+        className="w-full h-full"
+        src="https://www.youtube.com/embed/VIDEO_ID_2"
+        title="Client Review Eammu Immigration"
+        frameBorder="0"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+    </section>
+    
   );
 };
 

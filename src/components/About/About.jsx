@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import Testimonials from '../Testimonials/Testimonials';
 
 const About = () => {
   return (
@@ -115,10 +116,10 @@ const About = () => {
                 Website & app development, SEO, digital marketing, and lead generation for travel, education, and startup businesses.
               </p>
               <Link
-                to="/tour-packages"
+                to="/eammumarketing"
                 className="text-green-800 font-medium hover:underline mt-2 block"
               >
-                Explore Tour Packages
+                Need Assistance
               </Link>
             </div>
 
@@ -133,6 +134,12 @@ const About = () => {
               <p>
                 Weddings, corporate events, and launches with branding, logistics, decoration, and full coordination services.
               </p>
+              <Link
+                to="/eammuevent"
+                className="text-green-800 font-medium hover:underline mt-2 block"
+              >
+                Book a Free Consultation
+              </Link>
             </div>
 
             {/* Fashion */}
@@ -146,6 +153,12 @@ const About = () => {
               <p>
                 Trendy and traditional clothing collections crafted in Bangladesh & Dubai, blending style, elegance, and affordability.
               </p>
+              <Link
+                to="/eammufashion"
+                className="text-green-800 font-medium hover:underline mt-2 block"
+              >
+                Buy Now
+              </Link>
             </div>
 
             {/* Dairy & Poultry */}
@@ -159,6 +172,12 @@ const About = () => {
               <p>
                 Ethical farming for fresh milk, eggs, and poultry. Sustainable operations in Bangladesh for quality produce.
               </p>
+              <Link
+                to="/eammudairy"
+                className="text-green-800 font-medium hover:underline mt-2 block"
+              >
+                Buy Now
+              </Link>
             </div>
 
             {/* Textile */}
@@ -172,6 +191,12 @@ const About = () => {
               <p>
                 Premium fabrics and eco-friendly manufacturing for garments, home furnishings, and uniforms.
               </p>
+              <Link
+                to="/eammutextile"
+                className="text-green-800 font-medium hover:underline mt-2 block"
+              >
+                Request a Free Quote
+              </Link>
             </div>
           </div>
         </section>
@@ -183,6 +208,8 @@ const About = () => {
             To be a globally recognized brand driving growth and empowerment through innovation, teamwork, and top-quality services in immigration, travel, business, and lifestyle.
           </p>
         </section>
+
+        <Testimonials />
 
         {/* Contact */}
         <section className="bg-[#f4fdf7] rounded-lg p-6 space-y-4 shadow-md">

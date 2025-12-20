@@ -41,7 +41,7 @@ const WhyChoiceEammu = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Why Choose Eammu Immigration Services?
+        Why Choose Eammu Holidays?
       </motion.h1>
 
       <motion.div

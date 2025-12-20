@@ -74,7 +74,7 @@ const Careers = () => {
               rel="noopener noreferrer"
               className="bg-green-800 text-white px-6 py-3 rounded-full hover:bg-green-900 transition"
             >
-              Apply Now via Google Form
+              Apply Now
             </a>
 
             <Link

@@ -40,7 +40,7 @@ const EammuNewsfeeds = () => {
           <section className="bg-white p-6 rounded-xl shadow-md my-8 text-left">
             <h2 className="text-2xl font-semibold text-green-700 mb-2">🌍 About Our Newsfeeds</h2>
             <p className="text-gray-600 leading-relaxed">
-              At Eammu Immigration Services, we believe in keeping our clients and community informed. Whether it's breaking visa news, new scholarship announcements, embassy alerts, or destination insights — our blog is designed to help you make the smartest travel and study decisions.
+              At Eammu Holidays, we believe in keeping our clients and community informed. Whether it's breaking visa news, new scholarship announcements, embassy alerts, or destination insights — our blog is designed to help you make the smartest travel and study decisions.
             </p>
           </section>
 

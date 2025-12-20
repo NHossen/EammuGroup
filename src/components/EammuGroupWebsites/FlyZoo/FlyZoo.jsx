@@ -70,6 +70,76 @@ const FlyZoo = () => {
         </ul>
       </section>
 
+      {/* POPULAR ROUTES */}
+<section className="mb-16">
+  <h2 className="text-3xl font-bold text-[#005a31] mb-6 text-center">
+    🌍 Popular International Routes
+  </h2>
+  <p className="text-center text-gray-600 max-w-3xl mx-auto mb-10">
+    FlyZoo Holidays connects Bangladesh, UAE, Europe, and Asia with the most
+    demanded international routes — powered by Eammu Holidays’ global network.
+  </p>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {[
+      {
+        route: "Dhaka → Dubai",
+        desc: "Most booked route for work, visit & tourism",
+        price: "Starting from ৳38,000",
+      },
+      {
+        route: "Dhaka → Kuala Lumpur",
+        desc: "Top choice for tourists & students",
+        price: "Starting from ৳32,000",
+      },
+      {
+        route: "Dhaka → Istanbul",
+        desc: "Gateway to Europe & Schengen",
+        price: "Starting from ৳45,000",
+      },
+      {
+        route: "Dhaka → London",
+        desc: "UK visit, student & family travel",
+        price: "Starting from ৳65,000",
+      },
+      {
+        route: "Dhaka → Rome",
+        desc: "Europe tourism & business travel",
+        price: "Starting from ৳58,000",
+      },
+      {
+        route: "Dhaka → Yerevan",
+        desc: "Trending destination for Armenia travel",
+        price: "Starting from ৳42,000",
+      },
+    ].map((item, index) => (
+      <div
+        key={index}
+        className="border border-[#005a31] rounded-xl p-6 bg-white shadow-md hover:shadow-lg transition"
+      >
+        <h3 className="text-xl font-semibold text-[#005a31] mb-2">
+          ✈️ {item.route}
+        </h3>
+        <p className="text-gray-600 mb-3">{item.desc}</p>
+        <p className="text-sm font-semibold text-gray-800">
+          {item.price}
+        </p>
+      </div>
+    ))}
+  </div>
+
+  {/* CTA */}
+  <div className="text-center mt-10">
+    <a
+      href="https://wa.me/8801631312524"
+      className="inline-block bg-[#005a31] text-white px-7 py-3 rounded-full hover:bg-[#003e24] transition"
+    >
+      📞 Book Popular Route on WhatsApp
+    </a>
+  </div>
+</section>
+
+
       {/* Launch CTA */}
       <div className="text-center mt-16">
         <p className="text-xl font-semibold text-gray-800 mb-4">
