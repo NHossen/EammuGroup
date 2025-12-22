@@ -7,7 +7,7 @@ const EammuEvent = () => {
       {/* SEO Meta Tags */}
       <Helmet>
         <title>
-          Eammu Event Management | Wedding, Corporate & Cultural Event Planner in Bangladesh
+          Event Management Company Bangladesh | Wedding, Corporate & Cultural Event Planner in Dhaka - Eammu
         </title>
         <meta
           name="description"
@@ -15,7 +15,7 @@ const EammuEvent = () => {
         />
         <meta
           name="keywords"
-          content="Eammu Event Management, Wedding Planner Bangladesh, Corporate Event Organizer, Cultural Events, Cumilla Event Planner, Event Management Company"
+          content="Eammu Event Management, Wedding Planner Bangladesh,Wedding Planner Cumilla, Corporate Event Organizer Dhaka, Cultural Events Bangladesh, Cumilla Event Planner, Event Management Company Dhaka"
         />
         <link rel="canonical" href="https://www.eammu.com/eammuevent" />
 

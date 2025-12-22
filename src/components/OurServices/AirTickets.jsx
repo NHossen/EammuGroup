@@ -25,7 +25,7 @@ const AirTickets = () => {
       "https://www.instagram.com/eammu",
       "https://www.linkedin.com/company/eammu"
     ],
-    "description": "Book the cheapest domestic and international flights with Eammu. Serving students, tourists, and professionals.",
+    "description": "Book the cheapest domestic and international flights with Eammu Holidays From Bangladesh. Serving students, tourists, and professionals.",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Popular Routes & Deals",
@@ -50,14 +50,14 @@ const AirTickets = () => {
   return (
     <div className="px-4 sm:px-6 lg:px-10 container mx-auto py-10">
       <Helmet>
-        <title>Air Tickets | Eammu - Cheapest Domestic & International Flights</title>
+        <title>Bangladesh Flight Ticket | Cheapest Air Tickets from Bangladesh – Book Online - Dubai and Dhaka | Eammu Holidays</title>
         <meta
           name="description"
-          content="Book the cheapest domestic and international air tickets with Eammu. Flights for students, tourists, and professionals. IATA & API booking coming soon."
+          content="Book the cheapest domestic and international air tickets with Eammu Holidays From Bangladesh. Flights for students, tourists, and professionals.Offer Flight Tickets From Bangladesh."
         />
         <meta
           name="keywords"
-          content="Air tickets, Cheap flights, Flight booking, Domestic flights, International flights, USA flights, UK flights, Canada flights, Australia flights, Eammu Travel"
+          content="Air tickets, Cheap flights, Flight booking, Domestic flights, International flights, USA flights, UK flights, Canada flights, Australia flights, Eammu Holidays , Offer Flights, Dubai Flight , Discount Flights tickets"
         />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
@@ -68,7 +68,7 @@ const AirTickets = () => {
       <div className="text-center mb-10">
         <h1 className="text-4xl font-bold text-[#005a31] mb-4">Air Tickets Booking</h1>
         <p className="text-gray-700 text-lg max-w-2xl mx-auto">
-          Eammu provides <strong>affordable air tickets</strong> for domestic and international flights. Whether traveling for <strong>study, tourism, or work</strong>, we offer offline booking today and online IATA/API-based booking soon.
+          Eammu Holidays provides <strong>affordable air tickets</strong> for domestic and international flights From Bangladesh. Whether traveling for <strong>study, tourism, or work</strong>, we offer offline booking today and online IATA/API-based booking soon.
         </p>
       </div>
 

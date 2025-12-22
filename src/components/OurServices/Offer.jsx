@@ -40,14 +40,14 @@ const Offer = () => {
     <div className="px-4 container mx-auto py-10">
       <Helmet>
         {/* Basic SEO */}
-        <title>Eammu Offers - Tourist, Student & Work Visa Discounts</title>
+        <title>Travel Agency Dhaka | Cheapest Flight and Hotel - Tourist Visa and Student Visa</title>
         <meta
           name="description"
-          content="Check out the latest offers from Eammu Immigration Services — discounts on tourist visas, student visas, air tickets, and family tour packages. Book now!"
+          content="Check out the latest offers from Eammu Holidays — discounts on tourist visas, student visas, air tickets, and family tour packages. Book now!"
         />
         <meta
           name="keywords"
-          content="Eammu offers, visa discounts, tourist visa, student visa, work visa, tour package discounts, travel deals"
+          content="Eammu offers Bangladesh, visa discounts Dubai, tourist visa Canada, student visa Europe, work visa Europe, tour package discounts Bangladesh and Armenia, travel deals Dubai"
         />
         <link rel="canonical" href="https://eammu.com/offers" />
         <meta name="robots" content="index, follow" />

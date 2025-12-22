@@ -5,14 +5,14 @@ const About_Eammu_Immigration = () => {
   return (
     <>
       <Helmet>
-        <title>Eammu Holidays | Global Visa, Student Visa & Migration Experts</title>
+        <title>Bangladesh Visa Application Centre |Global Visa, Student Visa and Tourist Visa | Travel Bangladesh- Eammu Holidays </title>
         <meta
           name="description"
-          content="Learn about Eammu Holidays — your trusted partner for global immigration, student visas, work permits, and relocation support across Canada, UK, UAE, Europe, and beyond."
+          content="Learn about Eammu Holidays — your trusted partner for student visas, work permits, and relocation support across Canada, UK, UAE, Europe, and beyond."
         />
         <meta
           name="keywords"
-          content="Eammu Holidays, visa consultant Bangladesh, study abroad, immigration to Canada, UAE visa, work visa, student visa agency, green card, migration help"
+          content="Eammu Holidays, visa consultant Bangladesh, study abroad, Canada Visa From Bangladesh, UAE visa, work visa, student visa agency, green card, migration help,Travel Agency In Bangladesh, Top Travel Agency Bangladesh"
         />
       </Helmet>
 
@@ -110,7 +110,7 @@ const About_Eammu_Immigration = () => {
         {/* Contact & CTA */}
         <section className="bg-[#f4fdf7] p-6 sm:p-10 rounded-lg shadow text-center">
           <h2 className="text-2xl font-bold mb-4 text-green-800">
-            Connect with Eammu Immigration Experts
+            Connect with Eammu Holidays Experts
           </h2>
           <p className="text-gray-700 mb-6">
             Our journey starts with you. Book a free consultation today and let’s build your path abroad.

@@ -48,12 +48,12 @@ const MessageFromLeadingTeam = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Eammu Immigration Services",
+    "name": "Eammu Holidays",
     "url": "https://eammu.com",
     "logo": "https://eammu.com/logo.png",
     "sameAs": [
       "https://facebook.com/eammuimmigrationservices",
-      "https://instagram.com/eammutour",
+      "https://instagram.com/eammuholidays",
       "https://linkedin.com/company/eammu-immigration-services"
     ],
     "employee": teamMembers.map((member) => ({
@@ -68,14 +68,14 @@ const MessageFromLeadingTeam = () => {
   return (
     <section className="px-4 py-16 bg-gray-50">
       <Helmet>
-        <title>Meet Our Leadership Team | Eammu Immigration Services</title>
+        <title>Eammu Leadership Team Bangladesh | Eammu Holidays : Travel Agency Bangladesh</title>
         <meta
           name="description"
-          content="Discover the leadership team at Eammu Immigration Services. Meet global visa experts, student visa specialists, and customer service managers dedicated to helping you."
+          content="Discover the leadership team at Eammu Holidays. Meet global visa experts, student visa specialists, and customer service managers dedicated to helping you."
         />
         <meta
           name="keywords"
-          content="Eammu leadership team, visa experts, travel consultants, immigration specialists, student visa advisors"
+          content="Eammu leadership team, visa experts in Bangladesh, travel consultants Bangladesh, immigration specialists, student visa advisors Bangladesh"
         />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
         <link rel="canonical" href="https://eammu.com/leadership-team" />
@@ -88,7 +88,7 @@ const MessageFromLeadingTeam = () => {
         transition={{ duration: 0.8 }}
         className="text-center mb-12"
       >
-        <h1 className="text-4xl font-bold text-green-800 mb-4">Meet Our Leadership Team</h1>
+        <h1 className="text-4xl font-bold text-green-800 mb-4">Eammu Leadership Team</h1>
         <p className="text-gray-600 max-w-3xl mx-auto">
           Our leadership team combines years of experience in global visas, immigration services, travel consulting, 
           and customer support. We are committed to guiding you through every step of your journey abroad. 

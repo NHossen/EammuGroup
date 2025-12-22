@@ -107,9 +107,9 @@ const truncateText = (text, length = 120) => {
 
 const Blogs = () => {
   const [activeBlog, setActiveBlog] = useState(null);
-  const [dynamicTitle, setDynamicTitle] = useState("Eammu Blogs | Visa & Travel News 2025");
+  const [dynamicTitle, setDynamicTitle] = useState("Top Travel Agency Bangladesh | Visa | Flight | Hotel | Travel News");
   const [dynamicDescription, setDynamicDescription] = useState(
-    "Stay updated with the latest visa news, travel tips, immigration offers, and student opportunities with Eammu."
+    "Top Travel Agency Bangladesh by Online ,Stay updated with the latest visa news, travel tips, and student Visa opportunities with Eammu Holidays."
   );
 
   const openModal = (post) => {
@@ -133,7 +133,7 @@ const Blogs = () => {
         <meta name="description" content={dynamicDescription} />
         <meta
           name="keywords"
-          content="student visa, tourist visa, work visa, study abroad, immigration news, travel tips, Bangladesh visa, Eammu blogs"
+          content="student visa, tourist visa, work visa, study abroad, Dubai visa, travel tips, Bangladesh visa, Eammu blogs, Armenia Visa , Canada Visa , China Visa , Qatar Visa , Albania Visa"
         />
         <link rel="canonical" href="https://eammu.com/blogs" />
       </Helmet>

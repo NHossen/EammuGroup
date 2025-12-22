@@ -6,26 +6,26 @@ const WhyChoiceEammu = () => {
     <div className="px-4 md:px-8 lg:px-16 container mx-auto py-12 bg-gradient-to-b from-[#f0fdf4] to-white min-h-screen">
       {/* ✅ SEO Tags */}
       <Helmet>
-        <title>Eammu | Trusted Visa & Study Abroad Experts | Apply for Europe, USA, UK & Tourist Visas with Eammu</title>
+        <title>Travel Agency Bangladesh | Eammu Holidays | Apply for Visa Europe, USA, Armenia , Dubai</title>
         <meta
           name="description"
-          content="Discover why Eammu Immigration Services is the top choice for visa processing, study abroad consulting, group tours, and international travel support. 6+ years of trusted service from Bangladesh and UAE."
+          content="Eammu Holidays offers expert student Visa , tourist Visa , and work visa support for USA, Canada, UK, Europe, UAE, and more. Trusted visa consultancy in Bangladesh and UAE."
         />
         <meta
           name="keywords"
-          content="Why Eammu, Eammu Immigration Services, best visa consultancy Bangladesh, visa agency UAE, travel agency Bangladesh, Eammu reviews, education consultancy, student visa help"
+          content="Eammu, Eammu Holidays, Travel Agency Bangladesh, Travel agency Dubai,Study Abroad With Eammu,Best Travel Agency Bangladesh, education consultancy, student visa help , Tourist Visa"
         />
-        <meta name="author" content="Eammu Immigration Services" />
+        <meta name="author" content="Eammu Holidays" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://eammu.com/whychooseus" />
 
         {/* Open Graph for Facebook/LinkedIn */}
-        <meta property="og:title" content="Why Choose Eammu Immigration Services" />
+        <meta property="og:title" content="Why Choose Eammu Holidays" />
         <meta property="og:description" content="Explore what makes Eammu your trusted immigration and travel partner. Proven success in visas, tours, and student guidance." />
         <meta property="og:image" content="https://eammu.com/eammuicon.jpg" />
         <meta property="og:url" content="https://eammu.com/whychooseus" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Eammu Immigration Services" />
+        <meta property="og:site_name" content="Eammu Holidays" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />

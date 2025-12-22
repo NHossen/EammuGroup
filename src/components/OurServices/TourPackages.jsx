@@ -213,16 +213,16 @@ const TourPackages = () => {
     <HelmetProvider>
       <>
         <Helmet>
-          <title>Eammu Tour Packages - International & Domestic Tours</title>
+          <title>Tour Packages From Bangladesh | Cheapest Tour Packages | Tourism Company Bangladesh </title>
           <meta
             name="description"
-            content="Explore popular International and Domestic Tour Packages offered by Eammu Tours. From Dubai and Japan to Cox's Bazar and Sundarbans, discover top destinations with Eammu."
+            content="Explore popular International and Domestic Tour Packages offered by Eammu Holidays. From Dubai and Japan to Cox's Bazar and Sundarbans, discover top destinations with Eammu Holidays."
           />
           <meta
             name="keywords"
-            content="International tours, Domestic tours Bangladesh, Travel packages, Eammu Tours, Dubai tours, Japan tours, Cox's Bazar, Sundarbans, Bangladesh tours"
+            content="International Tour Packages, Domestic tours Bangladesh, Travel packages, Eammu Tour Packages, Dubai Tour Packages, Japan Tour Packages, Cox's Bazar, Sundarbans, Bangladesh Tour Packages , Cheapest Tour Packages"
           />
-          <meta name="author" content="Eammu Tours" />
+          <meta name="author" content="Eammu Holidays" />
 
           {/* JSON-LD Structured Data */}
           <script type="application/ld+json">{JSON.stringify(jsonLD)}</script>

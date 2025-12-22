@@ -61,7 +61,7 @@ const Footer = () => {
                 {/* Social Media Section */}
                 <nav className='text-[#696969] font-light text-[18px] '>
                     <header className="text-2xl text-[#4b4b4b] font-bold mb-2">Eammu Social Media</header>
-                    <a className="link text-blue-700 link-hover hover:text-[#005a31] mb-[6px]" href="https://facebook.com/eammuimmigrationservices" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a className="link text-blue-700 link-hover hover:text-[#005a31] mb-[6px]" href="https://www.facebook.com/eammutourism" target="_blank" rel="noopener noreferrer">Facebook</a>
                     <a className="link text-red-600 link-hover hover:text-[#005a31] mb-[6px]" href="https://www.youtube.com/@Eammutour" target="_blank" rel="noopener noreferrer">Youtube</a>
                     <a className="link text-blue-800 link-hover hover:text-[#005a31] mb-[6px]" href="https://linkedin.com/company/eammu-immigration-services" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     <a className="link text-pink-700 link-hover hover:text-[#005a31] mb-[6px]" href="https://instagram.com/eammuholidays" target="_blank" rel="noopener noreferrer">Instagram</a>

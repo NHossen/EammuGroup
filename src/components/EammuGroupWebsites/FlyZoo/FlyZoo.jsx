@@ -7,7 +7,7 @@ const FlyZoo = () => {
     <div className="px-4 container mx-auto py-12">
       {/* Helmet SEO Meta */}
       <Helmet>
-        <title>FlyZoo | Holiday Packages & Flight Deals by Eammu Group</title>
+        <title>FlyZoo Holidays | Holiday Packages & Flight Deals by Eammu Group</title>
         <meta
           name="description"
           content="FlyZoo, a sub-organization of Eammu Group, will soon offer unbeatable flight deals and holiday packages worldwide. Launching soon — stay tuned!"

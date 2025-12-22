@@ -5,19 +5,19 @@ const TargetUsaInterview = () => {
   return (
     <div className="px-4 container mx-auto py-10">
       <Helmet>
-        <title>Target USA Visa Interview Preparation | Eammu Immigration Services</title>
+        <title>Travel Agency Dhaka | Visa Interview Preparation Bangladesh | Visa , Flight , Hotel </title>
         <meta
           name="description"
-          content="Prepare for your USA visa interview with Eammu's Target USA program. Get expert guidance on F1, B1/B2, document support, mock interviews, and more."
+          content="Prepare for your visa interview with Eammu's Target USA program. Get expert guidance on F1, B1/B2,Europe Visa, Canada Visa, USA, document support, mock interviews, and more."
         />
         <meta
           name="keywords"
-          content="USA visa interview, F1 visa coaching, B2 visa support, mock visa interview, Eammu Immigration, Target USA program, USA visa preparation, student visa USA, US embassy coaching"
+          content="USA visa interview Preparation, F1 visa coaching, B2 visa support, mock visa interview, Eammu Holidays, Target USA program, USA visa preparation, student visa USA, Travel Agency Bangladesh , Tourist Visa Preparation , Work Permit Bangladesh , Travel Agency Dhaka , Travel Agency Sylhet , Travel Agency Chittagong"
         />
-        <meta name="author" content="Eammu Immigration Services" />
+        <meta name="author" content="Eammu Holidays" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.eammu.com/targetusavisainterview" />
-        <meta property="og:title" content="Target USA Visa Interview Preparation" />
+        <meta property="og:title" content="Visa Interview Preparation" />
         <meta
           property="og:description"
           content="Expert support from Eammu to crack your US visa interview. Get dress code tips, question patterns, document arrangement, and more."
@@ -25,9 +25,9 @@ const TargetUsaInterview = () => {
         <meta property="og:image" content="https://www.eammu.com/eammuicon.jpg" />
         <meta property="og:url" content="https://www.eammu.com/targetusavisainterview" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Eammu Immigration Services" />
+        <meta property="og:site_name" content="Eammu Holidays" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Target USA Interview Preparation | Eammu Immigration" />
+        <meta name="twitter:title" content="Target USA Interview Preparation | Eammu Holidays" />
         <meta
           name="twitter:description"
           content="Join Eammu’s proven interview training program for USA F1, B1/B2 visas and secure your future abroad."
@@ -39,10 +39,10 @@ const TargetUsaInterview = () => {
       {/* Heading */}
       <header className="text-center mb-10">
         <h1 className="text-3xl md:text-4xl font-bold text-green-800">
-          Target USA Visa Interview Preparation
+          Target USA Visa Interview Preparation Bangladesh
         </h1>
         <p className="text-gray-600 mt-2">
-          By Eammu Immigration Services — Cumilla’s trusted name in visa success
+          By Eammu Holidays — Cumilla’s trusted name in visa success
         </p>
         <img
           src="https://www.jobberman.com/discover/wp-content/uploads/2016/10/Jobberman_Preparing_for_Interviews.png" // Placeholder
@@ -89,7 +89,7 @@ const TargetUsaInterview = () => {
 
       {/* Contact Info */}
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-green-700 mb-4">Contact Us</h2>
+        <h2 className="text-2xl font-bold text-green-700 mb-4">Contact Us Travel Agency Bangladesh</h2>
         <ul className="space-y-2 text-gray-700 text-base">
           <li><strong>📞 Call/WhatsApp:</strong> <a href="tel:+8801701699743" className="text-blue-600">+8801701699743</a>, <a href="tel:+971507078334" className="text-blue-600">+971507078334</a></li>
           <li><strong>📧 Email:</strong> <a href="mailto:eammuimmigration@gmail.com" className="text-blue-600">eammuimmigration@gmail.com</a></li>
@@ -102,7 +102,7 @@ const TargetUsaInterview = () => {
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-green-700 mb-4">Follow Us</h2>
         <div className="flex gap-4 flex-wrap">
-          <a href="#" className="text-blue-600 hover:underline">Facebook</a>
+          <a href="https://www.facebook.com/TargetUSAInterviewPreparation" className="text-blue-600 hover:underline">Facebook</a>
           <a href="#" className="text-pink-600 hover:underline">Instagram</a>
           <a href="#" className="text-blue-800 hover:underline">LinkedIn</a>
         </div>

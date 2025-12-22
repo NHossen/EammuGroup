@@ -37,14 +37,14 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Eammu | Visa, Immigration, IT & Travel Services</title>
+        <title>Online Travel Agency Bangladesh | Student Visa, Tourist Visa , Tour Packages |Contact Eammu Holidays </title>
         <meta
           name="description"
-          content="Get in touch with Eammu for immigration, student visas, tech support, and global travel services. Reach us via phone, email, or WhatsApp."
+          content="Get in touch with Eammu Holidays For student visas, tech support, and global travel services. Reach us via phone, email, or WhatsApp. Travel Agency Based On Bangladesh, Contact With Us For Visa , Flight , Tour Packages"
         />
         <meta
           name="keywords"
-          content="Eammu contact, visa support, immigration help, contact Eammu, study abroad consultant, Cumilla immigration office, Dubai, Armenia, Georgia office"
+          content="Eammu Holidays contact, visa support,flight Tickets, Travel Agency Bangladesh, study abroad consultant, Travel Agency Dubai, Dubai, Travel Agency Armenia, Travel Agency Georgia"
         />
         <link rel="canonical" href="https://eammu.com/contact" />
       </Helmet>
@@ -112,7 +112,7 @@ const Contact = () => {
             <div>
               <p className="text-gray-800 font-semibold">Follow Us:</p>
               <div className="flex flex-wrap gap-4 mt-2">
-                 <a href="https://facebook.com/eammuimmigrationservices" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                 <a href="https://facebook.com/eammutourism" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
                   Facebook
                 </a>
                 <a href="https://instagram.com/eammuholidays" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:underline">

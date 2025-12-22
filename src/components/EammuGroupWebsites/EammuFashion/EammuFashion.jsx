@@ -5,9 +5,9 @@ const EammuFashion = () => {
     <div className="px-4 container mx-auto py-12">
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>Eammu Fashion | Traditional & Modern Wear in Bangladesh</title>
+        <title>Men T Shirt Store in Bangladesh | Eammu| Best Fashion Brand in Dhaka for Men & Women </title>
         <meta name="description" content="Discover premium fashion for men, women, and kids at Eammu Fashion — from Panjabi to Western styles. Launching soon in Cumilla & online!" />
-        <meta name="keywords" content="Eammu Fashion, Panjabi, Kabli, Hijab, Kurtis, Men's Wear, Women's Fashion, Cumilla Fashion Store, Bangladesh Clothing, Eid Collection" />
+        <meta name="keywords" content="Eammu Fashion Dhaka , Eammu Fashion Bangladesh, Panjabi buy Cumilla , Kabli, Hijab Store Cumilla, Kurtis, Men's Wear Store Cumilla , Women's Fashion, Cumilla Fashion Store, Bangladesh Clothing, Eid Collection,T Shirt Store Bangladesh , Best Clothing Store Cumilla , Top Brand Shop Cumilla , Styles T shirt Bangladesh" />
         <meta property="og:title" content="Eammu Fashion | Traditional & Modern Wear in Bangladesh" />
         <meta property="og:description" content="Launching soon: Eammu Fashion store in Cumilla and online! Explore premium clothing for all." />
         <meta property="og:type" content="website" />
@@ -63,7 +63,7 @@ const EammuFashion = () => {
         <h2 className="text-2xl font-semibold text-[#005a31] mb-2">Where You'll Find Us</h2>
         <p className="text-gray-700">Eammu Fashion will be launching both online and offline stores:</p>
         <ul className="list-disc pl-6 text-gray-700 mt-2">
-          <li>🛍️ Flagship Store in Cumilla Cantonment (Coming 2025)</li>
+          <li>🛍️ Flagship Store in Cumilla Cantonment (Coming 2026)</li>
           <li>🌐 E-commerce Website with Nationwide Delivery</li>
           <li>📱 Mobile App for Android and iOS</li>
         </ul>
@@ -74,7 +74,7 @@ const EammuFashion = () => {
         <h2 className="text-2xl font-semibold text-[#005a31] mb-2">Follow Us</h2>
         <p className="text-gray-700">Be the first to get updates on launches, offers, and new arrivals:</p>
         <ul className="list-disc pl-6 text-blue-600 mt-2">
-          <li><a href="#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <li><a href="https://www.facebook.com/eammufashion/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
           <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
           <li><a href="#" target="_blank" rel="noopener noreferrer">TikTok</a></li>
         </ul>

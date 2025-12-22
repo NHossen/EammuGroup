@@ -5,14 +5,14 @@ const EammuItMarketing = () => {
     <div className="px-4 container mx-auto py-10">
       {/* SEO Helmet */}
       <Helmet>
-        <title>Eammu IT & Marketing Solutions | Web, Branding & Digital Growth</title>
+        <title>Digital Marketing Solutions Bangladesh | Marketing and Branding Dhaka by Eammu </title>
         <meta
           name="description"
-          content="Eammu IT & Marketing offers web development, SEO, branding, social media management, and full digital growth solutions tailored for businesses in Bangladesh and globally."
+          content="Eammu IT & Marketing offers web development, SEO, branding, social media management World Wide, and full digital growth solutions tailored for businesses in Bangladesh and globally."
         />
         <meta
           name="keywords"
-          content="Eammu IT, Digital Marketing, Web Development, SEO Bangladesh, Branding Services, Social Media Marketing, Cumilla Marketing Agency"
+          content="Eammu IT, Digital Marketing Europe,Digital Marketing Dubai, Web Development Bangladesh, SEO Bangladesh, Branding Services Dubai, Social Media Marketing, Marketing Agency Bangladesh"
         />
         <meta property="og:title" content="Eammu IT & Marketing Solutions" />
         <meta

@@ -5,14 +5,14 @@ const EammuNewsfeeds = () => {
   return (
     <>
       <Helmet>
-        <title>Eammu Newsfeeds | Latest Immigration & Travel Updates</title>
+        <title>Travel News Bangladdesh : Flights, Visa, Hotel | Travel Agency Dhaka </title>
         <meta
           name="description"
-          content="Stay tuned for Eammu Newsfeeds! Get the latest updates on immigration policies, Tourist Visa, student visas, travel alerts, and global opportunities."
+          content="Stay tuned for Eammu Newsfeeds! Get the latest updates on immigration policies Bangladesh, Tourist Visa Bangladesh, student visas bangladesh, travel alerts, and global opportunities."
         />
         <meta
           name="keywords"
-          content="Eammu Newsfeeds, immigration news, travel updates, visa policy, study abroad updates, Eammu blog"
+          content="Eammu Newsfeeds, immigration news, travel updates, visa policy Bangladesh, study abroad updates, Eammu blog Bangladesh, Travel Agency News Bangladesh, Travel Agency Update News"
         />
       </Helmet>
 

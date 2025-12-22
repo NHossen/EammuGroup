@@ -5,14 +5,14 @@ const EammuTextile = () => {
     <div className="px-4 container mx-auto py-12">
       {/* Helmet SEO Tags */}
       <Helmet>
-        <title>Eammu Textile | Premium Fabric & Garment Manufacturer in Bangladesh</title>
+        <title>Bangladesh Textile & Garments Manufacturer | Eammu Textile – Fabric, Garments & Bulk Supply Bangladesh</title>
         <meta
           name="description"
-          content="Eammu Textile is your trusted partner for high-quality fabrics, readymade garments, and export solutions from Bangladesh. Discover sustainable, customized textile production."
+          content="Eammu Textile is your trusted partner for high-quality fabrics, readymade garments, and export solutions from Bangladesh. Discover sustainable, customized textile production.Wholesale Textile Supplier in Bangladesh | Eammu Textile"
         />
         <meta
           name="keywords"
-          content="Eammu Textile, Bangladesh Textile Company, Fabric Exporter, Garment Manufacturer, RMG Bangladesh, Woven, Knitwear, Ready Made Garments"
+          content="Eammu Textile Bangladesh, Bangladesh Textile Company, Fabric Exporter Bangladesh, Garment Manufacturer Bangladesh, RMG Bangladesh, Woven, Knitwear Bangladesh, Ready Made Garments Bangladesh"
         />
         <meta property="og:title" content="Eammu Textile | Trusted Fabric & Garments Exporter" />
         <meta

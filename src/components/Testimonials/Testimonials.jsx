@@ -61,19 +61,19 @@ const Testimonials = () => {
     <section className="px-4 container mx-auto py-14">
       {/* SEO */}
       <Helmet>
-        <title>Client Reviews & Testimonials | Eammu Holidays Bangladesh ,Dubai , Armenia</title>
+        <title>Best Travel Agency Bangladesh - Visa | Flight | Hotel | Eammu Holidays</title>
         <meta
           name="description"
-          content="Read real client reviews of Eammu Immigration Services. Trusted visa consultancy in Bangladesh with proven success in student, work, and tourist visas."
+          content="Trusted visa consultancy in Bangladesh with proven success in student Visa , work Visa, and tourist visas.Read real client reviews of Eammu Holidays."
         />
         <meta
           name="keywords"
-          content="Eammu Reviews, Immigration Testimonials Bangladesh, Visa Consultancy Reviews, Student Visa Success, Work Visa Bangladesh"
+          content="Eammu Holidays, Immigration Testimonials Bangladesh, Visa Consultancy Reviews, Student Visa Success, Work Visa Bangladesh, Tourist Visa"
         />
-        <meta property="og:title" content="Eammu Immigration Services Reviews" />
+        <meta property="og:title" content="Eammu Holidays Reviews" />
         <meta
           property="og:description"
-          content="Discover why thousands trust Eammu Immigration Services. Real customer reviews, real visa success stories."
+          content="Discover why thousands trust Eammu Holidays. Real customer reviews, real visa success stories."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://eammu.com/testimonials" />
@@ -85,11 +85,11 @@ const Testimonials = () => {
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto mb-12">
         <h1 className="text-4xl font-bold text-[#005a31] mb-3">
-          What Our Clients Say About Eammu
+          What Our Clients Say About Eammu Holidays
         </h1>
         <p className="text-gray-600 text-lg">
           Real experiences from students, professionals, and travelers who trusted
-          Eammu Immigration Services for their global journey.
+          Eammu Holidays for their global journey.
         </p>
 
         <div className="mt-4 flex justify-center items-center gap-2 text-yellow-400 text-lg">

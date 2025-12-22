@@ -12,14 +12,14 @@ const EammuDairy = () => {
     <div className="container mx-auto px-4 py-12">
       {/* ✅ SEO META */}
       <Helmet>
-        <title>Eammu Dairy & Poultry in Cumilla | Fresh Milk, Eggs & Poultry</title>
+        <title>Dairy and Poultry Farm Bangladesh | Fresh Milk, Eggs & Poultry Dhaka | Eammu</title>
         <meta
           name="description"
-          content="Eammu Dairy & Poultry in Cumilla offers fresh organic cow milk, free-range eggs, and local poultry. Farm-fresh, chemical-free, and trusted by local families."
+          content="Eammu Dairy & Poultry in Bangladesh offers fresh organic cow milk, free-range eggs, and local poultry. Farm-fresh, chemical-free, and trusted by local families."
         />
         <meta
           name="keywords"
-          content="Eammu Dairy, Poultry Farm Cumilla, Fresh Milk Bangladesh, Organic Eggs, Local Chicken, Dairy Farm Cumilla"
+          content="Eammu Dairy, Poultry Farm Dhaka,Poultry Farm Bangladesh, Fresh Milk Bangladesh, Organic Eggs, Local Chicken, Dairy Farm Cumilla, Dairy Farm Dhaka , Fresh Vegetables Dhaka"
         />
         <link rel="canonical" href="https://www.eammu.com/eammudairy" />
         <meta property="og:title" content="Eammu Dairy & Poultry | Farm Fresh from Cumilla" />
@@ -40,7 +40,7 @@ const EammuDairy = () => {
         className="text-center mb-12"
       >
         <h1 className="text-4xl md:text-5xl font-bold text-[#005a31] mb-4">
-          Eammu Dairy & Poultry
+          Eammu Dairy & Poultry 🌿
         </h1>
         <p className="text-gray-600 max-w-3xl mx-auto text-lg">
           From our Cumilla farm to your home — fresh, organic, and chemical-free dairy & poultry you can trust.

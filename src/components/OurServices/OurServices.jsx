@@ -39,10 +39,14 @@ const OurServices = () => {
   return (
     <div className="px-4 md:px-8 lg:px-16 container mx-auto pt-6 pb-12 bg-gradient-to-b from-[#f0fdf4] to-white">
       <Helmet>
-        <title>Our Services | Eammu Immigration & Travel Solutions</title>
+        <title>Best B2B Travel Agency Bangladesh : Hotel, Visa, Flight And Online Booking |Best Travel Agency Dhaka</title>
         <meta
           name="description"
-          content="Explore the full range of services by Eammu Immigration Services. Visa support, study abroad guidance, tour packages, and more from Bangladesh and UAE."
+          content="Explore the full range of services by Eammu Holidays. Visa support, study abroad guidance, tour packages, and more from Bangladesh and UAE."
+        />
+        <meta
+          name="keywords"
+          content="Air tickets,Best Travel Agency Dhaka, Cheap flights Bangladesh, Flight booking Bangladesh, Domestic flights, International flights, USA flights, UK flights, Canada flights, Australia flights, Eammu Holidays , Offer Flights, Dubai Flight , Discount Flights tickets,Top Travel Agency Bangladesh"
         />
         <link rel="canonical" href="https://eammu.com/ourServices" />
       </Helmet>
