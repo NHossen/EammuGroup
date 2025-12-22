@@ -1,6 +1,16 @@
 {
   "redirects": [
-    { "source": "/(.*)", "destination": "https://eammu.com/$1", "permanent": true }
+    {
+      "source": "/(.*)",
+      "destination": "https://eammu.com/$1",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "www.eammu.com"
+        }
+      ]
+    }
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
