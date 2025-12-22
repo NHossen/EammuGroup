@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "https://www.eammu.com/(.*)",
+      "destination": "https://eammu.com/$1",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
