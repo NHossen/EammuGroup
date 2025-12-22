@@ -28,7 +28,7 @@ const SignUp = () => {
       <div className="max-w-xl w-full bg-white p-8 rounded-xl shadow-lg border border-gray-200 space-y-6">
         <div>
           <h1 className="text-3xl font-bold text-center text-[#005a31]">Create an Account</h1>
-          <p className="text-sm text-center text-gray-600">Join Eammu Immigration Services today</p>
+          <p className="text-sm text-center text-gray-600">Join Eammu Holidays today</p>
         </div>
 
         <form className="space-y-5" onSubmit={handleSubmit}>
