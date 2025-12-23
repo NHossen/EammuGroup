@@ -92,8 +92,9 @@ const TargetUsaInterview = () => {
         <h2 className="text-2xl font-bold text-green-700 mb-4">Contact Us Travel Agency Bangladesh</h2>
         <ul className="space-y-2 text-gray-700 text-base">
           <li><strong>📞 Call/WhatsApp:</strong> <a href="tel:+8801701699743" className="text-blue-600">+8801701699743</a>, <a href="tel:+971507078334" className="text-blue-600">+971507078334</a></li>
-          <li><strong>📧 Email:</strong> <a href="mailto:eammuimmigration@gmail.com" className="text-blue-600">eammuimmigration@gmail.com</a></li>
-          <li><strong>🌐 Website:</strong> <a href="https://www.eammu.com" className="text-blue-600" target="_blank" rel="noreferrer">www.eammu.com</a></li>
+          <li><strong>📧 Email:</strong> <a href="mailto:info@eammu.com" className="text-blue-600">info@eammu.com</a></li>
+          <li><strong>📧 Email:</strong> <a href="mailto:support@eammu.com" className="text-blue-600">support@eammu.com</a></li>
+          <li><strong>🌐 Website:</strong> <a href="https://eammu.com" className="text-blue-600" target="_blank" rel="noreferrer">www.eammu.com</a></li>
           <li><strong>🏢 Office:</strong> Office 178, 1st Floor, Gomoti Tower, Cantonment, Cumilla</li>
         </ul>
       </section>

@@ -117,7 +117,8 @@ const About_Eammu_Immigration = () => {
           </p>
           <div className="text-gray-700 space-y-2 text-base">
             <p><strong>📞 Phone/WhatsApp:</strong> <a href="tel:+8801701699743" className="hover:underline">+8801701699743</a>, <a href="tel:+971507078334" className="hover:underline">+971507078334</a></p>
-            <p><strong>📧 Email:</strong> <a href="mailto:eammuimmigration@gmail.com" className="text-blue-600 underline">eammuimmigration@gmail.com</a></p>
+            <p><strong>📧 Email:</strong> <a href="mailto:info@eammu.com" className="text-blue-600 underline">info@eammu.com</a></p>
+            <p><strong>📧 Email:</strong> <a href="mailto:support@eammu.com" className="text-blue-600 underline">support@eammu.com</a></p>
             <p><strong>🌐 Website:</strong> <a href="https://www.eammu.com" target="_blank" rel="noreferrer" className="text-blue-600 underline">www.eammu.com</a></p>
           </div>
           <div className="mt-6 flex flex-col sm:flex-row justify-center gap-4">

@@ -27,7 +27,7 @@ const EammuTerms = () => {
         <p>
           Welcome to Eammu Group. This Terms of Use and Privacy Policy outlines how we collect,
           use, and protect your personal information when you interact with any of our platforms
-          including but not limited to Eammu Immigration Services, Eammu Tours & Travels,
+          including but not limited to Eammu Holidays, Eammu Event Management,
           Eammu Fashion, FlyZoo, and Eammu IT Solutions.
         </p>
       </section>
@@ -76,10 +76,10 @@ const EammuTerms = () => {
           <li>
             You can request access, updates, or deletion of your personal data by contacting us at
             <a
-              href="mailto:info@eammu.com"
+              href="mailto:support@eammu.com"
               className="text-blue-600 underline ml-1"
             >
-              eammuimmigration@gmail.com
+              support@eammu.com
             </a>
             .
           </li>
@@ -112,7 +112,7 @@ const EammuTerms = () => {
           For any questions regarding our terms or privacy practices, please contact us at:
         </p>
         <ul className="list-disc pl-6 text-gray-700 mt-2">
-          <li>Email: <a className="text-blue-600 underline" href="mailto:info@eammu.com">eammuimmigration@gmail.com</a></li>
+          <li>Email: <a className="text-blue-600 underline" href="mailto:support@eammu.com">support@eammu.com</a></li>
           <li>Phone: +88016 31 31 25 24</li>
           <li>Office: Cumilla Cantonment, Bangladesh</li>
         </ul>

@@ -131,7 +131,7 @@ const WhyChoiceEammu = () => {
         transition={{ duration: 0.5, delay: 0.3 }}
       >
         <h2 className="text-2xl font-bold mb-4">🎯 Our Promise</h2>
-        <p className="text-lg">We are not just a visa agent — we’re your partner in the journey of life abroad. From day one to departure and beyond, Eammu Immigration stands with you.</p>
+        <p className="text-lg">We are not just a visa agent — we’re your partner in the journey of life abroad. From day one to departure and beyond, Eammu Holidays stands with you.</p>
       </motion.div>
     </div>
   );

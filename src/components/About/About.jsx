@@ -213,11 +213,11 @@ const About = () => {
 
         {/* Contact */}
         <section className="bg-[#f4fdf7] rounded-lg p-6 space-y-4 shadow-md">
-          <h2 className="text-2xl font-bold">Contact Eammu Immigration Services</h2>
+          <h2 className="text-2xl font-bold">Contact Eammu Holidays</h2>
           <p>Need a visa or expert immigration help? Contact our team now.</p>
           <ul className="space-y-2 text-gray-700 text-base">
             <li><strong>📞 Call/WhatsApp:</strong> +8801701699743, +971507078334</li>
-            <li><strong>📧 Email:</strong> eammuimmigration@gmail.com</li>
+            <li><strong>📧 Email:</strong> info@eammu.com , support@eammu.com </li>
             <li><strong>🌐 Website:</strong> <a href="https://eammu.com" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">www.eammu.com</a></li>
           </ul>
           <a

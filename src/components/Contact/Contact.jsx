@@ -8,6 +8,7 @@ const offices = [
     address: "Office No-178, 1st Floor, Gomoti Tower, Cantonment, Cumilla",
     phone: ["+8801631312524", "+8801701699743"],
     whatsapp: "+8801631312524",
+    email: ["bangladesh@eammu.com", "info@eammu.com"],
     map: "https://www.google.com/maps?q=Gomoti+Tower,+Cumilla&output=embed",
   },
   {
@@ -15,6 +16,7 @@ const offices = [
     address: "Business Bay, Dubai, United Arab Emirates",
     phone: ["+971507078334"],
     whatsapp: "+971507078334",
+    email: ["dubai@eammu.com", "info@eammu.com"],
     map: "https://www.google.com/maps?q=Business+Bay,+Dubai&output=embed",
   },
   {
@@ -22,6 +24,7 @@ const offices = [
     address: "Eammu Holidays, Lambron 39, Yerevan",
     phone: ["+37494810585"],
     whatsapp: "+37494810585",
+    email: ["armenia@eammu.com", "info@eammu.com"],
     map: "https://www.google.com/maps?q=Lambron+39,+Yerevan&output=embed",
   },
   {
@@ -29,6 +32,7 @@ const offices = [
     address: "Eammu , Floor 5 ,Levan Gotua Street #3, Tbilisi,Georgia",
     phone: ["+995574446218"],
     whatsapp: "+995574446218",
+    email: ["georgia@eammu.com", "info@eammu.com"],
     map: "https://www.google.com/maps?q=Tbilisi,+Georgia&output=embed",
   },
 ];
@@ -44,7 +48,7 @@ const Contact = () => {
         />
         <meta
           name="keywords"
-          content="Eammu Holidays contact, visa support,flight Tickets, Travel Agency Bangladesh, study abroad consultant, Travel Agency Dubai, Dubai, Travel Agency Armenia, Travel Agency Georgia"
+          content="Eammu Holidays contact, visa support, flight Tickets, Travel Agency Bangladesh, study abroad consultant, Travel Agency Dubai, Dubai, Travel Agency Armenia, Travel Agency Georgia"
         />
         <link rel="canonical" href="https://eammu.com/contact" />
       </Helmet>
@@ -93,6 +97,17 @@ const Contact = () => {
                     {office.whatsapp}
                   </a>
                 </p>
+                {office.email && office.email.length > 0 && (
+                  <p className="text-gray-700 mb-2">
+                    <strong>Email:</strong>{" "}
+                    {office.email.map((em, i) => (
+                      <span key={i}>
+                        <a href={`mailto:${em}`} className="hover:underline">{em}</a>
+                        {i < office.email.length - 1 ? ", " : ""}
+                      </span>
+                    ))}
+                  </p>
+                )}
                 <div className="w-full h-48 mt-2 rounded overflow-hidden border">
                   <iframe
                     src={office.map}
@@ -112,7 +127,7 @@ const Contact = () => {
             <div>
               <p className="text-gray-800 font-semibold">Follow Us:</p>
               <div className="flex flex-wrap gap-4 mt-2">
-                 <a href="https://facebook.com/eammutourism" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                <a href="https://facebook.com/eammutourism" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
                   Facebook
                 </a>
                 <a href="https://instagram.com/eammuholidays" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:underline">
