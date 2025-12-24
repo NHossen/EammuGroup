@@ -126,6 +126,127 @@ const Blogs = () => {
     );
   };
 
+  const blogFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which country is easiest for student visa from Bangladesh in 2025?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In 2025, Germany, UK, and Japan are among the easiest countries for Bangladeshi students due to simplified documentation and high approval rates for technical and language courses."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I apply for a Schengen visa from Dubai or India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can apply through VFS Global or the respective embassy. Eammu Holidays provides expert assistance in documentation, including flight booking and travel insurance for residents in Dubai and India."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Japan open for Bangladeshi students and workers in 2025?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Japan has significantly relaxed visa rules for skilled migrants and students from South Asia. Eammu Holidays offers full support for Japanese language school admissions and work visa processing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the common reasons for visa rejection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common reasons include insufficient financial proof, incomplete documentation, and lack of strong ties to the home country. Our blog guides you on how to avoid these mistakes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which travel agency is best for USA and Canada visas in Dhaka?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eammu Holidays is recognized as a top-rated travel agency in Dhaka for USA and Canada visa consultancy, providing end-to-end support for B1/B2 and student visa categories."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I work part-time while studying in Europe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most European countries like Germany and France allow international students to work up to 20 hours per week during semesters and full-time during vacations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the H1-B visa policy update for 2025?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 2025 USA H1-B policy focuses on a digital-first application process and gives priority to STEM graduates with higher salary offerings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I book cheap international flights from Bangladesh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Booking at least 4-8 weeks in advance and using trusted agencies like Eammu Holidays can save up to 20% on international air tickets from Bangladesh."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there budget-friendly Hajj and Umrah packages for 2025?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Eammu Holidays has launched customized 2025 Umrah packages including visa, hotel, and guided tours starting from affordable price points."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is the most trusted study abroad consultant in Cumilla?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eammu Holidays is the leading study abroad and visa consultancy in Cumilla, located at Gomoti Tower, providing global education opportunities."
+      }
+    }
+  ]
+};
+
+const blogFaqs = [
+    {
+      q: "Which country offers the easiest student visa for Bangladeshis in 2025?",
+      a: "Germany, the UK, and Japan are currently the most accessible. These countries have streamlined their digital application processes and offer high approval rates for technical and language-based courses."
+    },
+    {
+      q: "How can I avoid visa rejection for USA and Canada?",
+      a: "The key is strong financial documentation and proving 'Home Ties.' Eammu Holidays provides expert case analysis to ensure your SOP, bank statements, and travel intent are perfectly aligned with embassy requirements."
+    },
+    {
+      q: "Can I apply for a Schengen visa from Dubai or India through Eammu?",
+      a: "Yes. Our offices in Dubai and India provide full assistance for Schengen visa appointments, travel insurance, and flight itineraries for residents of the UAE and India."
+    },
+    {
+      q: "What are the latest updates for UK work permits in 2025?",
+      a: "The UK has updated its 'Skilled Worker' route and added more roles to the shortage occupation list. We recommend checking our latest blog post on UK immigration for detailed salary thresholds."
+    },
+    {
+      q: "Does Eammu Holidays provide Hajj and Umrah packages from Dhaka?",
+      a: "Yes, we offer premium and budget-friendly Hajj and Umrah packages from Dhaka, including visa processing, hotel stays near the Haram, and guided spiritual tours."
+    },
+    {
+      q: "Why is Eammu considered the best travel agency in Cumilla and Dhaka?",
+      a: "With physical offices in 4 countries (BD, UAE, Armenia, Georgia), Eammu offers unmatched global authority, transparent pricing, and 24/7 WhatsApp support for all travel and visa needs."
+    }
+  ];
+
+  const shorts = [
+    { id: "VXcsh-RGAQo", title: "FEEL THE HEAT! WITH EAMMU FIRE SHOW DESERT SAFARI" },
+    { id: "5GgTsBbWT9Q", title: "DESERT SAFARI DUBAI WITH EAMMU" },
+    { id: "yGZlj3IqwqQ", title: "THAILAND TOUR PACKAGES With Eammu – EXPLORE THE LAND OF SMILES" },
+    { id: "411I3K-Zagc", title: "Love Lake Dubai & Salt Lake Dubai Tour – Private Trip with Eammu Tours" },
+  ];
+
   return (
     <div className="px-4 md:px-6 lg:px-8 container mx-auto py-10">
       <Helmet>
@@ -136,6 +257,10 @@ const Blogs = () => {
           content="best visa consultant in Dubai, Europe visa assistance from Dubai, UK visa application from Dubai, Schengen visa appointment in Dubai, travel agency in India for visa, trusted visa consultant in India, best travel agency in India for Europe visa, Europe visa guidance from India, student visa consultant India, education consultancy for abroad study,best travel agency dhaka,best travel agency bangladesh"
         />
         <link rel="canonical" href="https://eammu.com/blogs" />
+
+        <script type="application/ld+json">
+    {JSON.stringify(blogFaqSchema)}
+  </script>
       </Helmet>
 
       <h1 className="text-4xl font-bold text-green-800 text-center mb-10">Latest Blog Posts</h1>
@@ -180,6 +305,86 @@ const Blogs = () => {
           </div>
         </div>
       )}
+
+      <section className="mt-20 border-t border-gray-200 pt-16 pb-10">
+      <div className="max-w-5xl mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-extrabold text-[#005a31] sm:text-4xl">
+            Frequently Asked Questions & Travel Insights
+          </h2>
+          <p className="mt-4 text-gray-600 text-lg">
+            Stay informed with expert answers to the most common immigration and travel queries.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {blogFaqs.map((faq, index) => (
+            <div key={index} className="bg-[#f4fdf7] p-6 rounded-2xl shadow-sm border border-green-50 transition-all hover:shadow-md">
+              <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-start">
+                <span className="text-green-700 mr-2">Q.</span> {faq.q}
+              </h3>
+              <p className="text-gray-700 leading-relaxed border-l-4 border-green-600 pl-4">
+                {faq.a}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* Call to Action inside FAQ */}
+        <div className="mt-12 text-center bg-green-800 text-white p-8 rounded-2xl shadow-xl">
+          <h3 className="text-2xl font-bold mb-2">Still have questions?</h3>
+          <p className="mb-6 opacity-90">Our visa experts are available 24/7 on WhatsApp to assist you.</p>
+          <a 
+            href="https://wa.me/8801631312524" 
+            className="inline-block bg-white text-green-800 font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition"
+          >
+            Chat with an Expert
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section className="py-12 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-[#005a31] text-center mb-8">
+          Watch Our Travel Highlights
+        </h2>
+        
+        {/* Grid Logic:
+            - Grid-cols-1: Mobile এ ১টি
+            - sm:grid-cols-2: Tablet এ ২টি
+            - lg:grid-cols-4: Large Screen এ ৪টি
+        */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {shorts.map((video) => (
+            <div 
+              key={video.id} 
+              className="relative overflow-hidden rounded-2xl shadow-lg bg-black aspect-[9/16]"
+            >
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src={`https://www.youtube.com/embed/${video.id}?autoplay=0&loop=1&playlist=${video.id}`}
+                title={video.title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          ))}
+        </div>
+        
+        <div className="text-center mt-8">
+          <a 
+            href="https://www.youtube.com/@Eammutour" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-red-600 font-semibold hover:underline"
+          >
+            View more on YouTube →
+          </a>
+        </div>
+      </div>
+    </section>
     </div>
   );
 };

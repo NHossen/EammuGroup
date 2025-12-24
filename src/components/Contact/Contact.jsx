@@ -37,6 +37,105 @@ const offices = [
   },
 ];
 
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "Eammu Holidays",
+  "alternateName": "Eammu Immigration",
+  "url": "https://eammu.com",
+  "logo": "https://eammu.com/logo.png",
+  "description": "Premium travel agency in Bangladesh providing student visa, tourist visa, and international tour packages.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Office No-178, 1st Floor, Gomoti Tower, Cantonment",
+    "addressLocality": "Cumilla",
+    "addressRegion": "Chittagong",
+    "postalCode": "3500",
+    "addressCountry": "BD"
+  },
+  "telephone": "+8801631312524",
+  "sameAs": [
+    "https://facebook.com/eammutourism",
+    "https://instagram.com/eammuholidays",
+    "https://linkedin.com/company/eammu-immigration-services",
+    "https://www.youtube.com/@Eammutour"
+  ],
+  "subOrganization": [
+    {
+      "@type": "TravelAgency",
+      "name": "Eammu Holidays Dubai",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Business Bay",
+        "addressLocality": "Dubai",
+        "addressCountry": "AE"
+      },
+      "telephone": "+971507078334"
+    },
+    {
+      "@type": "TravelAgency",
+      "name": "Eammu Holidays Armenia",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Lambron 39",
+        "addressLocality": "Yerevan",
+        "addressCountry": "AM"
+      },
+      "telephone": "+37494810585"
+    },
+    {
+      "@type": "TravelAgency",
+      "name": "Eammu Georgia",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Levan Gotua Street #3",
+        "addressLocality": "Tbilisi",
+        "addressCountry": "GE"
+      },
+      "telephone": "+995574446218"
+    }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where are Eammu Holidays offices located?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eammu Holidays has a global presence with its headquarters in Cumilla, Bangladesh, and branch offices in Business Bay (Dubai), Yerevan (Armenia), and Tbilisi (Georgia)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I apply for a visa through Eammu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can apply by contacting us via WhatsApp at +8801631312524, emailing info@eammu.com, or visiting any of our international offices for a face-to-face consultation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which visa categories does Eammu specialize in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We specialize in Student Visas, Tourist Visas, and Work Permits for the USA, UK, Canada, Europe (Schengen), Dubai, and Japan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Eammu offer online air ticket booking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Currently, we offer offline air ticket booking with 24/7 support. Our fully integrated online IATA-certified booking portal is launching soon for global users."
+      }
+    }
+  ]
+};
+
 const Contact = () => {
   return (
     <>
@@ -51,6 +150,14 @@ const Contact = () => {
           content="Europe visa from Armenia, work permit Armenia, student visa Georgia, study in Georgia consultants, travel agency Georgia, Europe visa from Georgia, Schengen visa from Georgia, student visa Pakistan, study abroad consultants Pakistan, travel agency Pakistan, Europe visa from Pakistan, UK visa from Pakistan, student visa Sri Lanka, study abroad consultants Sri Lanka, travel agency Sri Lanka, Europe visa from Sri Lanka, student visa Malaysia, study in Malaysia consultants, travel agency Malaysia, Europe visa from Malaysia, Travel Agency Bangladesh, study abroad consultant, Travel Agency Dubai, Dubai, Travel Agency Armenia, Travel Agency Georgia"
         />
         <link rel="canonical" href="https://eammu.com/contact" />
+
+        <script type="application/ld+json">
+    {JSON.stringify(schemaData)}
+  </script>
+
+  <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
       </Helmet>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-20">
@@ -143,6 +250,7 @@ const Contact = () => {
             </div>
           </div>
 
+
           {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -198,6 +306,20 @@ const Contact = () => {
           </motion.div>
         </motion.section>
 
+
+<section className="mt-20 border-t pt-10">
+  <h2 className="text-3xl font-bold text-green-800 text-center mb-8">Frequently Asked Questions</h2>
+  <div className="space-y-6 max-w-4xl mx-auto">
+    <div className="bg-white p-5 rounded-lg shadow-sm border">
+      <h3 className="text-lg font-bold text-gray-800">Where are Eammu Holidays offices located?</h3>
+      <p className="text-gray-600 mt-2">We have physical offices in Bangladesh (Cumilla), UAE (Dubai), Armenia (Yerevan), and Georgia (Tbilisi) to serve you globally.</p>
+    </div>
+    <div className="bg-white p-5 rounded-lg shadow-sm border">
+      <h3 className="text-lg font-bold text-gray-800">How can I apply for a visa through Eammu?</h3>
+      <p className="text-gray-600 mt-2">Simply reach out via WhatsApp or visit our branch. Our experts handle documentation for Canada, USA, UK, and Europe.</p>
+    </div>
+  </div>
+</section>
         {/* Final CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -187,7 +187,18 @@ const MessageFromLeadingTeam = () => {
         allowFullScreen
       ></iframe>
     </div>
+    
   </div>
+  <div className="text-center mt-8">
+          <a 
+            href="https://www.youtube.com/@Eammutour" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-red-600 font-semibold hover:underline"
+          >
+            View more on YouTube →
+          </a>
+        </div>
 </section>
     </section>
   );
