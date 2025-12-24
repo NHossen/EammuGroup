@@ -228,10 +228,7 @@ const VisaServices = () => {
           name="description"
           content="Eammu Holidays provides professional Tourist Visa, Student Visa, and Work visa services across USA, UK, Europe, Canada, Japan, UAE, Malaysia,China ,Dubai ,Albania ,Kosovo and more. Hajj & Umrah packages available. Apply online now."
         />
-        <meta
-          name="keywords"
-          content="Visa services, Tourist visa, Student visa, Work visa, USA visa, UK visa, Europe visa, Canada visa, Japan visa, UAE visa, Malaysia visa, Hajj visa, Umrah visa, immigration services, Eammu Holidays"
-        />
+        <meta name="keywords" content="Best visa service travel agency, Eammu Immigration, Eammu Holidays, USA tourist visa from Bangladesh, UK student visa consultant, Canada visitor visa processing, Europe work permit 2026, Schengen visa experts Dubai, Japan tourist visa deals, Malaysia eVisa service, UAE 60 days visit visa, Hajj and Umrah packages 2026, affordable immigration services, travel agency near me, top travel agency Dubai, best travel agency India" />
         <meta name="author" content="Eammu Holidays" />
         <meta property="og:title" content="Visa Services | Eammu Holidays" />
         <meta property="og:description" content="visa processing for Tourist, Student, and Work visas with Eammu Holidays. Serving USA, UK, Europe, Canada, Japan, UAE, and more." />
@@ -249,7 +246,7 @@ const VisaServices = () => {
       <header className="text-center mb-10">
         <h1 className="text-4xl font-bold text-[#005a31] mb-4">Visa Services by Eammu Holidays</h1>
         <p className="text-gray-700 text-lg max-w-3xl mx-auto">
-          Eammu Immigration provides expert assistance for <strong>Tourist, Student, and Work visas</strong> across over 25 countries including 
+          Eammu Holidays provides expert assistance for <strong>Tourist, Student, and Work visas</strong> across over 25 countries including 
           <Link to="/visa-services#USA" className="text-[#005a31] underline"> USA</Link>, 
           <Link to="/visa-services#UK" className="text-[#005a31] underline"> UK</Link>, 
           <Link to="/visa-services#Europe" className="text-[#005a31] underline"> Europe</Link>, 

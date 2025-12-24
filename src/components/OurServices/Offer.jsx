@@ -43,11 +43,11 @@ const Offer = () => {
         <title>Travel Agency Dhaka | Cheapest Flight and Hotel - Tourist Visa and Student Visa</title>
         <meta
           name="description"
-          content="Check out the latest offers from Eammu Holidays — discounts on tourist visas, student visas, air tickets, and family tour packages. Book now!"
+          content="Eammu offers discounted Dubai e-visas, Canada tourist visas, Europe student & work visas. Best travel deals for Armenia and Bangladesh tour packages from Dhaka."
         />
         <meta
           name="keywords"
-          content="Eammu offers Bangladesh, visa discounts Dubai, tourist visa Canada, student visa Europe, work visa Europe, tour package discounts Bangladesh and Armenia, travel deals Dubai"
+          content="Eammu, Dubai visa discount, Canada tourist visa Bangladesh, Europe student visa processing, Europe work visa for Bangladeshis, Armenia tour package from Dhaka, Bangladesh tour discounts, cheap Dubai visit visa, Schengen visa assistance, international travel deals, best travel agency in Bangladesh, Yerevan tour package, student visa Europe 2025, work permit Europe 2025"
         />
         <link rel="canonical" href="https://eammu.com/offers" />
         <meta name="robots" content="index, follow" />

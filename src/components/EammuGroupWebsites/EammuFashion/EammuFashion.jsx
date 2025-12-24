@@ -4,16 +4,28 @@ const EammuFashion = () => {
   return (
     <div className="px-4 container mx-auto py-12">
       {/* SEO Meta Tags */}
-      <Helmet>
-        <title>Men T Shirt Store in Bangladesh | Eammu| Best Fashion Brand in Dhaka for Men & Women </title>
-        <meta name="description" content="Discover premium fashion for men, women, and kids at Eammu Fashion — from Panjabi to Western styles. Launching soon in Cumilla & online!" />
-        <meta name="keywords" content="Eammu Fashion Dhaka , Eammu Fashion Bangladesh, Panjabi buy Cumilla , Kabli, Hijab Store Cumilla, Kurtis, Men's Wear Store Cumilla , Women's Fashion, Cumilla Fashion Store, Bangladesh Clothing, Eid Collection,T Shirt Store Bangladesh , Best Clothing Store Cumilla , Top Brand Shop Cumilla , Styles T shirt Bangladesh" />
-        <meta property="og:title" content="Eammu Fashion | Traditional & Modern Wear in Bangladesh" />
-        <meta property="og:description" content="Launching soon: Eammu Fashion store in Cumilla and online! Explore premium clothing for all." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.eammu.com/eammufashion" />
-        <meta property="og:image" content="https://assets.vogue.in/photos/5f214a9d9ffca08d18483816/master/w_1600%2Cc_limit/Neha%2520Mehra%25201.jpg" />
-      </Helmet>
+    <Helmet>
+  {/* Title: Targets Brand + Key Locations */}
+  <title>Eammu Fashion | Best Clothing Brand in Cumilla, Dhaka & Bangladesh</title>
+
+  {/* Description: Highlights physical presence and premium quality */}
+  <meta 
+    name="description" 
+    content="Experience premium fashion at Eammu Fashion. The top-rated clothing store in Cumilla and Dhaka offering exclusive Panjabi, T-shirts, and Western wear. Visit us in Cumilla or shop online!" 
+  />
+
+  {/* Keywords: Strategic mix of local and national search terms */}
+  <meta 
+    name="keywords" 
+    content="Eammu Fashion Cumilla, best clothing store in Cumilla, fashion brand in Dhaka, top brand shop Cumilla, premium Panjabi store Bangladesh, T-shirt shop Dhaka, Cumilla Kandirpar fashion, best Panjabi brand in Bangladesh, Eammu clothing BD, stylish menswear Cumilla, women's fashion store Cumilla, Eid collection Cumilla 2026, trendy fashion house Dhaka" 
+  />
+
+  {/* Local SEO / Geo Tags (Helps Google pinpoint your business location) */}
+  <meta name="geo.region" content="BD-13" /> {/* Code for Dhaka/Cumilla region */}
+  <meta name="geo.placename" content="Cumilla, Dhaka" />
+  <meta name="geo.position" content="23.4607;91.1809" /> {/* Cumilla Coordinates */}
+  <meta name="ICBM" content="23.4607, 91.1809" />
+</Helmet>
 
       {/* Page Heading */}
       <div className="text-center mb-10">

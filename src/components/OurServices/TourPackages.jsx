@@ -220,7 +220,7 @@ const TourPackages = () => {
           />
           <meta
             name="keywords"
-            content="International Tour Packages, Domestic tours Bangladesh, Travel packages, Eammu Tour Packages, Dubai Tour Packages, Japan Tour Packages, Cox's Bazar, Sundarbans, Bangladesh Tour Packages , Cheapest Tour Packages"
+            content="International Tour Packages, Domestic tours Bangladesh, Travel packages, Eammu Tour Packages, Dubai Tour Packages, Japan Tour Packages, Cox's Bazar, Sundarbans, Bangladesh Tour Packages , Cheapest Tour Packages,Best international tour packages, Eammu Tour Packages, Eammu Holidays, cheap Dubai tour packages from Bangladesh, Armenia holiday deals, Japan group tours 2026, luxury Bangladesh tour packages, Cox's Bazar hotel deals"
           />
           <meta name="author" content="Eammu Holidays" />
 

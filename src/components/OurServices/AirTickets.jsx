@@ -17,13 +17,13 @@ const AirTickets = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "TravelAgency",
-    "name": "Eammu Travel & Immigration",
+    "name": "Eammu Holidays",
     "url": "https://eammu.com/air-tickets",
     "logo": "https://eammu.com/images/eammu-home-banner.jpg",
     "sameAs": [
-      "https://www.facebook.com/eammu",
-      "https://www.instagram.com/eammu",
-      "https://www.linkedin.com/company/eammu"
+      "https://www.facebook.com/eammutourism",
+      "https://www.instagram.com/eammholidays",
+      "https://www.linkedin.com/company/eammu-immigration-services"
     ],
     "description": "Book the cheapest domestic and international flights with Eammu Holidays From Bangladesh. Serving students, tourists, and professionals.",
     "hasOfferCatalog": {
@@ -50,14 +50,14 @@ const AirTickets = () => {
   return (
     <div className="px-4 sm:px-6 lg:px-10 container mx-auto py-10">
       <Helmet>
-        <title>Bangladesh Flight Ticket | Cheapest Air Tickets from Bangladesh – Book Online - Dubai and Dhaka | Eammu Holidays</title>
+        <title>Cheapest Flight Ticket | Cheapest Air Tickets from Bangladesh – Book Online - Dubai and Dhaka | Eammu Holidays</title>
         <meta
           name="description"
           content="Book the cheapest domestic and international air tickets with Eammu Holidays From Bangladesh. Flights for students, tourists, and professionals.Offer Flight Tickets From Bangladesh."
         />
         <meta
           name="keywords"
-          content="Air tickets, Cheap flights, Flight booking, Domestic flights, International flights, USA flights, UK flights, Canada flights, Australia flights, Eammu Holidays , Offer Flights, Dubai Flight , Discount Flights tickets"
+          content="Air tickets, Cheap flights from dubai, Flight booking dhaka, Domestic flights, International flights, USA flights, UK flights, Canada flights, Australia flights, Eammu Holidays , Offer Flights, Dubai Flight , Discount Flights tickets"
         />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
