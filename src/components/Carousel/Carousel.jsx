@@ -56,11 +56,11 @@ const Carousel = () => {
         />
         <meta
           name="keywords"
-          content="Visa Services, Immigration, Study Abroad, Work Visa, Tourist Visa, Canada Visa, Eammu Immigration, Travel Agency Bangladesh"
+          content="best travel agency in Bangladesh, trusted travel agency Bangladesh, reliable travel agency Bangladesh, student visa consultant in Dhaka, best student visa consultant in Dhaka, education consultant near Dhaka, student visa processing in Bangladesh, how to apply student visa from Bangladesh, travel agency for Europe visa Bangladesh, visa appointment service in Bangladesh, Albania visa processing Bangladesh,best travel agency dubai , best travel agency india"
         />
-        <meta name="author" content="Eammu Immigration Services" />
+        <meta name="author" content="Eammu Holidays" />
         <meta property="og:title" content="Eammu - Trusted Visa & Immigration Services" />
-        <meta property="og:description" content="Work, study, or travel — we help you get there. 98% visa success rate. Expert support in UAE & Bangladesh." />
+        <meta property="og:description" content="Work, study, or travel — we help you get there. 98% visa success rate. Expert support in Dubai And Bangladesh." />
         <meta property="og:image" content="https://eammu.com/eammuicon.jpg" />
         <meta property="og:url" content="https://eammu.com" />
         <meta property="og:type" content="website" />

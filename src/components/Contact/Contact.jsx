@@ -48,7 +48,7 @@ const Contact = () => {
         />
         <meta
           name="keywords"
-          content="Eammu Holidays contact, visa support, flight Tickets, Travel Agency Bangladesh, study abroad consultant, Travel Agency Dubai, Dubai, Travel Agency Armenia, Travel Agency Georgia"
+          content="Europe visa from Armenia, work permit Armenia, student visa Georgia, study in Georgia consultants, travel agency Georgia, Europe visa from Georgia, Schengen visa from Georgia, student visa Pakistan, study abroad consultants Pakistan, travel agency Pakistan, Europe visa from Pakistan, UK visa from Pakistan, student visa Sri Lanka, study abroad consultants Sri Lanka, travel agency Sri Lanka, Europe visa from Sri Lanka, student visa Malaysia, study in Malaysia consultants, travel agency Malaysia, Europe visa from Malaysia, Travel Agency Bangladesh, study abroad consultant, Travel Agency Dubai, Dubai, Travel Agency Armenia, Travel Agency Georgia"
         />
         <link rel="canonical" href="https://eammu.com/contact" />
       </Helmet>

@@ -39,7 +39,7 @@ const Testimonials = () => {
   const reviewSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Eammu Immigration Services",
+    "name": "Eammu Holidays",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": avgRating,
@@ -68,7 +68,7 @@ const Testimonials = () => {
         />
         <meta
           name="keywords"
-          content="Eammu Holidays, Immigration Testimonials Bangladesh, Visa Consultancy Reviews, Student Visa Success, Work Visa Bangladesh, Tourist Visa"
+          content="Eammu Holidays, best travel agency in Bangladesh, trusted travel agency Bangladesh, reliable travel agency Bangladesh, student visa consultant in Dhaka, best student visa consultant in Dhaka, education consultant near Dhaka, student visa processing in Bangladesh, how to apply student visa from Bangladesh, travel agency for Europe visa Bangladesh, visa appointment service in Bangladesh, Albania visa processing Bangladesh,Best Travel Agency Dubai , Best Travel India,top travel dubai"
         />
         <meta property="og:title" content="Eammu Holidays Reviews" />
         <meta

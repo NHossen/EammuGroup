@@ -6,14 +6,14 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>Eammu | Global Immigration, Travel, Tours & Business Services</title>
+        <title>Eammu | Travel Agency Bangladesh, Visa, Tours & Business Services</title>
         <meta
           name="description"
-          content="Discover Eammu's global services including immigration, student & work visas, travel & tour packages, IT solutions, fashion, agriculture, and event management. Serving clients in Dubai, Bangladesh, Europe, and beyond."
+          content="Eammu global services including immigration, student & work visas, travel & tour packages, IT solutions, fashion, agriculture, and event management. Serving clients in Dubai, Bangladesh, Europe, and beyond."
         />
         <meta
           name="keywords"
-          content="Eammu, Immigration Services, Student Visa, Work Visa, Tourist Visa, Travel Agency, Tour Packages, IT Solutions, Event Management, Fashion, Agriculture, Bangladesh, Dubai, Europe"
+          content="best travel agency in Bangladesh, trusted travel agency Bangladesh, reliable travel agency Bangladesh, student visa consultant in Dhaka, best student visa consultant in Dhaka, education consultant near Dhaka, student visa processing in Bangladesh, how to apply student visa from Bangladesh, travel agency for Europe visa Bangladesh, visa appointment service in Bangladesh, Albania visa processing Bangladesh"
         />
         <link rel="canonical" href="https://eammu.com/about" />
 
@@ -23,7 +23,7 @@ const About = () => {
           {
             "@context": "https://schema.org",
             "@type": ["Organization", "LocalBusiness"],
-            "name": "Eammu Immigration Services And Eammu Holidays",
+            "name": "Eammu Holidays",
             "url": "https://eammu.com",
             "logo": "https://i.ibb.co/YF7bmqfg/521388962-122289260780017871-6426815952586296550-n.jpg",
             "description": "Eammu provides global immigration, travel, tour packages, IT, fashion, events, and agriculture services. Offices in Dubai, Bangladesh, Europe, and Armenia.",
@@ -42,9 +42,9 @@ const About = () => {
               "availableLanguage": ["English", "Arabic", "Bengali"]
             },
             "sameAs": [
-              "https://facebook.com/eammuimmigrationservices/",
+              "https://facebook.com/eammuholidays/",
               "https://instagram.com/eammuholidays",
-              "https://youtube.com/@eammuholidays/",
+              "https://youtube.com/@eammutour/",
               "https://linkedin.com/company/eammu-immigration-services/"
             ]
           }

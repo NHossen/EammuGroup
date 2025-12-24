@@ -133,7 +133,7 @@ const Blogs = () => {
         <meta name="description" content={dynamicDescription} />
         <meta
           name="keywords"
-          content="student visa, tourist visa, work visa, study abroad, Dubai visa, travel tips, Bangladesh visa, Eammu blogs, Armenia Visa , Canada Visa , China Visa , Qatar Visa , Albania Visa"
+          content="best visa consultant in Dubai, Europe visa assistance from Dubai, UK visa application from Dubai, Schengen visa appointment in Dubai, travel agency in India for visa, trusted visa consultant in India, best travel agency in India for Europe visa, Europe visa guidance from India, student visa consultant India, education consultancy for abroad study,best travel agency dhaka,best travel agency bangladesh"
         />
         <link rel="canonical" href="https://eammu.com/blogs" />
       </Helmet>
