@@ -50,8 +50,8 @@ const TargetUsaSection = () => {
               Target <span className="text-[#d33232]">USA</span> Visa Interview Preparation!
             </h1>
             <p className="py-4">
-              Target USA Visa Interview Preparation, a distinguished service under Eammu Immigration
-              Services, is your premier education consultancy dedicated to preparing students for
+              Target USA Visa Interview Preparation, a distinguished service under Eammu Holidays
+              is your premier education consultancy dedicated to preparing students for
               successful visa interviews. We specialize in comprehensive guidance, covering
               everything from interview dress-up to question patterns and interview types, ensuring
               that students are well-prepared for their crucial visa application process.
