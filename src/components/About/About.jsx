@@ -18,38 +18,40 @@ const About = () => {
         <link rel="canonical" href="https://eammu.com/about" />
 
         {/* JSON-LD Structured Data */}
-        <script type="application/ld+json">
-          {`
-          {
-            "@context": "https://schema.org",
-            "@type": ["Organization", "LocalBusiness"],
-            "name": "Eammu Holidays",
-            "url": "https://eammu.com",
-            "logo": "https://i.ibb.co/YF7bmqfg/521388962-122289260780017871-6426815952586296550-n.jpg",
-            "description": "Eammu provides global immigration, travel, tour packages, IT, fashion, events, and agriculture services. Offices in Dubai, Bangladesh, Europe, and Armenia.",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Nakheel Center, Deira",
-              "addressLocality": "Dubai",
-              "addressRegion": "Dubai",
-              "postalCode": "00000",
-              "addressCountry": "UAE"
-            },
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "+8801631312524",
-              "contactType": "Customer Service",
-              "availableLanguage": ["English", "Arabic", "Bengali"]
-            },
-            "sameAs": [
-              "https://facebook.com/eammuholidays/",
-              "https://instagram.com/eammuholidays",
-              "https://youtube.com/@eammutour/",
-              "https://linkedin.com/company/eammu-immigration-services/"
-            ]
-          }
-          `}
-        </script>
+       <script type="application/ld+json">
+{JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Eammu Holidays",
+  "alternateName": "Eammu Immigration Services",
+  "url": "https://eammu.com",
+  "logo": "https://i.ibb.co/YF7bmqfg/521388962-122289260780017871-6426815952586296550-n.jpg",
+  "description": "Eammu provides global immigration, travel, tour packages, IT, fashion, events, and agriculture services. Serving clients in Bangladesh, UAE, Europe, and Armenia.",
+  "foundingDate": "2022-02-02",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Nakheel Center, Deira",
+    "addressLocality": "Dubai",
+    "addressRegion": "Dubai",
+    "addressCountry": "United Arab Emirates"
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+8801631312524",
+      "contactType": "customer support",
+      "availableLanguage": ["English", "Bengali", "Arabic"]
+    }
+  ],
+  "sameAs": [
+    "https://facebook.com/eammuholidays/",
+    "https://instagram.com/eammuholidays",
+    "https://youtube.com/@eammutour/",
+    "https://linkedin.com/company/eammu-immigration-services/"
+  ]
+})}
+</script>
+
       </Helmet>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-20">

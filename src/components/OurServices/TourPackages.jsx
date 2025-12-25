@@ -180,34 +180,45 @@ const internationalTours = [
 
 const TourPackages = () => {
   const jsonLD = {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Eammu Tour Packages",
-    "provider": {
-      "@type": "Organization",
-      "name": "Eammu Tours",
-      "url": "https://eammu.com",
-      "sameAs": [
-        "https://www.facebook.com/eammuholidays",
-        "https://www.instagram.com/eammuholidays",
-        "https://www.linkedin.com/company/eammu-immigration-services"
-      ]
-    },
-    "hasPart": [
-      ...internationalTours.map(tour => ({
-        "@type": "TouristTrip",
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Eammu Tour Packages",
+  "itemListElement": [
+    ...internationalTours.map((tour, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "item": {
+        "@type": "TouristDestination",
         "name": tour.name,
         "description": tour.description,
-        "image": tour.image
-      })),
-      ...domesticTours.map(tour => ({
-        "@type": "TouristTrip",
+        "image": tour.image,
+        "url": "https://eammu.com/tourpackages",
+        "provider": {
+          "@type": "Organization",
+          "name": "Eammu Tours",
+          "url": "https://eammu.com"
+        }
+      }
+    })),
+    ...domesticTours.map((tour, index) => ({
+      "@type": "ListItem",
+      "position": internationalTours.length + index + 1,
+      "item": {
+        "@type": "TouristDestination",
         "name": tour.name,
         "description": tour.description,
-        "image": tour.image
-      }))
-    ]
-  };
+        "image": tour.image,
+        "url": "https://eammu.com/tourpackages",
+        "provider": {
+          "@type": "Organization",
+          "name": "Eammu Tours",
+          "url": "https://eammu.com"
+        }
+      }
+    }))
+  ]
+};
+
 
   return (
     <HelmetProvider>

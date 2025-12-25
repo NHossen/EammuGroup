@@ -66,24 +66,27 @@ const Offer = () => {
         <meta name="twitter:image" content="https://eammu.com/eammuicon.jpg" />
 
         {/* Structured Data */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ItemList",
-            "name": "Eammu Current Offers",
-            "description": "Latest discounts and promotional offers from Eammu Immigration Services",
-            "itemListElement": offers.map((offer, index) => ({
-              "@type": "Offer",
-              "position": index + 1,
-              "name": offer.title,
-              "description": offer.description,
-              "image": offer.image,
-              "url": "https://eammu.com/offers",
-              "priceCurrency": "USD",
-              "availability": "https://schema.org/InStock"
-            }))
-          })}
-        </script>
+      <script type="application/ld+json">
+{JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Eammu Current Offers",
+  "description": "Latest discounts and promotional offers from Eammu Immigration Services",
+  "itemListElement": offers.map((offer, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "item": {
+      "@type": "Offer",
+      "name": offer.title,
+      "description": offer.description,
+      "image": offer.image,
+      "url": "https://eammu.com/offers",
+      "availability": "https://schema.org/InStock"
+    }
+  }))
+})}
+</script>
+
 
         {/* FAQ Schema */}
         <script type="application/ld+json">

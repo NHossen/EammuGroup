@@ -126,92 +126,6 @@ const Blogs = () => {
     );
   };
 
-  const blogFaqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Which country is easiest for student visa from Bangladesh in 2025?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "In 2025, Germany, UK, and Japan are among the easiest countries for Bangladeshi students due to simplified documentation and high approval rates for technical and language courses."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can I apply for a Schengen visa from Dubai or India?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can apply through VFS Global or the respective embassy. Eammu Holidays provides expert assistance in documentation, including flight booking and travel insurance for residents in Dubai and India."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Japan open for Bangladeshi students and workers in 2025?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, Japan has significantly relaxed visa rules for skilled migrants and students from South Asia. Eammu Holidays offers full support for Japanese language school admissions and work visa processing."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are the common reasons for visa rejection?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Common reasons include insufficient financial proof, incomplete documentation, and lack of strong ties to the home country. Our blog guides you on how to avoid these mistakes."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which travel agency is best for USA and Canada visas in Dhaka?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Eammu Holidays is recognized as a top-rated travel agency in Dhaka for USA and Canada visa consultancy, providing end-to-end support for B1/B2 and student visa categories."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I work part-time while studying in Europe?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most European countries like Germany and France allow international students to work up to 20 hours per week during semesters and full-time during vacations."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the H1-B visa policy update for 2025?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The 2025 USA H1-B policy focuses on a digital-first application process and gives priority to STEM graduates with higher salary offerings."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I book cheap international flights from Bangladesh?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Booking at least 4-8 weeks in advance and using trusted agencies like Eammu Holidays can save up to 20% on international air tickets from Bangladesh."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are there budget-friendly Hajj and Umrah packages for 2025?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, Eammu Holidays has launched customized 2025 Umrah packages including visa, hotel, and guided tours starting from affordable price points."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Who is the most trusted study abroad consultant in Cumilla?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Eammu Holidays is the leading study abroad and visa consultancy in Cumilla, located at Gomoti Tower, providing global education opportunities."
-      }
-    }
-  ]
-};
 
 const blogFaqs = [
     {
@@ -258,9 +172,6 @@ const blogFaqs = [
         />
         <link rel="canonical" href="https://eammu.com/blogs" />
 
-        <script type="application/ld+json">
-    {JSON.stringify(blogFaqSchema)}
-  </script>
       </Helmet>
 
       <h1 className="text-4xl font-bold text-green-800 text-center mb-10">Latest Blog Posts</h1>
