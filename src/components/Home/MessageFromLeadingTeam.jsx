@@ -65,6 +65,13 @@ const MessageFromLeadingTeam = () => {
     })),
   };
 
+    const shorts = [
+    { id: "VXcsh-RGAQo", title: "FEEL THE HEAT! WITH EAMMU FIRE SHOW DESERT SAFARI" },
+    { id: "5GgTsBbWT9Q", title: "DESERT SAFARI DUBAI WITH EAMMU" },
+    { id: "yGZlj3IqwqQ", title: "THAILAND TOUR PACKAGES With Eammu – EXPLORE THE LAND OF SMILES" },
+    { id: "411I3K-Zagc", title: "Love Lake Dubai & Salt Lake Dubai Tour – Private Trip with Eammu Tours" },
+  ];
+
   return (
     <section className="px-4 py-16 bg-gray-50">
       <Helmet>
@@ -189,7 +196,38 @@ const MessageFromLeadingTeam = () => {
     </div>
     
   </div>
-  <div className="text-center mt-8">
+
+
+ <section className="py-12 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-[#005a31] text-center mb-8">
+          Watch Our Travel Highlights
+        </h2>
+        
+        {/* Grid Logic:
+            - Grid-cols-1: Mobile এ ১টি
+            - sm:grid-cols-2: Tablet এ ২টি
+            - lg:grid-cols-4: Large Screen এ ৪টি
+        */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {shorts.map((video) => (
+            <div 
+              key={video.id} 
+              className="relative overflow-hidden rounded-2xl shadow-lg bg-black aspect-[9/16]"
+            >
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src={`https://www.youtube.com/embed/${video.id}?autoplay=0&loop=1&playlist=${video.id}`}
+                title={video.title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          ))}
+        </div>
+        
+        <div className="text-center mt-8">
           <a 
             href="https://www.youtube.com/@Eammutour" 
             target="_blank" 
@@ -199,6 +237,8 @@ const MessageFromLeadingTeam = () => {
             View more on YouTube →
           </a>
         </div>
+      </div>
+    </section>
 </section>
     </section>
   );
