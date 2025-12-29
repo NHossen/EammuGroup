@@ -1,5 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
 
 const MessageFromLeadingTeam = () => {
   const teamMembers = [
@@ -123,7 +125,19 @@ const MessageFromLeadingTeam = () => {
                 loading="lazy"
               />
             </figure>
-            <h2 className="text-xl font-semibold text-green-800 mb-1">{member.name}</h2>
+            <h2 className="text-xl font-semibold text-green-800 mb-1">
+  {member.name === "Naeem Hossen" ? (
+    <Link
+      to="/naeem-hossen"
+      className="no-underline text-inherit hover:text-inherit"
+    >
+      {member.name}
+    </Link>
+  ) : (
+    member.name
+  )}
+</h2>
+
             <p className="text-gray-600 font-medium mb-2">{member.role}</p>
             <p className="text-gray-500 text-sm mb-3">{member.description}</p>
 

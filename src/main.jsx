@@ -45,6 +45,7 @@ import MessageFromLeadingTeam from './components/Home/MessageFromLeadingTeam.jsx
 import SignUp from './components/SignupLogin/SignUp/SignUp.jsx';
 import LogIn from './components/SignupLogin/LogIn/LogIn.jsx';
 import Details_More from './components/Home/Services_Card_Section/Student_visa/Details_More.jsx';
+import NaeemHossen from './components/NaeemHossen/NaeemHossen.jsx';
 
 
 // ROUTER SETUP (FINAL)
@@ -93,6 +94,9 @@ const router = createBrowserRouter([
       // ===== AUTH =====
       { path: "/signup", element: <SignUp /> },
       { path: "/login", element: <LogIn /> },
+      
+      // ===== NAEEM =====
+      {path: "naeem-hossen",element: <NaeemHossen />,},
 
       // ===== 🔁 OLD URL REDIRECTS (NO SEO LOSS) =====
       { path: "/ourServices", element: <Navigate to="/our-services" replace /> },

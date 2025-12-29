@@ -71,7 +71,7 @@ const Offer = () => {
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Eammu Current Offers",
-  "description": "Latest discounts and promotional offers from Eammu Immigration Services",
+  "description": "Latest discounts and promotional offers from Eammu Holidays",
   "itemListElement": offers.map((offer, index) => ({
     "@type": "ListItem",
     "position": index + 1,
