@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet"; // SEO-র জন্য এটি ব্যবহার করা ভালো (যদি প্রোজেক্টে থাকে)
 
 const BlogSection = () => {
   const [posts, setPosts] = useState([]);
@@ -36,6 +37,33 @@ const BlogSection = () => {
     return url.replace(/\/(s\d+|w\d+|h\d+)(-[pcb])?\//, "/s1600/");
   };
 
+  // SEO: JSON-LD Schema Markup (Google-কে কন্টেন্ট বোঝাতে সাহায্য করে)
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Eammu Holidays Travel Blog",
+    "description": "Latest travel stories, tips, and holiday guides from Eammu Holidays.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Eammu Holidays",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://eammu.com/logo.png" // আপনার লোগো ইউআরএল দিন
+      }
+    },
+    "blogPost": posts.map(post => ({
+      "@type": "BlogPosting",
+      "headline": post.title,
+      "image": getHighResImage(post.content),
+      "datePublished": post.published,
+      "url": post.url,
+      "author": {
+        "@type": "Organization",
+        "name": "Eammu Holidays"
+      }
+    }))
+  };
+
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
@@ -55,29 +83,42 @@ const BlogSection = () => {
   );
 
   return (
-    <section className="" aria-label="Latest Travel Blogs">
+    <section className="py-10" aria-label="Eammu Holidays Travel Blog">
+      {/* SEO Schema Injection */}
+      <script type="application/ld+json">
+        {JSON.stringify(schemaData)}
+      </script>
+
       {posts.length === 0 ? (
         <div className="text-center py-24 bg-gray-50 rounded-3xl border-2 border-dashed border-gray-200">
           <p className="text-gray-400 text-lg">No stories found at the moment.</p>
         </div>
       ) : (
         <>
+          {/* Hidden Keywords for SEO Ranking */}
+          <h2 className="sr-only">Latest Travel Guides, Holiday Packages, and Tourism Blog</h2>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
             {currentPosts.map((post) => (
-              <article key={post.id} className="group flex flex-col h-full bg-white rounded-[2rem] overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl hover:shadow-green-100/50 transition-all duration-500 transform hover:-translate-y-3">
-                
-                {/* Image Section - SEO Optimized with Aspect Ratio */}
+              <article 
+                key={post.id} 
+                className="group flex flex-col h-full bg-white rounded-[2rem] overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl hover:shadow-green-100/50 transition-all duration-500 transform hover:-translate-y-3"
+                itemScope 
+                itemType="https://schema.org/BlogPosting"
+              >
+                {/* Image Section - SEO: Alt text and metadata */}
                 <header className="relative w-full overflow-hidden bg-gray-100 aspect-[16/9]">
                   <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-500 z-10" />
                   <img 
                     src={getHighResImage(post.content)} 
-                    alt={post.title} 
+                    alt={`${post.title} - Eammu Holidays`} 
                     loading="lazy"
+                    itemProp="image"
                     className="w-full h-full object-contain bg-gray-50 transition-transform duration-700 group-hover:scale-105" 
                   />
                   <div className="absolute top-4 left-4 z-20">
                     <span className="bg-white/90 backdrop-blur-md text-green-700 text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest shadow-sm">
-                      Eammu Holidays
+                      Travel Insights
                     </span>
                   </div>
                 </header>
@@ -86,19 +127,30 @@ const BlogSection = () => {
                 <div className="p-8 flex flex-col flex-grow">
                   <div className="flex items-center gap-2 mb-4">
                     <span className="w-8 h-[1px] bg-green-600"></span>
-                    <time dateTime={post.published} className="text-[11px] font-medium text-gray-400 uppercase tracking-tighter">
+                    <time 
+                      dateTime={post.published} 
+                      itemProp="datePublished"
+                      className="text-[11px] font-medium text-gray-400 uppercase tracking-tighter"
+                    >
                       {new Date(post.published).toLocaleDateString("en-GB", { day: 'numeric', month: 'long', year: 'numeric' })}
                     </time>
                   </div>
 
-                  <h3 className="font-extrabold text-xl mb-4 line-clamp-2 text-gray-800 group-hover:text-green-700 transition-colors leading-tight">
-                    <a href={post.url} target="_blank" rel="noopener noreferrer" title={post.title}>
+                  {/* SEO: Title with h3 and itemprop */}
+                  <h3 
+                    itemProp="headline"
+                    className="font-extrabold text-xl mb-4 line-clamp-2 text-gray-800 group-hover:text-green-700 transition-colors leading-tight"
+                  >
+                    <a href={post.url} target="_blank" rel="noopener noreferrer" title={`Read more about ${post.title}`}>
                       {post.title}
                     </a>
                   </h3>
 
-                  <p className="text-sm text-gray-500 line-clamp-3 mb-6 leading-relaxed">
-                    {post.content.replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").slice(0, 150)}...
+                  <p 
+                    itemProp="description"
+                    className="text-sm text-gray-500 line-clamp-3 mb-6 leading-relaxed"
+                  >
+                    {post.content.replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").slice(0, 160)}...
                   </p>
 
                   <div className="mt-auto pt-6 border-t border-gray-50">
@@ -107,7 +159,7 @@ const BlogSection = () => {
                       target="_blank" 
                       rel="noopener noreferrer" 
                       className="inline-flex items-center text-sm font-bold text-green-700 group/link"
-                      aria-label={`Read more about ${post.title}`}
+                      aria-label={`Read full story: ${post.title}`}
                     >
                       READ FULL STORY
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 transition-transform group-hover/link:translate-x-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -120,14 +172,14 @@ const BlogSection = () => {
             ))}
           </div>
 
-          {/* Pagination */}
+          {/* Pagination SEO */}
           {totalPages > 1 && (
-            <nav className="flex justify-center items-center space-x-3 mt-16" aria-label="Blog pagination">
+            <nav className="flex justify-center items-center space-x-3 mt-16" aria-label="Blog pagination navigation">
               {[...Array(totalPages)].map((_, i) => (
                 <button
                   key={i}
                   onClick={() => paginate(i + 1)}
-                  aria-label={`Go to page ${i + 1}`}
+                  aria-label={`Maps to page ${i + 1}`}
                   aria-current={currentPage === i + 1 ? "page" : undefined}
                   className={`min-w-[45px] h-[45px] rounded-2xl font-bold transition-all duration-300 shadow-sm ${
                     currentPage === i + 1 

@@ -1,115 +1,161 @@
+import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { motion } from 'framer-motion';
 
 const EammuFashion = () => {
+  const fadeIn = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
+  };
+
+  const categories = [
+    { title: "Men's Heritage", img: "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2024/SEPTEMBER/9/AqOsZhUa_04de791acf874a8fb4e99f1c018d5835.jpg", desc: "Panjabi, Kabli & Formals" },
+    { title: "Women's Elegance", img: "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/29407926/2024/5/7/fe50718e-3bfb-4068-9f29-457b2441f4791715093101854Sarees1.jpg", desc: "Festive, Hijab & Kurtis" },
+    { title: "New Generation", img: "https://assets.vogue.in/photos/5f214a9d9ffca08d18483816/master/w_1600%2Cc_limit/Neha%2520Mehra%25201.jpg", desc: "Kids & Youth Collections" }
+  ];
+
   return (
-    <div className="px-4 container mx-auto py-12">
-      {/* SEO Meta Tags */}
-    <Helmet>
-  {/* Title: Targets Brand + Key Locations */}
-  <title>Eammu Fashion | Best Clothing Brand in Cumilla, Dhaka & Bangladesh</title>
+    <div className="bg-white text-[#1a1a1a] overflow-hidden">
+      <Helmet>
+        <title>Eammu Fashion | Premium Clothing Brand in Bangladesh</title>
+        <meta name="description" content="Experience premium fashion at Eammu Fashion. The top-rated clothing store in Cumilla and Dhaka offering exclusive Panjabi, T-shirts, and Western wear." />
+        <meta name="keywords" content="Eammu Fashion, best clothing store in Cumilla, fashion brand in Dhaka, premium Panjabi store Bangladesh" />
+        <meta name="geo.placename" content="Cumilla, Dhaka" />
+      </Helmet>
 
-  {/* Description: Highlights physical presence and premium quality */}
-  <meta 
-    name="description" 
-    content="Experience premium fashion at Eammu Fashion. The top-rated clothing store in Cumilla and Dhaka offering exclusive Panjabi, T-shirts, and Western wear. Visit us in Cumilla or shop online!" 
-  />
-
-  {/* Keywords: Strategic mix of local and national search terms */}
-  <meta 
-    name="keywords" 
-    content="Eammu Fashion Cumilla, best clothing store in Cumilla, fashion brand in Dhaka, top brand shop Cumilla, premium Panjabi store Bangladesh, T-shirt shop Dhaka, Cumilla Kandirpar fashion, best Panjabi brand in Bangladesh, Eammu clothing BD, stylish menswear Cumilla, women's fashion store Cumilla, Eid collection Cumilla 2026, trendy fashion house Dhaka" 
-  />
-
-  {/* Local SEO / Geo Tags (Helps Google pinpoint your business location) */}
-  <meta name="geo.region" content="BD-13" /> {/* Code for Dhaka/Cumilla region */}
-  <meta name="geo.placename" content="Cumilla, Dhaka" />
-  <meta name="geo.position" content="23.4607;91.1809" /> {/* Cumilla Coordinates */}
-  <meta name="ICBM" content="23.4607, 91.1809" />
-</Helmet>
-
-      {/* Page Heading */}
-      <div className="text-center mb-10">
-        <h1 className="text-4xl font-bold text-[#005a31] mb-4">Welcome to Eammu Fashion</h1>
-        <p className="text-gray-600 text-lg">
-          Discover the perfect blend of tradition and modern trends with Eammu Fashion — your upcoming go-to destination for quality clothing in Bangladesh and beyond.
-        </p>
-      </div>
-
-      {/* Visual Showcase */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-        <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2024/SEPTEMBER/9/AqOsZhUa_04de791acf874a8fb4e99f1c018d5835.jpg" alt="Panjabi Style" className="rounded-lg shadow" />
-        <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/29407926/2024/5/7/fe50718e-3bfb-4068-9f29-457b2441f4791715093101854Sarees1.jpg" alt="Women Style" className="rounded-lg shadow" />
-        <img src="https://assets.vogue.in/photos/5f214a9d9ffca08d18483816/master/w_1600%2Cc_limit/Neha%2520Mehra%25201.jpg" alt="Kids Wear" className="rounded-lg shadow" />
-      </div>
-
-      {/* Who We Are */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold text-[#005a31] mb-2">Who We Are</h2>
-        <p className="text-gray-700">
-          Eammu Fashion is the latest vertical under Eammu Group, dedicated to delivering premium fashion for men, women, and youth. From classic Panjabi styles to contemporary Western wear, our mission is to promote elegance, comfort, and style — affordably.
-        </p>
+      {/* --- Luxury Hero Section --- */}
+      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=80&w=2070" 
+            className="w-full h-full object-cover opacity-80" 
+            alt="Fashion Banner" 
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent"></div>
+        </div>
+        
+        <motion.div 
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className="relative z-10 container mx-auto px-6 text-white"
+        >
+          <span className="uppercase tracking-[0.4em] text-sm mb-4 block">Coming in 2026</span>
+          <h1 className="text-6xl md:text-8xl font-serif mb-6 leading-tight">
+            Eammu <br /> <span className="italic font-light">Fashion.</span>
+          </h1>
+          <p className="max-w-md text-lg text-gray-200 mb-8 font-light">
+            Defining the new era of Bangladeshi elegance. Blending local craftsmanship with global trends.
+          </p>
+          <button className="border-2 border-white px-10 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all">
+            Explore Vision
+          </button>
+        </motion.div>
       </section>
 
-      {/* Our Vision */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold text-[#005a31] mb-2">Our Vision</h2>
-        <p className="text-gray-700">
-          We aim to become one of Bangladesh’s most loved fashion brands — known for quality, creativity, and cultural relevance. We blend local craftsmanship with international style, keeping you fashionable and confident.
-        </p>
+      {/* --- Brand Story --- */}
+      <section className="py-24 px-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <motion.div initial="hidden" whileInView="visible" variants={fadeIn} viewport={{ once: true }}>
+            <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-green-700 mb-4">Our Story</h2>
+            <h3 className="text-4xl font-serif mb-6">Redefining Style Across Borders</h3>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Eammu Fashion is the latest vertical under Eammu Group, dedicated to delivering premium fashion for men, women, and youth. We believe style should be elegant, comfortable, and accessible.
+            </p>
+            <div className="h-[1px] w-20 bg-green-700 mb-6"></div>
+            <p className="text-gray-500 italic italic">"Blending tradition with modern innovation."</p>
+          </motion.div>
+          <div className="relative">
+            <img 
+              src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=2070" 
+              className="rounded-2xl shadow-2xl" 
+              alt="Store" 
+            />
+            <div className="absolute -bottom-10 -left-10 bg-white p-8 rounded-2xl shadow-lg hidden md:block">
+              <p className="text-3xl font-serif text-green-800">2026</p>
+              <p className="text-xs uppercase tracking-widest">Flagship Launch</p>
+            </div>
+          </div>
+        </div>
       </section>
 
-      {/* Coming Soon Collection */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold text-[#005a31] mb-2">Coming Soon at Eammu Fashion</h2>
-        <ul className="list-disc pl-6 text-gray-700 space-y-2">
-          <li>Men's Wear: Panjabi, Kabli, Formal Shirts, T-Shirts</li>
-          <li>Women's Wear: Casual, Festive, Hijab, Kurtis</li>
-          <li>Kids Fashion: Traditional & Western Blends</li>
-          <li>Premium Fabric Collection with Custom Tailoring</li>
-          <li>Exclusive Eid, Pohela Boishakh & Winter Collections</li>
-        </ul>
+      {/* --- Visual Collection Showcase --- */}
+      <section className="bg-gray-50 py-24 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-serif">The Collection</h2>
+            <p className="text-gray-500 mt-4 uppercase text-xs tracking-[0.2em]">Crafted for every generation</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {categories.map((item, idx) => (
+              <motion.div 
+                key={idx}
+                whileHover={{ y: -10 }}
+                className="group cursor-pointer"
+              >
+                <div className="overflow-hidden rounded-2xl mb-6 aspect-[3/4]">
+                  <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                </div>
+                <h4 className="text-xl font-bold mb-2">{item.title}</h4>
+                <p className="text-gray-500 text-sm">{item.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </section>
 
-      {/* Store Locations */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold text-[#005a31] mb-2">Where You'll Find Us</h2>
-        <p className="text-gray-700">Eammu Fashion will be launching both online and offline stores:</p>
-        <ul className="list-disc pl-6 text-gray-700 mt-2">
-          <li>🛍️ Flagship Store in Cumilla Cantonment (Coming 2026)</li>
-          <li>🌐 E-commerce Website with Nationwide Delivery</li>
-          <li>📱 Mobile App for Android and iOS</li>
-        </ul>
+      {/* --- Where You'll Find Us (Modern List) --- */}
+      <section className="py-24 px-6 max-w-5xl mx-auto text-center">
+        <h2 className="text-3xl font-serif mb-16">Exclusive Accessibility</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="space-y-4">
+            <div className="text-4xl">🛍️</div>
+            <h4 className="font-bold uppercase text-xs tracking-widest">Flagship Store</h4>
+            <p className="text-gray-500 text-sm">Cumilla Cantonment<br/>Coming 2026</p>
+          </div>
+          <div className="space-y-4">
+            <div className="text-4xl">🌐</div>
+            <h4 className="font-bold uppercase text-xs tracking-widest">Online Boutique</h4>
+            <p className="text-gray-500 text-sm">Nationwide Delivery<br/>Active Soon</p>
+          </div>
+          <div className="space-y-4">
+            <div className="text-4xl">📱</div>
+            <h4 className="font-bold uppercase text-xs tracking-widest">Mobile Experience</h4>
+            <p className="text-gray-500 text-sm">iOS & Android App<br/>Launch Ready</p>
+          </div>
+        </div>
       </section>
 
-      {/* Social Media */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold text-[#005a31] mb-2">Follow Us</h2>
-        <p className="text-gray-700">Be the first to get updates on launches, offers, and new arrivals:</p>
-        <ul className="list-disc pl-6 text-blue-600 mt-2">
-          <li><a href="https://www.facebook.com/eammufashion/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-          <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-          <li><a href="#" target="_blank" rel="noopener noreferrer">TikTok</a></li>
-        </ul>
+      {/* --- Call to Action (Newsletter) --- */}
+      <section className="bg-green-950 py-24 px-6 text-center text-white">
+        <motion.div initial="hidden" whileInView="visible" variants={fadeIn} className="max-w-2xl mx-auto">
+          <h2 className="text-4xl font-serif mb-6">Join the Inner Circle</h2>
+          <p className="text-green-100/70 mb-10 font-light">
+            Be the first to witness the launch of our Eid and Festive collections.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <input 
+              type="email" 
+              placeholder="Your Email Address" 
+              className="bg-white/10 border border-white/20 px-6 py-4 rounded-full text-white w-full sm:w-80 outline-none focus:bg-white/20 transition-all" 
+            />
+            <button className="bg-white text-green-950 px-10 py-4 rounded-full font-bold uppercase text-xs tracking-widest hover:bg-green-100 transition-all">
+              Notify Me
+            </button>
+          </div>
+        </motion.div>
       </section>
 
-     {/* CTA */}
-      <section className="text-center mt-10">
-        <p className="text-xl md:text-2xl font-semibold text-gray-800 mb-6">
-          Stay tuned — the Eammu Fashion experience is almost here!
-        </p>
-        <button className="bg-[#005a31] text-white px-8 py-3 rounded-full text-lg hover:bg-[#003e24] transition">
-          📢 Notify Me on Launch
-        </button>
-      </section>
-
-      {/* Suggested Next: Photo Album / Video Section */}
-      <section className="mt-16">
-        <h2 className="text-3xl font-semibold text-[#005a31] mb-4 text-center">📸 Fashion Gallery</h2>
-        <p className="text-gray-700 text-center mb-6">
-          Showcase latest collections, events, and customer styles here. You can use a **carousel or masonry gallery**.
-        </p>
-        {/* Future: Embed YouTube video testimonial section below this */}
-      </section>
+      {/* --- Simple Social Icons --- */}
+      <footer className="py-12 border-t border-gray-100 text-center">
+        <div className="flex justify-center gap-10 mb-6">
+          <a href="https://www.facebook.com/eammufashion/" className="text-gray-400 hover:text-green-700 transition-colors uppercase text-[10px] font-bold tracking-widest">Facebook</a>
+          <a href="#" className="text-gray-400 hover:text-green-700 transition-colors uppercase text-[10px] font-bold tracking-widest">Instagram</a>
+          <a href="#" className="text-gray-400 hover:text-green-700 transition-colors uppercase text-[10px] font-bold tracking-widest">TikTok</a>
+        </div>
+        <p className="text-[10px] text-gray-300 uppercase tracking-widest">© 2025 Eammu Fashion. Crafted for Distinction.</p>
+      </footer>
     </div>
   );
 };

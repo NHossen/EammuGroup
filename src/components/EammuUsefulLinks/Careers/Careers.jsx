@@ -1,92 +1,140 @@
+import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const Careers = () => {
+  const vacancies = [
+    { title: "Immigration Consultant", location: "Cumilla Office", type: "Full-time" },
+    { title: "Visa Application Officer", location: "Remote / Office", type: "Full-time" },
+    { title: "Content Creator", location: "Digital Team", type: "Freelance" },
+    { title: "Digital Marketing Executive", location: "Cumilla Office", type: "Full-time" },
+    { title: "Customer Support Agent", location: "Remote", type: "Part-time" },
+    { title: "Web Developer / IT", location: "Global Team", type: "Contract" },
+  ];
+
   return (
-    <>
+    <div className="bg-white min-h-screen font-sans selection:bg-green-100 selection:text-[#005a31]">
       <Helmet>
-        <title>Careers at Eammu In Bangladesh | Join Our Growing Global Team Bangladesh</title>
-        <meta
-          name="description"
-          content="Explore exciting career opportunities at Eammu. We're hiring in Travel Expert, Visa Expert, immigration services, marketing, IT, events, and more. Submit your CV today."
-        />
-        <meta
-          name="keywords"
-          content="Eammu careers, jobs at Eammu, Eammu hiring, Eammu CV submit, immigration jobs, travel agency jobs, marketing jobs, work in Cumilla"
-        />
+        <title>Careers | Join Eammu Holidays Global Team</title>
+        <meta name="description" content="Explore exciting career opportunities at Eammu. Join our growing team in immigration, marketing, and IT." />
       </Helmet>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        {/* 🔹 Career Banner */}
-        <div className="mb-12">
+      {/* --- Hero Banner Section --- */}
+      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
           <img
-            src="https://www.shuniah.org/wp-content/uploads/2025/04/Job-Opportunity.jpg"
-            alt="Careers at Eammu"
-            className="rounded-lg w-full shadow-md"
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2070"
+            alt="Eammu Team"
+            className="w-full h-full object-cover"
           />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-green-800/40"></div>
         </div>
 
-        {/* 🔹 Introduction */}
-        <section className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-green-800 mb-4">Careers at Eammu</h1>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            Eammu is growing — and so is our passionate global team! Whether you're excited about immigration consulting, social media, customer service, or tech, we’re here to welcome your energy and talent.
+        <div className="relative z-10 text-center px-4">
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-4xl md:text-6xl font-bold text-white mb-4"
+          >
+            Build Your Future <br /> with <span className="text-green-500">Eammu.</span>
+          </motion.h1>
+          <p className="text-green-50 max-w-2xl mx-auto text-lg md:text-xl font-light">
+            We are looking for passionate individuals to help us redefine global travel and immigration.
           </p>
-        </section>
+        </div>
+      </section>
 
-        {/* 🔹 Job Vacancies */}
-        <section className="bg-white shadow-md rounded-lg p-8 mb-16">
-          <h2 className="text-2xl font-semibold mb-4 text-green-700">🚀 Upcoming Vacancies</h2>
-          <ul className="list-disc list-inside text-gray-700 space-y-2 text-base">
-            <li>Immigration Consultant (Cumilla Office)</li>
-            <li>Visa Application Officer</li>
-            <li>Content Creator (YouTube, Facebook & Instagram)</li>
-            <li>Digital Marketing Executive</li>
-            <li>Customer Support Agent (Remote + Office)</li>
-            <li>Web Developer / IT Support</li>
-          </ul>
-
-          <p className="mt-6 text-gray-600">
-            We strongly believe in diversity, equal opportunity, and empowering youth. Fresh graduates, freelancers, women, and students are highly encouraged to apply.
-          </p>
-
-          {/* Optional second image */}
-          <div className="mt-8">
+      <main className="max-w-7xl mx-auto px-6 py-20">
+        
+        {/* --- Why Join Us Section --- */}
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24 items-center">
+          <div>
+            <h2 className="text-3xl font-bold text-[#005a31] mb-6">Why Join Our Mission?</h2>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              At Eammu, we strongly believe in diversity, equal opportunity, and empowering youth. We don't just offer jobs; we provide a platform where your energy meets global opportunities. 
+            </p>
+            <div className="space-y-4">
+              {['Global Culture', 'Flexible Working', 'Growth Opportunities'].map((item) => (
+                <div key={item} className="flex items-center gap-3">
+                  <div className="w-5 h-5 bg-[#005a31] rounded-full flex items-center justify-center">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
+                  </div>
+                  <span className="font-medium text-gray-800">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="bg-green-50 p-4 rounded-3xl">
             <img
               src="https://files.selar.co/product-images/2024/products/rita-babalola1/career-gps-a-career-clari-selar.co-6664142cc9386.jpeg"
               alt="Eammu Team Culture"
-              className="rounded-lg shadow-md mx-auto"
+              className="rounded-2xl shadow-xl w-full"
             />
           </div>
         </section>
 
-        {/* 🔹 CV Submission */}
-        <section className="bg-green-50 p-8 rounded-lg text-center shadow-inner">
-          <h2 className="text-2xl font-bold mb-4 text-green-800">📤 Submit Your CV</h2>
-          <p className="mb-6 text-gray-700">
-            Want to be part of our mission? Submit your CV and details via our official Google Form. Shortlisted candidates will be contacted directly by Eammu's HR team.
-          </p>
+        {/* --- Open Vacancies Grid --- */}
+        <section className="mb-24">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#005a31]">Current Opportunities</h2>
+            <div className="w-20 h-1.5 bg-[#005a31] mx-auto mt-4 rounded-full"></div>
+          </div>
 
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
-            <a
-              href="https://forms.gle/a2UU8sNva7FZKp8g6"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-green-800 text-white px-6 py-3 rounded-full hover:bg-green-900 transition"
-            >
-              Apply Now
-            </a>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {vacancies.map((job, idx) => (
+              <motion.div
+                key={idx}
+                whileHover={{ y: -5 }}
+                className="p-8 bg-white border border-gray-100 rounded-[2rem] shadow-sm hover:shadow-xl transition-all border-b-4 border-b-[#005a31]"
+              >
+                <span className="text-[10px] font-bold uppercase tracking-widest text-green-600 mb-2 block">{job.type}</span>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">{job.title}</h3>
+                <div className="flex items-center gap-2 text-gray-500 text-sm mb-6">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                  {job.location}
+                </div>
+                <a href="https://forms.gle/a2UU8sNva7FZKp8g6" target="_blank" className="text-green-800 font-bold text-sm flex items-center gap-2 hover:gap-4 transition-all">
+                  Apply Now <span>→</span>
+                </a>
+              </motion.div>
+            ))}
+          </div>
+        </section>
 
-            <Link
-              to="/"
-              className="bg-white border border-green-800 text-green-800 px-6 py-3 rounded-full hover:bg-green-100 transition"
-            >
-              Back to Home
-            </Link>
+        {/* --- CV Submission (CTA) --- */}
+        <section className="bg-[#005a31] rounded-[3rem] p-12 text-center text-white relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-green-700 rounded-full -mr-32 -mt-32 opacity-50 blur-3xl"></div>
+          <div className="relative z-10 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6 italic">Don't see a position for you?</h2>
+            <p className="text-green-100 mb-10 font-light">
+              We are always on the lookout for great talent. Drop your CV in our database and we will contact you when a matching role opens up.
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <a
+                href="https://forms.gle/a2UU8sNva7FZKp8g6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-green-800 px-10 py-4 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-green-50 transition-all shadow-lg"
+              >
+                Submit CV to HR
+              </a>
+              <Link
+                to="/"
+                className="bg-green-800 text-white border border-green-600 px-10 py-4 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-green-600 transition-all"
+              >
+                Return Home
+              </Link>
+            </div>
           </div>
         </section>
       </main>
-    </>
+
+      {/* --- Simple Footer --- */}
+      <footer className="py-12 border-t border-gray-100 text-center">
+        <p className="text-[10px] text-gray-400 uppercase tracking-widest">© 2025 Eammu Holidays • Human Resources</p>
+      </footer>
+    </div>
   );
 };
 
