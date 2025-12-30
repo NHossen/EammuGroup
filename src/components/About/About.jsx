@@ -23,7 +23,7 @@ const About = () => {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Eammu Holidays",
-  "alternateName": "Eammu Immigration Services",
+  "alternateName": "Eammu",
   "url": "https://eammu.com",
   "logo": "https://i.ibb.co/YF7bmqfg/521388962-122289260780017871-6426815952586296550-n.jpg",
   "description": "Eammu provides global immigration, travel, tour packages, IT, fashion, events, and agriculture services. Serving clients in Bangladesh, UAE, Europe, and Armenia.",
@@ -44,7 +44,7 @@ const About = () => {
     }
   ],
   "sameAs": [
-    "https://facebook.com/eammuholidays/",
+    "https://facebook.com/eammutourism/",
     "https://instagram.com/eammuholidays",
     "https://youtube.com/@eammutour/",
     "https://linkedin.com/company/eammu-immigration-services/"

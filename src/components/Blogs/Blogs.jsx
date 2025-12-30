@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
+import BlogSection from "./BlogSection";
 
 const blogPosts = [
   {
@@ -162,7 +163,7 @@ const blogFaqs = [
   ];
 
   return (
-    <div className="px-4 md:px-6 lg:px-8 container mx-auto py-10">
+    <div className="px-4 md:px-6 lg:px-8 container mx-auto ">
       <Helmet>
         <title>{dynamicTitle}</title>
         <meta name="description" content={dynamicDescription} />
@@ -173,6 +174,18 @@ const blogFaqs = [
         <link rel="canonical" href="https://eammu.com/blogs" />
 
       </Helmet>
+
+            <section className="my-10">
+  <h2 className="text-3xl font-bold text-[#005a31] text-center mb-8">
+    Latest Updates from Eammu Official Blog
+  </h2>
+
+  <p className="text-center text-gray-600 max-w-3xl mx-auto mb-10">
+    Updated travel news, visa alerts, and immigration insights published directly from our Google Blog.
+  </p>
+
+  <BlogSection />
+</section>
 
       <h1 className="text-4xl font-bold text-green-800 text-center mb-10">Latest Blog Posts</h1>
 
@@ -254,6 +267,11 @@ const blogFaqs = [
         </div>
       </div>
     </section>
+
+    <div>
+
+
+    </div>
 
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
