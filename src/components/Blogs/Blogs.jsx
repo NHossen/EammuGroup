@@ -110,7 +110,7 @@ const Blogs = () => {
   const [activeBlog, setActiveBlog] = useState(null);
   const [dynamicTitle, setDynamicTitle] = useState("Top Travel Agency Bangladesh | Visa | Flight | Hotel | Travel News");
   const [dynamicDescription, setDynamicDescription] = useState(
-    "Top Travel Agency Bangladesh by Online ,Stay updated with the latest visa news, travel tips, and student Visa opportunities with Eammu Holidays."
+    "Top Travel Agency Bangladesh by Online, Stay updated with the latest visa news, travel tips, and student Visa opportunities with Eammu Holidays."
   );
 
   const openModal = (post) => {
@@ -127,193 +127,146 @@ const Blogs = () => {
     );
   };
 
-
-const blogFaqs = [
+  const blogFaqs = [
     {
       q: "Which country offers the easiest student visa for Bangladeshis in 2025?",
-      a: "Germany, the UK, and Japan are currently the most accessible. These countries have streamlined their digital application processes and offer high approval rates for technical and language-based courses."
+      a: "Germany, the UK, and Japan are currently the most accessible. These countries have streamlined their digital application processes and offer high approval rates."
     },
     {
       q: "How can I avoid visa rejection for USA and Canada?",
-      a: "The key is strong financial documentation and proving 'Home Ties.' Eammu Holidays provides expert case analysis to ensure your SOP, bank statements, and travel intent are perfectly aligned with embassy requirements."
-    },
-    {
-      q: "Can I apply for a Schengen visa from Dubai or India through Eammu?",
-      a: "Yes. Our offices in Dubai and India provide full assistance for Schengen visa appointments, travel insurance, and flight itineraries for residents of the UAE and India."
-    },
-    {
-      q: "What are the latest updates for UK work permits in 2025?",
-      a: "The UK has updated its 'Skilled Worker' route and added more roles to the shortage occupation list. We recommend checking our latest blog post on UK immigration for detailed salary thresholds."
-    },
-    {
-      q: "Does Eammu Holidays provide Hajj and Umrah packages from Dhaka?",
-      a: "Yes, we offer premium and budget-friendly Hajj and Umrah packages from Dhaka, including visa processing, hotel stays near the Haram, and guided spiritual tours."
-    },
-    {
-      q: "Why is Eammu considered the best travel agency in Cumilla and Dhaka?",
-      a: "With physical offices in 4 countries (BD, UAE, Armenia, Georgia), Eammu offers unmatched global authority, transparent pricing, and 24/7 WhatsApp support for all travel and visa needs."
+      a: "The key is strong financial documentation and proving 'Home Ties.' Eammu Holidays provides expert case analysis to ensure your documents are perfectly aligned."
     }
   ];
 
   const shorts = [
     { id: "VXcsh-RGAQo", title: "FEEL THE HEAT! WITH EAMMU FIRE SHOW DESERT SAFARI" },
     { id: "5GgTsBbWT9Q", title: "DESERT SAFARI DUBAI WITH EAMMU" },
-    { id: "yGZlj3IqwqQ", title: "THAILAND TOUR PACKAGES With Eammu – EXPLORE THE LAND OF SMILES" },
-    { id: "411I3K-Zagc", title: "Love Lake Dubai & Salt Lake Dubai Tour – Private Trip with Eammu Tours" },
+    { id: "yGZlj3IqwqQ", title: "THAILAND TOUR PACKAGES With Eammu" },
+    { id: "411I3K-Zagc", title: "Love Lake Dubai & Salt Lake Dubai Tour" },
   ];
 
   return (
-    <div className="px-4 md:px-6 lg:px-8 container mx-auto ">
+    <div className="px-4 md:px-6 lg:px-8 container mx-auto">
       <Helmet>
         <title>{dynamicTitle}</title>
         <meta name="description" content={dynamicDescription} />
-        <meta
-          name="keywords"
-          content="best visa consultant in Dubai, Europe visa assistance from Dubai, UK visa application from Dubai, Schengen visa appointment in Dubai, travel agency in India for visa, trusted visa consultant in India, best travel agency in India for Europe visa, Europe visa guidance from India, student visa consultant India, education consultancy for abroad study,best travel agency dhaka,best travel agency bangladesh"
-        />
         <link rel="canonical" href="https://eammu.com/blogs" />
-
       </Helmet>
 
-            <section className="my-10">
-  <h2 className="text-3xl font-bold text-[#005a31] text-center mb-8">
-    Latest Updates from Eammu Official Blog
-  </h2>
+      {/* --- Section 1: Dynamic Blogger Posts (with Pagination inside) --- */}
+      <section className="my-12">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-[#005a31] mb-4">
+            Official Eammu Travel Feed
+          </h2>
+          <div className="w-24 h-1 bg-green-600 mx-auto rounded-full mb-4"></div>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Real-time updates, visa alerts, and travel insights fetched directly from our official newsroom.
+          </p>
+        </div>
+        
+        {/* এখানে আপনার আগের দেওয়া Pagination সহ BlogSection কম্পোনেন্টটি লোড হবে */}
+        <BlogSection />
+      </section>
 
-  <p className="text-center text-gray-600 max-w-3xl mx-auto mb-10">
-    Updated travel news, visa alerts, and immigration insights published directly from our Google Blog.
-  </p>
-
-  <BlogSection />
-</section>
-
-      <h1 className="text-4xl font-bold text-green-800 text-center mb-10">Latest Blog Posts</h1>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {blogPosts.map((post) => (
-          <div
-            key={post.id}
-            className="border border-green-800 rounded-md p-4 shadow hover:shadow-lg transition duration-300 flex flex-col"
-          >
-            <img src={post.image} alt={post.title} className="h-48 w-full object-cover rounded mb-4" />
-            <h2 className="text-xl font-semibold text-green-800 mb-2">{post.title}</h2>
-            <p className="text-sm text-gray-500 mb-2">{post.date}</p>
-            <p className="text-gray-700 flex-1 mb-4">{truncateText(post.summary || post.fullContent)}</p>
-            <button
-              onClick={() => openModal(post)}
-              className="mt-auto border border-green-800 text-green-800 px-4 py-2 rounded hover:bg-green-800 hover:text-white transition"
+      {/* --- Section 2: Custom Editorial Blog Posts --- */}
+      <section className="my-20">
+        <h2 className="text-3xl font-bold text-green-800 text-center mb-10">Editorial Picks & Guides</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {blogPosts.map((post) => (
+            <article
+              key={post.id}
+              className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group"
             >
-              Read More
-            </button>
-          </div>
-        ))}
-      </div>
+              <div className="relative overflow-hidden h-52">
+                <img 
+                   src={post.image} 
+                   alt={post.title} 
+                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" 
+                />
+              </div>
+              <div className="p-6 flex flex-col flex-1">
+                <span className="text-xs font-bold text-green-600 uppercase tracking-widest mb-2">{post.date}</span>
+                <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-green-700 transition-colors line-clamp-2">
+                  {post.title}
+                </h3>
+                <p className="text-gray-600 text-sm mb-5 flex-1 line-clamp-3">
+                  {truncateText(post.summary || post.fullContent)}
+                </p>
+                <button
+                  onClick={() => openModal(post)}
+                  className="w-full py-3 rounded-xl border-2 border-green-700 text-green-700 font-bold hover:bg-green-700 hover:text-white transition-all duration-300"
+                >
+                  Read Analysis
+                </button>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
 
+      {/* Modal for Custom Blogs */}
       {activeBlog && (
-        <div className="fixed inset-0 z-50 bg-black bg-opacity-40 flex items-center justify-center px-4 py-10 overflow-auto">
-          <div className="bg-white rounded-lg max-w-2xl w-full p-6 relative shadow-xl">
+        <div className="fixed inset-0 z-[999] bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto relative shadow-2xl">
             <button
               onClick={closeModal}
-              className="absolute top-2 right-3 text-xl text-green-800 font-bold hover:text-red-500"
+              className="absolute top-4 right-4 bg-white/80 backdrop-blur h-10 w-10 rounded-full flex items-center justify-center text-2xl text-red-500 shadow-lg z-10 hover:bg-red-50"
             >
               ✕
             </button>
-            <img
-              src={activeBlog.image}
-              alt={activeBlog.title}
-              className="rounded mb-4 max-h-60 w-full object-cover"
-            />
-            <h2 className="text-2xl font-bold text-green-800 mb-2">{activeBlog.title}</h2>
-            <p className="text-sm text-gray-500 mb-4">{activeBlog.date}</p>
-            <p className="text-gray-700 whitespace-pre-line">{activeBlog.fullContent || activeBlog.summary}</p>
+            <img src={activeBlog.image} alt={activeBlog.title} className="w-full h-72 object-cover" />
+            <div className="p-8">
+              <span className="text-green-600 font-bold">{activeBlog.date}</span>
+              <h2 className="text-3xl font-bold text-gray-900 mt-2 mb-6 leading-tight">{activeBlog.title}</h2>
+              <div className="text-gray-700 leading-relaxed text-lg space-y-4 whitespace-pre-line">
+                {activeBlog.fullContent || activeBlog.summary}
+              </div>
+            </div>
           </div>
         </div>
       )}
 
-      <section className="mt-20 border-t border-gray-200 pt-16 pb-10">
-      <div className="max-w-5xl mx-auto px-4">
+      {/* FAQ Section */}
+      <section className="mt-24 bg-green-50 rounded-3xl p-8 md:p-12 border border-green-100">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-extrabold text-[#005a31] sm:text-4xl">
-            Frequently Asked Questions & Travel Insights
-          </h2>
-          <p className="mt-4 text-gray-600 text-lg">
-            Stay informed with expert answers to the most common immigration and travel queries.
-          </p>
+          <h2 className="text-3xl font-extrabold text-[#005a31]">Expert Travel Insights</h2>
+          <p className="mt-4 text-gray-600">Got questions? We have the answers from our visa specialists.</p>
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {blogFaqs.map((faq, index) => (
-            <div key={index} className="bg-[#f4fdf7] p-6 rounded-2xl shadow-sm border border-green-50 transition-all hover:shadow-md">
-              <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-start">
-                <span className="text-green-700 mr-2">Q.</span> {faq.q}
+            <div key={index} className="bg-white p-6 rounded-2xl shadow-sm border border-green-100">
+              <h3 className="font-bold text-gray-900 mb-2 flex items-center">
+                <span className="bg-green-100 text-green-700 w-6 h-6 rounded-full flex items-center justify-center mr-2 text-xs">Q</span>
+                {faq.q}
               </h3>
-              <p className="text-gray-700 leading-relaxed border-l-4 border-green-600 pl-4">
-                {faq.a}
-              </p>
+              <p className="text-gray-600 text-sm border-l-2 border-green-500 pl-4">{faq.a}</p>
             </div>
           ))}
         </div>
-
-        {/* Call to Action inside FAQ */}
-        <div className="mt-12 text-center bg-green-800 text-white p-8 rounded-2xl shadow-xl">
-          <h3 className="text-2xl font-bold mb-2">Still have questions?</h3>
-          <p className="mb-6 opacity-90">Our visa experts are available 24/7 on WhatsApp to assist you.</p>
-          <a 
-            href="https://wa.me/8801631312524" 
-            className="inline-block bg-white text-green-800 font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition"
-          >
-            Chat with an Expert
-          </a>
+        <div className="mt-10 text-center">
+           <a href="https://wa.me/8801631312524" className="inline-block bg-green-700 text-white px-8 py-4 rounded-full font-bold shadow-lg hover:bg-green-800 transition">
+             Get 1-on-1 Consultation
+           </a>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <div>
-
-
-    </div>
-
-    <section className="py-12 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-[#005a31] text-center mb-8">
-          Watch Our Travel Highlights
-        </h2>
-        
-        {/* Grid Logic:
-            - Grid-cols-1: Mobile এ ১টি
-            - sm:grid-cols-2: Tablet এ ২টি
-            - lg:grid-cols-4: Large Screen এ ৪টি
-        */}
+      {/* Video Shorts Section */}
+      <section className="py-20">
+        <h2 className="text-3xl font-bold text-center text-[#005a31] mb-12">Travel Moments</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {shorts.map((video) => (
-            <div 
-              key={video.id} 
-              className="relative overflow-hidden rounded-2xl shadow-lg bg-black aspect-[9/16]"
-            >
+            <div key={video.id} className="rounded-3xl overflow-hidden shadow-xl aspect-[9/16] bg-black">
               <iframe
-                className="absolute top-0 left-0 w-full h-full"
+                className="w-full h-full"
                 src={`https://www.youtube.com/embed/${video.id}?autoplay=0&loop=1&playlist=${video.id}`}
                 title={video.title}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
             </div>
           ))}
         </div>
-        
-        <div className="text-center mt-8">
-          <a 
-            href="https://www.youtube.com/@Eammutour" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-red-600 font-semibold hover:underline"
-          >
-            View more on YouTube →
-          </a>
-        </div>
-      </div>
-    </section>
+      </section>
     </div>
   );
 };
