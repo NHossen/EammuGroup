@@ -99,6 +99,42 @@ const TravelAgencyGeorgia = () => {
           </div>
         </section>
 
+        {/* Popular Georgia Tours */}
+<section className="py-16 sm:py-20 px-4 sm:px-6 max-w-7xl mx-auto">
+  <div className="text-center mb-12 sm:mb-16">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#005a31] mb-3 sm:mb-4">Popular Georgia Tours</h2>
+    <div className="w-16 sm:w-20 h-1.5 bg-orange-500 mx-auto"></div>
+  </div>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+    {[
+      { title: "Tbilisi City Tour", duration: "1 Day", img: "https://images.unsplash.com/photo-1612462123020-bd0580d1f60b?auto=format&fit=crop&q=80" },
+      { title: "Mtskheta Heritage Tour", duration: "1 Day", img: "https://images.unsplash.com/photo-1602090078628-c85f73fda120?auto=format&fit=crop&q=80" },
+      { title: "Kazbegi Mountain Adventure", duration: "2 Days", img: "https://images.unsplash.com/photo-1557324233-c1cf46450c3b?auto=format&fit=crop&q=80" },
+      { title: "Batumi & Black Sea Tour", duration: "2 Days", img: "https://images.unsplash.com/photo-1590490358955-349e4d1a0a40?auto=format&fit=crop&q=80" },
+      { title: "Wine & Kakheti Valley", duration: "1 Day", img: "https://images.unsplash.com/photo-1601674305852-3f1a7c8b4142?auto=format&fit=crop&q=80" },
+      { title: "Uplistsikhe & Gori Tour", duration: "1 Day", img: "https://images.unsplash.com/photo-1559163499-413811ee9e43?auto=format&fit=crop&q=80" }
+    ].map((tour, i) => (
+      <div key={i} className="group bg-white rounded-3xl shadow-lg overflow-hidden border border-slate-100 hover:shadow-2xl transition-all">
+        <div className="relative h-48 sm:h-56 overflow-hidden">
+          <img src={tour.img} alt={tour.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"/>
+        </div>
+        <div className="p-6 sm:p-8">
+          <h3 className="text-lg sm:text-xl font-bold text-[#005a31] mb-2">{tour.title}</h3>
+          <p className="text-sm sm:text-base text-gray-500 mb-4">{tour.duration}</p>
+          <a 
+            href="https://wa.me/995574446218" 
+            className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full font-bold text-sm sm:text-base transition-all"
+          >
+            Book Now
+          </a>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+
         {/* SEO Authoritative Content */}
         <section className="bg-[#fcfcfc] py-24 px-6 border-y border-slate-100">
           <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20 items-start">
