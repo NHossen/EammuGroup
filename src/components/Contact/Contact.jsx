@@ -10,6 +10,7 @@ const offices = [
     whatsapp: "+8801631312524",
     email: ["bangladesh@eammu.com", "info@eammu.com"],
     map: "https://www.google.com/maps?q=Gomoti+Tower,+Cumilla&output=embed",
+    website: "/travel-agency-bangladesh",
   },
   {
     location: "Business Bay, Dubai, UAE",
@@ -18,6 +19,7 @@ const offices = [
     whatsapp: "+971507078334",
     email: ["dubai@eammu.com", "info@eammu.com"],
     map: "https://www.google.com/maps?q=Business+Bay,+Dubai&output=embed",
+    website: "/travel-agency-dubai",
   },
   {
     location: "Lambron 39, Yerevan, Armenia",
@@ -26,6 +28,7 @@ const offices = [
     whatsapp: "+37494810585",
     email: ["armenia@eammu.com", "info@eammu.com"],
     map: "https://www.google.com/maps?q=Lambron+39,+Yerevan&output=embed",
+    website: "/travel-agency-armenia",
   },
   {
     location: "Tbilisi, Georgia",
@@ -34,6 +37,7 @@ const offices = [
     whatsapp: "+995574446218",
     email: ["georgia@eammu.com", "info@eammu.com"],
     map: "https://www.google.com/maps?q=Tbilisi,+Georgia&output=embed",
+    website: "/travel-agency-georgia",
   },
 ];
 
@@ -227,6 +231,15 @@ const Contact = () => {
                     title={`Map - ${office.location}`}
                   ></iframe>
                 </div>
+                <div className='mt-4'>
+                              <a 
+        href={office.website} 
+        className="bg-green-800 text-white px-4 py-2 rounded"
+      >
+        Visit Website
+      </a>
+                </div>
+    
               </div>
             ))}
 

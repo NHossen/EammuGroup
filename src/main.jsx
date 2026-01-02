@@ -46,6 +46,10 @@ import SignUp from './components/SignupLogin/SignUp/SignUp.jsx';
 import LogIn from './components/SignupLogin/LogIn/LogIn.jsx';
 import Details_More from './components/Home/Services_Card_Section/Student_visa/Details_More.jsx';
 import NaeemHossen from './components/NaeemHossen/NaeemHossen.jsx';
+import TravelAgencyBangladesh from './components/Country/Bangladesh.jsx';
+import TravelAgencyDubai from './components/Country/dubai.jsx';
+import TravelAgencyArmenia from './components/Country/armenia.jsx';
+import TravelAgencyGeorgia from './components/Country/georgia.jsx';
 
 
 // ROUTER SETUP (FINAL)
@@ -95,8 +99,14 @@ const router = createBrowserRouter([
       { path: "/signup", element: <SignUp /> },
       { path: "/login", element: <LogIn /> },
       
-      // ===== NAEEM =====
-      {path: "naeem-hossen",element: <NaeemHossen />,},
+      // ===== NAEEM CEO =====
+      {path: "naeem-hossen",element: <NaeemHossen />},
+
+      // ===== Country Based Website =====
+      {path: "travel-agency-bangladesh",element: <TravelAgencyBangladesh />},
+      {path: "travel-agency-dubai",element: <TravelAgencyDubai />},
+      {path: "travel-agency-armenia",element: <TravelAgencyArmenia />},
+      {path: "travel-agency-georgia",element: <TravelAgencyGeorgia />},
 
       // ===== 🔁 OLD URL REDIRECTS (NO SEO LOSS) =====
       { path: "/ourServices", element: <Navigate to="/our-services" replace /> },
