@@ -156,12 +156,12 @@ const TravelAgencyBangladesh = () => {
 
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
     {[
-      { title: "Sundarbans Mangrove Tour", duration: "2 Days", img: "https://images.unsplash.com/photo-1583247051642-b11e1076b5f8?auto=format&fit=crop&q=80" },
+      { title: "Sundarbans Mangrove Tour", duration: "2 Days", img: "https://www.yoyotripsindia.com/images/package/eoHG24yCWc/banner3.jpg" },
       { title: "Cox's Bazar Beach Trip", duration: "1 Day", img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80" },
-      { title: "Srimangal Tea Gardens", duration: "1 Day", img: "https://images.unsplash.com/photo-1579546928682-5efbc9f1f5b0?auto=format&fit=crop&q=80" },
-      { title: "Dhaka Heritage Walk", duration: "1 Day", img: "https://images.unsplash.com/photo-1556192002-dcaad5c897e2?auto=format&fit=crop&q=80" },
-      { title: "Rangamati Hill Tour", duration: "2 Days", img: "https://images.unsplash.com/photo-1583345375183-32dc8a5b5d3f?auto=format&fit=crop&q=80" },
-      { title: "Sajek Valley Adventure", duration: "2 Days", img: "https://images.unsplash.com/photo-1593696030028-92e8f8b1c4b1?auto=format&fit=crop&q=80" }
+      { title: "Srimangal Tea Gardens", duration: "1 Day", img: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0a/32/d3/98.jpg" },
+      { title: "Dhaka Heritage Walk", duration: "1 Day", img: "https://media.tacdn.com/media/attractions-splice-spp-674x446/0f/5e/1a/6b.jpg" },
+      { title: "Rangamati Hill Tour", duration: "2 Days", img: "https://www.travelmate.com.bd/wp-content/uploads/2018/07/maxresdefault-2.jpg" },
+      { title: "Sajek Valley Adventure", duration: "2 Days", img: "https://ttg.com.bd/uploads/tours/destinations/6444446K.jpg" }
     ].map((tour, i) => (
       <div key={i} className="group bg-white rounded-3xl shadow-lg overflow-hidden border border-slate-100 hover:shadow-2xl transition-all">
         <div className="relative h-48 sm:h-56 overflow-hidden">

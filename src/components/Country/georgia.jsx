@@ -108,12 +108,12 @@ const TravelAgencyGeorgia = () => {
 
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
     {[
-      { title: "Tbilisi City Tour", duration: "1 Day", img: "https://images.unsplash.com/photo-1612462123020-bd0580d1f60b?auto=format&fit=crop&q=80" },
-      { title: "Mtskheta Heritage Tour", duration: "1 Day", img: "https://images.unsplash.com/photo-1602090078628-c85f73fda120?auto=format&fit=crop&q=80" },
-      { title: "Kazbegi Mountain Adventure", duration: "2 Days", img: "https://images.unsplash.com/photo-1557324233-c1cf46450c3b?auto=format&fit=crop&q=80" },
-      { title: "Batumi & Black Sea Tour", duration: "2 Days", img: "https://images.unsplash.com/photo-1590490358955-349e4d1a0a40?auto=format&fit=crop&q=80" },
-      { title: "Wine & Kakheti Valley", duration: "1 Day", img: "https://images.unsplash.com/photo-1601674305852-3f1a7c8b4142?auto=format&fit=crop&q=80" },
-      { title: "Uplistsikhe & Gori Tour", duration: "1 Day", img: "https://images.unsplash.com/photo-1559163499-413811ee9e43?auto=format&fit=crop&q=80" }
+      { title: "Tbilisi City Tour", duration: "1 Day", img: "https://www.advantour.com/img/georgia/images/tbilisi.jpg" },
+      { title: "Mtskheta Heritage Tour", duration: "1 Day", img: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/16/40/15/e8.jpg" },
+      { title: "Kazbegi Mountain Adventure", duration: "2 Days", img: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/15/73/b0/36.jpg" },
+      { title: "Batumi & Black Sea Tour", duration: "2 Days", img: "https://cdn.sanity.io/images/nxpteyfv/goguides/730a0b0e027f8a02a6a6eb16a2dfda803852fc2a-1600x1066.jpg" },
+      { title: "Wine & Kakheti Valley", duration: "1 Day", img: "https://eurasia.travel/wp-content/uploads/2025/04/19.-Tusheti-Kakheti-region-Georgia.jpg" },
+      { title: "Uplistsikhe & Gori Tour", duration: "1 Day", img: "https://georgiantour.com/wp-content/uploads/2015/03/ufliscixe.jpg" }
     ].map((tour, i) => (
       <div key={i} className="group bg-white rounded-3xl shadow-lg overflow-hidden border border-slate-100 hover:shadow-2xl transition-all">
         <div className="relative h-48 sm:h-56 overflow-hidden">

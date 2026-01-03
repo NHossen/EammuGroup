@@ -130,12 +130,12 @@ const TravelAgencyDubai = () => {
 
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
     {[
-      { title: "Burj Khalifa & Dubai Mall", duration: "Half Day", img: "https://images.unsplash.com/photo-1586486433517-2dbf171e0d32?auto=format&fit=crop&q=80" },
-      { title: "Desert Safari Adventure", duration: "1 Day", img: "https://images.unsplash.com/photo-1602242179801-80a1f7c9d97d?auto=format&fit=crop&q=80" },
-      { title: "Dubai Marina Cruise", duration: "Evening", img: "https://images.unsplash.com/photo-1606788075760-0f5c3b938c88?auto=format&fit=crop&q=80" },
-      { title: "Palm Jumeirah Tour", duration: "Half Day", img: "https://images.unsplash.com/photo-1575236889770-3c91e2d3b29a?auto=format&fit=crop&q=80" },
-      { title: "Global Village Experience", duration: "Evening", img: "https://images.unsplash.com/photo-1600596546913-abc5d0845a6e?auto=format&fit=crop&q=80" },
-      { title: "Abu Dhabi Day Trip", duration: "Full Day", img: "https://images.unsplash.com/photo-1588538550549-ff5f2f3f6c4e?auto=format&fit=crop&q=80" }
+      { title: "Burj Khalifa & Dubai Mall", duration: "Half Day", img: "https://climatecontrol.imiplc.com/_next/image?url=https%3A%2F%2Fcdn.tessa.imihy.eimed-project.de%2F621346%2FWeb_Header%2FBurj_Khalifa_Tower.webp&w=3840&q=75" },
+      { title: "Desert Safari Adventure", duration: "1 Day", img: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/13/bb/6a/7b.jpg" },
+      { title: "Dubai Marina Cruise", duration: "Evening", img: "https://www.pelago.com/img/products/AE-United%20Arab%20Emirates/dubai-marina-dhow-cruise-dinner-with-entertainment/036dfefa-c682-4f9e-8d85-72fda3b852f7_dubai-marina-dhow-cruise-dinner-with-entertainment.jpg" },
+      { title: "Palm Jumeirah Tour", duration: "Half Day", img: "https://res.klook.com/image/upload/w_750,h_469,c_fill,q_85/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/f9cxlacfjbuydsfrl4ke.jpg" },
+      { title: "Global Village Experience", duration: "Evening", img: "https://faredxb.com/wp-content/uploads/2024/10/1-12.jpg" },
+      { title: "Abu Dhabi Day Trip", duration: "Full Day", img: "https://media.tacdn.com/media/attractions-splice-spp-674x446/11/f7/6d/f8.jpg" }
     ].map((tour, i) => (
       <div key={i} className="group bg-white rounded-3xl shadow-lg overflow-hidden border border-slate-100 hover:shadow-2xl transition-all">
         <div className="relative h-48 sm:h-56 overflow-hidden">

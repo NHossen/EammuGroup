@@ -41,7 +41,7 @@ const TravelAgencyArmenia = () => {
 
           <div className="w-full lg:w-1/2 h-[300px] sm:h-[400px] lg:h-[75vh] relative">
             <img 
-              src="https://images.unsplash.com/photo-1545062990-4a95e8e4b96d?auto=format&fit=crop&q=80" 
+              src="https://www.trekgeorgia.com/wp-content/uploads/2019/04/armenia_h_00000220066588.ngsversion.1501784794813.adapt_.1900.1.jpg" 
               alt="Yerevan Armenia Skyline" 
               className="w-full h-full object-cover"
               loading="lazy"
@@ -84,12 +84,12 @@ const TravelAgencyArmenia = () => {
 
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
     {[
-      { title: "Yerevan City Tour", duration: "1 Day", img: "https://images.unsplash.com/photo-1565118539491-0b56fcb92a6c?auto=format&fit=crop&q=80" },
-      { title: "Lake Sevan & Dilijan", duration: "2 Days", img: "https://images.unsplash.com/photo-1601627459474-82b0d65b0d3c?auto=format&fit=crop&q=80" },
-      { title: "Garni & Geghard Monastery", duration: "1 Day", img: "https://images.unsplash.com/photo-1596421545616-c60c2e9f7a2b?auto=format&fit=crop&q=80" },
-      { title: "Mount Ararat View", duration: "1 Day", img: "https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&q=80" },
-      { title: "Khor Virap & Areni Wine Tour", duration: "2 Days", img: "https://images.unsplash.com/photo-1592392640055-1c2543a23a40?auto=format&fit=crop&q=80" },
-      { title: "Caucasus Adventure Tour", duration: "3 Days", img: "https://images.unsplash.com/photo-1593279913482-d9d2030ecfb2?auto=format&fit=crop&q=80" }
+      { title: "Yerevan City Tour", duration: "1 Day", img: "https://visityerevan.am/media/images/7.JPG" },
+      { title: "Lake Sevan & Dilijan", duration: "2 Days", img: "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/96/70/09.jpg" },
+      { title: "Garni & Geghard Monastery", duration: "1 Day", img: "https://janarmenia.com/uploads/0000/687/2024/01/04/garni2.webp" },
+      { title: "Mount Ararat View", duration: "1 Day", img: "https://app.conciergetravel.am/storage/uploads/2BQWKJpgB1nO4N1E6hfolAEOz7ymxy3paQe7WIGc.jpg" },
+      { title: "Khor Virap & Areni Wine Tour", duration: "2 Days", img: "https://www.bidfortrip.com/uploads/0000/83/2021/07/17/khor-virap1.jpg" },
+      { title: "Caucasus Adventure Tour", duration: "3 Days", img: "https://www.trekgeorgia.com/wp-content/uploads/2019/04/armenia_h_00000220066588.ngsversion.1501784794813.adapt_.1900.1.jpg" }
     ].map((tour, i) => (
       <div key={i} className="group bg-white rounded-3xl shadow-lg overflow-hidden border border-slate-100 hover:shadow-2xl transition-all">
         <div className="relative h-48 sm:h-56 overflow-hidden">
