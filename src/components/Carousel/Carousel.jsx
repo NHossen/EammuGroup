@@ -77,7 +77,7 @@ const Carousel = () => {
         {/* Slide 1 */}
         <div id="slide1" className="carousel-item w-full h-full snap-center relative flex-shrink-0">
           <img
-            src="https://i.ibb.co/bj2Wpwzy/green-plane-ecofriendly-environment.jpg"
+            src="https://e3.365dm.com/24/07/1600x900/skynews-plane-cloud_6626642.jpg?20240715110714"
             className="object-cover w-full h-full"
             alt="Welcome to Eammu - Your Travel Partner"
           />
