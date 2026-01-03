@@ -119,19 +119,22 @@ const Carousel = () => {
         {/* Slide 2 */}
         <div id="slide2" className="carousel-item w-full h-full snap-center relative flex-shrink-0">
           <img
-            src="https://images.unsplash.com/photo-1570129477492-45c003edd2be"
-            className="object-cover w-full h-full"
+            src="https://www.universityliving.com/blog/wp-content/uploads/2022/10/Banner-Image-1.webp"
+            className="object-cover w-full h-full opacity-60"
             alt="Why Choose Eammu - Trusted Immigration Partner"
           />
-          <div className="absolute inset-0 bg-[#005a31]/40 flex items-center justify-center text-white text-center px-6">
+           <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center text-white text-center px-6">
             <div>
-              <h2 className="text-4xl font-semibold mb-4">Trusted by Thousands — Your Journey Begins Here</h2>
-              <ul className="text-lg space-y-2">
-                <li className='text-lg font-bold'>🥇 98% Visa Success Rate</li>
-                <li className='text-lg font-bold'>🤝 Partnerships with 30+ Countries</li>
-                <li className='text-lg font-bold'>📞 24/7 Support in Bengali, English & Arabic</li>
-                <li className='text-lg font-bold'>🏆 5+ Years of Immigration Experience</li>
-              </ul>
+              <h1 className="text-5xl font-bold mb-4 text-[#005a31]">Welcome to Target IELTS & Immigration Center - TIIC</h1>
+              <p className="text-lg font-bold mb-6">TIIC is recognized as the best language academy for IELTS, PTE, and Spoken English.</p>
+              <Link 
+                to="/target-ielts-and-immigration-center" 
+                className="btn bg-white text-[#005a31] hover:bg-[#005a31] hover:text-white border border-[#005a31]"
+                style={{ pointerEvents: 'auto', position: 'relative', zIndex: 10 }}
+              >
+                Explore More
+              </Link>
+              
             </div>
           </div>
           <div className="absolute left-5 right-5 top-1/2 flex justify-between transform -translate-y-1/2">

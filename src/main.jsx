@@ -50,6 +50,7 @@ import TravelAgencyBangladesh from './components/Country/Bangladesh.jsx';
 import TravelAgencyDubai from './components/Country/dubai.jsx';
 import TravelAgencyArmenia from './components/Country/armenia.jsx';
 import TravelAgencyGeorgia from './components/Country/georgia.jsx';
+import TIICPage from './components/OurServices/Tiic.jsx';
 
 
 // ROUTER SETUP (FINAL)
@@ -107,6 +108,9 @@ const router = createBrowserRouter([
       {path: "travel-agency-dubai",element: <TravelAgencyDubai />},
       {path: "travel-agency-armenia",element: <TravelAgencyArmenia />},
       {path: "travel-agency-georgia",element: <TravelAgencyGeorgia />},
+
+      // ===== TIIC =====
+      {path: "target-ielts-and-immigration-center",element: <TIICPage />},
 
       // ===== 🔁 OLD URL REDIRECTS (NO SEO LOSS) =====
       { path: "/ourServices", element: <Navigate to="/our-services" replace /> },
