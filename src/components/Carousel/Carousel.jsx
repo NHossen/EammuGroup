@@ -146,7 +146,7 @@ const Carousel = () => {
         {/* Slide 3 */}
         <div id="slide3" className="carousel-item w-full h-full snap-center relative flex-shrink-0">
           <img
-            src="/public/travel.jpg"
+            src="/travel.jpg"
             className="object-cover w-full h-full"
             alt="Global Visa Destinations - Eammu Services"
           />
@@ -171,7 +171,7 @@ const Carousel = () => {
         {/* Slide 4 */}
         <div id="slide4" className="carousel-item w-full h-full snap-center relative flex-shrink-0">
           <img
-            src="/public/eammuicon.jpg"
+            src="/eammuicon.jpg"
             className="object-cover w-full h-full"
             alt="Client Testimonials - Real Success Stories"
           />
