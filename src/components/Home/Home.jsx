@@ -1,7 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import Caresoul_BG_Mix from "./Caresoul_BG_Mix";
 import EammuImmigrationHeading_2 from "./EammuImmigrationHeading_2";
-import Eammu_Carousel from "./Eammu_Carousel";
 import MessageFromLeadingTeam from "./MessageFromLeadingTeam";
 import Our_Succsses_State from "./Our_Succsses_State";
 import Registration_Agents from "./Registration_Agents";
@@ -62,11 +61,6 @@ const Home = () => {
 
       {/* Immigration Services Heading */}
       <EammuImmigrationHeading_2 />
-
-      
-
-      {/* Service Highlights Carousel */}
-      <Eammu_Carousel />
 
       {/* Agent Registration */}
       <Registration_Agents />

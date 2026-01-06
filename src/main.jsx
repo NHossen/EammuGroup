@@ -69,6 +69,7 @@ import SouthKoreaVisa from './components/OurServices/VisaCountry/SouthKoreaVisa.
 import SpainVisa from './components/OurServices/VisaCountry/SpainVisa.jsx';
 import KosovoVisa from './components/OurServices/VisaCountry/KosovoVisa.jsx';
 import SerbiaVisa from './components/OurServices/VisaCountry/SerbiaVisa.jsx';
+import EammuSocialResponsibility from './components/EammuSocialResponsibility/EammuSocialResponsibility.jsx';
 
 
 // ROUTER SETUP (FINAL)
@@ -149,6 +150,9 @@ const router = createBrowserRouter([
 
       // ===== TIIC =====
       {path: "target-ielts-and-immigration-center",element: <TIICPage />},
+
+      // ===== EammuSocialResponsibility =====
+      {path: "eammu-social-responsibility",element: <EammuSocialResponsibility />},
 
       // ===== 🔁 OLD URL REDIRECTS (NO SEO LOSS) =====
       { path: "/ourServices", element: <Navigate to="/our-services" replace /> },

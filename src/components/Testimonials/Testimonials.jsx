@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
+import CustomerTestimonialSection from "./CustomerTestimonialSection";
 
 const reviews = [
   { name: "Md. Rahim Uddin", rating: 5, review: "Excellent service! Thanks to Eammu, I got my visa approved smoothly." },
@@ -123,32 +124,7 @@ const Testimonials = () => {
         ))}
       </div>
       <section className="mt-16">
-  <h2 className="text-3xl font-bold text-center text-[#005a31] mb-8">
-    🎥 Video Testimonials
-  </h2>
-
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
-      <iframe
-        className="w-full h-full"
-        src="https://www.youtube.com/embed/9RE1nwL9SqM
-"
-        title="Client Testimonial Eammu"
-        frameBorder="0"
-        allowFullScreen
-      ></iframe>
-    </div>
-
-    <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
-      <iframe
-        className="w-full h-full"
-        src="https://www.youtube.com/embed/Iw4JZZp9q8c"
-        title="Client Review Eammu Immigration"
-        frameBorder="0"
-        allowFullScreen
-      ></iframe>
-    </div>
-  </div>
+<CustomerTestimonialSection />
 
   <div className="text-center mt-8">
           <a 
