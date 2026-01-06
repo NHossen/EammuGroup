@@ -1,61 +1,95 @@
+import React from "react";
+
 const Details_More = () => {
   return (
-    <div className="px-4 container mx-auto mt-10 mb-16">
-      <h1 className="text-4xl font-bold text-[#005a31] text-center mb-8">
-        Visa & Immigration Services — Details & Support
-      </h1>
-
-      <div className="bg-white border border-[#005a31] rounded-xl p-6 md:p-10 shadow-lg space-y-6">
-        <p className="text-lg text-[#005a31] leading-relaxed">
-          Welcome to <span className="font-semibold">Eammu Immigration Services</span>, your trusted partner in global migration and travel. Whether you're planning to study abroad, work overseas, explore new countries, or migrate permanently — our experienced team is here to support you every step of the way.
-        </p>
-
-        <div>
-          <h2 className="text-2xl font-semibold text-[#005a31] mb-2">🌍 Our Core Services</h2>
-          <ul className="list-disc list-inside text-[#005a31] space-y-1">
-            <li><strong>Student Visas:</strong> Get admitted to top universities worldwide.</li>
-            <li><strong>Work Visas:</strong> Secure international job opportunities legally.</li>
-            <li><strong>Tourist Visas:</strong> Visit countries like the USA, Dubai, Japan, and more.</li>
-            <li><strong>Immigration:</strong> PR, green card, and family sponsorship support.</li>
-          </ul>
+    <div className="bg-white py-16 px-4">
+      <div className="container mx-auto max-w-7xl">
+        
+        {/* Main Heading Section */}
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-5xl font-black text-[#005a31] mb-4">
+            Visa & Immigration Services — Details & Support
+          </h1>
+          <div className="w-24 h-1.5 bg-orange-500 mx-auto rounded-full"></div>
         </div>
 
-        <hr className="border-t border-[#005a31]" />
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          {/* Left Side: Services & About */}
+          <div className="lg:col-span-7 space-y-8">
+            <div className="bg-slate-50 p-8 rounded-2xl border-l-8 border-[#005a31] shadow-sm">
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Welcome to <span className="font-bold text-[#005a31]">Eammu Immigration Services</span>, your trusted partner in global migration. Whether you're planning to study abroad, work overseas, or explore new countries—our experienced team is here to support you every step of the way.
+              </p>
+            </div>
 
-        <div>
-          <h2 className="text-2xl font-semibold text-[#005a31] mb-2">🤝 Why Choose Eammu?</h2>
-          <ul className="list-disc list-inside text-[#005a31] space-y-1">
-            <li>Over 6 years of success in global visa services</li>
-            <li>Dedicated visa experts for each category</li>
-            <li>Transparent process & refund policy</li>
-            <li>24/7 client support for peace of mind</li>
-          </ul>
-        </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="p-6 border border-gray-100 rounded-xl shadow-sm hover:border-[#005a31] transition-all">
+                <h3 className="text-xl font-bold text-[#005a31] mb-2">🌍 Our Core Services</h3>
+                <ul className="text-gray-600 space-y-2 text-sm">
+                  <li><strong>• Student Visas:</strong> Top universities worldwide.</li>
+                  <li><strong>• Work Visas:</strong> Legal international job help.</li>
+                  <li><strong>• Tourist Visas:</strong> USA, Dubai, Japan, UK.</li>
+                  <li><strong>• Immigration:</strong> PR & family sponsorship.</li>
+                </ul>
+              </div>
 
-        <hr className="border-t border-[#005a31]" />
-
-        <div>
-          <h2 className="text-2xl font-semibold text-[#005a31] mb-2">📞 Contact Our Team</h2>
-          <p className="text-[#005a31] mb-3">
-            Ready to start your global journey? Reach out to us — our expert advisors are here to help you.
-          </p>
-          <div className="text-[#005a31] space-y-1 font-medium">
-            <p><strong>📍 BD Office:</strong> <a href="tel:+8801701699743" className="hover:underline">+880 1701 699 743</a></p>
-            <p><strong>📍 UAE Office:</strong> <a href="tel:+971507078334" className="hover:underline">+971 50 707 8334</a></p>
-            <p><strong>✉️ Email:</strong> <a href="mailto:eammuimmigration@gmail.com" className="hover:underline">eammuimmigration@gmail.com</a></p>
-            <p><strong>🌐 Website:</strong> <a href="https://eammu.com/" target="_blank" rel="noreferrer" className="hover:underline">www.eammu.com</a></p>
+              <div className="p-6 border border-gray-100 rounded-xl shadow-sm hover:border-[#005a31] transition-all">
+                <h3 className="text-xl font-bold text-[#005a31] mb-2">🤝 Why Choose Eammu?</h3>
+                <ul className="text-gray-600 space-y-2 text-sm">
+                  <li>• 6+ years of global success.</li>
+                  <li>• Dedicated expert for each country.</li>
+                  <li>• Transparent process & refund policy.</li>
+                  <li>• 24/7 client support desk.</li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div className="text-center mt-6">
-         <a
-    href="https://wa.me/8801631312524?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-block bg-[#005a31] text-white px-6 py-2 rounded-full hover:bg-[#003e24] transition"
-  >
-    Contact Now
-  </a>
+          {/* Right Side: Contact Box */}
+          <div className="lg:col-span-5">
+            <div className="bg-[#005a31] text-white p-8 rounded-3xl shadow-xl">
+              <h2 className="text-2xl font-bold mb-6 border-b border-white/20 pb-4">📞 Contact Our Team</h2>
+              
+              <div className="space-y-5">
+                <div>
+                  <p className="text-orange-400 text-xs font-bold uppercase tracking-wider">Armenia Office</p>
+                  <a href="tel:+37494810585" className="text-lg font-semibold hover:text-orange-300">+374 94 810585</a>
+                </div>
+                
+                <div>
+                  <p className="text-orange-400 text-xs font-bold uppercase tracking-wider">UAE Office</p>
+                  <a href="tel:+971507078334" className="text-lg font-semibold hover:text-orange-300">+971 50 707 8334</a>
+                </div>
+
+                <div>
+                  <p className="text-orange-400 text-xs font-bold uppercase tracking-wider">BD Office</p>
+                  <a href="tel:+8801701699743" className="text-lg font-semibold hover:text-orange-300">+880 1701 699 743</a>
+                </div>
+
+                <div className="pt-4 border-t border-white/10">
+                  <p className="text-orange-400 text-xs font-bold uppercase tracking-wider">Email Address</p>
+                  <a href="mailto:info@eammu.com" className="text-base font-medium hover:text-orange-300 block">info@eammu.com</a>
+                  <a href="mailto:eammuimmigration@gmail.com" className="text-sm opacity-70 hover:text-orange-300 block">eammuimmigration@gmail.com</a>
+                </div>
+
+                <div className="pt-2">
+                  <p className="text-orange-400 text-xs font-bold uppercase tracking-wider">Website</p>
+                  <a href="https://eammu.com" target="_blank" rel="noreferrer" className="text-base font-medium hover:underline">www.eammu.com</a>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/37494810585"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-8 w-full bg-orange-500 hover:bg-orange-600 text-white py-4 rounded-xl font-bold text-center block transition-all shadow-lg"
+              >
+                Contact Now on WhatsApp
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

@@ -150,7 +150,7 @@ const Carousel = () => {
             className="object-cover w-full h-full"
             alt="Global Visa Destinations - Eammu Services"
           />
-          <div className="absolute inset-0 bg-black/30 flex items-center justify-center text-white px-6 text-center">
+          <div className="absolute inset-0  flex items-center justify-center text-white px-6 text-center">
             <div>
               <h2 className="text-3xl font-bold mb-2">Work, Study, or Travel — We Take You There</h2>
               <p className="text-lg font-bold mb-4">
