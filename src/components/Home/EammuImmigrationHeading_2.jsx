@@ -100,7 +100,7 @@ const EammuImmigrationHeading_2 = () => {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <Link to="/eammuimmigrationservices">
+              <Link to="/our-services">
                 <button className="flex items-center gap-2 bg-[#005a31] text-white px-8 py-4 rounded-2xl font-bold hover:bg-orange-500 transition-all shadow-xl shadow-green-900/10 active:scale-95">
                   Explore More <ChevronRight size={18} />
                 </button>

@@ -44,7 +44,6 @@ import MessageFromLeadingTeam from './components/Home/MessageFromLeadingTeam.jsx
 
 import SignUp from './components/SignupLogin/SignUp/SignUp.jsx';
 import LogIn from './components/SignupLogin/LogIn/LogIn.jsx';
-import Details_More from './components/Home/Services_Card_Section/Student_visa/Details_More.jsx';
 import NaeemHossen from './components/NaeemHossen/NaeemHossen.jsx';
 import TravelAgencyBangladesh from './components/Country/Bangladesh.jsx';
 import TravelAgencyDubai from './components/Country/dubai.jsx';
@@ -112,8 +111,7 @@ const router = createBrowserRouter([
       { path: "/message-from-leadership", element: <MessageFromLeadingTeam /> },
       { path: "/terms-and-conditions", element: <EammuTerms /> },
 
-      // ===== DETAILS =====
-      { path: "/university_details/:id", element: <Details_More /> },
+     
 
       // ===== AUTH =====
       { path: "/signup", element: <SignUp /> },

@@ -1,9 +1,9 @@
 
 
+import Caresoul_BG_Mix from "../../Home/Caresoul_BG_Mix";
 import EammuImmigrationHeading_2 from "../../Home/EammuImmigrationHeading_2";
 import Our_Succsses_State from "../../Home/Our_Succsses_State";
 import Registration_Agents from "../../Home/Registration_Agents";
-import Services_Card_Section from "../../Home/Services_Card_Section/Students_Cards";
 import TargetUsaSection from "../../Home/TargetUsaSection";
 import About_Eammu_Immigration from "./About_Eammu_Immigration";
 import Immigration_Header_Section from "./Immigration_Header_Section";
@@ -33,8 +33,9 @@ const EammuImmigrationServices = () => {
   {/* EammuImmigrationHeading_2 */}
   <EammuImmigrationHeading_2></EammuImmigrationHeading_2>
 
-         {/* Services Card */}
-       <Services_Card_Section></Services_Card_Section>
+         {/* Our Services */}
+       
+
              {/* Target Usa Visa Interview Preparation */}
       <TargetUsaSection></TargetUsaSection>
 
@@ -43,6 +44,9 @@ const EammuImmigrationServices = () => {
 
         {/* Our_Succsses_State */}
         <Our_Succsses_State></Our_Succsses_State>
+{/* Our_Succsses_State */}
+<Caresoul_BG_Mix />
+
           {/* About_Eammu_Immigration Services */}
        <About_Eammu_Immigration></About_Eammu_Immigration>
 
