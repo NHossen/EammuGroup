@@ -1,5 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
+
+
+const destinations = [
+  { name: "USA", link: "/visa-services#usa", image: "https://visadone.com/wp-content/uploads/2023/02/USA-VISA.png", price: "From $450" },
+  { name: "UK", link: "/visa-services#uk", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkgBKQsFv4LdWUzfgaoMj5srhPn0vAuU9X6Q&s", price: "From $500" },
+  { name: "Canada", link: "/visa-services#canada", image: "https://pelicanmigration.com/wp-content/uploads/2024/01/Canada-Visitor-Visa.jpg", price: "From $470" },
+  { name: "Europe (Schengen)", link: "/visa-services#europe", image: "https://www.babaaztravels.com/wp-content/uploads/2023/05/Schengen-Visit-Visa-Requirements-Babaaz-Travels.jpeg", price: "From $400" },
+  { name: "Australia", link: "/visa-services#australia", image: "https://www.kkday.com/en-sg/blog/wp-content/uploads/Aussie-VTL-1170x680.jpg", price: "From $600" },
+  { name: "Japan", link: "/visa-services#japan", image: "https://www.babaaztravels.com/wp-content/uploads/2022/04/japan.jpg", price: "From $550" },
+  { name: "Dubai (UAE)", link: "/visa-services#dubai", image: "https://canadiangeographic.ca/wp-content/uploads/2022/10/dubai-skyline-1440x1011.jpg", price: "From $350" },
+  { name: "Malaysia", link: "/visa-services#malaysia", image: "https://travelobiz.com/wp-content/uploads/2023/01/Malaysia-eVisa-with-Map.jpg", price: "From $300" },
+];
 
  // আপনার নতুন রেন্ডার ইউআরএল ব্যবহার করুন
     const API_BASE_URL = "https://backend-eammu.onrender.com";
@@ -65,12 +78,20 @@ const fetchSuggestions = async (keyword, type) => {
   };
 
   return (
-    <div className="bg-[#f3f4f6] min-h-screen pb-20 font-sans">
+    <div className=" min-h-screen pb-20 font-sans">
       <Helmet><title>Flight Search | Eammu Holidays</title></Helmet>
 
       {/* Hero Section */}
-      <section className="bg-[#004d2c] pt-12 pb-24 px-4 text-center">
-        <h1 className="text-3xl md:text-5xl font-bold text-white mb-8 tracking-tight">Discover Your Next Adventure</h1>
+      <section className="bg-[#004d2c] pt-8 pb-24 px-4 text-center">
+        <h1 className="text-3xl md:text-3xl font-bold text-white mb-4 tracking-tight">Your Next Adventure With Eammu Holidays</h1>
+        <p className="text-white font-bold mb-4">
+  Search flights using airport codes for best results —{" "}
+  <span className="bg-white text-green-800 px-2 py-1 rounded mx-1">DXB</span> (Dubai),{" "}
+  <span className="bg-white text-green-800 px-2 py-1 rounded mx-1">DAC</span> (Dhaka),{" "}
+  <span className="bg-white text-green-800 px-2 py-1 rounded mx-1">EVN</span> (Yerevan).
+  Get real-time fares and book instantly with ease.
+</p>
+
         
         <div className="max-w-7xl mx-auto bg-white p-6 md:p-8 rounded-[2.5rem] shadow-2xl relative">
           
@@ -160,7 +181,7 @@ const fetchSuggestions = async (keyword, type) => {
               </select>
             </div>
 
-            <button type="submit" disabled={loading} className="lg:col-span-6 bg-black text-white p-5 rounded-2xl font-bold uppercase hover:bg-green-900 transition-all mt-4 shadow-lg active:scale-95">
+            <button type="submit" disabled={loading} className="lg:col-span-6 bg-[#004d2c] text-white p-5 rounded-2xl font-bold uppercase hover:bg-gray-500 transition-all mt-4 shadow-lg active:scale-95">
               {loading ? "Searching Flights..." : "Search Flights"}
             </button>
           </form>
@@ -201,9 +222,13 @@ const fetchSuggestions = async (keyword, type) => {
               <p className="text-3xl font-black text-[#004d2c]">
                 {flight.price.total} <span className="text-sm font-normal text-gray-500">{flight.price.currency}</span>
               </p>
-              <button className="mt-4 bg-[#004d2c] text-white px-10 py-3 rounded-full text-xs font-bold uppercase hover:bg-black transition-all shadow-md">
-                Book Now
-              </button>
+              <button
+  onClick={() => window.open("https://wa.me/8801631312524", "_blank")}
+  className="mt-4 bg-[#004d2c] text-white px-10 py-3 rounded-full text-xs font-bold uppercase hover:bg-black transition-all shadow-md"
+>
+  Book Now
+</button>
+
             </div>
           </div>
         ))}
@@ -214,9 +239,47 @@ const fetchSuggestions = async (keyword, type) => {
           </div>
         )}
       </main>
-
-      <section>
+{/* Visual Section */}
+      <section className='px-4 sm:px-6 lg:px-10 container mx-auto py-10'>
+       {/* Visual Section */}
+            <div className="grid md:grid-cols-2 gap-6 mb-10">
+              <img src="https://e3.365dm.com/24/07/1600x900/skynews-plane-cloud_6626642.jpg?20240715110714" alt="Plane" className="rounded-2xl w-full h-72 object-cover shadow-md" />
+              <img src="https://www.shutterstock.com/image-vector/luggage-blue-air-ticket-float-600nw-2170367829.jpg" alt="Tickets" className="rounded-2xl w-full h-72 object-cover shadow-md" />
+            </div>
       
+            {/* Popular Routes */}
+            <section className="mb-10">
+              <h2 className="text-2xl font-semibold text-[#005a31] mb-6 text-center">Popular Routes & Deals</h2>
+              <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+                {destinations.map((dest, index) => (
+                  <div key={index} className="bg-white shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition-all flex flex-col justify-between group">
+                    <Link to={dest.link} className="relative">
+                      <img src={dest.image} alt={dest.name} className="w-full h-40 object-cover" loading="lazy" />
+                    </Link>
+                    <div className="p-4 text-center">
+                      <h3 className="text-lg font-bold text-[#005a31]">{dest.name}</h3>
+                      <p className="text-gray-700 text-sm mb-3">{dest.price}</p>
+                      <a href={`https://wa.me/8801631312524?text=Book flight to ${dest.name}`} className="block bg-[#005a31] text-white py-2 rounded-full hover:bg-black transition">
+                        Check Seats
+                      </a>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+      
+            {/* CTA Section */}
+            <div className="text-center mt-12 bg-green-50 py-10 rounded-[3rem]">
+              <p className="text-xl font-medium text-gray-800 mb-6">Need expert help? Contact us now.</p>
+              <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://wa.me/8801631312524" className="bg-[#005a31] text-white px-10 py-3 rounded-full hover:bg-black transition">
+                  WhatsApp Booking
+                </a>
+                <Link to="/" className="bg-white border border-green-800 text-green-800 px-10 py-3 rounded-full hover:bg-green-50 transition">
+                  Back to Home
+                </Link>
+              </div>
+            </div>
       </section>
     </div>
   );
