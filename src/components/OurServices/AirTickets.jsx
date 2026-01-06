@@ -79,7 +79,7 @@ const fetchSuggestions = async (keyword, type) => {
 
   return (
     <div className=" min-h-screen pb-20 font-sans">
-      <Helmet><title>Flight Search | Eammu Holidays</title></Helmet>
+      <Helmet><title>Flight Search Bangladesh | Eammu Holidays</title></Helmet>
 
       {/* Hero Section */}
       <section className="bg-[#004d2c] pt-8 pb-24 px-4 text-center">

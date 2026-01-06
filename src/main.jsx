@@ -51,6 +51,24 @@ import TravelAgencyDubai from './components/Country/dubai.jsx';
 import TravelAgencyArmenia from './components/Country/armenia.jsx';
 import TravelAgencyGeorgia from './components/Country/georgia.jsx';
 import TIICPage from './components/OurServices/Tiic.jsx';
+import UsaVisa from './components/OurServices/VisaCountry/UsaVisa.jsx';
+import UkVisa from './components/OurServices/VisaCountry/UkVisa.jsx';
+import EuropeVisa from './components/OurServices/VisaCountry/EuropeVisa.jsx';
+import CanadaVisa from './components/OurServices/VisaCountry/CanadaVisa.jsx';
+import AustraliaVisa from './components/OurServices/VisaCountry/AustraliaVisa.jsx';
+import GermanyVisa from './components/OurServices/VisaCountry/GermanyVisa.jsx';
+import PortugalVisa from './components/OurServices/VisaCountry/PortugalVisa.jsx';
+import ArmeniaVisa from './components/OurServices/VisaCountry/ArmeniaVisa.jsx';
+import GeorgiaVisa from './components/OurServices/VisaCountry/GeorgiaVisa.jsx';
+import AlbaniaVisa from './components/OurServices/VisaCountry/AlbaniaVisa.jsx';
+import DubaiVisa from './components/OurServices/VisaCountry/DubaiVisa.jsx';
+import QatarVisa from './components/OurServices/VisaCountry/QatarVisa.jsx';
+import JapanVisa from './components/OurServices/VisaCountry/JapanVisa.jsx';
+import ChinaVisa from './components/OurServices/VisaCountry/ChinaVisa.jsx';
+import SouthKoreaVisa from './components/OurServices/VisaCountry/SouthKoreaVisa.jsx';
+import SpainVisa from './components/OurServices/VisaCountry/SpainVisa.jsx';
+import KosovoVisa from './components/OurServices/VisaCountry/KosovoVisa.jsx';
+import SerbiaVisa from './components/OurServices/VisaCountry/SerbiaVisa.jsx';
 
 
 // ROUTER SETUP (FINAL)
@@ -108,6 +126,26 @@ const router = createBrowserRouter([
       {path: "travel-agency-dubai",element: <TravelAgencyDubai />},
       {path: "travel-agency-armenia",element: <TravelAgencyArmenia />},
       {path: "travel-agency-georgia",element: <TravelAgencyGeorgia />},
+
+      // ===== Country Based Visa Website =====
+      {path: "usa-visa-application",element: <UsaVisa />},
+      {path: "uk-visa-application",element: <UkVisa />},
+      {path: "europe-visa-application",element: <EuropeVisa />},
+      {path: "canada-visa-application",element: <CanadaVisa />},
+      {path: "australia-visa-application",element: <AustraliaVisa />},
+      {path: "germany-visa-application",element: <GermanyVisa />},
+      {path: "portugal-visa-application",element: <PortugalVisa />},
+      {path: "armenia-visa-application",element: <ArmeniaVisa />},
+      {path: "georgia-visa-application",element: <GeorgiaVisa />},
+      {path: "albania-visa-application",element: <AlbaniaVisa />},
+      {path: "dubai-visa-application",element: <DubaiVisa />},
+      {path: "qatar-visa-application",element: <QatarVisa />},
+      {path: "japan-visa-application",element: <JapanVisa />},
+      {path: "china-visa-application",element: <ChinaVisa />},
+      {path: "south-korea-visa-application",element: <SouthKoreaVisa />},
+      {path: "spain-visa-application",element: <SpainVisa />},
+      {path: "kosovo-visa-application",element: <KosovoVisa />},
+      {path: "serbia-visa-application",element: <SerbiaVisa />},
 
       // ===== TIIC =====
       {path: "target-ielts-and-immigration-center",element: <TIICPage />},

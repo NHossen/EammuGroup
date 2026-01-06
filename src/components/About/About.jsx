@@ -124,7 +124,7 @@ const About = () => {
                 { 
                   title: "Immigration & Visa", 
                   img: "https://i.ibb.co/ymnSDKYb/481769971-122262749468017871-3083837242661680362-n.jpg", 
-                  link: "/visa", 
+                  link: "/", 
                   desc: "Expert assistance for student visas, PR, and work permits for UAE, Canada, and Europe.",
                   btn: "Explore Visa Options"
                 },

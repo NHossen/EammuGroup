@@ -245,12 +245,27 @@ const VisaServices = () => {
       {/* Header */}
       <header className="text-center mb-10">
         <h1 className="text-4xl font-bold text-[#005a31] mb-4">Visa Services by Eammu Holidays</h1>
-        <p className="text-gray-700 text-lg max-w-3xl mx-auto">
-          Eammu Holidays provides expert assistance for <strong>Tourist, Student, and Work visas</strong> across over 25 countries including 
-          <Link to="/visa-services#USA" className="text-[#005a31] underline"> USA</Link>, 
-          <Link to="/visa-services#UK" className="text-[#005a31] underline"> UK</Link>, 
-          <Link to="/visa-services#Europe" className="text-[#005a31] underline"> Europe</Link>, 
-          <Link to="/visa-services#Canada" className="text-[#005a31] underline"> Canada</Link>, and more. Full guidance from documentation to embassy submission.
+        <p className="text-gray-700 text-lg max-w-6xl mx-auto">
+          Eammu Holidays provides assistance for <strong>Tourist, Student, and Work visas</strong> across over 25 countries including 
+          <Link to="/usa-visa-application" className="text-[#005a31] underline"> USA</Link>, 
+          <Link to="/uk-visa-application" className="text-[#005a31] underline"> UK</Link>, 
+          <Link to="/europe-visa-application" className="text-[#005a31] underline"> Europe</Link>, 
+          <Link to="/canada-visa-application" className="text-[#005a31] underline"> Canada</Link>,
+          <Link to="/australia-visa-application" className="text-[#005a31] underline"> Australia</Link>,
+          <Link to="/germany-visa-application" className="text-[#005a31] underline"> Germany</Link>,
+          <Link to="/portugal-visa-application" className="text-[#005a31] underline"> Portugal</Link>,
+          <Link to="/armenia-visa-application" className="text-[#005a31] underline"> Armenia</Link>,
+          <Link to="/georgia-visa-application" className="text-[#005a31] underline"> Georgia</Link>,
+          <Link to="/albania-visa-application" className="text-[#005a31] underline"> Albania</Link>,
+          <Link to="/dubai-visa-application" className="text-[#005a31] underline"> Dubai</Link>,
+          <Link to="/qatar-visa-application" className="text-[#005a31] underline"> Qatar</Link>,
+          <Link to="/japan-visa-application" className="text-[#005a31] underline"> Japan</Link>,
+          <Link to="/china-visa-application" className="text-[#005a31] underline"> China</Link>,
+          <Link to="/south-korea-visa-application" className="text-[#005a31] underline"> South Korea</Link>,
+          <Link to="/spain-visa-application" className="text-[#005a31] underline"> Spain</Link>,
+          <Link to="/kosovo-visa-application" className="text-[#005a31] underline"> Kosovo</Link>,
+          <Link to="/serbia-visa-application" className="text-[#005a31] underline"> Serbia</Link>, 
+          and more.
         </p>
       </header>
 
