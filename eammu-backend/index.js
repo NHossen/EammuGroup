@@ -1,5 +1,5 @@
 import express from 'express';
-import https from 'https';
+import Amadeus from 'amadeus';
 import cors from 'cors';
 import dotenv from 'dotenv';
 
@@ -9,79 +9,60 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get('/api/search-flights', (req, res) => {
-    const {
-        origin,
-        destination,
-        departureDate,
-        returnDate,
-        adults = 1,
-        children = 0,
-        infantsOnLap = 0,
-        infantsInSeat = 0,
-        cabinClass = 1,
-        sort = 1,
-        stops = 0,
-        currency = 'USD',
-        locale = 'en-US',
-        market = 'US',
-        airlines,
-        alliances,
-        maxPrice
-    } = req.query;
-
-    if (!origin || !destination || !departureDate || !returnDate) {
-        return res.status(400).json({ error: 'Missing required parameters' });
-    }
-
-    const params = new URLSearchParams({
-        departureId: origin,
-        arrivalId: destination,
-        departureDate,
-        arrivalDate: returnDate,
-        adults,
-        children,
-        infantsOnLap,
-        infantsInSeat,
-        cabinClass,
-        sort,
-        stops,
-        currency,
-        locale,
-        market
-    });
-
-    if (airlines) params.append('airlines', airlines);
-    if (alliances) params.append('alliances', alliances);
-    if (maxPrice) params.append('maxPrice', maxPrice);
-
-    const options = {
-        method: 'GET',
-        hostname: process.env.RAPIDAPI_HOST,
-        path: `/flights/search-roundtrip?${params.toString()}`,
-        headers: {
-            'x-rapidapi-key': process.env.RAPIDAPI_KEY,
-            'x-rapidapi-host': process.env.RAPIDAPI_HOST
-        }
-    };
-
-    const apiReq = https.request(options, apiRes => {
-        let data = [];
-        apiRes.on('data', chunk => data.push(chunk));
-        apiRes.on('end', () => {
-            try {
-                const json = JSON.parse(Buffer.concat(data).toString());
-                res.json(json);
-            } catch (err) {
-                res.status(500).json({ error: 'Invalid API response' });
-            }
-        });
-    });
-
-    apiReq.on('error', err => res.status(500).json({ error: err.message }));
-    apiReq.end();
+const amadeus = new Amadeus({
+  clientId: process.env.AMADEUS_CLIENT_ID,
+  clientSecret: process.env.AMADEUS_CLIENT_SECRET
 });
 
-app.listen(process.env.PORT, () =>
-    console.log(`🚀 Server running on http://localhost:${process.env.PORT}`)
-);
+// ১. সিটি/এয়ারপোর্ট সাজেশন রুট
+app.get('/api/city-search', async (req, res) => {
+  try {
+    const { keyword } = req.query;
+    if (!keyword || keyword.length < 2) return res.json([]);
+
+    const response = await amadeus.referenceData.locations.get({
+      keyword: keyword.toUpperCase(),
+      subType: 'CITY,AIRPORT',
+    });
+    res.json(response.data);
+  } catch (error) {
+    console.error("City Search Error:", error.code);
+    res.status(500).json({ error: "Suggestions not available" });
+  }
+});
+
+// ২. ফ্লাইট সার্চ রুট (Round Trip + Adults + Children)
+app.get('/api/search-flights', async (req, res) => {
+  try {
+    const { origin, destination, date, returnDate, adults, children } = req.query;
+    
+    const extractCode = (str) => {
+      if (str.includes('(')) return str.split('(')[1].split(')')[0].toUpperCase();
+      return str.trim().toUpperCase().substring(0, 3);
+    };
+
+    const searchParams = {
+      originLocationCode: extractCode(origin),
+      destinationLocationCode: extractCode(destination),
+      departureDate: date,
+      adults: adults || 1,
+      children: children || 0,
+      max: 15,
+      currencyCode: 'USD' // আপনি চাইলে BDT ট্রাই করতে পারেন যদি আপনার API সাপোর্ট করে
+    };
+
+    // রাউন্ড ট্রিপ হলে রিটার্ন ডেট যোগ হবে
+    if (returnDate && returnDate !== "null" && returnDate !== "") {
+      searchParams.returnDate = returnDate;
+    }
+
+    const response = await amadeus.shopping.flightOffersSearch.get(searchParams);
+    res.json(response.data);
+  } catch (error) {
+    const errorDetail = error.response?.result?.errors?.[0]?.detail || "Flight not found";
+    res.status(400).json({ error: "Search Failed", detail: errorDetail });
+  }
+});
+
+const PORT = 5000;
+app.listen(PORT, () => console.log(`🚀 Server running on http://localhost:${PORT}`));
