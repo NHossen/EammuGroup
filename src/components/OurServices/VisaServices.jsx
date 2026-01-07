@@ -245,7 +245,7 @@ const VisaServices = () => {
       {/* Header */}
       <header className="text-center mb-10">
         <h1 className="text-4xl font-bold text-[#005a31] mb-4">Visa Services by Eammu Holidays</h1>
-        <p className="text-gray-700 text-lg max-w-6xl mx-auto">
+        <p className="text-gray-700 text-md max-w-7xl mx-auto">
           Eammu Holidays provides assistance for  <strong>
     <a href="/tourist-visa-application-from-bangladesh" className="bg-[#005a31] text-white px-2 py-1 rounded mr-2 hover:bg-gray-400 hover:text-black">
       Tourist Visa
