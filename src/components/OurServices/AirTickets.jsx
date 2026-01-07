@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
-
+// পপুলার ডেস্টিনেশন ডাটা
 const destinations = [
   { name: "USA", link: "/visa-services#usa", image: "https://visadone.com/wp-content/uploads/2023/02/USA-VISA.png", price: "From $450" },
   { name: "UK", link: "/visa-services#uk", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkgBKQsFv4LdWUzfgaoMj5srhPn0vAuU9X6Q&s", price: "From $500" },
@@ -14,8 +14,14 @@ const destinations = [
   { name: "Malaysia", link: "/visa-services#malaysia", image: "https://travelobiz.com/wp-content/uploads/2023/01/Malaysia-eVisa-with-Map.jpg", price: "From $300" },
 ];
 
- // আপনার নতুন রেন্ডার ইউআরএল ব্যবহার করুন
-    const API_BASE_URL = "https://backend-eammu.onrender.com";
+// এপিআই বেইস ইউআরএল
+const API_BASE_URL = "https://backend-eammu.onrender.com";
+
+// সময় ফরম্যাট করার ফাংশন
+const formatTime = (dateTimeString) => {
+  const date = new Date(dateTimeString);
+  return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+};
 
 const AirTickets = () => {
   const [flights, setFlights] = useState([]);
@@ -23,8 +29,10 @@ const AirTickets = () => {
   const [tripType, setTripType] = useState('one-way');
   const [suggestions, setSuggestions] = useState({ from: [], to: [] });
   const [inputNames, setInputNames] = useState({ from: '', to: '' });
+  //Details Flight Button
+  const [selectedFlight, setSelectedFlight] = useState(null);
 
-  // Debouncing for Suggestions
+  // এয়ারপোর্ট সাজেশনের জন্য Debouncing
   useEffect(() => {
     const timer = setTimeout(() => {
       if (inputNames.from.length >= 2 && !inputNames.from.includes('(')) fetchSuggestions(inputNames.from, 'from');
@@ -33,24 +41,21 @@ const AirTickets = () => {
     return () => clearTimeout(timer);
   }, [inputNames.from, inputNames.to]);
 
-const fetchSuggestions = async (keyword, type) => {
-  try {
-  
-    const res = await fetch(`${API_BASE_URL}/api/city-search?keyword=${keyword}`);
-    
-    if (!res.ok) {
-      throw new Error(`HTTP error! status: ${res.status}`);
+  const fetchSuggestions = async (keyword, type) => {
+    try {
+      const res = await fetch(`${API_BASE_URL}/api/city-search?keyword=${keyword}`);
+      if (!res.ok) {
+        throw new Error(`HTTP error! status: ${res.status}`);
+      }
+      const data = await res.json();
+      setSuggestions(prev => ({ 
+        ...prev, 
+        [type]: Array.isArray(data) ? data : [] 
+      }));
+    } catch (err) { 
+      console.error("Error fetching suggestions:", err.message); 
     }
-
-    const data = await res.json();
-    setSuggestions(prev => ({ 
-      ...prev, 
-      [type]: Array.isArray(data) ? data : [] 
-    }));
-  } catch (err) { 
-    console.error("Error fetching suggestions:", err.message); 
-  }
-};
+  };
 
   const handleSearch = async (e) => {
     e.preventDefault();
@@ -73,8 +78,11 @@ const fetchSuggestions = async (keyword, type) => {
       const data = await response.json();
       if (response.ok) setFlights(data);
       else alert(data.detail || "No flights found.");
-    } catch (error) { alert("Server error. Please check backend."); }
-    finally { setLoading(false); }
+    } catch (error) { 
+      alert("Server error. Please check backend."); 
+    } finally { 
+      setLoading(false); 
+    }
   };
 
   return (
@@ -85,16 +93,14 @@ const fetchSuggestions = async (keyword, type) => {
       <section className="bg-[#004d2c] pt-8 pb-24 px-4 text-center">
         <h1 className="text-3xl md:text-3xl font-bold text-white mb-4 tracking-tight">Your Next Adventure With Eammu Holidays</h1>
         <p className="text-white font-bold mb-4">
-  Search flights using airport codes for best results —{" "}
-  <span className="bg-white text-green-800 px-2 py-1 rounded mx-1">DXB</span> (Dubai),{" "}
-  <span className="bg-white text-green-800 px-2 py-1 rounded mx-1">DAC</span> (Dhaka),{" "}
-  <span className="bg-white text-green-800 px-2 py-1 rounded mx-1">EVN</span> (Yerevan).
-  Get real-time fares and book instantly with ease.
-</p>
+          Search flights using airport codes for best results —{" "}
+          <span className="bg-white text-green-800 px-2 py-1 rounded mx-1">DXB</span> (Dubai),{" "}
+          <span className="bg-white text-green-800 px-2 py-1 rounded mx-1">DAC</span> (Dhaka),{" "}
+          <span className="bg-white text-green-800 px-2 py-1 rounded mx-1">EVN</span> (Yerevan).
+          Get real-time fares and book instantly with ease.
+        </p>
 
-        
         <div className="max-w-7xl mx-auto bg-white p-6 md:p-8 rounded-[2.5rem] shadow-2xl relative">
-          
           {/* Trip Type Selector */}
           <div className="flex gap-4 mb-6">
             {['one-way', 'round-trip'].map((type) => (
@@ -112,7 +118,6 @@ const fetchSuggestions = async (keyword, type) => {
           </div>
 
           <form onSubmit={handleSearch} className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 items-end text-left">
-            
             {/* FROM */}
             <div className="relative">
               <label className="text-[10px] font-bold text-gray-400 uppercase ml-2">From</label>
@@ -164,7 +169,7 @@ const fetchSuggestions = async (keyword, type) => {
                 <input name="returnDate" type="date" className="w-full p-4 bg-gray-50 border border-gray-100 rounded-2xl outline-none font-bold" required />
               </div>
             ) : (
-              <div className="hidden lg:block"></div> // গ্রিড ঠিক রাখার জন্য
+              <div className="hidden lg:block"></div> 
             )}
 
             <div>
@@ -196,7 +201,6 @@ const fetchSuggestions = async (keyword, type) => {
           <div key={idx} className="bg-white rounded-[2rem] p-6 md:p-8 shadow-sm border border-gray-100 mb-6 flex flex-col md:flex-row items-center justify-between hover:shadow-xl transition-all border-l-8 border-l-[#004d2c]">
             
             <div className="flex items-center gap-6 w-full md:w-auto">
-              {/* Airline Logo */}
               <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center p-2 shadow-inner">
                 <img 
                   src={`https://www.gstatic.com/flights/airline_logos/70px/${flight.validatingAirlineCodes[0]}.png`} 
@@ -205,7 +209,6 @@ const fetchSuggestions = async (keyword, type) => {
                   onError={(e) => { e.target.src = 'https://www.gstatic.com/flights/airline_logos/70px/default.png' }}
                 />
               </div>
-              
               <div>
                 <p className="text-2xl md:text-3xl font-black text-gray-800">
                   {flight.itineraries[0].segments[0].departure.iataCode} 
@@ -218,17 +221,78 @@ const fetchSuggestions = async (keyword, type) => {
               </div>
             </div>
 
+            <div className="flex gap-4 mt-2 text-gray-600">
+              <div>
+                <p className="text-[10px] uppercase font-bold text-gray-400">Departure</p>
+                <p className="font-bold">{formatTime(flight.itineraries[0].segments[0].departure.at)}</p>
+              </div>
+              
+              <div className="flex flex-col items-center justify-center">
+                <div className="h-[1px] w-10 bg-gray-300"></div>
+                <p className="text-[9px] text-gray-400 font-bold">{flight.itineraries[0].duration.replace('PT', '').toLowerCase()}</p>
+              </div>
+
+              <div>
+                <p className="text-[10px] uppercase font-bold text-gray-400">Arrival</p>
+                <p className="font-bold">{formatTime(flight.itineraries[0].segments.at(-1).arrival.at)}</p>
+              </div>
+            </div>
+
             <div className="text-center md:text-right mt-6 md:mt-0 w-full md:w-auto border-t md:border-0 pt-4 md:pt-0">
               <p className="text-3xl font-black text-[#004d2c]">
                 {flight.price.total} <span className="text-sm font-normal text-gray-500">{flight.price.currency}</span>
               </p>
-              <button
-  onClick={() => window.open("https://wa.me/8801631312524", "_blank")}
-  className="mt-4 bg-[#004d2c] text-white px-10 py-3 rounded-full text-xs font-bold uppercase hover:bg-black transition-all shadow-md"
->
-  Book Now
-</button>
+              <div className="flex flex-col sm:flex-row md:flex-col gap-2 mt-4">
+                <button
+                  onClick={() => window.open(`https://wa.me/8801631312524?text=I want to book flight: ${flight.itineraries[0].segments[0].departure.iataCode} to ${flight.itineraries[0].segments.at(-1).arrival.iataCode}`, "_blank")}
+                  className="bg-[#004d2c] text-white px-8 py-3 rounded-full text-[11px] font-bold uppercase hover:bg-black transition-all shadow-md flex-1"
+                >
+                  Book Now
+                </button>
 
+                <button 
+                  onClick={() => setSelectedFlight(selectedFlight === idx ? null : idx)}
+                  className="bg-gray-100 text-[#004d2c] px-8 py-3 rounded-full text-[11px] font-bold uppercase hover:bg-gray-200 transition-all flex-1 border border-[#004d2c]/10"
+                >
+                  {selectedFlight === idx ? "Hide Details" : "View Details"}
+                </button>
+              </div>
+
+              {selectedFlight === idx && (
+                <div className="w-full mt-6 p-4 bg-gray-50 rounded-2xl border-t border-dashed border-gray-200 text-left">
+                  <h4 className="text-sm font-bold text-gray-700 mb-4">Flight Information</h4>
+                  {flight.itineraries[0].segments.map((segment, sIdx) => (
+                    <div key={sIdx} className="mb-4 last:mb-0">
+                      <div className="flex justify-between text-xs text-gray-500 mb-1">
+                        <span>Flight: {segment.carrierCode} {segment.number}</span>
+                        <span>Aircraft: {segment.aircraft.code}</span>
+                      </div>
+                      
+                      <div className="flex items-center gap-4">
+                        <div className="text-sm">
+                          <p className="font-bold">{formatTime(segment.departure.at)}</p>
+                          <p className="text-xs text-gray-400">{segment.departure.iataCode}</p>
+                        </div>
+                        <div className="flex-1 border-b border-gray-300 relative">
+                           <span className="absolute -top-2 left-1/2 -translate-x-1/2 bg-gray-50 px-2 text-[10px] text-gray-400 uppercase">
+                              {segment.duration.replace('PT', '').toLowerCase()}
+                           </span>
+                        </div>
+                        <div className="text-sm text-right">
+                          <p className="font-bold">{formatTime(segment.arrival.at)}</p>
+                          <p className="text-xs text-gray-400">{segment.arrival.iataCode}</p>
+                        </div>
+                      </div>
+                      
+                      {flight.itineraries[0].segments[sIdx + 1] && (
+                        <div className="bg-yellow-50 text-[10px] text-center py-1 my-3 rounded-full text-yellow-700 font-bold border border-yellow-100">
+                           Layover in {segment.arrival.iataCode}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         ))}
@@ -239,47 +303,47 @@ const fetchSuggestions = async (keyword, type) => {
           </div>
         )}
       </main>
-{/* Visual Section */}
+
+      {/* Visual Section */}
       <section className='px-4 sm:px-6 lg:px-10 container mx-auto py-10'>
-       {/* Visual Section */}
-            <div className="grid md:grid-cols-2 gap-6 mb-10">
-              <img src="https://e3.365dm.com/24/07/1600x900/skynews-plane-cloud_6626642.jpg?20240715110714" alt="Plane" className="rounded-2xl w-full h-72 object-cover shadow-md" />
-              <img src="https://www.shutterstock.com/image-vector/luggage-blue-air-ticket-float-600nw-2170367829.jpg" alt="Tickets" className="rounded-2xl w-full h-72 object-cover shadow-md" />
-            </div>
+        <div className="grid md:grid-cols-2 gap-6 mb-10">
+          <img src="https://e3.365dm.com/24/07/1600x900/skynews-plane-cloud_6626642.jpg?20240715110714" alt="Plane" className="rounded-2xl w-full h-72 object-cover shadow-md" />
+          <img src="https://www.shutterstock.com/image-vector/luggage-blue-air-ticket-float-600nw-2170367829.jpg" alt="Tickets" className="rounded-2xl w-full h-72 object-cover shadow-md" />
+        </div>
       
-            {/* Popular Routes */}
-            <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-[#005a31] mb-6 text-center">Popular Routes & Deals</h2>
-              <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
-                {destinations.map((dest, index) => (
-                  <div key={index} className="bg-white shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition-all flex flex-col justify-between group">
-                    <Link to={dest.link} className="relative">
-                      <img src={dest.image} alt={dest.name} className="w-full h-40 object-cover" loading="lazy" />
-                    </Link>
-                    <div className="p-4 text-center">
-                      <h3 className="text-lg font-bold text-[#005a31]">{dest.name}</h3>
-                      <p className="text-gray-700 text-sm mb-3">{dest.price}</p>
-                      <a href={`https://wa.me/8801631312524?text=Book flight to ${dest.name}`} className="block bg-[#005a31] text-white py-2 rounded-full hover:bg-black transition">
-                        Check Seats
-                      </a>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </section>
-      
-            {/* CTA Section */}
-            <div className="text-center mt-12 bg-green-50 py-10 rounded-[3rem]">
-              <p className="text-xl font-medium text-gray-800 mb-6">Need expert help? Contact us now.</p>
-              <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://wa.me/8801631312524" className="bg-[#005a31] text-white px-10 py-3 rounded-full hover:bg-black transition">
-                  WhatsApp Booking
-                </a>
-                <Link to="/" className="bg-white border border-green-800 text-green-800 px-10 py-3 rounded-full hover:bg-green-50 transition">
-                  Back to Home
+        {/* Popular Routes */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold text-[#005a31] mb-6 text-center">Popular Routes & Deals</h2>
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {destinations.map((dest, index) => (
+              <div key={index} className="bg-white shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition-all flex flex-col justify-between group">
+                <Link to={dest.link} className="relative">
+                  <img src={dest.image} alt={dest.name} className="w-full h-40 object-cover" loading="lazy" />
                 </Link>
+                <div className="p-4 text-center">
+                  <h3 className="text-lg font-bold text-[#005a31]">{dest.name}</h3>
+                  <p className="text-gray-700 text-sm mb-3">{dest.price}</p>
+                  <a href={`https://wa.me/8801631312524?text=Book flight to ${dest.name}`} className="block bg-[#005a31] text-white py-2 rounded-full hover:bg-black transition">
+                    Check Seats
+                  </a>
+                </div>
               </div>
-            </div>
+            ))}
+          </div>
+        </section>
+      
+        {/* CTA Section */}
+        <div className="text-center mt-12 bg-green-50 py-10 rounded-[3rem]">
+          <p className="text-xl font-medium text-gray-800 mb-6">Need expert help? Contact us now.</p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="https://wa.me/8801631312524" className="bg-[#005a31] text-white px-10 py-3 rounded-full hover:bg-black transition">
+              WhatsApp Booking
+            </a>
+            <Link to="/" className="bg-white border border-green-800 text-green-800 px-10 py-3 rounded-full hover:bg-green-50 transition">
+              Back to Home
+            </Link>
+          </div>
+        </div>
       </section>
     </div>
   );
