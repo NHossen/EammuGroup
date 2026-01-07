@@ -145,9 +145,10 @@ const EammuItMarketing = () => {
               Want to grow your online presence? <br /> 
               <span className="text-orange-500">Let's build your brand together!</span>
             </p>
-            <button className="bg-[#005a31] text-white px-12 py-5 rounded-full text-lg font-black uppercase tracking-widest hover:bg-orange-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-              Request a Free Quote
-            </button>
+          
+            <a href="https://wa.me/8801631312524" className="inline-flex items-center gap-3 bg-[#005a31] text-white px-12 py-5 rounded-2xl font-black shadow-2xl hover:bg-orange-500 transition-all">
+                          Request a Free Quote
+                       </a>
           </div>
         </div>
       </section>

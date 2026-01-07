@@ -66,9 +66,9 @@ const Immigration_Header_Section = () => {
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-[#005a31]" size={18} />
           </div>
 
-          <button className="w-full sm:w-auto bg-[#005a31] hover:bg-orange-500 text-white px-8 py-3 rounded-2xl font-bold transition-all shadow-lg active:scale-95 flex items-center justify-center gap-2">
-            Free Assessment
-          </button>
+          <a href="https://wa.me/8801631312524" className="inline-flex items-center gap-3 bg-[#005a31] text-white px-12 py-5 rounded-2xl font-black shadow-2xl hover:bg-orange-500 transition-all">
+                      GET FREE VISA ASSESSMENT
+                    </a>
         </div>
 
       </div>

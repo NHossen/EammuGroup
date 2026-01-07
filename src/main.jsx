@@ -69,6 +69,9 @@ import SpainVisa from './components/OurServices/VisaCountry/SpainVisa.jsx';
 import KosovoVisa from './components/OurServices/VisaCountry/KosovoVisa.jsx';
 import SerbiaVisa from './components/OurServices/VisaCountry/SerbiaVisa.jsx';
 import EammuSocialResponsibility from './components/EammuSocialResponsibility/EammuSocialResponsibility.jsx';
+import TouristVisaBangladesh from './components/OurServices/Visa/TouristVisaBangladesh.jsx';
+import StudentVisaBangladesh from './components/OurServices/Visa/StudentVisaBangladesh.jsx';
+import WorkVisaBangladesh from './components/OurServices/Visa/WorkVisaBangladesh.jsx';
 
 
 // ROUTER SETUP (FINAL)
@@ -145,6 +148,11 @@ const router = createBrowserRouter([
       {path: "spain-visa-application",element: <SpainVisa />},
       {path: "kosovo-visa-application",element: <KosovoVisa />},
       {path: "serbia-visa-application",element: <SerbiaVisa />},
+
+      // ===== Visa Category - Student,Tourist,Work =====
+      {path: "tourist-visa-application-from-bangladesh",element: <TouristVisaBangladesh />},
+      {path: "student-visa-application-from-bangladesh",element: <StudentVisaBangladesh />},
+      {path: "work-visa-application-from-bangladesh",element: <WorkVisaBangladesh />},
 
       // ===== TIIC =====
       {path: "target-ielts-and-immigration-center",element: <TIICPage />},

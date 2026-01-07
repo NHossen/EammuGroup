@@ -33,10 +33,10 @@ const About_Eammu_Immigration = () => {
       {/* Hero Section */}
       <section className="bg-white border-b pt-16 pb-20">
         <div className="container mx-auto px-4 text-center space-y-8">
-          <div className="inline-block px-4 py-1.5 bg-green-100 text-green-700 rounded-full text-xs font-bold uppercase tracking-widest">
+          <div className="inline-block px-4 py-1.5 bg-green-100 text-[#004a29] rounded-full text-xs font-bold uppercase tracking-widest">
             Since 2022 • Trusted by Thousands
           </div>
-          <h1 className="text-4xl md:text-6xl font-black text-green-800 tracking-tight leading-tight">
+          <h1 className="text-4xl md:text-6xl font-black text-[#004a29] tracking-tight leading-tight">
             Empowering Your Global <span className="text-orange-500">Aspirations</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
@@ -81,7 +81,7 @@ const About_Eammu_Immigration = () => {
       </section>
 
       {/* What We Help You With */}
-      <section className="py-24 bg-green-900 text-white rounded-[4rem] mx-4">
+      <section className="py-24 bg-[#004a29] text-white rounded-[4rem] mx-4">
         <div className="container mx-auto px-8">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
             <div className="max-w-2xl">
@@ -104,7 +104,7 @@ const About_Eammu_Immigration = () => {
       {/* Why Clients Trust Us */}
       <section className="py-24 container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-black text-green-900 uppercase tracking-tighter mb-4">Why Clients Trust Eammu</h2>
+          <h2 className="text-3xl md:text-4xl font-black text-[#004a29] uppercase tracking-tighter mb-4">Why Clients Trust Eammu</h2>
           <div className="w-24 h-1.5 bg-orange-500 mx-auto rounded-full"></div>
         </div>
 
@@ -133,7 +133,7 @@ const About_Eammu_Immigration = () => {
         <div className="bg-white rounded-[3rem] shadow-2xl border border-green-50 overflow-hidden">
           <div className="grid lg:grid-cols-2">
             <div className="p-10 md:p-16 space-y-8 bg-[#f4fdf7]">
-              <h2 className="text-3xl md:text-4xl font-black text-green-900 leading-tight">
+              <h2 className="text-3xl md:text-4xl font-black text-[#004a29] leading-tight">
                 Connect with Eammu <br /> Holidays Experts
               </h2>
               <p className="text-gray-600 text-lg">
@@ -153,13 +153,13 @@ const About_Eammu_Immigration = () => {
                   href="https://wa.me/8801631312524?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full bg-green-800 text-white text-lg font-bold py-5 rounded-2xl hover:bg-green-900 transition-all shadow-xl hover:-translate-y-1"
+                  className="block w-full bg-[#004a29] text-white text-lg font-bold py-5 rounded-2xl hover:bg-green-900 transition-all shadow-xl hover:-translate-y-1"
                 >
                   Chat on WhatsApp
                 </a>
                 <Link
                   to="/"
-                  className="block w-full bg-white border-2 border-green-800 text-green-800 text-lg font-bold py-5 rounded-2xl hover:bg-green-50 transition-all"
+                  className="block w-full bg-white border-2 border-[#004a29] text-[#004a29] text-lg font-bold py-5 rounded-2xl hover:bg-green-50 transition-all"
                 >
                   ⬅ Back to Home
                 </Link>

@@ -167,9 +167,10 @@ const EammuTextile = () => {
           <p className="text-xl text-gray-200 mb-10 max-w-2xl mx-auto">
             Interested in partnership, bulk orders, or specific fabric inquiries? Our textile experts are ready to assist you.
           </p>
-          <button className="bg-orange-500 hover:bg-white hover:text-[#005a31] text-white px-10 py-4 rounded-full font-black uppercase tracking-widest transition-all duration-300 shadow-lg">
-            Contact Our Textile Team
-          </button>
+         
+              <a href="https://wa.me/8801631312524" className="inline-flex items-center gap-3 bg-white text-black hover:text-white px-12 py-5 rounded-2xl font-black shadow-2xl hover:bg-orange-500 transition-all">
+                          Contact Our Textile Team
+                       </a>
         </div>
       </section>
     </div>

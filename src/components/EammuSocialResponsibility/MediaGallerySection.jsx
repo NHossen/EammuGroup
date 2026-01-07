@@ -10,7 +10,7 @@ const MediaGallerySection = () => {
   // Sample Data (Real URLs)
   const photos = [
     { id: 1, url: "https://images.unsplash.com/photo-1593113598332-cd288d649433", title: "Blood Donation 2024" },
-    { id: 2, url: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb8", title: "Medical Camp Cumilla" },
+    { id: 2, url: "https://azbigmedia.com/wp-content/uploads/2023/11/Free-Medical-Camp-1024x576.jpg", title: "Medical Camp Cumilla" },
     { id: 3, url: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b", title: "Volunteer Distribution" },
     { id: 4, url: "https://images.unsplash.com/photo-1509059852496-f3822ae057bf", title: "Free Medicine Drive" },
     { id: 5, url: "https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa", title: "NGO Partnership Meet" },

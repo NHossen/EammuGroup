@@ -143,12 +143,13 @@ const EammuSocialResponsibility = () => {
             "We make a living by what we get, but we make a life by what we give." Join the Eammu Volunteer Network today.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <button className="bg-[#005a31] text-white px-10 py-4 rounded-2xl font-bold hover:bg-orange-500 transition-all shadow-xl active:scale-95">
-              Register as Volunteer
-            </button>
-            <button className="bg-orange-50 text-orange-600 border border-orange-200 px-10 py-4 rounded-2xl font-bold hover:bg-orange-100 transition-all">
-              Request Collaboration
-            </button>
+            
+            <a href="/contact" className=" bg-[#005a31] text-white px-10 py-4 rounded-2xl font-bold hover:bg-orange-500 transition-all shadow-xl active:scale-95">
+                        Register as Volunteer
+                       </a>
+            <a href="https://wa.me/8801631312524" className=" bg-orange-50 text-orange-600 border border-orange-200 px-10 py-4 rounded-2xl font-bold hover:bg-orange-100 transition-all">
+                        Request Collaboration
+                       </a>
           </div>
         </div>
       </section>
