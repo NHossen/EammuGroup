@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const EammuFashion = () => {
   const fadeIn = {
@@ -47,9 +48,11 @@ const EammuFashion = () => {
           <p className="max-w-md text-lg text-gray-200 mb-8 font-light">
             Defining the new era of Bangladeshi elegance. Blending local craftsmanship with global trends.
           </p>
-          <button className="border-2 border-white px-10 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all">
-            Explore Vision
-          </button>
+       <a href="/eammu-store">
+  <button className="border-2 border-white px-10 py-4 rounded-full text-sm font-black uppercase tracking-widest hover:bg-orange-500 hover:border-orange-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-orange-500/20 active:scale-95 cursor-pointer">
+    Explore Store
+  </button>
+</a>
         </motion.div>
       </section>
 

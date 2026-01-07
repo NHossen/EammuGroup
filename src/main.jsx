@@ -72,6 +72,8 @@ import EammuSocialResponsibility from './components/EammuSocialResponsibility/Ea
 import TouristVisaBangladesh from './components/OurServices/Visa/TouristVisaBangladesh.jsx';
 import StudentVisaBangladesh from './components/OurServices/Visa/StudentVisaBangladesh.jsx';
 import WorkVisaBangladesh from './components/OurServices/Visa/WorkVisaBangladesh.jsx';
+import EammuStore from './components/EammuGroupWebsites/EammuFashion/OurProduct/EammuStore.jsx';
+
 
 
 // ROUTER SETUP (FINAL)
@@ -156,6 +158,9 @@ const router = createBrowserRouter([
 
       // ===== TIIC =====
       {path: "target-ielts-and-immigration-center",element: <TIICPage />},
+
+      // ===== Eammu Store =====
+      {path: "/eammu-store",element: <EammuStore />},
 
       // ===== EammuSocialResponsibility =====
       {path: "eammu-social-responsibility",element: <EammuSocialResponsibility />},
