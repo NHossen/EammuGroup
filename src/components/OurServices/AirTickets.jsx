@@ -79,6 +79,11 @@ const airlineNames = {
   RJ: "Royal Jordanian",
   AI: "Air India",
   UK: "Vistara",
+  OD: "Batik Air",
+  XY: "Flynas Air",
+  SV: "Saudi Arabia",
+  VS: "Virgin Atlantic",
+  MS: "Egypt Air",
 };
 
 // সময় ফরম্যাট করার ফাংশন
@@ -458,17 +463,8 @@ const AirTickets = () => {
                     </div>
                   ))}
                 </div>
-
-                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest mt-1">
-                  {airlineNames[flight.validatingAirlineCodes[0]] ||
-                    flight.validatingAirlineCodes[0]}{" "}
-                  •
-                  {flight.itineraries[1]
-                    ? " Round Trip"
-                    : flight.itineraries[0].segments.length > 1
-                    ? ` ${flight.itineraries[0].segments.length - 1} Stop(s)`
-                    : " Direct"}
-                </p>
+{/* Details Can Update Bellow This Airline logo */}
+           
               </div>
             </div>
 
