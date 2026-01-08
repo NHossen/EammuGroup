@@ -1,92 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 // পপুলার ডেস্টিনেশন ডাটা
 const destinations = [
-  {
-    name: "USA",
-    link: "/visa-services#usa",
-    image: "https://visadone.com/wp-content/uploads/2023/02/USA-VISA.png",
-    price: "From $450",
-  },
-  {
-    name: "UK",
-    link: "/visa-services#uk",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkgBKQsFv4LdWUzfgaoMj5srhPn0vAuU9X6Q&s",
-    price: "From $500",
-  },
-  {
-    name: "Canada",
-    link: "/visa-services#canada",
-    image:
-      "https://pelicanmigration.com/wp-content/uploads/2024/01/Canada-Visitor-Visa.jpg",
-    price: "From $470",
-  },
-  {
-    name: "Europe (Schengen)",
-    link: "/visa-services#europe",
-    image:
-      "https://www.babaaztravels.com/wp-content/uploads/2023/05/Schengen-Visit-Visa-Requirements-Babaaz-Travels.jpeg",
-    price: "From $400",
-  },
-  {
-    name: "Australia",
-    link: "/visa-services#australia",
-    image:
-      "https://www.kkday.com/en-sg/blog/wp-content/uploads/Aussie-VTL-1170x680.jpg",
-    price: "From $600",
-  },
-  {
-    name: "Japan",
-    link: "/visa-services#japan",
-    image: "https://www.babaaztravels.com/wp-content/uploads/2022/04/japan.jpg",
-    price: "From $550",
-  },
-  {
-    name: "Dubai (UAE)",
-    link: "/visa-services#dubai",
-    image:
-      "https://canadiangeographic.ca/wp-content/uploads/2022/10/dubai-skyline-1440x1011.jpg",
-    price: "From $350",
-  },
-  {
-    name: "Malaysia",
-    link: "/visa-services#malaysia",
-    image:
-      "https://travelobiz.com/wp-content/uploads/2023/01/Malaysia-eVisa-with-Map.jpg",
-    price: "From $300",
-  },
+  { name: "USA", link: "/visa-services#usa", image: "https://visadone.com/wp-content/uploads/2023/02/USA-VISA.png", price: "From $450" },
+  { name: "UK", link: "/visa-services#uk", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkgBKQsFv4LdWUzfgaoMj5srhPn0vAuU9X6Q&s", price: "From $500" },
+  { name: "Canada", link: "/visa-services#canada", image: "https://pelicanmigration.com/wp-content/uploads/2024/01/Canada-Visitor-Visa.jpg", price: "From $470" },
+  { name: "Europe (Schengen)", link: "/visa-services#europe", image: "https://www.babaaztravels.com/wp-content/uploads/2023/05/Schengen-Visit-Visa-Requirements-Babaaz-Travels.jpeg", price: "From $400" },
+  { name: "Australia", link: "/visa-services#australia", image: "https://www.kkday.com/en-sg/blog/wp-content/uploads/Aussie-VTL-1170x680.jpg", price: "From $600" },
+  { name: "Japan", link: "/visa-services#japan", image: "https://www.babaaztravels.com/wp-content/uploads/2022/04/japan.jpg", price: "From $550" },
+  { name: "Dubai (UAE)", link: "/visa-services#dubai", image: "https://canadiangeographic.ca/wp-content/uploads/2022/10/dubai-skyline-1440x1011.jpg", price: "From $350" },
+  { name: "Malaysia", link: "/visa-services#malaysia", image: "https://travelobiz.com/wp-content/uploads/2023/01/Malaysia-eVisa-with-Map.jpg", price: "From $300" },
 ];
 
-// এপিআই বেইস ইউআরএল
 const API_BASE_URL = "https://backend-eammu.onrender.com";
 
 const airlineNames = {
-  EK: "Emirates",
-  QR: "Qatar Airways",
-  EY: "Etihad Airways",
-  TK: "Turkish Airlines",
-  BG: "Biman Bangladesh",
-  BS: "US-Bangla Airlines",
-  SQ: "Singapore Airlines",
-  GF: "Gulf Air",
-  J9: "Jazeera Airways",
-  WY: "Oman Air",
-  FZ: "flydubai",
-  KU: "Kuwait Airways",
-  RJ: "Royal Jordanian",
-  AI: "Air India",
-  UK: "Vistara",
-  OD: "Batik Air",
-  XY: "Flynas Air",
-  SV: "Saudi Arabia",
-  VS: "Virgin Atlantic",
-  MS: "Egypt Air",
+  EK: "Emirates", QR: "Qatar Airways", EY: "Etihad Airways", TK: "Turkish Airlines",
+  BG: "Biman Bangladesh", BS: "US-Bangla Airlines", SQ: "Singapore Airlines",
+  GF: "Gulf Air", J9: "Jazeera Airways", WY: "Oman Air", FZ: "flydubai",
+  KU: "Kuwait Airways", RJ: "Royal Jordanian", AI: "Air India", UK: "Vistara",
+  OD: "Batik Air", XY: "Flynas Air", SV: "Saudi Arabia", VS: "Virgin Atlantic", MS: "Egypt Air",
 };
 
-// সময় ফরম্যাট করার ফাংশন
 const formatTime = (dateTimeString) => {
   const date = new Date(dateTimeString);
   return date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
@@ -98,75 +35,103 @@ const AirTickets = () => {
   const [tripType, setTripType] = useState("one-way");
   const [suggestions, setSuggestions] = useState({ from: [], to: [] });
   const [inputNames, setInputNames] = useState({ from: "", to: "" });
-  //Details Flight Button
+  const [departureDate, setDepartureDate] = useState("");
+  const [returnDate, setReturnDate] = useState("");
   const [selectedFlight, setSelectedFlight] = useState(null);
+  const [showTravelerModal, setShowTravelerModal] = useState(false);
+  const [travelers, setTravelers] = useState({ adults: 1, children: 0, infants: 0 });
+  const [cabinClass, setCabinClass] = useState("ECONOMY");
 
-  const calculateLayover = (arrival, nextDeparture) => {
+    const calculateLayover = (arrival, nextDeparture) => {
+
     if (!arrival || !nextDeparture) return "";
+
     const arrivalDate = new Date(arrival);
+
     const departureDate = new Date(nextDeparture);
+
     const diffMs = departureDate - arrivalDate;
+
     const diffHrs = Math.floor(diffMs / (1000 * 60 * 60));
+
     const diffMins = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
+
     return `${diffHrs}h ${diffMins}m`;
+
   };
 
-  // এয়ারপোর্ট সাজেশনের জন্য Debouncing
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      if (inputNames.from.length >= 2 && !inputNames.from.includes("("))
-        fetchSuggestions(inputNames.from, "from");
-      if (inputNames.to.length >= 2 && !inputNames.to.includes("("))
-        fetchSuggestions(inputNames.to, "to");
-    }, 500);
-    return () => clearTimeout(timer);
-  }, [inputNames.from, inputNames.to]);
+  // এয়ারপোর্ট কোড বের করার ফাংশন (যেমন: Dhaka (DAC) -> DAC)
+  const extractCode = (str) => {
+    const match = str.match(/\(([^)]+)\)/);
+    return match ? match[1] : str;
+  };
 
   const fetchSuggestions = async (keyword, type) => {
     try {
-      const res = await fetch(
-        `${API_BASE_URL}/api/city-search?keyword=${keyword}`
-      );
-      if (!res.ok) {
-        throw new Error(`HTTP error! status: ${res.status}`);
-      }
+      const res = await fetch(`${API_BASE_URL}/api/city-search?keyword=${keyword}`);
       const data = await res.json();
-      setSuggestions((prev) => ({
-        ...prev,
-        [type]: Array.isArray(data) ? data : [],
-      }));
+      setSuggestions((prev) => ({ ...prev, [type]: Array.isArray(data) ? data : [] }));
     } catch (err) {
       console.error("Error fetching suggestions:", err.message);
     }
   };
 
-  const handleSearch = async (e) => {
-    e.preventDefault();
+  // ১. handleSearch ফাংশন (useCallback সহ)
+  const handleSearch = useCallback(async (e) => {
+    if (e && e.preventDefault) e.preventDefault();
+
+    if (!inputNames.from || !inputNames.to || !departureDate) return;
+
     setLoading(true);
     setFlights([]);
 
-    const date = e.target.departureDate.value;
-    const returnDate = e.target.returnDate ? e.target.returnDate.value : "";
-    const adults = e.target.adults.value;
-    const children = e.target.childrenCount.value;
-
-    let url = `${API_BASE_URL}/api/search-flights?origin=${inputNames.from}&destination=${inputNames.to}&date=${date}&adults=${adults}&children=${children}`;
+    const params = new URLSearchParams({
+      origin: extractCode(inputNames.from),
+      destination: extractCode(inputNames.to),
+      date: departureDate,
+      adults: travelers.adults,
+      children: travelers.children > 0 ? travelers.children : '',
+      infants: travelers.infants > 0 ? travelers.infants : '',
+      travelClass: cabinClass.toUpperCase(),
+      currencyCode: 'USD'
+    });
 
     if (tripType === "round-trip" && returnDate) {
-      url += `&returnDate=${returnDate}`;
+      params.append("returnDate", returnDate);
     }
 
     try {
-      const response = await fetch(url);
+      const response = await fetch(`${API_BASE_URL}/api/search-flights?${params.toString()}`);
       const data = await response.json();
-      if (response.ok) setFlights(data);
-      else alert(data.detail || "No flights found.");
+      if (response.ok) {
+        setFlights(data);
+      } else {
+        console.error("API Error:", data.detail);
+      }
     } catch (error) {
-      alert("Server error. Please check backend.");
+      console.error("Search Error:", error);
     } finally {
       setLoading(false);
     }
-  };
+  }, [inputNames.from, inputNames.to, departureDate, returnDate, travelers, cabinClass, tripType]);
+
+  // ২. অটো-সার্চ ইফেক্ট
+ useEffect(() => {
+  if (inputNames.from.includes("(") && inputNames.to.includes("(") && departureDate) {
+    handleSearch();
+  }
+}, [handleSearch, travelers, cabinClass, departureDate, returnDate, inputNames.from, inputNames.to]); 
+// উপরে inputNames.from এবং inputNames.to যোগ করা হয়েছে
+
+  // ৩. সাজেশন ইফেক্ট
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (inputNames.from.length >= 2 && !inputNames.from.includes("(")) fetchSuggestions(inputNames.from, "from");
+      if (inputNames.to.length >= 2 && !inputNames.to.includes("(")) fetchSuggestions(inputNames.to, "to");
+    }, 500);
+    return () => clearTimeout(timer);
+  }, [inputNames.from, inputNames.to]);
+
 
   return (
     <div className=" min-h-screen pb-20 font-sans">
@@ -305,65 +270,107 @@ const AirTickets = () => {
               )}
             </div>
 
-            <div>
-              <label className="text-[10px] font-bold text-gray-400 uppercase ml-2">
-                Departure
-              </label>
-              <input
-                name="departureDate"
-                type="date"
-                className="w-full p-4 bg-gray-50 border border-gray-100 rounded-2xl outline-none font-bold"
-                required
-              />
-            </div>
+<div>
+  <label className="text-[10px] font-bold text-gray-400 uppercase ml-2">
+    Departure
+  </label>
+  <input
+    name="departureDate"
+    type="date"
+    className="w-full p-4 bg-gray-50 border border-gray-100 rounded-2xl outline-none font-bold"
+    required
+    value={departureDate} // স্টেট যোগ করা হলো
+    onChange={(e) => setDepartureDate(e.target.value)} // স্টেট আপডেট
+  />
+</div>
 
-            {tripType === "round-trip" ? (
+{tripType === "round-trip" && (
+  <div>
+    <label className="text-[10px] font-bold text-gray-400 uppercase ml-2">
+      Return
+    </label>
+    <input
+      name="returnDate"
+      type="date"
+      className="w-full p-4 bg-gray-50 border border-gray-100 rounded-2xl outline-none font-bold"
+      required
+      value={returnDate}
+      onChange={(e) => setReturnDate(e.target.value)}
+    />
+  </div>
+)}
+{/* Traveler & Class Section */}
+  <div className="relative flex-1">
+    <label className="block text-xs font-bold text-gray-400 uppercase mb-1">Traveler & Class</label>
+    <div 
+      onClick={() => setShowTravelerModal(!showTravelerModal)}
+      className="bg-white p-3 rounded-xl border border-gray-200 cursor-pointer hover:border-[#004d2c] transition-all"
+    >
+      <p className="text-sm font-black text-gray-800">
+        {travelers.adults + travelers.children + travelers.infants} Traveler
+      </p>
+      <p className="text-[10px] text-gray-400 font-bold uppercase">{cabinClass}</p>
+    </div>
+
+    {showTravelerModal && (
+      <div className="absolute top-full left-0 mt-2 w-72 bg-white shadow-2xl rounded-2xl p-5 z-50 border border-gray-100">
+        <div className="space-y-4 mb-6">
+          {[
+            { label: 'Adults', sub: '12 years and above', key: 'adults' },
+            { label: 'Children', sub: '2-11 years', key: 'children' },
+            { label: 'Infant', sub: 'Below 2 years', key: 'infants' }
+          ].map((type) => (
+            <div key={type.key} className="flex justify-between items-center">
               <div>
-                <label className="text-[10px] font-bold text-gray-400 uppercase ml-2">
-                  Return
-                </label>
-                <input
-                  name="returnDate"
-                  type="date"
-                  className="w-full p-4 bg-gray-50 border border-gray-100 rounded-2xl outline-none font-bold"
-                  required
-                />
+                <p className="text-sm font-bold text-gray-800">{type.label}</p>
+                <p className="text-[10px] text-gray-400">{type.sub}</p>
               </div>
-            ) : (
-              <div className="hidden lg:block"></div>
-            )}
-
-            <div>
-              <label className="text-[10px] font-bold text-gray-400 uppercase ml-2">
-                Adults
-              </label>
-              <select
-                name="adults"
-                className="w-full p-4 bg-gray-50 border border-gray-100 rounded-2xl font-bold outline-none"
-              >
-                {[1, 2, 3, 4, 5, 6].map((n) => (
-                  <option key={n} value={n}>
-                    {n} Adult
-                  </option>
-                ))}
-              </select>
+              <div className="flex items-center gap-3">
+                <button 
+                  type="button" // যোগ করা হয়েছে
+                  onClick={() => setTravelers({...travelers, [type.key]: Math.max(type.key === 'adults' ? 1 : 0, travelers[type.key] - 1)})}
+                  className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-gray-50"
+                >-</button>
+                <span className="font-bold text-sm w-4 text-center">{travelers[type.key]}</span>
+                <button 
+                  type="button" // যোগ করা হয়েছে
+                  onClick={() => setTravelers({...travelers, [type.key]: travelers[type.key] + 1})}
+                  className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-gray-50"
+                >+</button>
+              </div>
             </div>
+          ))}
+        </div>
 
-            <div>
-              <label className="text-[10px] font-bold text-gray-400 uppercase ml-2">
-                Children
+        {/* Class selection (Radio) */}
+        <div className="border-t pt-4 mb-6">
+          <p className="text-xs font-bold text-gray-400 uppercase mb-3">Class</p>
+          <div className="flex gap-4">
+            {['ECONOMY', 'BUSINESS'].map((cls) => (
+              <label key={cls} className="flex items-center gap-2 cursor-pointer">
+                <input 
+                  type="radio" 
+                  name="class" 
+                  checked={cabinClass === cls}
+                  onChange={() => setCabinClass(cls)} // এটি useEffect-কে ট্রিগার করবে
+                  className="accent-[#004d2c]"
+                />
+                <span className="text-sm font-bold text-gray-700 capitalize">{cls.toLowerCase()}</span>
               </label>
-              <select
-                name="childrenCount"
-                className="w-full p-4 bg-gray-50 border border-gray-100 rounded-2xl font-bold outline-none"
-              >
-                {[0, 1, 2, 3, 4].map((n) => (
-                  <option key={n} value={n}>
-                    {n} Child
-                  </option>
-                ))}
-              </select>
-            </div>
+            ))}
+          </div>
+        </div>
+
+        <button 
+          type="button" // ফর্ম সাবমিট হওয়া ঠেকাতে
+          onClick={() => setShowTravelerModal(false)}
+          className="w-full bg-[#004d2c] text-white py-3 rounded-xl font-bold text-sm hover:bg-black transition-all"
+        >
+          Done
+        </button>
+      </div>
+    )}
+  </div>
 
             <button
               type="submit"
