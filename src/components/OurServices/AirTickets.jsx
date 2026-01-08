@@ -499,13 +499,20 @@ const AirTickets = () => {
                       )
                       .join(" & ");
 
-                    const message = `Hello, I want to book this flight:
-Route: ${flightInfo}
-Final Price: ${finalPrice} ${flight.price.currency}
-Airlines: ${
-                      airlineNames[flight.validatingAirlineCodes[0]] ||
-                      flight.validatingAirlineCodes[0]
-                    }`;
+            const message = `
+Hello, I want to book this flight:
+*Route:* ${flightInfo}
+*Airlines:* ${airlineNames[flight.validatingAirlineCodes[0]] || flight.validatingAirlineCodes[0]}
+*Final Price:* ${finalPrice} ${flight.price.currency}
+
+*Passenger Details:*
+- Adults: ${travelers.adults}
+- Children: ${travelers.children}
+- Infants: ${travelers.infants}
+*Class:* ${cabinClass}
+
+*Travel Date:* ${departureDate}
+`.trim();
 
                     window.open(
                       `https://wa.me/8801631312524?text=${encodeURIComponent(
