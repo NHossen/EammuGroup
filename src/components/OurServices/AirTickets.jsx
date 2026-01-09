@@ -22,6 +22,9 @@ const airlineNames = {
   GF: "Gulf Air", J9: "Jazeera Airways", WY: "Oman Air", FZ: "flydubai",
   KU: "Kuwait Airways", RJ: "Royal Jordanian", AI: "Air India", UK: "Vistara",
   OD: "Batik Air", XY: "Flynas Air", SV: "Saudi Arabia", VS: "Virgin Atlantic", MS: "Egypt Air",
+  PC: "Pegasus Airlines",LO: "LOT Polish Airlines",CZ: "China Southern Airlines", GQ: "SKY express",
+  X1: "Hahnair", SG: "Spicejet" , CX: "Cathay Pacific Airways" , RA : "Nepal Airlines",
+  CA: "Air China",
 };
 
 const formatTime = (dateTimeString) => {
