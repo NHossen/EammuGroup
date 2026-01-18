@@ -18,15 +18,19 @@ const EammuTextile = () => {
     <div className="bg-slate-50 min-h-screen">
       {/* Helmet SEO Tags */}
       <Helmet>
-        <title>Bangladesh Textile & Garments Manufacturer | Eammu Textile – Fabric, Garments & Bulk Supply Bangladesh</title>
+        <title>Bangladesh Textile & Garments Manufacturer | Eammu Textile – Fabric, Garments & Bulk Supply</title>
         <meta
           name="description"
-          content="Eammu Textile: Leading Bangladesh Textile Company specializing in high-quality fabrics, RMG (Ready Made Garments), and sustainable export solutions. Wholesale fabric and garment supplier for UK, USA, UAE, and EU markets."
+          content="Eammu Textile: Leading Bangladesh Textile Company specializing in high-quality fabrics, RMG (Ready Made Garments), and sustainable export solutions. Wholesale fabric and garment supplier for UK, USA, UAE, EU markets."
         />
         <meta
           name="keywords"
           content="Eammu Textile Bangladesh, Bangladesh Textile Company, Fabric Exporter Bangladesh, Garment Manufacturer Bangladesh, RMG Bangladesh, Woven, Knitwear Bangladesh, Ready Made Garments Bangladesh, Sustainable Fashion Bangladesh, Bulk Clothing Supplier"
         />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.eammu.com/eammutextile" />
+
+        {/* Open Graph */}
         <meta property="og:title" content="Eammu Textile | Trusted Fabric & Garments Exporter" />
         <meta
           property="og:description"
@@ -38,6 +42,46 @@ const EammuTextile = () => {
           property="og:image"
           content="https://images.unsplash.com/photo-1581579185169-87926e6cdd5b?auto=format&fit=crop&w=1470&q=80"
         />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Eammu Textile | Trusted Fabric & Garments Exporter" />
+        <meta
+          name="twitter:description"
+          content="Eammu Textile from Bangladesh specializes in premium fabric and garment manufacturing, exporting worldwide to UK, USA, EU & UAE markets."
+        />
+        <meta
+          name="twitter:image"
+          content="https://images.unsplash.com/photo-1581579185169-87926e6cdd5b?auto=format&fit=crop&w=1470&q=80"
+        />
+
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Eammu Textile",
+            "url": "https://www.eammu.com/eammutextile",
+            "logo": "https://www.eammu.com/images/logo.png",
+            "sameAs": [
+              "https://www.facebook.com/eammu",
+              "https://www.linkedin.com/company/eammu",
+              "https://www.instagram.com/eammu"
+            ],
+            "description": "Eammu Textile: Leading Bangladesh Textile Company specializing in high-quality fabrics, RMG, and sustainable export solutions. Wholesale fabric and garment supplier for UK, USA, UAE, EU markets.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Dhaka",
+              "addressCountry": "Bangladesh"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer support",
+              "email": "info@eammu.com",
+              "telephone": "+8801631312524"
+            }
+          })}
+        </script>
       </Helmet>
 
       {/* Hero Section */}

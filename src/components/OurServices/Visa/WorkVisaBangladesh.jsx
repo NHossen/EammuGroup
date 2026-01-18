@@ -25,12 +25,124 @@ const WorkVisaBangladesh = () => {
 
   return (
     <div className="bg-white min-h-screen font-sans overflow-x-hidden">
-      <Helmet>
-        <title>Work Visa & Permit Services | Global Career Solutions - Eammu Holidays</title>
-        <meta name="description" content="Apply for skilled and semi-skilled work visas for UK, Canada, Europe, and Middle East. Professional work permit consultancy from Bangladesh with high success rates." />
-        <meta name="keywords" content="work visa from bangladesh, Canada work permit Dhaka, UK skilled worker visa, Middle East work visa agent, Romania work visa Bangladesh" />
-        <link rel="canonical" href="https://eammu.com/work-visa-application-from-bangladesh" />
-      </Helmet>
+     <Helmet>
+  {/* Primary SEO */}
+  <title>Work Visa & Permit Services from Bangladesh | Eammu Holidays</title>
+  <meta
+    name="description"
+    content="Apply for skilled and semi-skilled work visas from Bangladesh to UK, Canada, Europe, Middle East & more. Eammu Holidays provides professional work permit consultancy with high approval rates."
+  />
+  <meta
+    name="keywords"
+    content="work visa from Bangladesh, Canada work permit Dhaka, UK skilled worker visa, Middle East work visa, Romania work visa Bangladesh, Eammu Holidays work visa"
+  />
+  <link rel="canonical" href="https://eammu.com/work-visa-application-from-bangladesh" />
+
+  {/* Open Graph / Social SEO */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Work Visa & Permit Services from Bangladesh | Eammu Holidays" />
+  <meta
+    property="og:description"
+    content="Get expert guidance on work visas from Bangladesh to UK, Canada, Europe, and Middle East. Skilled worker visas, employer sponsorships, and professional permits handled by Eammu Holidays."
+  />
+  <meta property="og:url" content="https://eammu.com/work-visa-application-from-bangladesh" />
+  <meta property="og:site_name" content="Eammu Holidays" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Work Visa & Permit Services from Bangladesh | Eammu Holidays" />
+  <meta
+    name="twitter:description"
+    content="Professional work visa services from Bangladesh to UK, Canada, Europe, and Middle East. Skilled worker & semi-skilled visa support with high approval rates by Eammu Holidays."
+  />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" />
+
+  {/* Local SEO */}
+  <meta name="geo.region" content="BD" />
+  <meta name="geo.placename" content="Cumilla, Bangladesh" />
+  <meta name="geo.position" content="23.4607;91.1809" />
+  <meta name="ICBM" content="23.4607,91.1809" />
+
+  {/* JSON-LD Structured Data */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "Eammu Holidays",
+      "url": "https://eammu.com",
+      "logo": "https://eammu.com/images/logo.png",
+      "description": "Eammu Holidays provides professional work visa services from Bangladesh to UK, Canada, Europe, Middle East & more. Skilled worker, semi-skilled, and employer-sponsored visa guidance.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Gomoti Tower, 1st Floor, Cantonment",
+        "addressLocality": "Cumilla",
+        "addressCountry": "BD"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+8801631312524",
+          "contactType": "customer service",
+          "areaServed": "BD",
+          "email": "info@eammu.com"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+971507078334",
+          "contactType": "customer service",
+          "areaServed": "UAE",
+          "email": "dubai@eammu.com"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/eammu",
+        "https://www.instagram.com/eammu",
+        "https://www.linkedin.com/company/eammu",
+        "https://www.youtube.com/@eammu"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Work Visa Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Skilled Worker Visa",
+              "description": "Visa services for professionals in IT, Engineering, and Healthcare sectors."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Employer Sponsored Visa",
+              "description": "Visa support for candidates with job offers and employer sponsorship."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "SME & Blue Collar Work Visa",
+              "description": "Work permits for manufacturing, construction, and agriculture sectors."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Global Work Visa Consultation",
+              "description": "Guidance for visas to UK, Canada, Europe, Middle East & more."
+            }
+          }
+        ]
+      }
+    })}
+  </script>
+</Helmet>
+
 
       {/* 🏗️ Corporate Hero Section */}
       <section className="relative h-[75vh] flex items-center bg-[#004d2a] overflow-hidden">

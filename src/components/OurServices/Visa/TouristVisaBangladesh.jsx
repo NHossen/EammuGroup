@@ -25,11 +25,131 @@ const TouristVisaBangladesh = () => {
   return (
     <div className="bg-[#fcfcfc] min-h-screen font-sans">
       <Helmet>
-        <title>Tourist Visa Application from Bangladesh | Best Visa Agency Dhaka</title>
-        <meta name="description" content="Apply for a tourist visa from Bangladesh for USA, UK, Canada, and Europe. Get expert documentation support and guaranteed consultation from Eammu Holidays." />
-        <meta name="keywords" content="tourist visa from bangladesh, USA tourist visa Dhaka, Schengen visa from Bangladesh, Canada tourist visa agent Dhaka, Eammu Holidays tourist visa" />
-        <link rel="canonical" href="https://eammu.com/tourist-visa-application-from-bangladesh" />
-      </Helmet>
+  {/* Primary SEO */}
+  <title>Tourist Visa from Bangladesh | Best Visa Agency Dhaka & Cumilla – Eammu Holidays</title>
+  <meta
+    name="description"
+    content="Apply for a tourist visa from Bangladesh to USA, UK, Canada, Australia, and Schengen countries. Eammu Holidays provides expert documentation support, consultation, and high visa approval rates."
+  />
+  <meta
+    name="keywords"
+    content="tourist visa Bangladesh, USA tourist visa Dhaka, UK tourist visa Bangladesh, Canada visitor visa, Schengen visa Bangladesh, Eammu Holidays visa agency, travel agency Bangladesh"
+  />
+  <link rel="canonical" href="https://eammu.com/tourist-visa-application-from-bangladesh" />
+
+  {/* Open Graph / Social SEO */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tourist Visa from Bangladesh | Eammu Holidays" />
+  <meta
+    property="og:description"
+    content="Eammu Holidays helps Bangladeshi travelers get tourist visas for USA, UK, Canada, Australia, and Europe with hassle-free documentation and expert consultation."
+  />
+  <meta property="og:url" content="https://eammu.com/tourist-visa-application-from-bangladesh" />
+  <meta property="og:site_name" content="Eammu Holidays" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tourist Visa from Bangladesh | Eammu Holidays" />
+  <meta
+    name="twitter:description"
+    content="Get tourist visas to USA, UK, Canada, Australia, and Schengen countries from Bangladesh with Eammu Holidays. Expert guidance, high approval rates."
+  />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" />
+
+  {/* Local SEO */}
+  <meta name="geo.region" content="BD" />
+  <meta name="geo.placename" content="Cumilla, Bangladesh" />
+  <meta name="geo.position" content="23.4607;91.1809" />
+  <meta name="ICBM" content="23.4607,91.1809" />
+
+  {/* JSON-LD Structured Data */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "Eammu Holidays",
+      "url": "https://eammu.com",
+      "logo": "https://eammu.com/images/logo.png",
+      "description": "Eammu Holidays provides expert tourist visa services from Bangladesh to USA, UK, Canada, Australia, and Schengen countries. Comprehensive guidance for documentation, invitation letters, and visa approval.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Gomoti Tower, 1st Floor, Cantonment",
+        "addressLocality": "Cumilla",
+        "addressCountry": "BD"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+8801631312524",
+          "contactType": "customer service",
+          "areaServed": "BD",
+          "email": "info@eammu.com"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+971507078334",
+          "contactType": "customer service",
+          "areaServed": "UAE",
+          "email": "dubai@eammu.com"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/eammu",
+        "https://www.instagram.com/eammu",
+        "https://www.linkedin.com/company/eammu",
+        "https://www.youtube.com/@eammu"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Tourist Visa Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "USA Tourist Visa",
+              "description": "B1/B2 visa consultation and documentation support."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "UK Tourist Visa",
+              "description": "Visitor visa assistance and guidance for UK travel."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Canada Tourist Visa",
+              "description": "High approval rate visitor visa service for Canada."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Schengen Visa",
+              "description": "Single visa access to 27 European countries."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Australia Tourist Visa",
+              "description": "Assistance with Subclass 600 tourist visa applications."
+            }
+          }
+        ]
+      }
+    })}
+  </script>
+</Helmet>
+
 
       {/* 🚀 Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">

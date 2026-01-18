@@ -6,9 +6,73 @@ const ArmeniaVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Armenia Visa & Residency Permit Services | Eammu Immigration</title>
-        <meta name="description" content="Get expert assistance for Armenia E-Visa, Visitor Visa, and Temporary Residency Permits. Our main office in Yerevan provides on-ground support for all your needs." />
-      </Helmet>
+  <title>Armenia Visa & Residency Permit Services | Eammu Immigration</title>
+  <meta 
+    name="description" 
+    content="Get expert assistance for Armenia E-Visa, Visitor Visa, and Temporary Residency Permits. Eammu Holidays provides step-by-step support from our Yerevan office." 
+  />
+  <meta 
+    name="keywords" 
+    content="Armenia visa, Armenia E-Visa, Armenia tourist visa, Armenia residency permit, Armenia work visa, visa consultancy Armenia, Eammu Holidays Yerevan" 
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eammu.com/armenia-visa" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Armenia Visa & Residency Permit Services | Eammu Holidays" />
+  <meta 
+    property="og:description" 
+    content="Eammu Holidays provides professional Armenia visa consultancy, including E-Visa, visitor visa, and residency permits. Trusted support from Yerevan office." 
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eammu.com/armenia-visa" />
+  <meta 
+    property="og:image" 
+    content="https://www.eammu.com/images/armenia-visa-banner.jpg" 
+  />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Armenia Visa & Residency Permit Services | Eammu Holidays" />
+  <meta 
+    name="twitter:description" 
+    content="Professional Armenia visa assistance by Eammu Holidays. Apply for E-Visa, tourist visa, or residency permits hassle-free with our expert support." 
+  />
+  <meta 
+    name="twitter:image" 
+    content="https://www.eammu.com/images/armenia-visa-banner.jpg" 
+  />
+
+  {/* JSON-LD Structured Data */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "GovernmentService",
+      "name": "Armenia Visa & Residency Permit Services",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Eammu Holidays",
+        "url": "https://eammu.com/armenia-visa",
+        "logo": "https://www.eammu.com/images/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/eammu",
+          "https://www.instagram.com/eammu",
+          "https://www.linkedin.com/company/eammu"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "telephone": "+8801701699743",
+          "email": "info@eammu.com"
+        }
+      },
+      "serviceType": "Visa Consultancy & Residency Permit",
+      "areaServed": "AM",
+      "description": "Step-by-step assistance for Armenia E-Visa, Visitor Visa, and Temporary Residency Permits by Eammu Holidays. Trusted consultancy for travelers, students, and workers."
+    })}
+  </script>
+</Helmet>
+
 
       <main className="bg-white min-h-screen font-sans">
         

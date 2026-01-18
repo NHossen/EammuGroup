@@ -43,28 +43,85 @@ const TIICPage = () => {
 
   return (
     <>
-      <Helmet>
-        <title>
-          TIIC IELTS Coaching in Cumilla | Study Abroad Bangladesh & Dubai | Eammu
-          Holidays
-        </title>
+     <Helmet>
+  {/* Primary SEO */}
+  <title>
+    TIIC IELTS Coaching in Cumilla | Study Abroad Bangladesh & Dubai – Eammu Holidays
+  </title>
 
-        <meta
-          name="description"
-          content="Target IELTS & Immigration Center (TIIC) is a premium IELTS, PTE & Spoken English academy in Cumilla. Study abroad consultancy for Bangladesh & Dubai under Eammu Holidays."
-        />
+  <meta
+    name="description"
+    content="Target IELTS & Immigration Center (TIIC) offers premium IELTS, PTE & Spoken English coaching in Cumilla, Bangladesh. Study abroad consultancy for students from Bangladesh & Dubai under Eammu Holidays."
+  />
 
-        <meta
-          name="keywords"
-          content="IELTS coaching Cumilla, TIIC IELTS, IELTS academy Bangladesh, Dubai study visa, PTE training Cumilla, Eammu Holidays academy"
-        />
+  <meta
+    name="keywords"
+    content="IELTS coaching Cumilla, TIIC IELTS, IELTS academy Bangladesh, Dubai study visa, PTE training Cumilla, English speaking courses, study abroad consultancy, Eammu Holidays academy"
+  />
 
-        <link rel="canonical" href="https://eammu.com/tiic-academy" />
+  <link rel="canonical" href="https://eammu.com/target-ielts-and-immigration-center" />
 
-        <script type="application/ld+json">
-          {JSON.stringify(schemaData)}
-        </script>
-      </Helmet>
+  {/* Open Graph / Social */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="TIIC IELTS Coaching & Study Abroad Consultancy – Eammu Holidays" />
+  <meta
+    property="og:description"
+    content="Enroll at Target IELTS & Immigration Center (TIIC) for IELTS, PTE & English courses. Expert study abroad guidance for students from Bangladesh & Dubai."
+  />
+  <meta property="og:url" content="https://eammu.com/target-ielts-and-immigration-center" />
+  <meta property="og:site_name" content="Eammu Holidays" />
+  <meta property="og:image" content="https://eammu.com/seo/tiic-ielts.jpg" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TIIC IELTS Coaching & Study Abroad – Eammu Holidays" />
+  <meta
+    name="twitter:description"
+    content="Target IELTS & Immigration Center (TIIC) in Cumilla provides IELTS, PTE & Spoken English coaching with expert study abroad consultancy for Bangladesh & Dubai students."
+  />
+  <meta name="twitter:image" content="https://eammu.com/seo/tiic-ielts.jpg" />
+
+  {/* Geo & Local SEO */}
+  <meta name="geo.region" content="BD" />
+  <meta name="geo.placename" content="Cumilla, Bangladesh" />
+  <meta name="geo.position" content="23.4607;91.1809" />
+  <meta name="ICBM" content="23.4607,91.1809" />
+
+  {/* Trust & Indexing */}
+  <meta name="author" content="Eammu Holidays" />
+  <meta name="publisher" content="Eammu Holidays" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+
+  {/* JSON-LD Structured Data */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Target IELTS & Immigration Center (TIIC)",
+      "url": "https://eammu.com/target-ielts-and-immigration-center",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Eammu Holidays",
+        "url": "https://eammu.com"
+      },
+      "areaServed": ["Bangladesh", "United Arab Emirates"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Gomoti Tower, Cumilla",
+        "addressLocality": "Cumilla",
+        "addressCountry": "BD"
+      },
+      "description": "TIIC is a leading IELTS, PTE & English coaching academy in Cumilla, Bangladesh, providing study abroad consultancy under Eammu Holidays.",
+      "sameAs": [
+        "https://www.facebook.com/eammutourism",
+        "https://www.instagram.com/eammutours",
+        "https://www.linkedin.com/company/eammu",
+        "https://www.youtube.com/@eammutour"
+      ]
+    })}
+  </script>
+</Helmet>
+
 
       <main className="bg-white text-slate-900 overflow-hidden">
         {/* HERO */}

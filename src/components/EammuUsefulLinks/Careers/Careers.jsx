@@ -13,11 +13,46 @@ const Careers = () => {
     { title: "Web Developer / IT", location: "Global Team", type: "Contract" },
   ];
 
+  // JSON-LD structured data for Careers/Job postings
+  const jobSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Eammu Holidays",
+    "url": "https://eammu.com",
+    "logo": "https://eammu.com/images/logo.png",
+    "sameAs": [
+      "https://www.facebook.com/eammu",
+      "https://www.instagram.com/eammu",
+      "https://www.linkedin.com/company/eammu",
+      "https://www.youtube.com/@Eammutour"
+    ],
+    "department": {
+      "@type": "Organization",
+      "name": "Human Resources",
+      "employee": vacancies.map((job) => ({
+        "@type": "Person",
+        "jobTitle": job.title,
+        "worksFor": { "@type": "Organization", "name": "Eammu Holidays" },
+        "workLocation": job.location,
+        "employmentType": job.type
+      }))
+    }
+  };
+
   return (
     <div className="bg-white min-h-screen font-sans selection:bg-green-100 selection:text-[#005a31]">
       <Helmet>
-        <title>Careers | Join Eammu Holidays Global Team</title>
-        <meta name="description" content="Explore exciting career opportunities at Eammu. Join our growing team in immigration, marketing, and IT." />
+        <title>Careers at Eammu Holidays | Jobs in Immigration & Travel</title>
+        <meta
+          name="description"
+          content="Explore exciting career opportunities at Eammu Holidays. Join our growing team in immigration, travel, marketing, and IT. Apply for full-time, part-time, and freelance positions."
+        />
+        <meta
+          name="keywords"
+          content="Eammu Holidays careers, travel agency jobs Bangladesh, immigration consultant job, visa officer job, content creator job, digital marketing job, web developer job"
+        />
+        <link rel="canonical" href="https://eammu.com/careers" />
+        <script type="application/ld+json">{JSON.stringify(jobSchema)}</script>
       </Helmet>
 
       {/* --- Hero Banner Section --- */}
@@ -46,13 +81,12 @@ const Careers = () => {
       </section>
 
       <main className="max-w-7xl mx-auto px-6 py-20">
-        
         {/* --- Why Join Us Section --- */}
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24 items-center">
           <div>
             <h2 className="text-3xl font-bold text-[#005a31] mb-6">Why Join Our Mission?</h2>
             <p className="text-gray-600 leading-relaxed mb-6">
-              At Eammu, we strongly believe in diversity, equal opportunity, and empowering youth. We don't just offer jobs; we provide a platform where your energy meets global opportunities. 
+              At Eammu, we strongly believe in diversity, equal opportunity, and empowering youth. We don't just offer jobs; we provide a platform where your energy meets global opportunities.
             </p>
             <div className="space-y-4">
               {['Global Culture', 'Flexible Working', 'Growth Opportunities'].map((item) => (

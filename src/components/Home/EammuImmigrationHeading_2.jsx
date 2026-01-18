@@ -9,7 +9,7 @@ const EammuImmigrationHeading_2 = () => {
       {/* SEO Helmet (Unchanged as requested) */}
       <Helmet>
         <title>
-          Eammu Immigration Services Cumilla | Study Abroad, Visa & Cheap Air Tickets Experts
+          Eammu Holidays Cumilla | Study Abroad, Visa & Cheap Air Tickets Experts
         </title>
         <meta
           name="description"

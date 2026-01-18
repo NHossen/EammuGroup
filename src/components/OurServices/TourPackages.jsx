@@ -223,21 +223,103 @@ const TourPackages = () => {
   return (
     <HelmetProvider>
       <>
-        <Helmet>
-          <title>Tour Packages From Bangladesh | Cheapest Tour Packages | Tourism Company Bangladesh </title>
-          <meta
-            name="description"
-            content="Explore popular International and Domestic Tour Packages offered by Eammu Holidays. From Dubai and Japan to Cox's Bazar and Sundarbans, discover top destinations with Eammu Holidays."
-          />
-          <meta
-            name="keywords"
-            content="International Tour Packages, Domestic tours Bangladesh, Travel packages, Eammu Tour Packages, Dubai Tour Packages, Japan Tour Packages, Cox's Bazar, Sundarbans, Bangladesh Tour Packages , Cheapest Tour Packages,Best international tour packages, Eammu Tour Packages, Eammu Holidays, cheap Dubai tour packages from Bangladesh, Armenia holiday deals, Japan group tours 2026, luxury Bangladesh tour packages, Cox's Bazar hotel deals"
-          />
-          <meta name="author" content="Eammu Holidays" />
+       <Helmet>
+  {/* Primary SEO */}
+  <title>
+    Tour Packages Bangladesh & International | Domestic & Global Tours – Eammu Holidays
+  </title>
 
-          {/* JSON-LD Structured Data */}
-          <script type="application/ld+json">{JSON.stringify(jsonLD)}</script>
-        </Helmet>
+  <meta
+    name="description"
+    content="Explore exclusive tour packages with Eammu Holidays. Domestic trips across Bangladesh and international holidays to USA, UK, Europe, and Asia. Customized itineraries, luxury group tours, and family-friendly travel deals."
+  />
+
+  <meta
+    name="keywords"
+    content="Domestic tour packages Bangladesh, International tour packages, Bangladesh travel agency, family tours, honeymoon packages, luxury group tours, global travel agency, Eammu Holidays tours, holiday deals"
+  />
+
+  <link rel="canonical" href="https://eammu.com/tour-packages" />
+
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tour Packages Bangladesh & International – Eammu Holidays" />
+  <meta
+    property="og:description"
+    content="Book domestic and international tour packages with Eammu Holidays. Luxury, family-friendly, and group tours across Bangladesh, Europe, USA, and Asia."
+  />
+  <meta property="og:url" content="https://eammu.com/tour-packages" />
+  <meta property="og:site_name" content="Eammu Holidays" />
+  <meta property="og:image" content="https://eammu.com/seo/tour-packages.jpg" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Domestic & International Tour Packages | Eammu Holidays" />
+  <meta
+    name="twitter:description"
+    content="Eammu Holidays offers customized domestic and international tours. Explore USA, UK, Europe, and Bangladesh packages with ease."
+  />
+  <meta name="twitter:image" content="https://eammu.com/seo/tour-packages.jpg" />
+
+  {/* Geo / Local SEO */}
+  <meta name="geo.region" content="BD" />
+  <meta name="geo.placename" content="Cumilla, Bangladesh" />
+  <meta name="geo.position" content="23.4607;91.1809" />
+  <meta name="ICBM" content="23.4607,91.1809" />
+
+  {/* Trust & Indexing */}
+  <meta name="author" content="Eammu Holidays" />
+  <meta name="publisher" content="Eammu Holidays" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+
+  {/* JSON-LD Structured Data */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "TouristTrip",
+      "name": "Eammu Tour Packages",
+      "url": "https://eammu.com/tour-packages",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Eammu Holidays",
+        "url": "https://eammu.com",
+        "telephone": "+8801631312524",
+        "email": "info@eammu.com",
+        "sameAs": [
+          "https://www.facebook.com/eammu",
+          "https://www.instagram.com/eammu",
+          "https://www.linkedin.com/company/eammu",
+          "https://www.youtube.com/@eammu"
+        ]
+      },
+      "touristType": ["Family", "Group", "Honeymoon"],
+      "areaServed": ["Bangladesh", "United Arab Emirates", "USA", "UK", "Europe", "Asia"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Domestic & International Tour Packages",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "TouristTrip",
+              "name": "Domestic Tour Package",
+              "description": "Explore Bangladesh with customized trips for families, friends, and couples."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "TouristTrip",
+              "name": "International Tour Package",
+              "description": "Travel to USA, UK, Europe, and Asia with luxury, group, and customized itineraries."
+            }
+          }
+        ]
+      }
+    })}
+  </script>
+</Helmet>
+
 
         <div className="px-4 container mx-auto py-10">
           <h1 className="text-4xl font-bold text-[#005a31] mb-10 text-center">

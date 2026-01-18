@@ -39,31 +39,65 @@ const Offer = () => {
   return (
     <div className="px-4 container mx-auto py-10">
       <Helmet>
-        {/* Basic SEO */}
-        <title>Travel Agency Dhaka | Cheapest Flight and Hotel - Tourist Visa and Student Visa</title>
-        <meta
-          name="description"
-          content="Eammu offers discounted Dubai e-visas, Canada tourist visas, Europe student & work visas. Best travel deals for Armenia and Bangladesh tour packages from Dhaka."
-        />
-        <meta
-          name="keywords"
-          content="Eammu, Dubai visa discount, Canada tourist visa Bangladesh, Europe student visa processing, Europe work visa for Bangladeshis, Armenia tour package from Dhaka, Bangladesh tour discounts, cheap Dubai visit visa, Schengen visa assistance, international travel deals, best travel agency in Bangladesh, Yerevan tour package, student visa Europe 2025, work permit Europe 2025"
-        />
-        <link rel="canonical" href="https://eammu.com/offers" />
-        <meta name="robots" content="index, follow" />
+         {/* Primary SEO */}
+  <title>
+    Travel Deals & Special Offers | Cheap Flights & Tour Packages – Eammu
+  </title>
 
-        {/* Open Graph */}
-        <meta property="og:title" content="Eammu Offers - Tourist, Student & Work Visa Discounts" />
-        <meta property="og:description" content="Check the latest Eammu offers including discounts on tourist visas, student visas, and travel packages." />
-        <meta property="og:image" content="https://eammu.com/eammuicon.jpg" />
-        <meta property="og:url" content="https://eammu.com/offers" />
-        <meta property="og:type" content="website" />
+  <meta
+    name="description"
+    content="Discover exclusive travel deals with Eammu. Special offers on cheap air tickets, tour packages, hotel deals, and visa services from an IATA approved global travel agency."
+  />
 
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Eammu Offers - Tourist, Student & Work Visa Discounts" />
-        <meta name="twitter:description" content="Check out Eammu’s latest offers for tourist visas, student visas, and travel packages. Book today!" />
-        <meta name="twitter:image" content="https://eammu.com/eammuicon.jpg" />
+  <meta
+    name="keywords"
+    content="
+    travel deals,
+    special travel offers,
+    cheap flight deals,
+    discount tour packages,
+    holiday offers worldwide,
+    cheap air tickets offer,
+    last minute travel deals,
+    travel agency discounts,
+    flight and hotel deals,
+    iata approved travel agency offers
+    "
+  />
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://eammu.com/offers" />
+
+  {/* Geo Targeting */}
+  <meta name="geo.region" content="BD" />
+  <meta name="geo.placename" content="Cumilla, Bangladesh" />
+  <meta name="geo.position" content="23.4607;91.1809" />
+  <meta name="ICBM" content="23.4607, 91.1809" />
+
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Special Travel Offers & Deals | Eammu Group" />
+  <meta
+    property="og:description"
+    content="Limited-time offers on flights, tours, and visa services. Grab exclusive travel deals with Eammu – trusted, global, IATA approved."
+  />
+  <meta property="og:url" content="https://eammu.com/offers" />
+  <meta property="og:site_name" content="Eammu Group" />
+  <meta property="og:image" content="https://eammu.com/seo/travel-offers.jpg" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cheap Travel Deals & Offers | Eammu" />
+  <meta
+    name="twitter:description"
+    content="Save more on flights and tour packages. Check Eammu’s latest travel offers today."
+  />
+  <meta name="twitter:image" content="https://eammu.com/seo/travel-offers.jpg" />
+
+  {/* Trust & Indexing */}
+  <meta name="author" content="Eammu Group" />
+  <meta name="publisher" content="Eammu Group" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
 
         {/* Structured Data */}
       <script type="application/ld+json">

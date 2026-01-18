@@ -61,27 +61,100 @@ const Testimonials = () => {
   return (
     <section className="px-4 container mx-auto py-14">
       {/* SEO */}
-      <Helmet>
-        <title>Best Travel Agency Bangladesh - Visa | Flight | Hotel | Eammu Holidays</title>
-        <meta
-          name="description"
-          content="Trusted visa consultancy in Bangladesh with proven success in student Visa , work Visa, and tourist visas.Read real client reviews of Eammu Holidays."
-        />
-        <meta
-          name="keywords"
-          content="Eammu Holidays, best travel agency in Bangladesh, trusted travel agency Bangladesh, reliable travel agency Bangladesh, student visa consultant in Dhaka, best student visa consultant in Dhaka, education consultant near Dhaka, student visa processing in Bangladesh, how to apply student visa from Bangladesh, travel agency for Europe visa Bangladesh, visa appointment service in Bangladesh, Albania visa processing Bangladesh,Best Travel Agency Dubai , Best Travel India,top travel dubai"
-        />
-        <meta property="og:title" content="Eammu Holidays Reviews" />
-        <meta
-          property="og:description"
-          content="Discover why thousands trust Eammu Holidays. Real customer reviews, real visa success stories."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://eammu.com/testimonials" />
-        <script type="application/ld+json">
-          {JSON.stringify(reviewSchema)}
-        </script>
-      </Helmet>
+     <Helmet>
+  {/* Primary SEO */}
+  <title>Customer Reviews & Testimonials | Best Travel Agency Bangladesh - Eammu Holidays</title>
+  <meta
+    name="description"
+    content="Read real client testimonials of Eammu Holidays, Bangladesh's trusted visa and travel consultancy. Student, work, and tourist visa success stories with verified client reviews."
+  />
+  <meta
+    name="keywords"
+    content="Eammu Holidays reviews, best travel agency in Bangladesh, visa consultancy Bangladesh, student visa reviews Dhaka, work visa testimonials, tourist visa feedback, top travel agency Bangladesh, reliable visa consultant"
+  />
+  <link rel="canonical" href="https://eammu.com/testimonials" />
+
+  {/* Open Graph / Social SEO */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Customer Reviews & Testimonials | Eammu Holidays" />
+  <meta
+    property="og:description"
+    content="Discover why thousands trust Eammu Holidays. Real testimonials from students, professionals, and travelers who got their visas successfully processed."
+  />
+  <meta property="og:url" content="https://eammu.com/testimonials" />
+  <meta property="og:site_name" content="Eammu Holidays" />
+  <meta property="og:image" content="https://eammu.com/images/logo.png" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Customer Reviews & Testimonials | Eammu Holidays" />
+  <meta
+    name="twitter:description"
+    content="Real client reviews of Eammu Holidays Bangladesh – trusted visa and travel agency. See how we helped students, professionals & travelers globally."
+  />
+  <meta name="twitter:image" content="https://eammu.com/images/logo.png" />
+
+  {/* Local SEO */}
+  <meta name="geo.region" content="BD" />
+  <meta name="geo.placename" content="Cumilla, Bangladesh" />
+  <meta name="geo.position" content="23.4607;91.1809" />
+  <meta name="ICBM" content="23.4607,91.1809" />
+
+  {/* JSON-LD Structured Data */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Eammu Holidays",
+      "url": "https://eammu.com",
+      "logo": "https://eammu.com/images/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/eammu",
+        "https://www.instagram.com/eammu",
+        "https://www.linkedin.com/company/eammu",
+        "https://www.youtube.com/@Eammutour"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": (reviews.reduce((acc, r) => acc + r.rating, 0) / reviews.length).toFixed(1),
+        "reviewCount": reviews.length
+      },
+      "review": reviews.map(r => ({
+        "@type": "Review",
+        "author": { "@type": "Person", "name": r.name },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": r.rating,
+          "bestRating": "5"
+        },
+        "reviewBody": r.review
+      })),
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Gomoti Tower, 1st Floor, Cantonment",
+        "addressLocality": "Cumilla",
+        "addressCountry": "BD"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+8801631312524",
+          "contactType": "customer service",
+          "areaServed": "BD",
+          "email": "info@eammu.com"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+971507078334",
+          "contactType": "customer service",
+          "areaServed": "UAE",
+          "email": "dubai@eammu.com"
+        }
+      ]
+    })}
+  </script>
+</Helmet>
+
 
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto mb-12">

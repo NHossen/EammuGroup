@@ -5,10 +5,74 @@ import { CheckCircle, ClipboardList, Send, Globe, ShieldCheck, FileText, Buildin
 const DubaiVisa = () => {
   return (
     <>
-      <Helmet>
-        <title>Dubai (UAE) Visa Services | Eammu Immigration</title>
-        <meta name="description" content="Apply for Dubai 30-days or 60-days Tourist Visa. Get expert assistance for UAE Golden Visa and Freelance Permits with Eammu Holidays." />
-      </Helmet>
+   <Helmet>
+  <title>Dubai Visa & Immigration Services | Eammu Holidays</title>
+  <meta 
+    name="description" 
+    content="Get professional assistance for Dubai tourist visa, business visa, work permit, and transit visa. Eammu Holidays provides expert consultancy for applicants from Bangladesh, UAE, and beyond." 
+  />
+  <meta 
+    name="keywords" 
+    content="Dubai visa, Dubai tourist visa, Dubai business visa, Dubai work permit, Dubai transit visa, Eammu Holidays, visa consultancy Dubai" 
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eammu.com/dubai-visa" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Dubai Visa & Immigration Services | Eammu Holidays" />
+  <meta 
+    property="og:description" 
+    content="Eammu Holidays offers complete guidance for Dubai tourist, business, work, and transit visas. Trusted consultancy for applicants from Bangladesh, UAE, and worldwide." 
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eammu.com/dubai-visa" />
+  <meta 
+    property="og:image" 
+    content="https://www.eammu.com/images/dubai-visa-banner.jpg" 
+  />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dubai Visa & Immigration Services | Eammu Holidays" />
+  <meta 
+    name="twitter:description" 
+    content="Expert Dubai visa consultancy by Eammu Holidays. Apply for tourist, business, work, or transit visas hassle-free with professional support." 
+  />
+  <meta 
+    name="twitter:image" 
+    content="https://www.eammu.com/images/dubai-visa-banner.jpg" 
+  />
+
+  {/* JSON-LD Structured Data */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "GovernmentService",
+      "name": "Dubai Visa & Immigration Services",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Eammu Holidays",
+        "url": "https://eammu.com/dubai-visa",
+        "logo": "https://www.eammu.com/images/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/eammu",
+          "https://www.instagram.com/eammu",
+          "https://www.linkedin.com/company/eammu"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "telephone": "+8801701699743",
+          "email": "info@eammu.com"
+        }
+      },
+      "serviceType": "Visa Consultancy & Immigration Services",
+      "areaServed": "AE",
+      "description": "Step-by-step guidance for Dubai tourist visa, business visa, work permit, and transit visa by Eammu Holidays. Trusted consultancy for applicants from Bangladesh, UAE, and other countries."
+    })}
+  </script>
+</Helmet>
+
 
       <main className="bg-white min-h-screen font-sans">
         

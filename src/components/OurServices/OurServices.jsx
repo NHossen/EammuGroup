@@ -57,11 +57,88 @@ const OurServices = () => {
   return (
     <div className="min-h-screen bg-[#fcfcfc] pb-24 font-sans">
       <Helmet>
-        <title>Our Services | Best Travel Agency Dhaka | Visa, Flight & Hotel</title>
-        <meta name="description" content="Eammu Holidays offers expert Visa processing, cheap Air ticketing, USA Interview preparation, and International Tour packages from Bangladesh and UAE." />
-        <meta name="keywords" content="Travel Agency Dhaka, Visa Processing Bangladesh, Cheap Air Tickets, USA Visa Interview Prep, Study Abroad Consultant" />
-        <link rel="canonical" href="https://eammu.com/ourServices" />
-      </Helmet>
+  {/* Primary SEO */}
+  <title>
+    Our Services | Govt & IATA Approved Global Travel Agency | Visa, Flights & Tours – Eammu
+  </title>
+
+  <meta
+    name="description"
+    content="Eammu is a Govt & IATA approved global travel agency offering visa services, air tickets, tour packages, USA visa interview preparation, and immigration support across Bangladesh, UAE, Armenia, and Georgia."
+  />
+
+  <meta
+    name="keywords"
+    content="
+    global travel agency bangladesh,
+    international tourism company,
+    visa services worldwide,
+    iata approved travel agency,
+    govt approved travel agency,
+    visa processing bangladesh,
+    travel agency dubai,
+    tour operator armenia,
+    travel company georgia,
+    cheap international air tickets,
+    usa visa interview preparation,
+    study abroad consultant,
+    umrah and holiday packages
+    "
+  />
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://eammu.com/our-services" />
+
+  {/* Geo + Local SEO */}
+  <meta name="geo.region" content="BD" />
+  <meta name="geo.placename" content="Cumilla, Bangladesh" />
+  <meta name="geo.position" content="23.4607;91.1809" />
+  <meta name="ICBM" content="23.4607, 91.1809" />
+
+  {/* Open Graph (Facebook / WhatsApp) */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Global Visa & Travel Services | Eammu Group" />
+  <meta
+    property="og:description"
+    content="Visa processing, air ticketing, tour packages & immigration consultancy by Govt & IATA approved Eammu Group. Serving clients worldwide."
+  />
+  <meta property="og:url" content="https://eammu.com/our-services" />
+  <meta property="og:site_name" content="Eammu Group" />
+  <meta property="og:image" content="https://eammu.com/seo/our-services.jpg" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Eammu | Global Travel & Tourism Company" />
+  <meta
+    name="twitter:description"
+    content="Worldwide visa services, flights, tour packages & immigration solutions by Eammu Group."
+  />
+  <meta name="twitter:image" content="https://eammu.com/seo/our-services.jpg" />
+
+  {/* Trust & Brand Authority */}
+  <meta name="author" content="Eammu Group" />
+  <meta name="publisher" content="Eammu Group" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+
+  <script type="application/ld+json">
+{`
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Eammu Travel & Visa Services",
+  "itemListElement": [
+    { "@type": "Service", "name": "Visa Processing" },
+    { "@type": "Service", "name": "Air Ticketing" },
+    { "@type": "Service", "name": "Tour Packages" },
+    { "@type": "Service", "name": "USA Visa Interview Preparation" },
+    { "@type": "Service", "name": "IELTS & Immigration Consultancy" }
+  ]
+}
+`}
+</script>
+
+</Helmet>
+
 
       {/* 🚀 Hero Section with Background Image */}
       <section className="relative py-28 text-white overflow-hidden">

@@ -200,7 +200,7 @@ const VisaServices = () => {
     "name": "Visa Services",
     "provider": {
       "@type": "Organization",
-      "name": "Eammu Immigration Services",
+      "name": "Eammu Holidays",
       "url": "https://eammu.com",
       "logo": "https://eammu.com/images/logo.png",
       "sameAs": [
@@ -223,24 +223,88 @@ const VisaServices = () => {
   return (
     <div className="px-4 container mx-auto py-10">
       <Helmet>
-        <title>Visa Services | Eammu Holidays – Best Travel Agency in Bangladesh And Worldwide</title>
-        <meta
-          name="description"
-          content="Eammu Holidays provides professional Tourist Visa, Student Visa, and Work visa services across USA, UK, Europe, Canada, Japan, UAE, Malaysia,China ,Dubai ,Albania ,Kosovo and more. Hajj & Umrah packages available. Apply online now."
-        />
-        <meta name="keywords" content="Best visa service travel agency, Eammu Immigration, Eammu Holidays, USA tourist visa from Bangladesh, UK student visa consultant, Canada visitor visa processing, Europe work permit 2026, Schengen visa experts Dubai, Japan tourist visa deals, Malaysia eVisa service, UAE 60 days visit visa, Hajj and Umrah packages 2026, affordable immigration services, travel agency near me, top travel agency Dubai, best travel agency India" />
-        <meta name="author" content="Eammu Holidays" />
-        <meta property="og:title" content="Visa Services | Eammu Holidays" />
-        <meta property="og:description" content="visa processing for Tourist, Student, and Work visas with Eammu Holidays. Serving USA, UK, Europe, Canada, Japan, UAE, and more." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://eammu.com/visa-services" />
-        <meta property="og:image" content="https://visadone.com/wp-content/uploads/2023/02/USA-VISA.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Visa Services | Eammu Holidays" />
-        <meta name="twitter:description" content="Professional visa services by Eammu Holidays for Tourist, Student, and Work visas worldwide." />
-        <meta name="twitter:image" content="https://visadone.com/wp-content/uploads/2023/02/USA-VISA.png" />
-        <script type="application/ld+json">{JSON.stringify(jsonLD)}</script>
-      </Helmet>
+  {/* Primary SEO */}
+  <title>
+    Visa Services Worldwide | Tourist, Student & Work Visas – Eammu Holidays
+  </title>
+
+  <meta
+    name="description"
+    content="Eammu Holidays provides expert visa services for Tourist, Student, and Work visas across USA, UK, Europe, Canada, Australia, Japan, UAE, Malaysia, and more. Hajj & Umrah packages available. Apply online now!"
+  />
+
+  <meta
+    name="keywords"
+    content="Visa services Bangladesh, USA tourist visa, UK student visa, Canada visitor visa, Europe work visa, Australia student visa, Japan tourist visa, UAE visa, Malaysia eVisa, Hajj & Umrah packages, Eammu Immigration Services, Travel agency Bangladesh, Best visa consultancy worldwide"
+  />
+
+  <link rel="canonical" href="https://eammu.com/visa-services" />
+
+  {/* Open Graph / Social SEO */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Visa Services Worldwide – Eammu Holidays" />
+  <meta
+    property="og:description"
+    content="Professional visa services by Eammu Holidays for Tourist, Student, and Work visas across 25+ countries. Fast, reliable, and approved by IATA."
+  />
+  <meta property="og:url" content="https://eammu.com/visa-services" />
+  <meta property="og:site_name" content="Eammu Holidays" />
+  <meta property="og:image" content="https://visadone.com/wp-content/uploads/2023/02/USA-VISA.png" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Visa Services Worldwide – Eammu Holidays" />
+  <meta
+    name="twitter:description"
+    content="Book Tourist, Student & Work visas easily with Eammu Holidays. Serving USA, UK, Europe, Canada, Australia, Japan, UAE, Malaysia, and more."
+  />
+  <meta name="twitter:image" content="https://visadone.com/wp-content/uploads/2023/02/USA-VISA.png" />
+
+  {/* Geo / Local SEO */}
+  <meta name="geo.region" content="BD" />
+  <meta name="geo.placename" content="Cumilla, Bangladesh" />
+  <meta name="geo.position" content="23.4607;91.1809" />
+  <meta name="ICBM" content="23.4607,91.1809" />
+
+  {/* Trust & Indexing */}
+  <meta name="author" content="Eammu Holidays" />
+  <meta name="publisher" content="Eammu Holidays" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+
+  {/* JSON-LD Structured Data */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "Eammu Holidays",
+      "url": "https://eammu.com",
+      "logo": "https://eammu.com/images/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/eammu",
+        "https://www.instagram.com/eammu",
+        "https://www.linkedin.com/company/eammu",
+        "https://www.youtube.com/@eammu"
+      ],
+      "telephone": "+8801631312524",
+      "email": "info@eammu.com",
+      "areaServed": countries.map(c => ({ "@type": "Country", "name": c.name })),
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Visa Services Catalog",
+        "itemListElement": countries.map(c => ({
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": `${c.name} Visa Services`,
+            "description": c.description
+          }
+        }))
+      },
+      "description": "Eammu Holidays provides professional Tourist, Student, and Work visa services across 25+ countries including USA, UK, Europe, Canada, Australia, UAE, Japan, Malaysia, China, and more. Hajj & Umrah packages also available."
+    })}
+  </script>
+</Helmet>
+
 
       {/* Header */}
       <header className="text-center mb-10">

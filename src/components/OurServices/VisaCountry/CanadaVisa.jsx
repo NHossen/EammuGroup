@@ -5,10 +5,74 @@ import { CheckCircle, ClipboardList, Send, Globe, ShieldCheck, FileText, MapPin,
 const CanadaVisa = () => {
   return (
     <>
-      <Helmet>
-        <title>Canada Visa Requirements & Application Procedure | Eammu Immigration</title>
-        <meta name="description" content="Official guide for Canada Visitor Visa and Study Permit. Learn about the IRCC application procedure and mandatory documents with Eammu Immigration." />
-      </Helmet>
+    <Helmet>
+  <title>Canada Visa & Immigration Services | Eammu Holidays</title>
+  <meta 
+    name="description" 
+    content="Get expert assistance for Canada tourist visa, student visa, work permit, and permanent residency. Eammu Holidays provides step-by-step guidance for applicants from Bangladesh and UAE." 
+  />
+  <meta 
+    name="keywords" 
+    content="Canada visa, Canada tourist visa, Canada student visa, Canada work permit, Canada PR, visa consultancy Canada, Eammu Holidays" 
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eammu.com/canada-visa" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Canada Visa & Immigration Services | Eammu Holidays" />
+  <meta 
+    property="og:description" 
+    content="Eammu Holidays provides professional Canada visa consultancy including tourist, student, work visas, and permanent residency. Trusted support for applicants from Bangladesh and UAE." 
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eammu.com/canada-visa" />
+  <meta 
+    property="og:image" 
+    content="https://www.eammu.com/images/canada-visa-banner.jpg" 
+  />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Canada Visa & Immigration Services | Eammu Holidays" />
+  <meta 
+    name="twitter:description" 
+    content="Professional Canada visa support by Eammu Holidays. Apply for tourist, student, work visas or permanent residency hassle-free with our expert guidance." 
+  />
+  <meta 
+    name="twitter:image" 
+    content="https://www.eammu.com/images/canada-visa-banner.jpg" 
+  />
+
+  {/* JSON-LD Structured Data */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "GovernmentService",
+      "name": "Canada Visa & Immigration Services",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Eammu Holidays",
+        "url": "https://eammu.com/canada-visa",
+        "logo": "https://www.eammu.com/images/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/eammu",
+          "https://www.instagram.com/eammu",
+          "https://www.linkedin.com/company/eammu"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "telephone": "+8801701699743",
+          "email": "info@eammu.com"
+        }
+      },
+      "serviceType": "Visa Consultancy & Immigration Services",
+      "areaServed": "CA",
+      "description": "Step-by-step guidance for Canada tourist visa, student visa, work permit, and permanent residency by Eammu Holidays. Trusted consultancy for applicants from Bangladesh and UAE."
+    })}
+  </script>
+</Helmet>
+
 
       <main className="bg-white min-h-screen font-sans">
         

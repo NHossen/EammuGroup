@@ -24,11 +24,82 @@ const StudentVisaBangladesh = () => {
   return (
     <div className="bg-[#f8fafc] min-h-screen">
       <Helmet>
-        <title>Student Visa Consultancy Bangladesh | Study Abroad Expert - Eammu</title>
-        <meta name="description" content="Looking for the best student visa consultant in Bangladesh? Eammu Holidays provides expert guidance for USA, UK, Canada, and Australia student visas." />
-        <meta name="keywords" content="student visa consultant Dhaka, study abroad Bangladesh, USA student visa from Bangladesh, Canada study permit Dhaka, UK student visa agent" />
-        <link rel="canonical" href="https://eammu.com/student-visa-application-bangladesh" />
-      </Helmet>
+  {/* Primary SEO */}
+  <title>Student Visa Consultant Bangladesh | Study Abroad Experts – Eammu Holidays</title>
+  <meta
+    name="description"
+    content="Looking for the best student visa consultant in Bangladesh? Eammu Holidays provides expert guidance for USA, UK, Canada, and Australia student visas. Trusted study abroad advisors since 2018."
+  />
+  <meta
+    name="keywords"
+    content="student visa consultant Bangladesh, study abroad Bangladesh, USA student visa from Bangladesh, UK student visa consultant, Canada study permit Dhaka, Australia student visa agent, study abroad consultancy, Eammu Holidays student visa"
+  />
+  <link rel="canonical" href="https://eammu.com/student-visa-application-bangladesh" />
+
+  {/* Open Graph / Social SEO */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Student Visa Consultant Bangladesh | Eammu Holidays" />
+  <meta
+    property="og:description"
+    content="Eammu Holidays provides professional student visa consultancy for USA, UK, Canada, and Australia. From university selection to visa approval, we support every step."
+  />
+  <meta property="og:url" content="https://eammu.com/student-visa-application-bangladesh" />
+  <meta property="og:site_name" content="Eammu Holidays" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Student Visa Consultant Bangladesh | Eammu Holidays" />
+  <meta
+    name="twitter:description"
+    content="Apply for student visas to USA, UK, Canada, and Australia easily with Eammu Holidays. Trusted Bangladeshi study abroad consultants."
+  />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" />
+
+  {/* Geo / Local SEO */}
+  <meta name="geo.region" content="BD" />
+  <meta name="geo.placename" content="Cumilla, Bangladesh" />
+  <meta name="geo.position" content="23.4607;91.1809" />
+  <meta name="ICBM" content="23.4607,91.1809" />
+
+  {/* JSON-LD Structured Data */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Eammu Holidays",
+      "url": "https://eammu.com",
+      "logo": "https://eammu.com/images/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/eammu",
+        "https://www.instagram.com/eammu",
+        "https://www.linkedin.com/company/eammu",
+        "https://www.youtube.com/@eammu"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+8801631312524",
+          "contactType": "customer service",
+          "areaServed": "BD",
+          "email": "info@eammu.com"
+        }
+      ],
+      "description": "Eammu Holidays provides expert student visa consultancy services from Bangladesh to study in USA, UK, Canada, and Australia. Full support from university selection, SOP, application, to visa approval.",
+      "hasCourse": countries.map(c => ({
+        "@type": "Course",
+        "name": `${c.name} Student Visa Support`,
+        "provider": {
+          "@type": "EducationalOrganization",
+          "name": "Eammu Holidays",
+          "sameAs": "https://eammu.com"
+        },
+        "description": c.desc
+      }))
+    })}
+  </script>
+</Helmet>
+
 
      {/* 🎓 Premium Hero Section with Background Image */}
       <section className="relative min-h-[75vh] flex items-center pt-24 pb-20 overflow-hidden">

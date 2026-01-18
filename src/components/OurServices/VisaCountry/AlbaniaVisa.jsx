@@ -6,9 +6,73 @@ const AlbaniaVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Albania Visa Requirements & Application Procedure | Eammu Immigration</title>
-        <meta name="description" content="Expert assistance for Albania E-Visa, Tourist Visa, and Work Permits. Professional consultancy for travelers and workers at Eammu Holidays." />
-      </Helmet>
+  <title>Albania Visa Requirements & Application | Eammu Immigration Services</title>
+  <meta 
+    name="description" 
+    content="Get expert assistance for Albania E-Visa, Tourist Visa, and Work Permits with Eammu Holidays. Professional consultancy for travelers, students, and workers." 
+  />
+  <meta 
+    name="keywords" 
+    content="Albania visa, Albania E-Visa, Albania tourist visa, Albania work permit, Albania visa application, Albania travel agency, Eammu Holidays, visa consultancy Albania" 
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eammu.com/albania-visa" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Albania Visa Requirements & Application | Eammu Holidays" />
+  <meta 
+    property="og:description" 
+    content="Eammu Holidays provides step-by-step support for Albania visa applications, including E-Visas, tourist visas, and work permits. Trusted consultancy for smooth processing." 
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eammu.com/albania-visa" />
+  <meta 
+    property="og:image" 
+    content="https://www.eammu.com/images/albania-visa-banner.jpg" 
+  />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Albania Visa Requirements & Application | Eammu Holidays" />
+  <meta 
+    name="twitter:description" 
+    content="Professional Albania visa assistance by Eammu Holidays. Apply for E-Visa, tourist visa, or work permit hassle-free with our expert support." 
+  />
+  <meta 
+    name="twitter:image" 
+    content="https://www.eammu.com/images/albania-visa-banner.jpg" 
+  />
+
+  {/* JSON-LD Structured Data */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "GovernmentService",
+      "name": "Albania Visa Application Support",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Eammu Holidays",
+        "url": "https://eammu.com/albania-visa",
+        "logo": "https://www.eammu.com/images/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/eammu",
+          "https://www.instagram.com/eammu",
+          "https://www.linkedin.com/company/eammu"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "telephone": "+8801701699743",
+          "email": "info@eammu.com"
+        }
+      },
+      "serviceType": "Visa Consultancy",
+      "areaServed": "AL",
+      "description": "Step-by-step assistance for Albania E-Visa, Tourist Visa, and Work Permits by Eammu Holidays. Trusted consultancy for travelers, students, and workers."
+    })}
+  </script>
+</Helmet>
+
 
       <main className="bg-white min-h-screen font-sans">
         

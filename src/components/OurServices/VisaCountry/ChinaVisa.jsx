@@ -5,10 +5,74 @@ import { CheckCircle, ClipboardList, Send, Globe, ShieldCheck, FileText, Landmar
 const ChinaVisa = () => {
   return (
     <>
-      <Helmet>
-        <title>China Visa Requirements & Application Procedure | Eammu Immigration</title>
-        <meta name="description" content="Expert assistance for China Tourist (L) and Business (M) Visas. Comprehensive guide for documentation and COVA form submission with Eammu Immigration." />
-      </Helmet>
+    <Helmet>
+  <title>China Visa & Immigration Services | Eammu Holidays</title>
+  <meta 
+    name="description" 
+    content="Expert assistance for China tourist visa, business visa, student visa, and work permit. Eammu Holidays provides step-by-step guidance for applicants from Bangladesh, UAE, and other countries." 
+  />
+  <meta 
+    name="keywords" 
+    content="China visa, China tourist visa, China business visa, China student visa, China work permit, Eammu Holidays, visa consultancy China" 
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eammu.com/china-visa" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="China Visa & Immigration Services | Eammu Holidays" />
+  <meta 
+    property="og:description" 
+    content="Eammu Holidays provides professional China visa consultancy including tourist, business, student, and work visas. Trusted guidance for applicants from Bangladesh, UAE, and beyond." 
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eammu.com/china-visa" />
+  <meta 
+    property="og:image" 
+    content="https://www.eammu.com/images/china-visa-banner.jpg" 
+  />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="China Visa & Immigration Services | Eammu Holidays" />
+  <meta 
+    name="twitter:description" 
+    content="Professional China visa support by Eammu Holidays. Apply for tourist, business, student, or work visas hassle-free with our expert consultancy." 
+  />
+  <meta 
+    name="twitter:image" 
+    content="https://www.eammu.com/images/china-visa-banner.jpg" 
+  />
+
+  {/* JSON-LD Structured Data */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "GovernmentService",
+      "name": "China Visa & Immigration Services",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Eammu Holidays",
+        "url": "https://eammu.com/china-visa",
+        "logo": "https://www.eammu.com/images/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/eammu",
+          "https://www.instagram.com/eammu",
+          "https://www.linkedin.com/company/eammu"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "telephone": "+8801701699743",
+          "email": "info@eammu.com"
+        }
+      },
+      "serviceType": "Visa Consultancy & Immigration Services",
+      "areaServed": "CN",
+      "description": "Step-by-step guidance for China tourist visa, business visa, student visa, and work permit by Eammu Holidays. Trusted consultancy for applicants from Bangladesh, UAE, and other countries."
+    })}
+  </script>
+</Helmet>
+
 
       <main className="bg-white min-h-screen font-sans">
         

@@ -13,24 +13,78 @@ import {
 import MediaGallerySection from "./MediaGallerySection";
 
 const EammuSocialResponsibility = () => {
+  // JSON-LD structured data for Organization & CSR
+  const csrSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Eammu Group",
+    "url": "https://eammu.com",
+    "logo": "https://eammu.com/images/logo.png",
+    "sameAs": [
+      "https://www.facebook.com/eammu",
+      "https://www.instagram.com/eammu",
+      "https://www.linkedin.com/company/eammu",
+      "https://www.youtube.com/@Eammutour"
+    ],
+    "department": [
+      {
+        "@type": "Organization",
+        "name": "Corporate Social Responsibility",
+        "description": "Eammu Group CSR initiatives including blood donation camps, free medical services, volunteering programs, and partnerships with NGOs.",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "CSR Programs",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Blood Donation Camps",
+                "description": "Organizing regular blood drives in collaboration with major blood banks to save lives."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Free Medical Camps",
+                "description": "Providing free health check-ups and basic medicines to underprivileged communities."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Volunteering Programs",
+                "description": "Engaging employees and youth in social reform, disaster relief, and environmental drives."
+              }
+            }
+          ]
+        }
+      }
+    ]
+  };
+
   return (
     <div className="bg-white min-h-screen">
       {/* SEO Helmet */}
       <Helmet>
-        <title>Social Responsibility & Welfare | Eammu Group Impact Bangladesh</title>
+        <title>Social Responsibility & Welfare | Eammu Holidays Impact Bangladesh</title>
         <meta
           name="description"
           content="Eammu Group is committed to social welfare. Explore our initiatives in blood donation camps, free medical services, and volunteering partnerships across Bangladesh."
         />
         <meta
           name="keywords"
-          content="Eammu Social Work, Blood Donation Camp, Free Medical Camp Bangladesh, Corporate Social Responsibility, Eammu Volunteering, Humanitarian Work"
+          content="Eammu Social Work, Blood Donation Camp, Free Medical Camp Bangladesh, Corporate Social Responsibility, Eammu Volunteering, Humanitarian Work, NGO Partnerships, Volunteer Programs"
         />
+        <link rel="canonical" href="https://eammu.com/social-responsibility" />
+        <script type="application/ld+json">{JSON.stringify(csrSchema)}</script>
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 bg-[#005a31] overflow-hidden text-white">
-        <div className="absolute top-0 left-0 w-full h-full opacity-10">
+      <section className="relative py-20 lg:py-32  overflow-hidden text-white">
+        <div className="absolute top-0 left-0 w-full h-full opacity-95">
           <img 
             src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1470&q=80" 
             className="w-full h-full object-cover" 
@@ -143,13 +197,12 @@ const EammuSocialResponsibility = () => {
             "We make a living by what we get, but we make a life by what we give." Join the Eammu Volunteer Network today.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            
             <a href="/contact" className=" bg-[#005a31] text-white px-10 py-4 rounded-2xl font-bold hover:bg-orange-500 transition-all shadow-xl active:scale-95">
-                        Register as Volunteer
-                       </a>
+              Register as Volunteer
+            </a>
             <a href="https://wa.me/8801631312524" className=" bg-orange-50 text-orange-600 border border-orange-200 px-10 py-4 rounded-2xl font-bold hover:bg-orange-100 transition-all">
-                        Request Collaboration
-                       </a>
+              Request Collaboration
+            </a>
           </div>
         </div>
       </section>

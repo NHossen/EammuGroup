@@ -101,14 +101,16 @@ const blogPosts = [
   },
 ];
 
-const truncateText = (text, length = 120) => {
+const truncateText = (text, length = 160) => {
   if (!text) return "";
   return text.length > length ? text.substring(0, length) + "..." : text;
 };
 
 const Blogs = () => {
   const [activeBlog, setActiveBlog] = useState(null);
-  const [dynamicTitle, setDynamicTitle] = useState("Top Travel Agency Bangladesh | Visa | Flight | Hotel | Travel News");
+  const [dynamicTitle, setDynamicTitle] = useState(
+    "Top Travel Agency Bangladesh | Visa | Flight | Hotel | Travel News"
+  );
   const [dynamicDescription, setDynamicDescription] = useState(
     "Top Travel Agency Bangladesh by Online, Stay updated with the latest visa news, travel tips, and student Visa opportunities with Eammu Holidays."
   );
@@ -145,12 +147,100 @@ const Blogs = () => {
     { id: "411I3K-Zagc", title: "Love Lake Dubai & Salt Lake Dubai Tour" },
   ];
 
+  const keywords = activeBlog
+    ? `Travel, Visa, Student Visa, Tourist Visa, Work Visa, ${activeBlog.title}`
+    : "Bangladesh Travel Blog, Student Visa Updates, Tourist Visa Tips, Immigration News, Eammu Holidays Blog, Work Visa Bangladesh, Travel Guides";
+
   return (
     <div className="px-4 md:px-6 lg:px-8 container mx-auto">
       <Helmet>
         <title>{dynamicTitle}</title>
         <meta name="description" content={dynamicDescription} />
+        <meta name="keywords" content={keywords} />
         <link rel="canonical" href="https://eammu.com/blogs" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content={dynamicTitle} />
+        <meta property="og:description" content={dynamicDescription} />
+        <meta
+          property="og:image"
+          content={
+            activeBlog
+              ? activeBlog.image
+              : "https://eammu.com/images/logo.png"
+          }
+        />
+        <meta property="og:url" content="https://eammu.com/blogs" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={dynamicTitle} />
+        <meta name="twitter:description" content={dynamicDescription} />
+        <meta
+          name="twitter:image"
+          content={
+            activeBlog
+              ? activeBlog.image
+              : "https://eammu.com/images/logo.png"
+          }
+        />
+
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify(
+            activeBlog
+              ? {
+                  "@context": "https://schema.org",
+                  "@type": "BlogPosting",
+                  headline: activeBlog.title,
+                  image: [activeBlog.image],
+                  author: { "@type": "Organization", name: "Eammu Holidays" },
+                  publisher: {
+                    "@type": "Organization",
+                    name: "Eammu Holidays",
+                    logo: {
+                      "@type": "ImageObject",
+                      url: "https://eammu.com/images/logo.png",
+                    },
+                  },
+                  datePublished: activeBlog.date,
+                  description: truncateText(activeBlog.summary || activeBlog.fullContent),
+                  mainEntityOfPage: {
+                    "@type": "WebPage",
+                    "@id": "https://eammu.com/blogs",
+                  },
+                }
+              : {
+                  "@context": "https://schema.org",
+                  "@type": "Blog",
+                  name: "Eammu Blogs",
+                  url: "https://eammu.com/blogs",
+                  description:
+                    "Stay updated with the latest visa news, travel tips, immigration offers, and student opportunities with Eammu Holidays.",
+                  publisher: {
+                    "@type": "Organization",
+                    name: "Eammu Holidays",
+                    logo: {
+                      "@type": "ImageObject",
+                      url: "https://eammu.com/images/logo.png",
+                    },
+                  },
+                  blogPost: blogPosts.map((post) => ({
+                    "@type": "BlogPosting",
+                    headline: post.title,
+                    image: [post.image],
+                    datePublished: post.date,
+                    description: truncateText(post.summary || post.fullContent),
+                    author: { "@type": "Organization", name: "Eammu Holidays" },
+                    mainEntityOfPage: {
+                      "@type": "WebPage",
+                      "@id": `https://eammu.com/blogs#post-${post.id}`,
+                    },
+                  })),
+                }
+          )}
+        </script>
       </Helmet>
 
       {/* --- Section 1: Dynamic Blogger Posts (with Pagination inside) --- */}
@@ -164,8 +254,6 @@ const Blogs = () => {
             Real-time updates, visa alerts, and travel insights fetched directly from our official newsroom.
           </p>
         </div>
-        
-        {/* এখানে আপনার আগের দেওয়া Pagination সহ BlogSection কম্পোনেন্টটি লোড হবে */}
         <BlogSection />
       </section>
 
@@ -205,29 +293,7 @@ const Blogs = () => {
         </div>
       </section>
 
-      {/* Modal for Custom Blogs */}
-      {activeBlog && (
-        <div className="fixed inset-0 z-[999] bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto relative shadow-2xl">
-            <button
-              onClick={closeModal}
-              className="absolute top-4 right-4 bg-white/80 backdrop-blur h-10 w-10 rounded-full flex items-center justify-center text-2xl text-red-500 shadow-lg z-10 hover:bg-red-50"
-            >
-              ✕
-            </button>
-            <img src={activeBlog.image} alt={activeBlog.title} className="w-full h-72 object-cover" />
-            <div className="p-8">
-              <span className="text-green-600 font-bold">{activeBlog.date}</span>
-              <h2 className="text-3xl font-bold text-gray-900 mt-2 mb-6 leading-tight">{activeBlog.title}</h2>
-              <div className="text-gray-700 leading-relaxed text-lg space-y-4 whitespace-pre-line">
-                {activeBlog.fullContent || activeBlog.summary}
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* FAQ Section */}
+        {/* FAQ Section */}
       <section className="mt-24 bg-green-50 rounded-3xl p-8 md:p-12 border border-green-100">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-extrabold text-[#005a31]">Expert Travel Insights</h2>
@@ -267,6 +333,7 @@ const Blogs = () => {
           ))}
         </div>
       </section>
+      {/* Your existing code below stays unchanged */}
     </div>
   );
 };

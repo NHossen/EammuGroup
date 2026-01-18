@@ -8,12 +8,75 @@ const TravelAgencyArmenia = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Top-Rated Travel Agency in Armenia | Eammu Holidays Yerevan</title>
-        <meta name="description" content="Looking for a travel agency in Armenia? Eammu Holidays at Lambron 39, Yerevan offers 24/7 visa consultancy, luxury Caucasus tours, and corporate travel solutions." />
-        <meta name="keywords" content="travel agency in Armenia, Armenia visa assistance, Eammu Holidays Yerevan, Yerevan tour operator, study in Armenia, Armenia transit visa" />
-        <link rel="canonical" href="https://eammu.com/travel-agency-armenia" />
-      </Helmet>
+    <Helmet>
+  <title>Top-Rated Travel Agency in Armenia | Eammu Holidays Yerevan</title>
+  <meta 
+    name="description" 
+    content="Eammu Holidays, a leading travel agency in Yerevan, Armenia, offers 24/7 visa assistance, luxury Caucasus tours, hotel bookings, and corporate travel solutions. Expert support for tourism, business, and study visits." 
+  />
+  <meta 
+    name="keywords" 
+    content="travel agency in Armenia, Armenia visa assistance, Eammu Holidays Yerevan, Yerevan tour operator, Armenia tours, hotel booking Yerevan, Armenia transit visa, study in Armenia, Armenia travel services" 
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eammu.com/travel-agency-armenia" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Top Travel Agency in Armenia | Eammu Holidays Yerevan" />
+  <meta 
+    property="og:description" 
+    content="Experience Armenia with Eammu Holidays. From visa processing to luxury tours, hotel bookings, and air tickets, we ensure seamless travel across Yerevan and beyond." 
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eammu.com/travel-agency-armenia" />
+  <meta 
+    property="og:image" 
+    content="https://www.trekgeorgia.com/wp-content/uploads/2019/04/armenia_h_00000220066588.ngsversion.1501784794813.adapt_.1900.1.jpg" 
+  />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Top Travel Agency in Armenia | Eammu Holidays Yerevan" />
+  <meta 
+    name="twitter:description" 
+    content="Eammu Holidays provides expert travel and visa services in Yerevan, Armenia. Book Armenia tours, hotels, and air tickets with trusted local assistance." 
+  />
+  <meta 
+    name="twitter:image" 
+    content="https://www.trekgeorgia.com/wp-content/uploads/2019/04/armenia_h_00000220066588.ngsversion.1501784794813.adapt_.1900.1.jpg" 
+  />
+
+  {/* JSON-LD Structured Data */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "Eammu Holidays",
+      "url": "https://eammu.com/travel-agency-armenia",
+      "logo": "https://www.eammu.com/images/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/eammu",
+        "https://www.linkedin.com/company/eammu",
+        "https://www.instagram.com/eammu"
+      ],
+      "description": "Eammu Holidays, a top travel agency in Yerevan, Armenia, offering visa assistance, Armenia tours, hotel bookings, and corporate travel solutions.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Lambron 39",
+        "addressLocality": "Yerevan",
+        "addressCountry": "AM"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "telephone": "+37494810585",
+        "email": "armenia@eammu.com"
+      },
+      "areaServed": "AM"
+    })}
+  </script>
+</Helmet>
+
 
       <main className="bg-white text-slate-900 overflow-hidden pb-20">
         

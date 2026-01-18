@@ -138,9 +138,93 @@ const AirTickets = () => {
 
   return (
     <div className=" min-h-screen pb-20 font-sans">
-      <Helmet>
-        <title>Flight Search Bangladesh | Eammu Holidays</title>
-      </Helmet>
+     <Helmet>
+  {/* Primary SEO */}
+  <title>
+    Cheap International Air Tickets | IATA Approved Flight Booking – Eammu Holidays
+  </title>
+
+  <meta
+    name="description"
+    content="Book cheap international air tickets with Eammu, an IATA approved global travel agency. Compare real-time flight prices, airline deals, reissue & cancellation support worldwide."
+  />
+
+  <meta
+    name="keywords"
+    content="
+    cheap air tickets,
+    international flight booking,
+    iata approved air ticket agent,
+    flight booking agency,
+    cheap flights worldwide,
+    dubai to dhaka flights,
+    usa international flights,
+    airline ticket booking company,
+    flight reissue and cancellation,
+    online flight search,
+    travel agency air tickets,
+    travel agency Bangladesh,
+    flight book online,
+    Ota Bangladesh,
+    top Travel agency bangladesh,
+    best travel agency worldwide,
+    best travel in india
+    "
+  />
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://eammu.com/air-tickets" />
+
+  {/* Geo Targeting (supports Local + Global SEO) */}
+  <meta name="geo.region" content="BD" />
+  <meta name="geo.placename" content="Cumilla, Bangladesh" />
+  <meta name="geo.position" content="23.4607;91.1809" />
+  <meta name="ICBM" content="23.4607, 91.1809" />
+
+  {/* Open Graph (Facebook / WhatsApp Preview) */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cheap Flights & Airline Tickets | Eammu Group" />
+  <meta
+    property="og:description"
+    content="Search and book international flights with Eammu. IATA approved airline ticketing, real-time fares, 24/7 support, and global coverage."
+  />
+  <meta property="og:url" content="https://eammu.com/air-tickets" />
+  <meta property="og:site_name" content="Eammu Group" />
+  <meta property="og:image" content="https://eammu.com/seo/air-tickets.jpg" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cheap International Flights | Eammu Air Tickets" />
+  <meta
+    name="twitter:description"
+    content="Book cheap international air tickets with an IATA approved travel agency. Live flight search & airline deals."
+  />
+  <meta name="twitter:image" content="https://eammu.com/seo/air-tickets.jpg" />
+
+  {/* Trust & Indexing */}
+  <meta name="author" content="Eammu Group" />
+  <meta name="publisher" content="Eammu Group" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+
+  <script type="application/ld+json">
+{`
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "International Air Ticket Booking",
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Eammu Group"
+  },
+  "areaServed": "Worldwide",
+  "serviceType": "Flight Booking",
+  "description": "Cheap international air ticket booking with real-time flight search, reissue and cancellation support by IATA approved agency."
+}
+`}
+</script>
+
+</Helmet>
+
 
       {/* Hero Section */}
       <section className="bg-[#004d2c] pt-8 pb-24 px-4 text-center">

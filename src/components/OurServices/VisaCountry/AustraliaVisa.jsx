@@ -5,10 +5,74 @@ import { CheckCircle, ClipboardList, Send, Globe, ShieldCheck, FileText, Navigat
 const AustraliaVisa = () => {
   return (
     <>
-      <Helmet>
-        <title>Australia Visa Requirements & Application Procedure | Eammu Immigration</title>
-        <meta name="description" content="Expert consultancy for Australia Visitor Visa (Subclass 600) and Student Visa (Subclass 500). Detailed procedure and document checklist with Eammu Immigration." />
-      </Helmet>
+     <Helmet>
+  <title>Australia Visa & Immigration Services | Eammu Holidays</title>
+  <meta 
+    name="description" 
+    content="Get expert assistance for Australia tourist visa, student visa, work visa, and permanent residency. Eammu Holidays provides step-by-step support from Bangladesh and UAE." 
+  />
+  <meta 
+    name="keywords" 
+    content="Australia visa, Australia tourist visa, Australia student visa, Australia work visa, Australia PR, visa consultancy Australia, Eammu Holidays" 
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eammu.com/australia-visa-application" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Australia Visa & Immigration Services | Eammu Holidays" />
+  <meta 
+    property="og:description" 
+    content="Eammu Holidays provides professional Australia visa consultancy including tourist, student, work visas, and permanent residency. Trusted support for applicants from Bangladesh and UAE." 
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eammu.com/australia-visa" />
+  <meta 
+    property="og:image" 
+    content="https://www.eammu.com/images/australia-visa-banner.jpg" 
+  />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Australia Visa & Immigration Services | Eammu Holidays" />
+  <meta 
+    name="twitter:description" 
+    content="Professional Australia visa support by Eammu Holidays. Apply for tourist, student, work visas or permanent residency hassle-free with our expert guidance." 
+  />
+  <meta 
+    name="twitter:image" 
+    content="https://www.eammu.com/images/australia-visa-banner.jpg" 
+  />
+
+  {/* JSON-LD Structured Data */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "GovernmentService",
+      "name": "Australia Visa & Immigration Services",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Eammu Holidays",
+        "url": "https://eammu.com/australia-visa",
+        "logo": "https://www.eammu.com/images/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/eammu",
+          "https://www.instagram.com/eammu",
+          "https://www.linkedin.com/company/eammu"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "telephone": "+8801701699743",
+          "email": "info@eammu.com"
+        }
+      },
+      "serviceType": "Visa Consultancy & Immigration Services",
+      "areaServed": "AU",
+      "description": "Step-by-step guidance for Australia tourist visa, student visa, work visa, and permanent residency by Eammu Holidays. Trusted consultancy for applicants from Bangladesh and UAE."
+    })}
+  </script>
+</Helmet>
+
 
       <main className="bg-white min-h-screen font-sans">
         
