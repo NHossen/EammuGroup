@@ -5,10 +5,76 @@ import { CheckCircle, ClipboardList, Send, Globe, ShieldCheck, FileText, Landmar
 const EuropeVisa = () => {
   return (
     <>
-      <Helmet>
-        <title>Europe Schengen Visa Requirements & Procedure | Eammu Immigration</title>
-        <meta name="description" content="Apply for Schengen Visa with expert guidance. Eammu Immigration provides support for Europe visit visas and work permits for Poland, France, Germany, and more." />
-      </Helmet>
+<Helmet>
+  <title>Europe Schengen Visa Application & Requirements | Eammu Holidays</title>
+
+  <meta
+    name="description"
+    content="Apply for Europe Schengen Visa with expert support from Eammu Holidays. Tourist, business & family visit visas for all Schengen countries with high approval guidance."
+  />
+
+  <meta
+    name="keywords"
+    content="Europe visa, Schengen visa, Europe tourist visa, Schengen visa Bangladesh, Europe visa application, Schengen visa requirements, Europe travel visa, Eammu Holidays"
+  />
+
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eammu.com/europe-visa" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Europe Schengen Visa Application & Requirements | Eammu Holidays" />
+  <meta
+    property="og:description"
+    content="Professional Europe Schengen visa assistance for tourist, business, and family visits. Apply confidently with Eammu Holidays."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eammu.com/europe-visa" />
+  <meta
+    property="og:image"
+    content="https://www.eammu.com/images/europe-visa-banner.jpg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Europe Schengen Visa Application | Eammu Holidays" />
+  <meta
+    name="twitter:description"
+    content="Schengen visa consultancy for Europe travel. Tourist & business visas with document guidance and expert processing."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.eammu.com/images/europe-visa-banner.jpg"
+  />
+
+  {/* JSON-LD Schema */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "GovernmentService",
+      "name": "Europe Schengen Visa Services",
+      "description":
+        "Complete assistance for Europe Schengen tourist, business, and family visit visas with document verification and application support.",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Eammu Holidays",
+        "url": "https://eammu.com/europe-visa",
+        "logo": "https://www.eammu.com/images/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+8801701699743",
+          "contactType": "Customer Support",
+          "email": "info@eammu.com"
+        }
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Schengen Area"
+      },
+      "serviceType": "Schengen Visa Consultancy"
+    })}
+  </script>
+</Helmet>
+
 
       <main className="bg-white min-h-screen font-sans">
         

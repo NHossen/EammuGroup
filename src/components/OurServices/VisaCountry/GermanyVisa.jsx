@@ -5,10 +5,76 @@ import { CheckCircle, ClipboardList, Send, Globe, ShieldCheck, FileText, Landmar
 const GermanyVisa = () => {
   return (
     <>
-      <Helmet>
-        <title>Germany Visa Requirements & Application Procedure | Eammu Immigration</title>
-        <meta name="description" content="Official guide for Germany Student, Job Seeker, and Opportunity Card visas. Learn about the application procedure and mandatory documents with Eammu Immigration." />
-      </Helmet>
+   <Helmet>
+  <title>Germany Visa Application & Requirements | Schengen Visa – Eammu Holidays</title>
+
+  <meta
+    name="description"
+    content="Apply for Germany Schengen visa with expert assistance from Eammu Holidays. Tourist, business & visit visa support with complete documentation and appointment guidance."
+  />
+
+  <meta
+    name="keywords"
+    content="Germany visa, Germany Schengen visa, Germany tourist visa, Germany visa Bangladesh, Germany visa UAE, Germany visa application, Schengen visa Germany, Eammu Holidays"
+  />
+
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eammu.com/germany-visa" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Germany Visa Application & Requirements | Eammu Holidays" />
+  <meta
+    property="og:description"
+    content="Professional Germany Schengen visa assistance for tourist, business and family visit travel. Apply confidently with Eammu Holidays."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eammu.com/germany-visa" />
+  <meta
+    property="og:image"
+    content="https://www.eammu.com/images/germany-visa-banner.jpg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Germany Visa Application | Eammu Holidays" />
+  <meta
+    name="twitter:description"
+    content="Germany tourist & business Schengen visa consultancy with appointment, documentation and expert processing support."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.eammu.com/images/germany-visa-banner.jpg"
+  />
+
+  {/* JSON-LD Schema */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "GovernmentService",
+      "name": "Germany Visa Application Services",
+      "description":
+        "End-to-end Germany Schengen visa assistance including eligibility check, documentation, appointment booking and submission support.",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Eammu Holidays",
+        "url": "https://eammu.com/germany-visa",
+        "logo": "https://www.eammu.com/images/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+8801701699743",
+          "contactType": "Customer Support",
+          "email": "info@eammu.com"
+        }
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Germany"
+      },
+      "serviceType": "Germany Schengen Visa Consultancy"
+    })}
+  </script>
+</Helmet>
+
 
       <main className="bg-white min-h-screen font-sans">
         

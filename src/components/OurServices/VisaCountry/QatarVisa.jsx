@@ -5,10 +5,76 @@ import { CheckCircle, ClipboardList, Send, Globe, ShieldCheck, FileText, Landmar
 const QatarVisa = () => {
   return (
     <>
-      <Helmet>
-        <title>Qatar Visa Requirements & Application Procedure | Eammu Immigration</title>
-        <meta name="description" content="Apply for Qatar Tourist Visa, Business Visa, and Work Residency. Expert guidance for the Hayya Portal and Qatar visa processing with Eammu Holidays." />
-      </Helmet>
+ <Helmet>
+  <title>Qatar Visa Application & Requirements | Tourist & Business Visa – Eammu Holidays</title>
+
+  <meta
+    name="description"
+    content="Apply for Qatar visa with expert assistance from Eammu Holidays. Tourist, business, family visit, and work visa support with fast processing and complete documentation."
+  />
+
+  <meta
+    name="keywords"
+    content="Qatar visa, Qatar tourist visa, Qatar business visa, Qatar visit visa, Qatar visa Bangladesh, Qatar visa UAE, Qatar work visa, Eammu Holidays"
+  />
+
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eammu.com/qatar-visa" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Qatar Visa Application & Requirements | Eammu Holidays" />
+  <meta
+    property="og:description"
+    content="Professional Qatar visa consultancy for tourists, business travelers, and family visits with expert document handling."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eammu.com/qatar-visa" />
+  <meta
+    property="og:image"
+    content="https://www.eammu.com/images/qatar-visa-banner.jpg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Qatar Visa Application | Eammu Holidays" />
+  <meta
+    name="twitter:description"
+    content="Apply Qatar tourist, business, or visit visa with trusted experts. Fast processing and full support by Eammu Holidays."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.eammu.com/images/qatar-visa-banner.jpg"
+  />
+
+  {/* JSON-LD Schema */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "GovernmentService",
+      "name": "Qatar Visa Application Services",
+      "description":
+        "Complete Qatar visa consultancy including tourist, business, visit, and work visas with documentation and submission support.",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Eammu Holidays",
+        "url": "https://eammu.com/qatar-visa",
+        "logo": "https://www.eammu.com/images/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+8801701699743",
+          "contactType": "Customer Support",
+          "email": "info@eammu.com"
+        }
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Qatar"
+      },
+      "serviceType": "Qatar Tourist, Business & Visit Visa"
+    })}
+  </script>
+</Helmet>
+
 
       <main className="bg-white min-h-screen font-sans">
         

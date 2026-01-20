@@ -5,10 +5,76 @@ import { CheckCircle, ClipboardList, Send, Globe, ShieldCheck, FileText, Landmar
 const SerbiaVisa = () => {
   return (
     <>
-      <Helmet>
-        <title>Serbia Visa Requirements & Application Procedure | Eammu Immigration</title>
-        <meta name="description" content="Expert consultancy for Serbia Tourist and Business Visas. Get professional guidance on Serbian residency permits and documentation with Eammu Immigration." />
-      </Helmet>
+   <Helmet>
+  <title>Serbia Visa Application & Requirements | Tourist & Business Visa – Eammu Holidays</title>
+
+  <meta
+    name="description"
+    content="Apply for Serbia visa with expert assistance from Eammu Holidays. Tourist, business, family visit, and work visa support with fast processing and complete documentation."
+  />
+
+  <meta
+    name="keywords"
+    content="Serbia visa, Serbia tourist visa, Serbia business visa, Serbia visit visa, Serbia visa Bangladesh, Serbia visa UAE, Serbia work visa, Eammu Holidays"
+  />
+
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eammu.com/serbia-visa" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Serbia Visa Application & Requirements | Eammu Holidays" />
+  <meta
+    property="og:description"
+    content="Professional Serbia visa consultancy for tourists, business travelers, and family visits with expert document handling."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eammu.com/serbia-visa" />
+  <meta
+    property="og:image"
+    content="https://www.eammu.com/images/serbia-visa-banner.jpg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Serbia Visa Application | Eammu Holidays" />
+  <meta
+    name="twitter:description"
+    content="Apply Serbia tourist, business, or visit visa with trusted experts. Fast processing and full support by Eammu Holidays."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.eammu.com/images/serbia-visa-banner.jpg"
+  />
+
+  {/* JSON-LD Schema */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "GovernmentService",
+      "name": "Serbia Visa Application Services",
+      "description":
+        "Complete Serbia visa consultancy including tourist, business, visit, and work visas with documentation and submission support.",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Eammu Holidays",
+        "url": "https://eammu.com/serbia-visa",
+        "logo": "https://www.eammu.com/images/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+8801701699743",
+          "contactType": "Customer Support",
+          "email": "info@eammu.com"
+        }
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Serbia"
+      },
+      "serviceType": "Serbia Tourist, Business & Visit Visa"
+    })}
+  </script>
+</Helmet>
+
 
       <main className="bg-white min-h-screen font-sans">
         

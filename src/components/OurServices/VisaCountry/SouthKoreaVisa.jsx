@@ -5,10 +5,76 @@ import { CheckCircle, ClipboardList, Send, Globe, ShieldCheck, FileText, Landmar
 const SouthKoreaVisa = () => {
   return (
     <>
-      <Helmet>
-        <title>South Korea Visa Requirements & Application Procedure | Eammu Immigration</title>
-        <meta name="description" content="Expert consultancy for South Korea Tourist Visa (C-3-9), K-ETA, and Business Visa. Complete guidance for document submission and embassy procedures with Eammu Immigration." />
-      </Helmet>
+  <Helmet>
+  <title>South Korea Visa Application & Requirements | Tourist & Business Visa – Eammu Holidays</title>
+
+  <meta
+    name="description"
+    content="Apply for South Korea visa with expert assistance from Eammu Holidays. Tourist, business, family visit, and work visa support with fast processing and complete documentation."
+  />
+
+  <meta
+    name="keywords"
+    content="South Korea visa, Korea tourist visa, South Korea business visa, Korea visit visa, South Korea visa Bangladesh, South Korea visa UAE, Korea work visa, Eammu Holidays"
+  />
+
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eammu.com/south-korea-visa" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="South Korea Visa Application & Requirements | Eammu Holidays" />
+  <meta
+    property="og:description"
+    content="Professional South Korea visa consultancy for tourists, business travelers, and family visits with expert document handling."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eammu.com/south-korea-visa" />
+  <meta
+    property="og:image"
+    content="https://www.eammu.com/images/south-korea-visa-banner.jpg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="South Korea Visa Application | Eammu Holidays" />
+  <meta
+    name="twitter:description"
+    content="Apply South Korea tourist, business, or visit visa with trusted experts. Fast processing and full support by Eammu Holidays."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.eammu.com/images/south-korea-visa-banner.jpg"
+  />
+
+  {/* JSON-LD Schema */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "GovernmentService",
+      "name": "South Korea Visa Application Services",
+      "description":
+        "Complete South Korea visa consultancy including tourist, business, visit, and work visas with documentation and submission support.",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Eammu Holidays",
+        "url": "https://eammu.com/south-korea-visa",
+        "logo": "https://www.eammu.com/images/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+8801701699743",
+          "contactType": "Customer Support",
+          "email": "info@eammu.com"
+        }
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "South Korea"
+      },
+      "serviceType": "South Korea Tourist, Business & Visit Visa"
+    })}
+  </script>
+</Helmet>
+
 
       <main className="bg-white min-h-screen font-sans">
         

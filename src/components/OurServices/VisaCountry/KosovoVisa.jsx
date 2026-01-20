@@ -5,10 +5,76 @@ import { CheckCircle, ClipboardList, Send, Globe, ShieldCheck, FileText, Landmar
 const KosovoVisa = () => {
   return (
     <>
-      <Helmet>
-        <title>Kosovo Visa Requirements & Application Procedure | Eammu Immigration</title>
-        <meta name="description" content="Official guide for Kosovo Entry Visas. Learn about application procedures for tourism and business with Eammu Immigration's expert consultancy." />
-      </Helmet>
+   <Helmet>
+  <title>Kosovo Visa Application & Requirements | Tourist & Business Visa – Eammu Holidays</title>
+
+  <meta
+    name="description"
+    content="Apply for Kosovo tourist, business, and visit visas with expert guidance from Eammu Holidays. Get complete document preparation, eligibility check, and professional visa consultancy."
+  />
+
+  <meta
+    name="keywords"
+    content="Kosovo visa, Kosovo visa application, Kosovo tourist visa, Kosovo business visa, Kosovo visa Bangladesh, Kosovo visa UAE, Eammu Holidays"
+  />
+
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eammu.com/kosovo-visa" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Kosovo Visa Application & Requirements | Eammu Holidays" />
+  <meta
+    property="og:description"
+    content="Professional Kosovo visa assistance for tourist, business, and visit purposes. Apply confidently with Eammu Holidays."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eammu.com/kosovo-visa" />
+  <meta
+    property="og:image"
+    content="https://www.eammu.com/images/kosovo-visa-banner.jpg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kosovo Visa Application | Eammu Holidays" />
+  <meta
+    name="twitter:description"
+    content="Kosovo tourist and business visa consultancy with full documentation and embassy submission support."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.eammu.com/images/kosovo-visa-banner.jpg"
+  />
+
+  {/* JSON-LD Schema */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "GovernmentService",
+      "name": "Kosovo Visa Application Services",
+      "description":
+        "Professional Kosovo visa consultancy including document preparation, eligibility assessment, and embassy submission guidance.",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Eammu Holidays",
+        "url": "https://eammu.com/kosovo-visa",
+        "logo": "https://www.eammu.com/images/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+8801701699743",
+          "contactType": "Customer Support",
+          "email": "info@eammu.com"
+        }
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Kosovo"
+      },
+      "serviceType": "Kosovo Tourist & Business Visa Consultancy"
+    })}
+  </script>
+</Helmet>
+
 
       <main className="bg-white min-h-screen font-sans">
         

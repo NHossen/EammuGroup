@@ -5,10 +5,76 @@ import { CheckCircle, ClipboardList, Send, Globe, ShieldCheck, FileText, Landmar
 const UkVisa = () => {
   return (
     <>
-      <Helmet>
-        <title>UK Visa Requirements & Application Procedure | Eammu Immigration</title>
-        <meta name="description" content="Expert UK Visa assistance for Standard Visitor and Student visas. Learn about the UK visa application procedure and mandatory documents with Eammu Immigration." />
-      </Helmet>
+  <Helmet>
+  <title>UK Visa Application & Requirements | Tourist & Business Visa – Eammu Holidays</title>
+
+  <meta
+    name="description"
+    content="Apply for UK visa with expert assistance from Eammu Holidays. Tourist, business, family visit, and work visa support with fast processing and complete documentation."
+  />
+
+  <meta
+    name="keywords"
+    content="UK visa, UK tourist visa, UK business visa, UK visit visa, UK visa Bangladesh, UK visa UAE, UK work visa, Eammu Holidays"
+  />
+
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eammu.com/uk-visa" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="UK Visa Application & Requirements | Eammu Holidays" />
+  <meta
+    property="og:description"
+    content="Professional UK visa consultancy for tourists, business travelers, and family visits with expert document handling."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eammu.com/uk-visa" />
+  <meta
+    property="og:image"
+    content="https://www.eammu.com/images/uk-visa-banner.jpg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="UK Visa Application | Eammu Holidays" />
+  <meta
+    name="twitter:description"
+    content="Apply UK tourist, business, or visit visa with trusted experts. Fast processing and full support by Eammu Holidays."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.eammu.com/images/uk-visa-banner.jpg"
+  />
+
+  {/* JSON-LD Schema */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "GovernmentService",
+      "name": "UK Visa Application Services",
+      "description":
+        "Complete UK visa consultancy including tourist, business, visit, and work visas with documentation and submission support.",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Eammu Holidays",
+        "url": "https://eammu.com/uk-visa",
+        "logo": "https://www.eammu.com/images/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+8801701699743",
+          "contactType": "Customer Support",
+          "email": "info@eammu.com"
+        }
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United Kingdom"
+      },
+      "serviceType": "UK Tourist, Business & Visit Visa"
+    })}
+  </script>
+</Helmet>
+
 
       <main className="bg-white min-h-screen font-sans">
         

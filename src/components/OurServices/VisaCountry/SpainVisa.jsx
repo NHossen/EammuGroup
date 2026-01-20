@@ -5,10 +5,76 @@ import { CheckCircle, ClipboardList, Send, Globe, ShieldCheck, FileText, Landmar
 const SpainVisa = () => {
   return (
     <>
-      <Helmet>
-        <title>Spain Visa Requirements & Application Procedure | Eammu Immigration</title>
-        <meta name="description" content="Expert consultancy for Spain Schengen Visa, Digital Nomad Visa, and Business Visa. Complete guidance for BLS International submission with Eammu Holidays." />
-      </Helmet>
+  <Helmet>
+  <title>Spain Visa Application & Requirements | Tourist & Business Visa – Eammu Holidays</title>
+
+  <meta
+    name="description"
+    content="Apply for Spain visa with expert assistance from Eammu Holidays. Tourist, business, family visit, and work visa support with fast processing and complete documentation."
+  />
+
+  <meta
+    name="keywords"
+    content="Spain visa, Spain tourist visa, Spain business visa, Spain visit visa, Spain visa Bangladesh, Spain visa UAE, Spain work visa, Eammu Holidays"
+  />
+
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eammu.com/spain-visa" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Spain Visa Application & Requirements | Eammu Holidays" />
+  <meta
+    property="og:description"
+    content="Professional Spain visa consultancy for tourists, business travelers, and family visits with expert document handling."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eammu.com/spain-visa" />
+  <meta
+    property="og:image"
+    content="https://www.eammu.com/images/spain-visa-banner.jpg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Spain Visa Application | Eammu Holidays" />
+  <meta
+    name="twitter:description"
+    content="Apply Spain tourist, business, or visit visa with trusted experts. Fast processing and full support by Eammu Holidays."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.eammu.com/images/spain-visa-banner.jpg"
+  />
+
+  {/* JSON-LD Schema */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "GovernmentService",
+      "name": "Spain Visa Application Services",
+      "description":
+        "Complete Spain visa consultancy including tourist, business, visit, and work visas with documentation and submission support.",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Eammu Holidays",
+        "url": "https://eammu.com/spain-visa",
+        "logo": "https://www.eammu.com/images/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+8801701699743",
+          "contactType": "Customer Support",
+          "email": "info@eammu.com"
+        }
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Spain"
+      },
+      "serviceType": "Spain Tourist, Business & Visit Visa"
+    })}
+  </script>
+</Helmet>
+
 
       <main className="bg-white min-h-screen font-sans">
         

@@ -5,10 +5,76 @@ import { CheckCircle, ClipboardList, Send, Globe, ShieldCheck, FileText, Users }
 const UsaVisa = () => {
   return (
     <>
-      <Helmet>
-        <title>USA Visa Requirements & Application Procedure | Eammu Immigration</title>
-        <meta name="description" content="Official guide for USA Student (F1) and Visitor (B1/B2) visa. Learn about the application procedure and mandatory documents with Eammu Immigration." />
-      </Helmet>
+  <Helmet>
+  <title>USA Visa Application & Requirements | Tourist & Business Visa – Eammu Holidays</title>
+
+  <meta
+    name="description"
+    content="Apply for USA visa with expert assistance from Eammu Holidays. Tourist, business, student, and work visa support with fast processing and complete documentation."
+  />
+
+  <meta
+    name="keywords"
+    content="USA visa, USA tourist visa, USA business visa, USA student visa, USA work visa, USA visa Bangladesh, USA visa UAE, Eammu Holidays"
+  />
+
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eammu.com/usa-visa" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="USA Visa Application & Requirements | Eammu Holidays" />
+  <meta
+    property="og:description"
+    content="Professional USA visa consultancy for tourists, business travelers, students, and work visas with expert document handling."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eammu.com/usa-visa" />
+  <meta
+    property="og:image"
+    content="https://www.eammu.com/images/usa-visa-banner.jpg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="USA Visa Application | Eammu Holidays" />
+  <meta
+    name="twitter:description"
+    content="Apply for USA tourist, business, student, or work visa with trusted experts. Fast processing and full support by Eammu Holidays."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.eammu.com/images/usa-visa-banner.jpg"
+  />
+
+  {/* JSON-LD Schema */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "GovernmentService",
+      "name": "USA Visa Application Services",
+      "description":
+        "Complete USA visa consultancy including tourist, business, student, and work visas with documentation and submission support.",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Eammu Holidays",
+        "url": "https://eammu.com/usa-visa",
+        "logo": "https://www.eammu.com/images/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+8801701699743",
+          "contactType": "Customer Support",
+          "email": "info@eammu.com"
+        }
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "serviceType": "USA Tourist, Business, Student & Work Visa"
+    })}
+  </script>
+</Helmet>
+
 
       <main className="bg-white min-h-screen font-sans">
         

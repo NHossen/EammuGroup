@@ -5,10 +5,76 @@ import { CheckCircle, ClipboardList, Send, Globe, ShieldCheck, FileText, Landmar
 const PortugalVisa = () => {
   return (
     <>
-      <Helmet>
-        <title>Portugal Visa Requirements & Application Procedure | Eammu Immigration</title>
-        <meta name="description" content="Expert consultancy for Portugal Schengen Visa, Job Seeker Visa, and D7 Visa. Learn about the application procedure and documents with Eammu Immigration." />
-      </Helmet>
+ <Helmet>
+  <title>Portugal Visa Application & Requirements | Schengen Visa – Eammu Holidays</title>
+
+  <meta
+    name="description"
+    content="Apply for Portugal Schengen visa with expert support from Eammu Holidays. Tourist, business, visit, and family visas with complete documentation and appointment assistance."
+  />
+
+  <meta
+    name="keywords"
+    content="Portugal visa, Portugal Schengen visa, Portugal tourist visa, Portugal business visa, Portugal visa Bangladesh, Portugal visa UAE, Schengen visa Portugal, Eammu Holidays"
+  />
+
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eammu.com/portugal-visa" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Portugal Visa Application & Requirements | Eammu Holidays" />
+  <meta
+    property="og:description"
+    content="Professional Portugal Schengen visa consultancy with document preparation, embassy appointment, and submission support."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eammu.com/portugal-visa" />
+  <meta
+    property="og:image"
+    content="https://www.eammu.com/images/portugal-visa-banner.jpg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Portugal Visa Application | Eammu Holidays" />
+  <meta
+    name="twitter:description"
+    content="Portugal Schengen visa assistance for tourists, business travelers, and family visits. Apply confidently with Eammu Holidays."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.eammu.com/images/portugal-visa-banner.jpg"
+  />
+
+  {/* JSON-LD Schema */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "GovernmentService",
+      "name": "Portugal Visa Application Services",
+      "description":
+        "End-to-end Portugal Schengen visa consultancy including eligibility assessment, document preparation, and embassy submission.",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Eammu Holidays",
+        "url": "https://eammu.com/portugal-visa",
+        "logo": "https://www.eammu.com/images/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+8801701699743",
+          "contactType": "Customer Support",
+          "email": "info@eammu.com"
+        }
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Portugal"
+      },
+      "serviceType": "Portugal Schengen Tourist & Business Visa"
+    })}
+  </script>
+</Helmet>
+
 
       <main className="bg-white min-h-screen font-sans">
         

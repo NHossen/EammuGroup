@@ -5,10 +5,76 @@ import { CheckCircle, ClipboardList, Send, Globe, ShieldCheck, FileText, Mountai
 const GeorgiaVisa = () => {
   return (
     <>
-      <Helmet>
-        <title>Georgia Visa & Residency Permit Services | Eammu Immigration</title>
-        <meta name="description" content="Expert assistance for Georgia E-Visa, Tourist Visa, and Business Residency Permits. Professional consultancy for travelers and investors at Eammu Holidays." />
-      </Helmet>
+    <Helmet>
+  <title>Georgia Visa Application & Requirements | Eammu Holidays</title>
+
+  <meta
+    name="description"
+    content="Apply for Georgia tourist and business visa with expert support from Eammu Holidays. Fast processing, document guidance, and high approval assistance for Georgia visa."
+  />
+
+  <meta
+    name="keywords"
+    content="Georgia visa, Georgia tourist visa, Georgia visa Bangladesh, Georgia visa application, Georgia e visa, Georgia travel visa, Georgia business visa, Eammu Holidays"
+  />
+
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eammu.com/georgia-visa" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Georgia Visa Application & Requirements | Eammu Holidays" />
+  <meta
+    property="og:description"
+    content="Professional Georgia visa assistance for tourist and business travel. Apply confidently with Eammu Holidays."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eammu.com/georgia-visa" />
+  <meta
+    property="og:image"
+    content="https://www.eammu.com/images/georgia-visa-banner.jpg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Georgia Visa Application | Eammu Holidays" />
+  <meta
+    name="twitter:description"
+    content="Georgia tourist and business visa consultancy with complete document support and expert processing."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.eammu.com/images/georgia-visa-banner.jpg"
+  />
+
+  {/* JSON-LD Schema */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "GovernmentService",
+      "name": "Georgia Visa Services",
+      "description":
+        "Complete assistance for Georgia tourist and business visa applications including eligibility check, documentation, and submission support.",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Eammu Holidays",
+        "url": "https://eammu.com/georgia-visa",
+        "logo": "https://www.eammu.com/images/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+8801701699743",
+          "contactType": "Customer Support",
+          "email": "info@eammu.com"
+        }
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Georgia"
+      },
+      "serviceType": "Georgia Visa Consultancy"
+    })}
+  </script>
+</Helmet>
+
 
       <main className="bg-white min-h-screen font-sans">
         

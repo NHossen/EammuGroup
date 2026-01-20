@@ -5,10 +5,76 @@ import { CheckCircle, ClipboardList, Send, Globe, ShieldCheck, FileText, Flower,
 const JapanVisa = () => {
   return (
     <>
-      <Helmet>
-        <title>Japan Visa Requirements & Application Procedure | Eammu Immigration</title>
-        <meta name="description" content="Expert consultancy for Japan Tourist Visa, Business Visa, and E-Visa. Professional guidance on documents and embassy procedures with Eammu Holidays." />
-      </Helmet>
+ <Helmet>
+  <title>Japan Visa Application & Requirements | Tourist & Business Visa – Eammu Holidays</title>
+
+  <meta
+    name="description"
+    content="Apply for Japan tourist, business, and visit visas with expert guidance from Eammu Holidays. Complete Japan visa documentation, embassy submission support, and professional consultancy."
+  />
+
+  <meta
+    name="keywords"
+    content="Japan visa, Japan tourist visa, Japan visa Bangladesh, Japan visa UAE, Japan visa application, Japan business visa, visit visa Japan, Eammu Holidays"
+  />
+
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eammu.com/japan-visa" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Japan Visa Application & Requirements | Eammu Holidays" />
+  <meta
+    property="og:description"
+    content="Professional Japan visa assistance for tourist, business, and family visit visas. Apply confidently with Eammu Holidays."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eammu.com/japan-visa" />
+  <meta
+    property="og:image"
+    content="https://www.eammu.com/images/japan-visa-banner.jpg"
+  />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Japan Visa Application | Eammu Holidays" />
+  <meta
+    name="twitter:description"
+    content="Japan tourist and business visa consultancy with full documentation and embassy submission support."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.eammu.com/images/japan-visa-banner.jpg"
+  />
+
+  {/* JSON-LD Schema */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "GovernmentService",
+      "name": "Japan Visa Application Services",
+      "description":
+        "Complete Japan visa consultancy including eligibility assessment, documentation preparation, and embassy submission assistance.",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Eammu Holidays",
+        "url": "https://eammu.com/japan-visa",
+        "logo": "https://www.eammu.com/images/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+8801701699743",
+          "contactType": "Customer Support",
+          "email": "info@eammu.com"
+        }
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Japan"
+      },
+      "serviceType": "Japan Tourist & Business Visa Consultancy"
+    })}
+  </script>
+</Helmet>
+
 
       <main className="bg-white min-h-screen font-sans">
         
