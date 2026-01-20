@@ -46,7 +46,7 @@ const TIICPage = () => {
      <Helmet>
   {/* Primary SEO */}
   <title>
-    TIIC IELTS Coaching in Cumilla | Study Abroad Bangladesh & Dubai – Eammu Holidays
+    IELTS Coaching Center in Cumilla | Travel Agency Near me – Eammu Holidays
   </title>
 
   <meta

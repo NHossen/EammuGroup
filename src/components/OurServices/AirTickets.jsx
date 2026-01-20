@@ -141,7 +141,7 @@ const AirTickets = () => {
      <Helmet>
   {/* Primary SEO */}
   <title>
-    Cheap International Air Tickets | IATA Approved Flight Booking – Eammu Holidays
+    Cheap International Air Tickets | Travel Agency Near Me – Eammu Holidays
   </title>
 
   <meta

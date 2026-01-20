@@ -10,7 +10,7 @@ const TravelAgencyBangladesh = () => {
   return (
     <>
       <Helmet>
-        <title>Best Travel Agency in Bangladesh 2026 | Eammu Holidays - Cumilla & Dhaka</title>
+        <title>Best Travel Agency in Bangladesh | Eammu Holidays - Dhaka and Bangladesh</title>
         <meta name="description" content="Eammu Holidays: Top-rated travel agency in Bangladesh. Expert in Student Visa, Visit Visa & Tours. Visit our Cumilla office at Gomoti Tower for reliable consultancy." />
         <meta name="keywords" content="travel agency in Bangladesh, best travel agency in Cumilla, visa consultant Bangladesh, Eammu Holidays, Gomoti Tower Cumilla travel agency" />
         <link rel="canonical" href="https://eammu.com/travel-agency-bangladesh" />
