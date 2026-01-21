@@ -50,6 +50,10 @@ const Registration_Agents = () => {
           content="become travel agent Bangladesh, visa agent partnership, travel agency commission, Eammu Holidays agentship, start travel business Bangladesh"
         />
         <meta name="robots" content="index, follow" />
+         <meta
+    property="og:image"
+    content="https://eammu.com/eammuicon.jpg"
+  />
         <link rel="canonical" href="https://eammu.com/agent-registration" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>

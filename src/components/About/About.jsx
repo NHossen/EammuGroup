@@ -24,7 +24,7 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Eammu | Leading Travel & Immigration Agency in Bangladesh</title>
+        <title>Travel Agency | Leading Travel & Immigration Agency in Bangladesh</title>
         <meta
           name="description"
           content="Eammu global services including immigration, student & work visas, travel & tour packages. Established in 2022, serving clients in Dubai, Bangladesh, and Europe."

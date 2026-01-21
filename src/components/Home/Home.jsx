@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div>
 <Helmet>
-  <title>Eammu Immigration & Visa Services | Student, Tourist & Work Visa Experts</title>
+  <title>Travel Agency Bangladesh | Student, Tourist & Work Visa Experts</title>
 
   <meta
     name="description"
@@ -34,7 +34,7 @@ const Home = () => {
   <meta property="og:type" content="website" />
   <meta
     property="og:image"
-    content="https://eammu.com/images/eammu-home-banner.jpg"
+    content="https://eammu.com/eammuicon.jpg"
   />
 
   {/* Twitter Card */}
@@ -44,9 +44,9 @@ const Home = () => {
     name="twitter:description"
     content="Apply for student, tourist, and work visas worldwide with Eammu Immigration Services. Trusted consultants from Bangladesh & UAE."
   />
-  <meta
-    name="twitter:image"
-    content="https://eammu.com/images/eammu-home-banner.jpg"
+   <meta
+    property="og:image"
+    content="https://eammu.com/eammuicon.jpg"
   />
 </Helmet>
 

@@ -31,8 +31,7 @@ const TravelAgencyArmenia = () => {
   <meta property="og:url" content="https://eammu.com/travel-agency-armenia" />
   <meta 
     property="og:image" 
-    content="https://www.trekgeorgia.com/wp-content/uploads/2019/04/armenia_h_00000220066588.ngsversion.1501784794813.adapt_.1900.1.jpg" 
-  />
+    content="https://eammu.com/eammuicon.jpg"/>
 
   {/* Twitter Card */}
   <meta name="twitter:card" content="summary_large_image" />
