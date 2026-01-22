@@ -131,7 +131,7 @@ const EammuImmigrationHeading_2 = () => {
             <div className="relative overflow-hidden rounded-[2.5rem] shadow-2xl">
               <div className="absolute inset-0 bg-gradient-to-t from-[#005a31]/20 to-transparent pointer-events-none"></div>
               <img
-                src="/travel_banner_second_part.webp"
+                src="/travel_banner_second_part_one.webp"
                 alt="Eammu Holidays Banner"
                 className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
               />
