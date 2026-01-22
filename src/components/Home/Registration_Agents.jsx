@@ -16,8 +16,8 @@ const Registration_Agents = () => {
       "email": "info@eammu.com"
     },
     "sameAs": [
-      "https://www.facebook.com/eammu",
-      "https://www.instagram.com/eammu",
+      "https://www.facebook.com/eammutourism",
+      "https://www.instagram.com/eammuholidays",
       "https://www.linkedin.com/company/eammu",
       "https://www.youtube.com/@Eammutour"
     ],
@@ -61,9 +61,9 @@ const Registration_Agents = () => {
       <div className="card lg:card-side bg-base-100 shadow-xl">
         <figure>
           <img
-            src="https://i.ibb.co/9GWRJvf/agentship.jpg"
+            src="agentship.webp"
             alt="Eammu Holidays Agent Registration"
-            className=""
+            loading="eager"
           />
         </figure>
         <div className="card-body">

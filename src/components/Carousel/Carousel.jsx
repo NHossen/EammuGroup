@@ -77,9 +77,10 @@ const Carousel = () => {
         {/* Slide 1 */}
         <div id="slide1" className="carousel-item w-full h-full snap-center relative flex-shrink-0">
           <img
-            src="https://e3.365dm.com/24/07/1600x900/skynews-plane-cloud_6626642.jpg?20240715110714"
+            src="/eammu_banner.webp"
             className="object-cover w-full h-full"
             alt="Welcome to Eammu - Your Travel Partner"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center text-white text-center px-6">
             <div>
@@ -122,6 +123,7 @@ const Carousel = () => {
             src="https://ben.edu/wp-content/uploads/2023/08/Ben-Headers-7.png.webp"
             className="object-cover w-full h-full"
             alt="Why Choose Eammu - Trusted Immigration Partner"
+            loading="lazy"
           />
            <div className="absolute bg-black/30 inset-0 flex flex-col items-center justify-center text-white text-center px-6">
             <div>
@@ -146,9 +148,10 @@ const Carousel = () => {
         {/* Slide 3 */}
         <div id="slide3" className="carousel-item w-full h-full snap-center relative flex-shrink-0">
           <img
-            src="/travel.jpg"
+            src="/eammu_travel_final.webp"
             className="object-cover w-full h-full"
-            alt="Global Visa Destinations - Eammu Services"
+            alt="Global Visa Destinations - Eammu Holidays"
+            loading="eager"
           />
           <div className="absolute inset-0  flex items-center justify-center text-white px-6 text-center">
             <div>
@@ -171,9 +174,10 @@ const Carousel = () => {
         {/* Slide 4 */}
         <div id="slide4" className="carousel-item w-full h-full snap-center relative flex-shrink-0">
           <img
-            src="/eammuicon.jpg"
+            src="/eammu_banner_four.webp"
             className="object-cover w-full h-full"
             alt="Client Testimonials - Real Success Stories"
+            loading="lazy"
           />
           <div className="absolute inset-0 flex items-center justify-center text-white px-6 text-center">
             <div>

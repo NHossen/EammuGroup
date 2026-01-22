@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
-import logo from '../../assets/eammu.png';
+import logo from '../../assets/eammu_logo.webp';
 import {
   Navbar,
   NavbarBrand,
