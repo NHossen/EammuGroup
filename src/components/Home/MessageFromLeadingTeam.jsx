@@ -1,7 +1,58 @@
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useState, useEffect, useRef } from "react";
+import PropTypes from "prop-types";
 
+// Lazy-loaded YouTube component for Shorts
+const LazyYouTube = ({ videoId, title }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "200px" } // preload a bit before scrolling
+    );
+
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div
+      ref={ref}
+      className="relative overflow-hidden rounded-2xl shadow-lg aspect-[9/16] bg-black cursor-pointer group hover:shadow-2xl transition"
+    >
+      {isVisible ? (
+        <iframe
+          className="absolute top-0 left-0 w-full h-full"
+          src={`https://www.youtube.com/embed/${videoId}?autoplay=0&loop=1&playlist=${videoId}`}
+          title={title}
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      ) : (
+        <img
+          src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
+          alt={title}
+          className="w-full h-full object-cover"
+        />
+      )}
+    </div>
+  );
+};
+
+LazyYouTube.propTypes = {
+  videoId: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};
 
 const MessageFromLeadingTeam = () => {
   const teamMembers = [
@@ -46,28 +97,27 @@ const MessageFromLeadingTeam = () => {
     },
   ];
 
-  // Structured data JSON-LD
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Eammu Holidays",
-    "url": "https://eammu.com",
-    "logo": "https://eammu.com/logo.png",
-    "sameAs": [
+    name: "Eammu Holidays",
+    url: "https://eammu.com",
+    logo: "https://eammu.com/logo.png",
+    sameAs: [
       "https://facebook.com/eammuimmigrationservices",
       "https://instagram.com/eammuholidays",
-      "https://linkedin.com/company/eammu-immigration-services"
+      "https://linkedin.com/company/eammu-immigration-services",
     ],
-    "employee": teamMembers.map((member) => ({
+    employee: teamMembers.map((member) => ({
       "@type": "Person",
-      "name": member.name,
-      "jobTitle": member.role,
-      "image": member.image,
-      "description": member.description,
+      name: member.name,
+      jobTitle: member.role,
+      image: member.image,
+      description: member.description,
     })),
   };
 
-    const shorts = [
+  const shorts = [
     { id: "VXcsh-RGAQo", title: "FEEL THE HEAT! WITH EAMMU FIRE SHOW DESERT SAFARI" },
     { id: "5GgTsBbWT9Q", title: "DESERT SAFARI DUBAI WITH EAMMU" },
     { id: "yGZlj3IqwqQ", title: "THAILAND TOUR PACKAGES With Eammu – EXPLORE THE LAND OF SMILES" },
@@ -77,7 +127,9 @@ const MessageFromLeadingTeam = () => {
   return (
     <section className="px-4 py-16 bg-gray-50">
       <Helmet>
-        <title>Eammu Leadership Team Bangladesh | Eammu Holidays : Travel Agency Bangladesh</title>
+        <title>
+          Eammu Leadership Team Bangladesh | Eammu Holidays : Travel Agency Bangladesh
+        </title>
         <meta
           name="description"
           content="Discover the leadership team at Eammu Holidays. Meet global visa experts, student visa specialists, and customer service managers dedicated to helping you."
@@ -126,22 +178,16 @@ const MessageFromLeadingTeam = () => {
               />
             </figure>
             <h2 className="text-xl font-semibold text-green-800 mb-1">
-  {member.name === "Naeem Hossen" ? (
-    <Link
-      to="/naeem-hossen"
-      className="no-underline text-inherit hover:text-inherit"
-    >
-      {member.name}
-    </Link>
-  ) : (
-    member.name
-  )}
-</h2>
-
+              {member.name === "Naeem Hossen" ? (
+                <Link to="/naeem-hossen" className="no-underline text-inherit hover:text-inherit">
+                  {member.name}
+                </Link>
+              ) : (
+                member.name
+              )}
+            </h2>
             <p className="text-gray-600 font-medium mb-2">{member.role}</p>
             <p className="text-gray-500 text-sm mb-3">{member.description}</p>
-
-            {/* Social Links */}
             <div className="flex gap-3">
               {member.socials.linkedin && (
                 <a href={member.socials.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-900 transition">
@@ -163,7 +209,7 @@ const MessageFromLeadingTeam = () => {
         ))}
       </div>
 
-      {/* CTA Section */}
+      {/* CTA */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -182,78 +228,55 @@ const MessageFromLeadingTeam = () => {
         </a>
       </motion.div>
 
-            <section className="mt-16">
-  <h2 className="text-3xl font-bold text-center text-[#005a31] mb-8">
-    🎥 Video Testimonials
-  </h2>
-
+{/* Video Testimonials */}
+<section className="mt-16 px-4">
+  <h2 className="text-3xl font-bold text-center text-[#005a31] mb-8">🎥 Video Testimonials</h2>
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
-      <iframe
-        className="w-full h-full"
-        src="https://www.youtube.com/embed/9RE1nwL9SqM
-"
-        title="Client Testimonial Eammu"
-        frameBorder="0"
-        allowFullScreen
-      ></iframe>
-    </div>
-
-    <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
-      <iframe
-        className="w-full h-full"
-        src="https://www.youtube.com/embed/Iw4JZZp9q8c"
-        title="Client Review Eammu Immigration"
-        frameBorder="0"
-        allowFullScreen
-      ></iframe>
-    </div>
-    
-  </div>
-
-
- <section className="py-12 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-[#005a31] text-center mb-8">
-          Watch Our Travel Highlights
-        </h2>
-        
-        {/* Grid Logic:
-            - Grid-cols-1: Mobile এ ১টি
-            - sm:grid-cols-2: Tablet এ ২টি
-            - lg:grid-cols-4: Large Screen এ ৪টি
-        */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {shorts.map((video) => (
-            <div 
-              key={video.id} 
-              className="relative overflow-hidden rounded-2xl shadow-lg bg-black aspect-[9/16]"
-            >
-              <iframe
-                className="absolute top-0 left-0 w-full h-full"
-                src={`https://www.youtube.com/embed/${video.id}?autoplay=0&loop=1&playlist=${video.id}`}
-                title={video.title}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          ))}
-        </div>
-        
-        <div className="text-center mt-8">
-          <a 
-            href="https://www.youtube.com/@Eammutour" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-red-600 font-semibold hover:underline"
-          >
-            View more on YouTube →
-          </a>
-        </div>
+    {[
+      { id: "9RE1nwL9SqM", title: "Client Testimonial Eammu" },
+      { id: "Iw4JZZp9q8c", title: "Client Review Eammu Immigration" },
+    ].map((video) => (
+      <div
+        key={video.id}
+        className="relative overflow-hidden rounded-2xl shadow-xl bg-black aspect-video group hover:shadow-2xl transition"
+      >
+        {/* Lazy loading iframe */}
+        <iframe
+          className="absolute top-0 left-0 w-full h-full"
+          src={`https://www.youtube.com/embed/${video.id}?autoplay=0`}
+          title={video.title}
+          frameBorder="0"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
       </div>
-    </section>
+    ))}
+  </div>
 </section>
+
+
+      {/* Shorts */}
+      <section className="py-12 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-[#005a31] text-center mb-8">Watch Our Travel Highlights</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {shorts.map((video) => (
+              <LazyYouTube key={video.id} videoId={video.id} title={video.title} />
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <a
+              href="https://www.youtube.com/@Eammutour"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-red-600 font-semibold hover:underline"
+            >
+              View more on YouTube →
+            </a>
+          </div>
+        </div>
+      </section>
     </section>
   );
 };

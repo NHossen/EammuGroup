@@ -73,7 +73,7 @@ const About = () => {
             </p>
             <div className="relative rounded-3xl overflow-hidden shadow-2xl max-w-5xl mx-auto">
               <img
-                src="/eammuicon.jpg"
+                src="/eammu_banner_four.webp"
                 alt="Eammu Global Business Presence"
                 className="w-full h-[300px] md:h-[500px] object-cover hover:scale-105 transition-transform duration-700"
               />
