@@ -19,7 +19,7 @@ const offers = [
     id: 3,
     title: "Early Bird Flight Deal",
     description: "Book your air tickets 3 months in advance and save up to 20%.",
-    image: "https://dynamicimagesae.rehlat.com/DynamicImages/DealsAndOffers/DealsInfo/644_202404301235006641.jpg",
+    image: "/offer-eammu-travel-agency-bangladesh-dhaka.webp",
   },
   {
     id: 4,
@@ -31,7 +31,13 @@ const offers = [
     id: 5,
     title: "Fast Track Travel Offer",
     description: "Fast Track Travel Offer visa application with zero extra charge for June.",
-    image: "https://dynamicimagesae.rehlat.com/DynamicImages/DealsAndOffers/DealsInfo/664_202305100952564008.jpg",
+    image: "/best-travel-agency-bangladesh-offer.webp",
+  },
+    {
+    id: 6,
+    title: "Travel Promo Deals 2026",
+    description: "Travel Promo Deals 2026 Offer visa application with zero extra charge for June.",
+    image: "/travel-promo-deals-travel-agency-offer-bangladesh.webp",
   },
 ];
 

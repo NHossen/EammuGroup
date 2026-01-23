@@ -61,7 +61,7 @@ const Registration_Agents = () => {
       <div className="card lg:card-side bg-base-100 shadow-xl">
         <figure>
           <img
-            src="agentship.webp"
+            src="eammu-agent-travel-agency-bangladesh-dhaka.webp"
             alt="Eammu Holidays Agent Registration"
             loading="eager"
           />
