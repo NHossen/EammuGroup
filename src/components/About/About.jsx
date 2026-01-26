@@ -40,7 +40,7 @@ const About = () => {
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Eammu Holidays",
-            "url": "https://eammu.com",
+            "url": "https://eammu.com/about",
             "logo": "https://i.ibb.co/YF7bmqfg/521388962-122289260780017871-6426815952586296550-n.jpg",
             "sameAs": [
               "https://facebook.com/eammutourism/",

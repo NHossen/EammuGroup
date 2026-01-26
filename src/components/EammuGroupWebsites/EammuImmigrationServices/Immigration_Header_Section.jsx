@@ -8,16 +8,16 @@ const Immigration_Header_Section = () => {
     <div className="px-4 container mx-auto py-8">
       {/* SEO Helmet (Unchanged) */}
       <Helmet>
-        <title>Eammu Holidays | Global Visa Experts</title>
+        <title>Eammu Holidays | Global Visa Experts - Travel Agency Bangladesh</title>
         <meta
           name="description"
-          content="Explore global visa services by Eammu Immigration. We provide expert support for student, tourist, and work visas for the USA, Canada, UK, Europe, and more."
+          content="Explore global visa services by Eammu Holidays. We provide expert support for student, tourist, and work visas for the USA, Canada, UK, Europe, and more."
         />
         <meta
           name="keywords"
           content="Eammu Holidays, Visa Consultancy, Work Visa, Student Visa, Tourist Visa, USA Visa, Canada Immigration, UK Study Visa, Europe Visa Agent"
         />
-        <meta property="og:title" content="Eammu Immigration Services" />
+        <meta property="og:title" content="Eammu Holidays" />
         <meta
           property="og:description"
           content="Reliable visa services for students, tourists, and professionals. Apply confidently with Eammu."
@@ -26,7 +26,7 @@ const Immigration_Header_Section = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://yourdomain.com/images/eammu-immigration-cover.jpg"
+          content="/eammu_holidays_Travel_agency.webp"
         />
       </Helmet>
 

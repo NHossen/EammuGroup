@@ -182,7 +182,7 @@ const Blogs = () => {
           content={
             activeBlog
               ? activeBlog.image
-              : "https://eammu.com/images/logo.png"
+              : "/eammu_holidays_Travel_agency.webp"
           }
         />
 
