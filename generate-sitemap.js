@@ -1,6 +1,6 @@
-const { SitemapStream, streamToPromise } = require('sitemap');
-const { writeFileSync } = require('fs');
-const { resolve } = require('path');
+import { SitemapStream, streamToPromise } from 'sitemap';
+import { writeFileSync } from 'fs';
+import { resolve } from 'path';
 
 const BASE_URL = 'https://eammu.com';
 
