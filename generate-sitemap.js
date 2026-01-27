@@ -1,44 +1,116 @@
-import { SitemapStream, streamToPromise } from 'sitemap';
-import { writeFileSync } from 'fs';
-import { resolve } from 'path';
+const { SitemapStream, streamToPromise } = require('sitemap');
+const { writeFileSync } = require('fs');
+const { resolve } = require('path');
 
-const sitemap = new SitemapStream({ hostname: 'https://eammu.com' });
+const BASE_URL = 'https://eammu.com';
 
-const pages = [
-  { url: '/', changefreq: 'daily', priority: 1.0 },
-  { url: '/about', changefreq: 'weekly', priority: 0.85 },
-  { url: '/contact', changefreq: 'weekly', priority: 0.85 },
-  { url: '/our-services', changefreq: 'monthly', priority: 0.85 },
-  { url: '/visa-services', changefreq: 'weekly', priority: 0.85 },
-  { url: '/air-tickets', changefreq: 'weekly', priority: 0.85 },
-  { url: '/tour-packages', changefreq: 'weekly', priority: 0.85 },
-  { url: '/offers', changefreq: 'weekly', priority: 0.85 },
-  { url: '/immigration-services', changefreq: 'weekly', priority: 0.85 },
-  { url: '/eammufashion', changefreq: 'monthly', priority: 0.85 },
-  { url: '/eammumarketing', changefreq: 'monthly', priority: 0.8 },
-  { url: '/eammuevent', changefreq: 'monthly', priority: 0.85 },
-  { url: '/eammudairy', changefreq: 'monthly', priority: 0.85 },
-  { url: '/eammutextile', changefreq: 'monthly', priority: 0.85 },
-  { url: '/flyzoo', changefreq: 'monthly', priority: 0.75 },
-  { url: '/usa-visa-interview-prep', changefreq: 'monthly', priority: 0.75 },
-  { url: '/newsfeeds', changefreq: 'weekly', priority: 0.7 },
-  { url: '/careers', changefreq: 'weekly', priority: 0.75 },
-  { url: '/blogs', changefreq: 'weekly', priority: 0.75 },
-  { url: '/message-from-leadership', changefreq: 'monthly', priority: 0.7 },
-  { url: '/why-choose-eammu', changefreq: 'monthly', priority: 0.7 },
-  { url: '/terms-and-conditions', changefreq: 'monthly', priority: 0.7 },
-  { url: '/testimonials', changefreq: 'monthly', priority: 0.7 },
-  { url: '/signup', changefreq: 'monthly', priority: 0.5 },
-  { url: '/login', changefreq: 'monthly', priority: 0.5 },
+const sitemap = new SitemapStream({
+  hostname: BASE_URL
+});
+
+/**
+ * 🔥 SINGLE SOURCE OF TRUTH
+ * These routes are copied directly from main.jsx
+ * No guessing. No missing pages.
+ */
+const routes = [
+  // ===== MAIN =====
+  '/',
+  '/about',
+  '/contact',
+  '/blogs',
+
+  // ===== SERVICES =====
+  '/our-services',
+  '/visa-services',
+  '/air-tickets',
+  '/tour-packages',
+  '/offers',
+
+  // ===== IMMIGRATION =====
+  '/immigration-services',
+  '/usa-visa-interview-prep',
+
+  // ===== GROUP WEBSITES =====
+  '/eammufashion',
+  '/eammumarketing',
+  '/eammuevent',
+  '/eammudairy',
+  '/eammutextile',
+  '/flyzoo',
+
+  // ===== TRUST / LINKS =====
+  '/newsfeeds',
+  '/careers',
+  '/testimonials',
+  '/why-choose-eammu',
+  '/message-from-leadership',
+  '/terms-and-conditions',
+
+  // ===== AUTH =====
+  '/signup',
+  '/login',
+
+  // ===== CEO =====
+  '/naeem-hossen',
+
+  // ===== COUNTRY PAGES =====
+  '/travel-agency-bangladesh',
+  '/travel-agency-dubai',
+  '/travel-agency-armenia',
+  '/travel-agency-georgia',
+
+  // ===== VISA PAGES =====
+  '/usa-visa-application',
+  '/uk-visa-application',
+  '/europe-visa-application',
+  '/canada-visa-application',
+  '/australia-visa-application',
+  '/germany-visa-application',
+  '/portugal-visa-application',
+  '/armenia-visa-application',
+  '/georgia-visa-application',
+  '/albania-visa-application',
+  '/dubai-visa-application',
+  '/qatar-visa-application',
+  '/japan-visa-application',
+  '/china-visa-application',
+  '/south-korea-visa-application',
+  '/spain-visa-application',
+  '/kosovo-visa-application',
+  '/serbia-visa-application',
+
+  // ===== VISA CATEGORIES =====
+  '/tourist-visa-application-from-bangladesh',
+  '/student-visa-application-from-bangladesh',
+  '/work-visa-application-from-bangladesh',
+
+  // ===== TIIC & STORE =====
+  '/target-ielts-and-immigration-center',
+  '/eammu-store',
+  '/eammu-social-responsibility'
 ];
 
-// Add lastmod automatically
-pages.forEach(page => sitemap.write({ ...page, lastmod: new Date().toISOString() }));
+// 🔁 WRITE ALL ROUTES
+routes.forEach(route => {
+  sitemap.write({
+    url: route,
+    changefreq: route === '/' ? 'daily' : 'weekly',
+    priority: route === '/' ? 1.0 : 0.8,
+    lastmod: new Date().toISOString()
+  });
+});
+
+// END STREAM
 sitemap.end();
 
-// Generate sitemap.xml in public folder at build time
-streamToPromise(sitemap).then(data => {
-  const path = resolve('./public/sitemap.xml');
-  writeFileSync(path, data);
-  console.log(`✅ Sitemap generated at ${path}`);
-});
+// SAVE FILE TO /public
+streamToPromise(sitemap)
+  .then(xml => {
+    const filePath = resolve('./public/sitemap.xml');
+    writeFileSync(filePath, xml.toString());
+    console.log('✅ Sitemap generated successfully:', filePath);
+  })
+  .catch(err => {
+    console.error('❌ Sitemap generation failed:', err);
+  });
