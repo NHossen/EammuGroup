@@ -6,7 +6,7 @@ const KosovoVisa = () => {
   return (
     <>
    <Helmet>
-  <title>Kosovo Visa Application & Requirements | Tourist & Business Visa – Eammu Holidays</title>
+  <title>Kosovo Visa Application And Requirements | Get Visa Assistance – Eammu Holidays</title>
 
   <meta
     name="description"
@@ -19,7 +19,7 @@ const KosovoVisa = () => {
   />
 
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://eammu.com/kosovo-visa" />
+  <link rel="canonical" href="https://eammu.com/kosovo-visa-application" />
 
   {/* Open Graph */}
   <meta property="og:title" content="Kosovo Visa Application & Requirements | Eammu Holidays" />
@@ -28,7 +28,7 @@ const KosovoVisa = () => {
     content="Professional Kosovo visa assistance for tourist, business, and visit purposes. Apply confidently with Eammu Holidays."
   />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://eammu.com/kosovo-visa" />
+  <meta property="og:url" content="https://eammu.com/kosovo-visa-application" />
   <meta
     property="og:image"
     content="https://www.eammu.com/images/kosovo-visa-banner.jpg"
@@ -57,7 +57,7 @@ const KosovoVisa = () => {
       "provider": {
         "@type": "TravelAgency",
         "name": "Eammu Holidays",
-        "url": "https://eammu.com/kosovo-visa",
+        "url": "https://eammu.com/kosovo-visa-application",
         "logo": "https://www.eammu.com/images/logo.png",
         "contactPoint": {
           "@type": "ContactPoint",
@@ -88,7 +88,7 @@ const KosovoVisa = () => {
               Balkan Peninsula Gateway
             </span>
             <h1 className="text-5xl md:text-7xl font-black mb-4 tracking-tighter uppercase">
-              Kosovo <span className="text-orange-500">Visa</span>
+              Kosovo <span className="text-orange-500">Visa</span> Application – Requirements, Process & Fees
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light">
               Explore the Heart of the Balkans with Expert Visa Facilitation

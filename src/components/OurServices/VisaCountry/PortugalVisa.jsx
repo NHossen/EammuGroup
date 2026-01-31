@@ -6,7 +6,7 @@ const PortugalVisa = () => {
   return (
     <>
  <Helmet>
-  <title>Portugal Visa Application & Requirements | Schengen Visa – Eammu Holidays</title>
+  <title>Portugal Visa Application And Requirements | Get Visa Assistance -| Schengen Visa – Eammu Holidays</title>
 
   <meta
     name="description"
@@ -19,7 +19,7 @@ const PortugalVisa = () => {
   />
 
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://eammu.com/portugal-visa" />
+  <link rel="canonical" href="https://eammu.com/portugal-visa-application" />
 
   {/* Open Graph */}
   <meta property="og:title" content="Portugal Visa Application & Requirements | Eammu Holidays" />
@@ -28,7 +28,7 @@ const PortugalVisa = () => {
     content="Professional Portugal Schengen visa consultancy with document preparation, embassy appointment, and submission support."
   />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://eammu.com/portugal-visa" />
+  <meta property="og:url" content="https://eammu.com/portugal-visa-application" />
   <meta
     property="og:image"
     content="https://www.eammu.com/images/portugal-visa-banner.jpg"
@@ -57,7 +57,7 @@ const PortugalVisa = () => {
       "provider": {
         "@type": "TravelAgency",
         "name": "Eammu Holidays",
-        "url": "https://eammu.com/portugal-visa",
+        "url": "https://eammu.com/portugal-visa-application",
         "logo": "https://www.eammu.com/images/logo.png",
         "contactPoint": {
           "@type": "ContactPoint",
@@ -88,7 +88,7 @@ const PortugalVisa = () => {
               Gateway to European Residency
             </span>
             <h1 className="text-5xl md:text-7xl font-black mb-4 tracking-tighter uppercase">
-              Portugal <span className="text-orange-500">Visa</span>
+              Portugal <span className="text-orange-500">Visa</span> Application – Requirements, Process & Fees
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light">
               Experience the Beauty and Opportunities of Portugal with Expert Guidance

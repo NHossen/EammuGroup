@@ -25,7 +25,7 @@ const TIICPage = () => {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
     name: "Target IELTS & Immigration Center (TIIC)",
-    url: "https://eammu.com/tiic-academy",
+    url: "https://eammu.com/target-ielts-and-immigration-center",
     parentOrganization: {
       "@type": "Organization",
       name: "Eammu Holidays",

@@ -6,7 +6,7 @@ const QatarVisa = () => {
   return (
     <>
  <Helmet>
-  <title>Qatar Visa Application & Requirements | Tourist & Business Visa – Eammu Holidays</title>
+  <title>Qatar Visa Application And Requirements | Get Visa Assistance – Eammu Holidays</title>
 
   <meta
     name="description"
@@ -19,7 +19,7 @@ const QatarVisa = () => {
   />
 
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://eammu.com/qatar-visa" />
+  <link rel="canonical" href="https://eammu.com/qatar-visa-application" />
 
   {/* Open Graph */}
   <meta property="og:title" content="Qatar Visa Application & Requirements | Eammu Holidays" />
@@ -28,7 +28,7 @@ const QatarVisa = () => {
     content="Professional Qatar visa consultancy for tourists, business travelers, and family visits with expert document handling."
   />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://eammu.com/qatar-visa" />
+  <meta property="og:url" content="https://eammu.com/qatar-visa-application" />
   <meta
     property="og:image"
     content="https://www.eammu.com/images/qatar-visa-banner.jpg"
@@ -57,7 +57,7 @@ const QatarVisa = () => {
       "provider": {
         "@type": "TravelAgency",
         "name": "Eammu Holidays",
-        "url": "https://eammu.com/qatar-visa",
+        "url": "https://eammu.com/qatar-visa-application",
         "logo": "https://www.eammu.com/images/logo.png",
         "contactPoint": {
           "@type": "ContactPoint",
@@ -88,7 +88,7 @@ const QatarVisa = () => {
               GCC Visa Specialist
             </span>
             <h1 className="text-5xl md:text-7xl font-black mb-4 tracking-tighter uppercase">
-              Qatar <span className="text-orange-500">Visa</span>
+              Qatar <span className="text-orange-500">Visa</span> Application – Requirements, Process & Fees
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light">
               Fast & Reliable Visa Processing for the Pearl of the Gulf

@@ -6,7 +6,7 @@ const SerbiaVisa = () => {
   return (
     <>
    <Helmet>
-  <title>Serbia Visa Application & Requirements | Tourist & Business Visa – Eammu Holidays</title>
+  <title>Serbia Visa Application And Requirements | Get Visa Assistance – Eammu Holidays</title>
 
   <meta
     name="description"
@@ -19,7 +19,7 @@ const SerbiaVisa = () => {
   />
 
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://eammu.com/serbia-visa" />
+  <link rel="canonical" href="https://eammu.com/serbia-visa-application" />
 
   {/* Open Graph */}
   <meta property="og:title" content="Serbia Visa Application & Requirements | Eammu Holidays" />
@@ -28,7 +28,7 @@ const SerbiaVisa = () => {
     content="Professional Serbia visa consultancy for tourists, business travelers, and family visits with expert document handling."
   />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://eammu.com/serbia-visa" />
+  <meta property="og:url" content="https://eammu.com/serbia-visa-application" />
   <meta
     property="og:image"
     content="https://www.eammu.com/images/serbia-visa-banner.jpg"
@@ -57,7 +57,7 @@ const SerbiaVisa = () => {
       "provider": {
         "@type": "TravelAgency",
         "name": "Eammu Holidays",
-        "url": "https://eammu.com/serbia-visa",
+        "url": "https://eammu.com/serbia-visa-applicaion",
         "logo": "https://www.eammu.com/images/logo.png",
         "contactPoint": {
           "@type": "ContactPoint",
@@ -88,7 +88,7 @@ const SerbiaVisa = () => {
               Balkan Business & Travel Hub
             </span>
             <h1 className="text-5xl md:text-7xl font-black mb-4 tracking-tighter uppercase">
-              Serbia <span className="text-orange-500">Visa</span>
+              Serbia <span className="text-orange-500">Visa</span> Application – Requirements, Process & Fees
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light">
               Explore the Heart of Southeast Europe with Seamless Visa & Residency Support

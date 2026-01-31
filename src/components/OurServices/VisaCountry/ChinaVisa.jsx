@@ -6,7 +6,7 @@ const ChinaVisa = () => {
   return (
     <>
     <Helmet>
-  <title>China Visa & Immigration Services | Eammu Holidays</title>
+  <title>China Visa Application And Requirements | Get Visa Assistance - Eammu Holidays</title>
   <meta 
     name="description" 
     content="Expert assistance for China tourist visa, business visa, student visa, and work permit. Eammu Holidays provides step-by-step guidance for applicants from Bangladesh, UAE, and other countries." 
@@ -16,7 +16,7 @@ const ChinaVisa = () => {
     content="China visa, China tourist visa, China business visa, China student visa, China work permit, Eammu Holidays, visa consultancy China" 
   />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://eammu.com/china-visa" />
+  <link rel="canonical" href="https://eammu.com/china-visa-application" />
 
   {/* Open Graph */}
   <meta property="og:title" content="China Visa & Immigration Services | Eammu Holidays" />
@@ -25,7 +25,7 @@ const ChinaVisa = () => {
     content="Eammu Holidays provides professional China visa consultancy including tourist, business, student, and work visas. Trusted guidance for applicants from Bangladesh, UAE, and beyond." 
   />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://eammu.com/china-visa" />
+  <meta property="og:url" content="https://eammu.com/china-visa-application" />
   <meta 
     property="og:image" 
     content="https://www.eammu.com/images/china-visa-banner.jpg" 
@@ -52,11 +52,11 @@ const ChinaVisa = () => {
       "provider": {
         "@type": "TravelAgency",
         "name": "Eammu Holidays",
-        "url": "https://eammu.com/china-visa",
+        "url": "https://eammu.com/china-visa-application",
         "logo": "https://www.eammu.com/images/logo.png",
         "sameAs": [
-          "https://www.facebook.com/eammu",
-          "https://www.instagram.com/eammu",
+          "https://www.facebook.com/eammutourism",
+          "https://www.instagram.com/eammuholidays",
           "https://www.linkedin.com/company/eammu"
         ],
         "contactPoint": {
@@ -86,7 +86,7 @@ const ChinaVisa = () => {
               Global Trade & Tourism Gateway
             </span>
             <h1 className="text-5xl md:text-7xl font-black mb-4 tracking-tighter uppercase">
-              China <span className="text-orange-500">Visa</span>
+              China <span className="text-orange-500">Visa</span> Application – Requirements, Process & Fees
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light">
               Unlock Business and Travel Opportunities in the World’s Leading Economic Hub

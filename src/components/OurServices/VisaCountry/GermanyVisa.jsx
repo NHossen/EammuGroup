@@ -6,7 +6,7 @@ const GermanyVisa = () => {
   return (
     <>
    <Helmet>
-  <title>Germany Visa Application & Requirements | Schengen Visa – Eammu Holidays</title>
+  <title>Germany Visa Application And Requirements | Get Visa Assistance – Eammu Holidays</title>
 
   <meta
     name="description"
@@ -19,7 +19,7 @@ const GermanyVisa = () => {
   />
 
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://eammu.com/germany-visa" />
+  <link rel="canonical" href="https://eammu.com/germany-visa-application" />
 
   {/* Open Graph */}
   <meta property="og:title" content="Germany Visa Application & Requirements | Eammu Holidays" />
@@ -28,7 +28,7 @@ const GermanyVisa = () => {
     content="Professional Germany Schengen visa assistance for tourist, business and family visit travel. Apply confidently with Eammu Holidays."
   />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://eammu.com/germany-visa" />
+  <meta property="og:url" content="https://eammu.com/germany-visa-application" />
   <meta
     property="og:image"
     content="https://www.eammu.com/images/germany-visa-banner.jpg"
@@ -57,7 +57,7 @@ const GermanyVisa = () => {
       "provider": {
         "@type": "TravelAgency",
         "name": "Eammu Holidays",
-        "url": "https://eammu.com/germany-visa",
+        "url": "https://eammu.com/germany-visa-application",
         "logo": "https://www.eammu.com/images/logo.png",
         "contactPoint": {
           "@type": "ContactPoint",
@@ -88,7 +88,7 @@ const GermanyVisa = () => {
               Expert in German Immigration Law
             </span>
             <h1 className="text-5xl md:text-7xl font-black mb-4 tracking-tighter uppercase">
-              Germany <span className="text-orange-500">Visa</span>
+              Germany <span className="text-orange-500">Visa</span> Application – Requirements, Process & Fees
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light">
               Study, Work, and Build Your Career in the Heart of Europe

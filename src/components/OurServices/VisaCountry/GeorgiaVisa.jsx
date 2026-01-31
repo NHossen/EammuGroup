@@ -6,7 +6,7 @@ const GeorgiaVisa = () => {
   return (
     <>
     <Helmet>
-  <title>Georgia Visa Application & Requirements | Eammu Holidays</title>
+  <title>Georgia Visa Application And Requirements | Get Visa Assistance - Eammu Holidays</title>
 
   <meta
     name="description"
@@ -19,7 +19,7 @@ const GeorgiaVisa = () => {
   />
 
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://eammu.com/georgia-visa" />
+  <link rel="canonical" href="https://eammu.com/georgia-visa-application" />
 
   {/* Open Graph */}
   <meta property="og:title" content="Georgia Visa Application & Requirements | Eammu Holidays" />
@@ -28,7 +28,7 @@ const GeorgiaVisa = () => {
     content="Professional Georgia visa assistance for tourist and business travel. Apply confidently with Eammu Holidays."
   />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://eammu.com/georgia-visa" />
+  <meta property="og:url" content="https://eammu.com/georgia-visa-application" />
   <meta
     property="og:image"
     content="https://www.eammu.com/images/georgia-visa-banner.jpg"
@@ -57,7 +57,7 @@ const GeorgiaVisa = () => {
       "provider": {
         "@type": "TravelAgency",
         "name": "Eammu Holidays",
-        "url": "https://eammu.com/georgia-visa",
+        "url": "https://eammu.com/georgia-visa-application",
         "logo": "https://www.eammu.com/images/logo.png",
         "contactPoint": {
           "@type": "ContactPoint",
@@ -88,7 +88,7 @@ const GeorgiaVisa = () => {
               Caucasus Region Expert
             </span>
             <h1 className="text-5xl md:text-7xl font-black mb-4 tracking-tighter uppercase">
-              Georgia <span className="text-orange-500">Visa</span>
+              Georgia <span className="text-orange-500">Visa</span> Application – Requirements, Process & Fees
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light">
               Explore the Intersection of Europe and Asia with Seamless Visa Processing

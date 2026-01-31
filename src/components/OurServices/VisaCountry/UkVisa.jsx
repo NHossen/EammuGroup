@@ -6,7 +6,7 @@ const UkVisa = () => {
   return (
     <>
   <Helmet>
-  <title>UK Visa Application & Requirements | Tourist & Business Visa – Eammu Holidays</title>
+  <title>UK Visa Application And Requirements | Get Visa Assistance – Eammu Holidays</title>
 
   <meta
     name="description"
@@ -19,7 +19,7 @@ const UkVisa = () => {
   />
 
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://eammu.com/uk-visa" />
+  <link rel="canonical" href="https://eammu.com/uk-visa-application" />
 
   {/* Open Graph */}
   <meta property="og:title" content="UK Visa Application & Requirements | Eammu Holidays" />
@@ -28,7 +28,7 @@ const UkVisa = () => {
     content="Professional UK visa consultancy for tourists, business travelers, and family visits with expert document handling."
   />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://eammu.com/uk-visa" />
+  <meta property="og:url" content="https://eammu.com/uk-visa-application" />
   <meta
     property="og:image"
     content="https://www.eammu.com/images/uk-visa-banner.jpg"
@@ -57,7 +57,7 @@ const UkVisa = () => {
       "provider": {
         "@type": "TravelAgency",
         "name": "Eammu Holidays",
-        "url": "https://eammu.com/uk-visa",
+        "url": "https://eammu.com/uk-visa-application",
         "logo": "https://www.eammu.com/images/logo.png",
         "contactPoint": {
           "@type": "ContactPoint",
@@ -88,7 +88,7 @@ const UkVisa = () => {
               British Council Certified Partners
             </span>
             <h1 className="text-5xl md:text-7xl font-black mb-4 tracking-tighter">
-              UK <span className="text-orange-500">VISA</span>
+              UK <span className="text-orange-500">VISA</span> Application – Requirements, Process & Fees
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light">
               Expert Solutions for Standard Visitor, Student, and Family Visas

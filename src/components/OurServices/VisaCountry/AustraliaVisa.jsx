@@ -6,7 +6,7 @@ const AustraliaVisa = () => {
   return (
     <>
      <Helmet>
-  <title>Australia Visa & Immigration Services | Eammu Holidays</title>
+  <title>Australia Visa Application And Requirements | Get Visa Assistance - Eammu Holidays</title>
   <meta 
     name="description" 
     content="Get expert assistance for Australia tourist visa, student visa, work visa, and permanent residency. Eammu Holidays provides step-by-step support from Bangladesh and UAE." 
@@ -86,7 +86,7 @@ const AustraliaVisa = () => {
               Qualified Education Agent Counselor
             </span>
             <h1 className="text-5xl md:text-7xl font-black mb-4 tracking-tighter uppercase">
-              Australia <span className="text-orange-500">Visa</span>
+              Australia <span className="text-orange-500">Visa</span> Application – Requirements, Process & Fees
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light">
               Your Pathway to the Land Down Under – Expert Visa Solutions

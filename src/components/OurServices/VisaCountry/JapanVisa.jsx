@@ -6,7 +6,7 @@ const JapanVisa = () => {
   return (
     <>
  <Helmet>
-  <title>Japan Visa Application & Requirements | Tourist & Business Visa – Eammu Holidays</title>
+  <title>Japan Visa Application And Requirements | Get Visa Assistance - – Eammu Holidays</title>
 
   <meta
     name="description"
@@ -19,7 +19,7 @@ const JapanVisa = () => {
   />
 
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://eammu.com/japan-visa" />
+  <link rel="canonical" href="https://eammu.com/japan-visa-application" />
 
   {/* Open Graph */}
   <meta property="og:title" content="Japan Visa Application & Requirements | Eammu Holidays" />
@@ -28,7 +28,7 @@ const JapanVisa = () => {
     content="Professional Japan visa assistance for tourist, business, and family visit visas. Apply confidently with Eammu Holidays."
   />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://eammu.com/japan-visa" />
+  <meta property="og:url" content="https://eammu.com/japan-visa-application" />
   <meta
     property="og:image"
     content="https://www.eammu.com/images/japan-visa-banner.jpg"
@@ -57,7 +57,7 @@ const JapanVisa = () => {
       "provider": {
         "@type": "TravelAgency",
         "name": "Eammu Holidays",
-        "url": "https://eammu.com/japan-visa",
+        "url": "https://eammu.com/japan-visa-application",
         "logo": "https://www.eammu.com/images/logo.png",
         "contactPoint": {
           "@type": "ContactPoint",
@@ -88,7 +88,7 @@ const JapanVisa = () => {
               Land of the Rising Sun
             </span>
             <h1 className="text-5xl md:text-7xl font-black mb-4 tracking-tighter uppercase">
-              Japan <span className="text-orange-500">Visa</span>
+              Japan <span className="text-orange-500">Visa</span> Application – Requirements, Process & Fees
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light">
               Experience Tradition and Technology with Our Seamless Japan Visa Services

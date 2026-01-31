@@ -34,7 +34,7 @@ const StudentVisaBangladesh = () => {
     name="keywords"
     content="student visa consultant Bangladesh, study abroad Bangladesh, USA student visa from Bangladesh, UK student visa consultant, Canada study permit Dhaka, Australia student visa agent, study abroad consultancy, Eammu Holidays student visa"
   />
-  <link rel="canonical" href="https://eammu.com/student-visa-application-bangladesh" />
+  <link rel="canonical" href="https://eammu.com/student-visa-application-from-bangladesh" />
 
   {/* Open Graph / Social SEO */}
   <meta property="og:type" content="website" />
@@ -43,7 +43,7 @@ const StudentVisaBangladesh = () => {
     property="og:description"
     content="Eammu Holidays provides professional student visa consultancy for USA, UK, Canada, and Australia. From university selection to visa approval, we support every step."
   />
-  <meta property="og:url" content="https://eammu.com/student-visa-application-bangladesh" />
+  <meta property="og:url" content="https://eammu.com/student-visa-application-from-bangladesh" />
   <meta property="og:site_name" content="Eammu Holidays" />
   <meta property="og:image" content="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" />
 

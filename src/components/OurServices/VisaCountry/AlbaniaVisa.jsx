@@ -6,7 +6,7 @@ const AlbaniaVisa = () => {
   return (
     <>
       <Helmet>
-  <title>Albania Visa Requirements & Application | Eammu Immigration Services</title>
+  <title>Albania Visa Application And Requirements | Eammu Holidays</title>
   <meta 
     name="description" 
     content="Get expert assistance for Albania E-Visa, Tourist Visa, and Work Permits with Eammu Holidays. Professional consultancy for travelers, students, and workers." 
@@ -16,7 +16,7 @@ const AlbaniaVisa = () => {
     content="Albania visa, Albania E-Visa, Albania tourist visa, Albania work permit, Albania visa application, Albania travel agency, Eammu Holidays, visa consultancy Albania" 
   />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://eammu.com/albania-visa" />
+  <link rel="canonical" href="https://eammu.com/albania-visa-application" />
 
   {/* Open Graph */}
   <meta property="og:title" content="Albania Visa Requirements & Application | Eammu Holidays" />
@@ -25,7 +25,7 @@ const AlbaniaVisa = () => {
     content="Eammu Holidays provides step-by-step support for Albania visa applications, including E-Visas, tourist visas, and work permits. Trusted consultancy for smooth processing." 
   />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://eammu.com/albania-visa" />
+  <meta property="og:url" content="https://eammu.com/albania-visa-application" />
   <meta 
     property="og:image" 
     content="https://www.eammu.com/images/albania-visa-banner.jpg" 
@@ -86,11 +86,15 @@ const AlbaniaVisa = () => {
               Emerging Balkan Destination
             </span>
             <h1 className="text-5xl md:text-7xl font-black mb-4 tracking-tighter uppercase">
-              Albania <span className="text-orange-500">Visa</span>
+              Albania <span className="text-orange-500">Visa </span>Application – Requirements, Process & Fees
             </h1>
-            <p className="text-xl opacity-90 max-w-2xl mx-auto font-light">
-              Explore the Hidden Gem of the Balkans with Professional Visa Support
-            </p>
+            <h2>Albania Visa Application Services by Trusted Travel Agency</h2>
+
+<p className="text-xl opacity-90 max-w-2xl mx-auto font-light">
+  Albania visa application service by trusted travel agency. Get complete assistance for Albania visa, Albania e-visa, Albania tourist visa, and Albania work permit with professional visa consultants.
+</p>
+
+
           </div>
         </section>
 

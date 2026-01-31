@@ -78,7 +78,7 @@ const EammuSocialResponsibility = () => {
           name="keywords"
           content="Eammu Social Work, Blood Donation Camp, Free Medical Camp Bangladesh, Corporate Social Responsibility, Eammu Volunteering, Humanitarian Work, NGO Partnerships, Volunteer Programs"
         />
-        <link rel="canonical" href="https://eammu.com/social-responsibility" />
+        <link rel="canonical" href="https://eammu.com/eammu-social-responsibility" />
         <script type="application/ld+json">{JSON.stringify(csrSchema)}</script>
       </Helmet>
 

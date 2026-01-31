@@ -6,7 +6,7 @@ const SpainVisa = () => {
   return (
     <>
   <Helmet>
-  <title>Spain Visa Application & Requirements | Tourist & Business Visa – Eammu Holidays</title>
+  <title>Spain Visa Application And Requirements | Get Visa Assistance – Eammu Holidays</title>
 
   <meta
     name="description"
@@ -19,7 +19,7 @@ const SpainVisa = () => {
   />
 
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://eammu.com/spain-visa" />
+  <link rel="canonical" href="https://eammu.com/spain-visa-application" />
 
   {/* Open Graph */}
   <meta property="og:title" content="Spain Visa Application & Requirements | Eammu Holidays" />
@@ -28,7 +28,7 @@ const SpainVisa = () => {
     content="Professional Spain visa consultancy for tourists, business travelers, and family visits with expert document handling."
   />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://eammu.com/spain-visa" />
+  <meta property="og:url" content="https://eammu.com/spain-visa-application" />
   <meta
     property="og:image"
     content="https://www.eammu.com/images/spain-visa-banner.jpg"
@@ -57,7 +57,7 @@ const SpainVisa = () => {
       "provider": {
         "@type": "TravelAgency",
         "name": "Eammu Holidays",
-        "url": "https://eammu.com/spain-visa",
+        "url": "https://eammu.com/spain-visa-application",
         "logo": "https://www.eammu.com/images/logo.png",
         "contactPoint": {
           "@type": "ContactPoint",
@@ -88,7 +88,7 @@ const SpainVisa = () => {
               Schengen Area Specialist
             </span>
             <h1 className="text-5xl md:text-7xl font-black mb-4 tracking-tighter uppercase">
-              Spain <span className="text-orange-500">Visa</span>
+              Spain <span className="text-orange-500">Visa</span> Application – Requirements, Process & Fees
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light">
               Your Gateway to the Mediterranean – Professional Immigration & Visa Services

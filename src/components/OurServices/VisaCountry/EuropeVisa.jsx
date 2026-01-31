@@ -6,7 +6,7 @@ const EuropeVisa = () => {
   return (
     <>
 <Helmet>
-  <title>Europe Schengen Visa Application & Requirements | Eammu Holidays</title>
+  <title>Europe Schengen Visa Application And Requirements | Get Visa Assistance - Eammu Holidays</title>
 
   <meta
     name="description"
@@ -19,7 +19,7 @@ const EuropeVisa = () => {
   />
 
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://eammu.com/europe-visa" />
+  <link rel="canonical" href="https://eammu.com/europe-visa-application" />
 
   {/* Open Graph */}
   <meta property="og:title" content="Europe Schengen Visa Application & Requirements | Eammu Holidays" />
@@ -28,7 +28,7 @@ const EuropeVisa = () => {
     content="Professional Europe Schengen visa assistance for tourist, business, and family visits. Apply confidently with Eammu Holidays."
   />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://eammu.com/europe-visa" />
+  <meta property="og:url" content="https://eammu.com/europe-visa-application" />
   <meta
     property="og:image"
     content="https://www.eammu.com/images/europe-visa-banner.jpg"
@@ -57,7 +57,7 @@ const EuropeVisa = () => {
       "provider": {
         "@type": "TravelAgency",
         "name": "Eammu Holidays",
-        "url": "https://eammu.com/europe-visa",
+        "url": "https://eammu.com/europe-visa-application",
         "logo": "https://www.eammu.com/images/logo.png",
         "contactPoint": {
           "@type": "ContactPoint",
@@ -88,7 +88,7 @@ const EuropeVisa = () => {
               Schengen Area Specialist
             </span>
             <h1 className="text-5xl md:text-7xl font-black mb-4 tracking-tighter uppercase">
-              Europe <span className="text-orange-500">Schengen</span>
+              Europe <span className="text-orange-500">Schengen</span> Visa Application – Requirements, Process & Fees
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light">
               Explore 27 European Countries with a Single Gateway

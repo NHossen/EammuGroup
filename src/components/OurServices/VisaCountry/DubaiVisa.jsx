@@ -6,7 +6,7 @@ const DubaiVisa = () => {
   return (
     <>
    <Helmet>
-  <title>Dubai Visa & Immigration Services | Eammu Holidays</title>
+  <title>Dubai Visa Application And Requirements | Get Visa Assistance - Eammu Holidays</title>
   <meta 
     name="description" 
     content="Get professional assistance for Dubai tourist visa, business visa, work permit, and transit visa. Eammu Holidays provides expert consultancy for applicants from Bangladesh, UAE, and beyond." 
@@ -16,7 +16,7 @@ const DubaiVisa = () => {
     content="Dubai visa, Dubai tourist visa, Dubai business visa, Dubai work permit, Dubai transit visa, Eammu Holidays, visa consultancy Dubai" 
   />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://eammu.com/dubai-visa" />
+  <link rel="canonical" href="https://eammu.com/dubai-visa-application" />
 
   {/* Open Graph */}
   <meta property="og:title" content="Dubai Visa & Immigration Services | Eammu Holidays" />
@@ -25,7 +25,7 @@ const DubaiVisa = () => {
     content="Eammu Holidays offers complete guidance for Dubai tourist, business, work, and transit visas. Trusted consultancy for applicants from Bangladesh, UAE, and worldwide." 
   />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://eammu.com/dubai-visa" />
+  <meta property="og:url" content="https://eammu.com/dubai-visa-application" />
   <meta 
     property="og:image" 
     content="https://www.eammu.com/images/dubai-visa-banner.jpg" 
@@ -52,11 +52,11 @@ const DubaiVisa = () => {
       "provider": {
         "@type": "TravelAgency",
         "name": "Eammu Holidays",
-        "url": "https://eammu.com/dubai-visa",
+        "url": "https://eammu.com/dubai-visa-application",
         "logo": "https://www.eammu.com/images/logo.png",
         "sameAs": [
-          "https://www.facebook.com/eammu",
-          "https://www.instagram.com/eammu",
+          "https://www.facebook.com/eammutourism",
+          "https://www.instagram.com/eammuholidays",
           "https://www.linkedin.com/company/eammu"
         ],
         "contactPoint": {
@@ -86,7 +86,7 @@ const DubaiVisa = () => {
               UAE Direct Processing Partner
             </span>
             <h1 className="text-5xl md:text-7xl font-black mb-4 tracking-tighter uppercase">
-              Dubai <span className="text-orange-500">Visa</span>
+              Dubai <span className="text-orange-500">Visa</span> Application – Requirements, Process & Fees
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light">
               Fast-Track Entry to the City of Gold with Reliable Visa Solutions

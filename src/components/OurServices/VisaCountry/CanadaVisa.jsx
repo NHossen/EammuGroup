@@ -6,7 +6,7 @@ const CanadaVisa = () => {
   return (
     <>
     <Helmet>
-  <title>Canada Visa & Immigration Services | Eammu Holidays</title>
+  <title>Canada Visa Application And Requirements | Get Visa Assistance - Eammu Holidays</title>
   <meta 
     name="description" 
     content="Get expert assistance for Canada tourist visa, student visa, work permit, and permanent residency. Eammu Holidays provides step-by-step guidance for applicants from Bangladesh and UAE." 
@@ -86,7 +86,7 @@ const CanadaVisa = () => {
               IRCC Documentation Specialist
             </span>
             <h1 className="text-5xl md:text-7xl font-black mb-4 tracking-tighter uppercase">
-              Canada <span className="text-orange-500">Visa</span>
+              Canada <span className="text-orange-500">Visa</span> Application – Requirements, Process & Fees
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light">
               Your Trusted Partner for Canadian Immigration & Education

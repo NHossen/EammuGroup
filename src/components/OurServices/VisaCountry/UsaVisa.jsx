@@ -6,7 +6,7 @@ const UsaVisa = () => {
   return (
     <>
   <Helmet>
-  <title>USA Visa Application & Requirements | Tourist & Business Visa – Eammu Holidays</title>
+  <title>USA Visa Application And Requirements | Get Visa Assistance – Eammu Holidays</title>
 
   <meta
     name="description"
@@ -19,7 +19,7 @@ const UsaVisa = () => {
   />
 
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://eammu.com/usa-visa" />
+  <link rel="canonical" href="https://eammu.com/usa-visa-application" />
 
   {/* Open Graph */}
   <meta property="og:title" content="USA Visa Application & Requirements | Eammu Holidays" />
@@ -28,7 +28,7 @@ const UsaVisa = () => {
     content="Professional USA visa consultancy for tourists, business travelers, students, and work visas with expert document handling."
   />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://eammu.com/usa-visa" />
+  <meta property="og:url" content="https://eammu.com/usa-visa-application" />
   <meta
     property="og:image"
     content="https://www.eammu.com/images/usa-visa-banner.jpg"
@@ -57,7 +57,7 @@ const UsaVisa = () => {
       "provider": {
         "@type": "TravelAgency",
         "name": "Eammu Holidays",
-        "url": "https://eammu.com/usa-visa",
+        "url": "https://eammu.com/usa-visa-application",
         "logo": "https://www.eammu.com/images/logo.png",
         "contactPoint": {
           "@type": "ContactPoint",
@@ -88,7 +88,7 @@ const UsaVisa = () => {
               Premium Consultancy
             </span>
             <h1 className="text-5xl md:text-7xl font-black mb-4 tracking-tighter">
-              USA <span className="text-orange-500">VISA</span>
+              USA <span className="text-orange-500">VISA</span> Application – Requirements, Process & Fees
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light">
               Expert Guidance for B1/B2 Visitor and F1 Student Visas
