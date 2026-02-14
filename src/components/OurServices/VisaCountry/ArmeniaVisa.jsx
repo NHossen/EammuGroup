@@ -181,8 +181,8 @@ const ArmeniaVisa = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <VideoCard 
-                id="N-RREy0Gf5g" 
-                title="Yerevan: The Pink City" 
+                id="shPQI7ARv_I" 
+                title="How to Apply for an Armenia E-Visa from Dubai: A Step-by-Step Guide" 
                 desc="A glimpse into the vibrant lifestyle and hospitality of Armenia's capital."
               />
               <VideoCard 

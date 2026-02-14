@@ -119,9 +119,9 @@ const MessageFromLeadingTeam = () => {
 
   const shorts = [
     { id: "VXcsh-RGAQo", title: "FEEL THE HEAT! WITH EAMMU FIRE SHOW DESERT SAFARI" },
-    { id: "5GgTsBbWT9Q", title: "DESERT SAFARI DUBAI WITH EAMMU" },
+    { id: "wBEWAeP8AEI", title: "Turkey e-Visa – Apply by Yourself 🇹🇷" },
     { id: "yGZlj3IqwqQ", title: "THAILAND TOUR PACKAGES With Eammu – EXPLORE THE LAND OF SMILES" },
-    { id: "411I3K-Zagc", title: "Love Lake Dubai & Salt Lake Dubai Tour – Private Trip with Eammu Tours" },
+    { id: "9lsBNCWdJrs", title: "Albania Tourist Visa – Apply by Yourself!" },
   ];
 
   return (
@@ -230,7 +230,7 @@ const MessageFromLeadingTeam = () => {
 
 {/* Video Testimonials */}
 <section className="mt-16 px-4">
-  <h2 className="text-3xl font-bold text-center text-[#005a31] mb-8">🎥 Video Testimonials</h2>
+  <h2 className="text-3xl font-bold text-center  text-[#005a31] mb-8">🎥 Video Testimonials</h2>
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
     {[
       { id: "9RE1nwL9SqM", title: "Client Testimonial Eammu" },
