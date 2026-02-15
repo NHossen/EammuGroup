@@ -3,167 +3,47 @@ import { Helmet } from 'react-helmet-async';
 import { 
   CheckCircle, ClipboardList, Send, Globe, ShieldCheck, 
   FileText, Landmark, Palmtree, HelpCircle, Clock, Wallet, Info, 
-  Briefcase, Coffee, MapPin, TrendingUp, PlayCircle, Image as ImageIcon, Compass, GraduationCap
+  Briefcase, Coffee, MapPin, TrendingUp, PlayCircle, Image as ImageIcon, Compass, Camera
 } from 'lucide-react';
 
-const AustraliaVisa = () => {
+const ThailandVisa = () => {
   return (
     <>
-           <Helmet>
-
-  <title>Australia Visa Application And Requirements | Get Visa Assistance - Eammu Holidays</title>
-
-  <meta 
-
-    name="description" 
-
-    content="Get expert assistance for Australia tourist visa, student visa, work visa, and permanent residency. Eammu Holidays provides step-by-step support from Bangladesh and UAE." 
-
-  />
-
-  <meta 
-
-    name="keywords" 
-
-    content="Australia visa, Australia tourist visa, Australia student visa, Australia work visa, Australia PR, visa consultancy Australia, Eammu Holidays" 
-
-  />
-
-  <meta name="robots" content="index, follow" />
-
-  <link rel="canonical" href="https://eammu.com/australia-visa-application" />
-
-
-
-  {/* Open Graph */}
-
-  <meta property="og:title" content="Australia Visa & Immigration Services | Eammu Holidays" />
-
-  <meta 
-
-    property="og:description" 
-
-    content="Eammu Holidays provides professional Australia visa consultancy including tourist, student, work visas, and permanent residency. Trusted support for applicants from Bangladesh and UAE." 
-
-  />
-
-  <meta property="og:type" content="website" />
-
-  <meta property="og:url" content="https://eammu.com/australia-visa" />
-
-  <meta 
-
-    property="og:image" 
-
-    content="https://www.eammu.com/images/australia-visa-banner.jpg" 
-
-  />
-
-
-
-  {/* Twitter Card */}
-
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <meta name="twitter:title" content="Australia Visa & Immigration Services | Eammu Holidays" />
-
-  <meta 
-
-    name="twitter:description" 
-
-    content="Professional Australia visa support by Eammu Holidays. Apply for tourist, student, work visas or permanent residency hassle-free with our expert guidance." 
-
-  />
-
-  <meta 
-
-    name="twitter:image" 
-
-    content="https://www.eammu.com/images/australia-visa-banner.jpg" 
-
-  />
-
-
-
-  {/* JSON-LD Structured Data */}
-
-  <script type="application/ld+json">
-
-    {JSON.stringify({
-
-      "@context": "https://schema.org",
-
-      "@type": "GovernmentService",
-
-      "name": "Australia Visa & Immigration Services",
-
-      "provider": {
-
-        "@type": "TravelAgency",
-
-        "name": "Eammu Holidays",
-
-        "url": "https://eammu.com/australia-visa",
-
-        "logo": "https://www.eammu.com/images/logo.png",
-
-        "sameAs": [
-
-          "https://www.facebook.com/eammu",
-
-          "https://www.instagram.com/eammu",
-
-          "https://www.linkedin.com/company/eammu"
-
-        ],
-
-        "contactPoint": {
-
-          "@type": "ContactPoint",
-
-          "contactType": "customer support",
-
-          "telephone": "+8801701699743",
-
-          "email": "info@eammu.com"
-
-        }
-
-      },
-
-      "serviceType": "Visa Consultancy & Immigration Services",
-
-      "areaServed": "AU",
-
-      "description": "Step-by-step guidance for Australia tourist visa, student visa, work visa, and permanent residency by Eammu Holidays. Trusted consultancy for applicants from Bangladesh and UAE."
-
-    })}
-
-  </script>
-
-</Helmet>
+      <Helmet>
+        <title>Thailand Visa Application | Eammu Holidays - Bangladesh</title>
+        <meta 
+          name="description" 
+          content="Apply for Thailand Tourist Visa, DTV, or Long-Term Residency in 2026. Expert guidance on the new Thailand Digital Arrival Card (TDAC) for UAE and Bangladesh residents." 
+        />
+        <meta 
+          name="keywords" 
+          content="Thailand visa 2026, Thailand Digital Arrival Card, TDAC QR code, Thailand 60 day visa exemption, Destination Thailand Visa DTV, Thai e-Visa portal, Eammu Holidays" 
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://eammu.com/thailand-visa-application" />
+      </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">
         
         {/* Header Section */}
         <section className="bg-[#005a31] py-24 px-6 text-center text-white relative overflow-hidden">
           <div className="absolute inset-0 opacity-10 flex items-center justify-center">
-             <Compass size={500} className="text-white" />
+             <Landmark size={500} className="text-white" />
           </div>
           <div className="relative z-10 max-w-5xl mx-auto">
             <div className="flex justify-center gap-2 mb-6">
                 <span className="bg-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg">
-                    Qualified Education Agent Counselor
+                    Official e-Visa Partner
                 </span>
                 <span className="bg-white/20 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest backdrop-blur-sm">
-                    ImmiAccount Specialist
+                    TDAC Specialist 2026
                 </span>
             </div>
             <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Move to <span className="text-orange-500">Australia </span>in 2026
+              Visit <span className="text-orange-500">Thailand </span>with Ease
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
-              Your comprehensive portal for Visitor Visas, Study Permits, and Skilled Migration. Expertly managed by Eammu Holidays.
+              From the 60-day visa-free exemption to the 5-year DTV, Eammu Holidays ensures your entry into the Land of Smiles is seamless.
             </p>
           </div>
         </section>
@@ -174,26 +54,26 @@ const AustraliaVisa = () => {
             <div className="flex flex-col items-center mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <PlayCircle className="text-orange-500" size={32} />
-                <h2 className="text-4xl font-black text-[#005a31] uppercase">Australia Visual Guide</h2>
+                <h2 className="text-4xl font-black text-[#005a31] uppercase">Thailand Visual Guide</h2>
               </div>
-              <p className="text-gray-500 text-center max-w-2xl italic">Watch these tutorials to understand the 2026 application process and lifestyle in the Land Down Under.</p>
+              <p className="text-gray-500 text-center max-w-2xl italic">Explore our curated video guides on the 2026 entry process and the best of Thai culture.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <VideoCard 
-                id="f07_N-0p0S0" 
-                title="Exploring Sydney & Beyond" 
-                desc="Discover why Australia remains the top destination for global travelers and expats."
+                id="wI8690U6YTo" 
+                title="2026 Entry Requirements" 
+                desc="A comprehensive look at the new Thailand Digital Arrival Card (TDAC) and visa-free rules."
               />
               <VideoCard 
-                id="ImmiAccount-Tutorial" 
-                title="How to use ImmiAccount" 
-                desc="A step-by-step walkthrough of the official Australian Department of Home Affairs portal."
+                id="l-T4e2H5oIs" 
+                title="The DTV Explained" 
+                desc="How the Destination Thailand Visa works for digital nomads and remote workers."
               />
               <VideoCard 
-                id="Student-Life-AU" 
-                title="Study in Australia 2026" 
-                desc="Everything international students need to know about the Subclass 500 visa."
+                id="7X8eWp4RjA0" 
+                title="Bangkok & Beyond" 
+                desc="A cinematic journey through Thailand's most iconic destinations."
               />
             </div>
           </div>
@@ -204,33 +84,33 @@ const AustraliaVisa = () => {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center gap-4 mb-12 border-b border-gray-100 pb-6">
               <ImageIcon className="text-orange-500" size={32} />
-              <h2 className="text-4xl font-black text-[#005a31] uppercase">Visa Stream Highlights</h2>
+              <h2 className="text-4xl font-black text-[#005a31] uppercase">Visa Categories 2026</h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <PosterCard 
+                image="https://images.unsplash.com/photo-1528181304800-2f140819ad52?q=80&w=800" 
+                badge="Tourist" 
+                title="60-Day Exemption" 
+                detail="Visa-Free Entry (93 Countries)"
+              />
+              <PosterCard 
+                image="https://images.unsplash.com/photo-1552423814-c4780dfc7ff1?q=80&w=800" 
+                badge="Remote Work" 
+                title="DTV Visa" 
+                detail="5-Year Multiple Entry"
+              />
+              <PosterCard 
                 image="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?q=80&w=800" 
-                badge="Visitor" 
-                title="Subclass 600" 
-                detail="Tourist & Business"
+                badge="Long Term" 
+                title="LTR Visa" 
+                detail="10-Year High Potential"
               />
               <PosterCard 
-                image="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=800" 
-                badge="Education" 
-                title="Subclass 500" 
-                detail="Student Visa Stream"
-              />
-              <PosterCard 
-                image="https://images.unsplash.com/photo-1521791136064-7986c2959210?q=80&w=800" 
-                badge="Skilled" 
-                title="Subclass 189/190" 
-                detail="Permanent Residency"
-              />
-              <PosterCard 
-                image="https://images.unsplash.com/photo-1450609264415-94367339e38c?q=80&w=800" 
-                badge="Family" 
-                title="Partner Visa" 
-                detail="Subclass 309/100"
+                image="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=800" 
+                badge="Retirement" 
+                title="Non-Immigrant O" 
+                detail="50+ Years Old"
               />
             </div>
           </div>
@@ -242,10 +122,10 @@ const AustraliaVisa = () => {
             
             {/* Quick Metrics */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <MetricBox label="Avg. Processing" value="25 - 40 Days" icon={<Clock size={20}/>} />
-                <MetricBox label="Visa Success Rate" value="94.8%" icon={<TrendingUp size={20}/>} />
-                <MetricBox label="Visa Validity" value="Up to 3 Years" icon={<Calendar size={20}/>} />
-                <MetricBox label="Application" value="100% Digital" icon={<Globe size={20}/>} />
+                <MetricBox label="TDAC Approval" value="Instant/72h" icon={<Clock size={20}/>} />
+                <MetricBox label="Success Rate" value="99.2%" icon={<TrendingUp size={20}/>} />
+                <MetricBox label="DTV Validity" value="5 Years" icon={<Calendar size={20}/>} />
+                <MetricBox label="E-Visa Processing" value="3-10 Days" icon={<Globe size={20}/>} />
             </div>
 
             {/* Application Procedure */}
@@ -260,23 +140,23 @@ const AustraliaVisa = () => {
               <div className="space-y-10">
                 <StepItem 
                   number="01" 
-                  title="Profile Assessment" 
-                  desc="We verify your eligibility for Subclass 600 or 500, focusing on the GTE (Genuine Temporary Entrant) requirement and financial stability." 
+                  title="Check Eligibility" 
+                  desc="We determine if you qualify for the 60-day visa exemption or if you require an e-Tourist (TR) or DTV visa based on your nationality and stay duration." 
                 />
                 <StepItem 
                   number="02" 
-                  title="ImmiAccount Submission" 
-                  desc="Our experts lodge your application through the official Australian Department of Home Affairs (ImmiAccount) portal, ensuring no data errors." 
+                  title="e-Visa Submission" 
+                  desc="For non-exempt citizens, we manage the Thai e-Visa portal application, handling fee payments and document uploads with zero errors." 
                 />
                 <StepItem 
                   number="03" 
-                  title="Biometrics & Health" 
-                  desc="We help you schedule your HAP ID for mandatory medical checkups and biometric enrollment at VFS Global centres in UAE, BD, or Armenia." 
+                  title="TDAC Pre-Arrival" 
+                  desc="72 hours before your flight, we generate your mandatory Thailand Digital Arrival Card (TDAC) QR code, now required for all air, land, and sea entries." 
                 />
                 <StepItem 
                   number="04" 
-                  title="Visa Grant" 
-                  desc="Once approved, Australia issues a Grant Notice (E-Visa) which is electronically linked to your passport—no sticker required." 
+                  title="Entry & Extension" 
+                  desc="Clear immigration with your QR code. We also provide assistance for onshore 30-day extensions at Thai Immigration offices." 
                 />
               </div>
             </section>
@@ -293,16 +173,16 @@ const AustraliaVisa = () => {
                 <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Requirement Checklist</h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <RequirementCard text="Valid Passport (6+ Months)" />
-                <RequirementCard text="Scanned copies of all Passport pages" />
-                <RequirementCard text="Photo (45mm x 35mm, white BG)" />
-                <RequirementCard text="National ID / Birth Certificate" />
-                <RequirementCard text="6 Months Bank Statement" />
-                <RequirementCard text="Income Tax Returns (ITR)" />
-                <RequirementCard text="Employer NOC / Trade License" />
-                <RequirementCard text="GTE Statement of Purpose" />
-                <RequirementCard text="Confirmation of Enrolment (Students)" />
-                <RequirementCard text="Family Relationship Documents" />
+                <RequirementCard text="Passport valid for 6+ months" />
+                <RequirementCard text="Thailand Digital Arrival Card (TDAC) QR" />
+                <RequirementCard text="Confirmed Round-trip Flight Tickets" />
+                <RequirementCard text="Confirmed Hotel/Accommodation Proof" />
+                <RequirementCard text="Proof of Funds (Min. 10k-20k THB)" />
+                <RequirementCard text="Recent Passport Photo (4x6 cm)" />
+                <RequirementCard text="Employment Letter / Trade License" />
+                <RequirementCard text="Bank Statement (Last 3-6 Months)" />
+                <RequirementCard text="500k THB Balance (For DTV Applicants)" />
+                <RequirementCard text="Work Portfolio (For Digital Nomads)" />
               </div>
             </section>
 
@@ -310,20 +190,20 @@ const AustraliaVisa = () => {
             <section>
                 <div className="flex items-center gap-4 mb-10">
                     <HelpCircle size={32} className="text-orange-500" />
-                    <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Australia Visa FAQs</h2>
+                    <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Thailand Visa FAQs</h2>
                 </div>
                 <div className="divide-y divide-gray-100">
                     <FAQItem 
-                        question="Do I need a physical visa sticker for Australia?" 
-                        answer="No. Australia uses an electronic visa system. Your visa is digitally linked to your passport number. You will receive a 'Visa Grant Notice' via email."
+                        question="What is the Thailand Digital Arrival Card (TDAC)?" 
+                        answer="The TDAC is a mandatory digital form replacing the old paper TM6 card. All travelers must submit it within 72 hours before arrival to receive a QR code for immigration."
                     />
                     <FAQItem 
-                        question="What is the GTE requirement?" 
-                        answer="The Genuine Temporary Entrant (GTE) is an integrity measure to ensure that the visa applicant intends to stay in Australia temporarily and for the stated purpose."
+                        question="Can I work on a Tourist Visa in Thailand?" 
+                        answer="Technically no. If you wish to work remotely, you should apply for the Destination Thailand Visa (DTV), which explicitly allows 'Workcations' for up to 180 days per entry."
                     />
                     <FAQItem 
-                        question="How long can I stay on a Subclass 600 Tourist Visa?" 
-                        answer="Usually, 3, 6, or 12 months, depending on your profile and the decision of the Home Affairs case officer."
+                        question="Is insurance mandatory for entry in 2026?" 
+                        answer="While not strictly mandatory for all tourist categories, it is highly recommended and required for certain long-stay visas like the LTR and Retirement (Non-O-A)."
                     />
                 </div>
             </section>
@@ -334,7 +214,7 @@ const AustraliaVisa = () => {
           <aside className="space-y-8 lg:sticky lg:top-10">
             <div className="bg-[#005a31] text-white p-10 rounded-[3rem] shadow-2xl overflow-hidden relative group">
               <div className="absolute -top-20 -right-20 w-48 h-48 bg-white/5 rounded-full group-hover:scale-125 transition-transform duration-1000"></div>
-              <h3 className="text-2xl font-black mb-8 border-b border-white/10 pb-4 italic text-orange-400">Australia Support</h3>
+              <h3 className="text-2xl font-black mb-8 border-b border-white/10 pb-4 italic text-orange-400">Thailand Support</h3>
               <div className="space-y-8 text-sm">
                 <ContactLink label="Armenia Branch" href="tel:+37494810585" text="+374 94 810585" />
                 <ContactLink label="UAE Branch" href="tel:+971507078334" text="+971 50 707 8334" highlight />
@@ -357,7 +237,7 @@ const AustraliaVisa = () => {
   );
 };
 
-// --- Helper Components ---
+// --- Helper Components (Standard across pages) ---
 const VideoCard = ({ id, title, desc }) => (
   <div className="bg-white rounded-3xl overflow-hidden shadow-lg group hover:-translate-y-2 transition-all duration-300">
     <div className="relative aspect-video">
@@ -417,7 +297,6 @@ const ContactLink = ({ label, href, text, highlight }) => (
   </div>
 );
 
-// Note: Re-using simple icon components for MetricBox
 const Calendar = ({ size }) => <span style={{ fontSize: size }}>📅</span>;
 
-export default AustraliaVisa;
+export default ThailandVisa;

@@ -6,6 +6,9 @@ import "./i18n/i18n";
 import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async';
 
+
+
+
 // =================== LAZY LOAD ALL PAGES ===================
 
 // Main Pages
@@ -73,6 +76,11 @@ const SouthKoreaVisa = lazy(() => import('./components/OurServices/VisaCountry/S
 const SpainVisa = lazy(() => import('./components/OurServices/VisaCountry/SpainVisa.jsx'));
 const KosovoVisa = lazy(() => import('./components/OurServices/VisaCountry/KosovoVisa.jsx'));
 const SerbiaVisa = lazy(() => import('./components/OurServices/VisaCountry/SerbiaVisa.jsx'));
+const ThailandVisa = lazy(() => import('./components/OurServices/VisaCountry/ThailandVisa.jsx'));
+const SingaporeVisa = lazy(() => import('./components/OurServices/VisaCountry/SingaporeVisa.jsx'));
+const MalaysiaVisa = lazy(() => import('./components/OurServices/VisaCountry/MalaysiaVisa.jsx'));
+
+
 
 // Visa Categories
 const TouristVisaBangladesh = lazy(() => import('./components/OurServices/Visa/TouristVisaBangladesh.jsx'));
@@ -157,6 +165,9 @@ const router = createBrowserRouter([
       { path: "/spain-visa-application", element: <SpainVisa /> },
       { path: "/kosovo-visa-application", element: <KosovoVisa /> },
       { path: "/serbia-visa-application", element: <SerbiaVisa /> },
+      { path: "/thailand-visa-application", element: <ThailandVisa /> },
+      { path: "/singapore-visa-application", element: <SingaporeVisa />},
+      { path: "/malaysia-visa-application", element: <MalaysiaVisa /> },
 
       // ===== VISA CATEGORIES =====
       { path: "/tourist-visa-application-from-bangladesh", element: <TouristVisaBangladesh /> },

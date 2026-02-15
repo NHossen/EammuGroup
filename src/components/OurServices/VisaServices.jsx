@@ -338,7 +338,11 @@ const VisaServices = () => {
           <Link to="/south-korea-visa-application" className="text-[#005a31] underline"> South Korea</Link>,
           <Link to="/spain-visa-application" className="text-[#005a31] underline"> Spain</Link>,
           <Link to="/kosovo-visa-application" className="text-[#005a31] underline"> Kosovo</Link>,
-          <Link to="/serbia-visa-application" className="text-[#005a31] underline"> Serbia</Link>, 
+          <Link to="/serbia-visa-application" className="text-[#005a31] underline"> Serbia</Link>,
+          <Link to="/thailand-visa-application" className="text-[#005a31] underline"> Thailand</Link>,
+          <Link to="/singapore-visa-application" className="text-[#005a31] underline"> Singapore</Link>,
+          <Link to="/malaysia-visa-application" className="text-[#005a31] underline"> Malaysia</Link>,
+           
           and more.
         </p>
       </header>

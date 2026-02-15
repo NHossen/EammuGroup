@@ -109,11 +109,11 @@ const ArmeniaVisa = () => {
 
         "sameAs": [
 
-          "https://www.facebook.com/eammu",
+          "https://www.facebook.com/eammutourism",
 
-          "https://www.instagram.com/eammu",
+          "https://www.instagram.com/eammuholidays",
 
-          "https://www.linkedin.com/company/eammu"
+          "https://www.linkedin.com/company/eammu-immigration-services"
 
         ],
 

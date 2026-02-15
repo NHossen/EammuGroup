@@ -3,234 +3,114 @@ import { Helmet } from 'react-helmet-async';
 import { 
   CheckCircle, ClipboardList, Send, Globe, ShieldCheck, 
   FileText, Landmark, Palmtree, HelpCircle, Clock, Wallet, Info, 
-  Briefcase, Coffee, MapPin, TrendingUp, PlayCircle, Image as ImageIcon, Compass, GraduationCap
+  Briefcase, Coffee, MapPin, TrendingUp, PlayCircle, Image as ImageIcon, Compass, Map
 } from 'lucide-react';
 
-const AustraliaVisa = () => {
+const MalaysiaVisa = () => {
   return (
     <>
-           <Helmet>
-
-  <title>Australia Visa Application And Requirements | Get Visa Assistance - Eammu Holidays</title>
-
-  <meta 
-
-    name="description" 
-
-    content="Get expert assistance for Australia tourist visa, student visa, work visa, and permanent residency. Eammu Holidays provides step-by-step support from Bangladesh and UAE." 
-
-  />
-
-  <meta 
-
-    name="keywords" 
-
-    content="Australia visa, Australia tourist visa, Australia student visa, Australia work visa, Australia PR, visa consultancy Australia, Eammu Holidays" 
-
-  />
-
-  <meta name="robots" content="index, follow" />
-
-  <link rel="canonical" href="https://eammu.com/australia-visa-application" />
-
-
-
-  {/* Open Graph */}
-
-  <meta property="og:title" content="Australia Visa & Immigration Services | Eammu Holidays" />
-
-  <meta 
-
-    property="og:description" 
-
-    content="Eammu Holidays provides professional Australia visa consultancy including tourist, student, work visas, and permanent residency. Trusted support for applicants from Bangladesh and UAE." 
-
-  />
-
-  <meta property="og:type" content="website" />
-
-  <meta property="og:url" content="https://eammu.com/australia-visa" />
-
-  <meta 
-
-    property="og:image" 
-
-    content="https://www.eammu.com/images/australia-visa-banner.jpg" 
-
-  />
-
-
-
-  {/* Twitter Card */}
-
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <meta name="twitter:title" content="Australia Visa & Immigration Services | Eammu Holidays" />
-
-  <meta 
-
-    name="twitter:description" 
-
-    content="Professional Australia visa support by Eammu Holidays. Apply for tourist, student, work visas or permanent residency hassle-free with our expert guidance." 
-
-  />
-
-  <meta 
-
-    name="twitter:image" 
-
-    content="https://www.eammu.com/images/australia-visa-banner.jpg" 
-
-  />
-
-
-
-  {/* JSON-LD Structured Data */}
-
-  <script type="application/ld+json">
-
-    {JSON.stringify({
-
-      "@context": "https://schema.org",
-
-      "@type": "GovernmentService",
-
-      "name": "Australia Visa & Immigration Services",
-
-      "provider": {
-
-        "@type": "TravelAgency",
-
-        "name": "Eammu Holidays",
-
-        "url": "https://eammu.com/australia-visa",
-
-        "logo": "https://www.eammu.com/images/logo.png",
-
-        "sameAs": [
-
-          "https://www.facebook.com/eammu",
-
-          "https://www.instagram.com/eammu",
-
-          "https://www.linkedin.com/company/eammu"
-
-        ],
-
-        "contactPoint": {
-
-          "@type": "ContactPoint",
-
-          "contactType": "customer support",
-
-          "telephone": "+8801701699743",
-
-          "email": "info@eammu.com"
-
-        }
-
-      },
-
-      "serviceType": "Visa Consultancy & Immigration Services",
-
-      "areaServed": "AU",
-
-      "description": "Step-by-step guidance for Australia tourist visa, student visa, work visa, and permanent residency by Eammu Holidays. Trusted consultancy for applicants from Bangladesh and UAE."
-
-    })}
-
-  </script>
-
-</Helmet>
+      <Helmet>
+        <title>Malaysia Visa 2026: Requirements, MDAC Guide & Fees | Eammu Holidays</title>
+        <meta 
+          name="description" 
+          content="Official 2026 guide for Malaysia e-Visa and MDAC. Apply for Tourist, Social Visit, or Digital Nomad (DE Rantau) visas with Eammu Holidays experts." 
+        />
+        <meta 
+          name="keywords" 
+          content="Malaysia visa 2026, Malaysia Digital Arrival Card, MDAC registration, Malaysia e-visa for Indians, Malaysia visa for UAE residents, DE Rantau visa, Eammu Holidays" 
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://eammu.com/malaysia-visa-application" />
+      </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">
         
-        {/* Header Section */}
+        {/* --- HERO SECTION --- */}
         <section className="bg-[#005a31] py-24 px-6 text-center text-white relative overflow-hidden">
           <div className="absolute inset-0 opacity-10 flex items-center justify-center">
-             <Compass size={500} className="text-white" />
+             <Landmark size={500} className="text-white" />
           </div>
           <div className="relative z-10 max-w-5xl mx-auto">
             <div className="flex justify-center gap-2 mb-6">
                 <span className="bg-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg">
-                    Qualified Education Agent Counselor
+                    Official e-Visa Portal Support
                 </span>
                 <span className="bg-white/20 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest backdrop-blur-sm">
-                    ImmiAccount Specialist
+                    MDAC Specialist 2026
                 </span>
             </div>
             <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Move to <span className="text-orange-500">Australia </span>in 2026
+              Truly <span className="text-orange-500">Malaysia</span> 2026
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
-              Your comprehensive portal for Visitor Visas, Study Permits, and Skilled Migration. Expertly managed by Eammu Holidays.
+              Navigate the new digital entry requirements with ease. Expert processing for e-Visas, Digital Nomad passes, and mandatory MDAC filing.
             </p>
           </div>
         </section>
 
-        {/* --- VIDEO GALLERY --- */}
+        {/* --- VIDEO TUTORIALS SECTION --- */}
         <section className="bg-slate-50 py-20 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col items-center mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <PlayCircle className="text-orange-500" size={32} />
-                <h2 className="text-4xl font-black text-[#005a31] uppercase">Australia Visual Guide</h2>
+                <h2 className="text-4xl font-black text-[#005a31] uppercase">Malaysia Visual Guide</h2>
               </div>
-              <p className="text-gray-500 text-center max-w-2xl italic">Watch these tutorials to understand the 2026 application process and lifestyle in the Land Down Under.</p>
+              <p className="text-gray-500 text-center max-w-2xl italic">Essential 2026 tutorials for a smooth journey to Kuala Lumpur and beyond.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <VideoCard 
-                id="f07_N-0p0S0" 
-                title="Exploring Sydney & Beyond" 
-                desc="Discover why Australia remains the top destination for global travelers and expats."
+                id="qH_e6PzP_kM" 
+                title="MDAC Registration Guide" 
+                desc="How to complete the Malaysia Digital Arrival Card within the mandatory 3-day window."
               />
               <VideoCard 
-                id="ImmiAccount-Tutorial" 
-                title="How to use ImmiAccount" 
-                desc="A step-by-step walkthrough of the official Australian Department of Home Affairs portal."
+                id="k-fC_TjE8D0" 
+                title="Malaysia e-Visa 2026" 
+                desc="A walkthrough of the official portal for Tourist and Social Visit pass applications."
               />
               <VideoCard 
-                id="Student-Life-AU" 
-                title="Study in Australia 2026" 
-                desc="Everything international students need to know about the Subclass 500 visa."
+                id="N7X_O5q_W6U" 
+                title="DE Rantau Nomad Pass" 
+                desc="Exploring the 2026 updates for Malaysia's popular Digital Nomad visa program."
               />
             </div>
           </div>
         </section>
 
-        {/* --- POSTER GALLERY --- */}
+        {/* --- VISA CATEGORIES POSTERS --- */}
         <section className="py-20 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center gap-4 mb-12 border-b border-gray-100 pb-6">
               <ImageIcon className="text-orange-500" size={32} />
-              <h2 className="text-4xl font-black text-[#005a31] uppercase">Visa Stream Highlights</h2>
+              <h2 className="text-4xl font-black text-[#005a31] uppercase">Entry Permits & Passes</h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <PosterCard 
-                image="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?q=80&w=800" 
-                badge="Visitor" 
-                title="Subclass 600" 
-                detail="Tourist & Business"
+                image="https://images.unsplash.com/photo-1596422846543-75c6fc18a593?q=80&w=800" 
+                badge="Tourism" 
+                title="e-Visa (Tourist)" 
+                detail="30-Day Multiple Entry"
               />
               <PosterCard 
-                image="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=800" 
-                badge="Education" 
-                title="Subclass 500" 
-                detail="Student Visa Stream"
+                image="https://images.unsplash.com/photo-1528181304800-2f140819ad52?q=80&w=800" 
+                badge="Nomad" 
+                title="DE Rantau" 
+                detail="For Remote Professionals"
               />
               <PosterCard 
-                image="https://images.unsplash.com/photo-1521791136064-7986c2959210?q=80&w=800" 
-                badge="Skilled" 
-                title="Subclass 189/190" 
-                detail="Permanent Residency"
-              />
-              <PosterCard 
-                image="https://images.unsplash.com/photo-1450609264415-94367339e38c?q=80&w=800" 
+                image="https://images.unsplash.com/photo-1610016302534-6f67f1c968d8?q=80&w=800" 
                 badge="Family" 
-                title="Partner Visa" 
-                detail="Subclass 309/100"
+                title="Social Visit" 
+                detail="Visiting Friends & Relatives"
+              />
+              <PosterCard 
+                image="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?q=80&w=800" 
+                badge="New Rule" 
+                title="MDAC Card" 
+                detail="Mandatory for All Travelers"
               />
             </div>
           </div>
@@ -242,10 +122,10 @@ const AustraliaVisa = () => {
             
             {/* Quick Metrics */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <MetricBox label="Avg. Processing" value="25 - 40 Days" icon={<Clock size={20}/>} />
-                <MetricBox label="Visa Success Rate" value="94.8%" icon={<TrendingUp size={20}/>} />
-                <MetricBox label="Visa Validity" value="Up to 3 Years" icon={<Calendar size={20}/>} />
-                <MetricBox label="Application" value="100% Digital" icon={<Globe size={20}/>} />
+                <MetricBox label="MDAC Window" value="72 Hours" icon={<Clock size={20}/>} />
+                <MetricBox label="Visa Processing" value="2-5 Days" icon={<TrendingUp size={20}/>} />
+                <MetricBox label="Approval Rate" value="99.1%" icon={<ShieldCheck size={20}/>} />
+                <MetricBox label="Format" value="Digital/Paperless" icon={<Globe size={20}/>} />
             </div>
 
             {/* Application Procedure */}
@@ -260,23 +140,23 @@ const AustraliaVisa = () => {
               <div className="space-y-10">
                 <StepItem 
                   number="01" 
-                  title="Profile Assessment" 
-                  desc="We verify your eligibility for Subclass 600 or 500, focusing on the GTE (Genuine Temporary Entrant) requirement and financial stability." 
+                  title="Category Evaluation" 
+                  desc="We check your nationality's current status (Visa-Free or e-Visa required) and the purpose of your trip to Malaysia." 
                 />
                 <StepItem 
                   number="02" 
-                  title="ImmiAccount Submission" 
-                  desc="Our experts lodge your application through the official Australian Department of Home Affairs (ImmiAccount) portal, ensuring no data errors." 
+                  title="e-Visa Submission" 
+                  desc="For required nationalities, we handle the official Malaysian Immigration portal application, including photo editing and fee payment." 
                 />
                 <StepItem 
                   number="03" 
-                  title="Biometrics & Health" 
-                  desc="We help you schedule your HAP ID for mandatory medical checkups and biometric enrollment at VFS Global centres in UAE, BD, or Armenia." 
+                  title="MDAC Registration" 
+                  desc="Critical Step: Within 3 days of your arrival, we register your details in the Malaysia Digital Arrival Card system to generate your PDF receipt." 
                 />
                 <StepItem 
                   number="04" 
-                  title="Visa Grant" 
-                  desc="Once approved, Australia issues a Grant Notice (E-Visa) which is electronically linked to your passport—no sticker required." 
+                  title="Immigration Clearance" 
+                  desc="Clear immigration at KLIA/KLIA2 using your e-Visa printout and MDAC receipt. Biometric verification is required upon entry." 
                 />
               </div>
             </section>
@@ -290,19 +170,19 @@ const AustraliaVisa = () => {
                 <div className="bg-[#005a31] p-3 rounded-2xl text-white shadow-lg">
                   <ClipboardList size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Requirement Checklist</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Requirement Checklist 2026</h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <RequirementCard text="Valid Passport (6+ Months)" />
-                <RequirementCard text="Scanned copies of all Passport pages" />
-                <RequirementCard text="Photo (45mm x 35mm, white BG)" />
-                <RequirementCard text="National ID / Birth Certificate" />
-                <RequirementCard text="6 Months Bank Statement" />
-                <RequirementCard text="Income Tax Returns (ITR)" />
-                <RequirementCard text="Employer NOC / Trade License" />
-                <RequirementCard text="GTE Statement of Purpose" />
-                <RequirementCard text="Confirmation of Enrolment (Students)" />
-                <RequirementCard text="Family Relationship Documents" />
+                <RequirementCard text="Passport (6+ months validity)" />
+                <RequirementCard text="Recent Passport Size Photo (Studio)" />
+                <RequirementCard text="Confirmed Flight (Return/Onward)" />
+                <RequirementCard text="Hotel Booking / Proof of Stay" />
+                <RequirementCard text="Malaysia Digital Arrival Card (MDAC)" />
+                <RequirementCard text="3 Months Personal Bank Statement" />
+                <RequirementCard text="No Objection Certificate (NOC)" />
+                <RequirementCard text="Proof of UAE/BD Residence Visa" />
+                <RequirementCard text="Evidence of 500 USD available funds" />
+                <RequirementCard text="Yellow Fever Cert (if from high-risk zone)" />
               </div>
             </section>
 
@@ -310,20 +190,20 @@ const AustraliaVisa = () => {
             <section>
                 <div className="flex items-center gap-4 mb-10">
                     <HelpCircle size={32} className="text-orange-500" />
-                    <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Australia Visa FAQs</h2>
+                    <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Malaysia Visa FAQ</h2>
                 </div>
                 <div className="divide-y divide-gray-100">
                     <FAQItem 
-                        question="Do I need a physical visa sticker for Australia?" 
-                        answer="No. Australia uses an electronic visa system. Your visa is digitally linked to your passport number. You will receive a 'Visa Grant Notice' via email."
+                        question="Who must register for the MDAC?" 
+                        answer="Almost all international travelers are required to register for the Malaysia Digital Arrival Card (MDAC) within 3 days before arriving in Malaysia. Only Singaporeans, Diplomatic Passport holders, and Malaysian Permanent Residents are exempt."
                     />
                     <FAQItem 
-                        question="What is the GTE requirement?" 
-                        answer="The Genuine Temporary Entrant (GTE) is an integrity measure to ensure that the visa applicant intends to stay in Australia temporarily and for the stated purpose."
+                        question="How long can I stay on a Malaysia Tourist e-Visa?" 
+                        answer="A standard Tourist e-Visa allows for a stay of up to 30 days. It is usually a single-entry visa, though multiple-entry options are available for specific nationalities."
                     />
                     <FAQItem 
-                        question="How long can I stay on a Subclass 600 Tourist Visa?" 
-                        answer="Usually, 3, 6, or 12 months, depending on your profile and the decision of the Home Affairs case officer."
+                        question="Can I extend my 30-day e-Visa in Malaysia?" 
+                        answer="Generally, e-Visas are non-extendable. However, in cases of emergency or medical reasons, you can apply for a 'Special Pass' at the Malaysian Immigration Department."
                     />
                 </div>
             </section>
@@ -334,15 +214,15 @@ const AustraliaVisa = () => {
           <aside className="space-y-8 lg:sticky lg:top-10">
             <div className="bg-[#005a31] text-white p-10 rounded-[3rem] shadow-2xl overflow-hidden relative group">
               <div className="absolute -top-20 -right-20 w-48 h-48 bg-white/5 rounded-full group-hover:scale-125 transition-transform duration-1000"></div>
-              <h3 className="text-2xl font-black mb-8 border-b border-white/10 pb-4 italic text-orange-400">Australia Support</h3>
+              <h3 className="text-2xl font-black mb-8 border-b border-white/10 pb-4 italic text-orange-400">Malaysia Support</h3>
               <div className="space-y-8 text-sm">
-                <ContactLink label="Armenia Branch" href="tel:+37494810585" text="+374 94 810585" />
-                <ContactLink label="UAE Branch" href="tel:+971507078334" text="+971 50 707 8334" highlight />
-                <ContactLink label="Bangladesh Branch" href="tel:+8801701699743" text="+880 1701 699 743" />
-                <ContactLink label="Official Email" href="mailto:info@eammu.com" text="info@eammu.com" />
+                <ContactLink label="Armenia Office" href="tel:+37494810585" text="+374 94 810585" />
+                <ContactLink label="UAE Support" href="tel:+971507078334" text="+971 50 707 8334" highlight />
+                <ContactLink label="Bangladesh Desk" href="tel:+8801701699743" text="+880 1701 699 743" />
+                <ContactLink label="Global Email" href="mailto:info@eammu.com" text="info@eammu.com" />
               </div>
               <a href="https://wa.me/37494810585" className="mt-12 block w-full bg-orange-500 text-white text-center py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-white hover:text-[#005a31] transition-all duration-500 shadow-xl">
-                Inquire on WhatsApp
+                Chat on WhatsApp
               </a>
             </div>
             <div className="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 flex flex-col items-center text-center">
@@ -417,7 +297,4 @@ const ContactLink = ({ label, href, text, highlight }) => (
   </div>
 );
 
-// Note: Re-using simple icon components for MetricBox
-const Calendar = ({ size }) => <span style={{ fontSize: size }}>📅</span>;
-
-export default AustraliaVisa;
+export default MalaysiaVisa;
