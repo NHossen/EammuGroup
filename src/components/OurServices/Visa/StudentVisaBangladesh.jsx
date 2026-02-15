@@ -25,7 +25,7 @@ const StudentVisaBangladesh = () => {
     <div className="bg-[#f8fafc] min-h-screen">
       <Helmet>
   {/* Primary SEO */}
-  <title>Student Visa Consultant Bangladesh | Study Abroad Experts – Eammu Holidays</title>
+  <title>Student Visa Application Bangladesh | Study Abroad From Bangladesh – Eammu Holidays</title>
   <meta
     name="description"
     content="Looking for the best student visa consultant in Bangladesh? Eammu Holidays provides expert guidance for USA, UK, Canada, and Australia student visas. Trusted study abroad advisors since 2018."
@@ -121,7 +121,7 @@ const StudentVisaBangladesh = () => {
               animate={{ x: 0, opacity: 1 }}
               className="inline-flex items-center gap-2 bg-orange-500 text-white px-5 py-2 rounded-full text-xs font-black uppercase tracking-widest mb-8 shadow-lg shadow-orange-500/20"
             >
-              <FaAward /> Trusted Education Partner
+              <FaAward /> Trusted Education Partner Bangladesh
             </motion.div>
             
             <motion.h1 
@@ -130,18 +130,20 @@ const StudentVisaBangladesh = () => {
               transition={{ delay: 0.2 }}
               className="text-5xl md:text-7xl font-black text-white leading-tight mb-6 tracking-tighter"
             >
-              Your Journey to <br /> 
-              <span className="text-orange-400 italic">Global Education</span>
+              
+                Study Abroad from Bangladesh <br /> 
+              <span className="text-orange-400 italic">Global Education Opportunities</span>
+            
+              
             </motion.h1>
             
             <motion.p 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
-              className="text-xl text-green-50 mb-12 leading-relaxed max-w-2xl font-medium"
+              className="text-xl text-green-50 mb-12 leading-relaxed max-w-6xl font-medium"
             >
-              Eammu Holidays simplifies the complex study abroad process. 
-              From university selection to visa approval, we are with you at every step.
+            Start your journey to global education with trusted study abroad services from Bangladesh. Explore top universities worldwide, get expert guidance on student visas, scholarships, admissions, and career-focused courses, and turn your dream of international education into reality. We help Bangladeshi students study in the UK, USA, Canada, Australia, Europe, and Asia with complete support from application to visa approval.
             </motion.p>
             
             <motion.div 
@@ -161,27 +163,29 @@ const StudentVisaBangladesh = () => {
       {/* 🏛️ Services & Expertise */}
       <section className="py-24 container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-black text-[#005a31] mb-4">Comprehensive Student Support</h2>
-          <p className="text-gray-500 max-w-2xl mx-auto">We provide a 360-degree solution for students aspiring to build their future abroad.</p>
+          <h2 className="text-3xl md:text-5xl font-black text-[#005a31] mb-4">Complete Study Abroad Guidance from Bangladesh</h2>
+          <p className="text-gray-500 max-w-2xl mx-auto">We offer complete study abroad guidance from Bangladesh, covering admissions, student visas, scholarships, documentation, and pre-departure support—helping Bangladeshi students start their global education journey with confidence. 🌍🎓</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          <ServiceCard 
-            icon={<FaUniversity />} 
-            title="University Admission" 
-            desc="Guidance on selecting the right course and university based on your academic background and budget."
-          />
-          <ServiceCard 
-            icon={<FaBookOpen />} 
-            title="SOP & Essay Support" 
-            desc="Our experts help you draft winning Statements of Purpose and admission essays that stand out."
-          />
-          <ServiceCard 
-            icon={<FaFileSignature />} 
-            title="Visa Documentation" 
-            desc="Precision-based filing and financial documentation to ensure maximum visa success rates."
-          />
-        </div>
+  <ServiceCard 
+    icon={<FaUniversity />} 
+    title={<h3>University Admission Guidance</h3>} 
+    desc="Expert guidance for selecting the right course and university based on your academic background, budget, and study abroad goals."
+  />
+  
+  <ServiceCard 
+    icon={<FaBookOpen />} 
+    title={<h3>SOP & Admission Essay Support</h3>} 
+    desc="Professional help to write strong Statements of Purpose and admission essays that improve your chances of university acceptance."
+  />
+  
+  <ServiceCard 
+    icon={<FaFileSignature />} 
+    title={<h3>Student Visa Documentation Support</h3>} 
+    desc="Accurate visa filing, financial documentation, and compliance support to maximize student visa approval success."
+  />
+</div>
       </section>
 
       {/* 🌎 Study Destinations */}
@@ -189,7 +193,7 @@ const StudentVisaBangladesh = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <motion.div variants={fadeInUp} initial="initial" whileInView="whileInView" className="lg:w-1/2">
-              <h2 className="text-4xl font-black text-[#005a31] mb-6 uppercase tracking-tighter">Top Destinations <br /> For Bangladeshi Students</h2>
+              <h2 className="text-4xl font-black text-[#005a31] mb-6 uppercase tracking-tighter">Top Study Abroad Destinations <br /> For Bangladeshi Students</h2>
               <p className="text-gray-600 mb-8 leading-relaxed">
                 Whether it's the high-tech labs of the <strong>USA</strong>, the heritage universities of the <strong>UK</strong>, or the immigration-friendly policies of <strong>Canada</strong>, we cover it all.
               </p>

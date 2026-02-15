@@ -26,14 +26,14 @@ const TouristVisaBangladesh = () => {
     <div className="bg-[#fcfcfc] min-h-screen font-sans">
       <Helmet>
   {/* Primary SEO */}
-  <title>Tourist Visa from Bangladesh | Best Visa Agency Dhaka & Cumilla – Eammu Holidays</title>
+  <title>Tourist Visa Application from Bangladesh | Best Travel Agency Dhaka & Cumilla – Eammu Holidays</title>
   <meta
     name="description"
     content="Apply for a tourist visa from Bangladesh to USA, UK, Canada, Australia, and Schengen countries. Eammu Holidays provides expert documentation support, consultation, and high visa approval rates."
   />
   <meta
     name="keywords"
-    content="tourist visa Bangladesh, USA tourist visa Dhaka, UK tourist visa Bangladesh, Canada visitor visa, Schengen visa Bangladesh, Eammu Holidays visa agency, travel agency Bangladesh"
+    content="tourist visa Application Bangladesh, USA tourist visa Dhaka, UK tourist Application visa Bangladesh, Canada visitor visa Application, Schengen visa Application Bangladesh, Eammu Holidays visa agency, travel agency Bangladesh"
   />
   <link rel="canonical" href="https://eammu.com/tourist-visa-application-from-bangladesh" />
 
@@ -175,8 +175,16 @@ const TouristVisaBangladesh = () => {
             animate={{ y: 0, opacity: 1 }}
             className="text-4xl md:text-7xl font-black mb-6 tracking-tight leading-tight"
           >
-            Tourist Visa <br /> <span className="text-orange-400 italic">Solutions for Bangladeshis</span>
+            Tourist Visa <br /> <span className="text-orange-400 italic">Application for Bangladeshi National</span>
           </motion.h1>
+<motion.p
+  initial={{ y: 20, opacity: 0 }}
+  animate={{ y: 0, opacity: 1 }}
+  transition={{ delay: 0.2 }}
+  className="text-white max-w-3xl mx-auto mb-8 leading-relaxed text-lg text-center"
+>
+  Apply for a <strong>tourist visa for Bangladeshi nationals</strong> with trusted, fast, and professional support. We provide complete assistance for <strong>tourist visa applications</strong>, including documentation, embassy requirements, and visa processing for top destinations such as the <strong>USA, UK, Canada, Europe, Australia, and Asia</strong>. Travel the world with confidence through our reliable visa services.
+</motion.p>
           <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -196,11 +204,10 @@ const TouristVisaBangladesh = () => {
           
           <motion.div variants={fadeInUp} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
             <h2 className="text-3xl md:text-5xl font-black text-[#005a31] mb-8 leading-tight">
-              Get Your Tourist Visa <br /> <span className="text-orange-500 underline decoration-2">Hassle-Free</span>
+              Tourist Visa Assistance from Bangladesh <br /> <span className="text-orange-500 underline decoration-2">Hassle-Free</span>
             </h2>
-          <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-  At Eammu Holidays, we specialize in processing tourist visas for individual travelers and families. 
-  Whether you are planning a holiday in the{" "}
+<p className="text-gray-600 text-lg mb-8 leading-relaxed">
+  At <strong>Eammu Holidays</strong>, we specialize in helping Bangladeshi travelers obtain <strong>tourist visas</strong> quickly and hassle-free. Whether you are planning a holiday in the{" "}
   <strong>
     <a href="/usa-visa-application" className="bg-yellow-400 text-black px-2 py-0.5 rounded mr-1 hover:bg-orange-500 hover:text-white transition">
       USA
@@ -220,8 +227,7 @@ const TouristVisaBangladesh = () => {
     <a href="/spain-visa-application" className="bg-yellow-400 text-black px-2 py-0.5 rounded hover:bg-orange-500 hover:text-white transition">
       Schengen Zone
     </a>
-  </strong>, 
-  our dedicated team ensures your documentation is perfect to maximize approval chances.
+  </strong>, our experienced team provides complete guidance for <strong>tourist visa applications from Bangladesh</strong>. We ensure accurate <strong>document preparation, visa filing, and embassy compliance</strong> to maximize your approval chances and make your international travel smooth and stress-free.
 </p>
 
             
@@ -280,7 +286,7 @@ const TouristVisaBangladesh = () => {
       <section className="py-24 container mx-auto px-4 border-t border-slate-100">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1">
-            <h3 className="text-3xl font-black text-[#005a31] mb-4">Visit Our Main Office</h3>
+            <h3 className="text-3xl font-black text-[#005a31] mb-4">Visit Our Branch Office</h3>
             <p className="text-gray-600 mb-6">If you are looking for the <strong>Best Tourist Visa Agency in Dhaka or Cumilla</strong>, Eammu Holidays is your one-stop destination.</p>
             <ul className="space-y-4 text-gray-700">
               <li className="flex items-center gap-3"><FaMapMarkerAlt className="text-orange-500" /> Gomoti Tower, Cantonment, Cumilla</li>

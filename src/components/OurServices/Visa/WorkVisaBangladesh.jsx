@@ -27,7 +27,7 @@ const WorkVisaBangladesh = () => {
     <div className="bg-white min-h-screen font-sans overflow-x-hidden">
      <Helmet>
   {/* Primary SEO */}
-  <title>Work Visa & Permit Services from Bangladesh | Eammu Holidays</title>
+  <title>Apply Work Visa Application from Bangladesh | Eammu Holidays</title>
   <meta
     name="description"
     content="Apply for skilled and semi-skilled work visas from Bangladesh to UK, Canada, Europe, Middle East & more. Eammu Holidays provides professional work permit consultancy with high approval rates."
@@ -162,12 +162,12 @@ const WorkVisaBangladesh = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-5xl md:text-7xl font-black text-white leading-tight mb-6 tracking-tighter">
-              Build Your <span className="text-orange-400">Global Career</span> Today.
-            </h1>
-            <p className="text-lg md:text-xl text-green-50/80 mb-8 max-w-lg font-medium border-l-4 border-orange-500 pl-6">
-              Expert assistance for Skilled Worker Visas, Employer Sponsorships, and Professional Permits across Europe, America, and Asia.
-            </p>
+          <h1 className="text-5xl md:text-7xl font-black text-white leading-tight mb-6 tracking-tighter">
+  Build Your <span className="text-orange-400">Global Career</span> from Bangladesh
+</h1>
+<p className="text-lg md:text-xl text-green-50/80 mb-8 max-w-lg font-medium border-l-4 border-orange-500 pl-6">
+  Get expert guidance for <strong>work visa applications from Bangladesh</strong>, including <strong>skilled worker visas</strong>, <strong>employer sponsorships</strong>, and <strong>professional permits</strong> for Europe, America, and Asia. Start your international career journey with confidence and compliance through our trusted visa services.
+</p>
             <div className="flex flex-wrap gap-4">
               <a href="https://wa.me/8801631312524" className="bg-orange-500 text-white px-10 py-4 rounded-xl font-bold shadow-xl hover:bg-white hover:text-[#005a31] transition-all flex items-center gap-3">
                 Free Eligibility Check <FaArrowRight />
@@ -199,9 +199,13 @@ const WorkVisaBangladesh = () => {
       <section className="py-24 container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div className="max-w-xl">
-            <h2 className="text-4xl font-black text-[#005a31] uppercase tracking-tighter mb-4 italic">Skilled Immigration Pathways</h2>
-            <p className="text-gray-500">We assist in obtaining legal work authorization for top global economies with complete transparency.</p>
-          </div>
+  <h2 className="text-4xl font-black text-[#005a31] uppercase tracking-tighter mb-4 italic">
+    Skilled Immigration Pathways for Bangladeshi Professionals
+  </h2>
+  <p className="text-gray-500">
+    We provide expert guidance for <strong>skilled work visa applications from Bangladesh</strong>, helping professionals secure legal work permits, employer sponsorships, and immigration pathways in top global economies across Europe, North America, and Asia. Our transparent process ensures maximum success for your international career ambitions.
+  </p>
+</div>
           <div className="flex gap-4">
             <div className="bg-green-50 px-6 py-2 rounded-full text-[#005a31] font-bold text-sm shadow-sm flex items-center gap-2 border border-green-100">
                <FaGlobe /> 20+ Countries
