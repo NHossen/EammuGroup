@@ -7,6 +7,7 @@ import Registration_Agents from "./Registration_Agents";
 import TargetUsaSection from "./TargetUsaSection";
 import WhyChoiceEammu from "./WhyChoiceEammu";
 import Carousel from "../Carousel/Carousel";
+import VisaPhotoGallery from "./VisaPhotoGallery";
 
 const Home = () => {
   return (
@@ -65,9 +66,12 @@ const Home = () => {
        {/* Agent Registration */}
       <Registration_Agents />
 
+      {/* Visa Poster Gallery */}
+      <VisaPhotoGallery />
+
       {/* Leadership Message */}
       <MessageFromLeadingTeam />
-
+      
       {/* Why Choose Us */}
       <WhyChoiceEammu />
 

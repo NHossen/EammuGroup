@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const TargetUsaSection = () => {
   return (
-    <div>
+    <div className="container mx-auto">
       <Helmet>
         <title>Target USA Visa Interview Preparation | Travel Expert, Student Visa, Tourist Visa Assistance</title>
         <meta
@@ -41,15 +41,18 @@ const TargetUsaSection = () => {
       <div className="hero min-h-[70vh]">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
-            src="https://i.ibb.co/Dtg4HWy/d-ISCUSSION.jpg"
+            src="/public/Target_USA.webp"
             alt="targetusainterviewphoto"
-            className="lg:max-w-md rounded-lg shadow-2xl"
+            className="lg:max-w-2xl rounded-lg shadow-2xl"
           />
           <div>
+            <div>
+              
+            </div>
             <h1 className="text-5xl font-bold">
               Target <span className="text-[#d33232]">USA</span> Visa Interview Preparation!
             </h1>
-            <p className="py-4">
+            <p className="py-4 width-full">
               Target USA Visa Interview Preparation, a distinguished service under Eammu Holidays
               is your premier education consultancy dedicated to preparing students for
               successful visa interviews. We specialize in comprehensive guidance, covering
