@@ -3,10 +3,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, X, Maximize2 } from 'lucide-react';
 
 const marketingMaterials = [
-  { id: 1, src: "/public/visa-poster/europe_visa_poster.webp", title: "Europe Visa" },
-  { id: 2, src: "/public/visa-poster/Qatar Visa.webp", title: "Qatar Visa" },
-  { id: 3, src: "/public/visa-poster/Canada Visa 2.webp", title: "Canada Tourist Visa" },
-  { id: 4, src: "/public/visa-poster/China Visa.webp", title: "China Visa Application" },
+  { id: 1, src: "/visa-poster/europe_visa_poster.webp", title: "Europe Visa" },
+  { id: 2, src: "/visa-poster/Qatar Visa.webp", title: "Qatar Visa" },
+  { id: 3, src: "/visa-poster/Canada Visa 2.webp", title: "Canada Tourist Visa" },
+  { id: 4, src: "/visa-poster/China Visa.webp", title: "China Visa Application" },
   { id: 5, src: "/path-to/Malaysia-Visa.jpg", title: "Malaysia Visa Service" },
   { id: 6, src: "/path-to/UK-Visa.jpg", title: "UK Work Permit" },
   { id: 7, src: "/path-to/Canada-Visa.jpg", title: "Canada Visa Application" },

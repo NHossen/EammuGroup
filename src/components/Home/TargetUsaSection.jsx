@@ -41,7 +41,7 @@ const TargetUsaSection = () => {
       <div className="hero min-h-[70vh]">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
-            src="/public/Target_USA.webp"
+            src="Target_USA.webp"
             alt="targetusainterviewphoto"
             className="lg:max-w-2xl rounded-lg shadow-2xl"
           />
