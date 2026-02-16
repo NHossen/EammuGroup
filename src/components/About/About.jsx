@@ -23,33 +23,59 @@ const About = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Travel Agency | Leading Travel & Immigration Agency in Bangladesh</title>
-        <meta
-          name="description"
-          content="Eammu global services including immigration, student & work visas, travel & tour packages. Established in 2022, serving clients in Dubai, Bangladesh, and Europe."
-        />
-        <meta
-          name="keywords"
-          content="best travel agency in Bangladesh, trusted travel agency Bangladesh, student visa consultant in Dhaka, visa appointment service in Bangladesh, Eammu Holidays About"
-        />
-        <link rel="canonical" href="https://eammu.com/about" />
+<Helmet>
+  {/* Title */}
+  <title>About Eammu Holidays | Best Travel & Visa Agency in Bangladesh</title>
+  
+  <meta
+    name="description"
+    content="Learn about Eammu Holidays, established in 2012. We provide expert immigration, student, and work visa services across Dubai, Bangladesh, and Europe. Trusted travel partners globally."
+  />
 
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Eammu Holidays",
-            "url": "https://eammu.com/about",
-            "logo": "https://i.ibb.co/YF7bmqfg/521388962-122289260780017871-6426815952586296550-n.jpg",
-            "sameAs": [
-              "https://facebook.com/eammutourism/",
-              "https://instagram.com/eammuholidays",
-              "https://youtube.com/@eammutour/"
-            ]
-          })}
-        </script>
-      </Helmet>
+  {/* Canonical & Robots */}
+  <link rel="canonical" href="https://eammu.com/about" />
+  <meta name="robots" content="index, follow" />
+
+  {/* Structured Data */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://eammu.com/#organization",
+          "name": "Eammu Holidays",
+          "url": "https://eammu.com",
+          "logo": "https://eammu.com/eammuicon.jpg",
+          "image": "https://eammu.com/emf.jpg",
+          "foundingDate": "2022",
+          "description": "Eammu global services including immigration, student & work visas, travel & tour packages.",
+          "sameAs": [
+            "https://facebook.com/eammutourism/",
+            "https://instagram.com/eammuholidays",
+            "https://www.youtube.com/@Eammutour",
+            "https://linkedin.com/company/eammu-immigration-services/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://eammu.com/#website",
+          "url": "https://eammu.com",
+          "name": "Eammu Holidays",
+          "publisher": { "@id": "https://eammu.com/#organization" }
+        },
+        {
+          "@type": "AboutPage",
+          "@id": "https://eammu.com/about#aboutpage",
+          "url": "https://eammu.com/about",
+          "name": "About Eammu Holidays",
+          "isPartOf": { "@id": "https://eammu.com/#website" },
+          "mainEntity": { "@id": "https://eammu.com/#organization" }
+        }
+      ]
+    })}
+  </script>
+</Helmet>
 
       <main className="overflow-hidden">
         {/* --- Hero Section with Animation --- */}

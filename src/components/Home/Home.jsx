@@ -10,31 +10,36 @@ import Carousel from "../Carousel/Carousel";
 import VisaPhotoGallery from "./VisaPhotoGallery";
 
 const Home = () => {
-  // Structured Data (JSON-LD) - এটি গুগলের প্রথম পেজে আসার জন্য সবচেয়ে জরুরি
+  // ✅ Structured Data (Google-compliant JSON-LD)
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "TravelAgency",
+        "@type": "Organization",
         "@id": "https://eammu.com/#organization",
         "name": "Eammu Holidays",
         "url": "https://eammu.com",
         "logo": "https://eammu.com/emf.jpg",
         "image": "https://eammu.com/eammuicon.jpg",
         "telephone": "+8801631312524",
-        "priceRange": "$$",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Gomoti Tower, Cantonment",
           "addressLocality": "Cumilla",
           "postalCode": "3500",
-          "addressCountry": "BD"
+          "addressCountry": "Bangladesh"
         },
-        "areaServed": ["BD", "AE", "AM", "GE"],
+        "areaServed": [
+          "Bangladesh",
+          "United Arab Emirates",
+          "Armenia",
+          "Georgia"
+        ],
         "sameAs": [
           "https://facebook.com/eammutourism/",
           "https://instagram.com/eammuholidays",
-          "https://www.youtube.com/@Eammutour"
+          "https://www.youtube.com/@Eammutour",
+          "https://linkedin.com/company/eammu-immigration-services/"
         ]
       },
       {
@@ -50,33 +55,60 @@ const Home = () => {
   return (
     <div>
       <Helmet>
-        {/* প্রধান টাইটেল - কি-ওয়ার্ড দিয়ে অপ্টিমাইজড */}
-        <title>Best Travel Agency in Bangladesh & Dubai | Eammu Holidays</title>
+        {/* ================= SEO ================= */}
+        <title>
+          Eammu Holidays | First online travel agency in Bangladesh
+        </title>
 
-        {/* মেটা বিবরণ - কাস্টমারকে আকর্ষণ করার জন্য */}
         <meta
           name="description"
-          content="Eammu Holidays: Trusted travel agency in Bangladesh & Dubai. Specialized in Student, Tourist, and Work Visas for USA, Canada, UK, and Europe. Apply with experts!"
+          content="Eammu Holidays is the first and one of the leading online travel agency in Bangladesh, established in 2012 with a fully functional digital info structure. We are providing expert visa support for USA, UK, Canada & Europe. Trusted travel agency in Bangladesh & Dubai."
         />
         
         <meta name="keywords" content="Travel Agency Bangladesh, Visa Consultant Dubai, Student Visa Experts, Work Permit Visa, USA Visa Help, Eammu Holidays" />
         <link rel="canonical" href="https://eammu.com/" />
         <meta name="robots" content="index, follow" />
 
-        {/* Social Preview (WhatsApp, Messenger, Facebook) */}
-        <meta property="og:title" content="Eammu Holidays | first onlinetravel agency in Bangladesh" />
-        <meta property="og:description" content="first onlinetravel agency in Bangladesh, Expert visa support for USA, UK, Canada & Europe. Trusted travel agency in Bangladesh & Dubai." />
+        {/* ================= Open Graph ================= */}
+        <meta
+          property="og:title"
+          content="Eammu Holidays | Trusted Visa, Travel & Immigration Experts Worldwide"
+        />
+        <meta
+          property="og:description"
+          content="Trusted visa, travel and immigration services worldwide. Student visa, tourist visa, work permits and Europe Schengen support from Bangladesh and Dubai."
+        />
         <meta property="og:url" content="https://eammu.com/" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://eammu.com/eammuicon.jpg" />
+        <meta
+          property="og:image"
+          content="https://eammu.com/eammuicon.jpg"
+        />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
-        {/* Structured Data Injection */}
+        {/* ================= Twitter ================= */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Eammu Holidays | Trusted Visa, Travel & Immigration Experts Worldwide"
+        />
+        <meta
+          name="twitter:description"
+          content="Trusted visa, travel and immigration services worldwide. Student visa, tourist visa, work permits and Europe Schengen support from Bangladesh and Dubai."
+        />
+        <meta
+          name="twitter:image"
+          content="https://eammu.com/eammuicon.jpg"
+        />
+
+        {/* ================= Structured Data ================= */}
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
       </Helmet>
+
+      {/* ================= PAGE SECTIONS ================= */}
 
       {/* Hero Carousel */}
       <Carousel />
@@ -102,7 +134,7 @@ const Home = () => {
       {/* Background Carousel */}
       <Caresoul_BG_Mix />
 
-      {/* Success States */}
+      {/* Success Statistics */}
       <Our_Succsses_State />
     </div>
   );
