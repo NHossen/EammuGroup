@@ -60,11 +60,11 @@ const Home = () => {
       {/* Immigration Services Heading */}
       <EammuImmigrationHeading_2 />
 
+         {/* Agent Registration */}
+      <Registration_Agents />
+
       {/* USA Visa Interview Help */}
       <TargetUsaSection />
-
-       {/* Agent Registration */}
-      <Registration_Agents />
 
       {/* Visa Poster Gallery */}
       <VisaPhotoGallery />

@@ -230,6 +230,7 @@ const MessageFromLeadingTeam = () => {
       </motion.div>
 
        {/* Visa Poster Gallery */}
+       
       <VisaPhotoGallery />
 
 {/* Video Testimonials */}
