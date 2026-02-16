@@ -229,10 +229,6 @@ const MessageFromLeadingTeam = () => {
         </a>
       </motion.div>
 
-       {/* Visa Poster Gallery */}
-       
-      <VisaPhotoGallery />
-
 {/* Video Testimonials */}
 <section className="mt-16 px-4">
   <h2 className="text-3xl font-bold text-center  text-[#005a31] mb-8">🎥 Video Testimonials</h2>
