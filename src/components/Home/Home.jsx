@@ -10,57 +10,81 @@ import Carousel from "../Carousel/Carousel";
 import VisaPhotoGallery from "./VisaPhotoGallery";
 
 const Home = () => {
+  // Structured Data (JSON-LD) - এটি গুগলের প্রথম পেজে আসার জন্য সবচেয়ে জরুরি
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TravelAgency",
+        "@id": "https://eammu.com/#organization",
+        "name": "Eammu Holidays",
+        "url": "https://eammu.com",
+        "logo": "https://eammu.com/emf.jpg",
+        "image": "https://eammu.com/eammuicon.jpg",
+        "telephone": "+8801631312524",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Gomoti Tower, Cantonment",
+          "addressLocality": "Cumilla",
+          "postalCode": "3500",
+          "addressCountry": "BD"
+        },
+        "areaServed": ["BD", "AE", "AM", "GE"],
+        "sameAs": [
+          "https://facebook.com/eammutourism/",
+          "https://instagram.com/eammuholidays",
+          "https://www.youtube.com/@Eammutour"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://eammu.com/#website",
+        "url": "https://eammu.com/",
+        "name": "Eammu Holidays",
+        "publisher": { "@id": "https://eammu.com/#organization" }
+      }
+    ]
+  };
+
   return (
     <div>
-<Helmet>
-  <title>Travel Agency Bangladesh | Student, Tourist & Work Visa Experts</title>
+      <Helmet>
+        {/* প্রধান টাইটেল - কি-ওয়ার্ড দিয়ে অপ্টিমাইজড */}
+        <title>Best Travel Agency in Bangladesh & Dubai | Eammu Holidays</title>
 
-  <meta
-    name="description"
-    content="Eammu Immigration Services offers expert student, tourist, and work visa support for USA, Canada, UK, Europe, UAE, and more. Trusted visa consultancy from Bangladesh and UAE."
-  />
-  <meta
-    name="keywords"
-    content="Eammu Immigration, Student Visa, Work Visa, Tourist Visa, Visa Consultancy, USA Visa, Canada Visa, UK Visa, Europe Visa, UAE Visa, Bangladesh Immigration Services"
-  />
-  <meta name="robots" content="index, follow" />
+        {/* মেটা বিবরণ - কাস্টমারকে আকর্ষণ করার জন্য */}
+        <meta
+          name="description"
+          content="Eammu Holidays: Trusted travel agency in Bangladesh & Dubai. Specialized in Student, Tourist, and Work Visas for USA, Canada, UK, and Europe. Apply with experts!"
+        />
+        
+        <meta name="keywords" content="Travel Agency Bangladesh, Visa Consultant Dubai, Student Visa Experts, Work Permit Visa, USA Visa Help, Eammu Holidays" />
+        <link rel="canonical" href="https://eammu.com/" />
+        <meta name="robots" content="index, follow" />
 
-  {/* Open Graph */}
-  <meta property="og:title" content="Eammu Immigration & Visa Services" />
-  <meta
-    property="og:description"
-    content="Trusted visa consultancy for students, tourists, and professionals. Apply for USA, UK, Canada, Europe, UAE visas with Eammu."
-  />
-  <meta property="og:url" content="https://eammu.com/" />
-  <meta property="og:type" content="website" />
-  <meta
-    property="og:image"
-    content="https://eammu.com/eammuicon.jpg"
-  />
+        {/* Social Preview (WhatsApp, Messenger, Facebook) */}
+        <meta property="og:title" content="Eammu Holidays | first onlinetravel agency in Bangladesh" />
+        <meta property="og:description" content="first onlinetravel agency in Bangladesh, Expert visa support for USA, UK, Canada & Europe. Trusted travel agency in Bangladesh & Dubai." />
+        <meta property="og:url" content="https://eammu.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://eammu.com/eammuicon.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
 
-  {/* Twitter Card */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Eammu Immigration & Visa Services" />
-  <meta
-    name="twitter:description"
-    content="Apply for student, tourist, and work visas worldwide with Eammu Immigration Services. Trusted consultants from Bangladesh & UAE."
-  />
-   <meta
-    property="og:image"
-    content="https://eammu.com/eammuicon.jpg"
-  />
-</Helmet>
-
-
-
+        {/* Structured Data Injection */}
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
 
       {/* Hero Carousel */}
-      <Carousel></Carousel>
+      <Carousel />
 
       {/* Immigration Services Heading */}
       <EammuImmigrationHeading_2 />
 
-         {/* Agent Registration */}
+      {/* Agent Registration */}
       <Registration_Agents />
 
       {/* USA Visa Interview Help */}
@@ -71,7 +95,7 @@ const Home = () => {
 
       {/* Leadership Message */}
       <MessageFromLeadingTeam />
-      
+
       {/* Why Choose Us */}
       <WhyChoiceEammu />
 
@@ -80,8 +104,6 @@ const Home = () => {
 
       {/* Success States */}
       <Our_Succsses_State />
-      
-
     </div>
   );
 };
