@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Helmet } from "react-helmet"; // SEO-র জন্য এটি ব্যবহার করা ভালো (যদি প্রোজেক্টে থাকে)
 
 const BlogSection = () => {
   const [posts, setPosts] = useState([]);
@@ -37,32 +36,6 @@ const BlogSection = () => {
     return url.replace(/\/(s\d+|w\d+|h\d+)(-[pcb])?\//, "/s1600/");
   };
 
-  // SEO: JSON-LD Schema Markup (Google-কে কন্টেন্ট বোঝাতে সাহায্য করে)
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "name": "Eammu Holidays Travel Blog",
-    "description": "Latest travel stories, tips, and holiday guides from Eammu Holidays.",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Eammu Holidays",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://eammu.com/logo.png" // আপনার লোগো ইউআরএল দিন
-      }
-    },
-    "blogPost": posts.map(post => ({
-      "@type": "BlogPosting",
-      "headline": post.title,
-      "image": getHighResImage(post.content),
-      "datePublished": post.published,
-      "url": post.url,
-      "author": {
-        "@type": "Organization",
-        "name": "Eammu Holidays"
-      }
-    }))
-  };
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
@@ -84,10 +57,6 @@ const BlogSection = () => {
 
   return (
     <section className="py-10" aria-label="Eammu Holidays Travel Blog">
-      {/* SEO Schema Injection */}
-      <script type="application/ld+json">
-        {JSON.stringify(schemaData)}
-      </script>
 
       {posts.length === 0 ? (
         <div className="text-center py-24 bg-gray-50 rounded-3xl border-2 border-dashed border-gray-200">

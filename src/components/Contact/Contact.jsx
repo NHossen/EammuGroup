@@ -144,14 +144,10 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Online Travel Agency Bangladesh | Travel Agency Near Me |Contact Eammu Holidays </title>
+        <title>Leading Online Travel Agency Bangladesh | Contact Eammu Holidays </title>
         <meta
           name="description"
-          content="Get in touch with Eammu Holidays For student visas, tech support, and global travel services. Reach us via phone, email, or WhatsApp. Travel Agency Based On Bangladesh, Contact With Us For Visa , Flight , Tour Packages"
-        />
-        <meta
-          name="keywords"
-          content="Europe visa from Armenia, work permit Armenia, student visa Georgia, study in Georgia consultants, travel agency Georgia, Europe visa from Georgia, Schengen visa from Georgia, student visa Pakistan, study abroad consultants Pakistan, travel agency Pakistan, Europe visa from Pakistan, UK visa from Pakistan, student visa Sri Lanka, study abroad consultants Sri Lanka, travel agency Sri Lanka, Europe visa from Sri Lanka, student visa Malaysia, study in Malaysia consultants, travel agency Malaysia, Europe visa from Malaysia, Travel Agency Bangladesh, study abroad consultant, Travel Agency Dubai, Dubai, Travel Agency Armenia, Travel Agency Georgia"
+          content="Bangladesh's leading online travel agency. Book air tickets, hotels, tour packages & more without any hassle at the most affordable rates with Eammu Holidays."
         />
         <link rel="canonical" href="https://eammu.com/contact" />
 

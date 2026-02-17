@@ -10,61 +10,63 @@ const TravelAgencyBangladesh = () => {
   return (
     <>
       <Helmet>
-        <title>Best Travel Agency in Bangladesh | Eammu Holidays - Dhaka and Bangladesh</title>
-        <meta name="description" content="Eammu Holidays: Top-rated travel agency in Bangladesh. Expert in Student Visa, Visit Visa & Tours. Visit our Cumilla office at Gomoti Tower for reliable consultancy." />
-        <meta name="keywords" content="travel agency in Bangladesh, best travel agency in Cumilla, visa consultant Bangladesh, Eammu Holidays, Gomoti Tower Cumilla travel agency" />
+        <title>Top Travel Agency in Bangladesh | Travel Agency in Dhaka and Bangladesh | Travel Agency Comilla</title>
+        <meta name="description" content="Eammu Holidays is the best online travel agency for one-stop air ticket purchases, hotel bookings, tour packages, and visa processing." />
         <link rel="canonical" href="https://eammu.com/travel-agency-bangladesh" />
 
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "TravelAgency",
-            "name": "Eammu Holidays Bangladesh",
-            "image": "https://i.ibb.co/YF7bmqfg/logo.jpg",
-            "url": "https://eammu.com/travel-agency-bangladesh",
-            "telephone": "+8801701699743",
-            "email": "bangladesh@eammu.com",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Office No-178, 1st Floor, Gomoti Tower, Cantonment",
-              "addressLocality": "Cumilla",
-              "addressCountry": "BD"
-            },
-            "openingHours": "Mo-Fr 10:00-19:00",
-            "sameAs": [
-              "https://www.facebook.com/eammu",
-              "https://www.instagram.com/eammu",
-              "https://www.linkedin.com/company/eammu",
-              "https://www.youtube.com/@eammu"
-            ],
-            "faq": [
-              {
-                "@type": "Question",
-                "name": "Eammu Holidays কি ধরণের ভিসা সেবা প্রদান করে?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "আমরা Student Visa, Visit Visa, Tourist Visa এবং Work Permit প্রক্রিয়ায় সহায়তা করি।"
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "আপনার অফিস কোথায়?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "আমাদের অফিস রয়েছে গোমতী টাওয়ার, কুমিল্লা।"
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "WhatsApp অথবা কল কিভাবে যোগাযোগ করতে পারি?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "WhatsApp: +8801631312524, Hotline: +8801701699743"
-                }
-              }
-            ]
-          })}
-        </script>
+    {/* Structured Data: TravelAgency + FAQ Schema */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "Eammu Holidays Bangladesh",
+      "image": "https://eammu.com/eammuicon.jpg", 
+      "url": "https://eammu.com/travel-agency-bangladesh",
+      "telephone": "+8801701699743",
+      "email": "bangladesh@eammu.com",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Office No-178, 1st Floor, Gomoti Tower, Cantonment",
+        "addressLocality": "Cumilla",
+        "postalCode": "3500",
+        "addressCountry": "BD"
+      },
+      "openingHours": "Mo-Sa 10:00-19:00",
+      "sameAs": [
+        "https://www.facebook.com/eammutourism/",
+        "https://www.instagram.com/eammuholidays",
+        "https://www.youtube.com/@Eammutour"
+      ],
+      // FAQ Schema গুগল সার্চে প্রশ্ন-উত্তর দেখানোর জন্য
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Eammu Holidays কি ধরণের ভিসা সেবা প্রদান করে?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "আমরা স্টুডেন্ট ভিসা, ভিজিট ভিসা, টুরিস্ট ভিসা এবং ইউরোপের ওয়ার্ক পারমিট প্রসেসিংয়ে সহায়তা করি।"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "বাংলাদেশের অফিস কোথায় অবস্থিত?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "আমাদের প্রধান অফিস কুমিল্লা ক্যান্টনমেন্টের গোমতী টাওয়ারের ২য় তলায় (অফিস ১৭৮) অবস্থিত।"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "কিভাবে যোগাযোগ করতে পারি?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "সরাসরি কল করতে পারেন +8801701699743 নম্বরে অথবা WhatsApp করতে পারেন +8801631312524 নম্বরে।"
+          }
+        }
+      ]
+    })}
+  </script>
       </Helmet>
 
       <main className="min-h-screen bg-white relative">
