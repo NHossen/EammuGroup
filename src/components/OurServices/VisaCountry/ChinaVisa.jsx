@@ -1,106 +1,136 @@
 import React from "react";
 import { Helmet } from 'react-helmet-async';
-import { CheckCircle, ClipboardList, Send, Globe, ShieldCheck, FileText, Landmark, Wallet } from 'lucide-react';
+import { 
+  CheckCircle, ClipboardList, Send, Globe, ShieldCheck, 
+  FileText, Landmark, Wallet, HelpCircle, Clock, Info, 
+  Briefcase, Coffee, MapPin, PlayCircle, Image as ImageIcon, 
+  Construction, Fingerprint, QrCode
+} from 'lucide-react';
 
 const ChinaVisa = () => {
   return (
     <>
-    <Helmet>
-  <title>China Visa Application And Requirements | Get Visa Assistance - Eammu Holidays</title>
-  <meta 
-    name="description" 
-    content="Expert assistance for China tourist visa, business visa, student visa, and work permit. Eammu Holidays provides step-by-step guidance for applicants from Bangladesh, UAE, and other countries." 
-  />
-  <meta 
-    name="keywords" 
-    content="China visa, China tourist visa, China business visa, China student visa, China work permit, Eammu Holidays, visa consultancy China" 
-  />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://eammu.com/china-visa-application" />
+      <Helmet>
+        <title>China Visa 2026: Requirements, COVA Guide & Fees | Eammu Holidays</title>
+        <meta 
+          name="description" 
+          content="Expert assistance for China tourist, business (M), and student visas. 2026 updates for COVA forms and Digital Arrival Card guidance for UAE & BD applicants." 
+        />
+        <meta 
+          name="keywords" 
+          content="China visa 2026, China business visa, COVA form help, China visa UAE, China visa Bangladesh, China Digital Arrival Card, Eammu Holidays" 
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://eammu.com/china-visa-application" />
+      </Helmet>
 
-  {/* Open Graph */}
-  <meta property="og:title" content="China Visa & Immigration Services | Eammu Holidays" />
-  <meta 
-    property="og:description" 
-    content="Eammu Holidays provides professional China visa consultancy including tourist, business, student, and work visas. Trusted guidance for applicants from Bangladesh, UAE, and beyond." 
-  />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://eammu.com/china-visa-application" />
-  <meta 
-    property="og:image" 
-    content="https://www.eammu.com/images/china-visa-banner.jpg" 
-  />
-
-  {/* Twitter Card */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="China Visa & Immigration Services | Eammu Holidays" />
-  <meta 
-    name="twitter:description" 
-    content="Professional China visa support by Eammu Holidays. Apply for tourist, business, student, or work visas hassle-free with our expert consultancy." 
-  />
-  <meta 
-    name="twitter:image" 
-    content="https://www.eammu.com/images/china-visa-banner.jpg" 
-  />
-
-  {/* JSON-LD Structured Data */}
-  <script type="application/ld+json">
-    {JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "GovernmentService",
-      "name": "China Visa & Immigration Services",
-      "provider": {
-        "@type": "TravelAgency",
-        "name": "Eammu Holidays",
-        "url": "https://eammu.com/china-visa-application",
-        "logo": "https://www.eammu.com/images/logo.png",
-        "sameAs": [
-          "https://www.facebook.com/eammutourism",
-          "https://www.instagram.com/eammuholidays",
-          "https://www.linkedin.com/company/eammu"
-        ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "customer support",
-          "telephone": "+8801701699743",
-          "email": "info@eammu.com"
-        }
-      },
-      "serviceType": "Visa Consultancy & Immigration Services",
-      "areaServed": "CN",
-      "description": "Step-by-step guidance for China tourist visa, business visa, student visa, and work permit by Eammu Holidays. Trusted consultancy for applicants from Bangladesh, UAE, and other countries."
-    })}
-  </script>
-</Helmet>
-
-
-      <main className="bg-white min-h-screen font-sans">
+      <main className="bg-white min-h-screen font-sans text-slate-900">
         
-        {/* Header Section */}
-        <section className="bg-[#005a31] py-20 px-6 text-center text-white relative overflow-hidden">
+        {/* --- HERO SECTION --- */}
+        <section className="bg-[#005a31] py-24 px-6 text-center text-white relative overflow-hidden">
           <div className="absolute inset-0 opacity-10 flex items-center justify-center">
-             <Landmark size={400} className="text-white" />
+             <Landmark size={500} className="text-white" />
           </div>
-          <div className="relative z-10">
-            <span className="bg-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-[0.2em] mb-4 inline-block">
-              Global Trade & Tourism Gateway
-            </span>
-            <h1 className="text-5xl md:text-7xl font-black mb-4 tracking-tighter uppercase">
-              China <span className="text-orange-500">Visa</span> Application – Requirements, Process & Fees
+          <div className="relative z-10 max-w-5xl mx-auto">
+            <div className="flex justify-center gap-2 mb-6">
+                <span className="bg-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg">
+                    COVA & AVAS Specialist
+                </span>
+                <span className="bg-white/20 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest backdrop-blur-sm">
+                    2026 Digital Entry Compliant
+                </span>
+            </div>
+            <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
+              Gateway to <span className="text-orange-500">China</span>
             </h1>
-            <p className="text-xl opacity-90 max-w-2xl mx-auto font-light">
-              Unlock Business and Travel Opportunities in the World’s Leading Economic Hub
+            <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
+              Simplifying the complex China Online Visa Application (COVA) for business, tourism, and trade. Professional guidance from UAE, Armenia, and Bangladesh.
             </p>
+          </div>
+        </section>
+
+        {/* --- VIDEO TUTORIALS SECTION --- */}
+        <section className="bg-slate-50 py-20 px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex flex-col items-center mb-12">
+              <div className="flex items-center gap-3 mb-4">
+                <PlayCircle className="text-orange-500" size={32} />
+                <h2 className="text-4xl font-black text-[#005a31] uppercase">China Visa Video Guides</h2>
+              </div>
+              <p className="text-gray-500 text-center max-w-2xl italic">Visual walk-throughs of the COVA form and the new 2026 Digital Arrival Card system.</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <VideoCard 
+                id="N-uXhA1G7yU" 
+                title="COVA Form Tutorial" 
+                desc="Step-by-step instructions on filling the China Online Visa Application form accurately."
+              />
+              <VideoCard 
+                id="6_YkX7jWlQ4" 
+                title="Digital Arrival Card 2026" 
+                desc="Understanding the new mandatory online health and entry declaration for all travelers."
+              />
+              <VideoCard 
+                id="pU_1LhK8BwE" 
+                title="Business (M) Visa Prep" 
+                desc="How to secure a valid Invitation Letter from Chinese trade partners."
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* --- VISA CATEGORIES POSTERS --- */}
+        <section className="py-20 px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex items-center gap-4 mb-12 border-b border-gray-100 pb-6">
+              <ImageIcon className="text-orange-500" size={32} />
+              <h2 className="text-4xl font-black text-[#005a31] uppercase">Visa Categories</h2>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <PosterCard 
+                image="https://images.unsplash.com/photo-1540609651535-fe4af85233e4?q=80&w=800" 
+                badge="L-Visa" 
+                title="Tourism" 
+                detail="Leisure & Sightseeing"
+              />
+              <PosterCard 
+                image="https://images.unsplash.com/photo-1548013146-72479768bbaa?q=80&w=800" 
+                badge="M-Visa" 
+                title="Business" 
+                detail="Trade & Commercial"
+              />
+              <PosterCard 
+                image="https://images.unsplash.com/photo-1525921429573-05911ad2fc6b?q=80&w=800" 
+                badge="X-Visa" 
+                title="Student" 
+                detail="Education & Training"
+              />
+              <PosterCard 
+                image="https://images.unsplash.com/photo-1493932484895-752d1471eab5?q=80&w=800" 
+                badge="Q/S-Visa" 
+                title="Family Visit" 
+                detail="Personal & Reunion"
+              />
+            </div>
           </div>
         </section>
 
         <section className="max-w-7xl mx-auto py-20 px-6 grid grid-cols-1 lg:grid-cols-3 gap-16 items-start">
           
-          {/* Main Content (Left) */}
-          <div className="lg:col-span-2 space-y-16">
+          <div className="lg:col-span-2 space-y-24">
             
-            {/* Procedure Section */}
-            <section>
+            {/* Quick Metrics */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <MetricBox label="Normal Service" value="4 - 5 Days" icon={<Clock size={20}/>} />
+                <MetricBox label="Express" value="3 Days" icon={<Construction size={20}/>} />
+                <MetricBox label="Biometrics" value="Required" icon={<Fingerprint size={20}/>} />
+                <MetricBox label="Entry Card" value="Digital QR" icon={<QrCode size={20}/>} />
+            </div>
+
+            {/* Application Procedure */}
+            <section id="procedure">
               <div className="flex items-center gap-4 mb-10 border-b border-gray-100 pb-4">
                 <div className="bg-orange-500 p-3 rounded-2xl text-white">
                   <Send size={28} />
@@ -111,23 +141,23 @@ const ChinaVisa = () => {
               <div className="space-y-10">
                 <StepItem 
                   number="01" 
-                  title="COVA Form Completion" 
-                  desc="We handle the complex China Online Visa Application (COVA) form, ensuring every detail matches your passport and supporting documents." 
+                  title="COVA Portal Filing" 
+                  desc="We manage the high-precision China Online Visa Application (COVA) process, including photo uploads that meet strict technical criteria." 
                 />
                 <StepItem 
                   number="02" 
-                  title="AVAS Appointment Scheduling" 
-                  desc="We book your appointment at the Chinese Visa Application Service Center (AVAS) for document submission and biometric enrollment." 
+                  title="AVAS Appointment" 
+                  desc="Securement of your mandatory submission slot at the Chinese Visa Application Service Center (VAC) or Embassy." 
                 />
                 <StepItem 
                   number="03" 
-                  title="Invitation & Business Documentation" 
-                  desc="For Business (M) visas, we guide you on obtaining the proper invitation letter from Chinese trade partners or official entities." 
+                  title="Submission & Biometrics" 
+                  desc="Guidance on the physical document submission and biometric (fingerprint) enrollment at the Visa Center." 
                 />
                 <StepItem 
                   number="04" 
-                  title="Passport Collection" 
-                  desc="After the standard processing time (usually 4-5 business days), we assist in tracking and confirming your visa collection." 
+                  title="Digital Arrival Setup" 
+                  desc="Post-visa approval, we help you complete the new 2026 Digital Arrival Card for a seamless entry at the Chinese border." 
                 />
               </div>
             </section>
@@ -137,90 +167,99 @@ const ChinaVisa = () => {
               <div className="absolute top-0 right-0 p-8 opacity-5">
                 <FileText size={120} className="text-[#005a31]" />
               </div>
-              
               <div className="flex items-center gap-4 mb-10">
                 <div className="bg-[#005a31] p-3 rounded-2xl text-white shadow-lg">
                   <ClipboardList size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Requirement Checklist</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Requirement Checklist 2026</h2>
               </div>
-
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <RequirementCard text="Original Passport (valid for at least 6 months)" />
-                <RequirementCard text="Photocopy of Passport Bio-page & previous Chinese visas" />
-                <RequirementCard text="Digital & Physical Photo (48mm x 33mm, white background)" />
-                <RequirementCard text="Completed COVA Visa Application Form" />
-                <RequirementCard text="Proof of Residence (For applicants outside their home country)" />
-                <RequirementCard text="Round-trip Flight Ticket & Hotel Reservation" />
-                <RequirementCard text="Personal Bank Statement (Last 6 Months)" />
-                <RequirementCard text="Invitation Letter (Required for Business/M Visa)" />
-                <RequirementCard text="Travel Itinerary (Day-by-day plan for Tourist/L Visa)" />
-                <RequirementCard text="NOC from Company / Business License" />
+                <RequirementCard text="Original Passport (6+ months)" />
+                <RequirementCard text="2 Photos (33mm x 48mm, White BG)" />
+                <RequirementCard text="Printed COVA Confirmation Page" />
+                <RequirementCard text="Flight & Hotel Itinerary" />
+                <RequirementCard text="6 Months Personal Bank Statement" />
+                <RequirementCard text="Invitation Letter (Required for M/Q/S)" />
+                <RequirementCard text="Trade License / Employment NOC" />
+                <RequirementCard text="Residence Permit (For non-citizens)" />
+                <RequirementCard text="Previous Chinese Visas (If any)" />
+                <RequirementCard text="Proof of Relationship (Family Visas)" />
               </div>
+            </section>
+
+            {/* FAQ Section */}
+            <section>
+                <div className="flex items-center gap-4 mb-10">
+                    <HelpCircle size={32} className="text-orange-500" />
+                    <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">China Visa FAQ</h2>
+                </div>
+                <div className="divide-y divide-gray-100">
+                    <FAQItem 
+                        question="Do I need to visit the Visa Center in person?" 
+                        answer="Yes, biometric enrollment (fingerprints) is currently required for most applicants unless you are specifically exempted due to age or having provided fingerprints within the last 5 years."
+                    />
+                    <FAQItem 
+                        question="What is the 2026 Digital Arrival Card?" 
+                        answer="It is a mandatory online declaration form that replaces the old paper health and arrival cards. It must be completed within 24 hours of landing in China to generate a QR code for immigration."
+                    />
+                    <FAQItem 
+                        question="Can I get a 10-year visa for China?" 
+                        answer="Multi-year visas (up to 10 years) are available for certain nationalities and categories, particularly US, Canadian, and UK citizens under reciprocal agreements."
+                    />
+                </div>
             </section>
 
           </div>
 
-          {/* Sidebar (Right) */}
+          {/* Sidebar */}
           <aside className="space-y-8 lg:sticky lg:top-10">
             <div className="bg-[#005a31] text-white p-10 rounded-[3rem] shadow-2xl overflow-hidden relative group">
               <div className="absolute -top-20 -right-20 w-48 h-48 bg-white/5 rounded-full group-hover:scale-125 transition-transform duration-1000"></div>
-              
-              <h3 className="text-2xl font-black mb-8 border-b border-white/10 pb-4 italic text-orange-400">
-                China Visa Help
-              </h3>
-
-              <div className="space-y-8">
-                <div className="flex flex-col">
-                  <span className="text-orange-400 text-[10px] font-black uppercase tracking-widest mb-1">Armenia Office</span>
-                  <a href="tel:+37494810585" className="text-xl font-bold hover:text-orange-300 transition-colors">+374 94 810585</a>
-                </div>
-                
-                <div className="flex flex-col">
-                  <span className="text-orange-400 text-[10px] font-black uppercase tracking-widest mb-1">UAE Support</span>
-                  <a href="tel:+971507078334" className="text-xl font-bold hover:text-orange-300 transition-colors">+971 50 707 8334</a>
-                </div>
-
-                <div className="flex flex-col">
-                  <span className="text-orange-400 text-[10px] font-black uppercase tracking-widest mb-1">BD Hotline</span>
-                  <a href="tel:+8801701699743" className="text-xl font-bold hover:text-orange-300 transition-colors">+880 1701 699 743</a>
-                </div>
-
-                <div className="pt-6 border-t border-white/10">
-                  <span className="text-orange-400 text-[10px] font-black uppercase tracking-widest mb-1">Official Email</span>
-                  <a href="mailto:info@eammu.com" className="text-lg font-medium hover:text-orange-300 transition-colors break-all">info@eammu.com</a>
-                </div>
+              <h3 className="text-2xl font-black mb-8 border-b border-white/10 pb-4 italic text-orange-400">China Visa Help</h3>
+              <div className="space-y-8 text-sm">
+                <ContactLink label="Armenia Office" href="tel:+37494810585" text="+374 94 810585" />
+                <ContactLink label="UAE Support" href="tel:+971507078334" text="+971 50 707 8334" highlight />
+                <ContactLink label="Bangladesh Hotline" href="tel:+8801701699743" text="+880 1701 699 743" />
+                <ContactLink label="Official Email" href="mailto:info@eammu.com" text="info@eammu.com" />
               </div>
-
-              <a 
-                href="https://wa.me/37494810585" 
-                target="_blank" 
-                rel="noreferrer" 
-                className="mt-12 block w-full bg-orange-500 text-white text-center py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-white hover:text-[#005a31] transition-all duration-500 shadow-xl"
-              >
-                Inquire on WhatsApp
+              <a href="https://wa.me/37494810585" className="mt-12 block w-full bg-orange-500 text-white text-center py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-white hover:text-[#005a31] transition-all duration-500 shadow-xl">
+                Chat on WhatsApp
               </a>
             </div>
-
             <div className="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 flex flex-col items-center text-center">
               <ShieldCheck size={40} className="text-[#005a31] mb-4" />
-              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">Global Expertise</p>
-              <p className="text-[#005a31] font-black text-xl italic tracking-tighter">EAMMU HOLIDAYS</p>
+              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">Authorized Consultancy</p>
+              <p className="text-[#005a31] font-black text-xl italic tracking-tighter uppercase">Eammu Holidays</p>
             </div>
           </aside>
-
         </section>
       </main>
     </>
   );
 };
 
-// Helper Components
+// --- Helper Components ---
+const VideoCard = ({ id, title, desc }) => (
+  <div className="bg-white rounded-3xl overflow-hidden shadow-lg group hover:-translate-y-2 transition-all duration-300">
+    <div className="relative aspect-video">
+      <iframe className="w-full h-full border-0" src={`https://www.youtube.com/embed/${id}`} title={title} allowFullScreen></iframe>
+    </div>
+    <div className="p-6"><h3 className="font-black text-[#005a31] uppercase mb-2">{title}</h3><p className="text-gray-500 text-sm">{desc}</p></div>
+  </div>
+);
+
+const PosterCard = ({ image, badge, title, detail }) => (
+  <div className="relative rounded-3xl overflow-hidden aspect-[3/4] group cursor-pointer shadow-md">
+    <img src={image} alt={title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
+    <div className="absolute top-4 left-4"><span className="bg-orange-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">{badge}</span></div>
+    <div className="absolute bottom-6 left-6"><h3 className="text-white font-black text-xl leading-tight uppercase">{title}</h3><p className="text-orange-400 font-bold text-xs uppercase tracking-widest">{detail}</p></div>
+  </div>
+);
+
 const StepItem = ({ number, title, desc }) => (
   <div className="flex gap-6 group">
-    <div className="text-4xl font-black text-slate-200 group-hover:text-orange-500 transition-all duration-300 leading-none">
-      {number}
-    </div>
+    <div className="text-4xl font-black text-slate-200 group-hover:text-orange-500 transition-all duration-300 leading-none">{number}</div>
     <div className="pt-1">
       <h4 className="text-xl font-black text-[#005a31] mb-2 uppercase tracking-tight">{title}</h4>
       <p className="text-gray-500 leading-relaxed text-base">{desc}</p>
@@ -230,10 +269,32 @@ const StepItem = ({ number, title, desc }) => (
 
 const RequirementCard = ({ text }) => (
   <div className="flex items-start gap-3 group">
-    <div className="bg-orange-100 p-1 rounded-full group-hover:bg-[#005a31] transition-colors">
-      <CheckCircle size={16} className="text-orange-600 group-hover:text-white" />
-    </div>
+    <div className="bg-orange-100 p-1 rounded-full group-hover:bg-[#005a31] transition-colors"><CheckCircle size={16} className="text-orange-600 group-hover:text-white" /></div>
     <span className="text-gray-700 font-medium text-sm leading-tight">{text}</span>
+  </div>
+);
+
+const MetricBox = ({ label, value, icon }) => (
+    <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100 flex flex-col items-center justify-center text-center">
+        <div className="text-orange-500 mb-2">{icon}</div>
+        <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">{label}</span>
+        <span className="text-[#005a31] font-black text-sm">{value}</span>
+    </div>
+);
+
+const FAQItem = ({ question, answer }) => (
+    <div className="py-6">
+        <h4 className="text-lg font-black text-[#005a31] mb-3 uppercase tracking-tight flex items-center gap-2">
+            <span className="text-orange-500">Q.</span> {question}
+        </h4>
+        <p className="text-gray-600 leading-relaxed pl-6 border-l-2 border-orange-200">{answer}</p>
+    </div>
+);
+
+const ContactLink = ({ label, href, text, highlight }) => (
+  <div className={`flex flex-col ${highlight ? 'border-l-2 border-orange-500 pl-4' : ''}`}>
+    <span className="text-orange-400 text-[10px] font-black uppercase tracking-widest mb-1">{label}</span>
+    <a href={href} className="text-lg font-bold hover:text-orange-300 transition-colors">{text}</a>
   </div>
 );
 

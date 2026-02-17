@@ -55,22 +55,6 @@ const Offer = () => {
     content="Discover exclusive travel deals with Eammu. Special offers on cheap air tickets, tour packages, hotel deals, and visa services from an IATA approved global travel agency."
   />
 
-  <meta
-    name="keywords"
-    content="
-    travel deals,
-    special travel offers,
-    cheap flight deals,
-    discount tour packages,
-    holiday offers worldwide,
-    cheap air tickets offer,
-    last minute travel deals,
-    travel agency discounts,
-    flight and hotel deals,
-    iata approved travel agency offers
-    "
-  />
-
   {/* Canonical */}
   <link rel="canonical" href="https://eammu.com/offers" />
 

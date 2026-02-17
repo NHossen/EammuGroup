@@ -149,29 +149,6 @@ const AirTickets = () => {
     content="Book cheap international air tickets with Eammu, an IATA approved global travel agency. Compare real-time flight prices, airline deals, reissue & cancellation support worldwide."
   />
 
-  <meta
-    name="keywords"
-    content="
-    cheap air tickets,
-    international flight booking,
-    iata approved air ticket agent,
-    flight booking agency,
-    cheap flights worldwide,
-    dubai to dhaka flights,
-    usa international flights,
-    airline ticket booking company,
-    flight reissue and cancellation,
-    online flight search,
-    travel agency air tickets,
-    travel agency Bangladesh,
-    flight book online,
-    Ota Bangladesh,
-    top Travel agency bangladesh,
-    best travel agency worldwide,
-    best travel in india
-    "
-  />
-
   {/* Canonical */}
   <link rel="canonical" href="https://eammu.com/air-tickets" />
 
