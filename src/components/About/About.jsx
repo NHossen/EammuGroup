@@ -97,7 +97,7 @@ const About = () => {
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Eammu is a global leader in professional immigration, visa assistance, and diversified business solutions. We bridge the gap between your dreams and global opportunities.
             </p>
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl max-w-5xl mx-auto">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl max-w-[1220px] mx-auto">
               <img
                 src="/eammu_banner_four.webp"
                 alt="Eammu Global Business Presence"

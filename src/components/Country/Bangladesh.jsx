@@ -72,7 +72,7 @@ const TravelAgencyBangladesh = () => {
       <main className="min-h-screen bg-white relative">
         {/* Hero Section */}
         <section className="relative h-[100vh] flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 z-0 opacity-30">
+          <div className="absolute inset-0 z-0">
             <img 
               src="https://images.unsplash.com/photo-1590603740183-980e7f6920eb?auto=format&fit=crop&q=80" 
               alt="Travel Agency in Bangladesh - Eammu Holidays" 
