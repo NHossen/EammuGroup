@@ -11,7 +11,7 @@ const TravelAgencyBangladesh = () => {
     <>
       <Helmet>
         <title>Top Travel Agency in Bangladesh | Travel Agency in Dhaka and Bangladesh | Travel Agency Comilla</title>
-        <meta name="description" content="Eammu Holidays is the best online travel agency for one-stop air ticket purchases, hotel bookings, tour packages, and visa processing." />
+        <meta name="description" content="Eammu Holidays is the best online travel agency for one-stop air ticket purchases, hotel bookings, tour packages, and visa processing.Leading Travel Agency in Dhaka, Bangladesh" />
         <link rel="canonical" href="https://eammu.com/travel-agency-bangladesh" />
 
     {/* Structured Data: TravelAgency + FAQ Schema */}
