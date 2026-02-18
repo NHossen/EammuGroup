@@ -2,6 +2,7 @@ import { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaPassport, FaPlaneDeparture, FaSuitcaseRolling, FaStar } from 'react-icons/fa';
 import { Helmet } from 'react-helmet-async';
+import { motion } from 'framer-motion';
 
 const Carousel = () => {
   const carouselRef = useRef(null);
@@ -76,7 +77,10 @@ const Carousel = () => {
           ref={carouselRef}
           className="carousel w-full h-full flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory scroll-smooth scrollbar-hide"
         >
-          {/* Slide 1 */}
+        import { motion } from 'framer-motion';
+
+
+ {/* Slide 1 */}
           <div id="slide1" className="carousel-item w-full h-full snap-center relative flex-shrink-0">
             <img
               src="/eammu_banner.webp"
