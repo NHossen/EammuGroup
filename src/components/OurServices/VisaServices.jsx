@@ -1,5 +1,5 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import React, { useState, useRef } from 'react';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
 const countries = [
@@ -171,270 +171,256 @@ const countries = [
 ];
 
 const popularRoutes = [
-  {
-    name: "USA",
-    image: "https://visadone.com/wp-content/uploads/2023/02/USA-VISA.png",
-  },
-  {
-    name: "UK",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkgBKQsFv4LdWUzfgaoMj5srhPn0vAuU9X6Q&s",
-  },
-  {
-    name: "Europe (Schengen)",
-    image: "https://www.babaaztravels.com/wp-content/uploads/2023/05/Schengen-Visit-Visa-Requirements-Babaaz-Travels.jpeg",
-  },
-  {
-    name: "Canada",
-    image: "https://pelicanmigration.com/wp-content/uploads/2024/01/Canada-Visitor-Visa.jpg",
-  },
-  {
-    name: "Japan",
-    image: "https://www.babaaztravels.com/wp-content/uploads/2022/04/japan.jpg",
-  },
+  { name: "USA", image: "https://visadone.com/wp-content/uploads/2023/02/USA-VISA.png" },
+  { name: "UK", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkgBKQsFv4LdWUzfgaoMj5srhPn0vAuU9X6Q&s" },
+  { name: "Europe (Schengen)", image: "https://www.babaaztravels.com/wp-content/uploads/2023/05/Schengen-Visit-Visa-Requirements-Babaaz-Travels.jpeg" },
+  { name: "Canada", image: "https://pelicanmigration.com/wp-content/uploads/2024/01/Canada-Visitor-Visa.jpg" },
+  { name: "Japan", image: "https://www.babaaztravels.com/wp-content/uploads/2022/04/japan.jpg" },
 ];
 
 const VisaServices = () => {
-  const jsonLD = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Visa Services",
-    "provider": {
-      "@type": "Organization",
-      "name": "Eammu Holidays",
-      "url": "https://eammu.com",
-      "logo": "https://eammu.com/images/logo.png",
-      "sameAs": [
-        "https://www.facebook.com/eammu",
-        "https://www.instagram.com/eammu",
-        "https://www.linkedin.com/company/eammu"
-      ]
-    },
-    "areaServed": countries.map(c => ({ "@type": "Country", "name": c.name })),
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Visa Services Catalog",
-      "itemListElement": countries.map(c => ({
-        "@type": "Offer",
-        "itemOffered": { "@type": "Service", "name": `${c.name} Visa Services`, "description": c.description }
-      }))
-    }
+  const ITEMS_PER_PAGE = 3;
+
+  // Category Filtering
+  const categories = {
+    america: ["USA", "Canada", "Mexico", "Brazil"],
+    europe: ["United Kingdom", "Europe (Schengen)", "Albania", "Germany", "France", "Netherlands", "Italy", "Spain", "Sweden", "Norway", "Ireland", "Portugal", "Belgium", "Switzerland", "Austria", "Poland", "Czech Republic", "Greece", "Hungary", "Finland", "Denmark"],
+    asia: ["Japan", "Malaysia", "Thailand & Singapore", "South Korea"],
+    middleEast: ["Dubai (UAE)", "Hajj & Umrah"],
+    oceania: ["Australia", "New Zealand"]
+  };
+
+  // Pagination State
+  const [pages, setPages] = useState({ america: 1, europe: 1, asia: 1, middleEast: 1, oceania: 1 });
+
+  // Refs for Smooth Scrolling
+  const refs = {
+    america: useRef(null),
+    europe: useRef(null),
+    asia: useRef(null),
+    middleEast: useRef(null),
+    oceania: useRef(null),
+    popular: useRef(null)
+  };
+
+  const scrollTo = (ref) => ref.current?.scrollIntoView({ behavior: 'smooth' });
+
+  // Pagination Logic
+  const getPaginatedData = (catKey) => {
+    const list = countries.filter(c => categories[catKey].includes(c.name));
+    const start = (pages[catKey] - 1) * ITEMS_PER_PAGE;
+    return {
+      data: list.slice(start, start + ITEMS_PER_PAGE),
+      total: Math.ceil(list.length / ITEMS_PER_PAGE)
+    };
+  };
+
+  const Pagination = ({ catKey }) => {
+    const { total } = getPaginatedData(catKey);
+    if (total <= 1) return null;
+    return (
+      <div className="flex justify-center items-center gap-2 mt-8">
+        {[...Array(total)].map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setPages({ ...pages, [catKey]: i + 1 })}
+            className={`w-9 h-9 rounded-lg font-bold transition-all ${
+              pages[catKey] === i + 1 ? "bg-[#005a31] text-white" : "border border-gray-300 text-gray-600 hover:bg-gray-100"
+            }`}
+          >
+            {i + 1}
+          </button>
+        ))}
+      </div>
+    );
   };
 
   return (
-    <div className="px-4 container mx-auto py-10">
-      <Helmet>
-  {/* Primary SEO */}
-  <title>
-    Visa Services Worldwide | Tourist, Student & Work Visas – Eammu Holidays
-  </title>
+    <HelmetProvider>
+      <div className="bg-gray-50 min-h-screen">
+        <Helmet>
+          <title>Visa Services Worldwide | Tourist, Student & Work Visas – Eammu Holidays</title>
+          <meta name="description" content="Eammu Holidays provides expert visa services for Tourist, Student, and Work visas across USA, UK, Europe, Canada, Australia, Japan, UAE, Malaysia, and more." />
+          <meta name="keywords" content="Visa services Bangladesh, USA tourist visa, UK student visa, Canada visitor visa, Europe work visa, Hajj & Umrah packages" />
+          <link rel="canonical" href="https://eammu.com/visa-services" />
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "TravelAgency",
+              "name": "Eammu Holidays",
+              "url": "https://eammu.com",
+              "logo": "https://eammu.com/images/logo.png",
+              "telephone": "+8801631312524",
+              "email": "info@eammu.com",
+              "areaServed": countries.map(c => ({ "@type": "Country", "name": c.name })),
+            })}
+          </script>
+        </Helmet>
 
-  <meta
-    name="description"
-    content="Eammu Holidays provides expert visa services for Tourist, Student, and Work visas across USA, UK, Europe, Canada, Australia, Japan, UAE, Malaysia, and more. Hajj & Umrah packages available. Apply online now!"
-  />
-
-  <meta
-    name="keywords"
-    content="Visa services Bangladesh, USA tourist visa, UK student visa, Canada visitor visa, Europe work visa, Australia student visa, Japan tourist visa, UAE visa, Malaysia eVisa, Hajj & Umrah packages, Eammu Immigration Services, Travel agency Bangladesh, Best visa consultancy worldwide"
-  />
-
-  <link rel="canonical" href="https://eammu.com/visa-services" />
-
-  {/* Open Graph / Social SEO */}
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Visa Services Worldwide – Eammu Holidays" />
-  <meta
-    property="og:description"
-    content="Professional visa services by Eammu Holidays for Tourist, Student, and Work visas across 25+ countries. Fast, reliable, and approved by IATA."
-  />
-  <meta property="og:url" content="https://eammu.com/visa-services" />
-  <meta property="og:site_name" content="Eammu Holidays" />
-  <meta property="og:image" content="https://visadone.com/wp-content/uploads/2023/02/USA-VISA.png" />
-
-  {/* Twitter */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Visa Services Worldwide – Eammu Holidays" />
-  <meta
-    name="twitter:description"
-    content="Book Tourist, Student & Work visas easily with Eammu Holidays. Serving USA, UK, Europe, Canada, Australia, Japan, UAE, Malaysia, and more."
-  />
-  <meta name="twitter:image" content="https://visadone.com/wp-content/uploads/2023/02/USA-VISA.png" />
-
-  {/* Geo / Local SEO */}
-  <meta name="geo.region" content="BD" />
-  <meta name="geo.placename" content="Cumilla, Bangladesh" />
-  <meta name="geo.position" content="23.4607;91.1809" />
-  <meta name="ICBM" content="23.4607,91.1809" />
-
-  {/* Trust & Indexing */}
-  <meta name="author" content="Eammu Holidays" />
-  <meta name="publisher" content="Eammu Holidays" />
-  <meta name="robots" content="index, follow, max-image-preview:large" />
-
-  {/* JSON-LD Structured Data */}
-  <script type="application/ld+json">
-    {JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "TravelAgency",
-      "name": "Eammu Holidays",
-      "url": "https://eammu.com",
-      "logo": "https://eammu.com/images/logo.png",
-      "sameAs": [
-        "https://www.facebook.com/eammu",
-        "https://www.instagram.com/eammu",
-        "https://www.linkedin.com/company/eammu",
-        "https://www.youtube.com/@eammu"
-      ],
-      "telephone": "+8801631312524",
-      "email": "info@eammu.com",
-      "areaServed": countries.map(c => ({ "@type": "Country", "name": c.name })),
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Visa Services Catalog",
-        "itemListElement": countries.map(c => ({
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": `${c.name} Visa Services`,
-            "description": c.description
-          }
-        }))
-      },
-      "description": "Eammu Holidays provides professional Tourist, Student, and Work visa services across 25+ countries including USA, UK, Europe, Canada, Australia, UAE, Japan, Malaysia, China, and more. Hajj & Umrah packages also available."
-    })}
-  </script>
-</Helmet>
-
-
-      {/* Header */}
-      <header className="text-center mb-10">
-        <h1 className="text-4xl font-bold text-[#005a31] mb-4">Visa Services by Eammu Holidays</h1>
-        <p className="text-gray-700 text-md max-w-7xl mx-auto">
-          Eammu Holidays provides assistance for  <strong> <br />
-    <a href="/tourist-visa-application-from-bangladesh" className="bg-[#005a31] text-white px-1 py-1 rounded mr-1 hover:bg-gray-400 hover:text-black">
-      Tourist Visa
-    </a>
-    <a href="/student-visa-application-from-bangladesh" className="bg-[#005a31] text-white px-1 py-1 rounded mr-1 hover:bg-gray-400 hover:text-black">
-      Student Visa
-    </a>
-    <a href="/work-visa-application-from-bangladesh" className="bg-[#005a31] text-white px-1 py-1 rounded hover:bg-gray-400 hover:text-black">
-      Work Visa
-    </a>
-  </strong> <br /> across over 25 countries including 
-          <Link to="/usa-visa-application" className="text-[#005a31] underline"> USA</Link>, 
-          <Link to="/uk-visa-application" className="text-[#005a31] underline"> UK</Link>, 
-          <Link to="/europe-visa-application" className="text-[#005a31] underline"> Europe</Link>, 
-          <Link to="/canada-visa-application" className="text-[#005a31] underline"> Canada</Link>,
-          <Link to="/australia-visa-application" className="text-[#005a31] underline"> Australia</Link>,
-          <Link to="/germany-visa-application" className="text-[#005a31] underline"> Germany</Link>,
-          <Link to="/portugal-visa-application" className="text-[#005a31] underline"> Portugal</Link>,
-          <Link to="/armenia-visa-application" className="text-[#005a31] underline"> Armenia</Link>,
-          <Link to="/georgia-visa-application" className="text-[#005a31] underline"> Georgia</Link>,
-          <Link to="/albania-visa-application" className="text-[#005a31] underline"> Albania</Link>,
-          <Link to="/dubai-visa-application" className="text-[#005a31] underline"> Dubai</Link>,
-          <Link to="/qatar-visa-application" className="text-[#005a31] underline"> Qatar</Link>,
-          <Link to="/japan-visa-application" className="text-[#005a31] underline"> Japan</Link>,
-          <Link to="/china-visa-application" className="text-[#005a31] underline"> China</Link>,
-          <Link to="/south-korea-visa-application" className="text-[#005a31] underline"> South Korea</Link>,
-          <Link to="/spain-visa-application" className="text-[#005a31] underline"> Spain</Link>,
-          <Link to="/kosovo-visa-application" className="text-[#005a31] underline"> Kosovo</Link>,
-          <Link to="/serbia-visa-application" className="text-[#005a31] underline"> Serbia</Link>,
-          <Link to="/thailand-visa-application" className="text-[#005a31] underline"> Thailand</Link>,
-          <Link to="/singapore-visa-application" className="text-[#005a31] underline"> Singapore</Link>,
-          <Link to="/malaysia-visa-application" className="text-[#005a31] underline"> Malaysia</Link>,
-           
-          and more.
-        </p>
-      </header>
-
-      {/* Visa Cards with Book Now */}
-      <section aria-label="Visa service countries" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {countries.map((country, index) => (
-          <article
-            key={index}
-            className="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300 flex flex-col justify-between hover:-translate-y-1"
-            tabIndex={0}
-            aria-labelledby={`country-title-${index}`}
-          >
-            <img
-              src={country.image}
-              alt={`${country.name} visa services`}
-              className="h-48 w-full object-cover"
-              loading="lazy"
-              width="400"
-              height="240"
-            />
-            <div className="p-4 flex flex-col justify-between flex-1">
-              <div>
-                <h2 id={`country-title-${index}`} className="text-xl font-bold text-[#005a31] mb-2">{country.name} Visa Services</h2>
-                <p className="text-gray-700 text-sm mb-4">{country.description}</p>
-              </div>
-              <a
-                href={`https://wa.me/8801631312524?text=Hello%2C%20I%20would%20like%20to%20book%20a%20${encodeURIComponent(country.name)}%20visa%20service.`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-[#005a31] text-white text-center px-4 py-2 rounded-full hover:bg-[#003e24] transition transform hover:scale-105"
-              >
-                Book Now
-              </a>
-            </div>
-          </article>
-        ))}
-      </section>
-
-      {/* Popular Routes & Deals */}
-      <section className="mt-12">
-        <h2 className="text-3xl font-bold text-[#005a31] text-center mb-6">Popular Routes & Deals</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {popularRoutes.map((route, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1 flex flex-col">
-              <img
-                src={route.image}
-                alt={`${route.name} visa`}
-                className="h-48 w-full object-cover"
-                loading="lazy"
-              />
-              <div className="p-4 flex flex-col flex-1 justify-between">
-                <h3 className="text-xl font-semibold text-[#005a31] mb-2">{route.name}</h3>
-                <a
-                  href={`https://wa.me/8801631312524?text=Hello%2C%20I%20would%20like%20to%20book%20a%20${encodeURIComponent(route.name)}%20visa%20service.`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-[#005a31] text-white text-center px-4 py-2 rounded-full hover:bg-[#003e24] transition transform hover:scale-105"
+        {/* --- PREMIUM HERO SECTION --- */}
+        <header className="bg-[#005a31] text-white py-16 px-4 relative overflow-hidden">
+          <div className="container mx-auto text-center relative z-10">
+            <h1 className="text-4xl md:text-5xl font-extrabold mb-6">World-Class Visa Services</h1>
+            <p className="max-w-4xl mx-auto text-green-50 text-lg mb-10 leading-relaxed">
+              Assisting you with <strong>Tourist, Student, and Work Visas</strong> across 25+ countries. 
+              Our expert team ensures high-quality documentation and embassy submission tips.
+            </p>
+            
+            <div className="flex flex-wrap justify-center gap-3">
+              {['Asia', 'Europe', 'America', 'MiddleEast', 'Oceania', 'Popular'].map(cat => (
+                <button 
+                  key={cat}
+                  onClick={() => scrollTo(refs[cat.toLowerCase()])}
+                  className="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white hover:text-[#005a31] px-6 py-2.5 rounded-full transition-all font-bold text-sm"
                 >
-                  Book Now
-                </a>
-              </div>
+                  {cat === 'MiddleEast' ? 'Middle East' : cat}
+                </button>
+              ))}
             </div>
-          ))}
-        </div>
-      </section>
+          </div>
+        </header>
 
-      {/* Bottom CTA */}
-      <section className="mt-12 bg-[#f4f4f4] p-6 rounded-md text-center" aria-live="polite">
-        <h2 className="text-2xl font-bold text-[#005a31] mb-3">Book Your Visa Consultation Today</h2>
-        <p className="text-gray-700 max-w-xl mx-auto mb-4">
-          Get your visa processed with expert guidance. We provide end-to-end support for <strong>student, work, and tourist visas</strong>, Hajj & Umrah, and group travel visas. Fast, reliable, and affordable.
-        </p>
-        <a
-          href="https://wa.me/8801631312524?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20visa%20services."
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-[#005a31] text-white px-6 py-2 rounded-full hover:bg-[#003e24] transition mb-4"
-        >
-          Contact on WhatsApp
-        </a>
-        <div className="mt-4">
-          <Link
-            to="/"
-            className="inline-block bg-white border border-green-800 text-green-800 px-6 py-3 rounded-full hover:bg-green-100 transition"
-          >
-            Back to Home
-          </Link>
+        <div className="container mx-auto px-4 py-12">
+          
+          {/* QUICK LINKS SECTION (From Original) */}
+          <div className="bg-white p-8 rounded-3xl shadow-sm mb-16 border border-gray-100">
+            <h2 className="text-center text-gray-500 font-semibold mb-6 uppercase tracking-widest text-xs">Direct Visa Application Links</h2>
+            <div className="flex flex-wrap justify-center gap-2">
+              <a href="/tourist-visa-application-from-bangladesh" className="bg-[#005a31] text-white px-4 py-1.5 rounded-full text-sm hover:bg-gray-800 transition">Tourist Visa</a>
+              <a href="/student-visa-application-from-bangladesh" className="bg-[#005a31] text-white px-4 py-1.5 rounded-full text-sm hover:bg-gray-800 transition">Student Visa</a>
+              <a href="/work-visa-application-from-bangladesh" className="bg-[#005a31] text-white px-4 py-1.5 rounded-full text-sm hover:bg-gray-800 transition">Work Visa</a>
+              {[ "USA", "UK", "Europe", "Canada", "Australia", "Germany", "Portugal", "Armenia", "Georgia", "Albania", "Dubai", "Qatar", "Japan", "China", "South Korea", "Spain", "Kosovo", "Serbia", "Thailand", "Singapore", "Malaysia" ].map((name) => (
+                <Link key={name} to={`/${name.toLowerCase().replace(' ', '-')}-visa-application`} className="px-4 py-1.5 bg-gray-50 border border-gray-200 text-gray-700 rounded-full text-sm hover:border-[#005a31] hover:text-[#005a31] transition">
+                  {name}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* ASIA SECTION */}
+          <section ref={refs.asia} className="mb-24">
+            <div className="border-b border-gray-200 pb-4 mb-8">
+              <h2 className="text-3xl font-bold text-gray-800">Asia Visa Services</h2>
+              <p className="text-gray-500">Fast processing for major Asian hubs</p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {getPaginatedData('asia').data.map((country, i) => (
+                <VisaCardItem key={i} country={country} />
+              ))}
+            </div>
+            <Pagination catKey="asia" />
+          </section>
+
+          {/* EUROPE SECTION */}
+          <section ref={refs.europe} className="mb-24">
+            <div className="border-b border-gray-200 pb-4 mb-8">
+              <h2 className="text-3xl font-bold text-gray-800">Europe & Schengen</h2>
+              <p className="text-gray-500">Expert guidance for UK and 26+ Schengen countries</p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {getPaginatedData('europe').data.map((country, i) => (
+                <VisaCardItem key={i} country={country} />
+              ))}
+            </div>
+            <Pagination catKey="europe" />
+          </section>
+
+          {/* AMERICA SECTION */}
+          <section ref={refs.america} className="mb-24">
+            <div className="border-b border-gray-200 pb-4 mb-8">
+              <h2 className="text-3xl font-bold text-gray-800">North & South America</h2>
+              <p className="text-gray-500">Assisting with USA DS-160 and Canada SDS streams</p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {getPaginatedData('america').data.map((country, i) => (
+                <VisaCardItem key={i} country={country} />
+              ))}
+            </div>
+            <Pagination catKey="america" />
+          </section>
+
+          {/* MIDDLE EAST SECTION */}
+          <section ref={refs.middleeast} className="mb-24">
+            <div className="border-b border-gray-200 pb-4 mb-8">
+              <h2 className="text-3xl font-bold text-gray-800">Middle East & Umrah</h2>
+              <p className="text-gray-500">Quick UAE tourist visas and dedicated Hajj services</p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {getPaginatedData('middleEast').data.map((country, i) => (
+                <VisaCardItem key={i} country={country} />
+              ))}
+            </div>
+            <Pagination catKey="middleEast" />
+          </section>
+
+          {/* OCEANIA SECTION */}
+          <section ref={refs.oceania} className="mb-24">
+            <div className="border-b border-gray-200 pb-4 mb-8">
+              <h2 className="text-3xl font-bold text-gray-800">Oceania Regions</h2>
+              <p className="text-gray-500">Explore pathways to Australia and New Zealand</p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {getPaginatedData('oceania').data.map((country, i) => (
+                <VisaCardItem key={i} country={country} />
+              ))}
+            </div>
+            <Pagination catKey="oceania" />
+          </section>
+
+          {/* POPULAR ROUTES SECTION (From Original) */}
+          <section ref={refs.popular} className="mt-12 bg-gray-100 p-10 rounded-[3rem]">
+            <h2 className="text-3xl font-bold text-[#005a31] text-center mb-10">Popular Routes & Best Deals</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {popularRoutes.map((route, index) => (
+                <div key={index} className="bg-white rounded-3xl shadow-sm overflow-hidden hover:shadow-xl transition-all group border border-gray-200">
+                  <img src={route.image} alt={route.name} className="h-56 w-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <div className="p-6">
+                    <h3 className="text-2xl font-bold text-gray-800 mb-4">{route.name}</h3>
+                    <a href={`https://wa.me/8801631312524?text=Hello%2C%20I%20want%20the%20${route.name}%20visa%20deal.`} className="block w-full text-center bg-[#005a31] text-white py-3 rounded-2xl font-bold hover:bg-black transition">Get Deal Now</a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* BOTTOM CTA SECTION */}
+          <section className="mt-20 bg-[#005a31] text-white p-12 rounded-[3.5rem] text-center relative overflow-hidden">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Book Your Visa Consultation Today</h2>
+            <p className="text-green-50 max-w-2xl mx-auto mb-10 text-lg">
+              End-to-end support for <strong>student, work, and tourist visas</strong>, Hajj & Umrah, and group travel. Fast, reliable, and affordable.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <a href="https://wa.me/8801631312524" className="bg-white text-[#005a31] px-10 py-4 rounded-full font-bold shadow-xl hover:bg-green-50 transition">WhatsApp Consultation</a>
+              <Link to="/" className="bg-transparent border-2 border-white px-10 py-4 rounded-full font-bold hover:bg-white/10 transition">Back to Home</Link>
+            </div>
+          </section>
+
         </div>
-      </section>
-    </div>
+      </div>
+    </HelmetProvider>
   );
 };
+
+// Reusable Card Component to keep code clean
+const VisaCardItem = ({ country }) => (
+  <article className="bg-white shadow-sm border border-gray-100 rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col group">
+    <div className="h-52 overflow-hidden relative">
+      <img src={country.image} alt={country.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+      <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-4 py-1 rounded-full text-[#005a31] text-xs font-bold shadow-sm">Official Service</div>
+    </div>
+    <div className="p-6 flex flex-col flex-1">
+      <h3 className="text-2xl font-bold text-gray-800 mb-3 group-hover:text-[#005a31] transition-colors">{country.name} Visa Services</h3>
+      <p className="text-gray-600 text-sm leading-relaxed mb-8 flex-1">{country.description}</p>
+      <a
+        href={`https://wa.me/8801631312524?text=Hello%2C%20I%20want%20to%20apply%20for%20${encodeURIComponent(country.name)}%20visa.`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-full bg-[#005a31] text-white text-center py-3.5 rounded-2xl font-bold hover:bg-black transition-all shadow-md active:scale-95"
+      >
+        Book Now
+      </a>
+    </div>
+  </article>
+);
 
 export default VisaServices;
