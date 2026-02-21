@@ -205,7 +205,7 @@ const AirTickets = () => {
 
 {/* Hero Section */}
 <section 
-  className="relative min-h-[90vh] flex items-center justify-center pt-12 pb-24 px-6 text-center overflow-hidden"
+  className="relative min-h-[90vh] flex items-center justify-center pt-12 pb-24 px-2 text-center overflow-hidden"
 >
   {/* Background Image Layer - Full width and height inside the box */}
   <div className="absolute inset-0 z-0">
