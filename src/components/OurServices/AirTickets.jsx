@@ -205,7 +205,7 @@ const AirTickets = () => {
 
 {/* Hero Section */}
 <section 
-  className="relative min-h-[90vh] flex items-center justify-center pt-24 pb-24 px-4 text-center overflow-hidden"
+  className="relative min-h-[90vh] flex items-center justify-center pt-12 pb-24 px-6 text-center overflow-hidden"
 >
   {/* Background Image Layer - Full width and height inside the box */}
   <div className="absolute inset-0 z-0">
@@ -220,25 +220,11 @@ const AirTickets = () => {
   </div>
 
   <div className="relative z-10 w-full max-w-7xl mx-auto">
-    <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight drop-shadow-lg">
+    <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-8 tracking-tight drop-shadow-lg">
     Eammu Holidays
     </h1>
     
-    <p className="text-white font-bold mb-8 text-lg md:text-xl drop-shadow-md">
-      Search flights using airport codes for best results —{" "}
-      <span className="bg-white text-green-800 px-3 py-1 rounded-lg mx-1 shadow-sm">
-        DXB
-      </span>{" "}
-      (Dubai),{" "}
-      <span className="bg-white text-green-800 px-3 py-1 rounded-lg mx-1 shadow-sm">
-        DAC
-      </span>{" "}
-      (Dhaka),{" "}
-      <span className="bg-white text-green-800 px-3 py-1 rounded-lg mx-1 shadow-sm">
-        EVN
-      </span>{" "}
-      (Yerevan).
-    </p>
+   
 
     <div className="bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl relative backdrop-blur-sm bg-white/95">
       {/* Trip Type Selector */}
