@@ -24,17 +24,40 @@ const About = () => {
   return (
     <>
 <Helmet>
-  {/* Title */}
-  <title>About Eammu Holidays | Best Travel & Visa Agency in Bangladesh</title>
-  
+  {/* Primary SEO */}
+  <title>Eammu Holidays Bangladesh | Premium Travel Agency Bangladesh </title>
   <meta
     name="description"
-    content="Learn about Eammu Holidays, established in 2012. We provide expert immigration, student, and work visa services across Dubai, Bangladesh, and Europe. Trusted travel partners globally."
+    content="Eammu Holidays is a Premium global travel Agency in Bangladesh - providing visa services, student visas, work permits, holiday packages, tours, and international relocation solutions across Bangladesh, Dubai, Europe, and worldwide."
   />
 
-  {/* Canonical & Robots */}
+  {/* Canonical & Indexing */}
   <link rel="canonical" href="https://eammu.com/about" />
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+
+  {/* Open Graph (Facebook, LinkedIn) */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Eammu Holidays Bangladesh | Premium Travel Agency" />
+  <meta
+    property="og:description"
+    content="Discover Eammu Holidays — your trusted partner for global travel, visa services, immigration solutions, student visas, work permits, and international tours."
+  />
+  <meta property="og:url" content="https://eammu.com/about" />
+  <meta property="og:site_name" content="Eammu Holidays" />
+  <meta property="og:image" content="https://eammu.com/emf.jpg" />
+
+  {/* Twitter SEO */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Eammu Holidays | Premium Travel Agency Bangladesh" />
+  <meta
+    name="twitter:description"
+    content="Eammu Holidays provides trusted travel, visa, immigration, student visa, work permit, and global tour services worldwide."
+  />
+  <meta name="twitter:image" content="https://eammu.com/emf.jpg" />
+
+  {/* App/Branding */}
+  <meta name="application-name" content="Eammu Holidays" />
+  <meta name="theme-color" content="#166534" />
 
   {/* Structured Data */}
   <script type="application/ld+json">
@@ -49,7 +72,7 @@ const About = () => {
           "logo": "https://eammu.com/eammuicon.jpg",
           "image": "https://eammu.com/emf.jpg",
           "foundingDate": "2022",
-          "description": "Eammu global services including immigration, student & work visas, travel & tour packages.",
+          "description": "Global travel, visa, immigration, student visa, work permit, holiday and tour services.",
           "sameAs": [
             "https://facebook.com/eammutourism/",
             "https://instagram.com/eammuholidays",
@@ -62,15 +85,21 @@ const About = () => {
           "@id": "https://eammu.com/#website",
           "url": "https://eammu.com",
           "name": "Eammu Holidays",
-          "publisher": { "@id": "https://eammu.com/#organization" }
+          "publisher": {
+            "@id": "https://eammu.com/#organization"
+          }
         },
         {
           "@type": "AboutPage",
           "@id": "https://eammu.com/about#aboutpage",
           "url": "https://eammu.com/about",
-          "name": "About Eammu Holidays",
-          "isPartOf": { "@id": "https://eammu.com/#website" },
-          "mainEntity": { "@id": "https://eammu.com/#organization" }
+          "name": "Eammu Holidays",
+          "isPartOf": {
+            "@id": "https://eammu.com/#website"
+          },
+          "mainEntity": {
+            "@id": "https://eammu.com/#organization"
+          }
         }
       ]
     })}
@@ -79,34 +108,50 @@ const About = () => {
 
       <main className="overflow-hidden">
         {/* --- Hero Section with Animation --- */}
-        <section className="relative bg-gradient-to-b from-green-50 to-white py-20 px-4">
-          <motion.div 
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeIn}
-            className="max-w-7xl mx-auto text-center space-y-8"
-          >
-            <span className="inline-block px-4 py-1.5 bg-green-100 text-green-700 rounded-full text-sm font-bold tracking-widest uppercase">
-              Since 2022
-            </span>
-            <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
-              About <span className="text-green-700">Eammu</span> — Your Trusted <br />
-              Global Immigration Partner
-            </h1>
-            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Eammu is a global leader in professional immigration, visa assistance, and diversified business solutions. We bridge the gap between your dreams and global opportunities.
-            </p>
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl max-w-[1220px] mx-auto">
-              <img
-                src="/eammu_banner_four.webp"
-                alt="Eammu Global Business Presence"
-                className="w-full h-[300px] md:h-[500px] object-cover hover:scale-105 transition-transform duration-700"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-            </div>
-          </motion.div>
-        </section>
+      {/* --- Hero Section with New Background Image --- */}
+<section className="relative min-h-[70vh] flex items-center justify-center py-20 px-4 overflow-hidden">
+  
+  {/* Background Layer - Replace 'your-new-image.jpg' with your actual file path */}
+  <div className="absolute inset-0 z-0">
+    <img
+      src="/eammu_banner.webp" 
+      alt="Eammu Global Travel Background"
+      className="w-full h-full object-cover"
+    />
+    {/* Dark overlay to ensure your original text stays clear and readable */}
+    <div className="absolute inset-0 bg-black/10 bg-gradient-to-t from-black/30 via-transparent to-black/20"></div>
+  </div>
+
+  <motion.div 
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true }}
+    variants={fadeIn}
+    className="relative z-10 max-w-7xl mx-auto text-center space-y-8"
+  >
+    <span className="inline-block px-4 py-1.5 bg-[#005a31] text-white rounded-full text-sm font-bold tracking-widest uppercase shadow-lg">
+      Since 2022
+    </span>
+
+    <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-lg">
+    <span className="text-[#018549]">Eammu Holidays</span> — Your Trusted <br />
+      Global Travel & Immigration Partner
+    </h1>
+
+    <div className="max-w-3xl mx-auto">
+      <p className="text-lg md:text-xl text-gray-100 leading-relaxed mt-6">
+        <strong className="text-white">Eammu Holidays</strong> is a professional global travel, tourism, and immigration services company offering 
+        <strong className="text-white"> visa assistance, holiday packages, tour services, work permits, student visas, and international relocation solutions</strong>. 
+        We help individuals and businesses access global opportunities with trusted guidance, fast processing, and transparent service.
+      </p>
+
+      <p className="text-lg md:text-xl text-gray-200 leading-relaxed mt-4">
+        From luxury holidays to global immigration support, Eammu Holidays connects your dreams to destinations worldwide.
+      </p>
+    </div>
+    
+  </motion.div>
+</section>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-32 py-20">
           
@@ -116,7 +161,7 @@ const About = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={staggerContainer}
-            className="grid grid-cols-1 md:grid-cols-4 gap-8"
+            className="grid grid-cols-2 md:grid-cols-4 gap-8"
           >
             {[
               { label: "Global Offices", val: "4+", icon: "🌍" },
@@ -246,7 +291,7 @@ const About = () => {
                 <span className="text-2xl">📞</span>
                 <div>
                   <h4 className="font-bold text-green-900">Call/WhatsApp</h4>
-                  <p className="text-sm">+8801701699743, +971507078334</p>
+                  <p className="text-sm">+8801631312524,+8801701699743, +971507078334</p>
                 </div>
               </div>
               <div className="flex items-start gap-4 p-6 bg-green-50 rounded-2xl">

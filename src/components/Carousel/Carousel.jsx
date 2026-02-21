@@ -83,14 +83,14 @@ const Carousel = () => {
  {/* Slide 1 */}
           <div id="slide1" className="carousel-item w-full h-full snap-center relative flex-shrink-0">
             <img
-              src="/eammu_banner.webp"
+              src="/eammu_holidays_bg.webp"
               className="object-cover w-full h-full"
               alt="Welcome to Eammu - Your Travel Partner"
               loading="eager"
               fetchPriority="high"
               decoding="async"
             />
-            <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center text-white text-center px-6">
+            <div className="absolute inset-0 bg-black/10 flex flex-col items-center justify-center text-white text-center px-6">
               <div>
                 <h1 className="text-5xl font-bold mb-4">Welcome to Eammu</h1>
                 <p className="text-lg font-bold mb-6">Connecting You To The World — Your Travel And Global Mobility Partner.</p>
@@ -134,7 +134,7 @@ const Carousel = () => {
               loading="lazy"
               decoding="async"
             />
-            <div className="absolute bg-black/30 inset-0 flex flex-col items-center justify-center text-white text-center px-6">
+            <div className="absolute bg-black/10 inset-0 flex flex-col items-center justify-center text-white text-center px-6">
               <div>
                 <h1 className="text-4xl font-bold mb-4 ">Target IELTS & Immigration Center - TIIC</h1>
                 <p className="text-lg font-bold mb-6 ]">TIIC is recognized as the best language academy for IELTS, PTE, and Spoken English.</p>
@@ -162,7 +162,7 @@ const Carousel = () => {
               loading="lazy"
               decoding="async"
             />
-            <div className="absolute inset-0  flex items-center justify-center text-white px-6 text-center">
+            <div className="absolute inset-0   flex items-center justify-center text-white px-6 text-center">
               <div>
                 <h2 className="text-3xl font-bold mb-2">Work, Study, or Travel — We Take You There</h2>
                 <p className="text-lg font-bold mb-4">
@@ -191,7 +191,7 @@ const Carousel = () => {
             />
             <div className="absolute inset-0 flex items-center justify-center text-white px-6 text-center">
               <div>
-                <div className='mt-48'>
+                <div className='mt-52'>
                   <Link to="/testimonials" className="btn bg-white text-[#005a31] hover:bg-[#005a31] hover:text-white border border-[#005a31] mt-4">
                     Customer Review
                   </Link>
