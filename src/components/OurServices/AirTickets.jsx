@@ -203,249 +203,271 @@ const AirTickets = () => {
 </Helmet>
 
 
-      {/* Hero Section */}
-      <section className="bg-[#004d2c] pt-8 pb-24 px-4 text-center">
-        <h1 className="text-3xl md:text-3xl font-bold text-white mb-4 tracking-tight">
-          Your Next Adventure With Eammu Holidays
-        </h1>
-        <p className="text-white font-bold mb-4">
-          Search flights using airport codes for best results —{" "}
-          <span className="bg-white text-green-800 px-2 py-1 rounded mx-1">
-            DXB
-          </span>{" "}
-          (Dubai),{" "}
-          <span className="bg-white text-green-800 px-2 py-1 rounded mx-1">
-            DAC
-          </span>{" "}
-          (Dhaka),{" "}
-          <span className="bg-white text-green-800 px-2 py-1 rounded mx-1">
-            EVN
-          </span>{" "}
-          (Yerevan). Get real-time fares and book instantly with ease.
-        </p>
-
-        <div className="max-w-7xl mx-auto bg-white p-6 md:p-8 rounded-[2.5rem] shadow-2xl relative">
-          {/* Trip Type Selector */}
-          <div className="flex gap-4 mb-6">
-            {["one-way", "round-trip"].map((type) => (
-              <button
-                key={type}
-                type="button"
-                onClick={() => {
-                  setTripType(type);
-                  setFlights([]);
-                }}
-                className={`px-8 py-2 rounded-full text-xs font-bold uppercase transition-all shadow-sm ${
-                  tripType === type
-                    ? "bg-[#004d2c] text-white scale-105"
-                    : "bg-gray-100 text-gray-500 hover:bg-gray-200"
-                }`}
-              >
-                {type.replace("-", " ")}
-              </button>
-            ))}
-          </div>
-
-          <form
-            onSubmit={handleSearch}
-            className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 items-end text-left"
-          >
-            {/* FROM */}
-            <div className="relative">
-              <label className="text-[10px] font-bold text-gray-400 uppercase ml-2">
-                From
-              </label>
-              <input
-                type="text"
-                value={inputNames.from}
-                onChange={(e) =>
-                  setInputNames({
-                    ...inputNames,
-                    from: e.target.value.toUpperCase(),
-                  })
-                }
-                placeholder="DAC"
-                className="w-full p-4 bg-gray-50 border border-gray-100 rounded-2xl outline-none font-bold focus:ring-2 focus:ring-green-600"
-                required
-              />
-              {suggestions.from.length > 0 && (
-                <ul className="absolute z-[999] w-full bg-white shadow-2xl rounded-xl mt-1 max-h-48 overflow-y-auto border border-gray-100">
-                  {suggestions.from.map((loc) => (
-                    <li
-                      key={loc.id}
-                      onClick={() => {
-                        setInputNames({
-                          ...inputNames,
-                          from: `${loc.name} (${loc.iataCode})`,
-                        });
-                        setSuggestions({ ...suggestions, from: [] });
-                      }}
-                      className="p-3 hover:bg-green-50 cursor-pointer text-sm border-b flex justify-between"
-                    >
-                      <span className="truncate">{loc.name}</span>{" "}
-                      <span className="font-bold text-green-700">
-                        {loc.iataCode}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-
-            {/* TO */}
-            <div className="relative">
-              <label className="text-[10px] font-bold text-gray-400 uppercase ml-2">
-                To
-              </label>
-              <input
-                type="text"
-                value={inputNames.to}
-                onChange={(e) =>
-                  setInputNames({
-                    ...inputNames,
-                    to: e.target.value.toUpperCase(),
-                  })
-                }
-                placeholder="DXB"
-                className="w-full p-4 bg-gray-50 border border-gray-100 rounded-2xl outline-none font-bold focus:ring-2 focus:ring-green-600"
-                required
-              />
-              {suggestions.to.length > 0 && (
-                <ul className="absolute z-[999] w-full bg-white shadow-2xl rounded-xl mt-1 max-h-48 overflow-y-auto border border-gray-100">
-                  {suggestions.to.map((loc) => (
-                    <li
-                      key={loc.id}
-                      onClick={() => {
-                        setInputNames({
-                          ...inputNames,
-                          to: `${loc.name} (${loc.iataCode})`,
-                        });
-                        setSuggestions({ ...suggestions, to: [] });
-                      }}
-                      className="p-3 hover:bg-green-50 cursor-pointer text-sm border-b flex justify-between"
-                    >
-                      <span className="truncate">{loc.name}</span>{" "}
-                      <span className="font-bold text-green-700">
-                        {loc.iataCode}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-
-<div>
-  <label className="text-[10px] font-bold text-gray-400 uppercase ml-2">
-    Departure
-  </label>
-  <input
-    name="departureDate"
-    type="date"
-    className="w-full p-4 bg-gray-50 border border-gray-100 rounded-2xl outline-none font-bold"
-    required
-    value={departureDate} // স্টেট যোগ করা হলো
-    onChange={(e) => setDepartureDate(e.target.value)} // স্টেট আপডেট
-  />
-</div>
-
-{tripType === "round-trip" && (
-  <div>
-    <label className="text-[10px] font-bold text-gray-400 uppercase ml-2">
-      Return
-    </label>
-    <input
-      name="returnDate"
-      type="date"
-      className="w-full p-4 bg-gray-50 border border-gray-100 rounded-2xl outline-none font-bold"
-      required
-      value={returnDate}
-      onChange={(e) => setReturnDate(e.target.value)}
-    />
-  </div>
-)}
-{/* Traveler & Class Section */}
-  <div className="relative flex-1">
-    <label className="block text-xs font-bold text-gray-400 uppercase mb-1">Traveler & Class</label>
+{/* Hero Section */}
+<section 
+  className="relative min-h-[90vh] flex items-center justify-center pt-24 pb-24 px-4 text-center overflow-hidden"
+>
+  {/* Background Image Layer - Full width and height inside the box */}
+  <div className="absolute inset-0 z-0">
     <div 
-      onClick={() => setShowTravelerModal(!showTravelerModal)}
-      className="bg-white p-3 rounded-xl border border-gray-200 cursor-pointer hover:border-[#004d2c] transition-all"
-    >
-      <p className="text-sm font-black text-gray-800">
-        {travelers.adults + travelers.children + travelers.infants} Traveler
-      </p>
-      <p className="text-[10px] text-gray-400 font-bold uppercase">{cabinClass}</p>
-    </div>
-
-    {showTravelerModal && (
-      <div className="absolute top-full left-0 mt-2 w-72 bg-white shadow-2xl rounded-2xl p-5 z-50 border border-gray-100">
-        <div className="space-y-4 mb-6">
-          {[
-            { label: 'Adults', sub: '12 years and above', key: 'adults' },
-            { label: 'Children', sub: '2-11 years', key: 'children' },
-            { label: 'Infant', sub: 'Below 2 years', key: 'infants' }
-          ].map((type) => (
-            <div key={type.key} className="flex justify-between items-center">
-              <div>
-                <p className="text-sm font-bold text-gray-800">{type.label}</p>
-                <p className="text-[10px] text-gray-400">{type.sub}</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <button 
-                  type="button" // যোগ করা হয়েছে
-                  onClick={() => setTravelers({...travelers, [type.key]: Math.max(type.key === 'adults' ? 1 : 0, travelers[type.key] - 1)})}
-                  className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-gray-50"
-                >-</button>
-                <span className="font-bold text-sm w-4 text-center">{travelers[type.key]}</span>
-                <button 
-                  type="button" // যোগ করা হয়েছে
-                  onClick={() => setTravelers({...travelers, [type.key]: travelers[type.key] + 1})}
-                  className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-gray-50"
-                >+</button>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Class selection (Radio) */}
-        <div className="border-t pt-4 mb-6">
-          <p className="text-xs font-bold text-gray-400 uppercase mb-3">Class</p>
-          <div className="flex gap-4">
-            {['ECONOMY', 'BUSINESS'].map((cls) => (
-              <label key={cls} className="flex items-center gap-2 cursor-pointer">
-                <input 
-                  type="radio" 
-                  name="class" 
-                  checked={cabinClass === cls}
-                  onChange={() => setCabinClass(cls)} // এটি useEffect-কে ট্রিগার করবে
-                  className="accent-[#004d2c]"
-                />
-                <span className="text-sm font-bold text-gray-700 capitalize">{cls.toLowerCase()}</span>
-              </label>
-            ))}
-          </div>
-        </div>
-
-        <button 
-          type="button" // ফর্ম সাবমিট হওয়া ঠেকাতে
-          onClick={() => setShowTravelerModal(false)}
-          className="w-full bg-[#004d2c] text-white py-3 rounded-xl font-bold text-sm hover:bg-black transition-all"
-        >
-          Done
-        </button>
-      </div>
-    )}
+      className="w-full h-full bg-cover bg-center bg-no-repeat transition-transform duration-1000"
+      style={{
+        backgroundImage: "url('https://img.freepik.com/premium-photo/airplane-leaves-green-copyspace-background-sustainable-travel-zero-emissions-travel-concept_590464-227044.jpg?semt=ais_user_personalization&w=740&q=80')"
+      }}
+    />
+    {/* Subtle dark overlay to make text and form pop */}
+    <div className="absolute inset-0 bg-black/10"></div>
   </div>
 
-            <button
-              type="submit"
-              disabled={loading}
-              className="lg:col-span-6 bg-[#004d2c] text-white p-5 rounded-2xl font-bold uppercase hover:bg-gray-500 transition-all mt-4 shadow-lg active:scale-95"
-            >
-              {loading ? "Searching Flights..." : "Search Flights"}
-            </button>
-          </form>
+  <div className="relative z-10 w-full max-w-7xl mx-auto">
+    <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight drop-shadow-lg">
+    Eammu Holidays
+    </h1>
+    
+    <p className="text-white font-bold mb-8 text-lg md:text-xl drop-shadow-md">
+      Search flights using airport codes for best results —{" "}
+      <span className="bg-white text-green-800 px-3 py-1 rounded-lg mx-1 shadow-sm">
+        DXB
+      </span>{" "}
+      (Dubai),{" "}
+      <span className="bg-white text-green-800 px-3 py-1 rounded-lg mx-1 shadow-sm">
+        DAC
+      </span>{" "}
+      (Dhaka),{" "}
+      <span className="bg-white text-green-800 px-3 py-1 rounded-lg mx-1 shadow-sm">
+        EVN
+      </span>{" "}
+      (Yerevan).
+    </p>
+
+    <div className="bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl relative backdrop-blur-sm bg-white/95">
+      {/* Trip Type Selector */}
+      <div className="flex gap-4 mb-8">
+        {["one-way", "round-trip"].map((type) => (
+          <button
+            key={type}
+            type="button"
+            onClick={() => {
+              setTripType(type);
+              setFlights([]);
+            }}
+            className={`px-8 py-2.5 rounded-full text-xs font-black uppercase transition-all shadow-md ${
+              tripType === type
+                ? "bg-[#004d2c] text-white scale-105"
+                : "bg-gray-100 text-gray-500 hover:bg-gray-200"
+            }`}
+          >
+            {type.replace("-", " ")}
+          </button>
+        ))}
+      </div>
+
+      <form
+        onSubmit={handleSearch}
+        className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 items-end text-left"
+      >
+        {/* FROM */}
+        <div className="relative">
+          <label className="text-[10px] font-black text-gray-400 uppercase ml-2 mb-1 block">
+            From
+          </label>
+          <input
+            type="text"
+            value={inputNames.from}
+            onChange={(e) =>
+              setInputNames({
+                ...inputNames,
+                from: e.target.value.toUpperCase(),
+              })
+            }
+            placeholder="DAC"
+            className="w-full p-4 bg-gray-50 border border-gray-100 rounded-2xl outline-none font-bold focus:ring-2 focus:ring-green-600 transition-all"
+            required
+          />
+          {suggestions.from.length > 0 && (
+            <ul className="absolute z-[999] w-full bg-white shadow-2xl rounded-xl mt-1 max-h-48 overflow-y-auto border border-gray-100">
+              {suggestions.from.map((loc) => (
+                <li
+                  key={loc.id}
+                  onClick={() => {
+                    setInputNames({
+                      ...inputNames,
+                      from: `${loc.name} (${loc.iataCode})`,
+                    });
+                    setSuggestions({ ...suggestions, from: [] });
+                  }}
+                  className="p-3 hover:bg-green-50 cursor-pointer text-sm border-b flex justify-between"
+                >
+                  <span className="truncate">{loc.name}</span>{" "}
+                  <span className="font-bold text-green-700">
+                    {loc.iataCode}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
-      </section>
+
+        {/* TO */}
+        <div className="relative">
+          <label className="text-[10px] font-black text-gray-400 uppercase ml-2 mb-1 block">
+            To
+          </label>
+          <input
+            type="text"
+            value={inputNames.to}
+            onChange={(e) =>
+              setInputNames({
+                ...inputNames,
+                to: e.target.value.toUpperCase(),
+              })
+            }
+            placeholder="DXB"
+            className="w-full p-4 bg-gray-50 border border-gray-100 rounded-2xl outline-none font-bold focus:ring-2 focus:ring-green-600 transition-all"
+            required
+          />
+          {suggestions.to.length > 0 && (
+            <ul className="absolute z-[999] w-full bg-white shadow-2xl rounded-xl mt-1 max-h-48 overflow-y-auto border border-gray-100">
+              {suggestions.to.map((loc) => (
+                <li
+                  key={loc.id}
+                  onClick={() => {
+                    setInputNames({
+                      ...inputNames,
+                      to: `${loc.name} (${loc.iataCode})`,
+                    });
+                    setSuggestions({ ...suggestions, to: [] });
+                  }}
+                  className="p-3 hover:bg-green-50 cursor-pointer text-sm border-b flex justify-between"
+                >
+                  <span className="truncate">{loc.name}</span>{" "}
+                  <span className="font-bold text-green-700">
+                    {loc.iataCode}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+
+        {/* DEPARTURE */}
+        <div>
+          <label className="text-[10px] font-black text-gray-400 uppercase ml-2 mb-1 block">
+            Departure
+          </label>
+          <input
+            name="departureDate"
+            type="date"
+            className="w-full p-4 bg-gray-50 border border-gray-100 rounded-2xl outline-none font-bold cursor-pointer"
+            required
+            value={departureDate}
+            onChange={(e) => setDepartureDate(e.target.value)}
+          />
+        </div>
+
+        {/* RETURN */}
+        {tripType === "round-trip" && (
+          <div>
+            <label className="text-[10px] font-black text-gray-400 uppercase ml-2 mb-1 block">
+              Return
+            </label>
+            <input
+              name="returnDate"
+              type="date"
+              className="w-full p-4 bg-gray-50 border border-gray-100 rounded-2xl outline-none font-bold cursor-pointer"
+              required
+              value={returnDate}
+              onChange={(e) => setReturnDate(e.target.value)}
+            />
+          </div>
+        )}
+
+        {/* TRAVELER & CLASS */}
+        <div className="relative flex-1">
+          <label className="block text-[10px] font-black text-gray-400 uppercase ml-2 mb-1">
+            Traveler & Class
+          </label>
+          <div 
+            onClick={() => setShowTravelerModal(!showTravelerModal)}
+            className="bg-gray-50 p-4 rounded-2xl border border-gray-100 cursor-pointer hover:border-[#004d2c] transition-all"
+          >
+            <p className="text-sm font-black text-gray-800">
+              {travelers.adults + travelers.children + travelers.infants} Traveler
+            </p>
+            <p className="text-[10px] text-gray-400 font-bold uppercase">{cabinClass}</p>
+          </div>
+
+          {showTravelerModal && (
+            <div className="absolute top-full left-0 mt-2 w-72 bg-white shadow-2xl rounded-2xl p-6 z-50 border border-gray-100">
+              <div className="space-y-4 mb-6">
+                {[
+                  { label: 'Adults', sub: '12 years+', key: 'adults' },
+                  { label: 'Children', sub: '2-11 years', key: 'children' },
+                  { label: 'Infant', sub: 'Below 2 years', key: 'infants' }
+                ].map((type) => (
+                  <div key={type.key} className="flex justify-between items-center">
+                    <div>
+                      <p className="text-sm font-bold text-gray-800">{type.label}</p>
+                      <p className="text-[10px] text-gray-400">{type.sub}</p>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <button 
+                        type="button"
+                        onClick={() => setTravelers({...travelers, [type.key]: Math.max(type.key === 'adults' ? 1 : 0, travelers[type.key] - 1)})}
+                        className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-gray-50"
+                      >-</button>
+                      <span className="font-bold text-sm w-4 text-center">{travelers[type.key]}</span>
+                      <button 
+                        type="button"
+                        onClick={() => setTravelers({...travelers, [type.key]: travelers[type.key] + 1})}
+                        className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-gray-50"
+                      >+</button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="border-t pt-4 mb-6">
+                <p className="text-[10px] font-black text-gray-400 uppercase mb-3">Class</p>
+                <div className="flex gap-4">
+                  {['ECONOMY', 'BUSINESS'].map((cls) => (
+                    <label key={cls} className="flex items-center gap-2 cursor-pointer">
+                      <input 
+                        type="radio" 
+                        name="class" 
+                        checked={cabinClass === cls}
+                        onChange={() => setCabinClass(cls)}
+                        className="accent-[#004d2c]"
+                      />
+                      <span className="text-sm font-bold text-gray-700 capitalize">{cls.toLowerCase()}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              <button 
+                type="button"
+                onClick={() => setShowTravelerModal(false)}
+                className="w-full bg-[#004d2c] text-white py-3 rounded-xl font-bold text-sm hover:bg-black transition-all"
+              >
+                Done
+              </button>
+            </div>
+          )}
+        </div>
+
+        {/* SEARCH BUTTON */}
+        <button
+          type="submit"
+          disabled={loading}
+          className="lg:col-span-6 bg-[#004d2c] text-white p-5 rounded-2xl font-black uppercase hover:bg-black transition-all mt-4 shadow-xl active:scale-95 disabled:bg-gray-400"
+        >
+          {loading ? "Searching Flights..." : "Search Flights"}
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
 
       {/* Flight Results */}
       <main className="max-w-5xl mx-auto px-4 mt-12">

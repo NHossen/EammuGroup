@@ -257,28 +257,43 @@ const VisaServices = () => {
           </script>
         </Helmet>
 
-        {/* --- PREMIUM HERO SECTION --- */}
-        <header className="bg-[#005a31] text-white py-16 px-4 relative overflow-hidden">
-          <div className="container mx-auto text-center relative z-10">
-            <h1 className="text-4xl md:text-5xl font-extrabold mb-6">World-Class Visa Services</h1>
-            <p className="max-w-4xl mx-auto text-green-50 text-lg mb-10 leading-relaxed">
-              Assisting you with <strong>Tourist, Student, and Work Visas</strong> across 25+ countries. 
-              Our expert team ensures high-quality documentation and embassy submission tips.
-            </p>
-            
-            <div className="flex flex-wrap justify-center gap-3">
-              {['Asia', 'Europe', 'America', 'MiddleEast', 'Oceania', 'Popular'].map(cat => (
-                <button 
-                  key={cat}
-                  onClick={() => scrollTo(refs[cat.toLowerCase()])}
-                  className="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white hover:text-[#005a31] px-6 py-2.5 rounded-full transition-all font-bold text-sm"
-                >
-                  {cat === 'MiddleEast' ? 'Middle East' : cat}
-                </button>
-              ))}
-            </div>
-          </div>
-        </header>
+     {/* --- PREMIUM HERO SECTION --- */}
+<header className="relative w-full py-24 px-4 overflow-hidden min-h-[500px] flex items-center">
+  
+  {/* Background Image Layer - Full Width & Height */}
+  <div className="absolute inset-0 z-0">
+    <img 
+      src="/flight_eammu.webp" 
+      alt="Eammu Flight Background" 
+      className="w-full h-full object-cover"
+    />
+    {/* Dark overlay to make the text and category buttons pop */}
+    <div className="absolute inset-0 bg-black/10 bg-gradient-to-b from-[#005a31]/30 to-black/40"></div>
+  </div>
+
+  <div className="container mx-auto text-center relative z-10">
+    <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-white drop-shadow-lg">
+      World-Class Visa Services
+    </h1>
+    
+    <p className="max-w-4xl mx-auto text-gray-100 text-lg mb-10 leading-relaxed drop-shadow-md">
+      Assisting you with <strong className="text-white">Tourist, Student, and Work Visas</strong> across 25+ countries. 
+      Our expert team ensures high-quality documentation and embassy submission tips.
+    </p>
+    
+    <div className="flex flex-wrap justify-center gap-3">
+      {['Asia', 'Europe', 'America', 'MiddleEast', 'Oceania', 'Popular'].map(cat => (
+        <button 
+          key={cat}
+          onClick={() => scrollTo(refs[cat.toLowerCase()])}
+          className="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white hover:text-[#005a31] px-6 py-2.5 rounded-full transition-all font-bold text-sm text-white"
+        >
+          {cat === 'MiddleEast' ? 'Middle East' : cat}
+        </button>
+      ))}
+    </div>
+  </div>
+</header>
 
         <div className="container mx-auto px-4 py-12">
           

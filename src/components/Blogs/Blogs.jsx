@@ -23,7 +23,7 @@ const Blogs = () => {
 
 
   return (
-    <div className="px-4 md:px-6 lg:px-8 container mx-auto">
+    <>
     <Helmet>
   {/* Title: ব্লগের মূল উদ্দেশ্য এবং কি-ওয়ার্ড */}
   <title>Travel & Visa Guide Blog | Latest Travel And Immigration News - Eammu Holidays</title>
@@ -68,17 +68,36 @@ const Blogs = () => {
   </script>
 </Helmet>
 
+            {/* --- Blog Feed Heading with Background Image --- */}
+<div className="relative w-full h-full overflow-hidden mb-12 py-16 px-6 text-center">
+  
+  {/* Background Image Layer - Full width and height inside the box */}
+  <div className="absolute inset-0 z-0">
+    <img 
+      src="https://static.vecteezy.com/system/resources/thumbnails/051/262/312/small/sustainable-aviation-fuel-concept-flight-without-emissions-photo.jpeg" // Replace with your preferred travel blog/news image
+      alt="Eammu Travel News Background" 
+      className="w-full h-full object-cover"
+    />
+    {/* Light overlay to keep your original green and gray text colors popping */}
+    <div className="absolute inset-0 bg-white/10 "></div>
+  </div>
+
+  {/* Content Layer - Same original text, no changes */}
+  <div className="relative z-10">
+    <h2 className="text-3xl md:text-4xl font-extrabold text-[#ffffff] mb-4">
+      Official Eammu Travel Feed
+    </h2>
+    <div className="w-24 h-1 bg-green-600 mx-auto rounded-full mb-4"></div>
+    <p className="text-white font-medium max-w-2xl mx-auto">
+      Real-time updates, visa alerts, and travel insights fetched directly from our official newsroom.
+    </p>
+  </div>
+</div>
+
+       <div className="px-4 md:px-6 lg:px-8 container mx-auto">
+
       {/* --- Section 1: Dynamic Blogger Posts (with Pagination inside) --- */}
-      <section className="my-12">
-        <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-[#005a31] mb-4">
-            Official Eammu Travel Feed
-          </h2>
-          <div className="w-24 h-1 bg-green-600 mx-auto rounded-full mb-4"></div>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Real-time updates, visa alerts, and travel insights fetched directly from our official newsroom.
-          </p>
-        </div>
+      <section >
         <BlogSection />
       </section>
 
@@ -124,6 +143,8 @@ const Blogs = () => {
       </section>
       {/* Your existing code below stays unchanged */}
     </div>
+    </>
+ 
   );
 };
 

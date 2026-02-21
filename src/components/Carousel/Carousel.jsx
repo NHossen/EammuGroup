@@ -48,7 +48,7 @@ const Carousel = () => {
 
   const serviceLinks = [
     { icon: <FaPassport />, title: 'Visa Services', link: '/visaservices' },
-    { icon: <FaPlaneDeparture />, title: 'Air Tickets', link: '/airtickets' },
+    { icon: <FaPlaneDeparture />, title: 'Flight Tickets', link: '/airtickets' },
     { icon: <FaSuitcaseRolling />, title: 'Tour Packages', link: '/tourpackages' },
     { icon: <FaStar />, title: 'Special Offers', link: '/offer' },
   ];
@@ -92,7 +92,19 @@ const Carousel = () => {
             />
             <div className="absolute inset-0 bg-black/10 flex flex-col items-center justify-center text-white text-center px-6">
               <div>
-                <h1 className="text-5xl font-bold mb-4">Welcome to Eammu</h1>
+                <div className="overflow-hidden mb-4"> 
+  <motion.h1 
+    initial={{ y: "100%" }}
+    animate={{ y: 0 }}
+    transition={{ 
+      duration: 0.8, 
+      ease: [0.16, 1, 0.3, 1] // Fast start, elegant slow finish
+    }}
+    className="text-5xl font-bold text-white drop-shadow-md"
+  >
+   Eammu Holidays
+  </motion.h1>
+</div>
                 <p className="text-lg font-bold mb-6">Connecting You To The World — Your Travel And Global Mobility Partner.</p>
                 <Link 
                   to="/our-services" 

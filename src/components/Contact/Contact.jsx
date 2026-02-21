@@ -144,7 +144,7 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Leading Online Travel Agency Bangladesh | Contact Eammu Holidays </title>
+        <title>Leading Travel Agency Bangladesh | Online Travel Agency Dhaka </title>
         <meta
           name="description"
           content="Bangladesh's leading online travel agency. Book air tickets, hotels, tour packages & more without any hassle at the most affordable rates with Eammu Holidays."
@@ -160,21 +160,37 @@ const Contact = () => {
         </script>
       </Helmet>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-20">
+      <main >
+   {/* --- Contact Heading with Background Image --- */}
+<motion.section
+  initial={{ opacity: 0, y: -30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  className="relative py-32 px-4 text-center overflow-hidden"
+>
+  {/* Background Image Container */}
+  <div className="absolute inset-0 z-0">
+    <img 
+      src="https://img.freepik.com/premium-photo/airplane-leaves-green-copyspace-background-sustainable-travel-zero-emissions-travel-concept_590464-227044.jpg?semt=ais_user_personalization&w=740&q=80" // Replace with your preferred contact/office image
+      alt="Contact Eammu Background" 
+      className="w-full h-full object-cover"
+    />
+    {/* Overlay to ensure text readability */}
+    <div className="absolute inset-0 bg-black/20"></div>
+  </div>
 
-        {/* Contact Heading */}
-        <motion.section
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center"
-        >
-          <h1 className="text-4xl font-extrabold mb-4 text-green-800">Contact Eammu</h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            We’re here to assist you — whether you’re planning to study abroad, apply for a visa, need IT consultation,
-            or want to collaborate with our team.
-          </p>
-        </motion.section>
+  {/* Content Layer */}
+  <div className="relative z-10">
+    <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-white drop-shadow-sm">
+      Eammu Holidays
+    </h1>
+    <p className="text-lg text-white max-w-2xl mx-auto font-medium leading-relaxed">
+  Connect with Eammu Holidays for trusted travel and business support services. Whether you're planning to study abroad, applying for visas, seeking expert IT consultation, or looking for reliable partnership opportunities, our team is ready to assist you with fast, professional, and personalized solutions.
+</p>
+  </div>
+</motion.section>
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-20">
+      
 
         {/* Contact Info & Form Grid */}
         <motion.section
@@ -351,6 +367,8 @@ const Contact = () => {
             ⬅ Back to Home
           </Link>
         </motion.div>
+</div>
+
       </main>
     </>
   );
