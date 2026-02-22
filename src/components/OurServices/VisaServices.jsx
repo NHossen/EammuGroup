@@ -168,6 +168,23 @@ const countries = [
     description: "Work, study, and tourist visa services for Brazil with local embassy support.",
     image: "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg",
   },
+    {
+    name: "Turkey",
+    description: "Work, study, and tourist visa services for Brazil with local embassy support.",
+    image: "https://www.gokite.travel/wp-content/uploads/2025/01/Turkey-Visiting-Visa-Requirements-for-UAE-Residents.webp",
+  },
+
+    {
+    name: "Qatar",
+    description: "Work, study, and tourist visa services for Brazil with local embassy support.",
+    image: "https://myqatarvisacheck.com/wp-content/uploads/2025/05/Qatar-e-visa-appliction-process-gudie-2025.webp",
+  },
+      {
+    name: "Saudi Arabia",
+    description: "Work, study, and tourist visa services for Brazil with local embassy support.",
+    image: "https://www.utilities-me.com/cloud/2023/07/24/uXpUiIfF-Saudi-Arabia-visa-1200x846.jpg",
+  },
+
 ];
 
 const popularRoutes = [
@@ -176,6 +193,10 @@ const popularRoutes = [
   { name: "Europe (Schengen)", image: "https://www.babaaztravels.com/wp-content/uploads/2023/05/Schengen-Visit-Visa-Requirements-Babaaz-Travels.jpeg" },
   { name: "Canada", image: "https://pelicanmigration.com/wp-content/uploads/2024/01/Canada-Visitor-Visa.jpg" },
   { name: "Japan", image: "https://www.babaaztravels.com/wp-content/uploads/2022/04/japan.jpg" },
+   {
+    name: "Saudi Arabia",
+    image: "https://www.utilities-me.com/cloud/2023/07/24/uXpUiIfF-Saudi-Arabia-visa-1200x846.jpg",
+  },
 ];
 
 const VisaServices = () => {
@@ -186,8 +207,8 @@ const VisaServices = () => {
     america: ["USA", "Canada", "Mexico", "Brazil"],
     europe: ["United Kingdom", "Europe (Schengen)", "Albania", "Germany", "France", "Netherlands", "Italy", "Spain", "Sweden", "Norway", "Ireland", "Portugal", "Belgium", "Switzerland", "Austria", "Poland", "Czech Republic", "Greece", "Hungary", "Finland", "Denmark"],
     asia: ["Japan", "Malaysia", "Thailand & Singapore", "South Korea"],
-    middleEast: ["Dubai (UAE)", "Hajj & Umrah"],
-    oceania: ["Australia", "New Zealand"]
+    middleEast: ["Dubai (UAE)", "Hajj & Umrah", "Qatar", "Saudi Arabia"],
+    oceania: ["Australia", "New Zealand", "Turkey"],
   };
 
   // Pagination State

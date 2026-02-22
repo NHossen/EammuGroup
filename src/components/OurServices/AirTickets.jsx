@@ -205,18 +205,18 @@ const AirTickets = () => {
 
 {/* Hero Section */}
 <section 
-  className="relative min-h-[90vh] flex items-center justify-center pt-12 pb-24 px-8 text-center overflow-hidden"
+  className="relative min-h-[65vh] flex items-center justify-center pt-12 pb-24 px-8 text-center overflow-hidden"
 >
   {/* Background Image Layer - Full width and height inside the box */}
   <div className="absolute inset-0 z-0">
     <div 
       className="w-full h-full bg-cover bg-center bg-no-repeat transition-transform duration-1000"
       style={{
-        backgroundImage: "url('https://img.freepik.com/premium-photo/airplane-leaves-green-copyspace-background-sustainable-travel-zero-emissions-travel-concept_590464-227044.jpg?semt=ais_user_personalization&w=740&q=80')"
+        backgroundImage: "url('/eammu_Tour.webp')"
       }}
     />
     {/* Subtle dark overlay to make text and form pop */}
-    <div className="absolute inset-0 bg-black/10"></div>
+    <div className="absolute inset-0 bg-black/20"></div>
   </div>
 
   <div className="relative z-10 w-full max-w-7xl mx-auto">

@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import BlogSection from "./BlogSection";
+import { motion } from 'framer-motion'; // অ্যানিমেশনের জন্য
 
 const Blogs = () => {
  
@@ -20,6 +21,11 @@ const Blogs = () => {
     { id: "wBEWAeP8AEI", title: "THAILAND TOUR PACKAGES With Eammu" },
     { id: "HEKzY7yBb24", title: "Love Lake Dubai & Salt Lake Dubai Tour" },
   ];
+
+const fadeIn = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+  };
 
 
   return (
@@ -63,21 +69,32 @@ const Blogs = () => {
   </script>
 </Helmet>
 
-            {/* --- Blog Feed Heading with Background Image --- */}
-<div className="relative w-full h-full overflow-hidden mb-12 py-16 px-6 text-center">
+      {/* --- Hero Section with New Background Image --- */}
+<section className="relative min-h-[50vh] flex items-center justify-center py-20 px-4 overflow-hidden">
   
-  {/* Background Image Layer - Full width and height inside the box */}
+  {/* Background Layer - Replace 'your-new-image.jpg' with your actual file path */}
   <div className="absolute inset-0 z-0">
-    <img 
-      src="https://static.vecteezy.com/system/resources/thumbnails/051/262/312/small/sustainable-aviation-fuel-concept-flight-without-emissions-photo.jpeg" // Replace with your preferred travel blog/news image
-      alt="Eammu Travel News Background" 
+    <img
+      src="https://static.vecteezy.com/system/resources/thumbnails/051/262/312/small/sustainable-aviation-fuel-concept-flight-without-emissions-photo.jpeg" 
+      alt="Eammu Global Travel Background"
       className="w-full h-full object-cover"
     />
-    {/* Light overlay to keep your original green and gray text colors popping */}
-    <div className="absolute inset-0 bg-white/10 "></div>
+    {/* Dark overlay to ensure your original text stays clear and readable */}
+    <div className="absolute inset-0 bg-black/10 bg-gradient-to-t from-black/30 via-transparent to-black/20"></div>
   </div>
 
-  {/* Content Layer - Same original text, no changes */}
+  <motion.div 
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true }}
+    variants={fadeIn}
+    className="relative z-10 max-w-7xl mx-auto text-center space-y-8"
+  >
+    <span className="inline-block px-4 py-1.5 bg-[#005a31] text-white rounded-full text-sm font-bold tracking-widest uppercase shadow-lg">
+      Since 2022
+    </span>
+
+   {/* Content Layer - Same original text, no changes */}
   <div className="relative z-10">
     <h2 className="text-3xl md:text-4xl font-extrabold text-[#ffffff] mb-4">
       Official Eammu Travel Feed
@@ -87,7 +104,9 @@ const Blogs = () => {
       Real-time updates, visa alerts, and travel insights fetched directly from our official newsroom.
     </p>
   </div>
-</div>
+    
+  </motion.div>
+</section>
 
        <div className="px-4 md:px-6 lg:px-8 container mx-auto">
 

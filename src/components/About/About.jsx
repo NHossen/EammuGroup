@@ -109,7 +109,7 @@ const About = () => {
       <main className="overflow-hidden">
         {/* --- Hero Section with Animation --- */}
       {/* --- Hero Section with New Background Image --- */}
-<section className="relative min-h-[70vh] flex items-center justify-center py-20 px-4 overflow-hidden">
+<section className="relative min-h-[50vh] flex items-center justify-center py-20 px-4 overflow-hidden">
   
   {/* Background Layer - Replace 'your-new-image.jpg' with your actual file path */}
   <div className="absolute inset-0 z-0">
