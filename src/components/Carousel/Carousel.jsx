@@ -56,10 +56,10 @@ const Carousel = () => {
   return (
     <>
       <Helmet>
-        <title>Eammu | Visa, Student Visa, Immigration & Travel Services</title>
+        <title>Education Consultancy Dhaka | Tourist Visa From Bangladesh</title>
         <meta
           name="description"
-          content="Explore visa, immigration, and travel services to USA, UK, Canada, Europe, Japan, UAE and more. Trusted by thousands globally."
+          content="Study Abroad From Bangladesh Study visa Application, Tourist Visa Application, and travel services to USA, UK, Canada, Europe, Japan, UAE and more. Trusted by thousands globally."
         />
         <meta name="author" content="Eammu Holidays" />
         <meta property="og:title" content="Eammu - Trusted Visa & Immigration Services" />

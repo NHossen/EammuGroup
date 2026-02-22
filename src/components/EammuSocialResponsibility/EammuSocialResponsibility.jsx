@@ -69,7 +69,7 @@ const EammuSocialResponsibility = () => {
     <div className="bg-white min-h-screen">
       {/* SEO Helmet */}
       <Helmet>
-        <title>Social Responsibility & Welfare | Eammu Holidays Impact Bangladesh</title>
+        <title>Social Responsibility Bangladesh | Support Bangladesh</title>
         <meta
           name="description"
           content="Eammu Group is committed to social welfare. Explore our initiatives in blood donation camps, free medical services, and volunteering partnerships across Bangladesh."

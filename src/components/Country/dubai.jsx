@@ -9,7 +9,7 @@ const TravelAgencyDubai = () => {
   return (
     <>
       <Helmet>
-        <title>Leading Online Travel Agency in Dubai | Eammu Holidays - Dubai , United Arab Emirates</title>
+        <title>Leading Online Travel Agency in Dubai | Desert Safari Dubai | Tour Guide Dubai</title>
         <meta name="description" content="Eammu Holidays Dubai Leading travel agency in Business Bay. Specializing in UAE Golden Visas, Schengen, USA & UK visa processing, and luxury world tours." />
         <link rel="canonical" href="https://eammu.com/travel-agency-dubai" />
         <script type="application/ld+json">
@@ -65,7 +65,7 @@ const TravelAgencyDubai = () => {
               Travel Agency <br/><span className="text-yellow-500">in Dubai</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-6 sm:mb-10 font-light max-w-3xl mx-auto leading-relaxed">
-              Experience seamless global travel and visa processing with <span className="font-bold border-b-2 border-yellow-500">Eammu Holidays</span>. Located in the heart of Business Bay.
+              Experience Desert Safari Dubai and visa processing with <span className="font-bold border-b-2 border-yellow-500">Eammu Holidays</span>. Located in the heart of Business Bay.
             </p>
             <div className="flex flex-wrap justify-center gap-4 sm:gap-5">
               <button className="bg-yellow-500 hover:bg-yellow-600 text-slate-900 px-6 sm:px-10 py-3 sm:py-4 rounded-xl font-black text-base sm:text-lg transition-all transform hover:scale-105 shadow-xl shadow-yellow-500/20">

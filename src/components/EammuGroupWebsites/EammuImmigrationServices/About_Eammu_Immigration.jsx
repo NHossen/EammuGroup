@@ -19,15 +19,12 @@ const About_Eammu_Immigration = () => {
     <div className="bg-slate-50 min-h-screen">
       {/* SEO Helmet (Unchanged as requested) */}
       <Helmet>
-        <title>Bangladesh Visa Application Centre |Global Visa, Student Visa and Tourist Visa | Travel Bangladesh- Eammu Holidays </title>
+        <title>Bangladesh Visa Application Centre | Student Visa Application Bangladesh | Travel Bangladesh</title>
         <meta
           name="description"
-          content="Learn about Eammu Holidays — your trusted partner for student visas, work permits, and relocation support across Canada, UK, UAE, Europe, and beyond."
+          content="Learn about Bangladeshi Travel Agency — your trusted partner for student visas, work permits, and relocation support across Canada, UK, UAE, Europe, and beyond."
         />
-        <meta
-          name="keywords"
-          content="Eammu Holidays, visa consultant Bangladesh, study abroad, Canada Visa From Bangladesh, UAE visa, work visa, student visa agency, green card, migration help,Travel Agency In Bangladesh, Top Travel Agency Bangladesh"
-        />
+       
       </Helmet>
 
       {/* Hero Section */}

@@ -17,15 +17,12 @@ const EammuNewsfeeds = () => {
   return (
     <>
       <Helmet>
-        <title>Travel News Bangladesh: Flights, Visa, Hotel | Travel Agency Dhaka</title>
+        <title>Travel News Bangladesh | Premium Travel Agency Dhaka</title>
         <meta
           name="description"
           content="Stay tuned for Eammu Newsfeeds! Get the latest updates on immigration policies, visas, and travel alerts in Bangladesh."
         />
-        <meta
-          name="keywords"
-          content="Eammu Newsfeeds, immigration news, travel updates, visa policy Bangladesh, study abroad updates"
-        />
+       
       </Helmet>
 
       <main className="min-h-screen bg-[#f8fafc]">

@@ -42,14 +42,10 @@ const Careers = () => {
   return (
     <div className="bg-white min-h-screen font-sans selection:bg-green-100 selection:text-[#005a31]">
       <Helmet>
-        <title>Careers at Eammu Holidays | Jobs in Immigration & Travel</title>
+        <title>Careers in Bangladesh | Career with Travel Agency</title>
         <meta
           name="description"
           content="Explore exciting career opportunities at Eammu Holidays. Join our growing team in immigration, travel, marketing, and IT. Apply for full-time, part-time, and freelance positions."
-        />
-        <meta
-          name="keywords"
-          content="Eammu Holidays careers, travel agency jobs Bangladesh, immigration consultant job, visa officer job, content creator job, digital marketing job, web developer job"
         />
         <link rel="canonical" href="https://eammu.com/careers" />
         <script type="application/ld+json">{JSON.stringify(jobSchema)}</script>

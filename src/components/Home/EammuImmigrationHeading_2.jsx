@@ -9,16 +9,13 @@ const EammuImmigrationHeading_2 = () => {
       {/* SEO Helmet (Unchanged as requested) */}
       <Helmet>
         <title>
-          Eammu Holidays Cumilla | Study Abroad, Visa & Cheap Air Tickets Experts
+          Premium Travel Agency Cumilla | Study Abroad From Cumilla | Best Travel Agency Cumilla
         </title>
         <meta
           name="description"
-          content="Eammu Immigration Services in Cumilla, Bangladesh provides expert study abroad guidance, student, tourist & work visa support, and the cheapest air tickets worldwide. Trusted consultancy since 2018."
+          content="Eammu Holidays in Cumilla, Bangladesh provides expert study abroad guidance, student, tourist & work visa support, and the cheapest air tickets worldwide. Trusted consultancy since 2018."
         />
-        <meta
-          name="keywords"
-          content="Eammu Immigration Services, Study Abroad Cumilla, Visa Consultancy Bangladesh, Student Visa, Work Visa, Tourist Visa, Cheap Air Tickets, Flight Booking, Travel Agency"
-        />
+       
         <meta name="robots" content="index, follow" />
 
         <script type="application/ld+json">

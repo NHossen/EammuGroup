@@ -239,7 +239,7 @@ const VisaServices = () => {
     <HelmetProvider>
       <div className="bg-gray-50 min-h-screen">
         <Helmet>
-          <title>Visa Services Worldwide | Tourist, Student & Work Visas – Eammu Holidays</title>
+          <title>Visa Services India | Leading Travel Agency India</title>
           <meta name="description" content="Eammu Holidays provides expert visa services for Tourist, Student, and Work visas across USA, UK, Europe, Canada, Australia, Japan, UAE, Malaysia, and more." />
           <meta name="keywords" content="Visa services Bangladesh, USA tourist visa, UK student visa, Canada visitor visa, Europe work visa, Hajj & Umrah packages" />
           <link rel="canonical" href="https://eammu.com/visa-services" />

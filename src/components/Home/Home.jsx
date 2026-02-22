@@ -57,7 +57,7 @@ const Home = () => {
       <Helmet>
         {/* ================= SEO ================= */}
         <title>
-          Eammu Holidays | First Leading online travel agency in Bangladesh
+          online Visa Support Bangladesh | First travel agency in Bangladesh
         </title>
 
         <meta

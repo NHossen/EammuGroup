@@ -129,18 +129,15 @@ const MessageFromLeadingTeam = () => {
     <section className="px-4 py-16 bg-gray-50">
       <Helmet>
         <title>
-          Eammu Leadership Team Bangladesh | Eammu Holidays : Travel Agency Bangladesh
+          Education Consultancy Bangladesh | Travel Agency Bangladesh
         </title>
         <meta
           name="description"
           content="Discover the leadership team at Eammu Holidays. Meet global visa experts, student visa specialists, and customer service managers dedicated to helping you."
         />
-        <meta
-          name="keywords"
-          content="Eammu leadership team, visa experts in Bangladesh, travel consultants Bangladesh, immigration specialists, student visa advisors Bangladesh"
-        />
+      
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
-        <link rel="canonical" href="https://eammu.com/leadership-team" />
+        <link rel="canonical" href="https://eammu.com/message-from-leadership" />
       </Helmet>
 
       {/* Header */}

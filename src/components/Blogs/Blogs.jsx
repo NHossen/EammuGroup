@@ -26,16 +26,11 @@ const Blogs = () => {
     <>
     <Helmet>
   {/* Title: ব্লগের মূল উদ্দেশ্য এবং কি-ওয়ার্ড */}
-  <title>Travel & Visa Guide Blog | Latest Travel And Immigration News - Eammu Holidays</title>
+  <title>Travel Blogs Bangladesh | Travel Agency Cumilla </title>
 
   <meta
     name="description"
     content="Read the latest travel tips, visa application guides, and immigration news for USA, Canada, UK, and Europe on the Eammu Holidays blog. Stay updated with expert advice."
-  />
-
-  <meta
-    name="keywords"
-    content="Travel blog Bangladesh, Visa guide, USA student visa tips, Europe work permit news, Eammu Holidays blog, immigration updates"
   />
 
   <link rel="canonical" href="https://eammu.com/blog" />

@@ -5,12 +5,12 @@ const TargetUsaSection = () => {
   return (
     <section className="relative overflow-hidden bg-slate-50 py-16 lg:py-24">
       <Helmet>
-        <title>Target USA Visa Interview Preparation | Eammu Holidays</title>
+        <title>Target USA Visa Interview Preparation | Leading Education Consultancy Dhaka</title>
         <meta
           name="description"
           content="Target USA Visa Interview Preparation by Eammu offers expert coaching, mock interviews, dress code tips, and question guidance."
         />
-        <link rel="canonical" href="https://eammu.com/targetusavisainterview" />
+        <link rel="canonical" href="https://eammu.com/usa-visa-interview-prep" />
         
         {/* Open Graph Tags */}
         <meta property="og:title" content="Target USA | US Visa Interview Prep" />

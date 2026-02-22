@@ -47,7 +47,7 @@ const Offer = () => {
       <Helmet>
          {/* Primary SEO */}
   <title>
-    Travel Deals & Special Offers | Cheap Flights & Tour Packages – Eammu
+    Travel Deals & Special Offers | Tour Packages Bangladesh
   </title>
 
   <meta

@@ -37,7 +37,7 @@ const ErrorPage = () => {
 
         {/* Footer note */}
         <p className="text-sm text-gray-400 mt-10">
-          If the problem continues, please contact support.
+          If the problem continues, please contact - support@eammu.com
         </p>
       </div>
     </div>

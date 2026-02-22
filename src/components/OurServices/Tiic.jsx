@@ -36,9 +36,9 @@ const TIICPage = () => {
     <HelmetProvider>
       <div className="bg-[#fcfcfc] text-slate-900 font-sans overflow-x-hidden">
         <Helmet>
-          <title>IELTS Coaching Center in Cumilla | Travel Agency Near me – Eammu Holidays</title>
+          <title>IELTS Coaching Center in Cumilla | Travel Agency Sylhet</title>
           <meta name="description" content="Target IELTS & Immigration Center (TIIC) offers premium IELTS, PTE & Spoken English coaching in Cumilla. Expert study abroad guidance for Bangladesh & Dubai students." />
-          <meta name="keywords" content="IELTS coaching Cumilla, TIIC IELTS, IELTS academy Bangladesh, Dubai study visa, PTE training Cumilla" />
+          
           <link rel="canonical" href="https://eammu.com/target-ielts-and-immigration-center" />
           <script type="application/ld+json">
             {JSON.stringify({

@@ -37,7 +37,7 @@ const WorkVisaBangladesh = () => {
     <div className="bg-[#fcfcfc] min-h-screen font-sans overflow-x-hidden">
       <Helmet>
         {/* Primary SEO */}
-        <title>Apply Work Visa Application from Bangladesh | Eammu Holidays</title>
+        <title>Work Visa Application from Bangladesh | Visa Services Bangladesh</title>
         <meta name="description" content="Apply for skilled and semi-skilled work visas from Bangladesh to UK, Canada, Europe, & Middle East. Eammu Holidays provides professional work permit consultancy." />
         <meta name="keywords" content="work visa from Bangladesh, Canada work permit Dhaka, UK skilled worker visa, Romania work visa Bangladesh, Eammu Holidays work visa" />
         <link rel="canonical" href="https://eammu.com/work-visa-application-from-bangladesh" />

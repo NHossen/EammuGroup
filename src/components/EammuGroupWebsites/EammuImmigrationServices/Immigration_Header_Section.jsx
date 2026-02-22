@@ -8,15 +8,12 @@ const Immigration_Header_Section = () => {
     <div className="px-4 container mx-auto py-8">
       {/* SEO Helmet (Unchanged) */}
       <Helmet>
-        <title>Eammu Holidays | Global Visa Experts - Travel Agency Bangladesh</title>
+        <title>India Visa Application | Travel Agency India | Education Consultancy India</title>
         <meta
           name="description"
           content="Explore global visa services by Eammu Holidays. We provide expert support for student, tourist, and work visas for the USA, Canada, UK, Europe, and more."
         />
-        <meta
-          name="keywords"
-          content="Eammu Holidays, Visa Consultancy, Work Visa, Student Visa, Tourist Visa, USA Visa, Canada Immigration, UK Study Visa, Europe Visa Agent"
-        />
+       
         <meta property="og:title" content="Eammu Holidays" />
         <meta
           property="og:description"

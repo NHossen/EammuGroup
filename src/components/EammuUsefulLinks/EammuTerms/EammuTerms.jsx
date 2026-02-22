@@ -6,15 +6,12 @@ const EammuTerms = () => {
     <div className="px-4 container mx-auto py-12">
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>Terms of Use & Privacy Policy | Eammu Group</title>
+        <title>Terms of Use & Privacy Policy | Eammu Group Bangladesh</title>
         <meta
           name="description"
           content="Read the official Terms of Use and Privacy Policy for Eammu Group websites, including Eammu Immigration, Travel, Fashion, and more."
         />
-        <meta
-          name="keywords"
-          content="Eammu Terms, Privacy Policy, Eammu Group Bangladesh, User Policy, Data Usage"
-        />
+      
       </Helmet>
 
       {/* Page Heading */}

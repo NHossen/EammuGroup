@@ -141,7 +141,7 @@ const AirTickets = () => {
      <Helmet>
   {/* Primary SEO */}
   <title>
-    Cheap International Air Tickets | Travel Agency Near Me – Eammu Holidays
+    Cheapest International Flight Tickets | Flight Tickets Bangladesh
   </title>
 
   <meta
@@ -205,7 +205,7 @@ const AirTickets = () => {
 
 {/* Hero Section */}
 <section 
-  className="relative min-h-[90vh] flex items-center justify-center pt-12 pb-24 px-2 text-center overflow-hidden"
+  className="relative min-h-[90vh] flex items-center justify-center pt-12 pb-24 px-8 text-center overflow-hidden"
 >
   {/* Background Image Layer - Full width and height inside the box */}
   <div className="absolute inset-0 z-0">

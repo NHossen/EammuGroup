@@ -28,9 +28,8 @@ const StudentVisaBangladesh = () => {
     <div className="bg-[#fcfcfc] min-h-screen font-sans overflow-x-hidden">
       <Helmet>
         {/* Primary SEO */}
-        <title>Student Visa Application Bangladesh | Study Abroad From Bangladesh – Eammu Holidays</title>
+        <title>Student Visa Application Bangladesh | Education Consultancy Bangladesh</title>
         <meta name="description" content="Looking for the best student visa consultant in Bangladesh? Eammu Holidays provides expert guidance for USA, UK, Canada, and Australia student visas. Trusted study abroad advisors since 2018." />
-        <meta name="keywords" content="student visa consultant Bangladesh, study abroad Bangladesh, USA student visa from Bangladesh, UK student visa consultant, Canada study permit Dhaka, Australia student visa agent, Eammu Holidays student visa" />
         <link rel="canonical" href="https://eammu.com/student-visa-application-from-bangladesh" />
 
         {/* JSON-LD Structured Data */}

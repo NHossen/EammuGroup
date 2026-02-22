@@ -41,7 +41,7 @@ const Registration_Agents = () => {
   return (
     <div className="py-12 px-4 container mx-auto">
       <Helmet>
-        <title>Become a Travel Agent in Bangladesh | Eammu Holidays</title>
+        <title>Become a Travel Agent in Bangladesh | b2b Travel Agent Bangladesh</title>
         <meta
           name="description"
           content="Join Eammu Holidays as a registered travel agent in Bangladesh. Start your visa and ticketing business with 50% commission and no investment. Limited slots available!"

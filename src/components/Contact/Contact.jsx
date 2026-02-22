@@ -144,7 +144,7 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Leading Travel Agency Bangladesh | Online Travel Agency Dhaka </title>
+        <title>Leading Travel Agency Bangladesh | Travel Agency Dhaka </title>
         <meta
           name="description"
           content="Bangladesh's leading online travel agency. Book air tickets, hotels, tour packages & more without any hassle at the most affordable rates with Eammu Holidays."

@@ -6,24 +6,21 @@ const WhyChoiceEammu = () => {
     <div className="px-4 md:px-8 lg:px-16 container mx-auto py-12 bg-gradient-to-b from-[#f0fdf4] to-white min-h-screen">
       {/* ✅ SEO Tags */}
       <Helmet>
-        <title>Travel Agency Bangladesh | Eammu Holidays | Apply for Visa Europe, USA, Armenia , Dubai</title>
+        <title>Premium Travel Agency Bangladesh | Study Abroad From Bangladesh | Education Consultancy</title>
         <meta
           name="description"
-          content="Eammu Holidays offers expert student Visa , tourist Visa , and work visa support for USA, Canada, UK, Europe, UAE, and more. Trusted visa consultancy in Bangladesh and UAE."
+          content="Eammu Holidays offers student Visa Bangladesh , tourist Visa , and work visa support for USA, Canada, UK, Europe, UAE, and more. Trusted visa consultancy in Bangladesh and UAE.We are Leading Travel Agent and Education Consultancy in Bangladesh.We Provide Premium Travel Services Worlwide."
         />
-        <meta
-          name="keywords"
-          content="Eammu, Eammu Holidays, Travel Agency Bangladesh, Travel agency Dubai,Study Abroad With Eammu,Best Travel Agency Bangladesh, education consultancy, student visa help , Tourist Visa"
-        />
+    
         <meta name="author" content="Eammu Holidays" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://eammu.com/whychooseus" />
+        <link rel="canonical" href="https://eammu.com/why-choose-eammu" />
 
         {/* Open Graph for Facebook/LinkedIn */}
         <meta property="og:title" content="Why Choose Eammu Holidays" />
         <meta property="og:description" content="Explore what makes Eammu your trusted immigration and travel partner. Proven success in visas, tours, and student guidance." />
         <meta property="og:image" content="https://eammu.com/eammuicon.jpg" />
-        <meta property="og:url" content="https://eammu.com/whychooseus" />
+        <meta property="og:url" content="https://eammu.com/why-choose-eammu" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Eammu Holidays" />
 

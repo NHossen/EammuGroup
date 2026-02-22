@@ -9,15 +9,12 @@ const TravelAgencyArmenia = () => {
   return (
     <>
     <Helmet>
-  <title>Best And Top-Rated Travel Agency in Armenia | Eammu Holidays Yerevan</title>
+  <title>Travel Agency in Armenia | Leading Travel Agency Yerevan | Tour Guide Armenia</title>
   <meta 
     name="description" 
     content="Eammu Holidays, a leading travel agency in Yerevan, Armenia, offers 24/7 visa assistance, luxury Caucasus tours, hotel bookings, and corporate travel solutions. Expert support for tourism, business, and study visits." 
   />
-  <meta 
-    name="keywords" 
-    content="travel agency in Armenia, Armenia visa assistance, Eammu Holidays Yerevan, Yerevan tour operator, Armenia tours, hotel booking Yerevan, Armenia transit visa, study in Armenia, Armenia travel services" 
-  />
+
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://eammu.com/travel-agency-armenia" />
 

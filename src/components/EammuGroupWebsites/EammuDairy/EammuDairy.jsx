@@ -14,7 +14,7 @@ const EammuDairy = () => {
     <div className="bg-white min-h-screen">
       {/* ✅ SEO META (Unchanged as requested) */}
       <Helmet>
-        <title>Dairy and Poultry Farm Bangladesh | Fresh Milk, Eggs & Poultry Dhaka | Eammu</title>
+        <title>Dairy and Poultry Farm Bangladesh | Dairy Farm Dhaka | Dairy Farm Comilla</title>
         <meta
           name="description"
           content="Eammu Dairy & Poultry in Bangladesh offers fresh organic cow milk, free-range eggs, and local poultry. Farm-fresh, chemical-free, and trusted by local families."
