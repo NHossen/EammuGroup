@@ -126,7 +126,7 @@ const MessageFromLeadingTeam = () => {
   ];
 
   return (
-    <section className="px-4 py-16 bg-gray-50">
+    <section className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-20">
       <Helmet>
         <title>
           Education Consultancy Bangladesh | Travel Agency Bangladesh
