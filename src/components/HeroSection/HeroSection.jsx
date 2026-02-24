@@ -77,7 +77,7 @@ const HeroSection = () => {
     <div className="relative w-full overflow-hidden font-sans">
 
       {/* ================= BACKGROUND SLIDER ================= */}
-      <div className="relative min-h-[100vh] md:min-h-[60vh] w-full overflow-hidden">
+      <div className="relative min-h-[110vh] md:min-h-[60vh] w-full overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.img
             key={bgIndex}
