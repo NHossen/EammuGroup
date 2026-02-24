@@ -1,10 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Caresoul_BG_Mix from "./Caresoul_BG_Mix";
 import EammuImmigrationHeading_2 from "./EammuImmigrationHeading_2";
-import MessageFromLeadingTeam from "./MessageFromLeadingTeam";
 import Our_Succsses_State from "./Our_Succsses_State";
-import Registration_Agents from "./Registration_Agents";
-import TargetUsaSection from "./TargetUsaSection";
 import WhyChoiceEammu from "./WhyChoiceEammu";
 import VisaPhotoGallery from "./VisaPhotoGallery";
 import HeroSection from "../HeroSection/HeroSection";
