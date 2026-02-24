@@ -9,10 +9,11 @@ import {
 const HeroSection = () => {
   // Data for background slider
   const bgSlides = [
-    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80",
+    "https://eammu.com/eammu_holidays_bg.webp/",
     "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1920&q=80",
-    "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=1920&q=80",
-    "https://hikeontreks.com/wp-content/uploads/2025/05/Maldives-Tour-Places-to-Visit.jpg",
+    "https://www.thailand.go.th/uploads/posts/photo_1684338552_1.jpeg",
+    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80",
+    
     
   ];
 
