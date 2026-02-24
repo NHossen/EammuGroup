@@ -3,6 +3,16 @@ import { Link } from 'react-router-dom';
 import { FaPassport, FaPlaneDeparture, FaSuitcaseRolling, FaStar } from 'react-icons/fa';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
+import { 
+  Plane, 
+  Globe, 
+  Briefcase, 
+  MessageCircle, 
+  PhoneCall, 
+  ShieldCheck, 
+  Palmtree, 
+  CreditCard 
+} from 'lucide-react';
 
 const Carousel = () => {
   const carouselRef = useRef(null);
@@ -80,7 +90,7 @@ const Carousel = () => {
         import { motion } from 'framer-motion';
 
 
- {/* Slide 1 */}
+{/* Slide 1 */}
           <div id="slide1" className="carousel-item w-full h-full snap-center relative flex-shrink-0">
             <img
               src="/eammu_holidays_bg.webp"

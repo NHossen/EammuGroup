@@ -147,3 +147,169 @@ const AirTickets = () => {
 };
 
 export default AirTickets;
+
+///
+
+
+
+<div
+      id="slide1"
+      className="carousel-item w-full min-h-screen md:h-screen snap-center relative flex-shrink-0 flex flex-col bg-[#005a31] overflow-x-hidden"
+    >
+      {/* 1. Background Image + Premium Overlay */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/eammu_holidays_bg.webp"
+          className="w-full h-full object-cover"
+          alt="Eammu Holidays Background"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#005a31]/95 via-[#005a31]/85 to-[#01a1d4]/70"></div>
+      </div>
+
+      {/* 2. Top Navigation Pill (Sticky-style but relative to prevent overlap) */}
+      <div className="relative z-30 w-full pt-4 md:pt-8 px-3 md:px-6 flex justify-center">
+        <div className="bg-white/95 backdrop-blur-sm rounded-2xl md:rounded-full w-full max-w-5xl px-2 md:px-10 py-3 shadow-2xl flex items-center justify-around md:justify-center gap-1 md:gap-10 border border-white/20">
+          {serviceLinks?.map((service, idx) => (
+            <Link key={idx} to={service.link} className="flex flex-col items-center group flex-1 md:flex-none">
+              <div className="bg-[#cc1d24] w-7 h-7 md:w-10 md:h-10 rounded-full flex items-center justify-center text-white mb-1 transition-transform group-hover:scale-110 shadow-md">
+                {/* Ensure your icons are sized correctly for mobile */}
+                <span className="scale-75 md:scale-100">{service.icon}</span>
+              </div>
+              <span className="text-[6.5px] md:text-[11px] font-extrabold text-gray-800 uppercase tracking-tighter md:tracking-tight text-center">
+                {service.title}
+              </span>
+            </Link>
+          ))}
+        </div>
+      </div>
+
+      {/* 3. Main Hero Content */}
+      <div className="relative z-10 flex-grow flex items-center px-4 md:px-20 py-8 md:py-0">
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-14 items-center w-full">
+          
+          {/* Right Image Box (First on Mobile for Visual Impact) */}
+          <div className="relative w-full max-w-[320px] md:max-w-xl order-1 md:order-2 mx-auto">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              className="rounded-3xl md:rounded-[3rem] overflow-hidden border-4 md:border-[12px] border-white/20 shadow-2xl bg-white p-1"
+            >
+              {/* Maintain perfect rectangular ratio 16:10 */}
+              <div className="aspect-[16/10] w-full overflow-hidden rounded-2xl md:rounded-[2.5rem]">
+                <img
+                  src="/eammu_holidays_bg.webp"
+                  className="w-full h-full object-cover"
+                  alt="Promotion"
+                />
+              </div>
+            </motion.div>
+
+            {/* Promo Badge */}
+            <div className="absolute -bottom-3 -right-3 md:-bottom-6 md:-right-6 bg-[#cc1d24] text-white w-14 h-14 md:w-24 md:h-24 rounded-full flex flex-col items-center justify-center font-black border-4 border-white shadow-xl z-20 animate-pulse">
+              <span className="text-[7px] md:text-[10px]">SAVE</span>
+              <span className="text-sm md:text-2xl leading-none">20%</span>
+            </div>
+          </div>
+
+          {/* Left Text Content */}
+          <div className="text-white text-center md:text-left order-2 md:order-1">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9 }}
+            >
+              <h1 className="text-3xl md:text-6xl font-black leading-tight mb-4 drop-shadow-2xl">
+                Eammu Holidays <br />
+                <span className="text-yellow-400 text-2xl md:text-5xl">Since 1994</span>
+              </h1>
+
+              <p className="text-sm md:text-xl opacity-90 max-w-xl mb-8 leading-relaxed font-medium">
+                Your trusted global travel partner in the UAE. 
+                Connecting you to the world for over 30 years.
+              </p>
+            </motion.div>
+
+            {/* Action Buttons */}
+            <div className="flex flex-wrap justify-center md:justify-start gap-3 mb-10">
+              <button className="flex items-center gap-2 bg-white text-gray-900 px-6 py-3 rounded-full font-bold shadow-xl hover:scale-105 transition-all text-xs md:text-base">
+                <span className="bg-[#25D366] text-white p-1 rounded-full text-lg">💬</span>
+                Chat
+              </button>
+              <button className="flex items-center gap-2 bg-white text-gray-900 px-6 py-3 rounded-full font-bold shadow-xl hover:scale-105 transition-all text-xs md:text-base">
+                <span className="bg-[#005a31] text-white p-1 rounded-full text-lg">📞</span>
+                Consult
+              </button>
+              <Link
+                to="/our-services"
+                className="bg-[#cc1d24] text-white px-8 py-3 rounded-full font-bold shadow-xl hover:bg-red-700 transition-all text-xs md:text-base uppercase tracking-widest"
+              >
+                Explore More
+              </Link>
+            </div>
+
+            {/* Trust Badges */}
+            <div className="flex flex-wrap justify-center md:justify-start items-center gap-6 pt-6 border-t border-white/20">
+              <div className="text-center">
+                <p className="text-lg md:text-2xl font-black">IATA</p>
+                <p className="text-[8px] md:text-[10px] opacity-60">Accredited</p>
+              </div>
+              <div className="text-center">
+                <p className="text-lg md:text-2xl font-black">31+</p>
+                <p className="text-[8px] md:text-[10px] opacity-60">Years</p>
+              </div>
+              <div className="text-center">
+                <p className="text-yellow-400 text-xs md:text-lg">★★★★★</p>
+                <p className="text-[8px] md:text-[10px] opacity-60">4.9/5 Rating</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 4. Improved Bottom Decorative Curve */}
+      <div className="relative z-20 w-full mt-auto">
+        <svg 
+          className="w-full h-[60px] md:h-[120px] drop-shadow-[0_-5px_10px_rgba(0,0,0,0.1)]" 
+          viewBox="0 0 1200 120" 
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            fill="white"
+            transform="rotate(180 600 60)"
+          />
+        </svg>
+      </div>
+
+      {/* 5. Navigation Arrows - Adjusted for touch targets */}
+      <div className="absolute inset-x-2 top-1/2 -translate-y-1/2 flex justify-between pointer-events-none z-40">
+        <button
+          className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md text-white hover:bg-white hover:text-black pointer-events-auto transition-all"
+          onClick={() => scrollToSlide("slide4")}
+        >
+          ❮
+        </button>
+        <button
+          className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md text-white hover:bg-white hover:text-black pointer-events-auto transition-all"
+          onClick={() => scrollToSlide("slide2")}
+        >
+          ❯
+        </button>
+      </div>
+      {/* 4. Bottom Decorative Curve (White Wave) */}
+<div className="relative z-20 w-full mt-auto">
+  <svg 
+    className="w-full h-[50px] md:h-[110px] block" 
+    viewBox="0 0 1200 120" 
+    preserveAspectRatio="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+      fill="white"
+      transform="rotate(180 600 60)"
+    />
+  </svg>
+</div>
+    </div>

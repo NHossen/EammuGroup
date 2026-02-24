@@ -31,9 +31,9 @@ const PosterGallery = () => {
       <div className="max-w-7xl mx-auto">
         
         {/* Header - Kept Clean */}
-        <div className="mb-16 text-left border-l-8 border-blue-600 pl-6">
+        <div className="mb-16 text-left border-l-8 border-[#005a31] pl-6">
           <h2 className="text-4xl font-black text-slate-900 uppercase tracking-tighter">
-            Poster & Flyer Gallery
+            Global Visa Assistance
           </h2>
           <p className="text-slate-500 font-medium mt-2">Professional Visa Application By Eammu Holidays</p>
         </div>

@@ -1,5 +1,6 @@
 
 
+import Carousel from "../../Carousel/Carousel";
 import Caresoul_BG_Mix from "../../Home/Caresoul_BG_Mix";
 import EammuImmigrationHeading_2 from "../../Home/EammuImmigrationHeading_2";
 import Our_Succsses_State from "../../Home/Our_Succsses_State";
@@ -29,6 +30,8 @@ const EammuImmigrationServices = () => {
   </Helmet>
   {/* Immigration_Header_Section */}
   <Immigration_Header_Section></Immigration_Header_Section>
+
+  <Carousel />
 
   {/* EammuImmigrationHeading_2 */}
   <EammuImmigrationHeading_2></EammuImmigrationHeading_2>

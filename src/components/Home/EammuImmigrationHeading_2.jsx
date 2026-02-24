@@ -66,7 +66,7 @@ const EammuImmigrationHeading_2 = () => {
 
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl font-black text-[#005a31] leading-[1.1] tracking-tight">
-                Expert <span className="text-orange-500">Immigration</span> & Study Abroad Services
+              Global <span className="text-orange-500">Visa</span> & Study Abroad Assistance
               </h1>
               <h2 className="text-xl md:text-2xl font-semibold text-gray-700">
                 Premier Agency in <span className="border-b-2 border-orange-400">Dubai</span>, Armenia & Bangladesh

@@ -6,8 +6,8 @@ import Our_Succsses_State from "./Our_Succsses_State";
 import Registration_Agents from "./Registration_Agents";
 import TargetUsaSection from "./TargetUsaSection";
 import WhyChoiceEammu from "./WhyChoiceEammu";
-import Carousel from "../Carousel/Carousel";
 import VisaPhotoGallery from "./VisaPhotoGallery";
+import HeroSection from "../HeroSection/HeroSection";
 
 const Home = () => {
   // ✅ Structured Data (Google-compliant JSON-LD)
@@ -109,10 +109,13 @@ const Home = () => {
       </Helmet>
 
       {/* ================= PAGE SECTIONS ================= */}
-
       {/* Hero Carousel */}
-      <Carousel />
-
+      <HeroSection />
+      {/* Hero Carousel */}
+     
+          {/* Visa Poster Gallery */}
+      <VisaPhotoGallery />
+      
       {/* Immigration Services Heading */}
       <EammuImmigrationHeading_2 />
 
@@ -121,9 +124,6 @@ const Home = () => {
 
       {/* USA Visa Interview Help */}
       <TargetUsaSection />
-
-      {/* Visa Poster Gallery */}
-      <VisaPhotoGallery />
 
       {/* Leadership Message */}
       <MessageFromLeadingTeam />
