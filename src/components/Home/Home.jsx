@@ -8,6 +8,7 @@ import TargetUsaSection from "./TargetUsaSection";
 import WhyChoiceEammu from "./WhyChoiceEammu";
 import VisaPhotoGallery from "./VisaPhotoGallery";
 import HeroSection from "../HeroSection/HeroSection";
+import TravelServices from "../TravelServices/TravelServices";
 
 const Home = () => {
   // ✅ Structured Data (Google-compliant JSON-LD)
@@ -111,10 +112,13 @@ const Home = () => {
       {/* ================= PAGE SECTIONS ================= */}
       {/* Hero Carousel */}
       <HeroSection />
-      {/* Hero Carousel */}
+      {/* Travel Services */}
+       <TravelServices />
      
-          {/* Visa Poster Gallery */}
+      {/* Visa Poster Gallery */}
       <VisaPhotoGallery />
+
+     
       
       {/* Immigration Services Heading */}
       <EammuImmigrationHeading_2 />

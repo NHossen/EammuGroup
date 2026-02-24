@@ -27,7 +27,7 @@ const PosterGallery = () => {
   );
 
   return (
-    <section className="py-20 px-4 bg-[#f8fafc]">
+    <section className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
         
         {/* Header - Kept Clean */}
