@@ -3,6 +3,7 @@
 import Carousel from "../../Carousel/Carousel";
 import Caresoul_BG_Mix from "../../Home/Caresoul_BG_Mix";
 import EammuImmigrationHeading_2 from "../../Home/EammuImmigrationHeading_2";
+import MessageFromLeadingTeam from "../../Home/MessageFromLeadingTeam";
 import Our_Succsses_State from "../../Home/Our_Succsses_State";
 import Registration_Agents from "../../Home/Registration_Agents";
 import TargetUsaSection from "../../Home/TargetUsaSection";
@@ -28,9 +29,7 @@ const EammuImmigrationServices = () => {
     <meta name="twitter:description" content="Join 1,000+ happy travelers! Apply now for student visas, work permits & tours." />
     <meta name="twitter:image" content="https://www.eammu.com/eammuicon.jpg" />
   </Helmet>
-  {/* Immigration_Header_Section */}
-  <Immigration_Header_Section></Immigration_Header_Section>
-
+ 
   <Carousel />
 
   {/* EammuImmigrationHeading_2 */}
@@ -44,6 +43,8 @@ const EammuImmigrationServices = () => {
 
       {/* Registration */}
       <Registration_Agents ></Registration_Agents>
+
+      <MessageFromLeadingTeam />
 
         {/* Our_Succsses_State */}
         <Our_Succsses_State></Our_Succsses_State>

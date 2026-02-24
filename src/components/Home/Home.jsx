@@ -117,20 +117,9 @@ const Home = () => {
      
       {/* Visa Poster Gallery */}
       <VisaPhotoGallery />
-
-     
-      
+ 
       {/* Immigration Services Heading */}
       <EammuImmigrationHeading_2 />
-
-      {/* Agent Registration */}
-      <Registration_Agents />
-
-      {/* USA Visa Interview Help */}
-      <TargetUsaSection />
-
-      {/* Leadership Message */}
-      <MessageFromLeadingTeam />
 
       {/* Why Choose Us */}
       <WhyChoiceEammu />

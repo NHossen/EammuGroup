@@ -71,7 +71,7 @@ const TravelServices = () => {
                 <div className="p-5 flex flex-col justify-between flex-grow">
                   <p className="text-blue-900 font-bold text-sm md:text-base mb-6 line-clamp-2">{item.title}</p>
                   <div className="flex justify-end">
-                    <a href={item.link} className="bg-yellow-400 hover:bg-yellow-500 text-blue-950 font-black text-[10px] py-2 px-4 rounded-lg flex items-center gap-2 uppercase transition-all">
+                    <a href={item.link} className="bg-[#005a31] hover:bg-yellow-500 text-white font-black text-[10px] py-[12px] px-4 rounded-lg flex items-center gap-2 uppercase transition-all">
                       Learn More <ArrowRight size={14} />
                     </a>
                   </div>
@@ -102,7 +102,7 @@ const TravelServices = () => {
                 <div className="p-5 flex flex-col justify-between flex-grow">
                   <p className="text-blue-900 font-bold text-sm md:text-base mb-6 line-clamp-2">{visa.title}</p>
                   <div className="flex justify-end">
-                    <a href={visa.link} className="bg-yellow-400 hover:bg-yellow-500 text-blue-950 font-black text-[10px] py-2 px-4 rounded-lg flex items-center gap-2 uppercase transition-all">
+                    <a href={visa.link} className="bg-[#005a31] hover:bg-yellow-500 text-white font-black text-[10px] py-[12px] px-4 rounded-lg flex items-center gap-2 uppercase transition-all">
                       Learn More <ArrowRight size={14} />
                     </a>
                   </div>

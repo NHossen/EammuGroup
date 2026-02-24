@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef} from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Plane, Gift, Map, CreditCard, 
@@ -27,14 +27,14 @@ const HeroSection = () => {
 
   // Bottom carousel
   const bottomSlides = [
-    { id: 1, title: "MEXICO VISA", img: "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/70/7b/ac.jpg" },
-    { id: 2, title: "SINGAPORE VISA", img: "https://www.agoda.com/wp-content/uploads/2019/06/Singapore-Itinerary-Marina-Bay-Sands.jpg" },
-    { id: 3, title: "THAILAND TOUR", img: "https://feelfreetravel.b-cdn.net/uploads/destinations/a29e2a7f2437fcaee966e61a2878bb518013adbb6158f387fbcce0ab359cfb50.jpg?width=1600" },
-    { id: 4, title: "SYLHET TOUR", img: "https://royalbengaltours.com/wp-content/uploads/2017/08/Cycle-through-the-most-beautiful-tea-estates-of-Sreemangal-and-Sylhet-area.webp" },
-    { id: 5, title: "DHAKA TOUR", img: "https://toursntripsbd.com/wp-content/uploads/2016/06/PB100664-180x152-1.jpg" },
-    { id: 6, title: "DESERT SAFARI", img: "https://res.klook.com/image/upload/q_85/c_fill,w_750/v1666942368/blog/gu90kcnlehlie93a2mks.jpg" },
-    { id: 7, title: "ARMENIA VISA", img: "https://www.gokite.travel/wp-content/uploads/2021/05/Armenia-tour-packages-from-dubai_11zon-870x480.webp" },
-    { id: 8, title: "EUROPE VISA", img: "https://pmlholidays.com/admin/production/images/blogs/Europe.jpg" },
+    { id: 1, title: "MEXICO VISA", img: "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/70/7b/ac.jpg",link: "/visa-services" },
+    { id: 2, title: "SINGAPORE VISA", img: "https://www.agoda.com/wp-content/uploads/2019/06/Singapore-Itinerary-Marina-Bay-Sands.jpg",link: "/singapore-visa-application" },
+    { id: 3, title: "THAILAND TOUR", img: "https://feelfreetravel.b-cdn.net/uploads/destinations/a29e2a7f2437fcaee966e61a2878bb518013adbb6158f387fbcce0ab359cfb50.jpg?width=1600" ,link: "/thailand-visa-application" },
+    { id: 4, title: "SYLHET TOUR", img: "https://royalbengaltours.com/wp-content/uploads/2017/08/Cycle-through-the-most-beautiful-tea-estates-of-Sreemangal-and-Sylhet-area.webp" ,link: "/visa-services" },
+    { id: 5, title: "DHAKA TOUR", img: "https://toursntripsbd.com/wp-content/uploads/2016/06/PB100664-180x152-1.jpg",link: "/visa-services" },
+    { id: 6, title: "DESERT SAFARI", img: "https://res.klook.com/image/upload/q_85/c_fill,w_750/v1666942368/blog/gu90kcnlehlie93a2mks.jpg",link: "/visa-services" },
+    { id: 7, title: "ARMENIA VISA", img: "https://www.gokite.travel/wp-content/uploads/2021/05/Armenia-tour-packages-from-dubai_11zon-870x480.webp",link: "/armenia-visa-application" },
+    { id: 8, title: "EUROPE VISA", img: "https://pmlholidays.com/admin/production/images/blogs/Europe.jpg",link: "/europe-visa-application" },
   ];
 
   const [bgIndex, setBgIndex] = useState(0);
@@ -232,10 +232,12 @@ const HeroSection = () => {
                 className="snap-center min-w-[85%] sm:min-w-[60%] md:min-w-[30%] h-48 rounded-xl overflow-hidden relative shadow-md"
                 whileHover={{ scale: 1.02 }}
               >
-                <img src={slide.img} className="w-full h-full object-cover" />
+                <a href={slide.link}>
+                  <img src={slide.img} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
                   <p className="text-white font-bold">{slide.title}</p>
                 </div>
+                </a>
               </motion.div>
             ))}
           </div>
