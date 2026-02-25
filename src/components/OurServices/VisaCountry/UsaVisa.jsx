@@ -10,8 +10,8 @@ const USAVisa = () => {
   return (
     <>
       <Helmet>
-        <title>USA B1/B2 Visa 2026 | DS-160 & Interview Support - Eammu Holidays</title>
-        <meta name="description" content="Expert assistance for USA B1/B2 visitor visas in 2026. DS-160 form filling, interview coaching, and appointment scheduling in UAE, Armenia, and Bangladesh." />
+        <title>USA B1/B2 Visa Application | Usa Visa Interview Preparation | Top Travel Agency dhaka</title>
+        <meta name="description" content="Expert assistance for USA B1/B2 visitor visas in 2026 from bangladesh. DS-160 form filling, interview coaching, and appointment scheduling in UAE, Armenia, and Bangladesh." />
         <link rel="canonical" href="https://eammu.com/usa-visa-application" />
       </Helmet>
 
@@ -31,8 +31,8 @@ const USAVisa = () => {
                     Interview Coaching Included
                 </span>
             </div>
-            <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              United <span className="text-orange-500">States</span> 2026
+            <h1 className="text-5xl md:text-5xl font-black mb-6 tracking-tighter uppercase leading-tight">
+              United <span className="text-orange-500">States</span> Visa
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
               From the lights of Times Square to the Silicon Valley hubs. We simplify the world's most rigorous visa process with precision and care.
@@ -43,9 +43,9 @@ const USAVisa = () => {
         {/* --- 2. QUICK METRIC BOXES --- */}
         <section className="max-w-7xl mx-auto -mt-12 px-6 relative z-20">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <MetricBox label="Wait Times" value="Varies by Post" icon={<Clock size={20}/>} />
-                <MetricBox label="Visa Fee (MRV)" value="$185 USD" icon={<Wallet size={20}/>} />
-                <MetricBox label="Max Validity" value="Up to 10 Years" icon={<TrendingUp size={20}/>} />
+                <MetricBox label="Usa Visa Wait Times" value="Varies by Post" icon={<Clock size={20}/>} />
+                <MetricBox label="Usa Visa Fee (MRV)" value="$185 USD" icon={<Wallet size={20}/>} />
+                <MetricBox label="USA Visa Max Validity" value="Up to 10 Years" icon={<TrendingUp size={20}/>} />
                 <MetricBox label="New for 2026" value="Visa Bonds (Select)" icon={<ShieldCheck size={20}/>} />
             </div>
         </section>
@@ -56,7 +56,7 @@ const USAVisa = () => {
             <div className="flex flex-col items-center mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <PlayCircle className="text-orange-500" size={32} />
-                <h2 className="text-4xl font-black text-[#005a31] uppercase">USA Visa Prep</h2>
+                <h2 className="text-4xl font-black text-[#005a31] uppercase">USA Visa Preparation</h2>
               </div>
               <p className="text-gray-500 text-center max-w-2xl italic font-medium">Visual walkthroughs for the 2026 application cycle, including DS-160 tips and mock interview scenarios.</p>
             </div>
@@ -86,7 +86,7 @@ const USAVisa = () => {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center gap-4 mb-12 border-b border-gray-100 pb-6">
               <ImageIcon className="text-orange-500" size={32} />
-              <h2 className="text-4xl font-black text-[#005a31] uppercase">USA Visa Classes</h2>
+              <h2 className="text-4xl font-black text-[#005a31] uppercase">USA Visa Application Classes</h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

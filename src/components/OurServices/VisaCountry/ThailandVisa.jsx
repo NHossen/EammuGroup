@@ -10,15 +10,12 @@ const ThailandVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Thailand Visa Application | Eammu Holidays - Bangladesh</title>
+        <title>Thailand Visa Application | Eammu Travel Agency Bangladesh | Travel Agency Dhaka</title>
         <meta 
           name="description" 
           content="Apply for Thailand Tourist Visa, DTV, or Long-Term Residency in 2026. Expert guidance on the new Thailand Digital Arrival Card (TDAC) for UAE and Bangladesh residents." 
         />
-        <meta 
-          name="keywords" 
-          content="Thailand visa 2026, Thailand Digital Arrival Card, TDAC QR code, Thailand 60 day visa exemption, Destination Thailand Visa DTV, Thai e-Visa portal, Eammu Holidays" 
-        />
+      
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://eammu.com/thailand-visa-application" />
       </Helmet>
@@ -54,7 +51,7 @@ const ThailandVisa = () => {
             <div className="flex flex-col items-center mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <PlayCircle className="text-orange-500" size={32} />
-                <h2 className="text-4xl font-black text-[#005a31] uppercase">Thailand Visual Guide</h2>
+                <h2 className="text-4xl font-black text-[#005a31] uppercase">Thailand Visa Visual Guide</h2>
               </div>
               <p className="text-gray-500 text-center max-w-2xl italic">Explore our curated video guides on the 2026 entry process and the best of Thai culture.</p>
             </div>

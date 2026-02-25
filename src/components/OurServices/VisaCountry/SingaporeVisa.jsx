@@ -10,15 +10,12 @@ const SingaporeVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Singapore Visa 2026: Requirements, SGAC Guide & Fees | Eammu Holidays</title>
+        <title>Singapore Visa Application | tour operator singapore | Travel agent in singapore</title>
         <meta 
           name="description" 
-          content="Apply for Singapore Tourist & Business e-Visas in 2026. Expert guide on SG Arrival Card (SGAC), Form 14A, and visa processing for UAE & Bangladesh residents." 
+          content="Apply for Singapore Tourist Visa & Business e-Visas in 2026. Expert guide on SG Arrival Card (SGAC), Form 14A, and visa processing for UAE & Bangladesh residents." 
         />
-        <meta 
-          name="keywords" 
-          content="Singapore visa 2026, SG Arrival Card QR, Singapore e-visa Dubai, Singapore visa Bangladesh, Form 14A Singapore, Singapore business visa, Eammu Holidays" 
-        />
+     
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://eammu.com/singapore-visa-application" />
       </Helmet>
@@ -40,7 +37,7 @@ const SingaporeVisa = () => {
                 </span>
             </div>
             <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Explore <span className="text-orange-500">Singapore</span>
+              Tourist destination <span className="text-orange-500">Singapore</span>
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
               Fast-track your entry to the Lion City with our expert handling of e-Visas and the mandatory 2026 SG Arrival Card (SGAC).
@@ -54,7 +51,7 @@ const SingaporeVisa = () => {
             <div className="flex flex-col items-center mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <PlayCircle className="text-orange-500" size={32} />
-                <h2 className="text-4xl font-black text-[#005a31] uppercase">Visa Video Guides</h2>
+                <h2 className="text-4xl font-black text-[#005a31] uppercase">Singapore Visa Video Guides</h2>
               </div>
               <p className="text-gray-500 text-center max-w-2xl italic">Watch our step-by-step breakdowns for a 100% success rate in 2026.</p>
             </div>
@@ -84,7 +81,7 @@ const SingaporeVisa = () => {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center gap-4 mb-12 border-b border-gray-100 pb-6">
               <ImageIcon className="text-orange-500" size={32} />
-              <h2 className="text-4xl font-black text-[#005a31] uppercase">Available Visa Types</h2>
+              <h2 className="text-4xl font-black text-[#005a31] uppercase">Singapore Available Visa Types</h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -134,7 +131,7 @@ const SingaporeVisa = () => {
                 <div className="bg-orange-500 p-3 rounded-2xl text-white">
                   <Send size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Application Procedure</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Singapore VisaApplication Procedure</h2>
               </div>
               
               <div className="space-y-10">
@@ -170,7 +167,7 @@ const SingaporeVisa = () => {
                 <div className="bg-[#005a31] p-3 rounded-2xl text-white shadow-lg">
                   <ClipboardList size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Document Checklist 2026</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Singapore Visa Document Checklist 2026</h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <RequirementCard text="Passport (6+ months validity)" />
@@ -214,7 +211,7 @@ const SingaporeVisa = () => {
           <aside className="space-y-8 lg:sticky lg:top-10">
             <div className="bg-[#005a31] text-white p-10 rounded-[3rem] shadow-2xl overflow-hidden relative group">
               <div className="absolute -top-20 -right-20 w-48 h-48 bg-white/5 rounded-full group-hover:scale-125 transition-transform duration-1000"></div>
-              <h3 className="text-2xl font-black mb-8 border-b border-white/10 pb-4 italic text-orange-400">Singapore Support</h3>
+              <h3 className="text-2xl font-black mb-8 border-b border-white/10 pb-4 italic text-orange-400">Singapore Support From Bangladesh</h3>
               <div className="space-y-8 text-sm">
                 <ContactLink label="Armenia Office" href="tel:+37494810585" text="+374 94 810585" />
                 <ContactLink label="UAE Helpdesk" href="tel:+971507078334" text="+971 50 707 8334" highlight />

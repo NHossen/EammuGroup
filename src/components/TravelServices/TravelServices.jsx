@@ -1,10 +1,11 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef} from 'react';
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
+import { Helmet } from 'react-helmet'; // Added for SEO
 
 const TravelServices = () => {
   // Data for Visa Section
   const visaData = [
-    { id: 1, title: "Tourist Visa Assistance with Eammu", img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=600&q=80", link: "/visa-services", type: "Tourist Visa" },
+    { id: 1, title: "Tourist Visa Assistance by Eammu Holidays", img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=600&q=80", link: "/visa-services", type: "Tourist Visa application" },
     { id: 2, title: "Study Abroad with Eammu Holidays", img: "https://www.unidirection.com/wp-content/uploads/2019/10/study-abroad.png", link: "/student-visa-application-from-bangladesh", type: "Study Abroad" },
     { id: 3, title: "IELTS And Visa Interview with Eammu", img: "https://www.ilmprep.com/blog/wp-content/uploads/2024/02/IELTS-Coaching-Dubai.jpg", link: "/target-ielts-and-immigration-center", type: "IELTS And Visa Interview" },
     { id: 4, title: "Golden Visa UAE Services", img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80", link: "/visa-services", type: "Golden Visa" },
@@ -49,6 +50,37 @@ const TravelServices = () => {
 
   return (
     <div className="w-full py-16 space-y-16 px-4 md:px-10">
+
+      <Helmet>
+        <title>Professional Travel Agency Bangladdesh | Best Travel Agency Dhaka</title>
+        <meta name="description" content="Explore expert visa services including Tourist, Student, and Golden Visa assistance. Get up to 62% off on airline tickets and international tour packages with Eammu." />
+        <meta name="keywords" content="Visa processing Bangladesh, Student visa Dhaka, UAE Golden Visa, Cheap flight deals Bangladesh, Eammu Holidays Services" />
+        
+        {/* Structured Data: Service Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Visa and Travel Consultancy",
+            "provider": {
+              "@type": "TravelAgency",
+              "name": "Eammu Holidays",
+              "telephone": "+8801631312524",
+              "url": "https://eammu.com"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Travel Services",
+              "itemListElement": [
+                ...visaData.map(v => ({
+                  "@type": "Offer",
+                  "itemOffered": { "@type": "Service", "name": v.type }
+                }))
+              ]
+            }
+          })}
+        </script>
+      </Helmet>
       
       {/* ================= SPECIAL OFFERS SECTION ================= */}
       <section className="max-w-7xl mx-auto">

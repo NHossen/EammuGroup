@@ -6,7 +6,7 @@ const NaeemHossen = () => {
     <>
       {/* SEO */}
       <Helmet>
-        <title>Naeem Hossen | Founder & CEO of Eammu Holidays</title>
+        <title>Naeem Hossen | Founder & CEO of Eammu Holidays | Travel Agency Founder Bangladesh </title>
         <meta
           name="description"
           content="Naeem Hossen is the Founder & CEO of Eammu Holidays. Expert in global visas, air ticketing, tourism, and immigration consulting."

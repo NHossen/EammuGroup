@@ -10,8 +10,8 @@ const SerbiaVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Serbia Visa Application 2026 | Requirements & Residency - Eammu Holidays</title>
-        <meta name="description" content="Apply for Serbia tourist and business visas. Expert assistance for Certified Invitation Letters, Embassy appointments, and Balkan residency permits (Boravak) for 2026." />
+        <title>Serbia Visa From Bangladesh | Serbia Work Permit Bangladesh</title>
+        <meta name="description" content="Apply for Serbia tourist Visa and business visas. Serbia Visa assistance for Certified Invitation Letters, Embassy appointments, and Balkan residency permits (Boravak) for 2026." />
         <link rel="canonical" href="https://eammu.com/serbia-visa-application" />
       </Helmet>
 
@@ -32,10 +32,10 @@ const SerbiaVisa = () => {
                 </span>
             </div>
             <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Serbia <span className="text-orange-500">Visa</span> 2026
+              Serbia <span className="text-orange-500">Visa</span> application Guide
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
-              Unlock the gateway to Southeast Europe. From Belgrade business trips to Balkan explorations, we handle the complexity for you.
+             Serbia the gateway to Southeast Europe. From Belgrade business trips to Balkan explorations, we handle the complexity for you.Serbia Visa Application From Bangladesh
             </p>
           </div>
         </section>
@@ -43,10 +43,10 @@ const SerbiaVisa = () => {
         {/* --- 2. QUICK METRIC BOXES --- */}
         <section className="max-w-7xl mx-auto -mt-12 px-6 relative z-20">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <MetricBox label="Processing Time" value="15 - 30 Days" icon={<Clock size={20}/>} />
-                <MetricBox label="Visa Type" value="Type C & Type D" icon={<FileText size={20}/>} />
+                <MetricBox label="Serbia Visa Processing Time" value="15 - 30 Days" icon={<Clock size={20}/>} />
+                <MetricBox label="Serbia Visa Type" value="Type C & Type D" icon={<FileText size={20}/>} />
                 <MetricBox label="Stay Limit" value="90 Days / 180" icon={<TrendingUp size={20}/>} />
-                <MetricBox label="Required" value="Certified Invitation" icon={<Landmark size={20}/>} />
+                <MetricBox label="Serbia Visa Documents Required" value="Certified Invitation" icon={<Landmark size={20}/>} />
             </div>
         </section>
 
@@ -56,7 +56,7 @@ const SerbiaVisa = () => {
             <div className="flex flex-col items-center mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <PlayCircle className="text-orange-500" size={32} />
-                <h2 className="text-4xl font-black text-[#005a31] uppercase">Application Masterclass</h2>
+                <h2 className="text-4xl font-black text-[#005a31] uppercase">Serbia Application Masterclass</h2>
               </div>
               <p className="text-gray-500 text-center max-w-2xl italic font-medium">Watch our expert breakdown of the Serbian Ministry of Interior requirements and invitation verification.</p>
             </div>
@@ -128,7 +128,7 @@ const SerbiaVisa = () => {
                 <div className="bg-orange-500 p-3 rounded-2xl text-white">
                   <Send size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">The 2026 Process</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Serbia Visa Application Process</h2>
               </div>
               
               <div className="space-y-10">
@@ -164,7 +164,7 @@ const SerbiaVisa = () => {
                 <div className="bg-[#005a31] p-3 rounded-2xl text-white shadow-lg">
                   <ClipboardList size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Document Checklist</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Serbia Visa Document Checklist</h2>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

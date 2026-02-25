@@ -10,8 +10,8 @@ const KosovoVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Kosovo Visa Application 2026 | Requirements & Expert Support - Eammu Holidays</title>
-        <meta name="description" content="Professional Kosovo visa assistance for tourist and business travel. Complete guidance on Schengen exemptions, consular appointments, and document legalization." />
+        <title>Kosovo Visa Application Bangladesh | Kosovo Visa From Bangladesh</title>
+        <meta name="description" content="Kosovo visa assistance From Bangladesh for tourist Visa and business travel. Complete guidance on Schengen exemptions, consular appointments, and document legalization." />
         <link rel="canonical" href="https://eammu.com/kosovo-visa-application" />
       </Helmet>
 
@@ -32,10 +32,10 @@ const KosovoVisa = () => {
                 </span>
             </div>
             <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Kosovo <span className="text-orange-500">Visa</span> 2026
+              Kosovo <span className="text-orange-500">Visa</span> Application Online
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
-              Unlock the hidden gems of the Balkans. We simplify the complex consular processes for the Republic of Kosovo.
+              Unlock the hidden gems of the Kosovo With Eammu Holidays. We simplify the complex consular processes for the Republic of Kosovo.
             </p>
           </div>
         </section>
@@ -43,10 +43,10 @@ const KosovoVisa = () => {
         {/* --- 2. QUICK METRIC BOXES --- */}
         <section className="max-w-7xl mx-auto -mt-12 px-6 relative z-20">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <MetricBox label="Decision Time" value="15 Calendar Days" icon={<Clock size={20}/>} />
+                <MetricBox label="Kosovo Visa Decision Time" value="15 Calendar Days" icon={<Clock size={20}/>} />
                 <MetricBox label="Schengen Holders" value="Visa Free Entry" icon={<ShieldCheck size={20}/>} />
-                <MetricBox label="Entry Type" value="Single/Multiple" icon={<Globe size={20}/>} />
-                <MetricBox label="VFS Availability" value="Select Regions" icon={<Landmark size={20}/>} />
+                <MetricBox label="Kosovo Entry Type" value="Single/Multiple" icon={<Globe size={20}/>} />
+                <MetricBox label="Kosovo VFS Availability" value="Select Regions" icon={<Landmark size={20}/>} />
             </div>
         </section>
 
@@ -56,9 +56,9 @@ const KosovoVisa = () => {
             <div className="flex flex-col items-center mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <PlayCircle className="text-orange-500" size={32} />
-                <h2 className="text-4xl font-black text-[#005a31] uppercase">Application Tutorials</h2>
+                <h2 className="text-4xl font-black text-[#005a31] uppercase">Kosovo Visa Application Tutorials</h2>
               </div>
-              <p className="text-gray-500 text-center max-w-2xl italic font-medium">Step-by-step guides for Kosovo visa submissions, including document translation and insurance requirements.</p>
+              <p className="text-gray-500 text-center max-w-2xl italic font-medium">Kosovo visa application guides submissions, including document translation and insurance requirements.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -86,7 +86,7 @@ const KosovoVisa = () => {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center gap-4 mb-12 border-b border-gray-100 pb-6">
               <ImageIcon className="text-orange-500" size={32} />
-              <h2 className="text-4xl font-black text-[#005a31] uppercase">Visa Categories</h2>
+              <h2 className="text-4xl font-black text-[#005a31] uppercase">Kosovo Visa Application Categories</h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -128,7 +128,7 @@ const KosovoVisa = () => {
                 <div className="bg-orange-500 p-3 rounded-2xl text-white">
                   <Send size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">The Submission Process</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">The Kosovo Visa Submission Process</h2>
               </div>
               
               <div className="space-y-10">
@@ -164,7 +164,7 @@ const KosovoVisa = () => {
                 <div className="bg-[#005a31] p-3 rounded-2xl text-white shadow-lg">
                   <ClipboardList size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Requirement Checklist</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Kosovo Visa Requirement Checklist</h2>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

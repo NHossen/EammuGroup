@@ -6,7 +6,7 @@ import ScrollToTop from "../ScrollToTop/ScrollToTop";  // Import ScrollToTop
 
 const MainRoot = () => {
     return (
-        <div className="">
+        <div>
             <ScrollToTop />  {/* Added ScrollToTop here */}
             <Header />
             <div>

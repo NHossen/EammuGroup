@@ -10,7 +10,7 @@ const SouthKoreaVisa = () => {
   return (
     <>
       <Helmet>
-        <title>South Korea Visa 2026 | K-ETA & KVAC Requirements - Eammu Holidays</title>
+        <title>South Korea Visa Appointment | South Korea Tourist Visa Dubai | South Korea Visa Appointment Dubai</title>
         <meta name="description" content="Apply for South Korea tourist, business, and K-ETA permits. Expert assistance for KVAC submissions, document translation, and fast processing for 2026." />
         <link rel="canonical" href="https://eammu.com/south-korea-visa-application" />
       </Helmet>
@@ -31,8 +31,8 @@ const SouthKoreaVisa = () => {
                     K-ETA Authorized
                 </span>
             </div>
-            <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              South <span className="text-orange-500">Korea</span> 2026
+            <h1 className="text-5xl md:text-5xl font-black mb-6 tracking-tighter uppercase leading-tight">
+              South <span className="text-orange-500">Korea</span> Visa Application Guide
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
               From the neon streets of Seoul to the serenity of Jeju Island. We make the Korean visa process as innovative as the country itself.
@@ -43,10 +43,10 @@ const SouthKoreaVisa = () => {
         {/* --- 2. QUICK METRIC BOXES --- */}
         <section className="max-w-7xl mx-auto -mt-12 px-6 relative z-20">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <MetricBox label="Processing" value="5 - 10 Working Days" icon={<Clock size={20}/>} />
-                <MetricBox label="Entry Type" value="K-ETA or Sticker" icon={<Globe size={20}/>} />
+                <MetricBox label="South Korea Visa Processing" value="5 - 10 Working Days" icon={<Clock size={20}/>} />
+                <MetricBox label="South Korea Visa Entry Type" value="K-ETA or Sticker" icon={<Globe size={20}/>} />
                 <MetricBox label="Validity" value="90 Days / Multi" icon={<TrendingUp size={20}/>} />
-                <MetricBox label="Format" value="Visa Grant Notice" icon={<FileText size={20}/>} />
+                <MetricBox label="South Korea Visa Appointment" value="South Korea Appointment" icon={<FileText size={20}/>} />
             </div>
         </section>
 
@@ -56,7 +56,7 @@ const SouthKoreaVisa = () => {
             <div className="flex flex-col items-center mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <PlayCircle className="text-orange-500" size={32} />
-                <h2 className="text-4xl font-black text-[#005a31] uppercase">K-Visa Video Guides</h2>
+                <h2 className="text-4xl font-black text-[#005a31] uppercase">South Korea Visa Video Guides</h2>
               </div>
               <p className="text-gray-500 text-center max-w-2xl italic font-medium">Step-by-step visuals on navigating the Korea Visa Application Center (KVAC) and electronic travel authorizations.</p>
             </div>
@@ -86,7 +86,7 @@ const SouthKoreaVisa = () => {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center gap-4 mb-12 border-b border-gray-100 pb-6">
               <ImageIcon className="text-orange-500" size={32} />
-              <h2 className="text-4xl font-black text-[#005a31] uppercase">Visa Categories</h2>
+              <h2 className="text-4xl font-black text-[#005a31] uppercase">South Korea Visa Categories</h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -128,7 +128,7 @@ const SouthKoreaVisa = () => {
                 <div className="bg-orange-500 p-3 rounded-2xl text-white">
                   <Send size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">The Roadmap to Seoul</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">The Roadmap to South Korea Visa</h2>
               </div>
               
               <div className="space-y-10">
@@ -164,7 +164,7 @@ const SouthKoreaVisa = () => {
                 <div className="bg-[#005a31] p-3 rounded-2xl text-white shadow-lg">
                   <ClipboardList size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Documentation Checklist</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">South Korea Visa Documentation Checklist</h2>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -196,7 +196,7 @@ const SouthKoreaVisa = () => {
             <section>
                 <div className="flex items-center gap-4 mb-10">
                     <HelpCircle size={32} className="text-orange-500" />
-                    <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Korean Visa Insights</h2>
+                    <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">South Korea Visa Insights</h2>
                 </div>
                 <div className="divide-y divide-gray-100">
                     <FAQItem 

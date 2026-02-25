@@ -6,10 +6,10 @@ const WhyChoiceEammu = () => {
     <div className="px-4 md:px-8 lg:px-16 container mx-auto py-12 bg-gradient-to-b from-[#f0fdf4] to-white min-h-screen">
       {/* ✅ SEO Tags */}
       <Helmet>
-        <title>Premium Travel Agency Bangladesh | Study Abroad From Bangladesh | Education Consultancy</title>
+        <title>Premium Travel Agency Bangladesh | Study Abroad From Bangladesh | Education Consultancy Dhaka</title>
         <meta
           name="description"
-          content="Eammu Holidays offers student Visa Bangladesh , tourist Visa , and work visa support for USA, Canada, UK, Europe, UAE, and more. Trusted visa consultancy in Bangladesh and UAE.We are Leading Travel Agent and Education Consultancy in Bangladesh.We Provide Premium Travel Services Worlwide."
+          content="Eammu Holidays offers student Visa From Bangladesh , tourist Visa , and work visa support for USA, Canada, UK, Europe, UAE, and more. Trusted visa consultancy in Bangladesh and UAE.We are Leading Travel Agent and Education Consultancy in Bangladesh.We Provide Premium Travel Services Worlwide."
         />
     
         <meta name="author" content="Eammu Holidays" />

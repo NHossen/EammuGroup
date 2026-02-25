@@ -243,9 +243,47 @@ const TourPackages = () => {
 
   return (
     <HelmetProvider>
+     {/* --- ADVANCED SEO HELMET --- */}
       <Helmet>
-        <title>Premium Tour Packages | Eammu Holidays</title>
-        <meta name="description" content="Discover curated domestic and international travel experiences." />
+        <title>Affordable International Tour Packages| Tour Packages Eammu Holidays</title>
+        <meta name="description" content="Book cheap international tour packages from Bangladesh. Best deals on Dubai, Georgia, Armenia, and India tours. IATA approved agency. Book on WhatsApp now!" />
+        <meta name="keywords" content="International tour packages from Bangladesh, Cheap Dubai tour, Georgia Armenia tour package, India tour agency Dhaka, Best travel agency Cumilla" />
+        
+        {/* Canonical Link */}
+        <link rel="canonical" href="https://eammu.com/tour-packages" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Best Tour Packages & Holiday Deals | Eammu Holidays" />
+        <meta property="og:description" content="Explore the world with our premium, budget-friendly tour packages. Secure your seat today!" />
+        <meta property="og:image" content="https://eammu.com/seo/tour-packages-og.jpg" />
+        <meta property="og:url" content="https://eammu.com/tour-packages" />
+
+        {/* JSON-LD Schema (Google Rich Results) */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Eammu Holidays Tour Packages",
+            "itemListElement": tourPackages.map((pkg, i) => ({
+              "@type": "ListItem",
+              "position": i + 1,
+              "item": {
+                "@type": "Product",
+                "name": pkg.title,
+                "description": pkg.description,
+                "image": pkg.image,
+                "offers": {
+                  "@type": "Offer",
+                  "priceCurrency": "BDT",
+                  "price": pkg.price.replace(/[^0-9]/g, ''),
+                  "availability": "https://schema.org/InStock",
+                  "url": `https://eammu.com/tour-packages/${pkg.slug}`
+                }
+              }
+            }))
+          })}
+        </script>
       </Helmet>
 
       <div className="bg-gray-50 min-h-screen pb-20">

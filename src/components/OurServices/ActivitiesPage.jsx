@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Helmet } from 'react-helmet'; // Added for SEO
 
 const ActivitiesPage = () => {
   const whatsappNumber = "+8801631312524";
@@ -66,6 +67,48 @@ const ActivitiesPage = () => {
 
   return (
     <div className="bg-white min-h-screen font-sans overflow-x-hidden">
+
+      {/* --- ADVANCED SEO SECTION --- */}
+      <Helmet>
+        <title>Top Tourism Activities Dubai | Leading Travel Agency Dubai</title>
+        <meta name="description" content="Explore world-class tourism activities with Eammu Holidays. From Dubai Desert Safaris to Georgia Mountain Treks. Book your 2026 adventure via WhatsApp today!" />
+        <meta name="keywords" content="Dubai Desert Safari, Georgia Tour, Armenia Tourism, Bangladesh Travel Agency, Eammu Holidays Activities, Best Tour Operator Dhaka" />
+        
+        {/* Canonical Link */}
+        <link rel="canonical" href="https://eammu.com/activities" />
+
+        {/* Open Graph (Facebook/LinkedIn) */}
+        <meta property="og:title" content="Exclusive Travel Activities & Global Tours | Eammu Holidays" />
+        <meta property="og:description" content="Experience the world like never before. View our gallery of international activities and book instantly." />
+        <meta property="og:image" content="https://eammu.com/og-activities.jpg" />
+        <meta property="og:url" content="https://eammu.com/activities" />
+        <meta property="og:type" content="website" />
+
+        {/* Structured Data (Schema.org) for Google */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Eammu Holidays Top Activities",
+            "description": "A list of premium travel activities provided by Eammu Holidays.",
+            "itemListElement": activities.map((act, index) => ({
+              "@type": "ListItem",
+              "position": index + 1,
+              "item": {
+                "@type": "TouristAttraction",
+                "name": act.title,
+                "image": act.url,
+                "url": "https://eammu.com/activities",
+                "provider": {
+                  "@type": "TravelAgency",
+                  "name": "Eammu Holidays",
+                  "telephone": "+8801631312524"
+                }
+              }
+            }))
+          })}
+        </script>
+      </Helmet>
       
       {/* --- SECTION 1: 60VH AUTOMATIC HERO --- */}
       <section className="relative w-full h-[60vh] bg-black overflow-hidden">

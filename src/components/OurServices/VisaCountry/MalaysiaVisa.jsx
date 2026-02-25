@@ -10,15 +10,12 @@ const MalaysiaVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Malaysia Visa 2026: Requirements, MDAC Guide & Fees | Eammu Holidays</title>
+        <title>Malaysia e Visa Application | Online Tour Operator Bangladesh | Best Travel Agency Cumilla</title>
         <meta 
           name="description" 
-          content="Official 2026 guide for Malaysia e-Visa and MDAC. Apply for Tourist, Social Visit, or Digital Nomad (DE Rantau) visas with Eammu Holidays experts." 
+          content="Malaysia e-Visa Application From Dhaka and MDAC. Apply for Tourist, Social Visit, or Digital Nomad (DE Rantau) visas with Eammu Holidays experts." 
         />
-        <meta 
-          name="keywords" 
-          content="Malaysia visa 2026, Malaysia Digital Arrival Card, MDAC registration, Malaysia e-visa for Indians, Malaysia visa for UAE residents, DE Rantau visa, Eammu Holidays" 
-        />
+  
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://eammu.com/malaysia-visa-application" />
       </Helmet>
@@ -40,10 +37,10 @@ const MalaysiaVisa = () => {
                 </span>
             </div>
             <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Truly <span className="text-orange-500">Malaysia</span> 2026
+             Malaysia <span className="text-orange-500">Visa Application</span> 2026
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
-              Navigate the new digital entry requirements with ease. Expert processing for e-Visas, Digital Nomad passes, and mandatory MDAC filing.
+              Malaysia new digital entry requirements with ease. Expert processing for e-Visas, Digital Nomad passes, and mandatory MDAC filing.
             </p>
           </div>
         </section>
@@ -54,14 +51,14 @@ const MalaysiaVisa = () => {
             <div className="flex flex-col items-center mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <PlayCircle className="text-orange-500" size={32} />
-                <h2 className="text-4xl font-black text-[#005a31] uppercase">Malaysia Visual Guide</h2>
+                <h2 className="text-4xl font-black text-[#005a31] uppercase">Malaysia Visa Visual Guide</h2>
               </div>
               <p className="text-gray-500 text-center max-w-2xl italic">Essential 2026 tutorials for a smooth journey to Kuala Lumpur and beyond.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <VideoCard 
-                id="qH_e6PzP_kM" 
+                id="HEKzY7yBb24" 
                 title="MDAC Registration Guide" 
                 desc="How to complete the Malaysia Digital Arrival Card within the mandatory 3-day window."
               />
@@ -123,9 +120,9 @@ const MalaysiaVisa = () => {
             {/* Quick Metrics */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <MetricBox label="MDAC Window" value="72 Hours" icon={<Clock size={20}/>} />
-                <MetricBox label="Visa Processing" value="2-5 Days" icon={<TrendingUp size={20}/>} />
-                <MetricBox label="Approval Rate" value="99.1%" icon={<ShieldCheck size={20}/>} />
-                <MetricBox label="Format" value="Digital/Paperless" icon={<Globe size={20}/>} />
+                <MetricBox label="Malaysia Visa Processing Time" value="2-5 Days" icon={<TrendingUp size={20}/>} />
+                <MetricBox label="Malaysia Visa Approval Rate" value="99.1%" icon={<ShieldCheck size={20}/>} />
+                <MetricBox label="Malaysia Visa Format" value="Digital/Paperless" icon={<Globe size={20}/>} />
             </div>
 
             {/* Application Procedure */}
@@ -134,7 +131,7 @@ const MalaysiaVisa = () => {
                 <div className="bg-orange-500 p-3 rounded-2xl text-white">
                   <Send size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Application Procedure</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Malaysia Visa Application Procedure</h2>
               </div>
               
               <div className="space-y-10">
@@ -170,7 +167,7 @@ const MalaysiaVisa = () => {
                 <div className="bg-[#005a31] p-3 rounded-2xl text-white shadow-lg">
                   <ClipboardList size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Requirement Checklist 2026</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Malaysia Visa Requirement Checklist 2026</h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <RequirementCard text="Passport (6+ months validity)" />
@@ -190,7 +187,7 @@ const MalaysiaVisa = () => {
             <section>
                 <div className="flex items-center gap-4 mb-10">
                     <HelpCircle size={32} className="text-orange-500" />
-                    <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Malaysia Visa FAQ</h2>
+                    <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Malaysia e Visa FAQ</h2>
                 </div>
                 <div className="divide-y divide-gray-100">
                     <FAQItem 
@@ -214,7 +211,7 @@ const MalaysiaVisa = () => {
           <aside className="space-y-8 lg:sticky lg:top-10">
             <div className="bg-[#005a31] text-white p-10 rounded-[3rem] shadow-2xl overflow-hidden relative group">
               <div className="absolute -top-20 -right-20 w-48 h-48 bg-white/5 rounded-full group-hover:scale-125 transition-transform duration-1000"></div>
-              <h3 className="text-2xl font-black mb-8 border-b border-white/10 pb-4 italic text-orange-400">Malaysia Support</h3>
+              <h3 className="text-2xl font-black mb-8 border-b border-white/10 pb-4 italic text-orange-400">Malaysia Visa Support</h3>
               <div className="space-y-8 text-sm">
                 <ContactLink label="Armenia Office" href="tel:+37494810585" text="+374 94 810585" />
                 <ContactLink label="UAE Support" href="tel:+971507078334" text="+971 50 707 8334" highlight />
@@ -227,7 +224,7 @@ const MalaysiaVisa = () => {
             </div>
             <div className="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 flex flex-col items-center text-center">
               <ShieldCheck size={40} className="text-[#005a31] mb-4" />
-              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">Premium Consultancy</p>
+              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">Premium Consultancy Bangladesh</p>
               <p className="text-[#005a31] font-black text-xl italic tracking-tighter uppercase">Eammu Holidays</p>
             </div>
           </aside>

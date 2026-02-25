@@ -10,7 +10,7 @@ const SpainVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Spain Schengen Visa 2026 | Requirements & BLS Support - Eammu Holidays</title>
+        <title>Schengen Visa from India | Europe Visa Application Agency India</title>
         <meta name="description" content="Apply for Spain Schengen visa for 2026. Expert assistance for BLS appointments, travel insurance, and flight itineraries for tourist and business visits." />
         <link rel="canonical" href="https://eammu.com/spain-visa-application" />
       </Helmet>
@@ -32,7 +32,7 @@ const SpainVisa = () => {
                 </span>
             </div>
             <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Spain <span className="text-orange-500">Visa</span> 2026
+              Spain <span className="text-orange-500">Visa</span> Application guide
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
               From the architecture of Barcelona to the beaches of Costa del Sol. Your gateway to Spain and the entire Schengen Zone begins here.
@@ -43,10 +43,10 @@ const SpainVisa = () => {
         {/* --- 2. QUICK METRIC BOXES --- */}
         <section className="max-w-7xl mx-auto -mt-12 px-6 relative z-20">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <MetricBox label="Processing Time" value="15 - 45 Days" icon={<Clock size={20}/>} />
-                <MetricBox label="Visa Type" value="Schengen (Type C)" icon={<Globe size={20}/>} />
+                <MetricBox label="SpainProcessing Time" value="15 - 45 Days" icon={<Clock size={20}/>} />
+                <MetricBox label="SpainVisa Type" value="Schengen (Type C)" icon={<Globe size={20}/>} />
                 <MetricBox label="Stay Limit" value="90 Days in 180" icon={<TrendingUp size={20}/>} />
-                <MetricBox label="Submission" value="BLS International" icon={<Landmark size={20}/>} />
+                <MetricBox label="Spain Visa Submission" value="BLS International" icon={<Landmark size={20}/>} />
             </div>
         </section>
 
@@ -56,7 +56,7 @@ const SpainVisa = () => {
             <div className="flex flex-col items-center mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <PlayCircle className="text-orange-500" size={32} />
-                <h2 className="text-4xl font-black text-[#005a31] uppercase">Schengen Masterclass</h2>
+                <h2 className="text-4xl font-black text-[#005a31] uppercase">Spain and Schengen Application Visa Masterclass</h2>
               </div>
               <p className="text-gray-500 text-center max-w-2xl italic font-medium">Visual guides on securing Spain appointments and meeting the strict European documentation standards for 2026.</p>
             </div>
@@ -128,7 +128,7 @@ const SpainVisa = () => {
                 <div className="bg-orange-500 p-3 rounded-2xl text-white">
                   <Send size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">How to Apply</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">How to Apply Spain Visa</h2>
               </div>
               
               <div className="space-y-10">
@@ -164,7 +164,7 @@ const SpainVisa = () => {
                 <div className="bg-[#005a31] p-3 rounded-2xl text-white shadow-lg">
                   <ClipboardList size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Spain Checklist 2026</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Spain Visa Application Checklist 2026</h2>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

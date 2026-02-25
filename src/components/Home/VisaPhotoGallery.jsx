@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, X, Maximize2 } from 'lucide-react';
+import { Helmet } from 'react-helmet'; // Added for SEO
 
 const marketingMaterials = [
-  { id: 1, src: "/visa-poster/europe_visa_poster.webp", title: "Europe Visa" },
-  { id: 2, src: "/visa-poster/Qatar Visa.webp", title: "Qatar Visa" },
+  { id: 1, src: "/visa-poster/europe_visa_poster.webp", title: "Europe Visa Application" },
+  { id: 2, src: "/visa-poster/Qatar Visa.webp", title: "Qatar Visa Application" },
   { id: 3, src: "/visa-poster/Canada Visa 2.webp", title: "Canada Tourist Visa" },
   { id: 4, src: "/visa-poster/China Visa.webp", title: "China Visa Application" },
   { id: 5, src: "/path-to/Malaysia-Visa.jpg", title: "Malaysia Visa Service" },
@@ -28,6 +29,27 @@ const PosterGallery = () => {
 
   return (
     <section className="py-16 px-4">
+      <Helmet>
+        <title>Global Visa Posters & Guides | Eammu Holidays Travel Agency India</title>
+        <meta name="description" content="View our global visa assistance posters for Canada, Europe, Qatar, China, and more. Professional visa application support by Eammu Holidays." />
+        <meta name="keywords" content="Visa posters, Canada visa guide, Europe visa assistance, Eammu Holidays gallery, Visa application infographics" />
+        
+        {/* Image Gallery Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ImageGallery",
+            "name": "Global Visa Assistance Gallery",
+            "description": "Educational posters and guides for international visa applications.",
+            "image": marketingMaterials.map(item => ({
+              "@type": "ImageObject",
+              "contentUrl": `https://eammu.com${item.src}`,
+              "caption": item.title,
+              "name": item.title
+            }))
+          })}
+        </script>
+      </Helmet>
       <div className="max-w-7xl mx-auto">
         
         {/* Header - Kept Clean */}

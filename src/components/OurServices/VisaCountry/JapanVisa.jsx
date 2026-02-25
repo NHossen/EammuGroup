@@ -10,8 +10,8 @@ const JapanVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Japan Visa Application 2026 | Requirements & E-Visa Guide - Eammu Holidays</title>
-        <meta name="description" content="Apply for Japan tourist and business visas. Professional assistance with Koteihyo (Itinerary) preparation, E-Visa portal, and embassy submissions for 2026." />
+        <title>Japan Visa Application From Bangladesh | Study Japan From Bangladesh</title>
+        <meta name="description" content="Apply for Japan tourist and Student visas From Bangladesh. Professional assistance with Koteihyo (Itinerary) preparation, E-Visa portal, and embassy submissions for 2026." />
         <link rel="canonical" href="https://eammu.com/japan-visa-application" />
       </Helmet>
 
@@ -32,10 +32,10 @@ const JapanVisa = () => {
                 </span>
             </div>
             <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Japan <span className="text-orange-500">Visa</span> 2026
+              Japan <span className="text-orange-500">Visa</span> Application
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
-              Experience the perfect harmony of ancient tradition and futuristic technology with our expert Japan visa consultancy.
+              Experience the perfect harmony of ancient tradition and futuristic technology with our expert Japan visa consultancy From India and Bangladesh.
             </p>
           </div>
         </section>
@@ -43,10 +43,10 @@ const JapanVisa = () => {
         {/* --- 2. QUICK METRIC BOXES --- */}
         <section className="max-w-7xl mx-auto -mt-12 px-6 relative z-20">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <MetricBox label="Avg. Processing" value="7 - 10 Days" icon={<Clock size={20}/>} />
-                <MetricBox label="Approval Rate" value="97.8%" icon={<TrendingUp size={20}/>} />
-                <MetricBox label="E-Visa Status" value="Available" icon={<Globe size={20}/>} />
-                <MetricBox label="Service Fee" value="Competitive" icon={<Wallet size={20}/>} />
+                <MetricBox label="Japan Visa Processing Time" value="10 - 15 Days" icon={<Clock size={20}/>} />
+                <MetricBox label="Japan Visa Approval Rate" value="97.8%" icon={<TrendingUp size={20}/>} />
+                <MetricBox label="Japan E-Visa Status" value="Available" icon={<Globe size={20}/>} />
+                <MetricBox label="Japan Visa Service Fee" value="Competitive" icon={<Wallet size={20}/>} />
             </div>
         </section>
 
@@ -56,9 +56,9 @@ const JapanVisa = () => {
             <div className="flex flex-col items-center mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <PlayCircle className="text-orange-500" size={32} />
-                <h2 className="text-4xl font-black text-[#005a31] uppercase">Japan Visa Guide</h2>
+                <h2 className="text-4xl font-black text-[#005a31] uppercase">Japan Visa Application Guide</h2>
               </div>
-              <p className="text-gray-500 text-center max-w-2xl italic font-medium">Watch our tutorials on filling the Japan Visa form and preparing your daily travel itinerary.</p>
+              <p className="text-gray-500 text-center max-w-2xl italic font-medium">Watch our tutorials on filling the Japan Visa Application form and preparing your daily travel itinerary.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -86,7 +86,7 @@ const JapanVisa = () => {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center gap-4 mb-12 border-b border-gray-100 pb-6">
               <ImageIcon className="text-orange-500" size={32} />
-              <h2 className="text-4xl font-black text-[#005a31] uppercase">Visit Categories</h2>
+              <h2 className="text-4xl font-black text-[#005a31] uppercase">Japan Visa Application Categories</h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -128,7 +128,7 @@ const JapanVisa = () => {
                 <div className="bg-orange-500 p-3 rounded-2xl text-white">
                   <Send size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Application Procedure</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Japan Application Procedure</h2>
               </div>
               
               <div className="space-y-10">
@@ -164,7 +164,7 @@ const JapanVisa = () => {
                 <div className="bg-[#005a31] p-3 rounded-2xl text-white shadow-lg">
                   <ClipboardList size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Document Checklist</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Japan Visa Document Checklist</h2>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -184,7 +184,7 @@ const JapanVisa = () => {
               <div className="mt-12 p-6 bg-white rounded-2xl border border-orange-100 flex gap-4 items-start">
                 <Camera className="text-orange-500 flex-shrink-0" size={24} />
                 <div>
-                    <p className="text-sm font-bold text-[#005a31] uppercase">Japan Photo Standards</p>
+                    <p className="text-sm font-bold text-[#005a31] uppercase">Japan Visa Photo Standards</p>
                     <p className="text-xs text-gray-500 mt-1">
                         Ensure your photo is <strong>rectangular</strong> and shows your <strong>full face</strong> with clarity. The Japanese Ministry is very specific about head dimensions; we will assist in formatting this correctly.
                     </p>
@@ -196,7 +196,7 @@ const JapanVisa = () => {
             <section>
                 <div className="flex items-center gap-4 mb-10">
                     <HelpCircle size={32} className="text-orange-500" />
-                    <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Japan Visa FAQs</h2>
+                    <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Japan Visa Application FAQs</h2>
                 </div>
                 <div className="divide-y divide-gray-100">
                     <FAQItem 

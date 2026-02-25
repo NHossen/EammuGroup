@@ -10,7 +10,7 @@ const UKVisa = () => {
   return (
     <>
       <Helmet>
-        <title>UK Visa Application 2026 | Standard Visitor & Work Permits - Eammu Holidays</title>
+        <title>UK Visa Application From Dubai | Europe Visa Appointment</title>
         <meta name="description" content="Apply for your UK Standard Visitor visa or Work permit in 2026. Expert consultancy for VFS appointments, document verification, and priority processing." />
         <link rel="canonical" href="https://eammu.com/uk-visa-application" />
       </Helmet>
@@ -32,7 +32,7 @@ const UKVisa = () => {
                 </span>
             </div>
             <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              United <span className="text-orange-500">Kingdom</span> 2026
+              United <span className="text-orange-500">Kingdom</span> Visa Application
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
               Navigate the UK's point-based immigration system with ease. From London city breaks to Tier 2 work sponsorships, we lead the way.
@@ -43,9 +43,9 @@ const UKVisa = () => {
         {/* --- 2. QUICK METRIC BOXES --- */}
         <section className="max-w-7xl mx-auto -mt-12 px-6 relative z-20">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <MetricBox label="Decision Time" value="3 - 6 Weeks" icon={<Clock size={20}/>} />
-                <MetricBox label="Visa Category" value="Standard / PBS" icon={<FileText size={20}/>} />
-                <MetricBox label="New Rule 2026" value="UK ETA Expansion" icon={<Globe size={20}/>} />
+                <MetricBox label="Uk Visa Decision Time" value="3 - 6 Weeks" icon={<Clock size={20}/>} />
+                <MetricBox label="UK Visa Category" value="Standard / PBS" icon={<FileText size={20}/>} />
+                <MetricBox label="Uk New Rule 2026" value="UK ETA Expansion" icon={<Globe size={20}/>} />
                 <MetricBox label="Partner" value="VFS Global" icon={<Landmark size={20}/>} />
             </div>
         </section>

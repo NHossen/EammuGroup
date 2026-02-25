@@ -10,7 +10,7 @@ const GermanyVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Germany Visa Application 2026 | Schengen & National Requirements - Eammu Holidays</title>
+        <title>Germany Visa Application in dubai | Schengen Visa Appointment Dubai | Leading Tour Operator Dubai </title>
         <meta name="description" content="Complete guide for Germany Schengen tourist, business, and Student visas. Expert assistance with VFS appointments, blocked accounts, and document legalization." />
         <link rel="canonical" href="https://eammu.com/germany-visa-application" />
       </Helmet>
@@ -32,7 +32,7 @@ const GermanyVisa = () => {
                 </span>
             </div>
             <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Germany <span className="text-orange-500">Visa</span> Support
+              Germany <span className="text-orange-500">Visa</span> Application Support
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
               From the Brandenburg Gate to the Bavarian Alps—your gateway to the heart of Europe starts with professional immigration guidance.
@@ -43,9 +43,9 @@ const GermanyVisa = () => {
         {/* --- 2. QUICK METRIC BOXES --- */}
         <section className="max-w-7xl mx-auto -mt-12 px-6 relative z-20">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <MetricBox label="VFS Turnaround" value="15-20 Days" icon={<Clock size={20}/>} />
-                <MetricBox label="Visa Success" value="94% (Schengen)" icon={<TrendingUp size={20}/>} />
-                <MetricBox label="Sperrkonto" value="€11,208/Year" icon={<Wallet size={20}/>} />
+                <MetricBox label="Germany Visa Appointment VFS" value="15-20 Days" icon={<Clock size={20}/>} />
+                <MetricBox label="Germany Visa Approval Rate" value="94% (Schengen)" icon={<TrendingUp size={20}/>} />
+                <MetricBox label="Bank Statement Requirement" value="€11,208/Year" icon={<Wallet size={20}/>} />
                 <MetricBox label="Jurisdiction" value="Global Support" icon={<Globe size={20}/>} />
             </div>
         </section>
@@ -56,7 +56,7 @@ const GermanyVisa = () => {
             <div className="flex flex-col items-center mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <PlayCircle className="text-orange-500" size={32} />
-                <h2 className="text-4xl font-black text-[#005a31] uppercase">Germany Application Guide</h2>
+                <h2 className="text-4xl font-black text-[#005a31] uppercase">Germany Visa Application Guide</h2>
               </div>
               <p className="text-gray-500 text-center max-w-2xl italic font-medium">Step-by-step visual tutorials for German Embassy and VFS Global submissions.</p>
             </div>
@@ -86,7 +86,7 @@ const GermanyVisa = () => {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center gap-4 mb-12 border-b border-gray-100 pb-6">
               <ImageIcon className="text-orange-500" size={32} />
-              <h2 className="text-4xl font-black text-[#005a31] uppercase">Visa Categories</h2>
+              <h2 className="text-4xl font-black text-[#005a31] uppercase">Germany Visa Application Categories</h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -164,7 +164,7 @@ const GermanyVisa = () => {
                 <div className="bg-[#005a31] p-3 rounded-2xl text-white shadow-lg">
                   <ClipboardList size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Full Document Checklist</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Germany Visa Full Document Checklist</h2>
               </div>
               
               <div className="space-y-8">
@@ -204,7 +204,7 @@ const GermanyVisa = () => {
               <div className="mt-12 p-6 bg-white rounded-2xl border border-orange-100 flex gap-4 items-start">
                 <Info className="text-orange-500 flex-shrink-0" size={24} />
                 <div>
-                    <p className="text-sm font-bold text-[#005a31] uppercase">Mandatory Photo Format</p>
+                    <p className="text-sm font-bold text-[#005a31] uppercase">Germany Visa Mandatory Photo Format</p>
                     <p className="text-xs text-gray-500 mt-1">
                         Schengen biometric standards are strict. Your photo must be <strong>rectangular</strong> and have <strong>full width and height</strong> within the designated frame. No white borders or square crops.
                     </p>
@@ -216,7 +216,7 @@ const GermanyVisa = () => {
             <section>
                 <div className="flex items-center gap-4 mb-10">
                     <HelpCircle size={32} className="text-orange-500" />
-                    <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">German Visa Insights</h2>
+                    <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">German Visa Application Insights</h2>
                 </div>
                 <div className="divide-y divide-gray-100">
                     <FAQItem 
@@ -254,7 +254,7 @@ const GermanyVisa = () => {
             
             <div className="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 flex flex-col items-center text-center">
               <ShieldCheck size={40} className="text-[#005a31] mb-4" />
-              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">Premium Schengen Support</p>
+              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">Premium Schengen Visa Support Bangladesh</p>
               <p className="text-[#005a31] font-black text-xl italic tracking-tighter uppercase">Eammu Holidays</p>
             </div>
           </aside>

@@ -10,8 +10,8 @@ const PortugalVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Portugal Schengen Visa Application 2026 | Requirements & NIF Guide - Eammu Holidays</title>
-        <meta name="description" content="Apply for Portugal tourist, business, and D7 residency visas. Expert guidance on VFS appointments, Schengen insurance, and document preparation for 2026." />
+        <title>Portugal Visa Application Bangladesh | Portugal Work Permit | Travel Agency Portugal Visa</title>
+        <meta name="description" content="Portugal tourist Visa, business Visa, and D7 residency visas. Expert guidance on VFS appointments, Schengen insurance, and document preparation for 2026." />
         <link rel="canonical" href="https://eammu.com/portugal-visa-application" />
       </Helmet>
 
@@ -28,11 +28,11 @@ const PortugalVisa = () => {
                     Schengen Zone Expert
                 </span>
                 <span className="bg-white/20 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest backdrop-blur-sm">
-                    D7 & Job Seeker Support
+                    Portugal D7 & Job Seeker Support
                 </span>
             </div>
             <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Portugal <span className="text-orange-500">Visa</span> 2026
+              Portugal <span className="text-orange-500">Visa</span>Application
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
               From the shores of Algarve to the streets of Lisbon. Secure your entry to Europe with our premium visa consultancy.
@@ -43,10 +43,10 @@ const PortugalVisa = () => {
         {/* --- 2. QUICK METRIC BOXES --- */}
         <section className="max-w-7xl mx-auto -mt-12 px-6 relative z-20">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <MetricBox label="Processing Time" value="15 - 45 Days" icon={<Clock size={20}/>} />
+                <MetricBox label="Portugal Visa Processing Time" value="15 - 45 Days" icon={<Clock size={20}/>} />
                 <MetricBox label="Schengen Access" value="29 Countries" icon={<Globe size={20}/>} />
-                <MetricBox label="Visa Type" value="Short & Long Stay" icon={<FileText size={20}/>} />
-                <MetricBox label="Submission" value="VFS Global" icon={<Landmark size={20}/>} />
+                <MetricBox label="Portugal Visa Type" value="Short & Long Stay" icon={<FileText size={20}/>} />
+                <MetricBox label="Portugal Visa Submission" value="VFS Global" icon={<Landmark size={20}/>} />
             </div>
         </section>
 
@@ -56,7 +56,7 @@ const PortugalVisa = () => {
             <div className="flex flex-col items-center mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <PlayCircle className="text-orange-500" size={32} />
-                <h2 className="text-4xl font-black text-[#005a31] uppercase">Visa Masterclass</h2>
+                <h2 className="text-4xl font-black text-[#005a31] uppercase">Portugal Visa Masterclass</h2>
               </div>
               <p className="text-gray-500 text-center max-w-2xl italic font-medium">Watch our expert guides on booking VFS appointments and organizing your Portugal Schengen folder.</p>
             </div>
@@ -128,23 +128,23 @@ const PortugalVisa = () => {
                 <div className="bg-orange-500 p-3 rounded-2xl text-white">
                   <Send size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Application Steps</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Portugal Visa Application Steps</h2>
               </div>
               
               <div className="space-y-10">
                 <StepItem 
                   number="01" 
-                  title="Profile Assessment" 
+                  title="Profile Assessment Portugal" 
                   desc="We analyze your travel history and financial status to determine the strongest category for your Portugal application." 
                 />
                 <StepItem 
                   number="02" 
-                  title="Documentation & NIF" 
+                  title="Documentation & NIF Portugal" 
                   desc="For long-stay visas, we guide you through obtaining your NIF (Tax Number). For tourists, we focus on confirmed flight and hotel vouchers." 
                 />
                 <StepItem 
                   number="03" 
-                  title="Appointment & Submission" 
+                  title="Appointment & Submission Portugal" 
                   desc="We handle the VFS Global booking and prepare your complete file, ensuring no mandatory document is missing." 
                 />
                 <StepItem 
@@ -164,7 +164,7 @@ const PortugalVisa = () => {
                 <div className="bg-[#005a31] p-3 rounded-2xl text-white shadow-lg">
                   <ClipboardList size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Mandatory Checklist</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Portugal Visa Mandatory Checklist</h2>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -184,7 +184,7 @@ const PortugalVisa = () => {
               <div className="mt-12 p-6 bg-white rounded-2xl border border-orange-100 flex gap-4 items-start">
                 <Camera className="text-orange-500 flex-shrink-0" size={24} />
                 <div>
-                    <p className="text-sm font-bold text-[#005a31] uppercase">Photo Specification Guide</p>
+                    <p className="text-sm font-bold text-[#005a31] uppercase">Portugal Photo Specification Guide</p>
                     <p className="text-xs text-gray-500 mt-1">
                         Photos must be **rectangular** with **full width and height** utilized inside the frame. Ensure a white background and no headwear unless for religious reasons.
                     </p>
