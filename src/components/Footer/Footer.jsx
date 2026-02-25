@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="mb-8">
       <h4 className="text-xl font-semibold text-[#005a31] mb-4">We Accept</h4>
       <div className="flex flex-wrap justify-center items-center gap-6">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="VISA" className="h-4 sm:h-10" />
+        <img src="https://1000logos.net/wp-content/uploads/2021/11/VISA-logo.png" alt="VISA" className="h-4 sm:h-10" />
         <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="MasterCard" className="h-4 sm:h-10" />
         <img src="https://www.logo.wine/a/logo/BKash/BKash-bKash-Logo.wine.svg" alt="bKash" className="h-10 sm:h-10" />
         <img src="https://miro.medium.com/v2/resize:fit:1400/1*1JMzKz_LENBDkVN83qyE0Q.png" alt="Rocket" className="h-10 sm:h-10" />
