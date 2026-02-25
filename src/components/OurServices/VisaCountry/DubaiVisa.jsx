@@ -11,8 +11,8 @@ const DubaiVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Dubai Visa Application 2026 | Requirements & Fees - Eammu Holidays</title>
-        <meta name="description" content="Apply for Dubai tourist, business, or 5-year multi-entry visas. Official UAE processing partner with 24-72 hour approval for global applicants." />
+        <title>Online Travel Agent Dubai | Dubai Visa Application From India | Online Travel Agency India</title>
+        <meta name="description" content="Apply for Dubai tourist Visa, business Visa, or 5-year multi-entry visas. Official UAE processing partner with 24-72 hour approval for global applicants." />
         <link rel="canonical" href="https://eammu.com/dubai-visa-application" />
       </Helmet>
 
@@ -26,14 +26,14 @@ const DubaiVisa = () => {
           <div className="relative z-10 max-w-5xl mx-auto">
             <div className="flex justify-center gap-2 mb-6">
                 <span className="bg-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg">
-                    Official UAE Processing Partner
+                    Official UAE Visa Partner
                 </span>
                 <span className="bg-white/20 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest backdrop-blur-sm">
                     GDRFA & ICP Portal Specialist
                 </span>
             </div>
             <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Dubai <span className="text-orange-500">Visa</span> 2026
+              Dubai <span className="text-orange-500">Visa</span> Application
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
               Experience seamless entry to the UAE. 100% digital processing with 24-72 hour approval, managed directly by Eammu Holidays.
@@ -47,7 +47,7 @@ const DubaiVisa = () => {
             <div className="flex flex-col items-center mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <PlayCircle className="text-orange-500" size={32} />
-                <h2 className="text-4xl font-black text-[#005a31] uppercase">Dubai Visual Guide</h2>
+                <h2 className="text-4xl font-black text-[#005a31] uppercase">Dubai Visa Application Guide</h2>
               </div>
               <p className="text-gray-500 text-center max-w-2xl italic font-medium">Watch these tutorials to understand the 2026 digital application process.</p>
             </div>
@@ -77,7 +77,7 @@ const DubaiVisa = () => {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center gap-4 mb-12 border-b border-gray-100 pb-6">
               <ImageIcon className="text-orange-500" size={32} />
-              <h2 className="text-4xl font-black text-[#005a31] uppercase">Visa Category Streams</h2>
+              <h2 className="text-4xl font-black text-[#005a31] uppercase">Dubai Visa Category Streams</h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -163,7 +163,7 @@ const DubaiVisa = () => {
                 <div className="bg-[#005a31] p-3 rounded-2xl text-white shadow-lg">
                   <ClipboardList size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Requirement Checklist</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Dubai Visa Requirement Checklist</h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <RequirementCard text="Passport Copy (Bio page, 6M+ validity)" />
@@ -190,7 +190,7 @@ const DubaiVisa = () => {
             <section>
                 <div className="flex items-center gap-4 mb-10">
                     <HelpCircle size={32} className="text-orange-500" />
-                    <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Dubai Visa FAQs</h2>
+                    <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Dubai Visa Application FAQs</h2>
                 </div>
                 <div className="divide-y divide-gray-100">
                     <FAQItem 
@@ -227,7 +227,7 @@ const DubaiVisa = () => {
             </div>
             <div className="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 flex flex-col items-center text-center">
               <ShieldCheck size={40} className="text-[#005a31] mb-4" />
-              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">Official Processing Partner</p>
+              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">Official Visa Processing Partner</p>
               <p className="text-[#005a31] font-black text-xl italic tracking-tighter uppercase">Eammu Holidays</p>
             </div>
           </aside>

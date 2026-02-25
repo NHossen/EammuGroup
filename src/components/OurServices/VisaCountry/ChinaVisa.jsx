@@ -11,14 +11,10 @@ const ChinaVisa = () => {
   return (
     <>
       <Helmet>
-        <title>China Visa 2026: Requirements, COVA Guide & Fees | Eammu Holidays</title>
+        <title>China Visa Application From Bangladesh | China Travel Agency Bangladesh</title>
         <meta 
           name="description" 
-          content="Expert assistance for China tourist, business (M), and student visas. 2026 updates for COVA forms and Digital Arrival Card guidance for UAE & BD applicants." 
-        />
-        <meta 
-          name="keywords" 
-          content="China visa 2026, China business visa, COVA form help, China visa UAE, China visa Bangladesh, China Digital Arrival Card, Eammu Holidays" 
+          content="Get assistance From Bangladesh , India And Pakistan  for China tourist Visa, business (M) Visa, and student visas. 2026 updates for COVA forms and Digital Arrival Card guidance for UAE & BD applicants." 
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://eammu.com/china-visa-application" />
@@ -41,7 +37,7 @@ const ChinaVisa = () => {
                 </span>
             </div>
             <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Gateway to <span className="text-orange-500">China</span>
+              China Visa<span className="text-orange-500">Application Online</span>
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
               Simplifying the complex China Online Visa Application (COVA) for business, tourism, and trade. Professional guidance from UAE, Armenia, and Bangladesh.
@@ -55,7 +51,7 @@ const ChinaVisa = () => {
             <div className="flex flex-col items-center mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <PlayCircle className="text-orange-500" size={32} />
-                <h2 className="text-4xl font-black text-[#005a31] uppercase">China Visa Video Guides</h2>
+                <h2 className="text-4xl font-black text-[#005a31] uppercase">China Visa Application Video Guides</h2>
               </div>
               <p className="text-gray-500 text-center max-w-2xl italic">Visual walk-throughs of the COVA form and the new 2026 Digital Arrival Card system.</p>
             </div>

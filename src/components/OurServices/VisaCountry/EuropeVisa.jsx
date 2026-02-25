@@ -10,8 +10,8 @@ const EuropeVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Europe Schengen Visa 2026 | Requirements & Process - Eammu Holidays</title>
-        <meta name="description" content="Apply for Schengen tourist, business, or family visas for 2026. Expert guidance for 27 European countries with VFS & Embassy appointment support." />
+        <title>Europe Visa Application From India | Schengen Visa Application Bangladesh</title>
+        <meta name="description" content="Apply for Schengen tourist Visa, business, or family visas for 2026. Expert guidance for 27 European countries with VFS & Embassy appointment support From India." />
         <link rel="canonical" href="https://eammu.com/europe-visa-application" />
       </Helmet>
 
@@ -32,10 +32,10 @@ const EuropeVisa = () => {
                 </span>
             </div>
             <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Europe <span className="text-orange-500">Schengen</span> 2026
+              Europe <span className="text-orange-500">Visa</span> Application Steps
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
-              One visa, 27 countries. Navigate the complexities of European immigration with our premium documentation and appointment services.
+              One visa, 27 countries. Navigate the complexities of European immigration with our premium documentation and appointment services by Eammu Holidays From Bangladesh.
             </p>
           </div>
         </section>
@@ -76,7 +76,7 @@ const EuropeVisa = () => {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center gap-4 mb-12 border-b border-gray-100 pb-6">
               <ImageIcon className="text-orange-500" size={32} />
-              <h2 className="text-4xl font-black text-[#005a31] uppercase">Visa Categories</h2>
+              <h2 className="text-4xl font-black text-[#005a31] uppercase">Europe Visa Categories</h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -126,7 +126,7 @@ const EuropeVisa = () => {
                 <div className="bg-orange-500 p-3 rounded-2xl text-white">
                   <Send size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Application Procedure</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Schengen Application Procedure</h2>
               </div>
               
               <div className="space-y-10">
@@ -162,7 +162,7 @@ const EuropeVisa = () => {
                 <div className="bg-[#005a31] p-3 rounded-2xl text-white shadow-lg">
                   <ClipboardList size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Requirement Checklist</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Schengen Requirement Checklist</h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <RequirementCard text="Original Passport (6M+ validity)" />
@@ -177,7 +177,7 @@ const EuropeVisa = () => {
               <div className="mt-8 p-6 bg-white rounded-2xl border border-orange-100 flex gap-4 items-start">
                 <Info className="text-orange-500 flex-shrink-0" size={24} />
                 <div>
-                    <p className="text-sm font-bold text-[#005a31] uppercase">Photo Compliance Warning</p>
+                    <p className="text-sm font-bold text-[#005a31] uppercase"> Schengen Photo Compliance Warning</p>
                     <p className="text-xs text-gray-500 mt-1">
                         Schengen scanners are extremely sensitive. Photos must be <strong>rectangular</strong> and have <strong>full width and height</strong> inside the frame. Ensure no shadows and a neutral expression.
                     </p>
@@ -189,7 +189,7 @@ const EuropeVisa = () => {
             <section>
                 <div className="flex items-center gap-4 mb-10">
                     <HelpCircle size={32} className="text-orange-500" />
-                    <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Schengen FAQs</h2>
+                    <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Schengen Visa FAQs</h2>
                 </div>
                 <div className="divide-y divide-gray-100">
                     <FAQItem 
@@ -213,7 +213,7 @@ const EuropeVisa = () => {
           <aside className="space-y-8 lg:sticky lg:top-10">
             <div className="bg-[#005a31] text-white p-10 rounded-[3rem] shadow-2xl overflow-hidden relative group">
               <div className="absolute -top-20 -right-20 w-48 h-48 bg-white/5 rounded-full group-hover:scale-125 transition-transform duration-1000"></div>
-              <h3 className="text-2xl font-black mb-8 border-b border-white/10 pb-4 italic text-orange-400">Europe Support</h3>
+              <h3 className="text-2xl font-black mb-8 border-b border-white/10 pb-4 italic text-orange-400">Europe Visa Support</h3>
               <div className="space-y-8 text-sm">
                 <ContactLink label="Armenia Branch (Direct)" href="tel:+37494810585" text="+374 94 810585" highlight />
                 <ContactLink label="UAE Office" href="tel:+971507078334" text="+971 50 707 8334" />

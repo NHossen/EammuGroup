@@ -11,21 +11,13 @@ const AlbaniaVisa = () => {
     <>
            <Helmet>
 
-        <title>Albania Visa Application 2026 | Albania Visa Requirements, E-Visa & Fees | Eammu Holidays</title>
+        <title>Albania Visa Application From India | Travel Agency in India</title>
 
         <meta 
 
           name="description" 
 
-          content="Apply for your Albania E-Visa or Work Permit with Eammu Holidays. Expert guidance on Albania visa requirements, processing times, fees, and visa-free entry for Schengen/US/UK visa holders." 
-
-        />
-
-        <meta 
-
-          name="keywords" 
-
-          content="Albania visa application from Bangladesh, Albania E-Visa From Dubai, Albania tourist visa From Abu Dhabi, Albania work permit From Africa, Albania visa application 2026, Albania visa requirements for Indians, Albania visa for UAE residents, Albania visa-free entry, Eammu Holidays" 
+          content="Apply for your Albania E-Visa or Work Permit From India. Expert guidance on Albania visa requirements, processing times, fees, and visa-free entry for Schengen/US/UK visa holders." 
 
         />
 
@@ -119,12 +111,12 @@ const AlbaniaVisa = () => {
               2026 Updated Visa Guide
             </span>
             <h1 className="text-5xl md:text-7xl font-black mb-4 tracking-tighter uppercase">
-              Albania <span className="text-orange-500">Visa </span>Application 2026
+              Albania <span className="text-orange-500">Visa </span>Application 
             </h1>
-            <h2 className="text-xl md:text-2xl font-semibold mb-6 opacity-90">Official Requirements, Process & Fees</h2>
+            <h2 className="text-xl md:text-2xl font-semibold mb-6 opacity-90">Albania Requirements, Process & Fees For Indian , Bangladeshi , Pakistan and African National</h2>
 
             <p className="text-lg opacity-90 max-w-3xl mx-auto font-light leading-relaxed">
-              Planning a trip to the "Maldives of Europe"? <strong>Eammu Holidays</strong> provides expert consultancy for 
+              Planning a trip to the Albania <strong>Eammu Holidays</strong> provides expert consultancy for 
               <strong> Albania E-Visas</strong>, <strong>Tourist Visas (Type C)</strong>, and <strong>Work Permits (Type D)</strong>. 
               Whether you are applying from the UAE, India, or Bangladesh, we ensure a smooth approval process.
             </p>
@@ -138,7 +130,7 @@ const AlbaniaVisa = () => {
             <div className="flex flex-col items-center mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <PlayCircle className="text-orange-500" size={32} />
-                <h2 className="text-4xl font-black text-[#005a31] uppercase">Explore the Albania</h2>
+                <h2 className="text-4xl font-black text-[#005a31] uppercase">Albania Visa Application Guide</h2>
               </div>
               <p className="text-gray-500 text-center max-w-2xl italic">Watch these curated videos to understand the visa process and the beauty of life in Albania.</p>
             </div>
@@ -168,7 +160,7 @@ const AlbaniaVisa = () => {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center gap-4 mb-12 border-b border-gray-100 pb-6">
               <ImageIcon className="text-orange-500" size={32} />
-              <h2 className="text-4xl font-black text-[#005a31] uppercase">Visa Program Highlights</h2>
+              <h2 className="text-4xl font-black text-[#005a31] uppercase">Albania Visa Program</h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -193,7 +185,7 @@ const AlbaniaVisa = () => {
               <PosterCard 
                 image="https://images.unsplash.com/photo-1520106212299-d99c443e4568?q=80&w=800" 
                 badge="Expat Hub" 
-                title="UAE Residence" 
+                title="Albania Residence" 
                 detail="Visa-Free Entry"
               />
             </div>
@@ -215,7 +207,7 @@ const AlbaniaVisa = () => {
             {/* Visa-Free Policy */}
             <section className="bg-orange-50 p-8 rounded-[3rem] border-2 border-orange-100">
                 <h3 className="text-2xl font-black text-[#005a31] mb-6 flex items-center gap-3">
-                    <ShieldCheck className="text-orange-500" /> WHO CAN ENTER VISA-FREE?
+                    <ShieldCheck className="text-orange-500" /> WHO CAN ENTER VISA-FREE IN ALBANIA?
                 </h3>
                 <div className="space-y-4 text-gray-700">
                     <p className="font-medium">You do not need a visa for up to 90 days if you hold:</p>

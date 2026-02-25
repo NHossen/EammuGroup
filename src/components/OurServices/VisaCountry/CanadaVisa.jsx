@@ -11,45 +11,39 @@ const CanadaVisa = () => {
     <>
           <Helmet>
 
-  <title>Canada Visa Application And Requirements | Get Visa Assistance - Eammu Holidays</title>
+  <title>Canada Visa Application india | Leading Travel Agency India</title>
 
   <meta 
 
     name="description" 
 
-    content="Get expert assistance for Canada tourist visa, student visa, work permit, and permanent residency. Eammu Holidays provides step-by-step guidance for applicants from Bangladesh and UAE." 
+    content="Get expert assistance by Best Travel Agency India for Canada tourist visa, student visa, work permit, and permanent residency From India. Eammu Holidays provides step-by-step guidance for applicants from Bangladesh and UAE." 
 
   />
 
-  <meta 
 
-    name="keywords" 
-
-    content="Canada visa, Canada tourist visa, Canada student visa, Canada work permit, Canada PR, visa consultancy Canada, Eammu Holidays" 
-
-  />
 
   <meta name="robots" content="index, follow" />
 
-  <link rel="canonical" href="https://eammu.com/canada-visa" />
+  <link rel="canonical" href="https://eammu.com/canada-visa-application" />
 
 
 
   {/* Open Graph */}
 
-  <meta property="og:title" content="Canada Visa & Immigration Services | Eammu Holidays" />
+  <meta property="og:title" content="Canada Visa Application From Pakistan |Leading Travel Agency Srilanka" />
 
   <meta 
 
     property="og:description" 
 
-    content="Eammu Holidays provides professional Canada visa consultancy including tourist, student, work visas, and permanent residency. Trusted support for applicants from Bangladesh and UAE." 
+    content="Eammu Holidays provides professional Canada visa consultancy including tourist, student, work visas, and permanent residency. Trusted support for Visa applicants from Bangladesh and Srilanka." 
 
   />
 
   <meta property="og:type" content="website" />
 
-  <meta property="og:url" content="https://eammu.com/canada-visa" />
+  <meta property="og:url" content="https://eammu.com/canada-visa-application" />
 
   <meta 
 
@@ -65,7 +59,7 @@ const CanadaVisa = () => {
 
   <meta name="twitter:card" content="summary_large_image" />
 
-  <meta name="twitter:title" content="Canada Visa & Immigration Services | Eammu Holidays" />
+  <meta name="twitter:title" content="Canada Visa application from srilanka | travel agency in srilanka" />
 
   <meta 
 
@@ -103,15 +97,15 @@ const CanadaVisa = () => {
 
         "name": "Eammu Holidays",
 
-        "url": "https://eammu.com/canada-visa",
+        "url": "https://eammu.com/canada-visa-application",
 
         "logo": "https://www.eammu.com/images/logo.png",
 
         "sameAs": [
 
-          "https://www.facebook.com/eammu",
+          "https://www.facebook.com/eammutourism",
 
-          "https://www.instagram.com/eammu",
+          "https://www.instagram.com/eammuholidays",
 
           "https://www.linkedin.com/company/eammu"
 
@@ -131,7 +125,7 @@ const CanadaVisa = () => {
 
       },
 
-      "serviceType": "Visa Consultancy & Immigration Services",
+      "serviceType": "Canada Visa Consultancy & Immigration Services",
 
       "areaServed": "CA",
 
@@ -160,10 +154,10 @@ const CanadaVisa = () => {
                 </span>
             </div>
             <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Begin Your <span className="text-orange-500">Canadian</span> Journey
+              Canada <span className="text-orange-500">Visa Application</span> Journey
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
-              Navigating the IRCC complexity with precision. Professional guidance for Visitor Visas, Study Permits, and Permanent Residency.
+             Professional guidance for Canada Visitor Visas, Canada Study Permits, and Permanent Residency.
             </p>
           </div>
         </section>
@@ -174,7 +168,7 @@ const CanadaVisa = () => {
             <div className="flex flex-col items-center mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <PlayCircle className="text-orange-500" size={32} />
-                <h2 className="text-4xl font-black text-[#005a31] uppercase">Canada Process Videos</h2>
+                <h2 className="text-4xl font-black text-[#005a31] uppercase">Canada Visa Application Process Videos</h2>
               </div>
               <p className="text-gray-500 text-center max-w-2xl italic">Visual walk-throughs of the 2026 Canada immigration and visa landscape.</p>
             </div>
@@ -254,7 +248,7 @@ const CanadaVisa = () => {
                 <div className="bg-orange-500 p-3 rounded-2xl text-white">
                   <Send size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Application Procedure</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Canada Visa Application Procedure</h2>
               </div>
               
               <div className="space-y-10">
@@ -290,7 +284,7 @@ const CanadaVisa = () => {
                 <div className="bg-[#005a31] p-3 rounded-2xl text-white shadow-lg">
                   <ClipboardList size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Requirement Checklist 2026</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Canada Visa Requirement Checklist 2026</h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <RequirementCard text="Valid Passport (6+ months)" />

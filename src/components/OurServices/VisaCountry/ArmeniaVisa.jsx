@@ -11,21 +11,13 @@ const ArmeniaVisa = () => {
     <>
         <Helmet>
 
-  <title>Armenia Visa Application Bangladesh | Get Visa Assistance - Eammu Holidays</title>
+  <title>Armenia Visa Application Bangladesh | Tour Operator in Bangladesh | Best Travel Agency India </title>
 
   <meta 
 
     name="description" 
 
-    content="Get expert assistance for Armenia E-Visa, Visitor Visa, and Temporary Residency Permits. Eammu Holidays provides step-by-step support from our Yerevan office." 
-
-  />
-
-  <meta 
-
-    name="keywords" 
-
-    content="Armenia visa, Armenia E-Visa, Armenia tourist visa, Armenia residency permit, Armenia work visa, visa consultancy Armenia, Eammu Holidays Yerevan" 
+    content="Get expert assistance for Armenia E-Visa, Visitor Visa, and Temporary Residency Permits from bangladesh. Eammu Holidays provides step-by-step support from our Yerevan office." 
 
   />
 
@@ -49,7 +41,7 @@ const ArmeniaVisa = () => {
 
   <meta property="og:type" content="website" />
 
-  <meta property="og:url" content="https://eammu.com/armenia-visa" />
+  <meta property="og:url" content="https://eammu.com/armenia-visa-application" />
 
   <meta 
 
@@ -71,7 +63,7 @@ const ArmeniaVisa = () => {
 
     name="twitter:description" 
 
-    content="Professional Armenia visa assistance by Eammu Holidays. Apply for E-Visa, tourist visa, or residency permits hassle-free with our expert support." 
+    content="Armenia visa assistance by Eammu Holidays. Apply for E-Visa, tourist visa, or residency permits hassle-free with our expert support." 
 
   />
 
@@ -156,7 +148,7 @@ const ArmeniaVisa = () => {
                     Official 2026 Policy
                 </span>
                 <span className="bg-white/20 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest backdrop-blur-sm">
-                    Yerevan Partner Agency
+                    Armenia Visa Application
                 </span>
             </div>
             <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
@@ -204,7 +196,7 @@ const ArmeniaVisa = () => {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center gap-4 mb-12 border-b border-gray-100 pb-6">
               <ImageIcon className="text-orange-500" size={32} />
-              <h2 className="text-4xl font-black text-[#005a31] uppercase">Program Highlights</h2>
+              <h2 className="text-4xl font-black text-[#005a31] uppercase">Armenia Visa Program</h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

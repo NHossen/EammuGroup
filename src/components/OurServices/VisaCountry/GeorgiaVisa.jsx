@@ -10,8 +10,8 @@ const GeorgiaVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Georgia Visa Application 2026 | Requirements & Fees - Eammu Holidays</title>
-        <meta name="description" content="Apply for Georgia tourist, business, or Type D visas. Expert Caucasus region processing with high approval for E-Visa and sticker visa streams." />
+        <title>Georgia Visa Application From India | Best Travel Agent India | Tour Operator Georgia </title>
+        <meta name="description" content="Apply for Georgia tourist, business, or Type D visas From India and Bangaladesh. Expert Caucasus region processing with high approval for E-Visa and sticker visa streams." />
         <link rel="canonical" href="https://eammu.com/georgia-visa-application" />
       </Helmet>
 
@@ -32,10 +32,10 @@ const GeorgiaVisa = () => {
                 </span>
             </div>
             <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Georgia <span className="text-orange-500">Visa</span> 2026
+              Georgia <span className="text-orange-500">Visa</span> Application by Eammu Holidays
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
-              Discover the intersection of Europe and Asia. Professional visa processing for tourists, investors, and digital nomads.
+              Discover the intersection of Europe and Asia From India. Professional visa processing for tourists, investors, and digital nomads.
             </p>
           </div>
         </section>
@@ -46,7 +46,7 @@ const GeorgiaVisa = () => {
             <div className="flex flex-col items-center mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <PlayCircle className="text-orange-500" size={32} />
-                <h2 className="text-4xl font-black text-[#005a31] uppercase">Georgia Visual Guide</h2>
+                <h2 className="text-4xl font-black text-[#005a31] uppercase">Georgia Visa Application Visual Guide</h2>
               </div>
               <p className="text-gray-500 text-center max-w-2xl italic font-medium">Watch these tutorials to master the Georgian E-Visa and immigration process.</p>
             </div>
@@ -76,7 +76,7 @@ const GeorgiaVisa = () => {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center gap-4 mb-12 border-b border-gray-100 pb-6">
               <ImageIcon className="text-orange-500" size={32} />
-              <h2 className="text-4xl font-black text-[#005a31] uppercase">Visa Stream Options</h2>
+              <h2 className="text-4xl font-black text-[#005a31] uppercase">Visa Application Georgia Stream Options</h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -126,7 +126,7 @@ const GeorgiaVisa = () => {
                 <div className="bg-orange-500 p-3 rounded-2xl text-white">
                   <Send size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Application Procedure</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Georgia Application Procedure</h2>
               </div>
               
               <div className="space-y-10">
@@ -162,7 +162,7 @@ const GeorgiaVisa = () => {
                 <div className="bg-[#005a31] p-3 rounded-2xl text-white shadow-lg">
                   <ClipboardList size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Requirement Checklist</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Georgia Requirement Checklist</h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <RequirementCard text="Passport Copy (6M+ validity)" />
@@ -177,7 +177,7 @@ const GeorgiaVisa = () => {
               <div className="mt-8 p-6 bg-white rounded-2xl border border-orange-100 flex gap-4 items-start">
                 <Info className="text-orange-500 flex-shrink-0" size={24} />
                 <div>
-                    <p className="text-sm font-bold text-[#005a31] uppercase">Strict Photo Requirements</p>
+                    <p className="text-sm font-bold text-[#005a31] uppercase">Georgia Strict Photo Requirements</p>
                     <p className="text-xs text-gray-500 mt-1">
                         Georgia's E-Visa system is highly automated. Your photo must be <strong>rectangular</strong> and have <strong>full width and height</strong> inside the box. Selfies or square crops will result in automatic rejection.
                     </p>
@@ -189,7 +189,7 @@ const GeorgiaVisa = () => {
             <section>
                 <div className="flex items-center gap-4 mb-10">
                     <HelpCircle size={32} className="text-orange-500" />
-                    <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Georgia Visa FAQs</h2>
+                    <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Georgia Visa Application FAQs</h2>
                 </div>
                 <div className="divide-y divide-gray-100">
                     <FAQItem 
@@ -213,7 +213,7 @@ const GeorgiaVisa = () => {
           <aside className="space-y-8 lg:sticky lg:top-10">
             <div className="bg-[#005a31] text-white p-10 rounded-[3rem] shadow-2xl overflow-hidden relative group">
               <div className="absolute -top-20 -right-20 w-48 h-48 bg-white/5 rounded-full group-hover:scale-125 transition-transform duration-1000"></div>
-              <h3 className="text-2xl font-black mb-8 border-b border-white/10 pb-4 italic text-orange-400">Expert Support</h3>
+              <h3 className="text-2xl font-black mb-8 border-b border-white/10 pb-4 italic text-orange-400">Expert Support For Georgia Visa Application</h3>
               <div className="space-y-8 text-sm">
                 <ContactLink label="Armenia Office (Regional)" href="tel:+37494810585" text="+374 94 810585" highlight />
                 <ContactLink label="UAE Support" href="tel:+971507078334" text="+971 50 707 8334" />

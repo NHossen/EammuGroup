@@ -11,23 +11,16 @@ const AustraliaVisa = () => {
     <>
            <Helmet>
 
-  <title>Australia Visa Application And Requirements | Get Visa Assistance - Eammu Holidays</title>
+  <title>Australia Visa Application From Dubai | Best Travel Agency Dubai</title>
 
   <meta 
 
     name="description" 
 
-    content="Get expert assistance for Australia tourist visa, student visa, work visa, and permanent residency. Eammu Holidays provides step-by-step support from Bangladesh and UAE." 
+    content="Get expert assistance for Australia tourist visa, student visa, work visa, and permanent residency from dubai. Eammu Holidays provides step-by-step support from Bangladesh and UAE." 
 
   />
 
-  <meta 
-
-    name="keywords" 
-
-    content="Australia visa, Australia tourist visa, Australia student visa, Australia work visa, Australia PR, visa consultancy Australia, Eammu Holidays" 
-
-  />
 
   <meta name="robots" content="index, follow" />
 
@@ -37,7 +30,7 @@ const AustraliaVisa = () => {
 
   {/* Open Graph */}
 
-  <meta property="og:title" content="Australia Visa & Immigration Services | Eammu Holidays" />
+  <meta property="og:title" content="Australia Visa From Pakistan | Travel Agency Pakistan" />
 
   <meta 
 
@@ -49,7 +42,7 @@ const AustraliaVisa = () => {
 
   <meta property="og:type" content="website" />
 
-  <meta property="og:url" content="https://eammu.com/australia-visa" />
+  <meta property="og:url" content="https://eammu.com/australia-visa-application" />
 
   <meta 
 
@@ -95,7 +88,7 @@ const AustraliaVisa = () => {
 
       "@type": "GovernmentService",
 
-      "name": "Australia Visa & Immigration Services",
+      "name": "Australia Visa Application From Dubai and India",
 
       "provider": {
 
@@ -103,15 +96,15 @@ const AustraliaVisa = () => {
 
         "name": "Eammu Holidays",
 
-        "url": "https://eammu.com/australia-visa",
+        "url": "https://eammu.com/australia-visa-application",
 
         "logo": "https://www.eammu.com/images/logo.png",
 
         "sameAs": [
 
-          "https://www.facebook.com/eammu",
+          "https://www.facebook.com/eammutourism",
 
-          "https://www.instagram.com/eammu",
+          "https://www.instagram.com/eammuholidays",
 
           "https://www.linkedin.com/company/eammu"
 
@@ -153,14 +146,14 @@ const AustraliaVisa = () => {
           <div className="relative z-10 max-w-5xl mx-auto">
             <div className="flex justify-center gap-2 mb-6">
                 <span className="bg-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg">
-                    Qualified Education Agent Counselor
+                    Qualified Education Agent Online
                 </span>
                 <span className="bg-white/20 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest backdrop-blur-sm">
-                    ImmiAccount Specialist
+                   Australia Visa Application Online
                 </span>
             </div>
             <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Move to <span className="text-orange-500">Australia </span>in 2026
+              Visa Application<span className="text-orange-500">Australia </span>From India
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
               Your comprehensive portal for Visitor Visas, Study Permits, and Skilled Migration. Expertly managed by Eammu Holidays.
@@ -174,7 +167,7 @@ const AustraliaVisa = () => {
             <div className="flex flex-col items-center mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <PlayCircle className="text-orange-500" size={32} />
-                <h2 className="text-4xl font-black text-[#005a31] uppercase">Australia Visual Guide</h2>
+                <h2 className="text-4xl font-black text-[#005a31] uppercase">Australia Visa Guide</h2>
               </div>
               <p className="text-gray-500 text-center max-w-2xl italic">Watch these tutorials to understand the 2026 application process and lifestyle in the Land Down Under.</p>
             </div>
@@ -254,7 +247,7 @@ const AustraliaVisa = () => {
                 <div className="bg-orange-500 p-3 rounded-2xl text-white">
                   <Send size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Application Procedure</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Australia Application Procedure</h2>
               </div>
               
               <div className="space-y-10">
