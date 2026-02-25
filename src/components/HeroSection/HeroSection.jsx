@@ -30,12 +30,13 @@ const HeroSection = () => {
   const bottomSlides = [
     { id: 1, title: "MEXICO VISA", img: "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/70/7b/ac.jpg",link: "/visa-services" },
     { id: 2, title: "SINGAPORE VISA", img: "https://www.agoda.com/wp-content/uploads/2019/06/Singapore-Itinerary-Marina-Bay-Sands.jpg",link: "/singapore-visa-application" },
-    { id: 3, title: "THAILAND TOUR", img: "https://feelfreetravel.b-cdn.net/uploads/destinations/a29e2a7f2437fcaee966e61a2878bb518013adbb6158f387fbcce0ab359cfb50.jpg?width=1600" ,link: "/tour-packages" },
+    { id: 3, title: "THAILAND TOUR", img: "/eammu_evisa_offer.webp" ,link: "/tour-packages" },
     { id: 4, title: "SYLHET TOUR", img: "https://royalbengaltours.com/wp-content/uploads/2017/08/Cycle-through-the-most-beautiful-tea-estates-of-Sreemangal-and-Sylhet-area.webp" ,link: "/tour-packages" },
     { id: 5, title: "DHAKA TOUR", img: "https://toursntripsbd.com/wp-content/uploads/2016/06/PB100664-180x152-1.jpg",link: "/tour-packages" },
     { id: 6, title: "DESERT SAFARI", img: "https://res.klook.com/image/upload/q_85/c_fill,w_750/v1666942368/blog/gu90kcnlehlie93a2mks.jpg",link: "/tour-packages" },
     { id: 7, title: "ARMENIA VISA", img: "https://www.gokite.travel/wp-content/uploads/2021/05/Armenia-tour-packages-from-dubai_11zon-870x480.webp",link: "/armenia-visa-application" },
     { id: 8, title: "EUROPE VISA", img: "https://pmlholidays.com/admin/production/images/blogs/Europe.jpg",link: "/europe-visa-application" },
+    { id: 9, title: "EMI Eammu Holidays", img: "/eammu_emi_offer.webp",link: "/offers" },
   ];
 
   const [bgIndex, setBgIndex] = useState(0);
