@@ -6,7 +6,7 @@ const TravelServices = () => {
   const visaData = [
     { id: 1, title: "Tourist Visa Assistance with Eammu", img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=600&q=80", link: "/visa-services", type: "Tourist Visa" },
     { id: 2, title: "Study Abroad with Eammu Holidays", img: "https://www.unidirection.com/wp-content/uploads/2019/10/study-abroad.png", link: "/student-visa-application-from-bangladesh", type: "Study Abroad" },
-    { id: 3, title: "IELTS And Visa Interview with Eammu", img: "https://www.ilmprep.com/blog/wp-content/uploads/2024/02/IELTS-Coaching-Dubai.jpg", link: "/usa-visa-interview-prep", type: "IELTS And Visa Interview" },
+    { id: 3, title: "IELTS And Visa Interview with Eammu", img: "https://www.ilmprep.com/blog/wp-content/uploads/2024/02/IELTS-Coaching-Dubai.jpg", link: "/target-ielts-and-immigration-center", type: "IELTS And Visa Interview" },
     { id: 4, title: "Golden Visa UAE Services", img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80", link: "/visa-services", type: "Golden Visa" },
   ];
 
@@ -48,7 +48,7 @@ const TravelServices = () => {
   };
 
   return (
-    <div className="w-full py-16 space-y-20 px-4 md:px-10">
+    <div className="w-full py-16 space-y-16 px-4 md:px-10">
       
       {/* ================= SPECIAL OFFERS SECTION ================= */}
       <section className="max-w-7xl mx-auto">

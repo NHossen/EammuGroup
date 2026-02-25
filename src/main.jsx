@@ -9,6 +9,7 @@ import { HelmetProvider } from 'react-helmet-async';
 
 
 
+
 // =================== LAZY LOAD ALL PAGES ===================
 
 // Main Pages
@@ -23,6 +24,7 @@ const AirTickets = lazy(() => import('./components/OurServices/AirTickets.jsx'))
 const TourPackages = lazy(() => import('./components/OurServices/TourPackages.jsx'));
 const Offer = lazy(() => import('./components/OurServices/Offer.jsx'));
 const Blogs = lazy(() => import('./components/Blogs/Blogs.jsx'));
+const ActivitiesPage = lazy(() => import('./components/OurServices/ActivitiesPage.jsx'));
 
 // Group Websites
 const EammuImmigrationServices = lazy(() => import('./components/EammuGroupWebsites/EammuImmigrationServices/EammuImmigrationServices.jsx'));
@@ -112,6 +114,8 @@ const router = createBrowserRouter([
       { path: "/air-tickets", element: <AirTickets /> },
       { path: "/tour-packages", element: <TourPackages /> },
       { path: "/offers", element: <Offer /> },
+      { path: "/activities", element: <ActivitiesPage /> },
+
 
       // ===== IMMIGRATION =====
       { path: "/immigration-services", element: <EammuImmigrationServices /> },
