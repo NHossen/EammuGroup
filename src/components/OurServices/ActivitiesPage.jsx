@@ -84,30 +84,7 @@ const ActivitiesPage = () => {
         <meta property="og:url" content="https://eammu.com/activities" />
         <meta property="og:type" content="website" />
 
-        {/* Structured Data (Schema.org) for Google */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ItemList",
-            "name": "Eammu Holidays Top Activities",
-            "description": "A list of premium travel activities provided by Eammu Holidays.",
-            "itemListElement": activities.map((act, index) => ({
-              "@type": "ListItem",
-              "position": index + 1,
-              "item": {
-                "@type": "TouristAttraction",
-                "name": act.title,
-                "image": act.url,
-                "url": "https://eammu.com/activities",
-                "provider": {
-                  "@type": "TravelAgency",
-                  "name": "Eammu Holidays",
-                  "telephone": "+8801631312524"
-                }
-              }
-            }))
-          })}
-        </script>
+        
       </Helmet>
       
       {/* --- SECTION 1: 60VH AUTOMATIC HERO --- */}
