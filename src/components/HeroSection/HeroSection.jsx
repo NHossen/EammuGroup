@@ -185,8 +185,8 @@ const HeroSection = () => {
               </div>
 
               <div className="flex flex-wrap justify-center lg:justify-start gap-3 text-xs">
-                <span>🏆 IATA Accredited</span>
-                <span>📅 31 Years of Excellence</span>
+                <span>🏆 IATA Accredited & Award winning</span>
+                <span>📅 6 Years of Excellence</span>
                 <span>⭐ Google Review 4.9/5</span>
               </div>
             </div>

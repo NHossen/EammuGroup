@@ -8,12 +8,13 @@ const marketingMaterials = [
   { id: 2, src: "/visa-poster/Qatar Visa.webp", title: "Qatar Visa Application" },
   { id: 3, src: "/visa-poster/Canada Visa 2.webp", title: "Canada Tourist Visa" },
   { id: 4, src: "/visa-poster/China Visa.webp", title: "China Visa Application" },
-  { id: 5, src: "/path-to/Malaysia-Visa.jpg", title: "Malaysia Visa Service" },
-  { id: 6, src: "/path-to/UK-Visa.jpg", title: "UK Work Permit" },
-  { id: 7, src: "/path-to/Canada-Visa.jpg", title: "Canada Visa Application" },
-  { id: 8, src: "/path-to/Thailand-Visa.jpg", title: "Thailand Visa Guide" },
-  { id: 9, src: "/path-to/Singapore-Visa.jpg", title: "Singapore Visa Guide" },
-  { id: 10, src: "/path-to/Japan-Visa.jpg", title: "Japan Visa Application" },
+  { id: 5, src: "/visa-poster/usa_visa_appointment.webp", title: "USA Visa Appointment And Application" },
+  { id: 6, src: "/visa-poster/malaysia_visa_application.webp", title: "Malaysia Visa Application" },
+  { id: 7, src: "/visa-poster/thailand_singapore_visa_application.webp", title: "Thailand & Singapore Visa Application" },
+  { id: 8, src: "/visa-poster/london_visa_application.webp", title: "London Visa Application" },
+  { id: 9, src: "/visa-poster/australia_tourist_visa_application.webp", title: "Australia Tourist Visa Application" },
+  { id: 10, src: "/visa-poster/indonesia_visa_application.webp", title: "Indonesia Visa Application" },
+  { id: 11, src: "/visa-poster/usa_and_europe_visa_application.webp", title: "USA & Europe Visa Application" },
 ];
 
 const PosterGallery = () => {
