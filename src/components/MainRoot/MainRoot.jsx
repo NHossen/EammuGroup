@@ -7,13 +7,14 @@ import ScrollToTop from "../ScrollToTop/ScrollToTop";
 
 const MainRoot = () => {
 
+
     return (
         <div>
             <ScrollToTop />
             <Header />
 
             <div>
-                <div className="">
+                <div>
                     <Outlet />
 
                     {/* Whatsapp */}

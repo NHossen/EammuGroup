@@ -106,7 +106,7 @@ const HeroSection = () => {
       </Helmet>
 
       {/* ================= BACKGROUND SLIDER ================= */}
-      <div className="relative w-full h-[130svh] md:h-[87vh] lg:h-[60vh] overflow-hidden">
+      <div className="relative w-full h-[130svh] md:h-[95vh] lg:h-[55vh] overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.img
             key={bgIndex}
@@ -148,7 +148,7 @@ const HeroSection = () => {
 
         {/* ================= HERO CONTENT ================= */}
         <div className="absolute bottom-0 w-full bg-gradient-to-t from-[#1b88a8] to-transparent pt-32 pb-10">
-          <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div className="max-w-5xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
 
             {/* TEXT */}
             <div className="text-white text-center lg:text-left">
