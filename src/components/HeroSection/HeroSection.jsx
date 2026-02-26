@@ -106,7 +106,7 @@ const HeroSection = () => {
       </Helmet>
 
       {/* ================= BACKGROUND SLIDER ================= */}
-      <div className="relative w-full h-[128svh] md:h-[87vh] lg:h-[60vh] overflow-hidden">
+      <div className="relative w-full h-[130svh] md:h-[87vh] lg:h-[60vh] overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.img
             key={bgIndex}
