@@ -24,6 +24,7 @@ const HeroSection = () => {
     { id: 2, title: "DUBAI TRIP", price1: "599", price2: "1100", img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" },
     { id: 3, title: "DHAKA TO DUBAI", price1: "699", price2: "1200", img: "https://tripjive.com/wp-content/uploads/2024/09/Khasia-Polli-in-Sylhet-travel-guide-1024x585.jpg" },
     { id: 4, title: "JAPAN TOUR", price1: "2699", price2: "4200", img: "https://japandeluxetours.com/uploads/2025/10/20251009212409_68e827f99d19b.jpg" },
+    { id: 5, title: "Eammu TOUR", price1: "2699", price2: "4200", img: "https://japandeluxetours.com/uploads/2025/10/20251009212409_68e827f99d19b.jpg" },
   ];
 
   // Bottom carousel
@@ -105,146 +106,152 @@ const HeroSection = () => {
         </script>
       </Helmet>
 
-      {/* ================= BACKGROUND SLIDER ================= */}
-      <div className="relative w-full h-[130svh] md:h-[95vh] lg:h-[55vh] overflow-hidden">
-        <AnimatePresence mode="wait">
-          <motion.img
-            key={bgIndex}
-            src={bgSlides[bgIndex]}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1 }}
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-        </AnimatePresence>
-        <div className="absolute inset-0 bg-black/40" />
+   {/* ================= HERO SECTION ================= */}
+<div className="relative w-full bg-gradient-to-br from-[#003d22] via-[#005a31] to-[#008a4a] overflow-hidden">
 
-        {/* ================= TOP NAV ================= */}
-        <div className="absolute my-12 left-1/2 -translate-x-1/2 w-[95%] max-w-5xl z-20">
-          <div className="bg-white rounded-2xl py-3 px-2 grid grid-cols-3 sm:grid-cols-6 gap-2 shadow-2xl">
+  {/* ================= BACKGROUND SLIDER ================= */}
+  <div className="absolute inset-0 z-0">
+    <AnimatePresence mode="wait">
+      <motion.img
+        key={bgIndex}
+        src={bgSlides[bgIndex]}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+        className="w-full h-full object-cover"
+      />
+    </AnimatePresence>
 
-            <a href="/visa-services">
-              <NavItem icon={<CreditCard className="text-[#005a31]" />} label="Global Visa" />
-            </a>
-            <a href="/air-tickets">
-              <NavItem icon={<Plane className="text-[#005a31]" />} label="Flight Tickets" />
-            </a>
-            <a href="/tour-packages">
-              <NavItem icon={<Map className="text-[#005a31]" />} label="Holidays" />
-            </a>
-            <a href="/activities">
-              <NavItem icon={<Wind className="text-[#005a31]" />} label="Activities" />
-            </a>
-            <a href="/student-visa-application-from-bangladesh">
-              <NavItem icon={<GraduationCap className="text-[#005a31]" />} label="Study Abroad" />
-            </a>
-            <a href="/offer">
-              <NavItem icon={<Gift className="text-[#005a31]" />} label="Special Offers" />
-            </a>
+    {/* Gradient Overlay */}
+    <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60" />
+  </div>
 
-          </div>
-        </div>
+  {/* ================= CONTENT WRAPPER ================= */}
+  <div className="relative z-10 min-h-[520px] sm:min-h-[600px] lg:min-h-[60vh] flex flex-col">
 
-        {/* ================= HERO CONTENT ================= */}
-        <div className="absolute bottom-0 w-full bg-gradient-to-t from-[#1b88a8] to-transparent pt-32 pb-10">
-          <div className="max-w-5xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+    {/* ================= TOP NAV ================= */}
+    <div className="pt-6 sm:pt-10 flex justify-center mt-8">
+      <div className="w-[95%] max-w-5xl">
+        <div className="bg-white/95 backdrop-blur rounded-2xl py-3 px-2 grid grid-cols-3 sm:grid-cols-6 gap-2 shadow-2xl">
 
-            {/* TEXT */}
-            <div className="text-white text-center lg:text-left">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
-                Your Trusted Travel Partner <br />
-                in the World <span className="text-yellow-400">Since 2022</span>
-              </h1>
+          <a href="/visa-services"><NavItem icon={<CreditCard className="text-[#005a31]" />} label="Global Visa" /></a>
+          <a href="/air-tickets"><NavItem icon={<Plane className="text-[#005a31]" />} label="Flight Tickets" /></a>
+          <a href="/tour-packages"><NavItem icon={<Map className="text-[#005a31]" />} label="Holidays" /></a>
+          <a href="/activities"><NavItem icon={<Wind className="text-[#005a31]" />} label="Activities" /></a>
+          <a href="/student-visa-application-from-bangladesh"><NavItem icon={<GraduationCap className="text-[#005a31]" />} label="Study Abroad" /></a>
+          <a href="/offer"><NavItem icon={<Gift className="text-[#005a31]" />} label="Special Offers" /></a>
 
-              <p className="text-sm md:text-base leading-relaxed mb-5 opacity-90">
-                Eammu Holidays is a full-service travel company offering flight bookings, 
-                worldwide visa assistance, and desert safari. 
-                With expert consulting and transparent pricing, we make global travel simple.
-              </p>
-
-              <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-5">
-                {/* WhatsApp Button */}
-                <a
-                  href="/our-services"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-white text-gray-700 px-5 py-2 rounded-full font-medium shadow-lg hover:bg-gray-100 transition text-sm"
-                >
-                  <Binoculars className="text-[#005a31] fill-white" /> Explore More
-                </a>
-
-                {/* Customer Review Button */}
-                <a
-                  href="/testimonials"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-white text-gray-700 px-5 py-2 rounded-full font-medium shadow-lg hover:bg-gray-100 transition text-sm"
-                >
-                  <Star className="text-[#005a31] fill-white" /> Customer Review
-                </a>
-              </div>
-
-              <div className="flex flex-wrap justify-center lg:justify-start gap-3 text-xs">
-                <span>🏆 IATA Accredited & Award winning</span>
-                <span>📅 6 Years of Excellence</span>
-                <span>⭐ Google Review 4.9/5</span>
-              </div>
-            </div>
-
-            {/* PROMO CARD */}
-            <div className="relative w-full max-w-md mx-auto lg:mx-0 h-[300px] sm:h-[250px] md:h-[280px] rounded-2xl overflow-hidden border border-white/30 shadow-2xl">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={promoIndex}
-                  initial={{ y: 30, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  exit={{ y: -30, opacity: 0 }}
-                  className="absolute inset-0 bg-[#005a31] flex flex-col sm:flex-row"
-                >
-                  <div className="w-full sm:w-1/2 h-[40%] sm:h-full">
-                    <img 
-                      src={promoSlides[promoIndex].img} 
-                      className="w-full h-full object-cover" 
-                      alt="Promo"
-                    />
-                  </div>
-
-                  <div className="w-full sm:w-1/2 p-5 flex flex-col justify-between text-white">
-                    <div>
-                      <h2 className="text-lg font-bold mb-3 uppercase leading-tight">{promoSlides[promoIndex].title}</h2>
-
-                      <div className="flex gap-2 mb-4 text-[11px]">
-                        <div className="flex-1 border border-white/40 p-1.5 rounded bg-white/5">
-                          One Way <br/><b>AED {promoSlides[promoIndex].price1}</b>
-                        </div>
-                        <div className="flex-1 border border-white/40 p-1.5 rounded bg-white/5">
-                          Round Trip <br/><b>AED {promoSlides[promoIndex].price2}</b>
-                        </div>
-                      </div>
-                    </div>
-
-                    <a
-                      href="/air-tickets"
-                      className="bg-white text-[#005a31] font-black py-2.5 px-4 rounded-lg text-sm text-center block shadow-md active:scale-95 transition-transform"
-                    >
-                      Book Now
-                    </a>
-                  </div>
-                </motion.div>
-              </AnimatePresence>
-
-              {/* Indicators */}
-              <div className="absolute bottom-3 right-3 flex gap-1.5">
-                {promoSlides.map((_, i) => (
-                  <div key={i} className={`h-1.5 w-1.5 rounded-full transition-all ${i === promoIndex ? 'bg-white w-4' : 'bg-white/40'}`} />
-                ))}
-              </div>
-            </div>
-
-          </div>
         </div>
       </div>
+    </div>
+
+    {/* ================= HERO BODY ================= */}
+    <div className="flex-1 flex items-center py-10">
+      <div className="max-w-5xl mx-auto px-4 w-full grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+
+        {/* TEXT */}
+        <div className="text-white text-center lg:text-left">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+            Your Trusted Travel Partner <br />
+            in the World <span className="text-yellow-400">Since 2022</span>
+          </h1>
+
+          <p className="text-sm md:text-base leading-relaxed mb-5 opacity-90">
+            Eammu Holidays is a full-service travel company offering flight bookings, 
+            worldwide visa assistance, and desert safari. 
+            With expert consulting and transparent pricing, we make global travel simple.
+          </p>
+
+          <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-5">
+            <a href="/our-services" className="flex items-center gap-2 bg-white text-gray-700 px-5 py-2 rounded-full font-medium shadow-lg hover:bg-gray-100 transition text-sm">
+              <Binoculars className="text-[#005a31]" /> Explore More
+            </a>
+
+            <a href="/testimonials" className="flex items-center gap-2 bg-white text-gray-700 px-5 py-2 rounded-full font-medium shadow-lg hover:bg-gray-100 transition text-sm">
+              <Star className="text-[#005a31]" /> Customer Review
+            </a>
+          </div>
+
+          <div className="flex flex-wrap justify-center lg:justify-start gap-3 text-xs">
+            <span>🏆 IATA Accredited</span>
+            <span>📅 6+ Years Experience</span>
+            <span>⭐ Google Rating 4.9/5</span>
+          </div>
+        </div>
+
+        {/* ================= PROMO CARD ================= */}
+        <div className="w-full flex justify-center lg:justify-end">
+
+          <div className="relative w-full max-w-md h-[300px] sm:h-[260px] rounded-2xl overflow-hidden border border-white/30 shadow-2xl 
+          bg-gradient-to-br from-[#006b3c] via-[#005a31] to-[#003d22]">
+
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={promoIndex}
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -20, opacity: 0 }}
+                transition={{ duration: 0.4 }}
+                className="absolute inset-0 flex flex-col sm:flex-row"
+              >
+
+                {/* Image */}
+                <div className="w-full sm:w-1/2 h-[45%] sm:h-full">
+                  <img 
+                    src={promoSlides[promoIndex].img} 
+                    className="w-full h-full object-cover" 
+                    alt="Promo"
+                  />
+                </div>
+
+                {/* Content */}
+                <div className="w-full sm:w-1/2 p-4 flex flex-col justify-between text-white">
+                  <div>
+                    <h2 className="text-base font-bold mb-2 uppercase leading-tight">
+                      {promoSlides[promoIndex].title}
+                    </h2>
+
+                    <div className="flex gap-2 mb-3 text-[11px]">
+                      <div className="flex-1 border border-white/40 p-1.5 rounded bg-white/5">
+                        One Way <br/><b>AED {promoSlides[promoIndex].price1}</b>
+                      </div>
+                      <div className="flex-1 border border-white/40 p-1.5 rounded bg-white/5">
+                        Round Trip <br/><b>AED {promoSlides[promoIndex].price2}</b>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a
+                    href="/air-tickets"
+                    className="bg-white text-[#005a31] font-black py-2 px-4 rounded-lg text-sm text-center block shadow-md active:scale-95 transition-transform"
+                  >
+                    Book Now
+                  </a>
+                </div>
+
+              </motion.div>
+            </AnimatePresence>
+
+            {/* Indicators */}
+            <div className="absolute bottom-2 right-3 flex gap-1.5 z-20">
+              {promoSlides.map((_, i) => (
+                <div
+                  key={i}
+                  className={`h-1.5 w-1.5 rounded-full transition-all ${
+                    i === promoIndex ? 'bg-white w-4' : 'bg-white/40'
+                  }`}
+                />
+              ))}
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
 
       {/* ================= BOTTOM CAROUSEL ================= */}
       <div className="bg-white py-10 px-4">
