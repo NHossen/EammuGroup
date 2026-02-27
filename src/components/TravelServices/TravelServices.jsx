@@ -13,10 +13,14 @@ const TravelServices = () => {
 
   // Data for Special Offers (Airlines)
   const offerData = [
-    { id: 1, title: "Fly to New Destinations with Up Up To 62% Off", logo: "https://hblimg.mmtcdn.com/content/hubble/img/bangkok/mmt/destination/m_Bangkok-landscape_l_400_640.jpg", color: "bg-blue-900", link: "/offers" },
-    { id: 2, title: "Get Up to 22% Discount on Selected European Routes", logo: "https://img.freepik.com/free-photo/beautiful-girl-standing-boat-looking-mountains-ratchaprapha-dam-khao-sok-national-park-surat-thani-province-thailand_335224-849.jpg?semt=ais_user_personalization&w=740&q=80", color: "bg-orange-700", link: "/offers" },
-    { id: 3, title: "Fly to Top Destinations with Up to 48% Off This Eid", logo: "https://media.istockphoto.com/id/1011241694/photo/thai-traditional-wooden-longtail-boat-and-beautiful-sand-beach.jpg?s=612x612&w=0&k=20&c=3Al0xNJgX7LXSiNFbbZFLG2DcHIEtO_XDdgvvRBImUk=", color: "bg-blue-800", link: "/offers" },
-    { id: 4, title: "Fly to Top Destinations with Up to 48% Off This Eid", logo: "https://img.freepik.com/premium-photo/dubai-skyline-evening_114775-22.jpg?semt=ais_user_personalization&w=740&q=80", color: "bg-blue-800", link: "/offers" },
+    { id: 1, title: "Fly to New Destinations with Up To 33% Off", logo: "https://hblimg.mmtcdn.com/content/hubble/img/bangkok/mmt/destination/m_Bangkok-landscape_l_400_640.jpg", color: "bg-blue-900", link: "/offers" },
+    { id: 2, title: "Get Up to 32% Discount on Selected European Routes", logo: "https://img.freepik.com/free-photo/beautiful-girl-standing-boat-looking-mountains-ratchaprapha-dam-khao-sok-national-park-surat-thani-province-thailand_335224-849.jpg?semt=ais_user_personalization&w=740&q=80", color: "bg-orange-700", link: "/offers" },
+    { id: 3, title: "Best airline ticket offers for domestic flights With 15% off", logo: "/airline-discount-offer.webp", color: "bg-blue-800", link: "/offers" },
+    { id: 5, title: "Get Exclusive Deals on International Flights", logo: "https://img.freepik.com/premium-photo/airplane-landing-sunset_114775-23.jpg?semt=ais_user_personalization&w=740&q=80", color: "bg-blue-800", link: "/offers" },
+    { id: 6, title: "Book cheap flights to top international destinations today.", logo: "/cheapflights_eammu_offer.webp", color: "bg-blue-800", link: "/offers" },
+    { id: 7, title: "Fly to new destinations with exclusive travel discounts get Up to 48% Off This Eid", logo: "https://media.istockphoto.com/id/1011241694/photo/thai-traditional-wooden-longtail-boat-and-beautiful-sand-beach.jpg?s=612x612&w=0&k=20&c=3Al0xNJgX7LXSiNFbbZFLG2DcHIEtO_XDdgvvRBImUk=", color: "bg-blue-800", link: "/offers" },
+    { id: 8, title: "Travel the world with unbeatable airfare deals with Up to 38% Off This Eid", logo: "https://img.freepik.com/premium-photo/dubai-skyline-evening_114775-22.jpg?semt=ais_user_personalization&w=740&q=80", color: "bg-blue-800", link: "/offers" },
+    
   ];
 
   const visaRef = useRef(null);

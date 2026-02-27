@@ -14,30 +14,32 @@ const HeroSection = () => {
     "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1920&q=80",
     "https://www.thailand.go.th/uploads/posts/photo_1684338552_1.jpeg",
     "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80",
+    "https://eammu.com/eammu_banner.webp",
+    
     
     
   ];
 
   // Data for inner promo carousel
   const promoSlides = [
-    { id: 1, title: "SHARJAH & YEREVAN", price1: "799", price2: "1450", img: "https://cms.musafir.com/uploads/temple-of-garni5ee506e413a06dce84b1ff000062a8f2_6aj8h4iejdl.jpg" },
-    { id: 2, title: "DUBAI TRIP", price1: "599", price2: "1100", img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" },
-    { id: 3, title: "DHAKA TO DUBAI", price1: "699", price2: "1200", img: "https://tripjive.com/wp-content/uploads/2024/09/Khasia-Polli-in-Sylhet-travel-guide-1024x585.jpg" },
-    { id: 4, title: "JAPAN TOUR", price1: "2699", price2: "4200", img: "https://japandeluxetours.com/uploads/2025/10/20251009212409_68e827f99d19b.jpg" },
-    { id: 5, title: "Eammu TOUR", price1: "2699", price2: "4200", img: "https://japandeluxetours.com/uploads/2025/10/20251009212409_68e827f99d19b.jpg" },
+    { id: 1, title: "SHARJAH TO YEREVAN", price1: "135", price2: "255", img: "https://cms.musafir.com/uploads/temple-of-garni5ee506e413a06dce84b1ff000062a8f2_6aj8h4iejdl.jpg" },
+    { id: 2, title: "DUBAI TO DHAKA", price1: "110", price2: "300", img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" },
+    { id: 3, title: "DHAKA TO DUBAI", price1: "300", price2: "355", img: "https://tripjive.com/wp-content/uploads/2024/09/Khasia-Polli-in-Sylhet-travel-guide-1024x585.jpg" },
+    { id: 4, title: "JAPAN TO DHAKA", price1: "499", price2: "999", img: "https://japandeluxetours.com/uploads/2025/10/20251009212409_68e827f99d19b.jpg" },
+    { id: 5, title: "DHAKA TO MALDIVES", price1: "299", price2: "499", img: "https://afar.brightspotcdn.com/dims4/default/3da8482/2147483647/strip/true/crop/3000x1500+0+369/resize/1440x720!/quality/90/?url=https%3A%2F%2Fk3-prod-afar-media.s3.us-west-2.amazonaws.com%2Fbrightspot%2Fb2%2Ff4%2F9a1ebe3f427f8e5eb937f8df8998%2Ftravelguides-maldives-videomediastudioeurope-shutterstock.jpg" },
   ];
 
   // Bottom carousel
   const bottomSlides = [
     { id: 1, title: "MEXICO VISA", img: "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/70/7b/ac.jpg",link: "/visa-services" },
     { id: 2, title: "SINGAPORE VISA", img: "https://www.agoda.com/wp-content/uploads/2019/06/Singapore-Itinerary-Marina-Bay-Sands.jpg",link: "/singapore-visa-application" },
-    { id: 3, title: "THAILAND TOUR", img: "/eammu_evisa_offer.webp" ,link: "/tour-packages" },
+    { id: 3, title: "E-VISA", img: "/eammu_evisa_offer.webp" ,link: "/tour-packages" },
     { id: 4, title: "SYLHET TOUR", img: "https://royalbengaltours.com/wp-content/uploads/2017/08/Cycle-through-the-most-beautiful-tea-estates-of-Sreemangal-and-Sylhet-area.webp" ,link: "/tour-packages" },
     { id: 5, title: "DHAKA TOUR", img: "https://toursntripsbd.com/wp-content/uploads/2016/06/PB100664-180x152-1.jpg",link: "/tour-packages" },
     { id: 6, title: "DESERT SAFARI", img: "https://res.klook.com/image/upload/q_85/c_fill,w_750/v1666942368/blog/gu90kcnlehlie93a2mks.jpg",link: "/tour-packages" },
     { id: 7, title: "ARMENIA VISA", img: "https://www.gokite.travel/wp-content/uploads/2021/05/Armenia-tour-packages-from-dubai_11zon-870x480.webp",link: "/armenia-visa-application" },
     { id: 8, title: "EUROPE VISA", img: "https://pmlholidays.com/admin/production/images/blogs/Europe.jpg",link: "/europe-visa-application" },
-    { id: 9, title: "EMI Eammu Holidays", img: "/eammu_emi_offer.webp",link: "/offers" },
+    { id: 9, title: "EMI", img: "/eammu_emi_offer.webp",link: "/offers" },
   ];
 
   const [bgIndex, setBgIndex] = useState(0);
@@ -98,7 +100,7 @@ const HeroSection = () => {
             "address": {
               "@type": "PostalAddress",
               "addressLocality": "Dhaka",
-              "addressCountry": "BD"
+              "addressCountry": "bangladesh"
             },
             "telephone": "+8801631312524",
             "priceRange": "$$"
@@ -107,7 +109,7 @@ const HeroSection = () => {
       </Helmet>
 
    {/* ================= HERO SECTION ================= */}
-<div className="relative w-full bg-gradient-to-br from-[#003d22] via-[#005a31] to-[#008a4a] overflow-hidden">
+<div className="relative w-full bg-gradient-to-br from-[#0181a8] via-[#074901] to-[#c4da00] overflow-hidden">
 
   {/* ================= BACKGROUND SLIDER ================= */}
   <div className="absolute inset-0 z-0">
@@ -214,10 +216,10 @@ const HeroSection = () => {
 
                     <div className="flex gap-2 mb-3 text-[11px]">
                       <div className="flex-1 border border-white/40 p-1.5 rounded bg-white/5">
-                        One Way <br/><b>AED {promoSlides[promoIndex].price1}</b>
+                        One Way <br/><b>USD {promoSlides[promoIndex].price1}</b>
                       </div>
                       <div className="flex-1 border border-white/40 p-1.5 rounded bg-white/5">
-                        Round Trip <br/><b>AED {promoSlides[promoIndex].price2}</b>
+                        Round Trip <br/><b>USD {promoSlides[promoIndex].price2}</b>
                       </div>
                     </div>
                   </div>
@@ -264,7 +266,7 @@ const HeroSection = () => {
             {bottomSlides.map((slide, index) => (
               <motion.div 
                 key={index}
-                className="snap-center min-w-[85%] sm:min-w-[60%] md:min-w-[30%] h-48 rounded-xl overflow-hidden relative shadow-md"
+                className="snap-center min-w-[125%] sm:min-w-[70%] md:min-w-[40%] h-48 rounded-xl overflow-hidden relative shadow-md"
                 whileHover={{ scale: 1.02 }}
               >
                 <a href={slide.link}>
