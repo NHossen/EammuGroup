@@ -6,6 +6,7 @@ import WhyChoiceEammu from "./WhyChoiceEammu";
 import VisaPhotoGallery from "./VisaPhotoGallery";
 import HeroSection from "../HeroSection/HeroSection";
 import TravelServices from "../TravelServices/TravelServices";
+import LandingModal from "../LandingModal/LandingModal";
 
 const Home = () => {
   // ✅ Structured Data (Google-compliant JSON-LD)
@@ -107,6 +108,7 @@ const Home = () => {
       </Helmet>
 
       {/* ================= PAGE SECTIONS ================= */}
+      <LandingModal />
       {/* Hero Carousel */}
       <HeroSection />
       {/* Travel Services */}
