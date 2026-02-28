@@ -75,7 +75,7 @@ const TravelAgencyBangladesh = () => {
           <div className="absolute inset-0 z-0">
             <img 
               src="https://images.unsplash.com/photo-1590603740183-980e7f6920eb?auto=format&fit=crop&q=80" 
-              alt="Travel Agency in Bangladesh - Eammu Holidays" 
+              alt="Travel Agency in Bangladesh" 
               className="w-full h-full object-cover"
               loading="lazy"
             />

@@ -10,7 +10,7 @@ const offices = [
     whatsapp: "+8801631312524",
     email: ["bangladesh@eammu.com", "info@eammu.com"],
     map: "https://www.google.com/maps?q=Gomoti+Tower,+Cumilla&output=embed",
-    website: "/travel-agency-bangladesh",
+    website: "https://eammu.com/travel-agency-bangladesh",
   },
   {
     location: "Business Bay, Dubai, UAE",
@@ -19,7 +19,7 @@ const offices = [
     whatsapp: "+971507078334",
     email: ["dubai@eammu.com", "info@eammu.com"],
     map: "https://www.google.com/maps?q=Business+Bay,+Dubai&output=embed",
-    website: "/travel-agency-dubai",
+    website: "https://eammu.com/travel-agency-dubai",
   },
   {
     location: "Lambron 39, Yerevan, Armenia",
@@ -28,7 +28,7 @@ const offices = [
     whatsapp: "+37494810585",
     email: ["armenia@eammu.com", "info@eammu.com"],
     map: "https://www.google.com/maps?q=Lambron+39,+Yerevan&output=embed",
-    website: "/travel-agency-armenia",
+    website: "https://eammu.com/travel-agency-armenia",
   },
   {
     location: "Tbilisi, Georgia",
@@ -37,15 +37,15 @@ const offices = [
     whatsapp: "+995574446218",
     email: ["georgia@eammu.com", "info@eammu.com"],
     map: "https://www.google.com/maps?q=Tbilisi,+Georgia&output=embed",
-    website: "/travel-agency-georgia",
+    website: "https://eammu.com/travel-agency-georgia",
   },
 ];
 
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "TravelAgency",
-  "name": "Eammu Holidays",
-  "alternateName": "Eammu Immigration",
+  "name": "Eammu Holidays Cumilla",
+  "alternateName": "Eammu Holidays Travel Agency Cumilla",
   "url": "https://eammu.com",
   "logo": "https://eammu.com/logo.png",
   "description": "Premium travel agency in Bangladesh providing student visa, tourist visa, and international tour packages.",
@@ -144,10 +144,10 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Leading Travel Agency Bangladesh | Travel Agency Dhaka </title>
+        <title>Leading Travel Agency Bangladesh | Travel Agency Dhaka | Travel Agency Cumilla</title>
         <meta
           name="description"
-          content="Bangladesh's leading online travel agency. Book air tickets, hotels, tour packages & more without any hassle at the most affordable rates with Eammu Holidays."
+          content="Bangladesh's leading online travel agency. Book air tickets, hotels, tour packages & more without any hassle at the most affordable rates with Eammu Holidays.Leading travel agency in Cumilla"
         />
         <link rel="canonical" href="https://eammu.com/contact" />
 
@@ -172,7 +172,7 @@ const Contact = () => {
   <div className="absolute inset-0 z-0">
     <img 
       src="https://img.freepik.com/premium-photo/airplane-leaves-green-copyspace-background-sustainable-travel-zero-emissions-travel-concept_590464-227044.jpg?semt=ais_user_personalization&w=740&q=80" // Replace with your preferred contact/office image
-      alt="Contact Eammu Background" 
+      alt="Online Travel Agency Cumilla" 
       className="w-full h-full object-cover"
     />
     {/* Overlay to ensure text readability */}
