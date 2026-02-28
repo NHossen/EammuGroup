@@ -5,10 +5,14 @@ import { Helmet } from 'react-helmet'; // Added for SEO
 const TravelServices = () => {
   // Data for Visa Section
   const visaData = [
-    { id: 1, title: "Tourist Visa Assistance by Eammu Holidays", img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=600&q=80", link: "/visa-services", type: "Tourist Visa application" },
-    { id: 2, title: "Study Abroad with Eammu Holidays", img: "https://www.unidirection.com/wp-content/uploads/2019/10/study-abroad.png", link: "/student-visa-application-from-bangladesh", type: "Study Abroad" },
-    { id: 3, title: "IELTS And Visa Interview with Eammu", img: "https://www.ilmprep.com/blog/wp-content/uploads/2024/02/IELTS-Coaching-Dubai.jpg", link: "/target-ielts-and-immigration-center", type: "IELTS And Visa Interview" },
-    { id: 4, title: "Golden Visa UAE Services", img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80", link: "/visa-services", type: "Golden Visa" },
+    { id: 1, title: "Tourist Visa Assistance by Eammu Holidays", img: "https://eam-global.com/wp-content/uploads/2025/03/Tourist-Visa.jpg", link: "/tourist-visa-application-from-bangladesh"},
+    { id: 2, title: "Study Abroad From Bangladesh with Eammu", img: "https://www.unidirection.com/wp-content/uploads/2019/10/study-abroad.png", link: "/student-visa-application-from-bangladesh"},
+    { id: 3, title: "IELTS And Visa Interview Preparation with Eammu", img: "https://galvanizetestprep.com/wp-content/uploads/2019/12/RAJA-KONDAPALLI-1.png", link: "/target-ielts-and-immigration-center"},
+    { id: 4, title: "Higher Study In USA With 70% Scholarship", img: "https://globalgateways.co.in/wp-content/uploads/2025/01/study-abroad-usa.jpg", link: "/student-visa-application-from-bangladesh"},
+    { id: 5, title: "Higher Study In Europe With Full Funded Scholarship", img: "https://www.birtamodeducation.edu.np/wp-content/uploads/2023/06/study_in_europe.jpg", link: "/student-visa-application-from-bangladesh"},
+    { id: 6, title: "Australia Tourist Visa Application By Eammu Holidays", img: "https://static.joonsite.com/careerbrick/2411011532477466.png", link: "/australia-visa-application"},
+    { id: 7, title: "Schengen Visa Assistance By Eammu Holidays", img: "https://citizenshipbyinvestment.news/wp-content/uploads/2024/01/SchengenFeatured-1.jpg", link: "/europe-visa-application"},
+    { id: 8, title: "Study In Russia With Full Funded Govt. Scholarship", img: "https://www.britannicaoverseas.com/storage/uploads/blogs/2025/09/26/study-in-russia_1742025452.webp", link: "/student-visa-application-from-bangladesh"},
   ];
 
   // Data for Special Offers (Airlines)
@@ -42,7 +46,7 @@ const TravelServices = () => {
     const interval = setInterval(() => {
       autoScroll(visaRef);
       autoScroll(offerRef);
-    }, 5000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
@@ -131,9 +135,6 @@ const TravelServices = () => {
               <div key={visa.id} className="min-w-[300px] md:min-w-[380px] snap-start bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col">
                 <a href={visa.link} className="h-44 overflow-hidden relative">
                   <img src={visa.img} className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" alt={visa.type} />
-                  <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-                    <span className="text-white font-black text-2xl drop-shadow-lg">{visa.type}</span>
-                  </div>
                 </a>
                 <div className="p-5 flex flex-col justify-between flex-grow">
                   <p className="text-blue-900 font-bold text-sm md:text-base mb-6 line-clamp-2">{visa.title}</p>
