@@ -96,12 +96,12 @@ const fadeIn = {
 
    {/* Content Layer - Same original text, no changes */}
   <div className="relative z-10">
-    <h2 className="text-3xl md:text-4xl font-extrabold text-[#ffffff] mb-4">
-      Official Eammu Travel Feed
-    </h2>
+    <h1 className="text-3xl md:text-4xl font-extrabold text-[#ffffff] mb-4">
+      Official Eammu Travel News
+    </h1>
     <div className="w-24 h-1 bg-green-600 mx-auto rounded-full mb-4"></div>
     <p className="text-white font-medium max-w-2xl mx-auto">
-      Real-time updates, visa alerts, and travel insights fetched directly from our official newsroom.
+      Real-time Visa updates, visa alerts, and travel insights fetched directly from our official newsroom.Our Travel Agency helps travelers to safe travel.
     </p>
   </div>
     
@@ -118,7 +118,7 @@ const fadeIn = {
         {/* FAQ Section */}
       <section className="mt-24 bg-green-50 rounded-3xl p-8 md:p-12 border border-green-100">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-extrabold text-[#005a31]">Expert Travel Insights</h2>
+          <h2 className="text-3xl font-extrabold text-[#005a31]">Expert Travel Guidelines</h2>
           <p className="mt-4 text-gray-600">Got questions? We have the answers from our visa specialists.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

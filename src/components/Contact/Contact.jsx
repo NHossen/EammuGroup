@@ -45,7 +45,7 @@ const schemaData = {
   "@context": "https://schema.org",
   "@type": "TravelAgency",
   "name": "Eammu Holidays Cumilla",
-  "alternateName": "Eammu Holidays Travel Agency Cumilla",
+  "alternateName": "Travel Agency Cumilla",
   "url": "https://eammu.com",
   "logo": "https://eammu.com/logo.png",
   "description": "Premium travel agency in Bangladesh providing student visa, tourist visa, and international tour packages.",
@@ -181,8 +181,8 @@ const Contact = () => {
 
   {/* Content Layer */}
   <div className="relative z-10">
-    <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-white drop-shadow-sm">
-      Eammu Holidays
+    <h1 className="text-4xl md:text-4xl font-extrabold mb-4 text-white drop-shadow-sm">
+      Eammu Holidays Contact Information | Our Travel Agency Offices Worldwide  
     </h1>
     <p className="text-lg text-white max-w-2xl mx-auto font-medium leading-relaxed">
   Connect with Eammu Holidays for trusted travel and business support services. Whether you're planning to study abroad, applying for visas, seeking expert IT consultation, or looking for reliable partnership opportunities, our team is ready to assist you with fast, professional, and personalized solutions.
@@ -248,7 +248,7 @@ const Contact = () => {
         href={office.website} 
         className="bg-green-800 text-white px-4 py-2 rounded"
       >
-        Visit Website
+        🌍 Visit Website
       </a>
                 </div>
     

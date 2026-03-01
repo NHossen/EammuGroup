@@ -11,7 +11,7 @@ const TravelAgencyBangladesh = () => {
     <>
       <Helmet>
         <title>Top Travel Agency in Bangladesh | Travel Agency in Chattogram | Travel Agency Comilla</title>
-        <meta name="description" content="Eammu Holidays is the best online travel agency for one-stop air ticket purchases, hotel bookings, tour packages, and visa processing.Leading Travel Agency in Dhaka, Bangladesh" />
+        <meta name="description" content="Eammu Holidays is the best online travel agency in Cumilla and Bangladesh for one-stop air ticket purchases, hotel bookings, tour packages, and visa processing.Leading Travel Agency in Dhaka, Bangladesh" />
         <link rel="canonical" href="https://eammu.com/travel-agency-bangladesh" />
 
     {/* Structured Data: TravelAgency + FAQ Schema */}
@@ -152,7 +152,7 @@ const TravelAgencyBangladesh = () => {
         {/* Popular Bangladesh Tours */}
 <section className="py-16 sm:py-20 px-4 sm:px-6 max-w-7xl mx-auto">
   <div className="text-center mb-12 sm:mb-16">
-    <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#005a31] mb-3 sm:mb-4">Popular Bangladesh Tours</h2>
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#005a31] mb-3 sm:mb-4">Popular Tours In Bangladesh</h2>
     <div className="w-16 sm:w-20 h-1.5 bg-yellow-500 mx-auto"></div>
   </div>
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
-import { CheckCircle, Globe, Plane, ShieldCheck, MapPin, PhoneCall, MessageCircle, Mail, Clock, Briefcase, Camera, Building2 } from 'lucide-react';
+import { CheckCircle, Plane, ShieldCheck, MapPin, PhoneCall, MessageCircle, Mail,Camera, Building2 } from 'lucide-react';
 
 const TravelAgencyArmenia = () => {
   const fadeInUp = { hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } };
@@ -19,7 +19,7 @@ const TravelAgencyArmenia = () => {
   <link rel="canonical" href="https://eammu.com/travel-agency-armenia" />
 
   {/* Open Graph */}
-  <meta property="og:title" content="Top Travel Agency in Armenia | Eammu Holidays Yerevan" />
+  <meta property="og:title" content="Top Travel Agency in Armenia | Armenia Travel Agency Yerevan" />
   <meta 
     property="og:description" 
     content="Experience Armenia with Eammu Holidays. From visa processing to luxury tours, hotel bookings, and air tickets, we ensure seamless travel across Yerevan and beyond." 
@@ -81,11 +81,11 @@ const TravelAgencyArmenia = () => {
           <div className="w-full lg:w-1/2 bg-[#005a31] p-6 sm:p-12 lg:p-24 flex flex-col justify-center">
             <motion.div initial="hidden" animate="visible" variants={fadeInUp}>
               <span className="text-orange-500 font-bold tracking-widest uppercase text-xs mb-3 sm:mb-4 block">Certified Caucasus Experts</span>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 sm:mb-6 leading-snug sm:leading-tight">
-                Premier Travel <br/> Agency in <span className="text-orange-400">Armenia</span>
+              <h1 className="text-3xl sm:text-4xl md:text-3xl lg:text-4xl font-black text-white mb-4 sm:mb-6 leading-snug sm:leading-tight">
+                Premier Travel <br/> Agency in <span className="text-orange-400"> Armenia</span>
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-white/80 mb-6 sm:mb-10 max-w-md sm:max-w-lg leading-relaxed">
-                Experience the magic of Yerevan with Eammu Holidays. From visa processing to luxury tours, we are your 24/7 partner at Lambron 39.
+                Experience the magic of Yerevan with Eammu Holidays. From visa processing to luxury tours, we are your 24/7 partner at Lambron 39. Premium travel agency in armenia - we provide expert travel and visa services in Yerevan, Armenia. Book Armenia tours, hotels, and air tickets with trusted local assistance.
               </p>
               <div className="flex flex-wrap gap-3 sm:gap-4">
                 <button className="bg-orange-500 hover:bg-white hover:text-[#005a31] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold transition-all shadow-lg">
@@ -120,7 +120,7 @@ const TravelAgencyArmenia = () => {
         {/* Services Section */}
         <section className="py-16 sm:py-20 px-4 sm:px-6 max-w-7xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#005a31] mb-3 sm:mb-4">Unmatched Services in Yerevan</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#005a31] mb-3 sm:mb-4">Travel Services in Yerevan</h2>
             <div className="w-16 sm:w-20 h-1.5 bg-orange-500 mx-auto"></div>
           </div>
 

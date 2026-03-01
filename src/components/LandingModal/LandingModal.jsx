@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from "react-helmet";
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, CheckCircle } from 'lucide-react';
 import { toast, Toaster } from 'react-hot-toast';
@@ -45,6 +46,17 @@ const LandingModal = () => {
   return (
     <>
       <Toaster />
+      <Helmet>
+        {/* Dynamic SEO for Home Page Entry */}
+        <title>Cumilla Travel Agency | Bangladesh Travel Agency | Dhaka Travel Agency</title>
+        <meta name="description" content="Eammu Holidays for exclusive international tour packages, visa assistance, and flight deals. Subscribe now for 2026 holiday offers!" />
+        <meta name="keywords" content="Eammu Holidays, Travel Agency Bangladesh, Dubai Tour Packages, Visa Processing Dhaka, Cheap Flights 2026" />
+        
+        {/* Open Graph for Social Sharing */}
+        <meta property="og:title" content="Eammu Holidays - Your Global Travel Partner" />
+        <meta property="og:description" content="Sign up today for member-only travel discounts and visa updates." />
+        <meta property="og:image" content="https://eammu.com/og-home-image.jpg" />
+      </Helmet>
       <AnimatePresence>
         {isOpen && (
           <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">

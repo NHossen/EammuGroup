@@ -25,10 +25,10 @@ const About = () => {
     <>
 <Helmet>
   {/* Primary SEO */}
-  <title>Eammu Holidays Bangladesh | Premium Travel Agency Bangladesh </title>
+  <title>Eammu Holidays Bangladesh | Premium Travel Agency Bangladesh | Global Education Consultancy Bangladesh </title>
   <meta
     name="description"
-    content="Eammu Holidays is a Premium global travel Agency in Bangladesh - providing visa services, student visas, work permits, holiday packages, tours, and international relocation solutions across Bangladesh, Dubai, Europe, and worldwide."
+    content="Eammu Holidays is a Premium global travel Agency in Bangladesh - providing visa services, student visas, work permits, holiday packages, tours, and international relocation solutions across Bangladesh, Dubai, Europe, and worldwide.Eammu is the premium travel agency based on bangladesh."
   />
 
   {/* Canonical & Indexing */}
@@ -40,7 +40,7 @@ const About = () => {
   <meta property="og:title" content="Eammu Holidays Bangladesh | Premium Travel Agency" />
   <meta
     property="og:description"
-    content="Discover Eammu Holidays — your trusted partner for global travel, visa services, immigration solutions, student visas, work permits, and international tours."
+    content="Bangladesh Travel agency — your trusted partner for global travel, visa services, immigration solutions, student visas, work permits, and international tours."
   />
   <meta property="og:url" content="https://eammu.com/about" />
   <meta property="og:site_name" content="Eammu Holidays" />
@@ -48,7 +48,7 @@ const About = () => {
 
   {/* Twitter SEO */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Eammu Holidays | Premium Travel Agency Bangladesh" />
+  <meta name="twitter:title" content="Dhaka Travel Agency | Premium Travel Agency Bangladesh" />
   <meta
     name="twitter:description"
     content="Eammu Holidays provides trusted travel, visa, immigration, student visa, work permit, and global tour services worldwide."
@@ -67,7 +67,7 @@ const About = () => {
         {
           "@type": "Organization",
           "@id": "https://eammu.com/#organization",
-          "name": "Eammu Holidays",
+          "name": "Eammu Holidays Travel Agency Dhaka",
           "url": "https://eammu.com",
           "logo": "https://eammu.com/eammuicon.jpg",
           "image": "https://eammu.com/emf.jpg",
@@ -115,7 +115,7 @@ const About = () => {
   <div className="absolute inset-0 z-0">
     <img
       src="/eammu_banner.webp" 
-      alt="Eammu Global Travel Background"
+      alt="Global Travel Agency Cumilla"
       className="w-full h-full object-cover"
     />
     {/* Dark overlay to ensure your original text stays clear and readable */}
@@ -133,20 +133,19 @@ const About = () => {
       Since 2022
     </span>
 
-    <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-lg">
-    <span className="text-[#018549]">Eammu Holidays</span> — Your Trusted <br />
-      Global Travel & Immigration Partner
+    <h1 className="text-3xl md:text-4xl font-extrabold text-white leading-tight drop-shadow-lg">
+    <span className="text-[#e7d000]">Eammu Holidays</span> Premium Travel Agency Worldwide
     </h1>
 
-    <div className="max-w-3xl mx-auto">
+    <div className="max-w-7xl mx-auto">
       <p className="text-lg md:text-xl text-gray-100 leading-relaxed mt-6">
-        <strong className="text-white">Eammu Holidays</strong> is a professional global travel, tourism, and immigration services company offering 
+        <strong className="text-white">Eammu Holidays</strong> is a professional global travel Agency, tourism, and Visa application services company offering 
         <strong className="text-white"> visa assistance, holiday packages, tour services, work permits, student visas, and international relocation solutions</strong>. 
         We help individuals and businesses access global opportunities with trusted guidance, fast processing, and transparent service.
       </p>
 
       <p className="text-lg md:text-xl text-gray-200 leading-relaxed mt-4">
-        From luxury holidays to global immigration support, Eammu Holidays connects your dreams to destinations worldwide.
+        From luxury holidays to global Travel support, Eammu Holidays connects your dreams to destinations worldwide.
       </p>
     </div>
     
