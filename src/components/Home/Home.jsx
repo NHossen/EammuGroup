@@ -56,7 +56,7 @@ const Home = () => {
       <Helmet>
         {/* ================= SEO ================= */}
         <title>
-          online Visa Support Bangladesh | First travel agency in Bangladesh
+          Online Travel Agency Bangladesh | First travel agency in Bangladesh
         </title>
 
         <meta
@@ -64,8 +64,6 @@ const Home = () => {
           content="Eammu Holidays is the first and one of the leading online travel agency in Bangladesh, established in 2012 with a fully functional digital info structure. We are providing expert visa support for USA, UK, Canada & Europe. Trusted travel agency in Bangladesh & Dubai."
         />
         
-        <meta name="keywords" content="Travel Agency Bangladesh, Visa Consultant Dubai, Student Visa Experts, Work Permit Visa, USA Visa Help, Eammu Holidays" />
-        <link rel="canonical" href="https://eammu.com/" />
         <meta name="robots" content="index, follow" />
 
         {/* ================= Open Graph ================= */}
