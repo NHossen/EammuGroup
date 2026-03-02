@@ -204,8 +204,22 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <HelmetProvider>
       <Suspense fallback={  <div className="flex flex-col items-center justify-center h-screen space-y-4">
-    <div className="w-12 h-12 border-4 border-green-700 border-t-transparent rounded-full animate-spin"></div>
-    <p className="text-green-700 font-bold text-lg">Welcome to Eammu...</p>
+      <div className="text-center py-10 flex flex-col items-center justify-center gap-4">
+    <div className="relative h-28 w-28">
+      {/* Outer spinning ring for extra effect (Optional) */}
+      <div className="absolute inset-0 animate-spin rounded-full border-t-2 border-b-2 border-[#fd8403]"></div>
+      
+      {/* Your Animated Logo */}
+      <img 
+        src="/eammu_holidays_logo.webp" 
+        alt="Loading..." 
+        className="h-full w-full object-contain animate-pulse px-2" 
+      />
+    </div>
+    <p className="text-[#005a31] font-bold text-lg animate-bounce">
+      Welcome To Eammu ...
+    </p>
+  </div>
   </div>}>
         <RouterProvider router={router} />
       </Suspense>

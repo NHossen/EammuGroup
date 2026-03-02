@@ -8,6 +8,8 @@ import HeroSection from "../HeroSection/HeroSection";
 import TravelServices from "../TravelServices/TravelServices";
 import LandingModal from "../LandingModal/LandingModal";
 
+
+
 const Home = () => {
   // ✅ Structured Data (Google-compliant JSON-LD)
   const structuredData = {
