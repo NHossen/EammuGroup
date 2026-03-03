@@ -7,12 +7,6 @@ import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom"
 import { HelmetProvider } from 'react-helmet-async';
 
 
-
-
-
-
-
-
 // =================== LAZY LOAD ALL PAGES ===================
 
 // Main Pages

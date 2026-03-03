@@ -26,6 +26,8 @@ const routes = [
   '/air-tickets',
   '/tour-packages',
   '/offers',
+  '/activities',
+
 
   // ===== IMMIGRATION =====
   '/immigration-services',

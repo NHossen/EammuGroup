@@ -10,8 +10,8 @@ const AzerbaijanVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Azerbaijan Visa Application From Dubai | ASAN e-Visa 2026</title>
-        <meta name="description" content="Apply for your Azerbaijan e-Visa (ASAN Visa) in 2026. Expert consultancy for Dubai residents, document verification, and 3-hour urgent processing options." />
+        <title>Azerbaijan Visa Application | E Visa Application Online</title>
+        <meta name="description" content="Azerbaijan e-Visa (ASAN Visa) Application in 2026. Expert consultancy for Dubai residents, document verification, and 3-hour urgent processing options." />
         <link rel="canonical" href="https://eammu.com/azerbaijan-visa-application" />
       </Helmet>
 
@@ -32,7 +32,7 @@ const AzerbaijanVisa = () => {
                 </span>
             </div>
             <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Republic of <span className="text-orange-500">Azerbaijan</span> e-Visa
+             Azerbaijan <span className="text-orange-500"> e-visa </span> Application
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
               Explore the historic streets of Baku and the peaks of the Caucasus. We process your ASAN e-Visa with 100% accuracy and rapid turnaround.
@@ -56,7 +56,7 @@ const AzerbaijanVisa = () => {
             <div className="flex flex-col items-center mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <PlayCircle className="text-orange-500" size={32} />
-                <h2 className="text-4xl font-black text-[#005a31] uppercase">Baku Visa Insights</h2>
+                <h2 className="text-4xl font-black text-[#005a31] uppercase">Azerbaijan Visa Insights</h2>
               </div>
               <p className="text-gray-500 text-center max-w-2xl italic font-medium">Expert tutorials on the ASAN Visa system, mandatory registration rules, and the 2026 Baku entry protocols.</p>
             </div>
@@ -86,7 +86,7 @@ const AzerbaijanVisa = () => {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center gap-4 mb-12 border-b border-gray-100 pb-6">
               <ImageIcon className="text-orange-500" size={32} />
-              <h2 className="text-4xl font-black text-[#005a31] uppercase">Azeri Pathways</h2>
+              <h2 className="text-4xl font-black text-[#005a31] uppercase">Azerbaijan Visa Pathways</h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -164,7 +164,7 @@ const AzerbaijanVisa = () => {
                 <div className="bg-[#005a31] p-3 rounded-2xl text-white shadow-lg">
                   <ClipboardList size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Requirement Checklist</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Azerbaijan Visa Requirement Checklist</h2>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

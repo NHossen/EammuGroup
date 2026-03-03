@@ -10,8 +10,8 @@ const BrazilVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Brazil Visa Application From Dubai | Tourist & Business Visa 2026</title>
-        <meta name="description" content="Apply for your Brazil Tourist visa or e-Visa in 2026. Expert consultancy for VFS appointments, document verification, and fast-track processing for Dubai residents." />
+        <title>Brazil Visa Application From Bangladesh | Tourist and Business Visa Application</title>
+        <meta name="description" content="Brazil Visa Application From Bangladesh ,Apply for your Brazil Tourist visa or e-Visa in 2026. Expert consultancy for VFS appointments, document verification, and fast-track processing for Dubai residents." />
         <link rel="canonical" href="https://eammu.com/brazil-visa-application" />
       </Helmet>
 
@@ -32,7 +32,7 @@ const BrazilVisa = () => {
                 </span>
             </div>
             <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Federative Republic of <span className="text-orange-500">Brazil</span> Visa
+             Republic of <span className="text-orange-500">Brazil</span> Visa
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
               From the Amazon rainforest to the beaches of Rio. Navigate the Brazilian visa system for tourism, business, or digital nomad stays with expert precision.
@@ -164,7 +164,7 @@ const BrazilVisa = () => {
                 <div className="bg-[#005a31] p-3 rounded-2xl text-white shadow-lg">
                   <ClipboardList size={28} />
                 </div>
-                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Requirement Checklist</h2>
+                <h2 className="text-3xl font-black text-[#005a31] uppercase tracking-tight">Brazil Visa Application Requirement Checklist</h2>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

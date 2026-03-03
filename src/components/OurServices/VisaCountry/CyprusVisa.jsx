@@ -10,7 +10,7 @@ const CyprusVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Cyprus Visa Application From Dubai | Tourist & Business Visa 2026</title>
+        <title>Cyprus Visa Application Dhaka | Study Cyprus From Bangladesh | Education Consultancy Bangladesh</title>
         <meta name="description" content="Apply for your Cyprus Tourist visa in 2026. Expert consultancy for VFS Global appointments, document verification, and fast-track processing for Dubai residents." />
         <link rel="canonical" href="https://eammu.com/cyprus-visa-application" />
       </Helmet>
