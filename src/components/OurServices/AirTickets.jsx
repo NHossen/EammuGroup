@@ -305,69 +305,83 @@ const [currentIndex, setCurrentIndex] = useState(0);
     {/* Search Form */}
     <form onSubmit={handleSearch} className="flex flex-col lg:flex-row gap-2 items-stretch">
 
-      {/* FROM */}
-      <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-2 relative">
-        <div className="relative border border-gray-200 rounded-lg p-3 hover:border-blue-400 transition-all">
-          <span className="text-[10px] font-bold text-gray-400 uppercase block">From</span>
-          <input
-            type="text"
-            value={inputNames.from}
-            onChange={(e) => setInputNames({...inputNames, from: e.target.value.toUpperCase()})}
-            placeholder="DAC"
-            className="w-full bg-transparent outline-none font-bold text-gray-700"
-            required
-          />
+     {/* FROM & TO CONTAINER */}
+<div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-0 bg-white rounded-xl border border-emerald-900/20 overflow-hidden shadow-md">
+  
+  {/* FROM */}
+  <div className="relative group p-4 border-r border-gray-100 hover:bg-emerald-50/40 transition-all">
+    <span className="text-[10px] font-black text-emerald-800/70 uppercase tracking-[0.15em] block mb-1">From</span>
+    <input
+      type="text"
+      value={inputNames.from}
+      onChange={(e) => setInputNames({...inputNames, from: e.target.value.toUpperCase()})}
+      placeholder="DAC"
+      className="w-full bg-transparent outline-none font-bold text-gray-800 placeholder:text-gray-300 text-lg tracking-tight"
+      required
+    />
 
-          {suggestions.from.length > 0 && (
-            <ul className="absolute left-0 top-full z-[999] w-full bg-white shadow-2xl rounded-xl mt-1 border border-gray-100 overflow-hidden">
-              {suggestions.from.map((loc) => (
-                <li
-                  key={loc.id}
-                  onClick={() => {
-                    setInputNames({...inputNames, from: `${loc.name} (${loc.iataCode})`});
-                    setSuggestions({...suggestions, from: []});
-                  }}
-                  className="p-3 hover:bg-blue-50 cursor-pointer text-sm border-b flex justify-between"
-                >
-                  <span>{loc.name}</span>
-                  <span className="font-bold text-blue-700">{loc.iataCode}</span>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
+    {suggestions.from.length > 0 && (
+      <ul className="absolute left-0 top-full z-[999] w-full bg-white shadow-2xl rounded-xl mt-2 border border-emerald-900/10 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
+        {suggestions.from.map((loc) => (
+          <li
+            key={loc.id}
+            onClick={() => {
+              setInputNames({...inputNames, from: `${loc.name} (${loc.iataCode})`});
+              setSuggestions({...suggestions, from: []});
+            }}
+            className="p-4 hover:bg-emerald-800 hover:text-white cursor-pointer group/item border-b border-gray-50 flex justify-between items-center transition-colors"
+          >
+            <div className="flex flex-col">
+              <span className="text-sm font-semibold">{loc.name}</span>
+              <span className="text-[10px] opacity-70 group-hover/item:text-emerald-100 uppercase tracking-tighter">Airport Terminal</span>
+            </div>
+            <span className="font-black text-emerald-700 group-hover/item:text-white bg-emerald-50 group-hover/item:bg-emerald-700/50 px-2 py-1 rounded text-xs transition-all">
+              {loc.iataCode}
+            </span>
+          </li>
+        ))}
+      </ul>
+    )}
+    <div className="absolute bottom-0 left-0 h-0.5 bg-emerald-800 w-0 group-hover:w-full transition-all duration-500" />
+  </div>
 
-        {/* TO */}
-        <div className="relative border border-gray-200 rounded-lg p-3 hover:border-blue-400 transition-all">
-          <span className="text-[10px] font-bold text-gray-400 uppercase block">To</span>
-          <input
-            type="text"
-            value={inputNames.to}
-            onChange={(e) => setInputNames({...inputNames, to: e.target.value.toUpperCase()})}
-            placeholder="DXB"
-            className="w-full bg-transparent outline-none font-bold text-gray-700"
-            required
-          />
+  {/* TO */}
+  <div className="relative group p-4 hover:bg-emerald-50/40 transition-all">
+    <span className="text-[10px] font-black text-emerald-800/70 uppercase tracking-[0.15em] block mb-1">To</span>
+    <input
+      type="text"
+      value={inputNames.to}
+      onChange={(e) => setInputNames({...inputNames, to: e.target.value.toUpperCase()})}
+      placeholder="DXB"
+      className="w-full bg-transparent outline-none font-bold text-gray-800 placeholder:text-gray-300 text-lg tracking-tight"
+      required
+    />
 
-          {suggestions.to.length > 0 && (
-            <ul className="absolute left-0 top-full z-[999] w-full bg-white shadow-2xl rounded-xl mt-1 border border-gray-100 overflow-hidden">
-              {suggestions.to.map((loc) => (
-                <li
-                  key={loc.id}
-                  onClick={() => {
-                    setInputNames({...inputNames, to: `${loc.name} (${loc.iataCode})`});
-                    setSuggestions({...suggestions, to: []});
-                  }}
-                  className="p-3 hover:bg-blue-50 cursor-pointer text-sm border-b flex justify-between"
-                >
-                  <span>{loc.name}</span>
-                  <span className="font-bold text-blue-700">{loc.iataCode}</span>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-      </div>
+    {suggestions.to.length > 0 && (
+      <ul className="absolute left-0 top-full z-[999] w-full bg-white shadow-2xl rounded-xl mt-2 border border-emerald-900/10 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
+        {suggestions.to.map((loc) => (
+          <li
+            key={loc.id}
+            onClick={() => {
+              setInputNames({...inputNames, to: `${loc.name} (${loc.iataCode})`});
+              setSuggestions({...suggestions, to: []});
+            }}
+            className="p-4 hover:bg-emerald-800 hover:text-white cursor-pointer group/item border-b border-gray-50 flex justify-between items-center transition-colors"
+          >
+            <div className="flex flex-col">
+              <span className="text-sm font-semibold">{loc.name}</span>
+              <span className="text-[10px] opacity-70 group-hover/item:text-emerald-100 uppercase tracking-tighter">Airport Terminal</span>
+            </div>
+            <span className="font-black text-emerald-700 group-hover/item:text-white bg-emerald-50 group-hover/item:bg-emerald-700/50 px-2 py-1 rounded text-xs transition-all">
+              {loc.iataCode}
+            </span>
+          </li>
+        ))}
+      </ul>
+    )}
+    <div className="absolute bottom-0 left-0 h-0.5 bg-emerald-800 w-0 group-hover:w-full transition-all duration-500" />
+  </div>
+</div>
 
  {/* DATES CONTAINER */}
 <div className="flex-[0.8] grid grid-cols-2 gap-0 bg-white rounded-xl border border-emerald-900/20 overflow-hidden shadow-md">
