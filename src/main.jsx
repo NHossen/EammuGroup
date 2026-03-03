@@ -84,7 +84,7 @@ const SerbiaVisa = lazy(() => import('./components/OurServices/VisaCountry/Serbi
 const ThailandVisa = lazy(() => import('./components/OurServices/VisaCountry/ThailandVisa.jsx'));
 const SingaporeVisa = lazy(() => import('./components/OurServices/VisaCountry/SingaporeVisa.jsx'));
 const MalaysiaVisa = lazy(() => import('./components/OurServices/VisaCountry/MalaysiaVisa.jsx'));
-const TurkeyVisa = lazy(() => import('./components/OurServices/VisaCountry/TurkeyVisa.Jsx'));
+const TurkeyVisa = lazy(() => import('./components/OurServices/VisaCountry/TurkeyVisa.jsx'));
 const IndonesiaVisa = lazy(() => import('./components/OurServices/VisaCountry/IndonesiaVisa.jsx'));
 const IndiaVisa = lazy(() => import('./components/OurServices/VisaCountry/IndiaVisa.jsx'));
 const SaudiVisa = lazy(() => import('./components/OurServices/VisaCountry/SaudiVisa.jsx'));
