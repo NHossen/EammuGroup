@@ -369,47 +369,72 @@ const [currentIndex, setCurrentIndex] = useState(0);
         </div>
       </div>
 
- {/* DATES */}
-<div className="flex-[0.8] grid grid-cols-2 gap-2">
-{/* DEPARTURE */}
-<div 
-  onClick={() => departureRef.current.showPicker()} 
-  className="border border-gray-200 rounded-lg p-3 hover:border-blue-400 transition-all relative cursor-pointer flex flex-col justify-center min-h-[64px]"
->
-  <span className="text-xs font-bold text-gray-600 block">Departure</span>
-  <p className="font-bold text-gray-700">{departureDate || "Select Date"}</p>
-
-  <input 
-    ref={departureRef}
-    type="date" 
-    min={today} // Prevents selecting past dates
-    value={departureDate}
-    onChange={(e) => setDepartureDate(e.target.value)}
-    className="absolute inset-0 w-full h-full opacity-0 pointer-events-none"
-    required
-  />
-</div>
-
-{/* RETURN */}
-{tripType === "round-trip" && (
+ {/* DATES CONTAINER */}
+<div className="flex-[0.8] grid grid-cols-2 gap-0 bg-white rounded-xl border border-emerald-900/20 overflow-hidden shadow-md">
+  
+  {/* DEPARTURE CARD */}
   <div 
-    onClick={() => returnRef.current.showPicker()} 
-    className="border border-gray-200 rounded-lg p-3 hover:border-blue-400 transition-all relative cursor-pointer flex flex-col justify-center min-h-[64px]"
+    onClick={() => departureRef.current.showPicker()} 
+    className="group relative flex flex-col justify-center min-h-[70px] p-4 border-r border-gray-100 hover:bg-emerald-50/40 transition-all cursor-pointer"
   >
-    <span className="text-xs font-bold text-gray-600 block">Return</span>
-    <p className="font-bold text-gray-700">{returnDate || "Select Date"}</p>
+    <span className="text-[10px] uppercase tracking-[0.15em] font-black text-emerald-800/70 mb-1">Departure</span>
+    <p className="font-bold text-gray-900">
+      {departureDate ? new Date(departureDate).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }) : "Select Date"}
+    </p>
 
     <input 
-      ref={returnRef}
+      ref={departureRef}
       type="date" 
-      min={departureDate || today} // Prevents return date being before departure
-      value={returnDate}
-      onChange={(e) => setReturnDate(e.target.value)}
-      className="absolute inset-0 w-full h-full opacity-0 pointer-events-none"
+      min={today} 
+      value={departureDate}
+      onChange={(e) => {
+        setDepartureDate(e.target.value);
+        // Reset return date if it becomes invalid compared to new departure
+        if (returnDate && e.target.value > returnDate) {
+          setReturnDate("");
+        }
+      }}
+      className="absolute inset-0 opacity-0 cursor-pointer"
       required
     />
+    <div className="absolute bottom-0 left-0 h-0.5 bg-emerald-800 w-0 group-hover:w-full transition-all duration-500" />
   </div>
-)}
+
+  {/* RETURN CARD */}
+  {tripType === "round-trip" ? (
+    <div 
+      onClick={() => returnRef.current.showPicker()} 
+      className={`group relative flex flex-col justify-center min-h-[70px] p-4 transition-all cursor-pointer ${!departureDate ? 'opacity-50 cursor-not-allowed' : 'hover:bg-emerald-50/40'}`}
+    >
+      <span className="text-[10px] uppercase tracking-[0.15em] font-black text-emerald-800/70 mb-1">Return</span>
+      <p className="font-bold text-gray-900">
+        {returnDate ? new Date(returnDate).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }) : "Add Return"}
+      </p>
+
+      <input 
+        ref={returnRef}
+        type="date" 
+        // RULE: Return min date is tied to Departure Date. 
+        // If no departure is selected, it defaults to 'today' to prevent past selection.
+        min={departureDate || today} 
+        disabled={!departureDate} // Extra protection: can't pick return until departure is set
+        value={returnDate}
+        onChange={(e) => setReturnDate(e.target.value)}
+        className="absolute inset-0 opacity-0 cursor-pointer disabled:cursor-not-allowed"
+        required
+      />
+      
+      {/* Visual Indicator of Connection (Premium Touch) */}
+      {departureDate && returnDate && (
+        <div className="absolute inset-0 bg-emerald-800/5 -z-10" />
+      )}
+      <div className="absolute bottom-0 left-0 h-0.5 bg-emerald-800 w-0 group-hover:w-full transition-all duration-500" />
+    </div>
+  ) : (
+    <div className="flex items-center justify-center bg-gray-50/50 text-[10px] uppercase tracking-widest font-bold text-gray-400">
+      One Way
+    </div>
+  )}
 </div>
 
       {/* SEARCH */}
