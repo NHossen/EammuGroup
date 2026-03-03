@@ -7,184 +7,218 @@ const countries = [
     name: "USA",
     description: "Tourist, Student, and Work visa services for the United States with guidance through DS-160 and I-20 support.",
     image: "https://visadone.com/wp-content/uploads/2023/02/USA-VISA.png",
+    link: "/usa-visa-application",
   },
   {
     name: "United Kingdom",
     description: "Expert support for UK Student visas, Visitor visas, and Skilled Worker routes.",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkgBKQsFv4LdWUzfgaoMj5srhPn0vAuU9X6Q&s",
+    link: "/uk-visa-application",
   },
   {
-    name: "Europe (Schengen)",
+    name: "Schengen",
     description: "Multiple Schengen countries covered under one visa – ideal for students, tourists, and job seekers.",
     image: "https://www.babaaztravels.com/wp-content/uploads/2023/05/Schengen-Visit-Visa-Requirements-Babaaz-Travels.jpeg",
+    link: "/europe-visa-application",
   },
   {
     name: "Canada",
     description: "We assist with SDS and Non-SDS streams, visitor visas, and work permits for Canada.",
     image: "https://pelicanmigration.com/wp-content/uploads/2024/01/Canada-Visitor-Visa.jpg",
+    link: "/canada-visa-application",
   },
   {
     name: "Japan",
     description: "Student and visitor visa assistance with high-quality documentation and embassy submission tips.",
     image: "https://www.babaaztravels.com/wp-content/uploads/2022/04/japan.jpg",
+    link: "/japan-visa-application",
   },
   {
     name: "Albania",
     description: "New trending destination for work and student visas. Visa documentation made easy.",
     image: "https://www.shutterstock.com/image-vector/albania-visa-open-stamped-passport-600nw-2615269851.jpg",
+    link: "/albania-visa-application",
   },
   {
-    name: "Dubai (UAE)",
+    name: "Dubai",
     description: "Tourist visas, freelance permits, and employment visas for UAE. Fast processing.",
     image: "https://canadiangeographic.ca/wp-content/uploads/2022/10/dubai-skyline-1440x1011.jpg",
+    link: "/dubai-visa-application",
   },
   {
     name: "Malaysia",
     description: "Tourist and student visa processing for Malaysia with university admission help.",
     image: "https://travelobiz.com/wp-content/uploads/2023/01/Malaysia-eVisa-with-Map.jpg",
+    link: "/malaysia-visa-application",
   },
   {
-    name: "Thailand & Singapore",
+    name: "Thailand",
     description: "Seamless processing for Thailand and Singapore tourist and short-term business visas.",
     image: "https://www.tmtvisaservicephuket.com/wp-content/uploads/2024/10/Living-Or-Working-In-Thailand-Vs-Singapore-tmt-visa-service-thailand.jpg",
+    link: "/thailand-visa-application",
   },
   {
     name: "Hajj & Umrah",
     description: "Affordable and premium packages for Umrah and Hajj with all required documents and tickets.",
     image: "https://umrahtransport.com/wp-content/uploads/2025/03/how-long-is-umrah-closed-after-hajj.jpg",
+    link: "/saudi-arabia-visa-application",
   },
   {
     name: "Australia",
     description: "Student, work, and tourist visa assistance with pathways to permanent residency.",
     image: "https://www.kkday.com/en-sg/blog/wp-content/uploads/Aussie-VTL-1170x680.jpg",
+    link: "/australia-visa-application",
   },
   {
     name: "New Zealand",
     description: "Expert guidance on student, work, and visitor visas for New Zealand.",
     image: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg",
+    link: "/new-zealand-visa-application",
   },
   {
     name: "South Korea",
     description: "Student exchange, tourist and work visa services with Korean embassy expertise.",
     image: "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg",
+    link: "/south-korea-visa-application",
   },
   {
     name: "Germany",
     description: "Work, study and tourist visa facilitation for Germany with German consulate support.",
     image: "https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg",
+    link: "/germany-visa-application",
   },
   {
     name: "France",
     description: "Visa assistance for French student programs, work permits, and visitor visas.",
     image: "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
+    link: "/europe-visa-application",
   },
   {
     name: "Netherlands",
     description: "Student visa, work visa, and tourist visa services with embassy-approved procedures.",
     image: "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg",
+    link: "/europe-visa-application",
   },
   {
     name: "Italy",
     description: "Comprehensive visa services for study, work, and tourism in Italy.",
     image: "https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg",
+    link: "/europe-visa-application",
   },
   {
     name: "Spain",
     description: "Student, work, and visitor visa services with expert documentation help.",
     image: "https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg",
+    link: "/spain-visa-application",
   },
   {
     name: "Sweden",
     description: "Student and work visa assistance for Sweden’s top universities and companies.",
     image: "https://upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg",
+    link: "/europe-visa-application",
   },
   {
     name: "Norway",
     description: "Tourist, work, and study visa facilitation for Norway with personalized service.",
     image: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg",
+    link: "/europe-visa-application",
   },
   {
     name: "Ireland",
     description: "Visa services for students, workers, and tourists planning to visit Ireland.",
     image: "https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg",
+    link: "/europe-visa-application",
   },
   {
     name: "Portugal",
     description: "Student, work and travel visa support for Portugal with local expertise.",
     image: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg",
+    link: "/portugal-visa-application",
   },
   {
     name: "Belgium",
     description: "Work, study and tourist visa services for Belgium with efficient processing.",
     image: "https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg",
+    link: "/europe-visa-application",
   },
   {
     name: "Switzerland",
     description: "Visa guidance for Switzerland’s academic and professional opportunities.",
     image: "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg",
+    link: "/europe-visa-application",
   },
   {
     name: "Austria",
     description: "Comprehensive visa support for Austrian study, work, and tourist visas.",
     image: "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg",
+    link: "/europe-visa-application",
   },
   {
     name: "Poland",
     description: "Visa facilitation for Poland’s growing student and work visa programs.",
     image: "https://upload.wikimedia.org/wikipedia/en/1/12/Flag_of_Poland.svg",
+    link: "/europe-visa-application",
   },
   {
     name: "Czech Republic",
     description: "Work, study and tourist visa assistance for the Czech Republic.",
     image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg",
+    link: "/europe-visa-application",
   },
   {
     name: "Greece",
     description: "Tourist, study, and work visa services with Greek embassy documentation help.",
     image: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg",
+    link: "/europe-visa-application",
   },
   {
     name: "Hungary",
     description: "Visa support for Hungary’s student and employment permits.",
     image: "https://upload.wikimedia.org/wikipedia/commons/c/c1/Flag_of_Hungary.svg",
+    link: "/europe-visa-application",
   },
   {
     name: "Finland",
     description: "Visa services for Finland's academic and workforce opportunities.",
     image: "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg",
+    link: "/europe-visa-application",
   },
   {
     name: "Denmark",
     description: "Comprehensive support for Denmark’s student, tourist, and work visas.",
     image: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg",
+    link: "/europe-visa-application",
   },
   {
     name: "Mexico",
     description: "Tourist and business visa assistance for Mexico with streamlined processing.",
     image: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg",
+    link: "/mexico-visa-application",
   },
   {
     name: "Brazil",
     description: "Work, study, and tourist visa services for Brazil with local embassy support.",
     image: "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg",
+    link: "/brazil-visa-application",
   },
-    {
+  {
     name: "Turkey",
-    description: "Work, study, and tourist visa services for Brazil with local embassy support.",
+    description: "Expert assistance for Turkey e-Visas and sticker visas for UAE residents.",
     image: "https://www.gokite.travel/wp-content/uploads/2025/01/Turkey-Visiting-Visa-Requirements-for-UAE-Residents.webp",
+    link: "/turkey-visa-application",
   },
-
-    {
+  {
     name: "Qatar",
-    description: "Work, study, and tourist visa services for Brazil with local embassy support.",
+    description: "Hassle-free Qatar Hayya entry and tourist visa processing services.",
     image: "https://myqatarvisacheck.com/wp-content/uploads/2025/05/Qatar-e-visa-appliction-process-gudie-2025.webp",
+    link: "/qatar-visa-application",
   },
-      {
+  {
     name: "Saudi Arabia",
-    description: "Work, study, and tourist visa services for Brazil with local embassy support.",
+    description: "Professional support for Saudi Tourist e-Visas, Business visas, and Family visits.",
     image: "https://www.utilities-me.com/cloud/2023/07/24/uXpUiIfF-Saudi-Arabia-visa-1200x846.jpg",
+    link: "/saudi-arabia-visa-application",
   },
-
 ];
 
 const popularRoutes = [
@@ -205,9 +239,9 @@ const VisaServices = () => {
   // Category Filtering
   const categories = {
     america: ["USA", "Canada", "Mexico", "Brazil"],
-    europe: ["United Kingdom", "Europe (Schengen)", "Albania", "Germany", "France", "Netherlands", "Italy", "Spain", "Sweden", "Norway", "Ireland", "Portugal", "Belgium", "Switzerland", "Austria", "Poland", "Czech Republic", "Greece", "Hungary", "Finland", "Denmark"],
-    asia: ["Japan", "Malaysia", "Thailand & Singapore", "South Korea"],
-    middleEast: ["Dubai (UAE)", "Hajj & Umrah", "Qatar", "Saudi Arabia"],
+    europe: ["United Kingdom", "Albania", "Germany", "France", "Netherlands", "Italy", "Spain", "Sweden", "Norway", "Ireland", "Portugal", "Belgium", "Switzerland", "Austria", "Poland", "Czech Republic", "Greece", "Hungary", "Finland", "Denmark"],
+    asia: ["Japan", "Malaysia", "Thailand", "South Korea"],
+    middleEast: ["Dubai", "Hajj & Umrah", "Qatar", "Saudi Arabia"],
     oceania: ["Australia", "New Zealand", "Turkey"],
   };
 
@@ -325,7 +359,7 @@ const VisaServices = () => {
               <a href="/tourist-visa-application-from-bangladesh" className="bg-[#005a31] text-white px-4 py-1.5 rounded-full text-sm hover:bg-gray-800 transition">Tourist Visa</a>
               <a href="/student-visa-application-from-bangladesh" className="bg-[#005a31] text-white px-4 py-1.5 rounded-full text-sm hover:bg-gray-800 transition">Student Visa</a>
               <a href="/work-visa-application-from-bangladesh" className="bg-[#005a31] text-white px-4 py-1.5 rounded-full text-sm hover:bg-gray-800 transition">Work Visa</a>
-              {[ "USA", "UK", "Europe", "Canada", "Australia", "Germany", "Portugal", "Armenia", "Georgia", "Albania", "Dubai", "Qatar", "Japan", "China", "South Korea", "Spain", "Kosovo", "Serbia", "Thailand", "Singapore", "Malaysia" ].map((name) => (
+              {[ "USA", "UK", "Europe", "Canada", "Australia", "Germany", "Portugal", "Armenia", "Georgia", "Albania", "Dubai", "Qatar", "Japan", "China", "South Korea", "Spain", "Kosovo", "Serbia", "Thailand", "Singapore", "Malaysia", "Turkey" , "Indonesia" , "India" , "Saudi Arabia" , "Morocco" , "Brazil" , "South Africa" , "Azerbaijan" , "Cyprus" , "Srilanka" , "Russia" , "Montenegro" ].map((name) => (
                 <Link key={name} to={`/${name.toLowerCase().replace(' ', '-')}-visa-application`} className="px-4 py-1.5 bg-gray-50 border border-gray-200 text-gray-700 rounded-full text-sm hover:border-[#005a31] hover:text-[#005a31] transition">
                   {name}
                 </Link>
@@ -445,15 +479,14 @@ const VisaCardItem = ({ country }) => (
       <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-4 py-1 rounded-full text-[#005a31] text-xs font-bold shadow-sm">Official Service</div>
     </div>
     <div className="p-6 flex flex-col flex-1">
-      <h3 className="text-2xl font-bold text-gray-800 mb-3 group-hover:text-[#005a31] transition-colors">{country.name} Visa Services</h3>
+      <h3 className="text-2xl font-bold text-gray-800 mb-3 group-hover:text-[#005a31] transition-colors">{country.name} Visa Application</h3>
       <p className="text-gray-600 text-sm leading-relaxed mb-8 flex-1">{country.description}</p>
       <a
-        href={`https://wa.me/8801631312524?text=Hello%2C%20I%20want%20to%20apply%20for%20${encodeURIComponent(country.name)}%20visa.`}
-        target="_blank"
+        href={country.link}
         rel="noopener noreferrer"
         className="w-full bg-[#005a31] text-white text-center py-3.5 rounded-2xl font-bold hover:bg-black transition-all shadow-md active:scale-95"
       >
-        Book Now
+        Details
       </a>
     </div>
   </article>

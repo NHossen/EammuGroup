@@ -10,6 +10,9 @@ import { HelmetProvider } from 'react-helmet-async';
 
 
 
+
+
+
 // =================== LAZY LOAD ALL PAGES ===================
 
 // Main Pages
@@ -81,6 +84,18 @@ const SerbiaVisa = lazy(() => import('./components/OurServices/VisaCountry/Serbi
 const ThailandVisa = lazy(() => import('./components/OurServices/VisaCountry/ThailandVisa.jsx'));
 const SingaporeVisa = lazy(() => import('./components/OurServices/VisaCountry/SingaporeVisa.jsx'));
 const MalaysiaVisa = lazy(() => import('./components/OurServices/VisaCountry/MalaysiaVisa.jsx'));
+const TurkeyVisa = lazy(() => import('./components/OurServices/VisaCountry/TurkeyVisa.Jsx'));
+const IndonesiaVisa = lazy(() => import('./components/OurServices/VisaCountry/IndonesiaVisa.jsx'));
+const IndiaVisa = lazy(() => import('./components/OurServices/VisaCountry/IndiaVisa.jsx'));
+const SaudiVisa = lazy(() => import('./components/OurServices/VisaCountry/SaudiVisa.jsx'));
+const MoroccoVisa = lazy(() => import('./components/OurServices/VisaCountry/MoroccoVisa.jsx'));
+const BrazilVisa = lazy(() => import('./components/OurServices/VisaCountry/BrazilVisa.jsx'));
+const SouthAfricaVisa = lazy(() => import('./components/OurServices/VisaCountry/SouthAfricaVisa.jsx'));
+const AzerbaijanVisa = lazy(() => import('./components/OurServices/VisaCountry/AzerbaijanVisa.jsx'));
+const CyprusVisa = lazy(() => import('./components/OurServices/VisaCountry/CyprusVisa.jsx'));
+const SriLankaVisa = lazy(() => import('./components/OurServices/VisaCountry/SriLankaVisa.jsx'));
+const RussiaVisa = lazy(() => import('./components/OurServices/VisaCountry/RussiaVisa.jsx'));
+const MontenegroVisa = lazy(() => import('./components/OurServices/VisaCountry/MontenegroVisa.jsx'));
 
 
 
@@ -172,6 +187,19 @@ const router = createBrowserRouter([
       { path: "/thailand-visa-application", element: <ThailandVisa /> },
       { path: "/singapore-visa-application", element: <SingaporeVisa />},
       { path: "/malaysia-visa-application", element: <MalaysiaVisa /> },
+      { path: "/turkey-visa-application", element: <TurkeyVisa /> },
+      { path: "/indonesia-visa-application", element: <IndonesiaVisa /> },
+      { path: "/india-visa-application", element: <IndiaVisa /> },
+      { path: "/saudi-arabia-visa-application", element: <SaudiVisa /> },
+      { path: "/morocco-visa-application", element: <MoroccoVisa /> },
+      { path: "/brazil-visa-application", element: <BrazilVisa /> },
+      { path: "/south-africa-visa-application", element: <SouthAfricaVisa /> },
+      { path: "/azerbaijan-visa-application", element: <AzerbaijanVisa /> },
+      { path: "/cyprus-visa-application", element: <CyprusVisa /> },
+      { path: "/srilanka-visa-application", element: <SriLankaVisa /> },
+      { path: "/russia-visa-application", element: <RussiaVisa /> },
+      { path: "/montenegro-visa-application", element: <MontenegroVisa /> },
+      
 
       // ===== VISA CATEGORIES =====
       { path: "/tourist-visa-application-from-bangladesh", element: <TouristVisaBangladesh /> },

@@ -223,6 +223,14 @@ const HeroSection = () => {
                       <div className="flex-1 border border-white/40 p-1.5 rounded bg-white/5">
                         Round Trip <br/><b>USD {promoSlides[promoIndex].price2}</b>
                       </div>
+                      <div className='lg:hidden'>
+                         {/* Your Animated Logo */}
+      <img 
+        src="/eammu_white_logo.webp" 
+        alt="Loading..." 
+        className="h-[40px] w-full object-contain animate-pulse" 
+      />
+                      </div>
                     </div>
                   </div>
 

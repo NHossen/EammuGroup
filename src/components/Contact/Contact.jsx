@@ -171,7 +171,7 @@ const Contact = () => {
   {/* Background Image Container */}
   <div className="absolute inset-0 z-0">
     <img 
-      src="https://img.freepik.com/premium-photo/airplane-leaves-green-copyspace-background-sustainable-travel-zero-emissions-travel-concept_590464-227044.jpg?semt=ais_user_personalization&w=740&q=80" // Replace with your preferred contact/office image
+      src="eammu_banner.webp" // Replace with your preferred contact/office image
       alt="Online Travel Agency Cumilla" 
       className="w-full h-full object-cover"
     />
