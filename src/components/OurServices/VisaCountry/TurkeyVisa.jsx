@@ -11,7 +11,7 @@ const TurkeyVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Turkey Visa Application 2026 | E-Visa & Sticker Visa Support</title>
+        <title>Turkey Visa Application | Turkey Visa Support From Bangladesh | Study In Turkey </title>
         <meta 
           name="description" 
           content="Apply for your Turkey E-Visa or Sticker Visa. Expert guidance on Turkey visa requirements for Indian, Pakistani, and UAE residents. 24-hour processing available." 
@@ -44,7 +44,7 @@ const TurkeyVisa = () => {
             <span className="bg-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-[0.2em] mb-4 inline-block shadow-lg">
               2026 Updated Turkey Guide
             </span>
-            <h1 className="text-5xl md:text-7xl font-black mb-4 tracking-tighter uppercase">
+            <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter uppercase">
               Turkey <span className="text-orange-400">Visa </span>Application 
             </h1>
             <h2 className="text-xl md:text-2xl font-semibold mb-6 opacity-90">E-Visa & Sticker Visa Process For Global Nationals</h2>

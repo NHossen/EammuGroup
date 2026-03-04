@@ -10,7 +10,7 @@ const IndonesiaVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Indonesia Visa Application From Dubai | Bali Tourist Visa 2026</title>
+        <title>Indonesia Visa Application From Dubai | Bali Tourist Visa 2026 | Indonesia Tourist Visa</title>
         <meta name="description" content="Apply for your Indonesia Tourist eVisa (B211A) or VoA in 2026. Expert consultancy for Dubai residents, document verification, and fast-track processing." />
         <link rel="canonical" href="https://eammu.com/indonesia-visa-application" />
       </Helmet>
@@ -31,8 +31,8 @@ const IndonesiaVisa = () => {
                     MOLINA Specialist
                 </span>
             </div>
-            <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Republic of <span className="text-orange-500">Indonesia</span> Visa
+            <h1 className="text-4xl md:text-5xl font-black mb-6 tracking-tighter uppercase leading-tight">
+              Republic of <span className="text-orange-500">Indonesia</span> Visa Application
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
               Explore Bali, Jakarta, and beyond. From 30-day tourism eVisas to long-term business stays, we simplify the Indonesian immigration gateway.

@@ -31,7 +31,7 @@ const SaudiVisa = () => {
                     MOFA & Nusuk Specialist
                 </span>
             </div>
-            <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
+            <h1 className="text-4xl md:text-5xl font-black mb-6 tracking-tighter uppercase leading-tight">
               Saudi <span className="text-orange-500">Arabia</span> Visa Application
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">

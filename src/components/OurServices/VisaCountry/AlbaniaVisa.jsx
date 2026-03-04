@@ -13,89 +13,50 @@ const AlbaniaVisa = () => {
 
         <title>Albania Visa Application From India | Travel Agency in India | Travel Agency Dhaka</title>
 
-        <meta 
+      <meta
+    name="description"
+    content="Apply for Albania Visa from India with expert support. Get Albania E-Visa, Tourist Visa & Work Permit assistance. Check visa requirements, documents, fees, and processing time for 2026."
+  />
 
-          name="description" 
+  <meta name="keywords" content="Albania visa from India, Albania e visa 2026, Albania work permit, Albania tourist visa, Albania visa requirements, Albania visa processing time, travel agency for Albania visa" />
 
-          content="Apply for your Albania E-Visa or Work Permit From India. Expert guidance on Albania visa requirements, processing times, fees, and visa-free entry for Schengen/US/UK visa holders." 
+  <meta name="robots" content="index, follow" />
 
-        />
+  <link rel="canonical" href="https://eammu.com/albania-visa-application" />
 
-        <meta name="robots" content="index, follow" />
+  {/* Open Graph / Facebook */}
+  <meta
+    property="og:title"
+    content="Albania Visa Application 2026 | E-Visa & Work Permit Assistance"
+  />
 
-        <link rel="canonical" href="https://eammu.com/albania-visa-application" />
+  <meta
+    property="og:description"
+    content="Complete Albania visa guide for Indian applicants. Professional support for E-Visa, Tourist Visa & Albania Work Permit with fast processing and trusted service."
+  />
 
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eammu.com/albania-visa-application" />
 
+  <meta
+    property="og:image"
+    content="https://www.eammu.com/images/albania-visa-banner.jpg"
+  />
 
-        {/* Open Graph */}
-
-        <meta property="og:title" content="Albania Visa Guide 2026 | Requirements & Application Process" />
-
-        <meta 
-
-          property="og:description" 
-
-          content="Comprehensive guide to Albania visas. Get professional assistance for E-Visas, tourist stays, and long-term work permits from the experts at Eammu Holidays." 
-
-        />
-
-        <meta property="og:type" content="website" />
-
-        <meta property="og:url" content="https://eammu.com/albania-visa-application" />
-
-        <meta 
-
-          property="og:image" 
-
-          content="https://www.eammu.com/images/albania-visa-banner.jpg" 
-
-        />
-
-
-
-        {/* JSON-LD Structured Data - Enhanced with FAQ Schema for SEO */}
-
-        <script type="application/ld+json">
-
-          {JSON.stringify({
-
-            "@context": "https://schema.org",
-
-            "@type": "GovernmentService",
-
-            "name": "Albania Visa Application Support 2026",
-
-            "provider": {
-
-              "@type": "TravelAgency",
-
-              "name": "Eammu Holidays",
-
-              "url": "https://eammu.com",
-
-              "logo": "https://www.eammu.com/images/logo.png",
-
-              "contactPoint": {
-
-                "@type": "ContactPoint",
-
-                "telephone": "+8801701699743",
-
-                "contactType": "customer support"
-
-              }
-
-            },
-
-            "serviceType": "Visa Consultancy",
-
-            "areaServed": ["AL", "BD", "AE"],
-
-            "description": "Expert assistance for Albania E-Visa, Tourist Visa, and Work Permits."
-
-          })}
-
-        </script>
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Albania Visa Application 2026 | Apply from India"
+  />
+  <meta
+    name="twitter:description"
+    content="Get Albania E-Visa, Tourist Visa & Work Permit with expert assistance. Updated requirements, fees & processing time."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.eammu.com/images/albania-visa-banner.jpg"
+  />
 
       </Helmet>
 
@@ -110,7 +71,7 @@ const AlbaniaVisa = () => {
             <span className="bg-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-[0.2em] mb-4 inline-block shadow-lg">
               2026 Updated Visa Guide
             </span>
-            <h1 className="text-5xl md:text-7xl font-black mb-4 tracking-tighter uppercase">
+            <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter uppercase">
               Albania <span className="text-orange-500">Visa </span>Application 
             </h1>
             <h2 className="text-xl md:text-2xl font-semibold mb-6 opacity-90">Albania Requirements, Process & Fees For Indian , Bangladeshi , Pakistan and African National</h2>
@@ -165,7 +126,7 @@ const AlbaniaVisa = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <PosterCard 
-                image="https://scontent.ffjr1-3.fna.fbcdn.net/v/t39.30808-6/495302752_122276150936017871_7412554268976295444_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=788eaEGRjtwQ7kNvwGZnQeo&_nc_oc=AdmF64veHFTfMUtbJRx7YVUJU5DitAAT-8mjPSrqPtaaa4AG66o0QYyQ-nDmPaGO5I0&_nc_zt=23&_nc_ht=scontent.ffjr1-3.fna&_nc_gid=zLTEm9qGt4oxspmQ3gq2CQ&oh=00_AfuU5f17pCq3QWYxzBTCaZvkn7MGnwma_hz50s9vK-bJyQ&oe=699661B0" 
+                image="https://i.ytimg.com/vi/mVo9V7RR5fE/maxresdefault.jpg" 
                 badge="Tourist" 
                 title="E-Visa Type C" 
                 detail="Up to 90 Days Stay"

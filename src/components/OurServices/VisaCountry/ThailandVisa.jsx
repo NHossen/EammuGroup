@@ -36,8 +36,8 @@ const ThailandVisa = () => {
                     TDAC Specialist 2026
                 </span>
             </div>
-            <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Visit <span className="text-orange-500">Thailand </span>with Ease
+            <h1 className="text-4xl md:text-5xl font-black mb-6 tracking-tighter uppercase leading-tight">
+              Visit Visa<span className="text-orange-500">Thailand </span>Guide
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
               From the 60-day visa-free exemption to the 5-year DTV, Eammu Holidays ensures your entry into the Land of Smiles is seamless.

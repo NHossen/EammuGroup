@@ -31,8 +31,8 @@ const USAVisa = () => {
                     Interview Coaching Included
                 </span>
             </div>
-            <h1 className="text-5xl md:text-5xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              United <span className="text-orange-500">States</span> Visa
+            <h1 className="text-4xl md:text-5xl font-black mb-6 tracking-tighter uppercase leading-tight">
+              United <span className="text-orange-500">States</span> Visa Application
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
               From the lights of Times Square to the Silicon Valley hubs. We simplify the world's most rigorous visa process with precision and care.

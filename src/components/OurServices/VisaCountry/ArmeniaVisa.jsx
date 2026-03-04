@@ -11,128 +11,81 @@ const ArmeniaVisa = () => {
     <>
         <Helmet>
 
-  <title>Armenia Visa Application Bangladesh | Tour Operator in Bangladesh | Best Travel Agency India </title>
+  <title>Armenia Visa Application Bangladesh | Tour Operator in Bangladesh | Best Travel Agency Bangladesh </title>
 
-  <meta 
+ <meta
+    name="description"
+    content="Apply for Armenia Visa from Bangladesh with expert assistance. Get Armenia E-Visa, Tourist Visa & Temporary Residency Permit support. Updated requirements, documents, fees & fast processing."
+  />
 
-    name="description" 
-
-    content="Get expert assistance for Armenia E-Visa, Visitor Visa, and Temporary Residency Permits from bangladesh. Eammu Holidays provides step-by-step support from our Yerevan office." 
-
+  <meta
+    name="keywords"
+    content="Armenia visa from Bangladesh, Armenia e visa 2026, Armenia tourist visa, Armenia residency permit, Armenia visa requirements Bangladesh, Armenia visa processing time"
   />
 
   <meta name="robots" content="index, follow" />
 
-  <link rel="canonical" href="https://eammu.com/armenia-visa" />
-
-
+  <link rel="canonical" href="https://eammu.com/armenia-visa-application" />
 
   {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="Armenia Visa Application 2026 | E-Visa & Residency Permit from Bangladesh"
+  />
 
-  <meta property="og:title" content="Armenia Visa & Residency Permit Services | Eammu Holidays" />
-
-  <meta 
-
-    property="og:description" 
-
-    content="Eammu Holidays provides professional Armenia visa consultancy, including E-Visa, visitor visa, and residency permits. Trusted support from Yerevan office." 
-
+  <meta
+    property="og:description"
+    content="Professional Armenia visa consultancy. Apply for E-Visa, visitor visa & residency permit from Bangladesh with trusted support from Eammu Holidays."
   />
 
   <meta property="og:type" content="website" />
-
   <meta property="og:url" content="https://eammu.com/armenia-visa-application" />
-
-  <meta 
-
-    property="og:image" 
-
-    content="https://www.eammu.com/images/armenia-visa-banner.jpg" 
-
+  <meta
+    property="og:image"
+    content="https://www.eammu.com/images/armenia-visa-banner.jpg"
   />
 
-
-
-  {/* Twitter Card */}
-
+  {/* Twitter */}
   <meta name="twitter:card" content="summary_large_image" />
-
-  <meta name="twitter:title" content="Armenia Visa & Residency Permit Services | Eammu Holidays" />
-
-  <meta 
-
-    name="twitter:description" 
-
-    content="Armenia visa assistance by Eammu Holidays. Apply for E-Visa, tourist visa, or residency permits hassle-free with our expert support." 
-
+  <meta
+    name="twitter:title"
+    content="Armenia Visa from Bangladesh 2026 | Apply Now"
   />
-
-  <meta 
-
-    name="twitter:image" 
-
-    content="https://www.eammu.com/images/armenia-visa-banner.jpg" 
-
+  <meta
+    name="twitter:description"
+    content="Get Armenia E-Visa, Tourist Visa & Residency Permit assistance with updated requirements and fast processing."
   />
-
-
+  <meta
+    name="twitter:image"
+    content="https://www.eammu.com/images/armenia-visa-banner.jpg"
+  />
 
   {/* JSON-LD Structured Data */}
-
   <script type="application/ld+json">
-
     {JSON.stringify({
-
       "@context": "https://schema.org",
-
-      "@type": "GovernmentService",
-
+      "@type": "Service",
       "name": "Armenia Visa & Residency Permit Services",
-
       "provider": {
-
         "@type": "TravelAgency",
-
         "name": "Eammu Holidays",
-
-        "url": "https://eammu.com/armenia-visa",
-
+        "url": "https://eammu.com/armenia-visa-application",
         "logo": "https://www.eammu.com/images/logo.png",
-
-        "sameAs": [
-
-          "https://www.facebook.com/eammutourism",
-
-          "https://www.instagram.com/eammuholidays",
-
-          "https://www.linkedin.com/company/eammu-immigration-services"
-
-        ],
-
         "contactPoint": {
-
           "@type": "ContactPoint",
-
           "contactType": "customer support",
-
           "telephone": "+8801701699743",
-
           "email": "info@eammu.com"
-
         }
-
       },
-
+      "areaServed": {
+        "@type": "Country",
+        "name": "Bangladesh"
+      },
       "serviceType": "Visa Consultancy & Residency Permit",
-
-      "areaServed": "AM",
-
-      "description": "Step-by-step assistance for Armenia E-Visa, Visitor Visa, and Temporary Residency Permits by Eammu Holidays. Trusted consultancy for travelers, students, and workers."
-
+      "description": "Step-by-step assistance for Armenia E-Visa, Tourist Visa and Temporary Residency Permits for applicants from Bangladesh."
     })}
-
   </script>
-
 </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">
@@ -151,8 +104,8 @@ const ArmeniaVisa = () => {
                     Armenia Visa Application
                 </span>
             </div>
-            <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Move to <span className="text-orange-500">Armenia </span>in 2026
+            <h1 className="text-4xl md:text-5xl font-black mb-6 tracking-tighter uppercase leading-tight">
+             Armenia Visa Application By Travel Agency
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
               Fast-track E-Visa processing, Digital Nomad Registration, and the new 2026 Work Visa portal. Expert support by Eammu Holidays.

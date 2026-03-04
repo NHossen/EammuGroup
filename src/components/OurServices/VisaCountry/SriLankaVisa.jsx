@@ -10,7 +10,7 @@ const SriLankaVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Sri Lanka Visa Application From Dubai | e-Visa & ETA 2026</title>
+        <title>Sri Lanka Visa Application From Dubai | Study Abroad From Sri Lanka</title>
         <meta name="description" content="Apply for your Sri Lanka e-Visa or Tourist ETA in 2026. Expert consultancy for Dubai residents, document verification, and fast-track 24-hour approval." />
         <link rel="canonical" href="https://eammu.com/sri-lanka-visa-application" />
       </Helmet>
@@ -31,8 +31,8 @@ const SriLankaVisa = () => {
                     Pearl of the Orient
                 </span>
             </div>
-            <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Sri <span className="text-orange-500">Lanka</span> Visa Application
+            <h1 className="text-4xl md:text-5xl font-black mb-6 tracking-tighter uppercase leading-tight">
+              Sri<span className="text-orange-500">Lanka</span> Visa Application
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
               From the tea plantations of Kandy to the shores of Bentota. We manage your Sri Lankan e-Visa process with speed, accuracy, and professional care.

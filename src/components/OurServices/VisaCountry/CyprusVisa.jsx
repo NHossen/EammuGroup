@@ -31,8 +31,8 @@ const CyprusVisa = () => {
                     VFS Global Specialist
                 </span>
             </div>
-            <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Republic of <span className="text-orange-500">Cyprus</span> Visa
+            <h1 className="text-4xl md:text-5xl font-black mb-6 tracking-tighter uppercase leading-tight">
+              Republic of <span className="text-orange-500">Cyprus</span> Visa Application
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
               From the beaches of Ayia Napa to the Troodos Mountains. Navigate the Cyprus national visa system with 100% compliance and expert precision.

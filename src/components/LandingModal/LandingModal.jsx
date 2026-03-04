@@ -116,7 +116,7 @@ const LandingModal = () => {
               </div>
 
               {/* RIGHT SIDE: Login & Subscription */}
-              <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center bg-white">
+              <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center text-center bg-white">
                 <h2 className="text-2xl font-black text-[#001f3f] mb-2">Sign-up / Log-in</h2>
                 <p className="text-gray-500 text-sm mb-8 font-bold uppercase tracking-widest">To enjoy member benefits</p>
 

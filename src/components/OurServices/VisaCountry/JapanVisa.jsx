@@ -10,7 +10,7 @@ const JapanVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Japan Visa Application From Bangladesh | Study Japan From Bangladesh</title>
+        <title>Japan Visa Application From Bangladesh | Study Japan From Bangladesh | Study in Japan</title>
         <meta name="description" content="Apply for Japan tourist and Student visas From Bangladesh. Professional assistance with Koteihyo (Itinerary) preparation, E-Visa portal, and embassy submissions for 2026." />
         <link rel="canonical" href="https://eammu.com/japan-visa-application" />
       </Helmet>
@@ -31,7 +31,7 @@ const JapanVisa = () => {
                     E-Visa & Sticker Support
                 </span>
             </div>
-            <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
+            <h1 className="text-4xl md:text-5xl font-black mb-6 tracking-tighter uppercase leading-tight">
               Japan <span className="text-orange-500">Visa</span> Application
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">

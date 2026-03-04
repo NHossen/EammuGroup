@@ -10,7 +10,7 @@ const UKVisa = () => {
   return (
     <>
       <Helmet>
-        <title>UK Visa Application From Dubai | Europe Visa Appointment</title>
+        <title>UK Visa Application From Dubai | Europe Visa Appointment Dubai</title>
         <meta name="description" content="Apply for your UK Standard Visitor visa or Work permit in 2026. Expert consultancy for VFS appointments, document verification, and priority processing." />
         <link rel="canonical" href="https://eammu.com/uk-visa-application" />
       </Helmet>
@@ -31,7 +31,7 @@ const UKVisa = () => {
                     VFS Global Specialist
                 </span>
             </div>
-            <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
+            <h1 className="text-4xl md:text-5xl font-black mb-6 tracking-tighter uppercase leading-tight">
               United <span className="text-orange-500">Kingdom</span> Visa Application
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">

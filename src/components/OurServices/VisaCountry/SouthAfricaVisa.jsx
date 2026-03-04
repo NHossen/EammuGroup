@@ -10,7 +10,7 @@ const SouthAfricaVisa = () => {
   return (
     <>
       <Helmet>
-        <title>South Africa Visa Application From Dubai | e-Visa & Tourist 2026</title>
+        <title>South Africa Visa Application From Dubai | Study in South Africa From Bangladesh</title>
         <meta name="description" content="Apply for your South Africa e-Visa or Tourist sticker visa in 2026. Expert consultancy for VFS Global appointments, document verification, and fast-track processing for Dubai residents." />
         <link rel="canonical" href="https://eammu.com/south-africa-visa-application" />
       </Helmet>
@@ -31,8 +31,8 @@ const SouthAfricaVisa = () => {
                     VFS Global Specialist
                 </span>
             </div>
-            <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Republic of <span className="text-orange-500">South Africa</span> Visa
+            <h1 className="text-4xl md:text-5xl font-black mb-6 tracking-tighter uppercase leading-tight">
+              Republic of <span className="text-orange-500">South Africa</span> Visa Application
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
               From the Table Mountain to the Kruger Safari. Navigate the South African e-Visa or sticker visa system with 100% compliance and expert precision.

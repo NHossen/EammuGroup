@@ -16,8 +16,6 @@ const HeroSection = () => {
     "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80",
     "https://eammu.com/eammu_banner.webp",
     
-    
-    
   ];
 
   // Data for inner promo carousel
@@ -32,7 +30,7 @@ const HeroSection = () => {
   // Bottom carousel
   const bottomSlides = [
     { id: 0, title: "Higher Study In USA With 70% Scholarship", img: "https://globalgateways.co.in/wp-content/uploads/2025/01/study-abroad-usa.jpg", link: "/usa-visa-application", },
-    { id: 1, title: "ALBANIA VISA", img: "https://www.gokitetours.com/wp-content/uploads/2025/04/albania-tour-package-from-india.webp",link: "/albania-visa-application" },
+    { id: 1, title: "ALBANIA VISA", img: "/albania_visa_from_bangladesh.webp",link: "/albania-visa-application" },
     { id: 2, title: "SINGAPORE VISA", img: "https://www.agoda.com/wp-content/uploads/2019/06/Singapore-Itinerary-Marina-Bay-Sands.jpg",link: "/singapore-visa-application" },
     { id: 3, title: "E-VISA", img: "/eammu_evisa_offer.webp" ,link: "/thailand-visa-application" },
     { id: 4, title: "SYLHET TOUR", img: "https://royalbengaltours.com/wp-content/uploads/2017/08/Cycle-through-the-most-beautiful-tea-estates-of-Sreemangal-and-Sylhet-area.webp" ,link: "/tour-packages" },
@@ -41,7 +39,7 @@ const HeroSection = () => {
     { id: 7, title: "ARMENIA VISA", img: "https://www.gokite.travel/wp-content/uploads/2021/05/Armenia-tour-packages-from-dubai_11zon-870x480.webp",link: "/armenia-visa-application" },
     { id: 8, title: "EUROPE VISA", img: "https://pmlholidays.com/admin/production/images/blogs/Europe.jpg",link: "/europe-visa-application" },
     { id: 9, title: "EMI", img: "/eammu_emi_offer.webp",link: "/offers" },
-    { id: 10, title: "MEXICO VISA", img: "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/70/7b/ac.jpg",link: "/visa-services" },
+    { id: 10, title: "CANADA VISA", img: "/canada_visa_from_india.webp",link: "/canada-visa-application" },
   ];
 
   const [bgIndex, setBgIndex] = useState(0);
@@ -76,7 +74,7 @@ const HeroSection = () => {
 
       return next;
     });
-  }, 4000);
+  }, 5000);
 
   return () => clearInterval(auto);
 }, []);
@@ -132,7 +130,7 @@ const HeroSection = () => {
   </div>
 
   {/* ================= CONTENT WRAPPER ================= */}
-  <div className="relative z-10 min-h-[520px] sm:min-h-[600px] lg:min-h-[60vh] flex flex-col">
+  <div className="relative z-10 min-h-[520px] sm:min-h-[600px] lg:min-h-[50vh] flex flex-col">
 
     {/* ================= TOP NAV ================= */}
     <div className="pt-6 sm:pt-10 flex justify-center mt-8">

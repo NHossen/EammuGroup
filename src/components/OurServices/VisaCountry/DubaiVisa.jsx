@@ -32,8 +32,8 @@ const DubaiVisa = () => {
                     GDRFA & ICP Portal Specialist
                 </span>
             </div>
-            <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Dubai <span className="text-orange-500">Visa</span> Application
+            <h1 className="text-4xl md:text-5xl font-black mb-6 tracking-tighter uppercase leading-tight">
+              Dubai <span className="text-orange-500">Visa</span> Application With Eammu Holidays
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
               Experience seamless entry to the UAE. 100% digital processing with 24-72 hour approval, managed directly by Eammu Holidays.

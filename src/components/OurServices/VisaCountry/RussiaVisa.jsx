@@ -10,7 +10,7 @@ const RussiaVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Russia Visa Application From Dubai | e-Visa & Tourist 2026</title>
+        <title>Russia Visa Application From Dubai | Russia Visa Invitation</title>
         <meta name="description" content="Apply for your Russia e-Visa or Tourist sticker visa in 2026. Expert consultancy for Consulate appointments, invitation letters (Voucher), and fast-track processing in Dubai." />
         <link rel="canonical" href="https://eammu.com/russia-visa-application" />
       </Helmet>
@@ -31,8 +31,8 @@ const RussiaVisa = () => {
                     Consular Specialist
                 </span>
             </div>
-            <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Russian <span className="text-orange-500">Federation</span> Visa
+            <h1 className="text-4xl md:text-5xl font-black mb-6 tracking-tighter uppercase leading-tight">
+              Russian <span className="text-orange-500">Visa</span>Application by Invitation
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
               From the Red Square in Moscow to the canals of Saint Petersburg. We handle your Russian invitation letters and visa processing with 100% precision.

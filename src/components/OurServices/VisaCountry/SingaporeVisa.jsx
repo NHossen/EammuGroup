@@ -10,7 +10,7 @@ const SingaporeVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Singapore Visa Application | tour operator singapore | Travel agent in singapore</title>
+        <title>Singapore Visa Application | Tour operator singapore | Travel agent in singapore</title>
         <meta 
           name="description" 
           content="Apply for Singapore Tourist Visa & Business e-Visas in 2026. Expert guide on SG Arrival Card (SGAC), Form 14A, and visa processing for UAE & Bangladesh residents." 
@@ -36,8 +36,8 @@ const SingaporeVisa = () => {
                     SGAC QR Specialist 2026
                 </span>
             </div>
-            <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter uppercase leading-tight">
-              Tourist destination <span className="text-orange-500">Singapore</span>
+            <h1 className="text-4xl md:text-5xl font-black mb-6 tracking-tighter uppercase leading-tight">
+              Tourist Visa Application <span className="text-orange-500">Singapore</span>
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto font-light leading-relaxed">
               Fast-track your entry to the Lion City with our expert handling of e-Visas and the mandatory 2026 SG Arrival Card (SGAC).
