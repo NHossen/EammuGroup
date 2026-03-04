@@ -70,7 +70,7 @@ const ActivitiesPage = () => {
 
       {/* --- ADVANCED SEO SECTION --- */}
       <Helmet>
-        <title>Top Tourism Activities Dubai | Leading Travel Agency Dubai</title>
+        <title>Top Tourism Activities Dubai | Leading Travel Agency Dubai | Desert Safari Dubai</title>
         <meta name="description" content="Explore world-class tourism activities with Eammu Holidays. From Dubai Desert Safaris to Georgia Mountain Treks. Book your 2026 adventure via WhatsApp today!" />
         <meta name="keywords" content="Dubai Desert Safari, Georgia Tour, Armenia Tourism, Bangladesh Travel Agency, Eammu Holidays Activities, Best Tour Operator Dhaka" />
         

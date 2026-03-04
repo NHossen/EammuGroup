@@ -32,21 +32,21 @@ const fadeIn = {
     <>
     <Helmet>
   {/* Title: ব্লগের মূল উদ্দেশ্য এবং কি-ওয়ার্ড */}
-  <title>Travel Blogs Bangladesh | Travel Agency Cumilla </title>
+  <title>Travel Blogs Bangladesh | Travel Agency Cumilla | Daily Travel News </title>
 
   <meta
     name="description"
-    content="Read the latest travel tips, visa application guides, and immigration news for USA, Canada, UK, and Europe on the Eammu Holidays blog. Stay updated with expert advice."
+    content="Read the daily latest travel tips, visa application guides, and immigration news for USA, Canada, UK, and Europe on the Eammu Holidays blog. Stay updated with expert advice."
   />
 
-  <link rel="canonical" href="https://eammu.com/blog" />
+  <link rel="canonical" href="https://eammu.com/blogs" />
   <meta name="robots" content="index, follow" />
 
   {/* Open Graph (Social Media Preview) */}
   <meta property="og:title" content="Eammu Holidays Travel & Visa Blog" />
   <meta property="og:description" content="Get expert tips and latest news on global visa applications and travel guides." />
   <meta property="og:image" content="https://eammu.com/eammuicon.jpg" />
-  <meta property="og:url" content="https://eammu.com/blog" />
+  <meta property="og:url" content="https://eammu.com/blogs" />
   <meta property="og:type" content="website" />
 
   {/* Structured Data (Blog Schema) - এটি গুগলকে ব্লগের অস্তিত্ব জানায় */}

@@ -24,7 +24,7 @@ const countries = [
   {
     name: "Canada",
     description: "We assist with SDS and Non-SDS streams, visitor visas, and work permits for Canada.",
-    image: "https://pelicanmigration.com/wp-content/uploads/2024/01/Canada-Visitor-Visa.jpg",
+    image: "canada_visa_from_india.webp",
     link: "/canada-visa-application",
   },
   {
@@ -36,7 +36,7 @@ const countries = [
   {
     name: "Albania",
     description: "New trending destination for work and student visas. Visa documentation made easy.",
-    image: "https://www.shutterstock.com/image-vector/albania-visa-open-stamped-passport-600nw-2615269851.jpg",
+    image: "/albania_visa_from_bangladesh.webp",
     link: "/albania-visa-application",
   },
   {
