@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, lazy } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import { Helmet } from "react-helmet-async";
 import { motion, AnimatePresence } from 'framer-motion';
 import { toast,Toaster } from 'react-hot-toast';
@@ -85,6 +85,18 @@ const returnRef = React.useRef(null);
       console.error("Error fetching suggestions:", err.message);
     }
   };
+
+  const resultsRef = useRef(null);
+
+useEffect(() => {
+  if (loading && resultsRef.current) {
+    const yOffset = -100; // Adjust this number to leave more or less space at the top
+    const element = resultsRef.current;
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+}, [loading]);
 
   // ১. handleSearch ফাংশন (useCallback সহ)
   const handleSearch = useCallback(async (e) => {
@@ -546,7 +558,7 @@ const [currentIndex, setCurrentIndex] = useState(0);
 </section>
 
       {/* Flight Results */}
-      <main className="max-w-5xl mx-auto px-4 mt-12">
+      <main ref={resultsRef} className="max-w-5xl mx-auto px-4 mt-12">
       {loading && (
   <div className="text-center py-10 flex flex-col items-center justify-center gap-4">
     <div className="relative h-20 w-20">
