@@ -1,18 +1,7 @@
 import { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaPassport, FaPlaneDeparture, FaSuitcaseRolling, FaStar } from 'react-icons/fa';
-import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
-import { 
-  Plane, 
-  Globe, 
-  Briefcase, 
-  MessageCircle, 
-  PhoneCall, 
-  ShieldCheck, 
-  Palmtree, 
-  CreditCard 
-} from 'lucide-react';
 
 const Carousel = () => {
   const carouselRef = useRef(null);
@@ -65,23 +54,6 @@ const Carousel = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Education Consultancy Dhaka | Tourist Visa From Bangladesh | Travel Agency Cumilla</title>
-        <meta
-          name="description"
-          content="Study Abroad From Bangladesh Study visa Application, Tourist Visa Application, and travel services to USA, UK, Canada, Europe, Japan, UAE and more.Leading Travel Agency in Cumilla Trusted by thousands globally."
-        />
-        <meta name="author" content="Eammu Holidays" />
-        <meta property="og:title" content="Eammu - Travel Agency Cumilla" />
-        <meta property="og:description" content="Work, study, or travel — we help you get there. 98% visa success rate. Expert Travel Agency in Dubai And Bangladesh." />
-        <meta property="og:image" content="https://eammu.com/eammuicon.jpg" />
-        <meta property="og:url" content="https://eammu.com" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Eammu | Work, Study & Travel Visas" />
-        <meta name="twitter:description" content="From UAE to Europe — let Eammu manage your visa and travel goals." />
-        <meta name="twitter:image" content="https://eammu.com/emf.jpg" />
-      </Helmet>
       <div className="relative w-full h-[90vh] overflow-hidden">
         <div
           ref={carouselRef}

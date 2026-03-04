@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { 
   Globe, 
@@ -17,16 +16,6 @@ import {
 const About_Eammu_Immigration = () => {
   return (
     <div className="bg-slate-50 min-h-screen">
-      {/* SEO Helmet (Unchanged as requested) */}
-      <Helmet>
-        <title>Bangladesh Visa Application Centre | Student Visa Application Bangladesh | Travel Bangladesh</title>
-        <meta
-          name="description"
-          content="Learn about Bangladeshi Travel Agency — your trusted partner for student visas, work permits, and relocation support across Canada, UK, UAE, Europe, and beyond."
-        />
-       
-      </Helmet>
-
       {/* Hero Section */}
       <section className="bg-white border-b pt-16 pb-20">
         <div className="container mx-auto px-4 text-center space-y-8">
@@ -34,7 +23,7 @@ const About_Eammu_Immigration = () => {
             Since 2022 • Trusted by Thousands
           </div>
           <h1 className="text-4xl md:text-6xl font-black text-[#004a29] tracking-tight leading-tight">
-            Empowering Your Global <span className="text-orange-500">Aspirations</span>
+            Global Travel Agency <span className="text-orange-500">- Your Trusted Travel Partner</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Founded in 2022, <strong>Eammu Holidays</strong> has emerged as one of Bangladesh’s fastest-growing global visa consultancies. 

@@ -1,57 +1,12 @@
-import { Helmet } from 'react-helmet-async';
+
 import { Link } from 'react-router-dom';
 
 const Registration_Agents = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Eammu Holidays",
-    "url": "https://eammu.com",
-    "logo": "https://eammu.com/images/logo.png",
-    "description": "Join Eammu Holidays as a registered travel agent in Bangladesh. Start your visa and ticketing business with 50% commission and no investment.",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+8801631312524",
-      "contactType": "customer service",
-      "areaServed": "BD",
-      "email": "info@eammu.com"
-    },
-    "sameAs": [
-      "https://www.facebook.com/eammutourism",
-      "https://www.instagram.com/eammuholidays",
-      "https://www.linkedin.com/company/eammu",
-      "https://www.youtube.com/@Eammutour"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Agent Registration Program",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Travel Agent Registration",
-            "description": "Become an Eammu Holidays agent in Bangladesh with 50% commission and no investment."
-          }
-        }
-      ]
-    }
-  };
+
 
   return (
     <div className="py-12 px-4 container mx-auto">
-      <Helmet>
-        <title>Become a Travel Agent in Bangladesh | B2B Travel Agent Bangladesh</title>
-        <meta
-          name="description"
-          content="Join Eammu Holidays as a registered travel agent in Bangladesh. Start your visa and ticketing business with 50% commission and no investment. Limited slots available!"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:image" content="https://eammu.com/eammuicon.jpg" />
-        <link rel="canonical" href="https://eammu.com/agent-registration" />
-        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
-      </Helmet>
-
+    
       {/* Main Modern Card Container */}
       <div className="relative overflow-hidden bg-white border border-slate-100 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.06)] flex flex-col lg:flex-row min-h-[550px]">
         

@@ -36,34 +36,13 @@ const Testimonials = () => {
   const avgRating =
     (reviews.reduce((acc, r) => acc + r.rating, 0) / reviews.length).toFixed(1);
 
-  // ⭐ Review Schema (SEO Gold)
-  const reviewSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Eammu Holidays",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": avgRating,
-      "reviewCount": reviews.length,
-    },
-    "review": reviews.map((r) => ({
-      "@type": "Review",
-      "author": { "@type": "Person", "name": r.name },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": r.rating,
-        "bestRating": "5",
-      },
-      "reviewBody": r.review,
-    })),
-  };
 
   return (
     <section className="px-4 container mx-auto py-14">
       {/* SEO */}
      <Helmet>
   {/* Primary SEO */}
-  <title>Customer Reviews & Testimonials | Best Travel Agency Bangladesh - Eammu Holidays</title>
+  <title>Customer Reviews Travel Agency | Travel Agency Bangladesh</title>
   <meta
     name="description"
     content="Read real client testimonials of Eammu Holidays, Bangladesh's trusted visa and travel consultancy. Student, work, and tourist visa success stories with verified client reviews."
@@ -83,7 +62,7 @@ const Testimonials = () => {
   />
   <meta property="og:url" content="https://eammu.com/testimonials" />
   <meta property="og:site_name" content="Eammu Holidays" />
-  <meta property="og:image" content="https://eammu.com/images/logo.png" />
+  <meta property="og:image" content="https://eammu.com/eammuicon.jpg" />
 
   {/* Twitter Card */}
   <meta name="twitter:card" content="summary_large_image" />
@@ -92,7 +71,7 @@ const Testimonials = () => {
     name="twitter:description"
     content="Real client reviews of Eammu Holidays Bangladesh – trusted visa and travel agency. See how we helped students, professionals & travelers globally."
   />
-  <meta name="twitter:image" content="https://eammu.com/images/logo.png" />
+  <meta name="twitter:image" content="https://eammu.com/eammuicon.jpg" />
 
   {/* Local SEO */}
   <meta name="geo.region" content="BD" />

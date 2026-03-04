@@ -5,7 +5,6 @@ import {
   Wind, Binoculars, Star, 
   ChevronLeft, ChevronRight,GraduationCap
 } from 'lucide-react';
-import { Helmet } from 'react-helmet'; // Added for SEO
 
 const HeroSection = () => {
   // Data for background slider
@@ -81,32 +80,6 @@ const HeroSection = () => {
 
   return (
     <div className="relative w-full overflow-hidden font-sans">
-      {/* --- SEO HELMET FOR HOME PAGE --- */}
-      <Helmet>
-        <title>Travel Agency Comilla | Study Abroad From Bangladesh</title>
-        <meta name="description" content="Eammu Holidays is an IATA approved global travel agency in Bangladesh. We offer cheap air tickets, international tour packages, and expert visa processing." />
-        <link rel="canonical" href="https://eammu.com" />
-        
-        {/* Organization Schema for Google Trust */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "TravelAgency",
-            "name": "Eammu Holidays",
-            "url": "https://eammu.com",
-            "logo": "https://eammu.com/logo.png",
-            "image": "https://eammu.com/hero-dubai-travel-agency.webp",
-            "description": "Leading travel agency in Bangladesh and Dubai providing air tickets, tours, and visa services.",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Dhaka",
-              "addressCountry": "bangladesh"
-            },
-            "telephone": "+8801631312524",
-            "priceRange": "$$"
-          })}
-        </script>
-      </Helmet>
 
    {/* ================= HERO SECTION ================= */}
 <div className="relative w-full bg-gradient-to-br from-[#0181a8] via-[#074901] to-[#c4da00] overflow-hidden">

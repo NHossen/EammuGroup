@@ -51,7 +51,7 @@ const CustomerTestimonialSection = () => {
         {/* Header Section */}
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-black text-[#005a31] mb-6">
-            Our <span className="text-orange-500">Customer</span> Testimonial
+            Eammu Holidays <span className="text-orange-500">Customer</span> Testimonial
           </h2>
           
           <div className="flex justify-center mb-10">

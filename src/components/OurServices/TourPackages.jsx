@@ -245,7 +245,7 @@ const TourPackages = () => {
     <HelmetProvider>
      {/* --- ADVANCED SEO HELMET --- */}
       <Helmet>
-        <title>Affordable International Tour Packages| Tour Packages Eammu Holidays</title>
+        <title>Affordable International Tour Packages | Tour Packages Bangladesh | Dhaka Domestic Tour Packages</title>
         <meta name="description" content="Book cheap international tour packages from Bangladesh. Best deals on Dubai, Georgia, Armenia, and India tours. IATA approved agency. Book on WhatsApp now!" />
         <meta name="keywords" content="International tour packages from Bangladesh, Cheap Dubai tour, Georgia Armenia tour package, India tour agency Dhaka, Best travel agency Cumilla" />
         

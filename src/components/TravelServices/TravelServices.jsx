@@ -1,6 +1,5 @@
 import React, { useEffect, useRef} from 'react';
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
-import { Helmet } from 'react-helmet'; // Added for SEO
 
 const TravelServices = () => {
   // Data for Visa Section
@@ -58,38 +57,6 @@ const TravelServices = () => {
 
   return (
     <div className="w-full py-16 space-y-16 px-4 md:px-10">
-
-      <Helmet>
-        <title>Professional Travel Agency Bangladdesh | Best Travel Agency Dhaka</title>
-        <meta name="description" content="Explore expert visa services including Tourist, Student, and Golden Visa assistance. Get up to 62% off on airline tickets and international tour packages with Eammu." />
-        <meta name="keywords" content="Visa processing Bangladesh, Student visa Dhaka, UAE Golden Visa, Cheap flight deals Bangladesh, Eammu Holidays Services" />
-        
-        {/* Structured Data: Service Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "serviceType": "Visa and Travel Consultancy",
-            "provider": {
-              "@type": "TravelAgency",
-              "name": "Eammu Holidays",
-              "telephone": "+8801631312524",
-              "url": "https://eammu.com"
-            },
-            "hasOfferCatalog": {
-              "@type": "OfferCatalog",
-              "name": "Travel Services",
-              "itemListElement": [
-                ...visaData.map(v => ({
-                  "@type": "Offer",
-                  "itemOffered": { "@type": "Service", "name": v.type }
-                }))
-              ]
-            }
-          })}
-        </script>
-      </Helmet>
-      
       {/* ================= SPECIAL OFFERS SECTION ================= */}
       <section className="max-w-7xl mx-auto">
         <div className="flex justify-between items-end mb-8 border-b border-gray-200 pb-4">

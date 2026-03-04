@@ -191,8 +191,8 @@ const [currentIndex, setCurrentIndex] = useState(0);
     <div className=" min-h-screen pb-20 font-sans">
      <Helmet>
   {/* Primary SEO */}
-  <title>Cheapest International Flight Tickets | Flight Tickets Bangladesh</title>
-<meta name="description" content="Book cheap international air tickets with Eammu, an IATA approved global travel agency. Compare real-time flight prices, airline deals, reissue & cancellation support worldwide."/>
+  <title>Cheapest International Flight Tickets | Flight Tickets Bangladesh | Book Your Flight Tickets</title>
+<meta name="description" content="Book cheap international Flight tickets with Eammu, IATA approved global travel agency in Bangladesh. Compare real-time flight prices, airline deals, reissue & cancellation support worldwide."/>
   {/* Canonical */}
   <link rel="canonical" href="https://eammu.com/air-tickets" />
 

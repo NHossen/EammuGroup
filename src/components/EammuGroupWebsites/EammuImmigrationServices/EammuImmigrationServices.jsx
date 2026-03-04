@@ -3,7 +3,6 @@
 import Carousel from "../../Carousel/Carousel";
 import Caresoul_BG_Mix from "../../Home/Caresoul_BG_Mix";
 import EammuImmigrationHeading_2 from "../../Home/EammuImmigrationHeading_2";
-import MessageFromLeadingTeam from "../../Home/MessageFromLeadingTeam";
 import Our_Succsses_State from "../../Home/Our_Succsses_State";
 import Registration_Agents from "../../Home/Registration_Agents";
 import TargetUsaSection from "../../Home/TargetUsaSection";
@@ -15,7 +14,7 @@ const EammuImmigrationServices = () => {
     return (
         <div>
           <Helmet>
-    <title>Eammu | Visa, Immigration & Travel Services</title>
+     <title>Education Consultancy Dhaka | Profesional Travel Agency Bangladesh | Travel Agency Cumilla</title>
     <meta name="description" content="Explore visa, immigration, and travel services to the USA, UK, Canada, Europe, Japan, and more. Trusted by thousands globally." />
     <meta name="keywords" content="Visa Services, Immigration, Study Abroad, Work Visa, Travel Agency Bangladesh, Eammu Tours, Eammu Immigration" />
     <meta property="og:title" content="Eammu - Your Trusted Visa & Immigration Partner" />
@@ -43,7 +42,6 @@ const EammuImmigrationServices = () => {
       {/* Registration */}
       <Registration_Agents ></Registration_Agents>
 
-      <MessageFromLeadingTeam />
 
         {/* Our_Succsses_State */}
         <Our_Succsses_State></Our_Succsses_State>

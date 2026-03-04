@@ -1,5 +1,5 @@
 import React from 'react'; // Fixed import
-import { Helmet } from 'react-helmet-async';
+
 import { Link } from 'react-router-dom';
 
 const destinations = [
@@ -15,24 +15,10 @@ const destinations = [
 
 const Tickets = () => {
   // Define the missing structured data
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Cheapest Flight Tickets",
-    "description": "Book affordable air tickets globally with Eammu Holidays.",
-    "brand": {
-      "@type": "Brand",
-      "name": "Eammu Holidays"
-    }
-  };
+
 
   return (
     <div className="px-4 sm:px-6 lg:px-10 container mx-auto py-10">
-      <Helmet>
-        <title>Cheapest Flight Ticket | Eammu Holidays</title>
-        <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
-      </Helmet>
-
       {/* Visual Section */}
       <div className="grid md:grid-cols-2 gap-6 mb-10">
         <img

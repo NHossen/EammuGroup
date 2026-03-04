@@ -1,36 +1,9 @@
-import { Helmet } from "react-helmet-async";
+import React from "react";
 import { motion } from "framer-motion";
 
 const WhyChoiceEammu = () => {
   return (
     <div className="px-4 md:px-8 lg:px-16 container mx-auto py-12 min-h-screen">
-      {/* ✅ SEO Tags */}
-      <Helmet>
-        <title>Premium Travel Agency Bangladesh | Study Abroad From Bangladesh | Education Consultancy Dhaka</title>
-        <meta
-          name="description"
-          content="Eammu Holidays offers student Visa From Bangladesh , tourist Visa Visa From Bangladesh , and work visa support for USA, Canada, UK, Europe, UAE, and more. Trusted visa consultancy in Bangladesh and UAE.We are Leading Travel Agent and Education Consultancy in Bangladesh.We Provide Premium Travel Services Worlwide."
-        />
-    
-        <meta name="author" content="Eammu Holidays" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://eammu.com/why-choose-eammu" />
-
-        {/* Open Graph for Facebook/LinkedIn */}
-        <meta property="og:title" content="Why Choose Eammu Holidays" />
-        <meta property="og:description" content="Ranked number one in Bangladesh's domestic flight sector, Eammu Holidays is committed to enhancing your travel experience. Our user-friendly features, such as Eammu Flight Tracker, Eammu Chat, special group fare, one stop visa services, airport flight screen, and other premium services, are designed with your convenience in mind" />
-        <meta property="og:image" content="https://eammu.com/eammuicon.jpg" />
-        <meta property="og:url" content="https://eammu.com/why-choose-eammu" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Eammu Holidays" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Why Eammu Holidays? | Trusted Visa & Travel Services" />
-        <meta name="twitter:description" content="At Eammu Holidays, your satisfaction is our top priority. That's why we offer round-the-clock customer support to assist you with any queries or concerns. Our dedicated team is available 24/7, ready to provide personalized assistance and ensure a hassle-free travel experience." />
-        <meta name="twitter:image" content="https://eammu.com/eammuicon.jpg" />
-        <meta name="twitter:site" content="@eammuimmigration" />
-      </Helmet>
 
       <motion.h1
         className="text-4xl md:text-5xl font-bold text-center mb-10 text-[#005a31]"

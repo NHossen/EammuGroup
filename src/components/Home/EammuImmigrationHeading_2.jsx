@@ -1,57 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import { GraduationCap, Plane, ShieldCheck, Ticket, ChevronRight } from "lucide-react";
 
 const EammuImmigrationHeading_2 = () => {
   return (
     <div className="relative overflow-hidden bg-white">
-      {/* SEO Helmet (Unchanged as requested) */}
-      <Helmet>
-        <title>
-          Premium Travel Agency Cumilla | Study Abroad From Cumilla | Best Travel Agency Cumilla
-        </title>
-        <meta
-          name="description"
-          content="Eammu Holidays in Cumilla, Bangladesh provides expert study abroad guidance, student, tourist & work visa support, and the cheapest air tickets worldwide. Trusted consultancy since 2018."
-        />
-       
-        <meta name="robots" content="index, follow" />
-
-        <script type="application/ld+json">
-          {`
-          {
-            "@context": "https://schema.org",
-            "@type": ["LocalBusiness","TravelAgency"],
-            "name": "Eammu Immigration Services",
-            "url": "https://eammu.com/eammuimmigrationservices",
-            "logo": "https://eammu.com/images/eammu-home-banner.jpg",
-            "description": "Study abroad consultancy, visa assistance, and cheapest air tickets in Cumilla, Bangladesh.",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Nakheel Center, Deira",
-              "addressLocality": "Cumilla",
-              "addressRegion": "Bangladesh",
-              "postalCode": "0000",
-              "addressCountry": "BD"
-            },
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "+880123456789",
-              "contactType": "Customer Service",
-              "availableLanguage": ["English", "Bengali"]
-            },
-            "areaServed": [
-              { "@type": "Country", "name": "Bangladesh" },
-              { "@type": "Country", "name": "United Arab Emirates" },
-              { "@type": "Country", "name": "India" },
-              { "@type": "Country", "name": "Armenia" }
-            ]
-          }
-          `}
-        </script>
-      </Helmet>
-
+ 
       {/* Background Decorative Element */}
       <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-green-50 rounded-full blur-3xl opacity-50"></div>
 
