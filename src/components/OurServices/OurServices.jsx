@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { 
-  FaGlobe, FaPlane, FaUniversity, 
+  FaPlane, FaUniversity, 
   FaTags, FaPassport, FaSuitcaseRolling, 
   FaArrowRight, FaShieldAlt 
 } from "react-icons/fa";
@@ -11,7 +11,7 @@ import {
 const services = [
   {
     icon: <FaPassport />,
-    title: "Visa Processing",
+    title: "Global Visa Processing",
     description: "Comprehensive visa consultancy for F1, B1/B2, and work permits for USA, UK, Canada, and Schengen countries.",
     link: "/visa-services",
     keywords: "Student Visa, Tourist Visa, Work Permit"
@@ -25,7 +25,7 @@ const services = [
   },
   {
     icon: <FaSuitcaseRolling />,
-    title: "Tour Packages",
+    title: "Holiday Packages",
     description: "Customized holiday deals, Umrah packages, and luxury group tours tailored to your preferences.",
     link: "/tour-packages",
     keywords: "Honeymoon Packages, Group Tours"
@@ -39,14 +39,14 @@ const services = [
   },
   {
     icon: <FaShieldAlt />,
-    title: "USA Interview Prep",
+    title: "USA Interview Preparation",
     description: "Expert coaching to crack the USA Visa Interview. Specialized 'Target USA' program for success.",
     link: "/usa-visa-interview-prep",
     keywords: "Visa Interview Coaching, USA Mock Interview"
   },
   {
     icon: <FaUniversity />,
-    title: "IELTS & Immigration",
+    title: "IELTS & Study Abroad academy",
     description: "Official support for IELTS preparation and immigration consultancy for Canada and Australia.",
     link: "/target-ielts-and-immigration-center",
     keywords: "Study Abroad, Immigration Support"
@@ -56,85 +56,91 @@ const services = [
 const OurServices = () => {
   return (
     <div className="min-h-screen bg-[#fcfcfc] pb-24 font-sans">
-      <Helmet>
-  {/* Primary SEO */}
-  <title>
-    Tourism Services Bangladesh | IATA Approved Travel Bangladesh | Globally Approved Travel Agency
-  </title>
+<Helmet>
 
-  <meta
-    name="description"
-    content="Eammu is a Govt & IATA approved global travel agency offering visa services, air tickets, tour packages, USA visa interview preparation, and immigration support across Bangladesh, UAE, Armenia, and Georgia."
-  />
+{/* Primary SEO */}
+<title>
+Travel & Visa Services Bangladesh | Air Tickets & Tour Packages Bangladesh | Eammu Holidays
+</title>
 
-  <meta
-    name="keywords"
-    content="
-    global travel agency bangladesh,
-    international tourism company,
-    visa services worldwide,
-    iata approved travel agency,
-    govt approved travel agency,
-    visa processing bangladesh,
-    travel agency dubai,
-    tour operator armenia,
-    travel company georgia,
-    cheap international air tickets,
-    usa visa interview preparation,
-    study abroad consultant,
-    umrah and holiday packages
-    "
-  />
+<meta
+  name="description"
+  content="Professional travel and visa services by Eammu Holidays in Bangladesh. Apply for tourist visas, work permits, book air tickets, tour packages and immigration consultancy from Bangladesh, UAE and worldwide."
+/>
 
-  {/* Canonical */}
-  <link rel="canonical" href="https://eammu.com/our-services" />
+<link rel="canonical" href="https://eammu.com/our-services" />
 
-  {/* Geo + Local SEO */}
-  <meta name="geo.region" content="BD" />
-  <meta name="geo.placename" content="Cumilla, Bangladesh" />
-  <meta name="geo.position" content="23.4607;91.1809" />
-  <meta name="ICBM" content="23.4607, 91.1809" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
 
-  {/* Open Graph (Facebook / WhatsApp) */}
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Global Visa & Travel Services | Eammu Group" />
-  <meta
-    property="og:description"
-    content="Visa processing, air ticketing, tour packages & immigration consultancy by Govt & IATA approved Eammu Group. Serving clients worldwide."
-  />
-  <meta property="og:url" content="https://eammu.com/our-services" />
-  <meta property="og:site_name" content="Eammu Group" />
-  <meta property="og:image" content="https://eammu.com/seo/our-services.jpg" />
+{/* Open Graph */}
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Global Visa & Travel Services | Eammu Holidays" />
+<meta
+  property="og:description"
+  content="Visa processing, flight booking, tour packages and immigration consultancy by Eammu Holidays serving clients worldwide."
+/>
+<meta property="og:url" content="https://eammu.com/our-services" />
+<meta property="og:site_name" content="Eammu Holidays" />
+<meta property="og:image" content="https://eammu.com/seo/our-services.jpg" />
 
-  {/* Twitter Card */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Eammu | Global Travel & Tourism Company" />
-  <meta
-    name="twitter:description"
-    content="Worldwide visa services, flights, tour packages & immigration solutions by Eammu Group."
-  />
-  <meta name="twitter:image" content="https://eammu.com/seo/our-services.jpg" />
+{/* Twitter */}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Travel & Visa Services | Eammu Holidays" />
+<meta
+  name="twitter:description"
+  content="Worldwide visa assistance, air tickets and international tour packages with expert travel consultants."
+/>
+<meta name="twitter:image" content="https://eammu.com/seo/our-services.jpg" />
 
-  {/* Trust & Brand Authority */}
-  <meta name="author" content="Eammu Group" />
-  <meta name="publisher" content="Eammu Group" />
-  <meta name="robots" content="index, follow, max-image-preview:large" />
+{/* Author */}
+<meta name="author" content="Eammu Holidays" />
+<meta name="publisher" content="Eammu Holidays" />
 
-  <script type="application/ld+json">
-{`
-{
+{/* Structured Data */}
+<script type="application/ld+json">
+{JSON.stringify({
   "@context": "https://schema.org",
-  "@type": "ItemList",
+  "@type": "OfferCatalog",
   "name": "Eammu Travel & Visa Services",
+  "url": "https://eammu.com/our-services",
   "itemListElement": [
-    { "@type": "Service", "name": "Visa Processing" },
-    { "@type": "Service", "name": "Air Ticketing" },
-    { "@type": "Service", "name": "Tour Packages" },
-    { "@type": "Service", "name": "USA Visa Interview Preparation" },
-    { "@type": "Service", "name": "IELTS & Immigration Consultancy" }
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Visa Processing Services"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Air Ticket Booking"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "International Tour Packages"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "USA Visa Interview Preparation"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Immigration & Study Abroad Consultancy"
+      }
+    }
   ]
-}
-`}
+})}
 </script>
 
 </Helmet>
@@ -158,13 +164,15 @@ const OurServices = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl md:text-6xl font-black mb-6 tracking-tighter uppercase italic">
-              Premium <span className="text-orange-400">Travel Solutions</span>
-            </h1>
-            <p className="text-lg md:text-xl text-green-50/90 max-w-3xl mx-auto font-medium leading-relaxed">
-              Professional immigration consultancy and global travel management 
-              designed to provide seamless experiences for students, tourists, and business travelers.
-            </p>
+            <h1 className="text-4xl md:text-5xl font-black mb-6 tracking-tighter uppercase italic">
+Global Visa Services & Air Ticket Booking | 
+<span className="text-orange-400">Travel Agency Bangladesh</span>
+</h1>
+           <p className="text-lg md:text-xl text-green-50/90 max-w-5xl mx-auto font-medium leading-relaxed">
+Eammu Holidays is a global travel agency providing visa application services, air ticket booking, 
+tour packages, and Education consultancy. We help travelers from Bangladesh, UAE, 
+Armenia, and worldwide with tourist visas, work permits, and international travel solutions.
+</p>
           </motion.div>
         </div>
       </section>

@@ -219,6 +219,96 @@ const countries = [
     image: "https://www.utilities-me.com/cloud/2023/07/24/uXpUiIfF-Saudi-Arabia-visa-1200x846.jpg",
     link: "/saudi-arabia-visa-application",
   },
+  {
+    name: "Armenia",
+    description: "Easy e-Visa and sticker visa services for tourists and business travelers to Armenia.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_Armenia.svg",
+    link: "/armenia-visa-application",
+  },
+  {
+    name: "Georgia",
+    description: "Explore the Caucasus with our streamlined Georgia e-Visa and visitor permit assistance.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg",
+    link: "/georgia-visa-application",
+  },
+  {
+    name: "China",
+    description: "Expert guidance for China L, M, and X visas, including appointment scheduling and document review.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg",
+    link: "/china-visa-application",
+  },
+  {
+    name: "Kosovo",
+    description: "Specialized visa assistance for tourism and business travel to Kosovo.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/1f/Flag_of_Kosovo.svg",
+    link: "/kosovo-visa-application",
+  },
+  {
+    name: "Serbia",
+    description: "Comprehensive support for Serbian visitor visas and work permit applications.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Serbia.svg",
+    link: "/serbia-visa-application",
+  },
+  {
+    name: "Singapore",
+    description: "Fast-track entry visas for Singapore, including tourist and business social visit passes.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg",
+    link: "/singapore-visa-application",
+  },
+  {
+    name: "Indonesia",
+    description: "Hassle-free Bali tourist visas and B211A business visas for Indonesia.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg",
+    link: "/indonesia-visa-application",
+  },
+  {
+    name: "India",
+    description: "Efficient e-Visa and regular sticker visa processing for tourism, business, and medical travel to India.",
+    image: "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
+    link: "/india-visa-application",
+  },
+  {
+    name: "Morocco",
+    description: "Professional assistance for Morocco tourist visas and e-Visa applications.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg",
+    link: "/morocco-visa-application",
+  },
+  {
+    name: "South Africa",
+    description: "Guided support for South African visitor visas, study permits, and work authorizations.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg",
+    link: "/south-africa-visa-application",
+  },
+  {
+    name: "Azerbaijan",
+    description: "Get your ASAN e-Visa for Azerbaijan quickly with our 24/7 online support.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg",
+    link: "/azerbaijan-visa-application",
+  },
+  {
+    name: "Cyprus",
+    description: "Visa services for the Republic of Cyprus, ideal for tourists and international students.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Cyprus.svg",
+    link: "/cyprus-visa-application",
+  },
+  {
+    name: "Sri Lanka",
+    description: "Online ETA and tourist visa processing for your next trip to Sri Lanka.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Sri_Lanka.svg",
+    link: "/sri-lanka-visa-application",
+  },
+  {
+    name: "Russia",
+    description: "Navigating Russian tourist, business, and private visa invitations and applications.",
+    image: "https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg",
+    link: "/russia-visa-application",
+  },
+  {
+    name: "Montenegro",
+    description: "Tourist and digital nomad visa assistance for the beautiful Adriatic coast of Montenegro.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Montenegro.svg",
+    link: "/montenegro-visa-application",
+  },
 ];
 
 const popularRoutes = [
@@ -239,10 +329,10 @@ const VisaServices = () => {
   // Category Filtering
   const categories = {
     america: ["USA", "Canada", "Mexico", "Brazil"],
-    europe: ["United Kingdom", "Albania", "Germany", "France", "Netherlands", "Italy", "Spain", "Sweden", "Norway", "Ireland", "Portugal", "Belgium", "Switzerland", "Austria", "Poland", "Czech Republic", "Greece", "Hungary", "Finland", "Denmark"],
-    asia: ["Japan", "Malaysia", "Thailand", "South Korea"],
-    middleEast: ["Dubai", "Hajj & Umrah", "Qatar", "Saudi Arabia"],
-    oceania: ["Australia", "New Zealand", "Turkey"],
+    europe: ["United Kingdom", "Albania", "Germany", "Cyprus" ,"France", "Netherlands", "Italy", "Spain", "Sweden", "Norway", "Ireland", "Portugal", "Belgium", "Switzerland", "Austria", "Poland", "Czech Republic", "Greece", "Hungary", "Finland", "Denmark"],
+    asia: ["Japan", "Malaysia", "Thailand", "South Korea", "china", "Singapore", "Indonesia", "India", "Sri Lanka", "Russia"],
+    middleEast: ["Dubai", "Hajj & Umrah", "Qatar", "Saudi Arabia" ,"Turkey", "Armenia", "Georgia", "Azerbaijan", "Morocco" ,"Kosovo","Serbia"],
+    oceania: ["Australia", "New Zealand", "South Africa", "Montenegro"]
   };
 
   // Pagination State
@@ -328,13 +418,15 @@ const VisaServices = () => {
 
   <div className="container mx-auto text-center relative z-10">
     <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-white drop-shadow-lg">
-      World-Class Visa Services
-    </h1>
+Global Visa Application Services for Tourist & Student Visas
+</h1>
     
-    <p className="max-w-4xl mx-auto text-gray-100 text-lg mb-10 leading-relaxed drop-shadow-md">
-      Assisting you with <strong className="text-white">Tourist, Student, and Work Visas</strong> across 25+ countries. 
-      Our expert team ensures high-quality documentation and embassy submission tips.
-    </p>
+   <p className="max-w-5xl mx-auto text-gray-100 text-lg mb-10 leading-relaxed drop-shadow-md">
+Eammu provides professional <strong className="text-white">visa application services</strong> for 
+tourist visas, student visas, and work permits in more than 25 countries including 
+Canada, UK, Australia, Europe, and the USA. Our experts guide you with documentation, 
+embassy requirements, and interview preparation to increase visa approval success.
+</p>
     
     <div className="flex flex-wrap justify-center gap-3">
       {['Asia', 'Europe', 'America', 'MiddleEast', 'Oceania', 'Popular'].map(cat => (
@@ -474,22 +566,48 @@ const VisaServices = () => {
 // Reusable Card Component to keep code clean
 const VisaCardItem = ({ country }) => (
   <article className="bg-white shadow-sm border border-gray-100 rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col group">
+
+    {/* Image Section */}
     <div className="h-52 overflow-hidden relative">
-      <img src={country.image} alt={country.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
-      <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-4 py-1 rounded-full text-[#005a31] text-xs font-bold shadow-sm">Official Service</div>
+      <img
+        src={country.image}
+        alt={`${country.name} visa application service`}
+        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+        loading="lazy"
+      />
+
+      {/* Badge */}
+      <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-4 py-1 rounded-full text-[#005a31] text-xs font-bold shadow-sm">
+        Official Service
+      </div>
     </div>
+
+    {/* Content Section */}
     <div className="p-6 flex flex-col flex-1">
-      <h3 className="text-2xl font-bold text-gray-800 mb-3 group-hover:text-[#005a31] transition-colors">{country.name} Visa Application</h3>
-      <p className="text-gray-600 text-sm leading-relaxed mb-8 flex-1">{country.description}</p>
-      <a
-        href={country.link}
-        rel="noopener noreferrer"
+
+      {/* SEO Heading */}
+      <h3 className="text-2xl font-bold text-gray-800 mb-3 group-hover:text-[#005a31] transition-colors">
+        {country.name} Visa Application
+      </h3>
+
+      {/* Description */}
+      <p className="text-gray-600 text-sm leading-relaxed mb-8 flex-1">
+        Professional {country.name} visa application services including tourist visa,
+        student visa and work permit support with complete documentation guidance
+        and embassy submission assistance.
+      </p>
+
+      {/* Button */}
+      <Link
+        to={country.link}
         className="w-full bg-[#005a31] text-white text-center py-3.5 rounded-2xl font-bold hover:bg-black transition-all shadow-md active:scale-95"
       >
-        Details
-      </a>
+        View Visa Details
+      </Link>
+
     </div>
   </article>
+
 );
 
 export default VisaServices;
