@@ -4,7 +4,7 @@ import { X, CheckCircle } from 'lucide-react';
 import { toast, Toaster } from 'react-hot-toast';
 
 const carouselImages = [
-  { url: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957", title: "Sylhet Tour" },
+  { url: "/eid_promo_eammu.webp", title: "Eid Offer" },
   { url: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c", title: "Desert Safari" },
   { url: "https://images.unsplash.com/photo-1518684079-3c830dcef090", title: "Dubai Luxury" }
 ];

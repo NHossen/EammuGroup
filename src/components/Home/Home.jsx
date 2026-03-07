@@ -7,6 +7,7 @@ import VisaPhotoGallery from "./VisaPhotoGallery";
 import HeroSection from "../HeroSection/HeroSection";
 import TravelServices from "../TravelServices/TravelServices";
 import LandingModal from "../LandingModal/LandingModal";
+import SpecialDayBanner from "../SpecialDay/SpecialDay";
 
 
 
@@ -136,6 +137,8 @@ const structuredData = {
       <LandingModal />
       {/* Hero Carousel */}
       <HeroSection />
+
+      <SpecialDayBanner />
       {/* Travel Services */}
        <TravelServices />
      

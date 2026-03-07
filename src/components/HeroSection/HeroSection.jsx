@@ -30,7 +30,7 @@ const HeroSection = () => {
   const bottomSlides = [
     { id: 0, title: "Higher Study In USA With 70% Scholarship", img: "https://globalgateways.co.in/wp-content/uploads/2025/01/study-abroad-usa.jpg", link: "/usa-visa-application", },
     { id: 1, title: "ALBANIA VISA", img: "/albania_visa_from_bangladesh.webp",link: "/albania-visa-application" },
-    { id: 2, title: "SINGAPORE VISA", img: "https://www.agoda.com/wp-content/uploads/2019/06/Singapore-Itinerary-Marina-Bay-Sands.jpg",link: "/singapore-visa-application" },
+    { id: 2, title: "EID PROMO", img: "/eid_offer_2026_eammu.webp",link: "/singapore-visa-application" },
     { id: 3, title: "E-VISA", img: "/eammu_evisa_offer.webp" ,link: "/thailand-visa-application" },
     { id: 4, title: "SYLHET TOUR", img: "https://royalbengaltours.com/wp-content/uploads/2017/08/Cycle-through-the-most-beautiful-tea-estates-of-Sreemangal-and-Sylhet-area.webp" ,link: "/tour-packages" },
     { id: 5, title: "DHAKA TOUR", img: "https://toursntripsbd.com/wp-content/uploads/2016/06/PB100664-180x152-1.jpg",link: "/tour-packages" },
@@ -39,6 +39,7 @@ const HeroSection = () => {
     { id: 8, title: "EUROPE VISA", img: "https://pmlholidays.com/admin/production/images/blogs/Europe.jpg",link: "/europe-visa-application" },
     { id: 9, title: "EMI", img: "/eammu_emi_offer.webp",link: "/offers" },
     { id: 10, title: "CANADA VISA", img: "/canada_visa_from_india.webp",link: "/canada-visa-application" },
+    { id: 11, title: "SINGAPORE VISA", img: "https://www.agoda.com/wp-content/uploads/2019/06/Singapore-Itinerary-Marina-Bay-Sands.jpg",link: "/singapore-visa-application" },
   ];
 
   const [bgIndex, setBgIndex] = useState(0);
