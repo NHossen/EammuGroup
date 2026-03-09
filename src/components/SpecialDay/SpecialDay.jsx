@@ -4,10 +4,10 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const SpecialDayBanner = () => {
   const slides = [
-    { id: 1, url: '/eid_offer_2026_eammu.webp', alt: 'Eid Offer 2026' },
-    { id: 2, url: '/eid_offer_banner_2.webp', alt: 'Special Eid Deals' },
-    { id: 3, url: '/eid_offer_eammu.webp', alt: 'Exclusive Holiday Offer' },
-    { id: 4, url: '/eid_ul_fitr_banner.webp', alt: 'Eid-ul-Fitr Special' },
+    { id: 1, url: '/eid_offer_2026_eammu.webp', alt: 'Eid Offer by Eammu Holidays' },
+    { id: 2, url: '/eid_offer_banner_2.webp', alt: 'Special Eid Deals With Eammu' },
+    { id: 3, url: '/eid_offer_eammu.webp', alt: 'Exclusive Holiday by Book Your Trip With Eammu' },
+    { id: 4, url: '/eid_ul_fitr_banner.webp', alt: 'Eid-ul-Fitr Special offer with eammu' },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
