@@ -87,7 +87,7 @@ const structuredData = {
     <div>
      <Helmet>
   {/* ================= PRIMARY SEO ================= */}
-  <title>Premium Travel Agency Bangladesh | Online Travel Agency Bangladesh | First travel agency in Bangladesh</title>
+  <title>Premium Travel Agency Bangladesh | Online Travel Agency Bangladesh | Tour operator in Bangladesh - Dhaka</title>
 
   <meta
     name="description"

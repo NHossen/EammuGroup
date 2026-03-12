@@ -36,7 +36,7 @@ const PosterGallery = () => {
           <h2 className="text-4xl font-black text-slate-900 uppercase tracking-tighter">
             Global Visa Assistance
           </h2>
-          <p className="text-slate-500 font-medium mt-2">Professional Visa Application By Eammu Holidays</p>
+          <p className="text-slate-500 font-medium mt-2">Eammu Holidays provides professional worldwide visa application assistance for travelers, tourists, and business visitors.</p>
         </div>
 
         {/* Grid - Alternating 5:5 and 5:7 */}

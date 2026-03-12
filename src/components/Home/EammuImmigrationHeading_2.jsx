@@ -23,7 +23,7 @@ const EammuImmigrationHeading_2 = () => {
               Global <span className="text-orange-500">Visa</span> & Study Abroad Assistance
               </h1>
               <h2 className="text-xl md:text-2xl font-semibold text-gray-700">
-                Premier Agency in <span className="border-b-2 border-orange-400">Dubai</span>, Armenia & Bangladesh
+              Best Travel Agency in <span className="border-b-2 border-orange-400 text-[#005a31]" >Bangladesh</span>, Armenia & Dubai 
               </h2>
             </div>
 
@@ -47,7 +47,7 @@ const EammuImmigrationHeading_2 = () => {
             </div>
 
             <p className="text-gray-600 leading-relaxed border-l-4 border-[#005a31] pl-4 italic">
-              "Whether you plan to study abroad, migrate, or travel, Eammu is your trusted partner turning goals into global opportunities."
+              Eammu Holidays is a trusted travel agency offering flight bookings, worldwide visa assistance, and exciting desert safari tours.
             </p>
 
             <div className="flex flex-wrap gap-4">

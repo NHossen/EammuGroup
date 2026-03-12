@@ -1,8 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion'; // অ্যানিমেশনের জন্য
+import { motion, AnimatePresence } from 'framer-motion'; //
 import Testimonials from '../Testimonials/Testimonials';
+
+// 1. New Helper Component for the FAQ items
+const FAQItem = ({ question, answer, index }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <motion.div 
+      initial={{ opacity: 0, y: 10 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: index * 0.1 }}
+      className="border-b border-gray-200"
+    >
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full py-6 flex justify-between items-center text-left group focus:outline-none"
+      >
+        <span className={`text-lg md:text-xl font-semibold transition-colors ${isOpen ? "text-[#005a31]" : "text-gray-800 group-hover:text-[#005a31]"}`}>
+          {question}
+        </span>
+        <motion.span 
+          animate={{ rotate: isOpen ? 45 : 0 }}
+          className="text-2xl text-[#005a31] font-light"
+        >
+          {isOpen ? "✕" : "+"}
+        </motion.span>
+      </button>
+      
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="overflow-hidden"
+          >
+            <p className="pb-6 text-gray-600 leading-relaxed text-base md:text-lg">
+              {answer}
+            </p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.div>
+  );
+};
 
 const About = () => {
   // অ্যানিমেশন ভেরিয়েন্ট
@@ -259,21 +304,73 @@ const About = () => {
             </motion.div>
           </section>
 
-          {/* --- Vision Section with Background Card --- */}
-          <section className="relative rounded-[3rem] bg-[#005a31] text-white p-10 md:p-20 overflow-hidden">
-             <div className="relative z-10 max-w-3xl space-y-6">
-                <h2 className="text-3xl md:text-5xl font-bold">Our Vision</h2>
-                <p className="text-lg md:text-xl text-green-50 leading-relaxed">
-                  To be a globally recognized brand driving growth and empowerment through innovation, teamwork, and top-quality services in immigration, travel, business, and lifestyle.
-                </p>
-                <div className="flex flex-wrap gap-4 pt-4">
-                   <div className="px-5 py-2 bg-white/10 rounded-full border border-white/20 text-sm">Transparency</div>
-                   <div className="px-5 py-2 bg-white/10 rounded-full border border-white/20 text-sm">Innovation</div>
-                   <div className="px-5 py-2 bg-white/10 rounded-full border border-white/20 text-sm">Empowerment</div>
-                </div>
-             </div>
-             {/* Decorative Circles */}
-             <div className="absolute -bottom-20 -right-20 w-80 h-80 bg-green-700 rounded-full blur-3xl opacity-30"></div>
+       {/* --- NEW Vision Section (Modernized) --- */}
+          <section className="relative rounded-[3rem] bg-[#005a31] text-white p-10 md:p-10 overflow-hidden shadow-2xl">
+            <motion.div 
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="relative z-10 max-w-3xl space-y-8"
+            >
+              <div className="space-y-2">
+                <span className="uppercase tracking-[0.2em] text-green-300 font-semibold text-sm">Future Roadmap</span>
+                <h2 className="text-4xl md:text-5xl font-bold">Our Vision</h2>
+              </div>
+              
+              <p className="text-lg md:text-2xl text-green-50/90 leading-relaxed font-light">
+                "Eammu Holidays provides inbound and outbound tour operate. Inbound tours provide experience guide, standard and any category’s hotel, best tours spot selection and your security. Holidays are meant for relaxation, to rejuvenate your energy moreover to spend your quality time with your loved ones and it is imperative to have the best Tour Operator to be your travel planner, who has got the experience, Infrastructure, commitment and who is a real professional to plan your valuable Tour."
+              </p>
+
+              <div className="flex flex-wrap gap-4 pt-4">
+                {["Transparency", "Innovation", "Empowerment"].map((tag) => (
+                  <motion.div 
+                    key={tag}
+                    whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.2)" }}
+                    className="px-6 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 text-sm font-medium cursor-default transition-all"
+                  >
+                    {tag}
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* Decorative Background Animations */}
+            <motion.div 
+              animate={{ scale: [1, 1.1, 1], rotate: [0, 5, 0] }}
+              transition={{ duration: 15, repeat: Infinity }}
+              className="absolute -bottom-20 -right-20 w-96 h-96 bg-green-400 rounded-full blur-[100px] opacity-20"
+            />
+          </section>
+
+          {/* --- NEW FAQ Section --- */}
+          <section className="py-10 max-w-7xl mx-auto px-4">
+            <div className="flex items-center gap-3 mb-12">
+              <h2 className="text-4xl font-bold text-gray-900">FAQ</h2>
+              <span className="text-[#005a31] text-2xl animate-pulse">✨</span>
+            </div>
+
+            <div className="space-y-2">
+              <FAQItem 
+                index={1}
+                question="Why Travel With Eammu Holidays?" 
+                answer="With years of international experience, we provide ethical, transparent, and comprehensive visa and tour solutions tailored to your unique goals. Our physical presence in Bangladesh and UAE ensures local support."
+              />
+              <FAQItem 
+                index={2}
+                question="Customer Help 24/7" 
+                answer="Our dedicated support team is available around the clock via WhatsApp and email to assist with urgent travel queries, ticket changes, or immigration updates."
+              />
+              <FAQItem 
+                index={3}
+                question="What Can Eammu Holidays Offer?" 
+                answer="We offer everything from student visa processing for top-tier countries like Canada and the UK to luxury holiday packages, corporate travel, and sustainable industrial fabric manufacturing."
+              />
+              <FAQItem 
+                index={4}
+                question="What Are The Benefits Of Choosing Eammu?" 
+                answer="Choosing us means choosing transparency. We offer real-time case tracking, no hidden charges, and a 95% visa success rate backed by professional expertise."
+              />
+            </div>
           </section>
 
           <Testimonials />

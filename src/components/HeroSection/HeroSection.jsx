@@ -134,9 +134,8 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-sm md:text-base leading-relaxed mb-5 opacity-90">
-            Eammu Holidays is a full-service travel company offering flight bookings, 
-            worldwide visa assistance, and desert safari. 
-            With expert consulting and transparent pricing, we make global travel simple.
+           Eammu Holidays is a leading online travel agency offering flight bookings, worldwide visa assistance, Holiday Tour Packages, and exciting desert safari tours. 
+           With expert guidance, we make international travel simple, affordable, and hassle-free
           </p>
 
           <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-5">
