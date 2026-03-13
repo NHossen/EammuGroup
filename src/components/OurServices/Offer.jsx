@@ -99,7 +99,7 @@ const OfferPage = () => {
       </Helmet>
 
       {/* SECTION 1: 3-BACKGROUND HERO SLIDER */}
-      <section className="relative w-full h-[45vh] md:h-[60vh] bg-black overflow-hidden">
+      <section className="relative w-full h-[45vh] md:h-[50vh] bg-black overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.div
             key={heroIndex}
@@ -145,7 +145,7 @@ const OfferPage = () => {
       </section>
 
      {/* SECTION 2: FLASH DEALS (Clickable Images Only) */}
-<section className="py-12 md:py-16 px-4 md:px-6 max-w-[1440px] mx-auto overflow-hidden">
+<section className="py-12 md:py-12 px-4 md:px-6 max-w-[1440px] mx-auto overflow-hidden">
   <div className="flex items-end justify-between mb-10">
     <div>
       <h2 className="text-3xl md:text-4xl font-black text-[#005a31] uppercase tracking-tighter">Flash Deals</h2>
@@ -170,7 +170,7 @@ const OfferPage = () => {
       >
         <Link 
           to={`/offers/${offer.slug}`} 
-          className="block aspect-[4/5] md:aspect-[16/10] overflow-hidden rounded-[2rem] md:rounded-[3rem] relative group"
+          className="block aspect-[16/8] overflow-hidden rounded-[2rem] md:rounded-[3rem] relative group"
         >
           <img 
             src={offer.image} 

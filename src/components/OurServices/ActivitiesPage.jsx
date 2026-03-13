@@ -93,7 +93,7 @@ const ActivitiesPage = () => {
       </Helmet>
 
       {/* SECTION 1: HERO (Responsive Height) */}
-      <section className="relative w-full h-[50vh] md:h-[60vh] bg-black overflow-hidden">
+      <section className="relative w-full h-[45vh] md:h-[50vh] bg-black overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.div
             key={heroIndex}
@@ -148,7 +148,7 @@ const ActivitiesPage = () => {
                 <div 
                   key={index}
                   onClick={() => openWhatsApp(act.waMsg)}
-                  className="w-[85%] sm:w-[350px] md:w-[420px] h-[220px] md:h-[260px] relative rounded-[2rem] overflow-hidden cursor-pointer snap-center flex-shrink-0 group shadow-lg"
+                  className="w-[85%] sm:w-[350px] md:w-[420px] h-[180px] md:h-[200px] relative rounded-[2rem] overflow-hidden cursor-pointer snap-center flex-shrink-0 group shadow-lg"
                 >
                   <img src={act.image} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt={act.title} />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
@@ -174,7 +174,7 @@ const ActivitiesPage = () => {
       {/* SECTION 3: MEDIA HUB (Working Pagination) */}
       <section id="media-hub" className="py-20 px-4 md:px-6 max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-black text-[#005a31] mb-6 uppercase tracking-tighter">Media Hub</h2>
+          <h2 className="text-4xl md:text-5xl font-black text-[#005a31] mb-6 uppercase tracking-tighter">Media Hub</h2>
           <div className="flex justify-center flex-wrap gap-3 mb-12">
             {['all', 'photos', 'videos'].map((tab) => (
               <button
@@ -251,17 +251,6 @@ const ActivitiesPage = () => {
           </div>
         )}
       </section>
-
-      {/* FOOTER CTA */}
-      <footer className="bg-[#005a31] py-16 px-6 text-center">
-        <h2 className="text-3xl md:text-5xl font-black text-white mb-8 uppercase tracking-tighter">Ready to Start?</h2>
-        <button 
-          onClick={() => openWhatsApp("I want to book an activity with Eammu Holidays!")}
-          className="w-full max-w-sm bg-white text-black px-10 py-5 rounded-full font-black text-lg md:text-2xl shadow-2xl hover:bg-gray-100 transition-all"
-        >
-          WhatsApp Us Now
-        </button>
-      </footer>
     </div>
   );
 };
