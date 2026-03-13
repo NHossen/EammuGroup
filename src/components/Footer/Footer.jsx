@@ -76,10 +76,10 @@ const Footer = () => {
                     {/* Column 3 */}
                     <nav className="flex flex-col space-y-3">
                         <header className="text-lg font-bold mb-2">Social Media</header>
-                        <a href="https://facebook.com" className="text-blue-700 hover:underline text-[15px]">Facebook</a>
-                        <a href="https://youtube.com" className="text-red-600 hover:underline text-[15px]">Youtube</a>
-                        <a href="https://linkedin.com" className="text-blue-800 hover:underline text-[15px]">LinkedIn</a>
-                        <a href="https://instagram.com" className="text-pink-700 hover:underline text-[15px]">Instagram</a>
+                        <a href="https://www.facebook.com/eammutourism" className="text-blue-700 hover:underline text-[15px]">Facebook</a>
+                        <a href="https://www.youtube.com/@Eammutour" className="text-red-600 hover:underline text-[15px]">Youtube</a>
+                        <a href="https://linkedin.com/company/eammu-immigration-services" className="text-blue-800 hover:underline text-[15px]">LinkedIn</a>
+                        <a href="https://instagram.com/eammuholidays" className="text-pink-700 hover:underline text-[15px]">Instagram</a>
                     </nav>
 
                     {/* Column 4: Newsletter & Auth */}
