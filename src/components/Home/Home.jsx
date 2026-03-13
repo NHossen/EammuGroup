@@ -1,17 +1,22 @@
 import { Helmet } from "react-helmet-async";
-import Caresoul_BG_Mix from "./Caresoul_BG_Mix";
-import EammuImmigrationHeading_2 from "./EammuImmigrationHeading_2";
-import Our_Succsses_State from "./Our_Succsses_State";
-import WhyChoiceEammu from "./WhyChoiceEammu";
-import VisaPhotoGallery from "./VisaPhotoGallery";
-import HeroSection from "../HeroSection/HeroSection";
-import TravelServices from "../TravelServices/TravelServices";
-import LandingModal from "../LandingModal/LandingModal";
-import SpecialDayBanner from "../SpecialDay/SpecialDay";
+import { lazy, Suspense } from "react";
 
+import HeroSection from "../HeroSection/HeroSection"; // LCP element (not lazy)
 
+/* ================= Lazy Load Components ================= */
+
+const Caresoul_BG_Mix = lazy(() => import("./Caresoul_BG_Mix"));
+const EammuImmigrationHeading_2 = lazy(() => import("./EammuImmigrationHeading_2"));
+const Our_Succsses_State = lazy(() => import("./Our_Succsses_State"));
+const WhyChoiceEammu = lazy(() => import("./WhyChoiceEammu"));
+const VisaPhotoGallery = lazy(() => import("./VisaPhotoGallery"));
+const TravelServices = lazy(() => import("../TravelServices/TravelServices"));
+const LandingModal = lazy(() => import("../LandingModal/LandingModal"));
+const SpecialDayBanner = lazy(() => import("../SpecialDay/SpecialDay"));
 
 const Home = () => {
+
+
 // ✅ Advanced Structured Data (Homepage Optimized)
 const structuredData = {
   "@context": "https://schema.org",
@@ -83,11 +88,17 @@ const structuredData = {
   ]
 };
 
+
   return (
     <div>
+
      <Helmet>
+
   {/* ================= PRIMARY SEO ================= */}
-  <title>Premium Travel Agency Bangladesh | Online Travel Agency Bangladesh | Tour operator in Bangladesh - Dhaka</title>
+
+  <title>
+  Premium Travel Agency Bangladesh | Online Travel Agency Bangladesh | Tour operator in Bangladesh - Dhaka
+  </title>
 
   <meta
     name="description"
@@ -95,56 +106,78 @@ const structuredData = {
   />
 
   <meta name="robots" content="index, follow" />
+
   <link rel="canonical" href="https://eammu.com/" />
 
   {/* ================= Open Graph ================= */}
+
   <meta
     property="og:title"
     content="Eammu Holidays | Trusted Education Consultancy in Bangladesh"
   />
+
   <meta
     property="og:description"
     content="Professional visa consultancy, immigration support, air ticket booking and tour packages. Serving clients from Bangladesh, UAE and beyond."
   />
+
   <meta property="og:url" content="https://eammu.com/" />
+
   <meta property="og:type" content="website" />
+
   <meta property="og:image" content="https://eammu.com/eammuicon.jpg" />
+
   <meta property="og:image:width" content="1200" />
+
   <meta property="og:image:height" content="630" />
 
+
   {/* ================= Twitter ================= */}
+
   <meta name="twitter:card" content="summary_large_image" />
+
   <meta
     name="twitter:title"
     content="Eammu Holidays | Travel Agency Bangladesh | Visa Consultancy Bangladesh"
   />
+
   <meta
     name="twitter:description"
     content="Online travel agency in Bangladesh offering visa processing, immigration support, work permits and air ticket booking worldwide."
   />
+
   <meta
     name="twitter:image"
     content="https://eammu.com/eammuicon.jpg"
   />
 
+
   {/* ================= Structured Data ================= */}
+
   <script type="application/ld+json">
     {JSON.stringify(structuredData)}
   </script>
+
 </Helmet>
 
-      {/* ================= PAGE SECTIONS ================= */}
+
+{/* ================= PAGE SECTIONS ================= */}
+
+<Suspense fallback={<div className="text-center py-20">Loading...</div>}>
+
       <LandingModal />
+
       {/* Hero Carousel */}
       <HeroSection />
 
       <SpecialDayBanner />
+
       {/* Travel Services */}
-       <TravelServices />
-     
+      <TravelServices />
+
       {/* Visa Poster Gallery */}
       <VisaPhotoGallery />
- 
+
       {/* Immigration Services Heading */}
       <EammuImmigrationHeading_2 />
 
@@ -156,6 +189,9 @@ const structuredData = {
 
       {/* Success Statistics */}
       <Our_Succsses_State />
+
+</Suspense>
+
     </div>
   );
 };

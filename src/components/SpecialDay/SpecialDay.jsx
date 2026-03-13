@@ -78,8 +78,8 @@ const SpecialDayBanner = () => {
               <img
                 src={slides[currentIndex].url}
                 alt={slides[currentIndex].alt}
-                className="w-full h-full object-fill md:object-cover"
-                loading="priority"
+                className="w-full h-auto object-cover"
+                decoding="async"
               />
               
               {/* Subtle Overlay to make the image pop */}

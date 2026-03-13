@@ -4,13 +4,13 @@ import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 const TravelServices = () => {
   // Data for Visa Section
   const visaData = [
-    { id: 1, title: "Tourist Visa Assistance by Eammu Holidays", img: "https://eam-global.com/wp-content/uploads/2025/03/Tourist-Visa.jpg", link: "/tourist-visa-application-from-bangladesh"},
-    { id: 2, title: "Study Abroad From Bangladesh with Eammu", img: "https://www.unidirection.com/wp-content/uploads/2019/10/study-abroad.png", link: "/student-visa-application-from-bangladesh"},
-    { id: 3, title: "IELTS And Visa Interview Preparation with Eammu", img: "https://galvanizetestprep.com/wp-content/uploads/2019/12/RAJA-KONDAPALLI-1.png", link: "/target-ielts-and-immigration-center"},
-    { id: 4, title: "Higher Study In USA With 70% Scholarship", img: "https://globalgateways.co.in/wp-content/uploads/2025/01/study-abroad-usa.jpg", link: "/student-visa-application-from-bangladesh"},
-    { id: 5, title: "Higher Study In Europe With Full Funded Scholarship", img: "https://www.birtamodeducation.edu.np/wp-content/uploads/2023/06/study_in_europe.jpg", link: "/europe-visa-application"},
-    { id: 6, title: "Australia Tourist Visa Application By Eammu Holidays", img: "https://static.joonsite.com/careerbrick/2411011532477466.png", link: "/australia-visa-application"},
-    { id: 7, title: "Schengen Visa Assistance By Eammu Holidays", img: "https://citizenshipbyinvestment.news/wp-content/uploads/2024/01/SchengenFeatured-1.jpg", link: "/europe-visa-application"},
+    { id: 1, title: "Tourist Visa Assistance by Eammu Holidays", img: "https://eam-global.com/wp-content/uploads/2025/03/Tourist-Visa.jpg", link: "/tourist-visa-application-from-bangladesh" , details: "Tourist Visa Application"},
+    { id: 2, title: "Study Abroad From Bangladesh with Eammu", img: "https://www.unidirection.com/wp-content/uploads/2019/10/study-abroad.png", link: "/student-visa-application-from-bangladesh", details: "Student Visa Application"},
+    { id: 3, title: "IELTS And Visa Interview Preparation with Eammu", img: "https://galvanizetestprep.com/wp-content/uploads/2019/12/RAJA-KONDAPALLI-1.png", link: "/target-ielts-and-immigration-center", details: "IELTS & Visa Interview Preparation"},
+    { id: 4, title: "Higher Study In USA With 70% Scholarship", img: "https://globalgateways.co.in/wp-content/uploads/2025/01/study-abroad-usa.jpg", link: "/student-visa-application-from-bangladesh", details: "USA Visa Application"},
+    { id: 5, title: "Higher Study In Europe With Full Funded Scholarship", img: "https://www.birtamodeducation.edu.np/wp-content/uploads/2023/06/study_in_europe.jpg", link: "/europe-visa-application", details: "Student Visa Application"},
+    { id: 6, title: "Australia Tourist Visa Application By Eammu Holidays", img: "https://static.joonsite.com/careerbrick/2411011532477466.png", link: "/australia-visa-application", details: "Tourist Visa Application"},
+    { id: 7, title: "Schengen Visa Assistance By Eammu Holidays", img: "https://citizenshipbyinvestment.news/wp-content/uploads/2024/01/SchengenFeatured-1.jpg", link: "/europe-visa-application", details: "Schengen Visa Application"},
     { id: 8, title: "Study In Russia With Full Funded Govt. Scholarship", img: "https://www.britannicaoverseas.com/storage/uploads/blogs/2025/09/26/study-in-russia_1742025452.webp", link: "/student-visa-application-from-bangladesh"},
   ];
 
