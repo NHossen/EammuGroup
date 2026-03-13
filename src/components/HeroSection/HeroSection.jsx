@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef} from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Plane, Gift, Map, CreditCard, 
   Wind, Binoculars, Star, 
-  ChevronLeft, ChevronRight,GraduationCap
+  ChevronLeft, ChevronRight, GraduationCap
 } from 'lucide-react';
 
 const HeroSection = () => {
@@ -14,7 +14,6 @@ const HeroSection = () => {
     "https://www.thailand.go.th/uploads/posts/photo_1684338552_1.jpeg",
     "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80",
     "https://eammu.com/eammu_banner.webp",
-    
   ];
 
   // Data for inner promo carousel
@@ -47,7 +46,7 @@ const HeroSection = () => {
   const [bottomIndex, setBottomIndex] = useState(0);
   const bottomRef = useRef(null);
 
-  // Auto slide for background, promo, and bottom carousel
+  // Auto slide logic for all carousels
   useEffect(() => {
     const timer = setInterval(() => {
       setBgIndex((prev) => (prev + 1) % bgSlides.length);
@@ -57,204 +56,186 @@ const HeroSection = () => {
     return () => clearInterval(timer);
   }, []);
 
-  // Scroll bottom carousel to active slide
- useEffect(() => {
-  const auto = setInterval(() => {
-    setBottomIndex((prev) => {
-      const next = (prev + 1) % bottomSlides.length;
-
-      const container = bottomRef.current;
-      if (container) {
-        const child = container.children[next];
-        container.scrollTo({
-          left: child.offsetLeft,
-          behavior: "smooth",
-        });
-      }
-
-      return next;
-    });
-  }, 5000);
-
-  return () => clearInterval(auto);
-}, []);
+  // Physical scroll handler (Syncs the DOM to the State)
+  useEffect(() => {
+    const container = bottomRef.current;
+    if (container && container.children[bottomIndex]) {
+      const activeItem = container.children[bottomIndex];
+      container.scrollTo({
+        left: activeItem.offsetLeft - container.offsetLeft,
+        behavior: "smooth",
+      });
+    }
+  }, [bottomIndex]);
 
   return (
     <div className="relative w-full overflow-hidden font-sans">
 
-   {/* ================= HERO SECTION ================= */}
-<div className="relative w-full bg-gradient-to-br from-[#0181a8] via-[#074901] to-[#c4da00] overflow-hidden">
+      {/* ================= HERO SECTION ================= */}
+      <div className="relative w-full bg-gradient-to-br from-[#0181a8] via-[#074901] to-[#c4da00] overflow-hidden">
 
-  {/* ================= BACKGROUND SLIDER ================= */}
-  <div className="absolute inset-0 z-0">
-    <AnimatePresence mode="wait">
-      <motion.img
-        key={bgIndex}
-        src={bgSlides[bgIndex]}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 1 }}
-        className="w-full h-full object-cover"
-      />
-    </AnimatePresence>
+        {/* ================= BACKGROUND SLIDER ================= */}
+        <div className="absolute inset-0 z-0">
+          <AnimatePresence mode="wait">
+            <motion.img
+              key={bgIndex}
+              src={bgSlides[bgIndex]}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1 }}
+              className="w-full h-full object-cover"
+            />
+          </AnimatePresence>
 
-    {/* Gradient Overlay */}
-    <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60" />
-  </div>
-
-  {/* ================= CONTENT WRAPPER ================= */}
-  <div className="relative z-10 min-h-[520px] sm:min-h-[600px] lg:min-h-[50vh] flex flex-col">
-
-    {/* ================= TOP NAV ================= */}
-    <div className="pt-6 sm:pt-10 flex justify-center mt-8">
-      <div className="w-[95%] max-w-5xl">
-        <div className="bg-white/95 backdrop-blur rounded-2xl py-3 px-2 grid grid-cols-3 sm:grid-cols-6 gap-2 shadow-2xl">
-
-          <a href="/visa-services"><NavItem icon={<CreditCard className="text-[#005a31]" />} label="Global Visa" /></a>
-          <a href="/air-tickets"><NavItem icon={<Plane className="text-[#005a31]" />} label="Flight Tickets" /></a>
-          <a href="/tour-packages"><NavItem icon={<Map className="text-[#005a31]" />} label="Holidays" /></a>
-          <a href="/activities"><NavItem icon={<Wind className="text-[#005a31]" />} label="Activities" /></a>
-          <a href="/student-visa-application-from-bangladesh"><NavItem icon={<GraduationCap className="text-[#005a31]" />} label="Study Abroad" /></a>
-          <a href="/offer"><NavItem icon={<Gift className="text-[#005a31]" />} label="Special Offers" /></a>
-
-        </div>
-      </div>
-    </div>
-
-    {/* ================= HERO BODY ================= */}
-    <div className="flex-1 flex items-center py-10">
-      <div className="max-w-5xl mx-auto px-4 w-full grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-
-        {/* TEXT */}
-        <div className="text-white text-center lg:text-left">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
-            Your Trusted Travel Partner <br />
-            in the World <span className="text-yellow-400">Since 2022</span>
-          </h1>
-
-          <p className="text-sm md:text-base leading-relaxed mb-5 opacity-90">
-           Eammu Holidays is a leading online travel agency offering flight bookings, worldwide visa assistance, Holiday Tour Packages, and exciting desert safari tours. 
-           With expert guidance, we make international travel simple, affordable, and hassle-free
-          </p>
-
-          <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-5">
-            <a href="/our-services" className="flex items-center gap-2 bg-white text-gray-700 px-5 py-2 rounded-full font-medium shadow-lg hover:bg-gray-100 transition text-sm">
-              <Binoculars className="text-[#005a31]" /> Explore More
-            </a>
-
-            <a href="/testimonials" className="flex items-center gap-2 bg-white text-gray-700 px-5 py-2 rounded-full font-medium shadow-lg hover:bg-gray-100 transition text-sm">
-              <Star className="text-[#005a31]" /> Customer Review
-            </a>
-          </div>
-
-          <div className="flex flex-wrap justify-center lg:justify-start gap-3 text-xs">
-            <span>🏆 IATA Accredited</span>
-            <span>📅 6+ Years Experience</span>
-            <span>⭐ Google Rating 4.9/5</span>
-          </div>
+          {/* Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60" />
         </div>
 
-        {/* ================= PROMO CARD ================= */}
-        <div className="w-full flex justify-center lg:justify-end">
+        {/* ================= CONTENT WRAPPER ================= */}
+        <div className="relative z-10 min-h-[520px] sm:min-h-[600px] lg:min-h-[50vh] flex flex-col">
 
-          <div className="relative w-full max-w-md h-[300px] sm:h-[260px] rounded-2xl overflow-hidden border border-white/30 shadow-2xl 
-          bg-gradient-to-br from-[#006b3c] via-[#005a31] to-[#003d22]">
+          {/* ================= TOP NAV ================= */}
+          <div className="pt-6 sm:pt-10 flex justify-center mt-8">
+            <div className="w-[95%] max-w-5xl">
+              <div className="bg-white/95 backdrop-blur rounded-2xl py-3 px-2 grid grid-cols-3 sm:grid-cols-6 gap-2 shadow-2xl">
+                <a href="/visa-services"><NavItem icon={<CreditCard className="text-[#005a31]" />} label="Global Visa" /></a>
+                <a href="/air-tickets"><NavItem icon={<Plane className="text-[#005a31]" />} label="Flight Tickets" /></a>
+                <a href="/tour-packages"><NavItem icon={<Map className="text-[#005a31]" />} label="Holidays" /></a>
+                <a href="/activities"><NavItem icon={<Wind className="text-[#005a31]" />} label="Activities" /></a>
+                <a href="/student-visa-application-from-bangladesh"><NavItem icon={<GraduationCap className="text-[#005a31]" />} label="Study Abroad" /></a>
+                <a href="/offer"><NavItem icon={<Gift className="text-[#005a31]" />} label="Special Offers" /></a>
+              </div>
+            </div>
+          </div>
 
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={promoIndex}
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ y: -20, opacity: 0 }}
-                transition={{ duration: 0.4 }}
-                className="absolute inset-0 flex flex-col sm:flex-row"
-              >
+          {/* ================= HERO BODY ================= */}
+          <div className="flex-1 flex items-center py-10">
+            <div className="max-w-5xl mx-auto px-4 w-full grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
 
-                {/* Image */}
-                <div className="w-full sm:w-1/2 h-[45%] sm:h-full">
-                  <img 
-                    src={promoSlides[promoIndex].img} 
-                    className="w-full h-full object-cover" 
-                    alt="Promo"
-                  />
-                </div>
+              {/* TEXT */}
+              <div className="text-white text-center lg:text-left">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+                  Your Trusted Travel Partner <br />
+                  in the World <span className="text-yellow-400">Since 2022</span>
+                </h1>
 
-                {/* Content */}
-                <div className="w-full sm:w-1/2 p-4 flex flex-col justify-between text-white">
-                  <div>
-                    <h2 className="text-base font-bold mb-2 uppercase leading-tight">
-                      {promoSlides[promoIndex].title}
-                    </h2>
+                <p className="text-sm md:text-base leading-relaxed mb-5 opacity-90">
+                  Eammu Holidays is a leading online travel agency offering flight bookings, worldwide visa assistance, Holiday Tour Packages, and exciting desert safari tours. 
+                  With expert guidance, we make international travel simple, affordable, and hassle-free
+                </p>
 
-                    <div className="flex gap-2 mb-3 text-[11px]">
-                      <div className="flex-1 border border-white/40 p-1.5 rounded bg-white/5">
-                        One Way <br/><b>USD {promoSlides[promoIndex].price1}</b>
-                      </div>
-                      <div className="flex-1 border border-white/40 p-1.5 rounded bg-white/5">
-                        Round Trip <br/><b>USD {promoSlides[promoIndex].price2}</b>
-                      </div>
-                      <div className='lg:hidden'>
-                         {/* Your Animated Logo */}
-      <img 
-        src="/eammu_white_logo.webp" 
-        alt="Loading..." 
-        className="h-[40px] w-full object-contain animate-pulse" 
-      />
-                      </div>
-                    </div>
-                  </div>
+                <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-5">
+                  <a href="/our-services" className="flex items-center gap-2 bg-white text-gray-700 px-5 py-2 rounded-full font-medium shadow-lg hover:bg-gray-100 transition text-sm">
+                    <Binoculars className="text-[#005a31]" /> Explore More
+                  </a>
 
-                  <a
-                    href="/air-tickets"
-                    className="bg-white text-[#005a31] font-black py-2 px-4 rounded-lg text-sm text-center block shadow-md active:scale-95 transition-transform"
-                  >
-                    Book Now
+                  <a href="/testimonials" className="flex items-center gap-2 bg-white text-gray-700 px-5 py-2 rounded-full font-medium shadow-lg hover:bg-gray-100 transition text-sm">
+                    <Star className="text-[#005a31]" /> Customer Review
                   </a>
                 </div>
 
-              </motion.div>
-            </AnimatePresence>
+                <div className="flex flex-wrap justify-center lg:justify-start gap-3 text-xs">
+                  <span>🏆 IATA Accredited</span>
+                  <span>📅 6+ Years Experience</span>
+                  <span>⭐ Google Rating 4.9/5</span>
+                </div>
+              </div>
 
-            {/* Indicators */}
-            <div className="absolute bottom-2 right-3 flex gap-1.5 z-20">
-              {promoSlides.map((_, i) => (
-                <div
-                  key={i}
-                  className={`h-1.5 w-1.5 rounded-full transition-all ${
-                    i === promoIndex ? 'bg-white w-4' : 'bg-white/40'
-                  }`}
-                />
-              ))}
+              {/* ================= PROMO CARD ================= */}
+              <div className="w-full flex justify-center lg:justify-end">
+                <div className="relative w-full max-w-md h-[300px] sm:h-[260px] rounded-2xl overflow-hidden border border-white/30 shadow-2xl 
+                bg-gradient-to-br from-[#006b3c] via-[#005a31] to-[#003d22]">
+
+                  <AnimatePresence mode="wait">
+                    <motion.div
+                      key={promoIndex}
+                      initial={{ y: 20, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      exit={{ y: -20, opacity: 0 }}
+                      transition={{ duration: 0.4 }}
+                      className="absolute inset-0 flex flex-col sm:flex-row"
+                    >
+                      {/* Image */}
+                      <div className="w-full sm:w-1/2 h-[45%] sm:h-full">
+                        <img 
+                          src={promoSlides[promoIndex].img} 
+                          className="w-full h-full object-cover" 
+                          alt="Promo"
+                        />
+                      </div>
+
+                      {/* Content */}
+                      <div className="w-full sm:w-1/2 p-4 flex flex-col justify-between text-white">
+                        <div>
+                          <h2 className="text-base font-bold mb-2 uppercase leading-tight">
+                            {promoSlides[promoIndex].title}
+                          </h2>
+
+                          <div className="flex gap-2 mb-3 text-[11px]">
+                            <div className="flex-1 border border-white/40 p-1.5 rounded bg-white/5">
+                              One Way <br/><b>USD {promoSlides[promoIndex].price1}</b>
+                            </div>
+                            <div className="flex-1 border border-white/40 p-1.5 rounded bg-white/5">
+                              Round Trip <br/><b>USD {promoSlides[promoIndex].price2}</b>
+                            </div>
+                            <div className='lg:hidden'>
+                               <img 
+                                src="/eammu_white_logo.webp" 
+                                alt="Loading..." 
+                                className="h-[40px] w-full object-contain animate-pulse" 
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        <a
+                          href="/air-tickets"
+                          className="bg-white text-[#005a31] font-black py-2 px-4 rounded-lg text-sm text-center block shadow-md active:scale-95 transition-transform"
+                        >
+                          Book Now
+                        </a>
+                      </div>
+                    </motion.div>
+                  </AnimatePresence>
+
+                  {/* Indicators */}
+                  <div className="absolute bottom-2 right-3 flex gap-1.5 z-20">
+                    {promoSlides.map((_, i) => (
+                      <div
+                        key={i}
+                        className={`h-1.5 w-1.5 rounded-full transition-all ${
+                          i === promoIndex ? 'bg-white w-4' : 'bg-white/40'
+                        }`}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </div>
+
             </div>
-
           </div>
         </div>
-
       </div>
-    </div>
-  </div>
-</div>
 
       {/* ================= BOTTOM CAROUSEL ================= */}
       <div className="bg-white py-10 px-4">
-
         <div className="max-w-7xl mx-auto relative">
           <div
-  ref={bottomRef}
-  className="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4"
->
+            ref={bottomRef}
+            className="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 hide-scrollbar"
+          >
             {bottomSlides.map((slide, index) => (
               <motion.div 
                 key={index}
-                className="snap-center min-w-[125%] sm:min-w-[70%] md:min-w-[40%] h-48 rounded-xl overflow-hidden relative shadow-md"
+                className="snap-center min-w-[85%] sm:min-w-[70%] md:min-w-[40%] h-48 rounded-xl overflow-hidden relative shadow-md"
                 whileHover={{ scale: 1.02 }}
               >
                 <a href={slide.link}>
                   <img src={slide.img} className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
-                  <p className="text-white font-bold">{slide.title}</p>
-                </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
+                    <p className="text-white font-bold">{slide.title}</p>
+                  </div>
                 </a>
               </motion.div>
             ))}
@@ -262,7 +243,7 @@ const HeroSection = () => {
 
           {/* arrows only desktop */}
           <button
-            className="hidden md:flex absolute left-[-20px] top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-lg text-gray-800"
+            className="hidden md:flex absolute left-[-20px] top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-lg text-gray-800 z-30"
             onClick={() =>
               setBottomIndex((prev) => (prev - 1 + bottomSlides.length) % bottomSlides.length)
             }
@@ -270,7 +251,7 @@ const HeroSection = () => {
             <ChevronLeft size={24} />
           </button>
           <button
-            className="hidden md:flex absolute right-[-20px] top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-lg text-gray-800"
+            className="hidden md:flex absolute right-[-20px] top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-lg text-gray-800 z-30"
             onClick={() =>
               setBottomIndex((prev) => (prev + 1) % bottomSlides.length)
             }

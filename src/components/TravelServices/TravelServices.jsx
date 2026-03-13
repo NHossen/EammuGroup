@@ -30,10 +30,11 @@ const TravelServices = () => {
   const offerRef = useRef(null);
 
   // Automatic Smooth Slide Logic
-  useEffect(() => {
+useEffect(() => {
     const autoScroll = (ref) => {
       if (ref.current) {
         const { scrollLeft, scrollWidth, clientWidth } = ref.current;
+        // If reached the end, reset to start, else scroll by one card width
         if (scrollLeft + clientWidth >= scrollWidth - 10) {
           ref.current.scrollTo({ left: 0, behavior: 'smooth' });
         } else {
@@ -42,12 +43,14 @@ const TravelServices = () => {
       }
     };
 
-    const interval = setInterval(() => {
-      autoScroll(visaRef);
-      autoScroll(offerRef);
-    }, 4000);
+    // Separate intervals with different delays
+    const offerInterval = setInterval(() => autoScroll(offerRef), 4000); 
+    const visaInterval = setInterval(() => autoScroll(visaRef), 5500); // Different timing
 
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(offerInterval);
+      clearInterval(visaInterval);
+    };
   }, []);
 
   const handleManualScroll = (ref, direction) => {

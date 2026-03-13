@@ -5,8 +5,8 @@ import { toast, Toaster } from 'react-hot-toast';
 
 const carouselImages = [
   { url: "/eid_promo_eammu.webp", title: "Eid Offer" },
-  { url: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c", title: "Desert Safari" },
-  { url: "https://images.unsplash.com/photo-1518684079-3c830dcef090", title: "Dubai Luxury" }
+  { url: "https://www.dubaidesertsafaris.com/wp-content/uploads/2025/01/95100e6bbb4e0728dbb90a5033802b73.webp", title: "Desert Safari" },
+  { url: "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=800&q=80", title: "Dubai Luxury" }
 ];
 
 const LandingModal = () => {
@@ -14,31 +14,37 @@ const LandingModal = () => {
   const [currentImg, setCurrentImg] = useState(0);
   const [email, setEmail] = useState('');
 
-  // 1. Auto-open modal after 2 seconds
+  // 1. Preload images and open modal
   useEffect(() => {
-    const timer = setTimeout(() => setIsOpen(true), 2000);
+    // Pre-cache images so there is no "hang" when the carousel starts
+    carouselImages.forEach((image) => {
+      const img = new Image();
+      img.src = image.url;
+    });
+
+    const timer = setTimeout(() => setIsOpen(true), 1500);
     return () => clearTimeout(timer);
   }, []);
 
-  // 2. Auto-rotate carousel images
+  // 2. Optimized Auto-rotate
   useEffect(() => {
+    if (!isOpen) return;
     const interval = setInterval(() => {
       setCurrentImg((prev) => (prev === carouselImages.length - 1 ? 0 : prev + 1));
     }, 4000);
     return () => clearInterval(interval);
-  }, []);
+  }, [isOpen]);
 
   const handleSubscribe = (e) => {
     e.preventDefault();
     if (email) {
-      toast.success('Successfully subscribed to Eammu Holidays!', {
-        duration: 4000,
+      toast.success('Successfully subscribed!', {
+        duration: 3000,
         position: 'top-center',
-        style: { background: '#005a31', color: '#fff', fontWeight: 'bold' },
+        style: { background: '#005a31', color: '#fff' },
         icon: <CheckCircle size={20} />
       });
-      // Close modal after success
-      setTimeout(() => setIsOpen(false), 2000);
+      setTimeout(() => setIsOpen(false), 1500);
     }
   };
 
@@ -47,103 +53,115 @@ const LandingModal = () => {
       <Toaster />
       <AnimatePresence>
         {isOpen && (
-          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
-            {/* Overlay */}
+          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 overflow-hidden">
+            {/* Overlay - Simplified animation to reduce GPU lag */}
             <motion.div 
-              initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+              initial={{ opacity: 0 }} 
+              animate={{ opacity: 1 }} 
+              exit={{ opacity: 0 }}
               onClick={() => setIsOpen(false)}
-              className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+              className="absolute inset-0 bg-black/70 backdrop-blur-[2px]"
             />
 
             {/* Modal Container */}
             <motion.div 
-              initial={{ scale: 0.9, opacity: 0, y: 20 }}
-              animate={{ scale: 1, opacity: 1, y: 0 }}
-              exit={{ scale: 0.9, opacity: 0, y: 20 }}
-              className="relative w-full max-w-4xl bg-white rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row min-h-[500px]"
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+              className="relative w-full max-w-4xl bg-white rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row min-h-[500px] will-change-transform"
             >
               {/* Close Button */}
               <button 
                 onClick={() => setIsOpen(false)}
-                className="absolute top-4 right-4 z-50 p-2 bg-white/20 hover:bg-white/40 md:bg-gray-100 md:hover:bg-gray-200 rounded-full transition-all"
+                className="absolute top-4 right-4 z-50 p-2 bg-white/80 hover:bg-white md:bg-gray-100 md:hover:bg-gray-200 rounded-full transition-all shadow-sm"
               >
                 <X size={20} className="text-gray-800" />
               </button>
 
-              {/* LEFT SIDE: Carousel (Hidden on small mobile if needed, or stacked) */}
-              <div className="relative w-full md:w-1/2 h-48 md:h-auto overflow-hidden">
-                <AnimatePresence mode="wait">
+              {/* LEFT SIDE: Carousel */}
+              <div className="relative w-full md:w-1/2 h-64 md:h-auto bg-gray-200 overflow-hidden">
+                <AnimatePresence initial={false}>
                   <motion.div
                     key={currentImg}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 1 }}
+                    transition={{ duration: 0.8 }}
                     className="absolute inset-0"
                   >
                     <img 
                       src={carouselImages[currentImg].url} 
                       className="w-full h-full object-cover" 
-                      alt="Travel" 
+                      alt={carouselImages[currentImg].title}
+                      loading="eager"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8">
-                      <h3 className="text-white text-2xl font-black uppercase italic tracking-tighter">
+                    {/* Content Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-8">
+                      <h3 className="text-white text-3xl font-black uppercase italic tracking-tighter leading-none">
                         {carouselImages[currentImg].title}
                       </h3>
-                      <p className="text-gray-200 text-sm font-bold">Exclusive Benefits with Eammu Holidays</p>
+                      <p className="text-gray-200 text-xs font-bold mt-2 uppercase tracking-wider">
+                        Exclusive Benefits with Eammu Holidays
+                      </p>
                     </div>
                   </motion.div>
                 </AnimatePresence>
                 
                 {/* Carousel Indicators */}
-                <div className="absolute bottom-4 left-8 flex gap-2">
+                <div className="absolute bottom-6 left-8 flex gap-2 z-20">
                   {carouselImages.map((_, i) => (
-                    <div key={i} className={`h-1 rounded-full transition-all ${currentImg === i ? 'w-8 bg-[#25D366]' : 'w-2 bg-white/50'}`} />
+                    <div 
+                      key={i} 
+                      className={`h-1.5 rounded-full transition-all duration-500 ${currentImg === i ? 'w-8 bg-[#25D366]' : 'w-2 bg-white/40'}`} 
+                    />
                   ))}
                 </div>
               </div>
 
-              {/* RIGHT SIDE: Login & Subscription */}
-              <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center text-center bg-white">
-                <h2 className="text-2xl font-black text-[#001f3f] mb-2">Sign-up / Log-in</h2>
-                <p className="text-gray-500 text-sm mb-8 font-bold uppercase tracking-widest">To enjoy member benefits</p>
+              {/* RIGHT SIDE: Content */}
+              <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center bg-white">
+                <div className="text-center md:text-left">
+                  <h2 className="text-3xl font-black text-[#001f3f] mb-1">Welcome!</h2>
+                  <p className="text-gray-500 text-[10px] mb-8 font-bold uppercase tracking-[0.2em]">Sign-in to unlock member rates</p>
+                </div>
 
-                {/* Google Login Button */}
-                <button className="w-full flex items-center justify-center gap-3 border-2 border-gray-100 py-3 rounded-xl font-bold text-gray-700 hover:bg-gray-50 transition-all mb-6">
+                {/* Google Login */}
+                <button className="w-full flex items-center justify-center gap-3 border-[1.5px] border-gray-200 py-3.5 rounded-xl font-bold text-gray-700 hover:bg-gray-50 hover:border-gray-300 transition-all mb-6">
                   <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" className="w-5" alt="google" />
                   Continue with Google
                 </button>
 
-                <div className="relative flex items-center mb-6">
+                <div className="relative flex items-center mb-8">
                   <div className="flex-grow border-t border-gray-100"></div>
-                  <span className="flex-shrink mx-4 text-gray-400 text-xs font-bold uppercase">Or Login with Email</span>
+                  <span className="flex-shrink mx-4 text-gray-400 text-[9px] font-black uppercase tracking-widest">Or login with email</span>
                   <div className="flex-grow border-t border-gray-100"></div>
                 </div>
 
-                {/* Subscription Form */}
-                <form onSubmit={handleSubscribe} className="space-y-4">
-                  <div>
-                    <label className="text-[10px] font-black uppercase text-gray-400 ml-1">Email or Mobile Number</label>
+                {/* Form */}
+                <form onSubmit={handleSubscribe} className="space-y-5">
+                  <div className="relative">
+                    <label className="text-[10px] font-black uppercase text-[#005a31] mb-1 block">Email or Mobile</label>
                     <input 
                       type="text" 
                       required
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      placeholder="Enter details..."
-                      className="w-full border-b-2 border-gray-100 focus:border-[#005a31] py-2 px-1 outline-none font-bold text-gray-800 transition-all"
+                      placeholder="e.g. hello@eammu.com"
+                      className="w-full border-b-2 border-gray-100 focus:border-[#005a31] py-2 outline-none font-bold text-gray-800 transition-all placeholder:text-gray-300"
                     />
                   </div>
                   
                   <button 
                     type="submit"
-                    className="w-full bg-[#005a31] text-white py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-[#25D366] transition-all shadow-lg shadow-[#005a31]/20"
+                    className="w-full bg-[#005a31] text-white py-4 rounded-xl font-black uppercase tracking-[0.15em] text-[11px] hover:bg-[#004d2a] transition-all shadow-lg shadow-[#005a31]/10 active:scale-[0.98]"
                   >
-                    Continue & Subscribe
+                    Get Started
                   </button>
                 </form>
 
-                <p className="text-[9px] text-gray-400 mt-6 text-center leading-relaxed">
-                  By signing in, you agree to our <span className="text-blue-500 underline">Privacy Policy</span> and <span className="text-blue-500 underline">Terms of Service</span>.
+                <p className="text-[9px] text-gray-400 mt-8 text-center leading-relaxed">
+                  By continuing, you agree to our <span className="text-gray-600 underline cursor-pointer">Privacy Policy</span> and <span className="text-gray-600 underline cursor-pointer">Terms</span>.
                 </p>
               </div>
             </motion.div>

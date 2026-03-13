@@ -48,170 +48,174 @@ const offers = [
   },
 ];
 
+// High-end cinematic background slider images for the Hero Section
+const heroBackgrounds = [
+  "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop", 
+  "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1600&auto=format&fit=crop", 
+  "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=1600&auto=format&fit=crop", 
+];
+
 const OfferPage = () => {
   const [heroIndex, setHeroIndex] = useState(0);
   const scrollRef = useRef(null);
 
-  // --- AUTOMATIC HERO FADE (5 Seconds) ---
+  // --- Background Slider Logic (3 Slides) ---
   useEffect(() => {
     const timer = setInterval(() => {
-      setHeroIndex((prev) => (prev === 2 ? 0 : prev + 1));
-    }, 5000);
+      setHeroIndex((prev) => (prev === heroBackgrounds.length - 1 ? 0 : prev + 1));
+    }, 6000);
     return () => clearInterval(timer);
   }, []);
 
-  // --- FIXED: AUTOMATIC HORIZONTAL SCROLL FOR FLASH DEALS ---
+  // --- Flash Deals Auto-Scroll ---
   useEffect(() => {
     const scrollContainer = scrollRef.current;
     if (!scrollContainer) return;
 
     const autoScroll = setInterval(() => {
-      const scrollAmount = 400; // Speed of each jump
       const maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
-
       if (scrollContainer.scrollLeft >= maxScroll - 10) {
-        // Reset to beginning smoothly if at the end
         scrollContainer.scrollTo({ left: 0, behavior: 'smooth' });
       } else {
-        // Scroll to the next set of deals
-        scrollContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        const step = window.innerWidth < 768 ? 320 : 450;
+        scrollContainer.scrollBy({ left: step, behavior: 'smooth' });
       }
-    }, 3500); // Moves every 3.5 seconds
+    }, 4000);
 
     return () => clearInterval(autoScroll);
   }, []);
 
-  // Manual Scroll Buttons
   const scrollManual = (direction) => {
     if (scrollRef.current) {
-      const { current } = scrollRef;
-      const shift = direction === "left" ? -400 : 400;
-      current.scrollBy({ left: shift, behavior: "smooth" });
+      const shift = direction === "left" ? -350 : 350;
+      scrollRef.current.scrollBy({ left: shift, behavior: "smooth" });
     }
   };
 
   return (
-    <div className="bg-gray-50 min-h-screen font-sans overflow-x-hidden">
+    <div className="min-h-screen font-sans overflow-x-hidden">
       <Helmet>
-        <title>Exclusive Travel Deals 2026 | Special Offers - Eammu Group</title>
-        <meta name="description" content="Grab the best travel deals on international flights, tour packages, and student visas. Limited-time offers from Eammu Holidays." />
+        <title>Exclusive Travel Deals 2026 | Eammu Group</title>
       </Helmet>
 
-      {/* --- SECTION 1: 60VH HERO SLIDER --- */}
-      <section className="relative w-full h-[45vh] bg-black overflow-hidden">
+      {/* SECTION 1: 3-BACKGROUND HERO SLIDER */}
+      <section className="relative w-full h-[45vh] md:h-[60vh] bg-black overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.div
             key={heroIndex}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ opacity: 0, scale: 1.1 }}
+            animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 1.2 }}
+            transition={{ duration: 1.5 }}
             className="absolute inset-0"
           >
             <div 
               className="w-full h-full bg-cover bg-center"
-              style={{ backgroundImage: `url(${offers[heroIndex].image})` }}
+              style={{ backgroundImage: `url(${heroBackgrounds[heroIndex]})` }}
             >
-              <div className="absolute inset-0 bg-black/50"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/60"></div>
             </div>
-            <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white px-4">
-              <span className="bg-[#005a31] text-white px-6 py-1 rounded-full text-sm font-black uppercase mb-4 animate-pulse">Hot Deal</span>
-              <h1 className="text-4xl md:text-7xl font-black mb-6 tracking-tighter uppercase">{offers[heroIndex].title}</h1>
-              <Link to={`/offers/${offers[heroIndex].slug}`} className="bg-white text-[#005a31] px-12 py-4 rounded-full font-black hover:bg-[#005a31] hover:text-white transition-all shadow-2xl">
-                Claim Now
-              </Link>
+            
+            <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white px-6">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5 }}
+              >
+                <span className="bg-[#e7d000] text-black px-4 py-1 rounded-full text-[10px] font-black uppercase mb-4 tracking-widest inline-block animate-pulse">Hot Deal</span>
+                <h1 className="text-4xl md:text-7xl font-black mb-6 tracking-tighter uppercase max-w-4xl leading-none">
+                  Special Travel Offers
+                </h1>
+                <p className="text-sm md:text-lg font-bold opacity-80 mb-8 max-w-2xl mx-auto uppercase tracking-wide">
+                  Explore the world with Eammu Holidays exclusive 2026 packages.
+                </p>
+                <a href="https://wa.me/8801631312524" className="bg-[#005a31] text-white px-12 py-4 rounded-full font-black text-xs uppercase transition-all shadow-2xl hover:bg-white hover:text-[#005a31]">
+                  Contact Us
+                </a>
+              </motion.div>
             </div>
           </motion.div>
         </AnimatePresence>
-      </section>
 
-      {/* --- SECTION 2: AUTOMATIC FLASH DEALS SLIDER --- */}
-      <section className="py-16 px-6 max-w-[1440px] mx-auto">
-        <div className="flex items-center justify-between mb-10">
-          <div>
-            <h2 className="text-3xl md:text-4xl font-black text-[#005a31] uppercase tracking-tighter">Flash Deals</h2>
-            <p className="text-gray-400 font-bold uppercase text-xs tracking-[0.2em] mt-2">Limited time only</p>
-          </div>
-          
-          {/* Manual Control Arrows */}
-          <div className="flex gap-2">
-            <button onClick={() => scrollManual("left")} className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-[#005a31] hover:text-white transition-all shadow-sm">‹</button>
-            <button onClick={() => scrollManual("right")} className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-[#005a31] hover:text-white transition-all shadow-sm">›</button>
-          </div>
-        </div>
-
-        <div 
-          ref={scrollRef}
-          className="flex gap-6 overflow-x-auto pb-10 scroll-smooth snap-x snap-mandatory hide-scrollbar"
-          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-        >
-          {offers.map((offer) => (
-            <div 
-              key={offer.id}
-              className="min-w-[300px] md:min-w-[450px] bg-white rounded-[2.5rem] overflow-hidden shadow-xl border border-gray-50 flex-shrink-0 snap-start group relative"
-            >
-              <div className="h-64 overflow-hidden relative">
-                <img src={offer.image} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt={offer.title} />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-all"></div>
-              </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-black text-gray-900 mb-4 uppercase tracking-tight truncate">{offer.title}</h3>
-                <p className="text-gray-500 font-bold text-sm mb-8 line-clamp-2 h-10">{offer.description}</p>
-                <Link 
-                  to={`/offers/${offer.slug}`}
-                  className="inline-block w-full text-center py-4 bg-[#005a31] text-white font-black rounded-2xl hover:bg-[#005a31] transition-all uppercase tracking-widest text-xs"
-                >
-                  View Details
-                </Link>
-              </div>
-            </div>
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+          {heroBackgrounds.map((_, i) => (
+            <button key={i} onClick={() => setHeroIndex(i)} className={`h-1.5 transition-all duration-700 rounded-full ${heroIndex === i ? 'w-12 bg-[#e7d000]' : 'w-4 bg-white/40'}`} />
           ))}
         </div>
-        
-        {/* Animated Progress Bar */}
-        <div className="w-full h-1 bg-gray-200 rounded-full mt-4 overflow-hidden max-w-sm mx-auto">
-            <motion.div 
-                animate={{ x: ["-100%", "100%"] }} 
-                transition={{ repeat: Infinity, duration: 3.5, ease: "linear" }}
-                className="h-full w-1/3 bg-[#005a31] rounded-full"
-            />
-        </div>
       </section>
 
-      {/* --- SECTION 3: ALL OFFERS GRID --- */}
-      <section className="py-24 px-6 bg-white">
+     {/* SECTION 2: FLASH DEALS (Clickable Images Only) */}
+<section className="py-12 md:py-16 px-4 md:px-6 max-w-[1440px] mx-auto overflow-hidden">
+  <div className="flex items-end justify-between mb-10">
+    <div>
+      <h2 className="text-3xl md:text-4xl font-black text-[#005a31] uppercase tracking-tighter">Flash Deals</h2>
+      <p className="text-gray-400 font-bold uppercase text-[10px] tracking-[0.3em] mt-2">Limited Time Offers</p>
+    </div>
+    <div className="hidden md:flex gap-3">
+      <button onClick={() => scrollManual("left")} className="w-14 h-14 rounded-full border border-gray-100 flex items-center justify-center hover:bg-[#005a31] hover:text-white transition-all shadow-sm">‹</button>
+      <button onClick={() => scrollManual("right")} className="w-14 h-14 rounded-full border border-gray-100 flex items-center justify-center hover:bg-[#005a31] hover:text-white transition-all shadow-sm">›</button>
+    </div>
+  </div>
+
+  <div 
+    ref={scrollRef}
+    className="flex gap-5 md:gap-8 overflow-x-auto pb-10 scrollbar-hide snap-x snap-mandatory touch-pan-x"
+    style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+  >
+    {offers.map((offer) => (
+      <motion.div 
+        key={offer.id}
+        whileHover={{ y: -10 }}
+        className="w-[80%] sm:w-[350px] md:w-[450px] flex-shrink-0 snap-center"
+      >
+        <Link 
+          to={`/offers/${offer.slug}`} 
+          className="block aspect-[4/5] md:aspect-[16/10] overflow-hidden rounded-[2rem] md:rounded-[3rem] relative group"
+        >
+          <img 
+            src={offer.image} 
+            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" 
+            alt={offer.title} 
+          />
+          {/* Subtle Overlay on Hover */}
+          <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+             <span className="bg-white/20 backdrop-blur-md text-white px-6 py-2 rounded-full text-xs font-black uppercase tracking-widest border border-white/30">
+                View Offer
+             </span>
+          </div>
+        </Link>
+      </motion.div>
+    ))}
+  </div>
+</section>
+
+      {/* SECTION 3: EXPLORE GRID (Clickable Images) */}
+      <section className="py-20 px-4 md:px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-black text-[#005a31] mb-4 uppercase tracking-tighter">Explore More</h2>
-            <div className="w-20 h-1.5 bg-[#005a31] mx-auto rounded-full"></div>
+            <h2 className="text-3xl md:text-5xl font-black text-[#005a31] uppercase tracking-tighter">Explore More</h2>
+            <div className="w-24 h-2 bg-[#005a31] mx-auto rounded-full mt-4"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
             {offers.map((offer) => (
-              <div key={offer.id} className="group bg-gray-50 rounded-[3rem] p-5 hover:bg-white hover:shadow-2xl transition-all border border-transparent hover:border-gray-100">
-                <div className="h-52 rounded-[2.2rem] overflow-hidden mb-6 shadow-md">
-                   <img src={offer.image} className="w-full h-full object-cover" alt={offer.title} />
-                </div>
+              <div key={offer.id} className="group bg-white rounded-[3rem] p-5 hover:shadow-3xl transition-all border border-transparent hover:border-gray-100">
+                {/* Clickable Image */}
+                <Link to={`/offers/${offer.slug}`} className="block h-56 rounded-[2.5rem] overflow-hidden mb-8 shadow-inner">
+                   <img src={offer.image} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt={offer.title} />
+                </Link>
                 <h3 className="text-xl font-black text-[#005a31] mb-3 uppercase tracking-tight">{offer.title}</h3>
-                <p className="text-gray-600 font-bold text-xs mb-8 uppercase tracking-widest leading-relaxed">{offer.description}</p>
-                <div className="flex gap-2">
-                    <Link to={`/offers/${offer.slug}`} className="flex-1 bg-white border-2 border-[#005a31] text-[#005a31] py-3 rounded-2xl font-black text-center text-xs uppercase hover:bg-[#005a31] hover:text-white transition-all">Details</Link>
-                    <a href="https://wa.me/8801631312524" className="flex-1 bg-[#005a31] text-white py-3 rounded-2xl font-black text-center text-xs uppercase shadow-lg shadow-[#25D366]/20 transition-all">Book</a>
+                <p className="text-gray-500 font-bold text-[11px] mb-10 uppercase tracking-widest leading-relaxed line-clamp-3">
+                  {offer.description}
+                </p>
+                <div className="flex gap-3">
+                    <a href="https://wa.me/8801631312524" className="flex-1 bg-[#005a31] text-white py-4 rounded-2xl font-black text-center text-[10px] uppercase shadow-lg hover:bg-black transition-all">Book Now</a>
                 </div>
               </div>
             ))}
           </div>
         </div>
       </section>
-
-      {/* --- CTA FOOTER --- */}
-      <footer className="bg-[#005a31] py-24 text-center">
-        <h2 className="text-3xl md:text-4xl font-black text-white mb-10 uppercase tracking-tighter">Your Offer Awaits</h2>
-        <div className="flex justify-center gap-4">
-            <Link to="/" className="px-10 py-5 bg-white text-[#005a31] rounded-full font-black uppercase tracking-widest text-sm shadow-xl">Home</Link>
-            <a href="https://wa.me/8801631312524" className="px-10 py-5 bg-[#005a31] text-white rounded-full font-black uppercase tracking-widest text-sm shadow-xl">Contact</a>
-        </div>
-      </footer>
     </div>
   );
 };
