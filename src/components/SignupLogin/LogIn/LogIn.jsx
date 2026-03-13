@@ -19,7 +19,7 @@ const LogIn = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-50 px-4">
+    <div className="flex items-center justify-center min-h-screen px-4">
       <div className="max-w-md w-full bg-white shadow-lg rounded-xl p-8 space-y-6 border border-gray-200">
         <div>
           <h1 className="text-4xl font-bold text-center text-[#005a31]">Welcome Back!</h1>

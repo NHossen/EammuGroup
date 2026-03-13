@@ -2,105 +2,115 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div>
-            <div>
-                <div className="py-8 px-4">
-  <div className="max-w-5xl mx-auto text-center">
+        <div className="w-full text-[#4b4b4b] font-sans pt-16">
+            <div className="max-w-7xl mx-auto px-4">
+                
+                {/* Top Section: Trust & Logo Branding */}
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-gray-100">
+                    
+                    {/* Brand Column */}
+                    <div className="lg:col-span-4 space-y-5">
+                        <img 
+                            src="/eammu_holidays_Travel_agency.webp" // Replace with your actual logo path
+                            alt="Eammu Logo" 
+                            className="h-12 w-auto object-contain"
+                        />
+                        <h2 className="text-xl font-bold text-[#005a31]">
+                            Your Trusted Travel Partner
+                        </h2>
+                        <p className="text-[#696969] text-sm leading-relaxed max-w-sm">
+                            Eammu Holidays is the best travel agency in Bangladesh offering domestic and 
+                            international travel packages, air ticketing (IATA certified), visa support, 
+                            and holiday planning.
+                        </p>
+                    </div>
 
-    {/* Payments */}
-    <div className="mb-8">
-      <h4 className="text-xl font-semibold text-[#005a31] mb-4">We Accept</h4>
-      <div className="flex flex-wrap justify-center items-center gap-6">
-        <img src="https://1000logos.net/wp-content/uploads/2021/11/VISA-logo.png" alt="VISA" className="h-4 sm:h-10" />
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="MasterCard" className="h-4 sm:h-10" />
-        <img src="https://www.logo.wine/a/logo/BKash/BKash-bKash-Logo.wine.svg" alt="bKash" className="h-10 sm:h-10" />
-        <img src="https://miro.medium.com/v2/resize:fit:1400/1*1JMzKz_LENBDkVN83qyE0Q.png" alt="Rocket" className="h-10 sm:h-10" />
-      </div>
-    </div>
-
-    {/* Certifications  */}
-    <div>
-      <h4 className="text-xl font-semibold text-[#005a31] mb-4">Certified & Approved</h4>
-      <div className="flex flex-wrap justify-center items-center gap-6">
-        <img src="https://www.alliancealliance.com/wp-content/uploads/2018/03/IATA-icon.png" alt="IATA Approved" className="h-8 sm:h-10" />
-        <img src="https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/product-categories/security-identity-compliance/compliance/approved/images/9f85a551-bd1b-4f4e-b831-b4e007d98a38.84c734e79f09168de3a939175a1d477caf47d179.png" alt="Govt Approved" className="h-8 sm:h-10" />
-        <img src="https://i.ibb.co/3yPCJrz7/Screenshot-2025-06-26-174513.png" alt="IATA Approved" className="h-8 sm:h-10" />
-      </div>
-    </div>
-
-  </div>
-</div>
-
-            </div>
-            <footer className="footer">
-
-                {/* Eammu Group Websites Section */}
-                <nav className='text-[#696969] font-light text-[18px] '>
-                    <header className="text-2xl text-[#4b4b4b] font-bold mb-2">Eammu Group Websites</header>
-                    <Link className='mb-[6px]' to='/eammuimmigrationservices'><a className="link link-hover hover:text-[#005a31]">Eammu Holidays</a></Link>
-                    <Link className='mb-[6px]' to='/eammumarketing'><a className="link link-hover hover:text-[#005a31]">Eammu IT & Marketing Solutions</a></Link>
-                    <Link className='mb-[6px]' to='/eammuevent'><a className="link link-hover hover:text-[#005a31]">Eammu Event Management</a></Link>
-                    <Link className='mb-[6px]' to='/eammudairy'><a className="link link-hover hover:text-[#005a31]">Eammu Dairy & Poultry Farm</a></Link>
-                    <Link className='mb-[6px]' to='/eammufashion'><a className="link link-hover hover:text-[#005a31]">Eammu Fashion</a></Link>
-                    <Link className='mb-[6px]' to='/eammutextile'><a className="link link-hover hover:text-[#005a31]">Eammu Textile & Industry</a></Link>
-                    <Link className='mb-[6px]' to='/flyzoo'><a className="link link-hover hover:text-[#005a31]">Flyzoo</a></Link>
-                </nav>
-
-                {/* Useful Links Section */}
-                <nav className='text-[#696969] font-light text-[18px] '>
-                    <header className="text-2xl text-[#4b4b4b] font-bold mb-2">Eammu Useful Links</header>
-                    <Link className='mb-[6px]' to='/eammu-social-responsibility'><a className="link link-hover hover:text-[#005a31]">Eammu Social Responsibility</a></Link>
-                    <Link className='mb-[6px]' to='/eammunewsfeeds'><a className="link link-hover hover:text-[#005a31]">Eammu Newsfeeds</a></Link>
-                    <Link className='mb-[6px]' to='/messagefromleadingteam'><a className="link link-hover hover:text-[#005a31]">Our Leading Team</a></Link>
-                    <Link className='mb-[6px]' to='/careers'><a className="link link-hover hover:text-[#005a31]">Careers</a></Link>
-                    <Link className='mb-[6px]' to='/eammuterms'><a className="link link-hover hover:text-[#005a31]">Terms of use & Privacy policy</a></Link>
-                    <Link className='mb-[6px]' to='/whychoiceeammu'><a className="link link-hover hover:text-[#005a31]">Why Choose Us</a></Link>
-                </nav>
-
-                {/* Social Media Section */}
-                <nav className='text-[#696969] font-light text-[18px] '>
-                    <header className="text-2xl text-[#4b4b4b] font-bold mb-2">Eammu Social Media</header>
-                    <a className="link text-blue-700 link-hover hover:text-[#005a31] mb-[6px]" href="https://www.facebook.com/eammutourism" target="_blank" rel="noopener noreferrer">Facebook</a>
-                    <a className="link text-red-600 link-hover hover:text-[#005a31] mb-[6px]" href="https://www.youtube.com/@Eammutour" target="_blank" rel="noopener noreferrer">Youtube</a>
-                    <a className="link text-blue-800 link-hover hover:text-[#005a31] mb-[6px]" href="https://linkedin.com/company/eammu-immigration-services" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <a className="link text-pink-700 link-hover hover:text-[#005a31] mb-[6px]" href="https://instagram.com/eammuholidays" target="_blank" rel="noopener noreferrer">Instagram</a>
-                </nav>
-
-                {/* Newsletter Section */}
-                <form>
-                    <header className="text-2xl text-[#4b4b4b] font-bold mb-2">Newsletter</header>
-                    <fieldset className="form-control lg:w-80">
-                        <label className="label">
-                            <span className="label-text text-[#696969] font-light text-[18px] mb-2">Enter your email address</span>
-                        </label>
-                        <div className="join">
-                            <input type="text" placeholder="info@eammu.com" className="input input-bordered join-item" />
-                            <button className="btn bg-[#005a31] text-white hover:text-black join-item">Subscribe</button>
+                    {/* Certifications & Payments Combined */}
+                    <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 className="text-sm font-bold uppercase tracking-widest text-gray-400 mb-6">Certified & Approved</h4>
+                            <div className="flex flex-wrap gap-5 items-center">
+                                <img src="https://www.alliancealliance.com/wp-content/uploads/2018/03/IATA-icon.png" alt="IATA" className="h-8 grayscale hover:grayscale-0 transition-all" />
+                                <img src="https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/product-categories/security-identity-compliance/compliance/approved/images/9f85a551-bd1b-4f4e-b831-b4e007d98a38.84c734e79f09168de3a939175a1d477caf47d179.png" alt="Govt" className="h-8 grayscale hover:grayscale-0 transition-all" />
+                                <img src="https://i.ibb.co/3yPCJrz7/Screenshot-2025-06-26-174513.png" alt="Certified" className="h-8 grayscale hover:grayscale-0 transition-all" />
+                            </div>
                         </div>
-
-                        {/* Auth Buttons */}
-                        <div className="gap-3 mt-3">
-                            <Link to='/login'>
-                                <h3 className="text-lg bg-[#005a31] text-[#ffffff] hover:bg-white hover:text-[#005a31] hover:shadow-md hover:border-[1.5px] hover:border-[#005a31] btn">
-                                    Log in
-                                </h3>
-                            </Link>
-                            <Link to='/signup'>
-                                <h3 className="btn text-lg hover:bg-[#005a31] hover:text-[#ffffff] bg-white text-[#005a31] border-[1.5px] border-[#005a31]">
-                                    Sign Up
-                                </h3>
-                            </Link>
+                        <div>
+                            <h4 className="text-sm font-bold uppercase tracking-widest text-gray-400 mb-6">We Accept</h4>
+                            <div className="flex flex-wrap gap-5 items-center">
+                                <img src="https://1000logos.net/wp-content/uploads/2021/11/VISA-logo.png" alt="VISA" className="h-5" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="MasterCard" className="h-8" />
+                                <img src="https://www.logo.wine/a/logo/BKash/BKash-bKash-Logo.wine.svg" alt="bKash" className="h-8" />
+                                <img src="https://miro.medium.com/v2/resize:fit:1400/1*1JMzKz_LENBDkVN83qyE0Q.png" alt="Rocket" className="h-6" />
+                            </div>
                         </div>
-                    </fieldset>
-                </form>
-            </footer>
+                    </div>
+                </div>
 
-            {/* Copyright Bottom */}
-            <div className="lg:flex justify-around items-center text-center my-16">
-                <p>
-                    © Copyright 2022 <a className='text-[#005a31] hover:text-gray-600 font-bold' href="https://eammu.com/" target="_blank" rel="noopener noreferrer">Eammu</a>, All rights reserved.
-                </p>
-                <h1 className='text-[#005a31] lg:text-[26px] text-[20px] lg:mt-0 mt-2'>Something New..!</h1>
+                {/* Middle Section: Navigation Links */}
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 py-16">
+                    
+                    {/* Column 1 */}
+                    <nav className="flex flex-col space-y-3">
+                        <header className="text-lg font-bold mb-2">Eammu Group</header>
+                        <Link to='/eammuimmigrationservices' className="text-[#696969] hover:text-[#005a31] transition-all text-[15px]">Eammu Holidays</Link>
+                        <Link to='/eammumarketing' className="text-[#696969] hover:text-[#005a31] transition-all text-[15px]">Eammu IT & Marketing</Link>
+                        <Link to='/eammuevent' className="text-[#696969] hover:text-[#005a31] transition-all text-[15px]">Eammu Event Management</Link>
+                        <Link to='/eammudairy' className="text-[#696969] hover:text-[#005a31] transition-all text-[15px]">Eammu Dairy & Poultry</Link>
+                        <Link to='/eammufashion' className="text-[#696969] hover:text-[#005a31] transition-all text-[15px]">Eammu Fashion</Link>
+                        <Link to='/eammutextile' className="text-[#696969] hover:text-[#005a31] transition-all text-[15px]">Eammu Textile & Industry</Link>
+                        <Link to='/flyzoo' className="text-[#005a31] font-semibold text-[15px]">Flyzoo</Link>
+                    </nav>
+
+                    {/* Column 2 */}
+                    <nav className="flex flex-col space-y-3">
+                        <header className="text-lg font-bold mb-2">Useful Links</header>
+                        <Link to='/eammu-social-responsibility' className="text-[#696969] hover:text-[#005a31] transition-all text-[15px]">Social Responsibility</Link>
+                        <Link to='/eammunewsfeeds' className="text-[#696969] hover:text-[#005a31] transition-all text-[15px]">Newsfeeds</Link>
+                        <Link to='/messagefromleadingteam' className="text-[#696969] hover:text-[#005a31] transition-all text-[15px]">Our Leading Team</Link>
+                        <Link to='/careers' className="text-[#696969] hover:text-[#005a31] transition-all text-[15px]">Careers</Link>
+                        <Link to='/eammuterms' className="text-[#696969] hover:text-[#005a31] transition-all text-[15px]">Privacy Policy</Link>
+                        <Link to='/whychoiceeammu' className="text-[#696969] hover:text-[#005a31] transition-all text-[15px]">Why Choose Us</Link>
+                    </nav>
+
+                    {/* Column 3 */}
+                    <nav className="flex flex-col space-y-3">
+                        <header className="text-lg font-bold mb-2">Social Media</header>
+                        <a href="https://facebook.com" className="text-blue-700 hover:underline text-[15px]">Facebook</a>
+                        <a href="https://youtube.com" className="text-red-600 hover:underline text-[15px]">Youtube</a>
+                        <a href="https://linkedin.com" className="text-blue-800 hover:underline text-[15px]">LinkedIn</a>
+                        <a href="https://instagram.com" className="text-pink-700 hover:underline text-[15px]">Instagram</a>
+                    </nav>
+
+                    {/* Column 4: Newsletter & Auth */}
+                    <div className="flex flex-col">
+                        <header className="text-lg font-bold mb-4">Newsletter</header>
+                        <div className="flex flex-col gap-4">
+                            <div className="join w-full border border-gray-200 rounded-lg overflow-hidden">
+                                <input 
+                                    type="text" 
+                                    placeholder="info@eammu.com" 
+                                    className="input bg-transparent border-none join-item w-full focus:outline-none px-3" 
+                                />
+                                <button className="btn bg-[#005a31] text-white border-none join-item px-4">Go</button>
+                            </div>
+                            <div className="flex gap-2">
+                                <Link to='/login' className="flex-1 text-center py-2 text-sm border border-[#005a31] text-[#005a31] rounded-md hover:bg-[#005a31] hover:text-white transition-all">Log in</Link>
+                                <Link to='/signup' className="flex-1 text-center py-2 text-sm bg-[#005a31] text-white rounded-md hover:bg-black transition-all">Sign Up</Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Bottom Footer */}
+                <div className="border-t border-gray-100 py-10 flex flex-col md:flex-row justify-between items-center gap-6">
+                    <p className="text-sm text-[#696969]">
+                        © 2022 <a href="https://eammu.com/" className="font-bold text-[#005a31] hover:underline">Eammu</a>. All rights reserved.
+                    </p>
+                    <h1 className="text-[#005a31] text-xl font-medium tracking-tight italic">
+                        Something New..!
+                    </h1>
+                </div>
             </div>
         </div>
     );
