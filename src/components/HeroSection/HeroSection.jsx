@@ -160,8 +160,12 @@ const HeroSection = () => {
                       <div className="w-full sm:w-1/2 h-[45%] sm:h-full">
                         <img 
                           src={promoSlides[promoIndex].img} 
-                          className="w-full h-full object-cover" 
-                          alt="Promo"
+                          alt="Hero Background"
+    width={1562}
+    height={536}
+    loading="eager"
+    fetchPriority="high"
+    className="inset-0 w-full h-full object-cover"
                         />
                       </div>
 
