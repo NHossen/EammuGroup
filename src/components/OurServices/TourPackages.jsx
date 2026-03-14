@@ -1,6 +1,7 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const domesticTours = [
   {
@@ -155,6 +156,23 @@ const internationalTours = [
 const TourPackages = () => {
   const ITEMS_PER_PAGE = 3;
   
+  // 1. Image Data
+const heroSlides = [
+  { id: 1, image: '/eammu_Tour.webp' },
+  { id: 2, image: '/eid_ul_fitr_banner.webp' }, // Add your second image path here
+];
+
+// 2. State
+const [currentHero, setCurrentHero] = useState(0);
+
+// 3. Auto-play Effect
+useEffect(() => {
+  const timer = setInterval(() => {
+    setCurrentHero((prev) => (prev + 1) % heroSlides.length);
+  }, 5000);
+  return () => clearInterval(timer);
+}, []);
+
   // Pagination States
   const [intlPage, setIntlPage] = useState(1);
   const [domPage, setDomPage] = useState(1);
@@ -263,17 +281,30 @@ const TourPackages = () => {
       </Helmet>
 
       <div className="bg-gray-50 min-h-screen pb-20">
-      {/* --- MODERN HERO SECTION --- */}
-<div className="relative min-h-[70vh] flex items-center justify-center py-24 lg:py-32 px-4 overflow-hidden">
-  {/* Background Image with Overlay */}
+{/* --- MODERN HERO SECTION --- */}
+<div className="relative min-h-[50vh] flex items-center justify-center py-24 lg:py-32 px-4 overflow-hidden">
+  
+  {/* Background Carousel Layer */}
   <div className="absolute inset-0 z-0">
-    <img 
-      src="/eammu_Tour.webp" 
-      alt="Travel Hero" 
-      className="w-full h-full object-cover"
-    />
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={currentHero} // Ensure currentHero state is defined at the top of your component
+        initial={{ opacity: 0, scale: 1.1 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 1.05 }}
+        transition={{ duration: 1.5, ease: "easeInOut" }}
+        className="absolute inset-0"
+      >
+        <img 
+          src={heroSlides[currentHero].image} // Define your images in a heroSlides array
+          alt="Travel Hero" 
+          className="w-full h-full object-cover"
+        />
+      </motion.div>
+    </AnimatePresence>
+
     {/* Gradient Overlay for Text Contrast */}
-    <div className="absolute inset-0 bg-gradient-to-r from-[#005a31]/20 to-black/10"></div>
+    <div className="absolute inset-0 bg-gradient-to-r from-[#005a31]/20 to-black/10 z-10"></div>
   </div>
 
   {/* SVG Decorative Element */}
@@ -283,7 +314,8 @@ const TourPackages = () => {
     </svg>
   </div>
   
-  <div className="relative z-10 container mx-auto text-center">
+  {/* Content Layer */}
+  <div className="relative z-20 container mx-auto text-center">
     <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 tracking-tight drop-shadow-md">
       Explore the World <span className="text-[#005a31]">With Us</span>
     </h1>
@@ -305,6 +337,18 @@ const TourPackages = () => {
         🇧🇩 Domestic Tours
       </button>
     </div>
+  </div>
+
+  {/* Optional: Navigation Dots */}
+  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex gap-2">
+    {heroSlides.map((_, i) => (
+      <div 
+        key={i} 
+        className={`h-1 rounded-full transition-all duration-500 ${
+          i === currentHero ? 'w-8 bg-[#005a31]' : 'w-2 bg-white/50'
+        }`} 
+      />
+    ))}
   </div>
 </div>
 

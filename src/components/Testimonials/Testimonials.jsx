@@ -65,8 +65,8 @@ const Testimonials = () => {
   return (
     <section className="overflow-hidden pb-16">
       <Helmet>
-        <title>Customer Reviews | Eammu Holidays</title>
-        <meta name="description" content="Verified client reviews of Eammu Holidays." />
+        <title>Top Rated Travel Agency Bangladesh | Customer Reviews</title>
+        <meta name="description" content="Top Rated Travel Agency Bangladesh -Verified client reviews of Eammu Holidays." />
       </Helmet>
 
       {/* 1. HERO CAROUSEL SECTION */}
@@ -156,7 +156,7 @@ const Testimonials = () => {
           {[...reviews, ...reviews].map((r, i) => (
             <article
               key={i}
-              className="relative w-[350px] md:w-[450px] aspect-[9/6] bg-white rounded-3xl border border-gray-100 p-8 shadow-xl flex flex-col justify-between group/card hover:border-[#005a31] transition-colors"
+              className="relative w-[350px] md:w-[450px] aspect-[9/5] bg-white rounded-3xl border border-gray-100 p-8 shadow-xl flex flex-col justify-between group/card hover:border-[#005a31] transition-colors"
             >
               <FaQuoteLeft className="absolute top-6 right-8 text-gray-100 text-6xl group-hover/card:text-green-50 transition-colors" />
               

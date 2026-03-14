@@ -46,7 +46,7 @@ const CustomerTestimonialSection = () => {
   };
 
   return (
-    <section className="py-12 bg-slate-50">
+    <section className="py-12">
       <div className="container mx-auto px-4">
         {/* Header Section */}
         <div className="text-center mb-8">

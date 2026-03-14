@@ -1,6 +1,7 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const countries = [
   {
@@ -323,9 +324,30 @@ const popularRoutes = [
   },
 ];
 
+
 const VisaServices = () => {
+
   const ITEMS_PER_PAGE = 3;
 
+  // 2. Define the images (Change these paths to your actual banners)
+  const heroSlides = [
+    { id: 1, image: '/flight_eammu.webp' },
+    { id: 2, image: '/eammu_banner.webp' },
+    { id: 3, image: '/plan_eammu.webp' },
+  ];
+
+  // 1. Declare state for carousel
+  const [currentHero, setCurrentHero] = useState(0);
+
+
+  // 3. Set up the timer
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentHero((prev) => (prev + 1) % heroSlides.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+  
   // Category Filtering
   const categories = {
     america: ["USA", "Canada", "Mexico", "Brazil"],
@@ -380,6 +402,8 @@ const VisaServices = () => {
     );
   };
 
+  
+
   return (
     <HelmetProvider>
       <div className="bg-gray-50 min-h-screen">
@@ -405,28 +429,41 @@ const VisaServices = () => {
      {/* --- PREMIUM HERO SECTION --- */}
 <header className="relative w-full py-24 px-4 overflow-hidden min-h-[500px] flex items-center">
   
-  {/* Background Image Layer - Full Width & Height */}
+  {/* --- AUTOMATIC CAROUSEL BACKGROUND --- */}
   <div className="absolute inset-0 z-0">
-    <img 
-      src="/flight_eammu.webp" 
-      alt="Eammu Flight Background" 
-      className="w-full h-full object-cover"
-    />
-    {/* Dark overlay to make the text and category buttons pop */}
-    <div className="absolute inset-0 bg-black/10 bg-gradient-to-b from-[#005a31]/30 to-black/40"></div>
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={currentHero} // Ensure currentHero state is defined at the top of your component
+        initial={{ opacity: 0, scale: 1.1 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.95 }}
+        transition={{ duration: 1.5, ease: "easeInOut" }}
+        className="absolute inset-0"
+      >
+        <img 
+          src={heroSlides[currentHero].image} // Using the heroSlides array from your previous setup
+          alt="Eammu Visa Background" 
+          className="w-full h-full object-cover"
+        />
+      </motion.div>
+    </AnimatePresence>
+    
+    {/* Consistent Dark Overlay */}
+    <div className="absolute inset-0 bg-black/10 bg-gradient-to-b from-[#005a31]/30 to-black/60 z-10"></div>
   </div>
 
-  <div className="container mx-auto text-center relative z-10">
+  {/* --- CONTENT LAYER (STAYS THE SAME) --- */}
+  <div className="container mx-auto text-center relative z-20">
     <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-white drop-shadow-lg">
-Global Visa Application Services for Tourist & Student Visas
-</h1>
+      Global Visa Application Services for Tourist & Student Visas
+    </h1>
     
-   <p className="max-w-5xl mx-auto text-gray-100 text-lg mb-10 leading-relaxed drop-shadow-md">
-Eammu provides professional <strong className="text-white">visa application services</strong> for 
-tourist visas, student visas, and work permits in more than 25 countries including 
-Canada, UK, Australia, Europe, and the USA. Our experts guide you with documentation, 
-embassy requirements, and interview preparation to increase visa approval success.
-</p>
+    <p className="max-w-5xl mx-auto text-gray-100 text-lg mb-10 leading-relaxed drop-shadow-md">
+      Eammu provides professional <strong className="text-white">visa application services</strong> for 
+      tourist visas, student visas, and work permits in more than 25 countries including 
+      Canada, UK, Australia, Europe, and the USA. Our experts guide you with documentation, 
+      embassy requirements, and interview preparation to increase visa approval success.
+    </p>
     
     <div className="flex flex-wrap justify-center gap-3">
       {['Asia', 'Europe', 'America', 'MiddleEast', 'Oceania', 'Popular'].map(cat => (

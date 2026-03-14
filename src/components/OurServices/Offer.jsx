@@ -95,7 +95,7 @@ const OfferPage = () => {
   return (
     <div className="min-h-screen font-sans overflow-x-hidden">
       <Helmet>
-        <title>Exclusive Travel Deals 2026 | Eammu Group</title>
+        <title>Exclusive Travel Deals 2026 | Travel Deals in Bangladesh</title>
       </Helmet>
 
       {/* SECTION 1: 3-BACKGROUND HERO SLIDER */}
@@ -190,7 +190,7 @@ const OfferPage = () => {
 </section>
 
       {/* SECTION 3: EXPLORE GRID (Clickable Images) */}
-      <section className="py-20 px-4 md:px-6 bg-gray-50">
+      <section className="py-20 px-4 md:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-black text-[#005a31] uppercase tracking-tighter">Explore More</h2>
