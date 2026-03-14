@@ -14,5 +14,11 @@ export default {
       },
     },
   },
+
   plugins: [require("daisyui"), flowbiteReact],
+
+  daisyui: {
+    themes: ["light"],   // only one theme
+  }
+
 }

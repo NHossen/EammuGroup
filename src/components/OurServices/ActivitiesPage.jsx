@@ -131,7 +131,7 @@ const ActivitiesPage = () => {
       </section>
 
       {/* SECTION 2: TOP ACTIVITIES (Mobile Responsive Carousel) */}
-      <section className="py-12 bg-gray-50 overflow-hidden">
+      <section className="py-12 overflow-hidden">
         <div className="max-w-[1440px] mx-auto px-4 md:px-6">
           <h2 className="text-2xl md:text-3xl font-black text-[#005a31] mb-8 uppercase tracking-tight flex items-center gap-3">
             Top Activities 
