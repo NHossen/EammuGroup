@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion'; //
-import Testimonials from '../Testimonials/Testimonials';
+
 
 // 1. New Helper Component for the FAQ items
 const FAQItem = ({ question, answer, index }) => {
@@ -104,51 +104,6 @@ const About = () => {
   <meta name="application-name" content="Eammu Holidays" />
   <meta name="theme-color" content="#166534" />
 
-  {/* Structured Data */}
-  <script type="application/ld+json">
-    {JSON.stringify({
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "@id": "https://eammu.com/#organization",
-          "name": "Eammu Holidays Travel Agency Dhaka",
-          "url": "https://eammu.com",
-          "logo": "https://eammu.com/eammuicon.jpg",
-          "image": "https://eammu.com/emf.jpg",
-          "foundingDate": "2022",
-          "description": "Global travel, visa, immigration, student visa, work permit, holiday and tour services.",
-          "sameAs": [
-            "https://facebook.com/eammutourism/",
-            "https://instagram.com/eammuholidays",
-            "https://www.youtube.com/@Eammutour",
-            "https://linkedin.com/company/eammu-immigration-services/"
-          ]
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://eammu.com/#website",
-          "url": "https://eammu.com",
-          "name": "Eammu Holidays",
-          "publisher": {
-            "@id": "https://eammu.com/#organization"
-          }
-        },
-        {
-          "@type": "AboutPage",
-          "@id": "https://eammu.com/about#aboutpage",
-          "url": "https://eammu.com/about",
-          "name": "Eammu Holidays",
-          "isPartOf": {
-            "@id": "https://eammu.com/#website"
-          },
-          "mainEntity": {
-            "@id": "https://eammu.com/#organization"
-          }
-        }
-      ]
-    })}
-  </script>
 </Helmet>
 
       <main className="overflow-hidden">
@@ -372,8 +327,6 @@ const About = () => {
               />
             </div>
           </section>
-
-          <Testimonials />
 
           {/* --- Contact / CTA Section --- */}
           <section className="bg-white border-2 border-green-100 rounded-[2.5rem] p-8 md:p-16 text-center space-y-8 shadow-sm relative overflow-hidden">

@@ -1,5 +1,9 @@
+import React, { useState, useEffect } from 'react';
 import { Helmet } from "react-helmet-async";
-import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
+import { FaStar, FaStarHalfAlt, FaRegStar, FaQuoteLeft } from "react-icons/fa";
+// Adding missing icons from Lucide for the Hero section
+import { Star, PlayCircle } from "lucide-react"; 
+import { motion, AnimatePresence } from "framer-motion";
 import CustomerTestimonialSection from "./CustomerTestimonialSection";
 
 const reviews = [
@@ -17,191 +21,186 @@ const reviews = [
   { name: "Salma Parvin", rating: 4, review: "Good service but wish response time was faster. Still very helpful." },
 ];
 
-// ⭐ Star Renderer
+const heroSlides = [
+  {
+    id: 1,
+    image: '/eammu_holidays_bg.webp',
+    title: "Thousands of Dreams Realized",
+    subtitle: "From student visas to family reunions, see how Eammu Holidays makes it happen.",
+    cta: "Watch Success Stories"
+  },
+  {
+    id: 2,
+    image: '/flight_eammu.webp',
+    title: "Your Trust, Our Greatest Reward",
+    subtitle: "Consistently rated 4.9/5 by travelers across Bangladesh.",
+    cta: "Read Reviews"
+  }
+];
+
 const renderStars = (rating) => {
   const stars = [];
   const full = Math.floor(rating);
   const half = rating % 1 >= 0.5;
-  const empty = 5 - full - (half ? 1 : 0);
-
   for (let i = 0; i < full; i++) stars.push(<FaStar key={`f-${i}`} />);
   if (half) stars.push(<FaStarHalfAlt key="h" />);
-  for (let i = 0; i < empty; i++) stars.push(<FaRegStar key={`e-${i}`} />);
-
+  while (stars.length < 5) stars.push(<FaRegStar key={`e-${stars.length}`} />);
   return stars;
 };
 
 const Testimonials = () => {
-  // ⭐ Average Rating
-  const avgRating =
-    (reviews.reduce((acc, r) => acc + r.rating, 0) / reviews.length).toFixed(1);
+  // FIXED: Removed duplicate declaration. Using dynamic calculation based on reviews.
+  const avgRating = (reviews.reduce((acc, r) => acc + r.rating, 0) / reviews.length).toFixed(1);
 
+  const [currentHero, setCurrentHero] = useState(0);
+
+  // --- Hero Logic ---
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentHero((prev) => (prev + 1) % heroSlides.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
-    <section className="px-4 container mx-auto py-14">
-      {/* SEO */}
-     <Helmet>
-  {/* Primary SEO */}
-  <title>Customer Reviews Travel Agency | Travel Agency Bangladesh</title>
-  <meta
-    name="description"
-    content="Read real client testimonials of Eammu Holidays, Bangladesh's trusted visa and travel consultancy. Student, work, and tourist visa success stories with verified client reviews."
-  />
-  <meta
-    name="keywords"
-    content="Eammu Holidays reviews, best travel agency in Bangladesh, visa consultancy Bangladesh, student visa reviews Dhaka, work visa testimonials, tourist visa feedback, top travel agency Bangladesh, reliable visa consultant"
-  />
-  <link rel="canonical" href="https://eammu.com/testimonials" />
+    <section className="overflow-hidden pb-16">
+      <Helmet>
+        <title>Customer Reviews | Eammu Holidays</title>
+        <meta name="description" content="Verified client reviews of Eammu Holidays." />
+      </Helmet>
 
-  {/* Open Graph / Social SEO */}
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Customer Reviews & Testimonials | Eammu Holidays" />
-  <meta
-    property="og:description"
-    content="Discover why thousands trust Eammu Holidays. Real testimonials from students, professionals, and travelers who got their visas successfully processed."
-  />
-  <meta property="og:url" content="https://eammu.com/testimonials" />
-  <meta property="og:site_name" content="Eammu Holidays" />
-  <meta property="og:image" content="https://eammu.com/eammuicon.jpg" />
+      {/* 1. HERO CAROUSEL SECTION */}
+      <section className="relative h-[400px] md:h-[500px] w-full overflow-hidden bg-gray-900">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentHero}
+            initial={{ opacity: 0, scale: 1.1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.8 }}
+            className="absolute inset-0"
+          >
+            <img 
+              src={heroSlides[currentHero].image} 
+              className="w-full h-full object-cover opacity-60" 
+              alt="Hero"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#005a31]/80 via-transparent to-black/40" />
+            
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+              <motion.div
+                initial={{ y: 30, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.3 }}
+                className="max-w-4xl"
+              >
+                <div className="flex justify-center gap-1 mb-6 text-yellow-400">
+                  {/* Using Lucide Star here to match the Hero style */}
+                  {[...Array(5)].map((_, i) => <Star key={i} fill="currentColor" size={20} />)}
+                </div>
+                <h1 className="text-4xl md:text-7xl font-black text-white mb-6 leading-tight">
+                  {heroSlides[currentHero].title}
+                </h1>
+                <p className="text-lg md:text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
+                  {heroSlides[currentHero].subtitle}
+                </p>
+                <button className="bg-orange-500 hover:bg-orange-600 text-white px-10 py-4 rounded-full font-bold shadow-2xl transition-all flex items-center gap-2 mx-auto">
+                  <PlayCircle size={20} /> {heroSlides[currentHero].cta}
+                </button>
+              </motion.div>
+            </div>
+          </motion.div>
+        </AnimatePresence>
 
-  {/* Twitter Card */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Customer Reviews & Testimonials | Eammu Holidays" />
-  <meta
-    name="twitter:description"
-    content="Real client reviews of Eammu Holidays Bangladesh – trusted visa and travel agency. See how we helped students, professionals & travelers globally."
-  />
-  <meta name="twitter:image" content="https://eammu.com/eammuicon.jpg" />
+        {/* Hero Progress Indicators */}
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+          {heroSlides.map((_, i) => (
+            <div 
+              key={i} 
+              className={`h-1.5 rounded-full transition-all duration-500 ${i === currentHero ? 'w-12 bg-orange-500' : 'w-4 bg-white/30'}`} 
+            />
+          ))}
+        </div>
+      </section>
 
-  {/* Local SEO */}
-  <meta name="geo.region" content="BD" />
-  <meta name="geo.placename" content="Cumilla, Bangladesh" />
-  <meta name="geo.position" content="23.4607;91.1809" />
-  <meta name="ICBM" content="23.4607,91.1809" />
-
-  {/* JSON-LD Structured Data */}
-  <script type="application/ld+json">
-    {JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Eammu Holidays",
-      "url": "https://eammu.com",
-      "logo": "https://eammu.com/images/logo.png",
-      "sameAs": [
-        "https://www.facebook.com/eammu",
-        "https://www.instagram.com/eammu",
-        "https://www.linkedin.com/company/eammu",
-        "https://www.youtube.com/@Eammutour"
-      ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": (reviews.reduce((acc, r) => acc + r.rating, 0) / reviews.length).toFixed(1),
-        "reviewCount": reviews.length
-      },
-      "review": reviews.map(r => ({
-        "@type": "Review",
-        "author": { "@type": "Person", "name": r.name },
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": r.rating,
-          "bestRating": "5"
-        },
-        "reviewBody": r.review
-      })),
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Gomoti Tower, 1st Floor, Cantonment",
-        "addressLocality": "Cumilla",
-        "addressCountry": "BD"
-      },
-      "contactPoint": [
-        {
-          "@type": "ContactPoint",
-          "telephone": "+8801631312524",
-          "contactType": "customer service",
-          "areaServed": "BD",
-          "email": "info@eammu.com"
-        },
-        {
-          "@type": "ContactPoint",
-          "telephone": "+971507078334",
-          "contactType": "customer service",
-          "areaServed": "UAE",
-          "email": "dubai@eammu.com"
-        }
-      ]
-    })}
-  </script>
-</Helmet>
-
-
-      {/* Header */}
-      <div className="text-center max-w-3xl mx-auto mb-12">
-        <h1 className="text-4xl font-bold text-[#005a31] mb-3">
-          What Our Clients Say About Eammu Holidays
-        </h1>
-        <p className="text-gray-600 text-lg">
-          Real experiences from students, professionals, and travelers who trusted
-          Eammu Holidays for their global journey.
-        </p>
-
-        <div className="mt-4 flex justify-center items-center gap-2 text-yellow-400 text-lg">
-          {renderStars(avgRating)}
-          <span className="text-gray-700 font-semibold ml-2">
-            {avgRating}/5 from {reviews.length}+ reviews
-          </span>
+      {/* 2. STATS BAR */}
+      <div className="bg-white py-10 border-b border-gray-100 mb-16">
+        <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8">
+          {[
+            { label: "Happy Clients", val: "10k+" },
+            { label: "Visa Success", val: "98%" },
+            { label: "YouTube Subs", val: "50k+" },
+            { label: "Google Rating", val: "4.9/5" },
+          ].map((stat, i) => (
+            <div key={i} className="text-center">
+              <p className="text-3xl font-black text-[#005a31]">{stat.val}</p>
+              <p className="text-sm text-gray-500 font-bold uppercase tracking-widest">{stat.label}</p>
+            </div>
+          ))}
         </div>
       </div>
 
-      {/* Reviews Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {reviews.map((r, i) => (
-          <article
-            key={i}
-            className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-          >
-            <div className="flex text-yellow-400 mb-3">
-              {renderStars(r.rating)}
-            </div>
-            <p className="text-gray-700 mb-4 italic">
-              “{r.review}”
-            </p>
-            <h3 className="text-[#005a31] font-semibold text-lg">
-              {r.name}
-            </h3>
-            <p className="text-sm text-gray-500">
-              Verified Client · Eammu Holidays
-            </p>
-          </article>
-        ))}
-      </div>
-      <section className="mt-16">
-<CustomerTestimonialSection />
+      {/* 3. Modern Infinite Marquee Carousel */}
+      <div className="relative flex overflow-hidden group py-10">
+        <motion.div 
+          className="flex gap-6 pr-6"
+          animate={{ x: [0, -1800] }} 
+          transition={{ 
+            duration: 40, 
+            repeat: Infinity, 
+            ease: "linear",
+          }}
+          whileHover={{ animationPlayState: "paused" }} // Smoother way to handle pause
+        >
+          {/* We render the reviews twice for seamless looping */}
+          {[...reviews, ...reviews].map((r, i) => (
+            <article
+              key={i}
+              className="relative w-[350px] md:w-[450px] aspect-[9/6] bg-white rounded-3xl border border-gray-100 p-8 shadow-xl flex flex-col justify-between group/card hover:border-[#005a31] transition-colors"
+            >
+              <FaQuoteLeft className="absolute top-6 right-8 text-gray-100 text-6xl group-hover/card:text-green-50 transition-colors" />
+              
+              <div className="relative z-10">
+                <div className="flex text-yellow-400 mb-4 text-sm">
+                  {renderStars(r.rating)}
+                </div>
+                <p className="text-gray-600 text-lg md:text-xl font-medium leading-relaxed italic">
+                  “{r.review}”
+                </p>
+              </div>
 
-  <div className="text-center mt-8">
-          <a 
-            href="https://www.youtube.com/@Eammutour" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-red-600 font-semibold hover:underline"
-          >
-            View more on YouTube →
+              <div className="relative z-10 flex items-center gap-4">
+                <div className="w-12 h-12 bg-[#005a31] rounded-full flex items-center justify-center text-white font-bold text-xl">
+                  {r.name.charAt(0)}
+                </div>
+                <div>
+                  <h3 className="text-gray-900 font-bold text-lg">{r.name}</h3>
+                  <p className="text-xs text-orange-600 font-bold uppercase tracking-wider">Verified Traveler</p>
+                </div>
+              </div>
+            </article>
+          ))}
+        </motion.div>
+      </div>
+
+      {/* 4. Call to Action Sections */}
+      <div className="container mx-auto px-4">
+        <section className="mt-20">
+          <CustomerTestimonialSection />
+          <div className="text-center mt-8">
+            <a href="https://youtube.com/@Eammutour" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-red-600 font-bold hover:gap-4 transition-all">
+              Watch Success Stories on YouTube <span className="text-xl">→</span>
+            </a>
+          </div>
+        </section>
+
+        <div className="text-center mt-16">
+          <a href="https://wa.me/8801631312524" className="inline-flex items-center gap-3 bg-[#005a31] text-white px-10 py-5 rounded-2xl text-xl font-bold hover:bg-black hover:shadow-2xl transition-all active:scale-95">
+             Talk to Our Visa Expert
           </a>
         </div>
-</section>
-
-<div className="text-center mt-10">
-  <a
-    href="https://wa.me/8801631312524"
-    className="inline-block bg-[#005a31] text-white px-8 py-4 rounded-full text-lg hover:bg-[#003e24] transition"
-  >
-    📞 Talk to Our Visa Expert on WhatsApp
-  </a>
-</div>
-
-
+      </div>
     </section>
-    
   );
 };
 
