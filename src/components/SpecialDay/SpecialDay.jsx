@@ -78,7 +78,8 @@ const SpecialDayBanner = () => {
               <img
                 src={slides[currentIndex].url}
                 alt={slides[currentIndex].alt}
-                className="w-full h-auto object-cover"
+                className="w-full h-full object-cover"
+                loading="eager"
                 decoding="async"
               />
               

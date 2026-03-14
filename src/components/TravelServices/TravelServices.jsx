@@ -76,7 +76,7 @@ useEffect(() => {
             {offerData.map((item) => (
               <div key={item.id} className="min-w-[300px] md:min-w-[380px] snap-start bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col">
                 <a href={item.link} className={`h-44 overflow-hidden relative`}>
-                  <img src={item.logo} className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" alt="brand" />
+                  <img src={item.logo} className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" alt={item.title} />
                 </a>
                 <div className="p-5 flex flex-col justify-between flex-grow">
                   <p className="text-blue-900 font-bold text-sm md:text-base mb-6 line-clamp-2">{item.title}</p>
@@ -104,7 +104,7 @@ useEffect(() => {
             {visaData.map((visa) => (
               <div key={visa.id} className="min-w-[300px] md:min-w-[380px] snap-start bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col">
                 <a href={visa.link} className="h-44 overflow-hidden relative">
-                  <img src={visa.img} className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" alt={visa.type} />
+                  <img src={visa.img} className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" alt={visa.title} />
                 </a>
                 <div className="p-5 flex flex-col justify-between flex-grow">
                   <p className="text-blue-900 font-bold text-sm md:text-base mb-6 line-clamp-2">{visa.title}</p>

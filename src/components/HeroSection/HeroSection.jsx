@@ -8,13 +8,28 @@ import {
 
 const HeroSection = () => {
   // Data for background slider
-  const bgSlides = [
-    "https://eammu.com/eammu_holidays_bg.webp/",
-    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1920&q=80",
-    "https://www.thailand.go.th/uploads/posts/photo_1684338552_1.jpeg",
-    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80",
-    "https://eammu.com/eammu_banner.webp",
-  ];
+const bgSlides = [
+  {
+    url: "https://eammu.com/eammu_holidays_bg.webp/",
+    alt: "Eammu Holidays travel and tourism banner"
+  },
+  {
+    url: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1920&q=80",
+    alt: "Beautiful mountain landscape travel destination"
+  },
+  {
+    url: "https://www.thailand.go.th/uploads/posts/photo_1684338552_1.jpeg",
+    alt: "Thailand tourism beach destination"
+  },
+  {
+    url: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80",
+    alt: "Nature travel destination with lake and mountains"
+  },
+  {
+    url: "https://eammu.com/eammu_banner.webp",
+    alt: "Eammu Holidays travel services banner"
+  }
+];
 
   // Data for inner promo carousel
   const promoSlides = [
@@ -77,16 +92,17 @@ const HeroSection = () => {
         {/* ================= BACKGROUND SLIDER ================= */}
         <div className="absolute inset-0 z-0">
           <AnimatePresence mode="wait">
-            <motion.img
-              key={bgIndex}
-              src={bgSlides[bgIndex]}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1 }}
-              className="w-full h-full object-cover"
-            />
-          </AnimatePresence>
+  <motion.img
+    key={bgIndex}
+    src={bgSlides[bgIndex].url}
+    alt={bgSlides[bgIndex].alt}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 1 }}
+    className="w-full h-full object-cover"
+  />
+</AnimatePresence>
 
           {/* Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60" />
@@ -159,14 +175,14 @@ const HeroSection = () => {
                       {/* Image */}
                       <div className="w-full sm:w-1/2 h-[45%] sm:h-full">
                         <img 
-                          src={promoSlides[promoIndex].img} 
-                          alt="Hero Background"
-    width={1562}
-    height={536}
-    loading="eager"
-    fetchPriority="high"
-    className="inset-0 w-full h-full object-cover"
-                        />
+  src={promoSlides[promoIndex].img} 
+  alt={`${promoSlides[promoIndex].title} cheap flight ticket deal`}
+  width={1562}
+  height={536}
+  loading="eager"
+  fetchPriority="high"
+  className="inset-0 w-full h-full object-cover"
+/>
                       </div>
 
                       {/* Content */}
@@ -236,7 +252,7 @@ const HeroSection = () => {
                 whileHover={{ scale: 1.02 }}
               >
                 <a href={slide.link}>
-                  <img src={slide.img} className="w-full h-full object-cover" />
+                  <img src={slide.img} alt={slide.title} className="w-full h-full object-cover" loading="eager"/>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
                     <p className="text-white font-bold">{slide.title}</p>
                   </div>

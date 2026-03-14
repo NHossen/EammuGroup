@@ -12,7 +12,7 @@ const Footer = () => {
                     <div className="lg:col-span-4 space-y-5">
                         <img 
                             src="/eammu_holidays_Travel_agency.webp" // Replace with your actual logo path
-                            alt="Eammu Logo" 
+                            alt="Eammu Holidays Logo" 
                             className="h-12 w-auto object-contain"
                         />
                         <h2 className="text-xl font-bold text-[#005a31]">

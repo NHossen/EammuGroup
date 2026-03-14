@@ -113,7 +113,7 @@ const structuredData = {
 
   <meta
     property="og:title"
-    content="Eammu Holidays | Trusted Education Consultancy in Bangladesh"
+    content="Eammu Holidays Travel Agency In Bangladesh | Trusted Education Consultancy in Bangladesh"
   />
 
   <meta
@@ -163,7 +163,7 @@ const structuredData = {
 
 {/* ================= PAGE SECTIONS ================= */}
 
-<Suspense fallback={<div className="text-center py-20">Loading...</div>}>
+<Suspense>
 
       <LandingModal />
 
