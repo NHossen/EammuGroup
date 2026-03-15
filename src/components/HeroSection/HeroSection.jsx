@@ -42,18 +42,18 @@ const bgSlides = [
 
   // Bottom carousel
   const bottomSlides = [
-    { id: 0, title: "Higher Study In USA With 70% Scholarship", img: "https://globalgateways.co.in/wp-content/uploads/2025/01/study-abroad-usa.jpg", link: "/usa-visa-application", },
-    { id: 1, title: "ALBANIA VISA", img: "/albania_visa_from_bangladesh.webp",link: "/albania-visa-application" },
-    { id: 2, title: "EID PROMO", img: "/eid_offer_2026_eammu.webp",link: "/singapore-visa-application" },
-    { id: 3, title: "E-VISA", img: "/eammu_evisa_offer.webp" ,link: "/thailand-visa-application" },
+    { id: 0, title: "Higher Study In USA With 70% Scholarship", img: "https://globalgateways.co.in/wp-content/uploads/2025/01/study-abroad-usa.jpg", link: "/visa-services/usa-visa-application", },
+    { id: 1, title: "ALBANIA VISA", img: "/albania_visa_from_bangladesh.webp",link: "/visa-services/albania-visa-application" },
+    { id: 2, title: "EID PROMO", img: "/eid_offer_2026_eammu.webp",link: "/visa-services/singapore-visa-application" },
+    { id: 3, title: "E-VISA", img: "/eammu_evisa_offer.webp" ,link: "/visa-services/thailand-visa-application" },
     { id: 4, title: "SYLHET TOUR", img: "https://royalbengaltours.com/wp-content/uploads/2017/08/Cycle-through-the-most-beautiful-tea-estates-of-Sreemangal-and-Sylhet-area.webp" ,link: "/tour-packages" },
     { id: 5, title: "DHAKA TOUR", img: "https://toursntripsbd.com/wp-content/uploads/2016/06/PB100664-180x152-1.jpg",link: "/tour-packages" },
     { id: 6, title: "DESERT SAFARI", img: "https://res.klook.com/image/upload/q_85/c_fill,w_750/v1666942368/blog/gu90kcnlehlie93a2mks.jpg",link: "/tour-packages" },
-    { id: 7, title: "ARMENIA VISA", img: "https://www.gokite.travel/wp-content/uploads/2021/05/Armenia-tour-packages-from-dubai_11zon-870x480.webp",link: "/armenia-visa-application" },
-    { id: 8, title: "EUROPE VISA", img: "https://pmlholidays.com/admin/production/images/blogs/Europe.jpg",link: "/europe-visa-application" },
+    { id: 7, title: "ARMENIA VISA", img: "https://www.gokite.travel/wp-content/uploads/2021/05/Armenia-tour-packages-from-dubai_11zon-870x480.webp",link: "/visa-services/armenia-visa-application" },
+    { id: 8, title: "EUROPE VISA", img: "https://pmlholidays.com/admin/production/images/blogs/Europe.jpg",link: "/visa-services/europe-visa-application" },
     { id: 9, title: "EMI", img: "/eammu_emi_offer.webp",link: "/offers" },
-    { id: 10, title: "CANADA VISA", img: "/canada_visa_from_india.webp",link: "/canada-visa-application" },
-    { id: 11, title: "SINGAPORE VISA", img: "https://www.agoda.com/wp-content/uploads/2019/06/Singapore-Itinerary-Marina-Bay-Sands.jpg",link: "/singapore-visa-application" },
+    { id: 10, title: "CANADA VISA", img: "/canada_visa_from_india.webp",link: "/visa-services/canada-visa-application" },
+    { id: 11, title: "SINGAPORE VISA", img: "https://www.agoda.com/wp-content/uploads/2019/06/Singapore-Itinerary-Marina-Bay-Sands.jpg",link: "/visa-services/singapore-visa-application" },
   ];
 
   const [bgIndex, setBgIndex] = useState(0);
