@@ -49,10 +49,28 @@ const offers = [
 ];
 
 // High-end cinematic background slider images for the Hero Section
-const heroBackgrounds = [
-  "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop", 
-  "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1600&auto=format&fit=crop", 
-  "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=1600&auto=format&fit=crop", 
+const heroOffers = [
+  {
+    image: "/flight_eammu.webp",
+    badge: "Hot Deal",
+    title: "Special Travel Offers",
+    description: "Explore the world with Eammu Holidays exclusive 2026 packages.",
+    buttonText: "Contact Us"
+  },
+  {
+    image: "/sylhet_eammu.webp",
+    badge: "Limited Time",
+    title: "Eid Ul Fitr Discounts",
+    description: "Huge savings on domestic and international flights for the festive season.",
+    buttonText: "Claim Offer"
+  },
+  {
+    image: "/bangladesh_europe_couple.webp",
+    badge: "Last Minute",
+    title: "Visa Support Deals",
+    description: "Get up to 20% off on consultancy fees for student and tourist visas.",
+    buttonText: "Check Now"
+  }
 ];
 
 const OfferPage = () => {
@@ -61,11 +79,11 @@ const OfferPage = () => {
 
   // --- Background Slider Logic (3 Slides) ---
   useEffect(() => {
-    const timer = setInterval(() => {
-      setHeroIndex((prev) => (prev === heroBackgrounds.length - 1 ? 0 : prev + 1));
-    }, 6000);
-    return () => clearInterval(timer);
-  }, []);
+  const timer = setInterval(() => {
+    setHeroIndex((prev) => (prev + 1) % heroOffers.length);
+  }, 5000); // Transitions every 6 seconds
+  return () => clearInterval(timer);
+}, []);
 
   // --- Flash Deals Auto-Scroll ---
   useEffect(() => {
@@ -98,51 +116,56 @@ const OfferPage = () => {
         <title>Exclusive Travel Deals 2026 | Travel Deals in Bangladesh</title>
       </Helmet>
 
-      {/* SECTION 1: 3-BACKGROUND HERO SLIDER */}
-      <section className="relative w-full h-[45vh] md:h-[50vh] bg-black overflow-hidden">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={heroIndex}
-            initial={{ opacity: 0, scale: 1.1 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1.5 }}
-            className="absolute inset-0"
-          >
-            <div 
-              className="w-full h-full bg-cover bg-center"
-              style={{ backgroundImage: `url(${heroBackgrounds[heroIndex]})` }}
-            >
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/60"></div>
-            </div>
-            
-            <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white px-6">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
-              >
-                <span className="bg-[#e7d000] text-black px-4 py-1 rounded-full text-[10px] font-black uppercase mb-4 tracking-widest inline-block animate-pulse">Hot Deal</span>
-                <h1 className="text-4xl md:text-7xl font-black mb-6 tracking-tighter uppercase max-w-4xl leading-none">
-                  Special Travel Offers
-                </h1>
-                <p className="text-sm md:text-lg font-bold opacity-80 mb-8 max-w-2xl mx-auto uppercase tracking-wide">
-                  Explore the world with Eammu Holidays exclusive 2026 packages.
-                </p>
-                <a href="https://wa.me/8801631312524" className="bg-[#005a31] text-white px-12 py-4 rounded-full font-black text-xs uppercase transition-all shadow-2xl hover:bg-white hover:text-[#005a31]">
-                  Contact Us
-                </a>
-              </motion.div>
-            </div>
-          </motion.div>
-        </AnimatePresence>
+    {/* SECTION 1: 3-BACKGROUND HERO SLIDER WITH SYNCED TEXT */}
+<section className="relative w-full h-[45vh] md:h-[50vh] bg-black overflow-hidden">
+<AnimatePresence mode="wait">
+  <motion.div
+    key={heroIndex}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    className="absolute inset-0"
+  >
+    {/* Background - Layer 0 */}
+    <div 
+      className="absolute inset-0 z-0 bg-cover bg-center"
+      style={{ backgroundImage: `url(${heroOffers[heroIndex].image})` }}
+    >
+      <div className="absolute inset-0 bg-black/60"></div>
+    </div>
+    
+    {/* Content - Layer 10 (Higher than background) */}
+    <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white px-6">
+       <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+       >
+          <span className="bg-[#e7d000] text-black px-4 py-1 rounded-full text-[10px] font-black uppercase mb-4 inline-block">
+            {heroOffers[heroIndex].badge}
+          </span>
+          <h1 className="text-4xl md:text-7xl font-black mb-6 uppercase">
+            {heroOffers[heroIndex].title}
+          </h1>
+          <p className="text-sm md:text-lg font-bold opacity-80 mb-8 max-w-2xl mx-auto">
+            {heroOffers[heroIndex].description}
+          </p>
+       </motion.div>
+    </div>
+  </motion.div>
+</AnimatePresence>
 
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-3 z-20">
-          {heroBackgrounds.map((_, i) => (
-            <button key={i} onClick={() => setHeroIndex(i)} className={`h-1.5 transition-all duration-700 rounded-full ${heroIndex === i ? 'w-12 bg-[#e7d000]' : 'w-4 bg-white/40'}`} />
-          ))}
-        </div>
-      </section>
+  {/* Slide Indicators */}
+  <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+    {heroOffers.map((_, i) => (
+      <button 
+        key={i} 
+        onClick={() => setHeroIndex(i)} 
+        className={`h-1.5 transition-all duration-700 rounded-full ${heroIndex === i ? 'w-12 bg-[#e7d000]' : 'w-4 bg-white/40'}`} 
+      />
+    ))}
+  </div>
+</section>
 
      {/* SECTION 2: FLASH DEALS (Clickable Images Only) */}
 <section className="py-12 md:py-12 px-4 md:px-6 max-w-[1440px] mx-auto overflow-hidden">
