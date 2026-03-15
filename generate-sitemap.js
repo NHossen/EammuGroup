@@ -9,11 +9,10 @@ const sitemap = new SitemapStream({
 });
 
 /**
- * 🔥 SINGLE SOURCE OF TRUTH
- * These routes are copied directly from main.jsx
- * No guessing. No missing pages.
+ * 🔥 ROUTES DIRECTLY MATCHED WITH main.jsx
  */
 const routes = [
+
   // ===== MAIN =====
   '/',
   '/about',
@@ -27,7 +26,6 @@ const routes = [
   '/tour-packages',
   '/offers',
   '/activities',
-
 
   // ===== IMMIGRATION =====
   '/immigration-services',
@@ -63,44 +61,44 @@ const routes = [
   '/travel-agency-georgia',
 
   // ===== VISA PAGES =====
-  '/usa-visa-application',
-'/uk-visa-application',
-'/europe-visa-application',
-'/canada-visa-application',
-'/australia-visa-application',
-'/germany-visa-application',
-'/portugal-visa-application',
-'/armenia-visa-application',
-'/georgia-visa-application',
-'/albania-visa-application',
-'/dubai-visa-application',
-'/qatar-visa-application',
-'/japan-visa-application',
-'/china-visa-application',
-'/south-korea-visa-application',
-'/spain-visa-application',
-'/kosovo-visa-application',
-'/serbia-visa-application',
-'/thailand-visa-application',
-'/singapore-visa-application',
-'/malaysia-visa-application',
-'/turkey-visa-application',
-'/indonesia-visa-application',
-'/india-visa-application',
-'/saudi-arabia-visa-application',
-'/morocco-visa-application',
-'/brazil-visa-application',
-'/south-africa-visa-application',
-'/azerbaijan-visa-application',
-'/cyprus-visa-application',
-'/srilanka-visa-application',
-'/russia-visa-application',
-'/montenegro-visa-application',
+  '/visa-services/usa-visa-application',
+  '/visa-services/uk-visa-application',
+  '/visa-services/europe-visa-application',
+  '/visa-services/canada-visa-application',
+  '/visa-services/australia-visa-application',
+  '/visa-services/germany-visa-application',
+  '/visa-services/portugal-visa-application',
+  '/visa-services/armenia-visa-application',
+  '/visa-services/georgia-visa-application',
+  '/visa-services/albania-visa-application',
+  '/visa-services/dubai-visa-application',
+  '/visa-services/qatar-visa-application',
+  '/visa-services/japan-visa-application',
+  '/visa-services/china-visa-application',
+  '/visa-services/south-korea-visa-application',
+  '/visa-services/spain-visa-application',
+  '/visa-services/kosovo-visa-application',
+  '/visa-services/serbia-visa-application',
+  '/visa-services/thailand-visa-application',
+  '/visa-services/singapore-visa-application',
+  '/visa-services/malaysia-visa-application',
+  '/visa-services/turkey-visa-application',
+  '/visa-services/indonesia-visa-application',
+  '/visa-services/india-visa-application',
+  '/visa-services/saudi-arabia-visa-application',
+  '/visa-services/morocco-visa-application',
+  '/visa-services/brazil-visa-application',
+  '/visa-services/south-africa-visa-application',
+  '/visa-services/azerbaijan-visa-application',
+  '/visa-services/cyprus-visa-application',
+  '/visa-services/srilanka-visa-application',
+  '/visa-services/russia-visa-application',
+  '/visa-services/montenegro-visa-application',
 
   // ===== VISA CATEGORIES =====
-  '/tourist-visa-application-from-bangladesh',
-  '/student-visa-application-from-bangladesh',
-  '/work-visa-application-from-bangladesh',
+  '/visa-services/tourist-visa-application-from-bangladesh',
+  '/visa-services/student-visa-application-from-bangladesh',
+  '/visa-services/work-visa-application-from-bangladesh',
 
   // ===== TIIC & STORE =====
   '/target-ielts-and-immigration-center',
@@ -108,7 +106,8 @@ const routes = [
   '/eammu-social-responsibility'
 ];
 
-// 🔁 WRITE ALL ROUTES
+
+// 🔁 WRITE ROUTES
 routes.forEach(route => {
   sitemap.write({
     url: route,
@@ -118,10 +117,10 @@ routes.forEach(route => {
   });
 });
 
-// END STREAM
 sitemap.end();
 
-// SAVE FILE TO /public
+
+// SAVE FILE
 streamToPromise(sitemap)
   .then(xml => {
     const filePath = resolve('./public/sitemap.xml');
