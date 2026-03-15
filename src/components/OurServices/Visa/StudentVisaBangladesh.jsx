@@ -66,7 +66,7 @@ useEffect(() => {
       </Helmet>
 
      {/* 🚀 Hero Section - Mobile Optimized with Automatic Carousel */}
-<section className="relative min-h-[60vh] md:h-[60vh] flex items-center justify-center overflow-hidden">
+<section className="relative min-h-[50vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
   
   {/* --- CAROUSEL BACKGROUND LAYER --- */}
   <div className="absolute inset-0 z-0">
@@ -97,7 +97,7 @@ useEffect(() => {
       <span className="bg-orange-500 text-white px-5 py-2 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest mb-6 inline-flex items-center gap-2 shadow-lg">
         <FaAward /> Trusted Education Partner Bangladesh
       </span>
-      <h1 className="text-4xl md:text-7xl font-black text-white mb-6 tracking-tight leading-[1.1]">
+      <h1 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight leading-[1.1]">
         Study Abroad <br /> 
         <span className="text-orange-400 drop-shadow-md italic">From Bangladesh</span>
       </h1>

@@ -60,7 +60,7 @@ const OurServices = () => {
 
 {/* Primary SEO */}
 <title>
-Travel & Visa Services Bangladesh | Air Tickets & Tour Packages Bangladesh | Eammu Holidays
+Travel & Visa Services Bangladesh | Air Tickets & Tour Packages Bangladesh
 </title>
 
 <meta
@@ -164,9 +164,9 @@ Travel & Visa Services Bangladesh | Air Tickets & Tour Packages Bangladesh | Eam
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl md:text-5xl font-black mb-6 tracking-tighter uppercase italic">
-Global Visa Services & Air Ticket Booking | 
-<span className="text-orange-400">Travel Agency Bangladesh</span>
+            <h1 className="text-4xl md:text-4xl font-black mb-6 tracking-tighter uppercase italic">
+Eammu Holidays | 
+<span className="text-orange-400"> Travel Agency in Bangladesh</span>
 </h1>
            <p className="text-lg md:text-xl text-green-50/90 max-w-5xl mx-auto font-medium leading-relaxed">
 Eammu Holidays is a global travel agency providing visa application services, air ticket booking, 

@@ -119,7 +119,7 @@ const bgSlides = [
                 <a href="/air-tickets"><NavItem icon={<Plane className="text-[#005a31]" />} label="Flight Tickets" /></a>
                 <a href="/tour-packages"><NavItem icon={<Map className="text-[#005a31]" />} label="Holidays" /></a>
                 <a href="/activities"><NavItem icon={<Wind className="text-[#005a31]" />} label="Activities" /></a>
-                <a href="/student-visa-application-from-bangladesh"><NavItem icon={<GraduationCap className="text-[#005a31]" />} label="Study Abroad" /></a>
+                <a href="/visa-services/student-visa-application-from-bangladesh"><NavItem icon={<GraduationCap className="text-[#005a31]" />} label="Study Abroad" /></a>
                 <a href="/offer"><NavItem icon={<Gift className="text-[#005a31]" />} label="Special Offers" /></a>
               </div>
             </div>
@@ -133,11 +133,11 @@ const bgSlides = [
               <div className="text-white text-center lg:text-left">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
                   Your Trusted Travel Partner <br />
-                  in the World <span className="text-yellow-400">Since 2022</span>
+                  to the World <span className="text-yellow-400">Since 2022</span>
                 </h1>
 
                 <p className="text-sm md:text-base leading-relaxed mb-5 opacity-90">
-                  Eammu Holidays is a leading online travel agency offering flight bookings, worldwide visa assistance, Holiday Tour Packages, and exciting desert safari tours. 
+                  Eammu Holidays is a leading online travel agency in Bangladesh - offering flight bookings, worldwide visa assistance, Holiday Tour Packages, and exciting desert safari tours. 
                   With expert guidance, we make international travel simple, affordable, and hassle-free
                 </p>
 
