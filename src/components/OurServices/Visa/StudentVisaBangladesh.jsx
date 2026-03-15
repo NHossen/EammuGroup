@@ -3,8 +3,8 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { motion ,AnimatePresence} from "framer-motion";
 import { 
   FaUniversity, FaFileSignature, 
-  FaAward, FaGlobeEurope, FaUserGraduate,
-  FaArrowRight, FaBookOpen, FaCheckDouble,
+  FaAward,FaUserGraduate,
+  FaArrowRight, FaBookOpen,
   FaClock, FaHeadset, FaMapMarkerAlt, FaSearchLocation,
   FaBriefcase, FaHandHoldingUsd, FaFileContract
 } from "react-icons/fa";
@@ -26,14 +26,15 @@ const StudentVisaBangladesh = () => {
   const [currentHero, setCurrentHero] = useState(0);
 
 const heroSlides = [
-  { id: 1, image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" },
-  { id: 2, image: "/canada_visa_from_india.webp" } // Ensure you have a second image path
+  { id: 1, image: "https://etias.com/assets/uploads/imagery/blog/study-abroad-safety-guide-hero.jpg" },
+  { id: 2, image: "https://www.universityliving.com/blog/wp-content/uploads/2022/10/Banner-Image-1.webp" }, // Ensure you have a second image path
+  { id: 3, image: "https://www.applyboard.com/wp-content/uploads/2023/01/Quiz_-Which-Destination-Country-Should-I-Study-Abroad-In.png" } // Ensure you have a third image path
 ];
 
 useEffect(() => {
   const timer = setInterval(() => {
     setCurrentHero((prev) => (prev + 1) % heroSlides.length);
-  }, 6000); // Switches every 6 seconds
+  }, 4000); // Switches every 5 seconds
   return () => clearInterval(timer);
 }, []);
 
@@ -65,7 +66,7 @@ useEffect(() => {
       </Helmet>
 
      {/* 🚀 Hero Section - Mobile Optimized with Automatic Carousel */}
-<section className="relative min-h-[55vh] md:h-[50vh] flex items-center justify-center overflow-hidden">
+<section className="relative min-h-[60vh] md:h-[60vh] flex items-center justify-center overflow-hidden">
   
   {/* --- CAROUSEL BACKGROUND LAYER --- */}
   <div className="absolute inset-0 z-0">
@@ -87,7 +88,7 @@ useEffect(() => {
     </AnimatePresence>
     
     {/* Gradient Overlay - Preserved your exact colors */}
-    <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-tr from-[#005a31] via-[#005a31]/85 to-transparent z-10"></div>
+    <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-tr from-[#005f05] via-[#9bb81a]/30 to-transparent z-10"></div>
   </div>
 
   {/* --- CONTENT LAYER (STAYS EXACTLY THE SAME) --- */}

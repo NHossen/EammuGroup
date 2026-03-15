@@ -158,8 +158,9 @@ const TourPackages = () => {
   
   // 1. Image Data
 const heroSlides = [
-  { id: 1, image: '/eammu_Tour.webp' },
-  { id: 2, image: '/eid_ul_fitr_banner.webp' }, // Add your second image path here
+  { id: 1, image: '/bangladesh_europe_couple.webp' },
+  { id: 2, image: '/eammu_Tour.webp' }, // Add your second image path here
+  { id: 3, image: 'https://c.regencyholidays.com/packages/fd323071-0b2c-4078-ab0f-5ba24d78adbe/original/01d776cf-c1c3-4ba0-b92d-45bc087166d0.webp' },
 ];
 
 // 2. State

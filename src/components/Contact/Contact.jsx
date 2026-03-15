@@ -1,6 +1,9 @@
+import React, { useState, useRef, useEffect } from "react";
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion , AnimatePresence} from 'framer-motion';
+
+
 
 const offices = [
   {
@@ -40,6 +43,31 @@ const offices = [
     website: "/travel-agency-georgia",
   },
 ];
+
+
+
+const heroSlides = [
+  { 
+    id: 1, 
+    image: "/sylhet_eammu.webp",
+    title: "Eammu Holidays Contact Information",
+    description: "Connect with Eammu Holidays for trusted travel and business support services. Whether you're planning to study abroad or applying for visas, our team is ready to assist you."
+  },
+  { 
+    id: 2, 
+    image: "/bangladesh_europe_couple.webp",
+    title: "Our Travel Agency Offices Worldwide",
+    description: "From our headquarters in Bangladesh to our global partners, we provide professional and personalized solutions for travelers across the globe."
+  },
+  { 
+    id: 3, 
+    image: "/flight_eammu.webp",
+    title: "24/7 Global Support Services",
+    description: "Seeking expert IT consultation or reliable partnership opportunities? Our support desk is available to ensure your journey is smooth and successful."
+  }
+];
+
+
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -140,7 +168,16 @@ const faqSchema = {
   ]
 };
 
+
 const Contact = () => {
+  const [currentHero, setCurrentHero] = useState(0);
+  useEffect(() => {
+  const timer = setInterval(() => {
+    setCurrentHero((prev) => (prev + 1) % heroSlides.length);
+  }, 4000); // 6 seconds per slide
+  return () => clearInterval(timer);
+}, []);
+
   return (
     <>
       <Helmet>
@@ -161,32 +198,58 @@ const Contact = () => {
       </Helmet>
 
       <main >
-   {/* --- Contact Heading with Background Image --- */}
+{/* --- Contact Heading with Automatic Text & Image Carousel --- */}
 <motion.section
   initial={{ opacity: 0, y: -30 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6 }}
-  className="relative py-32 px-4 text-center overflow-hidden"
+  className="relative py-32 px-4 text-center overflow-hidden min-h-[450px] flex items-center justify-center"
 >
-  {/* Background Image Container */}
+  {/* Background Carousel Container */}
   <div className="absolute inset-0 z-0">
-    <img 
-      src="eammu_banner.webp" // Replace with your preferred contact/office image
-      alt="Online Travel Agency Cumilla" 
-      className="w-full h-full object-cover"
-    />
-    {/* Overlay to ensure text readability */}
-    <div className="absolute inset-0 bg-black/20"></div>
-  </div>
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={currentHero}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+        className="absolute inset-0"
+      >
+        {/* The Image */}
+        <img 
+          src={heroSlides[currentHero].image} 
+          alt="Eammu Background" 
+          className="w-full h-full object-cover scale-105"
+        />
+        
+        {/* Overlay Layer */}
+        <div className="absolute inset-0 bg-black/50 z-10"></div>
 
-  {/* Content Layer */}
-  <div className="relative z-10">
-    <h1 className="text-4xl md:text-4xl font-extrabold mb-4 text-white drop-shadow-sm">
-      Eammu Holidays Contact Information | Our Travel Agency Offices Worldwide  
-    </h1>
-    <p className="text-lg text-white max-w-2xl mx-auto font-medium leading-relaxed">
-  Connect with Eammu Holidays for trusted travel and business support services. Whether you're planning to study abroad, applying for visas, seeking expert IT consultation, or looking for reliable partnership opportunities, our team is ready to assist you with fast, professional, and personalized solutions.
-</p>
+        {/* --- CONTENT LAYER (Now moves with the slides) --- */}
+        <div className="absolute inset-0 z-20 flex items-center justify-center">
+          <div className="container mx-auto px-4">
+            <motion.h1 
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.2 }}
+              className="text-4xl md:text-5xl font-extrabold mb-4 text-white drop-shadow-lg"
+            >
+              {heroSlides[currentHero].title}
+            </motion.h1>
+            
+            <motion.p 
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.4 }}
+              className="text-lg text-white max-w-5xl mx-auto font-medium leading-relaxed drop-shadow-md"
+            >
+              {heroSlides[currentHero].description}
+            </motion.p>
+          </div>
+        </div>
+      </motion.div>
+    </AnimatePresence>
   </div>
 </motion.section>
 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-20">

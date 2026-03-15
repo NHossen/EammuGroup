@@ -45,7 +45,7 @@ const ActivitiesPage = () => {
   useEffect(() => {
     const heroTimer = setInterval(() => {
       setHeroIndex((prev) => (prev === heroSlides.length - 1 ? 0 : prev + 1));
-    }, 5000);
+    }, 4000);
     return () => clearInterval(heroTimer);
   }, [heroSlides.length]);
 

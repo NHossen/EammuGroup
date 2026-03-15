@@ -1,12 +1,44 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion'; //
 
-
+const heroSlides = [
+  {
+    id: 1,
+    image: "/sylhet_eammu.webp",
+    badge: "Since 2022",
+    highlight: "Eammu Holidays",
+    title: "Premium Travel Agency Worldwide",
+    boldText: "Eammu Holidays",
+    description: "is a professional global travel Agency, tourism, and Visa application services company offering visa assistance, holiday packages, and international relocation solutions.",
+    subDescription: "From luxury holidays to global Travel support, Eammu Holidays connects your dreams to destinations worldwide."
+  },
+  {
+    id: 2,
+    image: "/flight_eammu.webp",
+    badge: "Expert Consultancy",
+    highlight: "Student Visa",
+    title: "Global Education Support Services",
+    boldText: "Apply with Eammu",
+    description: "to secure your admission in top universities across UK, USA, Canada, and Australia with professional documentation and interview preparation.",
+    subDescription: "Your journey to world-class education starts with trusted guidance from our expert consultants."
+  },
+  {
+    id: 3,
+    image: "/bangladesh_europe_couple.webp",
+    badge: "Exclusive Deals",
+    highlight: "Tour Packages",
+    title: "Unforgettable Journeys Across Borders",
+    boldText: "Explore the World",
+    description: "with our custom-tailored holiday packages, from pristine beaches to historic city tours, designed for comfort and luxury.",
+    subDescription: "Discover hidden gems and popular destinations with Eammu's all-inclusive tourism services."
+  }
+];
 // 1. New Helper Component for the FAQ items
 const FAQItem = ({ question, answer, index }) => {
   const [isOpen, setIsOpen] = useState(false);
+  
 
   return (
     <motion.div 
@@ -50,6 +82,14 @@ const FAQItem = ({ question, answer, index }) => {
 };
 
 const About = () => {
+  const [currentHero, setCurrentHero] = useState(0);
+
+  useEffect(() => {
+  const timer = setInterval(() => {
+    setCurrentHero((prev) => (prev + 1) % heroSlides.length);
+  }, 5000); // Transitions every 7 seconds
+  return () => clearInterval(timer);
+}, []);
   // অ্যানিমেশন ভেরিয়েন্ট
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
@@ -108,50 +148,73 @@ const About = () => {
 
       <main className="overflow-hidden">
         {/* --- Hero Section with Animation --- */}
-      {/* --- Hero Section with New Background Image --- */}
+{/* --- Hero Section with 3-Slide Carousel --- */}
 <section className="relative min-h-[50vh] flex items-center justify-center py-20 px-4 overflow-hidden">
   
-  {/* Background Layer - Replace 'your-new-image.jpg' with your actual file path */}
+  {/* Background & Content Carousel Layer */}
   <div className="absolute inset-0 z-0">
-    <img
-      src="/eammu_banner.webp" 
-      alt="Global Travel Agency Cumilla"
-      className="w-full h-full object-cover"
-    />
-    {/* Dark overlay to ensure your original text stays clear and readable */}
-    <div className="absolute inset-0 bg-black/10 bg-gradient-to-t from-black/30 via-transparent to-black/20"></div>
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={currentHero}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+        className="absolute inset-0"
+      >
+        {/* Background Image */}
+        <img
+          src={heroSlides[currentHero].image} 
+          alt="Global Travel Agency"
+          className="w-full h-full object-cover scale-105"
+        />
+        
+        {/* Dark overlay to ensure text stays clear */}
+        <div className="absolute inset-0 bg-black/20 bg-gradient-to-t from-black/50 via-transparent to-black/30 z-10"></div>
+
+        {/* --- CONTENT LAYER (Moves with the slides) --- */}
+        <div className="absolute inset-0 z-20 flex items-center justify-center">
+          <motion.div 
+            initial="hidden"
+            animate="visible"
+            variants={fadeIn}
+            className="max-w-7xl mx-auto text-center space-y-8 px-4"
+          >
+            <span className="inline-block px-4 py-1.5 bg-[#005a31] text-white rounded-full text-sm font-bold tracking-widest uppercase shadow-lg">
+              {heroSlides[currentHero].badge}
+            </span>
+
+            <h1 className="text-3xl md:text-4xl font-extrabold text-white leading-tight drop-shadow-lg">
+              <span className="text-[#e7d000]">{heroSlides[currentHero].highlight}</span> {heroSlides[currentHero].title}
+            </h1>
+
+            <div className="max-w-7xl mx-auto">
+              <p className="text-lg md:text-xl text-gray-100 leading-relaxed mt-6">
+                <strong className="text-white">{heroSlides[currentHero].boldText}</strong> {heroSlides[currentHero].description}
+              </p>
+
+              <p className="text-lg md:text-xl text-gray-200 leading-relaxed mt-4">
+                {heroSlides[currentHero].subDescription}
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </motion.div>
+    </AnimatePresence>
   </div>
 
-  <motion.div 
-    initial="hidden"
-    whileInView="visible"
-    viewport={{ once: true }}
-    variants={fadeIn}
-    className="relative z-10 max-w-7xl mx-auto text-center space-y-8"
-  >
-    <span className="inline-block px-4 py-1.5 bg-[#005a31] text-white rounded-full text-sm font-bold tracking-widest uppercase shadow-lg">
-      Since 2022
-    </span>
-
-    <h1 className="text-3xl md:text-4xl font-extrabold text-white leading-tight drop-shadow-lg">
-    <span className="text-[#e7d000]">Eammu Holidays</span> Premium Travel Agency Worldwide
-    </h1>
-
-    <div className="max-w-7xl mx-auto">
-      <p className="text-lg md:text-xl text-gray-100 leading-relaxed mt-6">
-        <strong className="text-white">Eammu Holidays</strong> is a professional global travel Agency, tourism, and Visa application services company offering 
-        <strong className="text-white"> visa assistance, holiday packages, tour services, work permits, student visas, and international relocation solutions</strong>. 
-        We help individuals and businesses access global opportunities with trusted guidance, fast processing, and transparent service.
-      </p>
-
-      <p className="text-lg md:text-xl text-gray-200 leading-relaxed mt-4">
-        From luxury holidays to global Travel support, Eammu Holidays connects your dreams to destinations worldwide.
-      </p>
-    </div>
-    
-  </motion.div>
+  {/* Slide Indicators (Dots) */}
+  <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex gap-2">
+    {heroSlides.map((_, i) => (
+      <div 
+        key={i} 
+        className={`h-1.5 rounded-full transition-all duration-500 ${
+          i === currentHero ? 'w-10 bg-[#e7d000]' : 'w-2 bg-white/40'
+        }`} 
+      />
+    ))}
+  </div>
 </section>
-
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-32 py-20">
           
           {/* --- Stats/Values Section --- */}

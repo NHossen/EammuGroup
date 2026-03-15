@@ -10,7 +10,7 @@ const HeroSection = () => {
   // Data for background slider
 const bgSlides = [
   {
-    url: "https://eammu.com/eammu_holidays_bg.webp/",
+    url: "/sylhet_eammu.webp",
     alt: "Eammu Holidays travel and tourism banner"
   },
   {
@@ -18,7 +18,7 @@ const bgSlides = [
     alt: "Beautiful mountain landscape travel destination"
   },
   {
-    url: "https://www.thailand.go.th/uploads/posts/photo_1684338552_1.jpeg",
+    url: "/eammu_holidays_bg.webp",
     alt: "Thailand tourism beach destination"
   },
   {
@@ -26,7 +26,7 @@ const bgSlides = [
     alt: "Nature travel destination with lake and mountains"
   },
   {
-    url: "https://eammu.com/eammu_banner.webp",
+    url: "/eammu_banner.webp",
     alt: "Eammu Holidays travel services banner"
   }
 ];
