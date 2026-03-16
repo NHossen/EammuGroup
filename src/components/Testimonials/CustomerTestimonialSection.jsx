@@ -9,12 +9,12 @@ const CustomerTestimonialSection = () => {
 
   // 📸 Customer Photos Data
   const photos = [
-    { id: 1, url: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d", title: "Success Story: Mr. Ahmed" },
-    { id: 2, url: "https://images.unsplash.com/photo-1494790108377-be9c29b29330", title: "Visa Received: Ms. Sara" },
-    { id: 3, url: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e", title: "Happy Client: Tanvir Hasan" },
-    { id: 4, url: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2", title: "Group Tour Feedback" },
-    { id: 5, url: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e", title: "Work Permit Success" },
-    { id: 6, url: "https://images.unsplash.com/photo-1534528741775-53994a69daeb", title: "Student Visa Celebration" },
+    { id: 1, url: "https://scontent.ffjr1-2.fna.fbcdn.net/v/t39.30808-6/627683049_122214000974548392_5055873005367739002_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=8_2-WKCtRxkQ7kNvwHU338K&_nc_oc=AdmXsUJm-qZt49a6aP0-SKll9QVppl0TmDNK7jbFmDTeLeApyB7pTlqVYzHleWTHD9M&_nc_zt=23&_nc_ht=scontent.ffjr1-2.fna&_nc_gid=IQqKmsjdEt3OoD9qNizxPA&_nc_ss=8&oh=00_AfzUytfIPeLQGyDB7StTLebc8tdTChJsQDQ4N8DVoH1nag&oe=69BDC7D4", title: "Success Story: Mrs. Sadiya" },
+    { id: 2, url: "https://scontent.ffjr1-6.fna.fbcdn.net/v/t39.30808-6/480681934_2428325887510082_4187620178881988215_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e982cd&_nc_ohc=B1lcbL6-UccQ7kNvwFd48nX&_nc_oc=AdksZp4Zv9z6r6hc4eXpVPZ4iG0473mfNqDEL6kISxokTxQ4JPDFAh_XJKk5xxXIFvM&_nc_zt=23&_nc_ht=scontent.ffjr1-6.fna&_nc_gid=bD6qHEKVTdcfXg1smQforQ&_nc_ss=8&oh=00_AfwI0quSAusK-N-4ufkYmbsyRydyiPQjuBNPfZu1RfBL-Q&oe=69BDCFA0", title: "Visa Received: Ms. Sara" },
+    { id: 3, url: "https://scontent.ffjr1-1.fna.fbcdn.net/v/t39.30808-6/488755947_670883522198952_5722921609796892800_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=53a332&_nc_ohc=9Juvw1DHUaIQ7kNvwFbTgi7&_nc_oc=AdkqEY_RLL7FThIQdOOW9g-83CaKHhDtLAuUBzxHSQbep3LjEx22yVIgfdA2FKpELos&_nc_zt=23&_nc_ht=scontent.ffjr1-1.fna&_nc_gid=4VlRo8dRByPzf_nTjiLZ5A&_nc_ss=8&oh=00_Afxy9Im5NrCpNiLvRXdQaspD_ImrdrQe6eEczUizlf96kA&oe=69BDD082", title: "Happy Client: Tanvir Hasan" },
+    { id: 4, url: "https://scontent.ffjr1-1.fna.fbcdn.net/v/t39.30808-6/643316693_3925146984284070_2679819947000075901_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=105&ccb=1-7&_nc_sid=7b2446&_nc_ohc=Cw7T33bfEpQQ7kNvwFbm-EG&_nc_oc=Adla2CRfbEjomBgJJFv1LzNz3Ui-YQ__re0Y-3MR90MJBWEd_WFI90Pu6E8pz6xgUdA&_nc_zt=23&_nc_ht=scontent.ffjr1-1.fna&_nc_gid=41gDkjLGTrMjadT5EnAqZQ&_nc_ss=8&oh=00_AfyJseQ1y_OqYqS2Fm76P1LdhIX_8b8IafQPm10GSYoRoQ&oe=69BDD094", title: "Group Tour Feedback" },
+    { id: 5, url: "https://scontent.ffjr1-6.fna.fbcdn.net/v/t39.30808-6/650279996_1205215271691777_1277145821396657414_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=53a332&_nc_ohc=_l7CwGaQIB8Q7kNvwGupVTW&_nc_oc=Adle14uNz3_e1ZWJm22_6quM6Fpciebc_1cEQRyHD4_jalpevrZ0l12Xkz8nURs6GAA&_nc_zt=23&_nc_ht=scontent.ffjr1-6.fna&_nc_gid=xDlhwWjbAufdPYv6nCApsQ&_nc_ss=8&oh=00_Afw-ZEWgtKF_i3wSSKpw9H9q832f17ILjTqpx05I76Sb3Q&oe=69BDC5EC", title: "Work Permit Success" },
+    { id: 6, url: "https://scontent.ffjr1-6.fna.fbcdn.net/v/t39.30808-6/650743432_4247666005487471_4570808421395883987_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=13d280&_nc_ohc=k6vFy2MOD8wQ7kNvwE2iBob&_nc_oc=AdlFgnmb3gtgXJN1sFUQSuGIMewXkoK1U3wX0KQf2eXktl_g2JDCPNGjRtzeG77-pgg&_nc_zt=23&_nc_ht=scontent.ffjr1-6.fna&_nc_gid=BMHxntPL1FOoVIw4UqoO1w&_nc_ss=8&oh=00_AfyNQtdX8k4Ex9WhvMK2qLzo3c6lsQYvbJTQYJkdc_QxHg&oe=69BDC3BA", title: "Student Visa Celebration" },
   ];
 
   // 🎥 Customer Video Testimonials (YouTube)
