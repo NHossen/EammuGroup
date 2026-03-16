@@ -10,14 +10,14 @@ const SingaporeVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Singapore Visa Application | Tour operator singapore | Travel agent in singapore</title>
+        <title>Singapore Visa Application From Bangladesh | Tour operator singapore | Travel agent in singapore</title>
         <meta 
           name="description" 
           content="Apply for Singapore Tourist Visa & Business e-Visas in 2026. Expert guide on SG Arrival Card (SGAC), Form 14A, and visa processing for UAE & Bangladesh residents." 
         />
      
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://eammu.com/singapore-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/singapore-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

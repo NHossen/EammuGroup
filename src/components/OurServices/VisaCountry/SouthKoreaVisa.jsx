@@ -12,7 +12,7 @@ const SouthKoreaVisa = () => {
       <Helmet>
         <title>South Korea Visa Appointment | South Korea Tourist Visa Dubai | South Korea Visa Appointment Dubai</title>
         <meta name="description" content="Apply for South Korea tourist, business, and K-ETA permits. Expert assistance for KVAC submissions, document translation, and fast processing for 2026." />
-        <link rel="canonical" href="https://eammu.com/south-korea-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/south-korea-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

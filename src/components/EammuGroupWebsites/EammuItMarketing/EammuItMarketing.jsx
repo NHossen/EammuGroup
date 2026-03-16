@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
+import { motion, AnimatePresence } from "framer-motion";
 import { 
   Code2, 
   Smartphone, 
@@ -12,10 +13,49 @@ import {
   BarChart3, 
   MessageSquare, 
   ChevronRight, 
-  Rocket 
+  Rocket,
+  MessageCircle,
+  Zap,
+  ShieldCheck,
+  Globe
 } from "lucide-react";
 
 const EammuItMarketing = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  // 1. CAROUSEL DATA
+  const slides = [
+    {
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1470&q=80",
+      badge: "Technology & Innovation",
+      title: "Dominating the Digital Landscape",
+      desc: "Empowering businesses through cutting-edge technology, creative design, and data-driven digital strategies. We build brands that last.",
+      icon: <Cpu className="text-orange-500" />
+    },
+    {
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1470&q=80",
+      badge: "Strategic Marketing",
+      title: "Precision Growth Strategies",
+      desc: "Reach your target audience with laser-focused SEO, social media management, and performance marketing that delivers ROI.",
+      icon: <BarChart3 className="text-orange-500" />
+    },
+    {
+      image: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1470&q=80",
+      badge: "Creative Branding",
+      title: "Visual Identity That Stands Out",
+      desc: "Crafting unique visual stories and premium UI/UX designs that capture attention and turn visitors into loyal customers.",
+      icon: <Palette className="text-orange-500" />
+    }
+  ];
+
+  // 2. AUTO-SLIDE LOGIC (5 Seconds)
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div className="bg-white min-h-screen">
       {/* SEO Helmet (Unchanged as requested) */}
@@ -38,35 +78,68 @@ const EammuItMarketing = () => {
         <meta property="og:url" content="https://www.eammu.com/eammumarketing" />
         <meta
           property="og:image"
-          content="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1470&q=80"
+          content={slides[0].image}
         />
       </Helmet>
 
-      {/* Hero Section */}
-      <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-28 bg-slate-50 overflow-hidden">
-        <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-green-500/5 rounded-full blur-3xl"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <span className="bg-orange-100 text-orange-600 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest mb-6 inline-block">
-              Technology & Innovation
-            </span>
-            <h1 className="text-4xl md:text-6xl font-black text-[#005a31] mb-6 tracking-tight leading-tight">
-              Eammu <span className="text-orange-500">IT & Marketing</span> Solutions
-            </h1>
-            <p className="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-              Empowering businesses through cutting-edge technology, creative design, 
-              and data-driven digital strategies. We build brands that dominate the digital landscape.
-            </p>
-            
-            <div className="mt-12 relative group max-w-5xl mx-auto">
-              <div className="absolute -inset-1 bg-gradient-to-r from-[#005a31] to-orange-500 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
-              <img
-                className="relative rounded-3xl shadow-2xl w-full h-[450px] object-cover"
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1470&q=80"
-                alt="Digital Solutions"
-              />
-            </div>
-          </div>
+      {/* 🌿 UPDATED HERO SECTION WITH AUTOMATIC CAROUSEL */}
+      <section className="relative h-[70vh] lg:h-[70vh] flex items-center justify-center overflow-hidden bg-slate-950 pt-16">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentSlide}
+            initial={{ opacity: 0, scale: 1.05 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 1.1 }}
+            transition={{ duration: 1.5 }}
+            className="absolute inset-0 z-0"
+          >
+            <img 
+              src={slides[currentSlide].image} 
+              alt="Digital Solutions" 
+              className="w-full h-full object-cover opacity-30" 
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#005a31]/40 via-transparent to-black-50"></div>
+          </motion.div>
+        </AnimatePresence>
+
+        <div className="container mx-auto px-4 relative z-20 text-center">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={currentSlide}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -30 }}
+              transition={{ duration: 0.6 }}
+              className="max-w-4xl mx-auto"
+            >
+              <span className="bg-orange-500/20 text-orange-400 border border-orange-500/30 px-6 py-2 rounded-full text-xs font-black uppercase tracking-widest mb-6 inline-block backdrop-blur-md">
+                {slides[currentSlide].badge}
+              </span>
+              
+              <h1 className="text-4xl md:text-7xl font-black text-white mb-6 tracking-tight leading-tight">
+                Eammu <span className="text-orange-500">{slides[currentSlide].title.split(" ").slice(-2).join(" ")}</span>
+              </h1>
+              
+              <p className="text-gray-300 max-w-2xl mx-auto text-lg md:text-2xl leading-relaxed mb-10">
+                {slides[currentSlide].desc}
+              </p>
+
+              <div className="flex flex-wrap justify-center gap-4">
+                <a
+                  href="https://wa.me/8801631312524"
+                  className="bg-white text-[#005a31] px-10 py-4 rounded-2xl font-black text-lg flex items-center gap-3 hover:bg-orange-500 hover:text-white transition-all shadow-2xl hover:-translate-y-1"
+                >
+                  <MessageCircle size={22} /> Request a Quote
+                </a>
+                <div className="hidden sm:flex items-center gap-3 text-white font-bold px-8 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm">
+                   <Globe size={20} className="text-orange-500" />
+                   Global Solutions
+                </div>
+              </div>
+            </motion.div>
+          </AnimatePresence>
+
+     
         </div>
       </section>
 
@@ -146,9 +219,9 @@ const EammuItMarketing = () => {
               <span className="text-orange-500">Let's build your brand together!</span>
             </p>
           
-            <a href="https://wa.me/8801631312524" className="inline-flex items-center gap-3 bg-[#005a31] text-white px-12 py-5 rounded-2xl font-black shadow-2xl hover:bg-orange-500 transition-all">
-                          Request a Free Quote
-                       </a>
+            <a href="https://wa.me/8801631312524" className="inline-flex items-center gap-3 bg-[#005a31] text-white px-12 py-5 rounded-2xl font-black shadow-2xl hover:bg-orange-500 transition-all hover:-translate-y-1">
+              Request a Free Quote
+            </a>
           </div>
         </div>
       </section>

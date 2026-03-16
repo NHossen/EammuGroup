@@ -10,9 +10,9 @@ const USAVisa = () => {
   return (
     <>
       <Helmet>
-        <title>USA B1/B2 Visa Application | Usa Visa Interview Preparation | Top Travel Agency dhaka</title>
+        <title>USA B1/B2 Visa Application | Study In Usa From Bangladesh | Top Travel Agency dhaka</title>
         <meta name="description" content="Expert assistance for USA B1/B2 visitor visas in 2026 from bangladesh. DS-160 form filling, interview coaching, and appointment scheduling in UAE, Armenia, and Bangladesh." />
-        <link rel="canonical" href="https://eammu.com/usa-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/usa-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

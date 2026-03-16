@@ -10,9 +10,9 @@ const SouthAfricaVisa = () => {
   return (
     <>
       <Helmet>
-        <title>South Africa Visa Application From Dubai | Study in South Africa From Bangladesh</title>
+        <title>South Africa Visa Application From Dubai | Study in South Africa From Bangladesh | Trusted Education Consultany Dhaka</title>
         <meta name="description" content="Apply for your South Africa e-Visa or Tourist sticker visa in 2026. Expert consultancy for VFS Global appointments, document verification, and fast-track processing for Dubai residents." />
-        <link rel="canonical" href="https://eammu.com/south-africa-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/south-africa-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

@@ -31,7 +31,7 @@ const TouristVisaBangladesh = () => {
         <title>Tourist Visa Application from Bangladesh | Best Travel Agency Dhaka</title>
         <meta name="description" content="Apply for a tourist visa from Bangladesh to USA, UK, Canada, Australia, and Schengen countries. Eammu Holidays provides expert documentation support, consultation, and high visa approval rates." />
         <meta name="keywords" content="tourist visa Application Bangladesh, USA tourist visa Dhaka, UK tourist Application visa Bangladesh, Canada visitor visa Application, Schengen visa Application Bangladesh, Eammu Holidays visa agency, travel agency Bangladesh" />
-        <link rel="canonical" href="https://eammu.com/tourist-visa-application-from-bangladesh" />
+        <link rel="canonical" href="https://eammu.com/visa-services/tourist-visa-application-from-bangladesh" />
 
         {/* Social SEO */}
         <meta property="og:type" content="website" />

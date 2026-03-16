@@ -10,9 +10,9 @@ const MoroccoVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Morocco Visa Application From Dubai | e-Visa & Tourist Permit 2026</title>
+        <title>Morocco Visa Application From Dubai | e-Visa & Tourist Permit 2026 | Travel Agency in Dhaka </title>
         <meta name="description" content="Apply for your Morocco e-Visa or Tourist sticker visa in 2026. Expert consultancy for Access Maroc portal, document verification, and fast-track processing for Dubai residents." />
-        <link rel="canonical" href="https://eammu.com/morocco-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/morocco-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

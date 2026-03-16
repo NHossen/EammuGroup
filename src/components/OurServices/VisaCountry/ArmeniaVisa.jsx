@@ -25,7 +25,7 @@ const ArmeniaVisa = () => {
 
   <meta name="robots" content="index, follow" />
 
-  <link rel="canonical" href="https://eammu.com/armenia-visa-application" />
+  <link rel="canonical" href="https://eammu.com/visa-services/armenia-visa-application" />
 
   {/* Open Graph */}
   <meta
@@ -39,7 +39,7 @@ const ArmeniaVisa = () => {
   />
 
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://eammu.com/armenia-visa-application" />
+  <meta property="og:url" content="https://eammu.com/visa-services/armenia-visa-application" />
   <meta
     property="og:image"
     content="https://www.eammu.com/images/armenia-visa-banner.jpg"
@@ -69,7 +69,7 @@ const ArmeniaVisa = () => {
       "provider": {
         "@type": "TravelAgency",
         "name": "Eammu Holidays",
-        "url": "https://eammu.com/armenia-visa-application",
+        "url": "https://eammu.com/visa-services/armenia-visa-application",
         "logo": "https://www.eammu.com/images/logo.png",
         "contactPoint": {
           "@type": "ContactPoint",

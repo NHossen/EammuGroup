@@ -12,7 +12,7 @@ const QatarVisa = () => {
       <Helmet>
         <title>Qatar Visa Application | Online Travel Agency Qatar | Qatar Visa From Bangladesh </title>
         <meta name="description" content="Apply for Qatar tourist Visa, business Visa, and visit visas via the Hayya portal. Expert assistance for mandatory health insurance, Discover Qatar bookings, and fast processing." />
-        <link rel="canonical" href="https://eammu.com/qatar-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/qatar-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

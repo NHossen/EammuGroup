@@ -22,7 +22,7 @@ const AlbaniaVisa = () => {
 
   <meta name="robots" content="index, follow" />
 
-  <link rel="canonical" href="https://eammu.com/albania-visa-application" />
+  <link rel="canonical" href="https://eammu.com/visa-services/albania-visa-application" />
 
   {/* Open Graph / Facebook */}
   <meta

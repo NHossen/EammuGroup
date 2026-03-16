@@ -12,7 +12,7 @@ const IndonesiaVisa = () => {
       <Helmet>
         <title>Indonesia Visa Application From Dubai | Bali Tourist Visa 2026 | Indonesia Tourist Visa</title>
         <meta name="description" content="Apply for your Indonesia Tourist eVisa (B211A) or VoA in 2026. Expert consultancy for Dubai residents, document verification, and fast-track processing." />
-        <link rel="canonical" href="https://eammu.com/indonesia-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/indonesia-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

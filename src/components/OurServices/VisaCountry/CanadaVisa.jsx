@@ -17,7 +17,7 @@ const CanadaVisa = () => {
 
     name="description" 
 
-    content="Get expert assistance by Best Travel Agency India for Canada tourist visa, student visa, work permit, and permanent residency From India. Eammu Holidays provides step-by-step guidance for applicants from Bangladesh and UAE." 
+    content="Best Travel Agency India for Canada tourist visa, student visa, work permit, and permanent residency From India. Eammu Holidays provides step-by-step guidance for applicants from Bangladesh and UAE." 
 
   />
 
@@ -25,7 +25,7 @@ const CanadaVisa = () => {
 
   <meta name="robots" content="index, follow" />
 
-  <link rel="canonical" href="https://eammu.com/canada-visa-application" />
+  <link rel="canonical" href="https://eammu.com/visa-services/canada-visa-application" />
 
 
 
@@ -43,13 +43,13 @@ const CanadaVisa = () => {
 
   <meta property="og:type" content="website" />
 
-  <meta property="og:url" content="https://eammu.com/canada-visa-application" />
+  <meta property="og:url" content="https://eammu.com/visa-services/canada-visa-application" />
 
   <meta 
 
     property="og:image" 
 
-    content="https://www.eammu.com/images/canada-visa-banner.jpg" 
+    content="/canada_visa_from_india.webp" 
 
   />
 

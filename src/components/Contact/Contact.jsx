@@ -50,22 +50,23 @@ const heroSlides = [
   { 
     id: 1, 
     image: "/sylhet_eammu.webp",
-    title: "Eammu Holidays Contact Information",
-    description: "Connect with Eammu Holidays for trusted travel and business support services. Whether you're planning to study abroad or applying for visas, our team is ready to assist you."
+    title: "Contact Eammu Holidays – Travel & Visa Support",
+    description: "Contact Eammu Holidays for professional travel services, visa assistance, flight bookings, and international tour packages. Our travel experts are ready to help you plan your journey smoothly."
   },
   { 
     id: 2, 
     image: "/bangladesh_europe_couple.webp",
-    title: "Our Travel Agency Offices Worldwide",
-    description: "From our headquarters in Bangladesh to our global partners, we provide professional and personalized solutions for travelers across the globe."
+    title: "Our Global Travel Agency Offices & Partners",
+    description: "Reach our travel agency offices and global partners for trusted tourism services, visa guidance, and international travel support. We provide reliable solutions for travelers worldwide."
   },
   { 
     id: 3, 
     image: "/flight_eammu.webp",
-    title: "24/7 Global Support Services",
-    description: "Seeking expert IT consultation or reliable partnership opportunities? Our support desk is available to ensure your journey is smooth and successful."
+    title: "24/7 Travel Customer Support & Consultation",
+    description: "Need help with travel planning, visa applications, or tour packages? Contact our 24/7 customer support team for expert travel consultation and reliable assistance."
   }
 ];
+
 
 
 

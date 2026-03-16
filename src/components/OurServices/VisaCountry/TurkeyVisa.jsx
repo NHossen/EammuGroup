@@ -17,7 +17,7 @@ const TurkeyVisa = () => {
           content="Apply for your Turkey E-Visa or Sticker Visa. Expert guidance on Turkey visa requirements for Indian, Pakistani, and UAE residents. 24-hour processing available." 
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://eammu.com/turkey-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/turkey-visa-application" />
 
         {/* Open Graph */}
         <meta property="og:title" content="Turkey Visa Guide 2026 | Requirements & Application Process" />
@@ -26,7 +26,7 @@ const TurkeyVisa = () => {
           content="Fast-track your Turkey E-Visa. Professional assistance for tourism, business, and transit visas from the experts at Eammu Holidays." 
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://eammu.com/turkey-visa-application" />
+        <meta property="og:url" content="https://eammu.com/visa-services/turkey-visa-application" />
         <meta 
           property="og:image" 
           content="https://www.eammu.com/images/turkey-visa-banner.jpg" 

@@ -45,7 +45,7 @@ useEffect(() => {
         {/* Primary SEO */}
         <title>Student Visa Application Bangladesh | Education Consultancy Bangladesh</title>
         <meta name="description" content="Looking for the best student visa consultant in Bangladesh? Eammu Holidays provides expert guidance for USA, UK, Canada, and Australia student visas. Trusted study abroad advisors since 2018." />
-        <link rel="canonical" href="https://eammu.com/student-visa-application-from-bangladesh" />
+        <link rel="canonical" href="https://eammu.com/visa-services/student-visa-application-from-bangladesh" />
 
         {/* JSON-LD Structured Data */}
         <script type="application/ld+json">

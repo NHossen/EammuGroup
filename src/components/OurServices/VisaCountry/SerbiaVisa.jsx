@@ -10,9 +10,9 @@ const SerbiaVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Serbia Visa From Bangladesh | Serbia Work Permit Bangladesh</title>
+        <title>Serbia Visa From Bangladesh | Serbia Work Permit Bangladesh | Serbia Visa Application</title>
         <meta name="description" content="Apply for Serbia tourist Visa and business visas. Serbia Visa assistance for Certified Invitation Letters, Embassy appointments, and Balkan residency permits (Boravak) for 2026." />
-        <link rel="canonical" href="https://eammu.com/serbia-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/serbia-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

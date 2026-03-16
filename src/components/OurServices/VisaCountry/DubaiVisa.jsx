@@ -13,7 +13,7 @@ const DubaiVisa = () => {
       <Helmet>
         <title>Online Travel Agent Dubai | Dubai Visa Application From India | Online Travel Agency India</title>
         <meta name="description" content="Apply for Dubai tourist Visa, business Visa, or 5-year multi-entry visas. Official UAE processing partner with 24-72 hour approval for global applicants." />
-        <link rel="canonical" href="https://eammu.com/dubai-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/dubai-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

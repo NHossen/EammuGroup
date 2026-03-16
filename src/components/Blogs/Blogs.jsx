@@ -29,22 +29,22 @@ const heroSlides = [
     id: 1,
     image: "/bangladesh_europe_couple.webp",
     badge: "Since 2022",
-    title: "Official Eammu Travel News",
-    description: "Real-time Visa updates, alerts, and travel insights fetched directly from our official newsroom. Our agency helps travelers to safe travel."
+    title: "Latest Travel & Visa News From Eammu Travel",
+    description: "Get the latest travel news, visa policy updates, immigration alerts, and tourism industry insights from Eammu Travel. Stay informed with real-time updates for travelers planning trips, visas, and international journeys worldwide."
   },
   {
     id: 2,
     image: "/flight_eammu.webp",
     badge: "Visa Alerts",
-    title: "Global Entry & Visa Updates",
-    description: "Stay informed about the latest policy changes for Schengen, UK, and USA visas. We provide the most accurate data for your migration journey."
+    title: "Global Visa Updates for Schengen, UK & USA",
+    description: "Explore the newest visa updates for Schengen countries, the United Kingdom, and the United States. Our blog provides accurate visa policy changes, immigration rules, application tips, and travel updates to help travelers plan with confidence."
   },
   {
     id: 3,
     image: "/sylhet_eammu.webp",
     badge: "Travel Tips",
-    title: "Destination Guides & Insights",
-    description: "Discover hidden gems across Bangladesh and the world. Expert advice on how to plan your holiday with safety and comfort in mind."
+    title: "Travel Guides, Tourism Tips & Destination Insights",
+    description: "Read expert travel guides, tourism tips, and destination insights from Bangladesh and around the world. Learn how to plan affordable holidays, discover top attractions, and travel safely with practical advice from travel professionals."
   }
 ];
 
@@ -148,7 +148,7 @@ const [currentHero, setCurrentHero] = useState(0);
             {/* Your Original Green Divider */}
             <div className="w-24 h-1 bg-green-600 mx-auto rounded-full"></div>
 
-            <p className="text-white font-medium max-w-2xl mx-auto text-lg md:text-xl drop-shadow-md">
+            <p className="text-white font-medium max-w-5xl mx-auto text-lg md:text-xl drop-shadow-md">
               {heroSlides[currentHero].description}
             </p>
           </motion.div>

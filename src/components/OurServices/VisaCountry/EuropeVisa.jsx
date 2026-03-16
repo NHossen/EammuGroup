@@ -12,7 +12,7 @@ const EuropeVisa = () => {
       <Helmet>
         <title>Europe Visa Application From India | Schengen Visa Application Bangladesh</title>
         <meta name="description" content="Apply for Schengen tourist Visa, business, or family visas for 2026. Expert guidance for 27 European countries with VFS & Embassy appointment support From India." />
-        <link rel="canonical" href="https://eammu.com/europe-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/europe-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

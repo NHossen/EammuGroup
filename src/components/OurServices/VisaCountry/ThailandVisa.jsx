@@ -17,7 +17,7 @@ const ThailandVisa = () => {
         />
       
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://eammu.com/thailand-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/thailand-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

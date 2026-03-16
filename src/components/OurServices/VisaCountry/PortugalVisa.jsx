@@ -12,7 +12,7 @@ const PortugalVisa = () => {
       <Helmet>
         <title>Portugal Visa Application Bangladesh | Portugal Work Permit | Travel Agency Portugal Visa</title>
         <meta name="description" content="Portugal tourist Visa, business Visa, and D7 residency visas. Expert guidance on VFS appointments, Schengen insurance, and document preparation for 2026." />
-        <link rel="canonical" href="https://eammu.com/portugal-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/portugal-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

@@ -10,9 +10,9 @@ const RussiaVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Russia Visa Application From Dubai | Russia Visa Invitation</title>
+        <title>Russia Visa Application From Dubai | Russia Visa Invitation | Study In Russia </title>
         <meta name="description" content="Apply for your Russia e-Visa or Tourist sticker visa in 2026. Expert consultancy for Consulate appointments, invitation letters (Voucher), and fast-track processing in Dubai." />
-        <link rel="canonical" href="https://eammu.com/russia-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/russia-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

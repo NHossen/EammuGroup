@@ -12,7 +12,7 @@ const GeorgiaVisa = () => {
       <Helmet>
         <title>Georgia Visa Application From India | Best Travel Agent India | Tour Operator Georgia </title>
         <meta name="description" content="Apply for Georgia tourist, business, or Type D visas From India and Bangaladesh. Expert Caucasus region processing with high approval for E-Visa and sticker visa streams." />
-        <link rel="canonical" href="https://eammu.com/georgia-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/georgia-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

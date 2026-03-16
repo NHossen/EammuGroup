@@ -11,13 +11,13 @@ const ChinaVisa = () => {
   return (
     <>
       <Helmet>
-        <title>China Visa Application From Bangladesh | China Travel Agency Bangladesh</title>
+        <title>China Visa Application From Bangladesh | China Travel Agency Bangladesh | Study In China from Bangladesh</title>
         <meta 
           name="description" 
           content="Get assistance From Bangladesh , India And Pakistan  for China tourist Visa, business (M) Visa, and student visas. 2026 updates for COVA forms and Digital Arrival Card guidance for UAE & BD applicants." 
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://eammu.com/china-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/china-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

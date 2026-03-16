@@ -10,9 +10,9 @@ const AzerbaijanVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Azerbaijan Visa Application | E Visa Application Online</title>
+        <title>Azerbaijan Visa Application | E Visa Application Online | Travel Agency Azerbaijan </title>
         <meta name="description" content="Azerbaijan e-Visa (ASAN Visa) Application in 2026. Expert consultancy for Dubai residents, document verification, and 3-hour urgent processing options." />
-        <link rel="canonical" href="https://eammu.com/azerbaijan-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/azerbaijan-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

@@ -10,9 +10,9 @@ const GermanyVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Germany Visa Application in dubai | Schengen Visa Appointment Dubai | Leading Tour Operator Dubai </title>
+        <title>Germany Visa Application in dubai | Germany Visa Appointment Dubai | Leading Tour Operator Dubai </title>
         <meta name="description" content="Complete guide for Germany Schengen tourist, business, and Student visas. Expert assistance with VFS appointments, blocked accounts, and document legalization." />
-        <link rel="canonical" href="https://eammu.com/germany-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/germany-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

@@ -17,7 +17,7 @@ const MalaysiaVisa = () => {
         />
   
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://eammu.com/malaysia-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/malaysia-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

@@ -10,9 +10,9 @@ const SpainVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Schengen Visa from India | Europe Visa Application Agency India</title>
+        <title>Schengen Visa from India | Europe Visa Application Agency India | Study Spain From Dhaka</title>
         <meta name="description" content="Apply for Spain Schengen visa for 2026. Expert assistance for BLS appointments, travel insurance, and flight itineraries for tourist and business visits." />
-        <link rel="canonical" href="https://eammu.com/spain-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/spain-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

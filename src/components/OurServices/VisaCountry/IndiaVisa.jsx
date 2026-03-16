@@ -12,7 +12,7 @@ const IndiaVisa = () => {
       <Helmet>
         <title>India Visa Application From Dubai | e-Tourist Visa 2026</title>
         <meta name="description" content="Apply for your India e-Tourist, Business, or Medical visa in 2026. Expert consultancy for Dubai residents, document verification, and fast-track processing." />
-        <link rel="canonical" href="https://eammu.com/india-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/india-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

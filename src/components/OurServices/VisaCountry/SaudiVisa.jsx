@@ -11,8 +11,8 @@ const SaudiVisa = () => {
     <>
       <Helmet>
         <title>Saudi Arabia Visa Application From Dubai | Umrah & Tourist e-Visa 2026</title>
-        <meta name="description" content="Apply for your Saudi Arabia e-Tourist visa, Umrah permit, or Business visa in 2026. Expert consultancy for MOFA processing, insurance, and fast-track approval." />
-        <link rel="canonical" href="https://eammu.com/saudi-visa-application" />
+        <meta name="description" content="Saudi Arabia e-Tourist visa, Umrah permit, or Business visa in 2026. Expert consultancy for MOFA processing, insurance, and fast-track approval." />
+        <link rel="canonical" href="https://eammu.com/visa-services/saudi-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

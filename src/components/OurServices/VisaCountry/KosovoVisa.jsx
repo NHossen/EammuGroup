@@ -10,9 +10,9 @@ const KosovoVisa = () => {
   return (
     <>
       <Helmet>
-        <title>Kosovo Visa Application Bangladesh | Kosovo Visa From Bangladesh</title>
+        <title>Kosovo Visa Application Bangladesh | Kosovo Visa From Bangladesh | Study In Kosovo</title>
         <meta name="description" content="Kosovo visa assistance From Bangladesh for tourist Visa and business travel. Complete guidance on Schengen exemptions, consular appointments, and document legalization." />
-        <link rel="canonical" href="https://eammu.com/kosovo-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/kosovo-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

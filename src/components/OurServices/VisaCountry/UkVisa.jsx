@@ -10,9 +10,9 @@ const UKVisa = () => {
   return (
     <>
       <Helmet>
-        <title>UK Visa Application From Dubai | Europe Visa Appointment Dubai</title>
+        <title>UK Visa Application From Dubai | Europe Visa Appointment Dubai | Study Abroad From Bangladesh </title>
         <meta name="description" content="Apply for your UK Standard Visitor visa or Work permit in 2026. Expert consultancy for VFS appointments, document verification, and priority processing." />
-        <link rel="canonical" href="https://eammu.com/uk-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/uk-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

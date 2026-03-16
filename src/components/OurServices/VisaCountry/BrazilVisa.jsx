@@ -12,7 +12,7 @@ const BrazilVisa = () => {
       <Helmet>
         <title>Brazil Visa Application From Bangladesh | Tourist and Business Visa Application</title>
         <meta name="description" content="Brazil Visa Application From Bangladesh ,Apply for your Brazil Tourist visa or e-Visa in 2026. Expert consultancy for VFS appointments, document verification, and fast-track processing for Dubai residents." />
-        <link rel="canonical" href="https://eammu.com/brazil-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/brazil-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">

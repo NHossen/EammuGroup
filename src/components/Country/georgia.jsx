@@ -1,9 +1,48 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from 'react-helmet-async';
-import { motion } from 'framer-motion';
-import { CheckCircle, Globe, Plane, ShieldCheck, MapPin, PhoneCall, MessageCircle, Mail, Clock, Briefcase, Landmark, GraduationCap } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { 
+  CheckCircle, Globe, Plane, ShieldCheck, MapPin, PhoneCall, 
+  MessageCircle, Mail, Clock, Briefcase, Landmark, GraduationCap,
+  ArrowRight
+} from 'lucide-react';
 
 const TravelAgencyGeorgia = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  // 1. CAROUSEL DATA (Matches Armenia/Bangladesh style)
+  const slides = [
+    {
+      image: "https://visitgeorgia.ge/wp-content/uploads/2-4.png",
+      badge: "Your Bridge to Tbilisi",
+      title: "Trusted Travel Partner in Georgia",
+      desc: "Navigating Georgia's tourism and business landscape made easy. Expert visa and tour solutions in Tbilisi.",
+      btnText: "Explore Services"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=2000&auto=format&fit=crop",
+      badge: "Business & Residency",
+      title: "Georgia TRC & Business Setup",
+      desc: "Get your Temporary Residence Permit and legal business license with our expert PRO team.",
+      btnText: "Get Started"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=2000&auto=format&fit=crop",
+      badge: "Study in Europe",
+      title: "Student Consultancy Georgia",
+      desc: "Direct admissions to top-ranked medical and engineering universities in Tbilisi.",
+      btnText: "Apply Now"
+    }
+  ];
+
+  // 2. AUTO-PLAY LOGIC (5 Seconds - Same as Armenia/Bangladesh)
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
   const fadeInUp = { hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } };
 
   return (
@@ -35,60 +74,83 @@ const TravelAgencyGeorgia = () => {
 
       <main className="bg-white text-slate-900 overflow-hidden pb-20">
         
-        {/* Unique Split Hero Section */}
-        <section className="relative min-h-[75vh] flex flex-col lg:flex-row items-center border-b border-slate-100">
-          <div className="w-full lg:w-1/2 bg-[#005a31] p-8 md:p-16 lg:p-24 flex flex-col justify-center">
-            <motion.div initial="hidden" animate="visible" variants={fadeInUp}>
-              <span className="text-orange-500 font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Your Bridge to Tbilisi</span>
-              <h1 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
-                Trusted Travel <br/> Partner in <span className="text-orange-400">Georgia</span>
-              </h1>
-              <p className="text-lg text-white/80 mb-10 max-w-lg leading-relaxed">
-                Navigating Georgia's tourism and business landscape made easy. Visit Eammu Holidays at Levan Gotua Street for expert visa and tour solutions.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <button className="bg-orange-500 hover:bg-white hover:text-[#005a31] text-white px-8 py-4 rounded-full font-bold transition-all shadow-lg">
-                  View Services
-                </button>
-                <a href="https://wa.me/995574446218" className="border-2 border-white/30 text-white hover:bg-white hover:text-[#005a31] px-8 py-4 rounded-full font-bold transition-all flex items-center gap-2">
-                  <MessageCircle size={20}/> WhatsApp
-                </a>
-              </div>
+        {/* --- FULL-WIDTH HERO CAROUSEL (Armenia/Bangladesh Style) --- */}
+        <section className="relative h-[70vh] md:h-[70vh] flex items-center justify-center overflow-hidden bg-[#005a31]">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={currentSlide}
+              initial={{ opacity: 0, scale: 1.05 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1.2 }}
+              className="absolute inset-0 z-0"
+            >
+              <img src={slides[currentSlide].image} alt={slides[currentSlide].title} className="w-full h-full object-cover opacity-40" />
+              <div className="absolute inset-0 bg-gradient-to-b from-[#005a31]/80 via-transparent to-[#005a31]"></div>
             </motion.div>
-          </div>
-          
-          <div className="w-full lg:w-1/2 h-[350px] lg:h-[75vh] relative">
-            <img 
-              src="https://visitgeorgia.ge/wp-content/uploads/2-4.png" 
-              alt="Old Tbilisi Georgia" 
-              className="w-full h-full object-cover"
-            />
+          </AnimatePresence>
+
+          <motion.div initial="hidden" animate="visible" variants={fadeInUp} className="relative z-20 text-center px-4 max-w-5xl">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentSlide}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="bg-orange-500 text-white px-5 py-2 rounded-full text-xs sm:text-sm font-black uppercase tracking-widest mb-8 inline-block shadow-lg">
+                  {slides[currentSlide].badge}
+                </span>
+                <h1 className="text-4xl sm:text-5xl md:text-7xl font-black mb-6 text-white leading-tight drop-shadow-2xl">
+                  {slides[currentSlide].title}
+                </h1>
+                <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-10 font-medium max-w-3xl mx-auto leading-relaxed">
+                  {slides[currentSlide].desc}
+                </p>
+                <div className="flex flex-wrap justify-center gap-4">
+                  <button className="bg-orange-500 hover:bg-white hover:text-[#005a31] text-white px-10 py-4 rounded-2xl font-bold text-lg transition-all shadow-xl flex items-center gap-2">
+                    {slides[currentSlide].btnText} <ArrowRight size={20}/>
+                  </button>
+                  <a href="https://wa.me/995574446218" className="bg-white/10 backdrop-blur-md border-2 border-white/20 hover:bg-white hover:text-[#005a31] text-white px-10 py-4 rounded-2xl font-bold text-lg transition-all flex items-center gap-3">
+                    <MessageCircle size={22}/> WhatsApp
+                  </a>
+                </div>
+              </motion.div>
+            </AnimatePresence>
+
+            {/* Slide Indicators */}
+            <div className="absolute -bottom-24 left-1/2 -translate-x-1/2 flex gap-4">
+              {slides.map((_, i) => (
+                <div key={i} className={`h-2 rounded-full transition-all duration-500 ${i === currentSlide ? 'w-12 bg-orange-500' : 'w-4 bg-white/30'}`} />
+              ))}
+            </div>
+          </motion.div>
+        </section>
+
+        {/* --- TBILISI OFFICE CONTACT STRIP (Preserved) --- */}
+        <section className="relative z-30 -mt-16 max-w-7xl mx-auto px-6">
+          <div className="bg-white shadow-2xl rounded-[3rem] p-10 grid grid-cols-1 md:grid-cols-3 gap-10 border border-slate-100">
+            <div className="flex items-center gap-4">
+               <div className="p-4 bg-[#005a31] text-white rounded-xl shadow-lg"><MapPin size={24}/></div>
+               <div><h4 className="text-xs uppercase font-bold text-gray-400">Tbilisi Office</h4><p className="font-bold text-[#005a31] leading-tight text-sm">Floor 5, Levan Gotua St #3</p></div>
+            </div>
+            <div className="flex items-center gap-4">
+               <div className="p-4 bg-orange-500 text-white rounded-xl shadow-lg"><PhoneCall size={24}/></div>
+               <div><h4 className="text-xs uppercase font-bold text-gray-400">Hotline</h4><p className="font-bold text-slate-800">+995 574 446 218</p></div>
+            </div>
+            <div className="flex items-center gap-4">
+               <div className="p-4 bg-[#005a31] text-white rounded-xl shadow-lg"><Mail size={24}/></div>
+               <div><h4 className="text-xs uppercase font-bold text-gray-400">Email Us</h4><p className="font-bold text-slate-800">georgia@eammu.com</p></div>
+            </div>
           </div>
         </section>
 
-        {/* Tbilisi Office Contact Quick-View */}
-        <section className="py-16 px-6 max-w-7xl mx-auto">
-           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="flex items-center gap-4 p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                 <div className="p-4 bg-[#005a31] text-white rounded-xl"><MapPin size={24}/></div>
-                 <div><h4 className="text-xs uppercase font-bold text-gray-500">Tbilisi Office</h4><p className="font-bold text-[#005a31] leading-tight text-sm">Floor 5, Levan Gotua St #3, Tbilisi</p></div>
-              </div>
-              <div className="flex items-center gap-4 p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                 <div className="p-4 bg-orange-500 text-white rounded-xl"><PhoneCall size={24}/></div>
-                 <div><h4 className="text-xs uppercase font-bold text-gray-500">Hotline</h4><p className="font-bold text-slate-800">+995 574 446 218</p></div>
-              </div>
-              <div className="flex items-center gap-4 p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                 <div className="p-4 bg-[#005a31] text-white rounded-xl"><Mail size={24}/></div>
-                 <div><h4 className="text-xs uppercase font-bold text-gray-500">Email Us</h4><p className="font-bold text-slate-800">georgia@eammu.com</p></div>
-              </div>
-           </div>
-        </section>
-
-        {/* Specialized Services for Georgia */}
-        <section className="py-20 px-6 max-w-7xl mx-auto">
+        {/* --- GEORGIA SPECIALIST SERVICES (Preserved) --- */}
+        <section className="py-24 px-6 max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-black text-[#005a31] mb-4 uppercase tracking-tighter">Georgia Specialist Services</h2>
-            <div className="w-20 h-1.5 bg-orange-500 mx-auto"></div>
+            <div className="w-20 h-1.5 bg-orange-500 mx-auto rounded-full"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -99,43 +161,41 @@ const TravelAgencyGeorgia = () => {
           </div>
         </section>
 
-        {/* Popular Georgia Tours */}
-<section className="py-16 sm:py-20 px-4 sm:px-6 max-w-7xl mx-auto">
-  <div className="text-center mb-12 sm:mb-16">
-    <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#005a31] mb-3 sm:mb-4">Popular Georgia Tours</h2>
-    <div className="w-16 sm:w-20 h-1.5 bg-orange-500 mx-auto"></div>
-  </div>
+        {/* --- POPULAR GEORGIA TOURS (Preserved) --- */}
+        <section className="py-16 sm:py-20 px-4 sm:px-6 max-w-7xl mx-auto">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#005a31] mb-3 sm:mb-4">Popular Georgia Tours</h2>
+            <div className="w-16 sm:w-20 h-1.5 bg-orange-500 mx-auto"></div>
+          </div>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-    {[
-      { title: "Tbilisi City Tour", duration: "1 Day", img: "https://www.advantour.com/img/georgia/images/tbilisi.jpg" },
-      { title: "Mtskheta Heritage Tour", duration: "1 Day", img: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/16/40/15/e8.jpg" },
-      { title: "Kazbegi Mountain Adventure", duration: "2 Days", img: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/15/73/b0/36.jpg" },
-      { title: "Batumi & Black Sea Tour", duration: "2 Days", img: "https://cdn.sanity.io/images/nxpteyfv/goguides/730a0b0e027f8a02a6a6eb16a2dfda803852fc2a-1600x1066.jpg" },
-      { title: "Wine & Kakheti Valley", duration: "1 Day", img: "https://eurasia.travel/wp-content/uploads/2025/04/19.-Tusheti-Kakheti-region-Georgia.jpg" },
-      { title: "Uplistsikhe & Gori Tour", duration: "1 Day", img: "https://georgiantour.com/wp-content/uploads/2015/03/ufliscixe.jpg" }
-    ].map((tour, i) => (
-      <div key={i} className="group bg-white rounded-3xl shadow-lg overflow-hidden border border-slate-100 hover:shadow-2xl transition-all">
-        <div className="relative h-48 sm:h-56 overflow-hidden">
-          <img src={tour.img} alt={tour.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"/>
-        </div>
-        <div className="p-6 sm:p-8">
-          <h3 className="text-lg sm:text-xl font-bold text-[#005a31] mb-2">{tour.title}</h3>
-          <p className="text-sm sm:text-base text-gray-500 mb-4">{tour.duration}</p>
-          <a 
-            href="https://wa.me/995574446218" 
-            className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full font-bold text-sm sm:text-base transition-all"
-          >
-            Book Now
-          </a>
-        </div>
-      </div>
-    ))}
-  </div>
-</section>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            {[
+              { title: "Tbilisi City Tour", duration: "1 Day", img: "https://www.advantour.com/img/georgia/images/tbilisi.jpg" },
+              { title: "Mtskheta Heritage Tour", duration: "1 Day", img: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/16/40/15/e8.jpg" },
+              { title: "Kazbegi Mountain Adventure", duration: "2 Days", img: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/15/73/b0/36.jpg" },
+              { title: "Batumi & Black Sea Tour", duration: "2 Days", img: "https://cdn.sanity.io/images/nxpteyfv/goguides/730a0b0e027f8a02a6a6eb16a2dfda803852fc2a-1600x1066.jpg" },
+              { title: "Wine & Kakheti Valley", duration: "1 Day", img: "https://eurasia.travel/wp-content/uploads/2025/04/19.-Tusheti-Kakheti-region-Georgia.jpg" },
+              { title: "Uplistsikhe & Gori Tour", duration: "1 Day", img: "https://georgiantour.com/wp-content/uploads/2015/03/ufliscixe.jpg" }
+            ].map((tour, i) => (
+              <div key={i} className="group bg-white rounded-[2.5rem] shadow-lg overflow-hidden border border-slate-100 hover:shadow-2xl transition-all">
+                <div className="relative h-48 sm:h-56 overflow-hidden">
+                  <img src={tour.img} alt={tour.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"/>
+                  <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-xl text-[10px] font-black flex items-center gap-2 uppercase">
+                    <Clock size={12}/> {tour.duration}
+                  </div>
+                </div>
+                <div className="p-8">
+                  <h3 className="text-lg sm:text-xl font-bold text-[#005a31] mb-6">{tour.title}</h3>
+                  <a href="https://wa.me/995574446218" className="block text-center bg-orange-500 hover:bg-[#005a31] text-white py-4 rounded-2xl font-bold transition-all">
+                    Book Now
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
 
-
-        {/* SEO Authoritative Content */}
+        {/* --- SEO AUTHORITATIVE CONTENT (Preserved) --- */}
         <section className="bg-[#fcfcfc] py-24 px-6 border-y border-slate-100">
           <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20 items-start">
             <div className="lg:w-1/2">
@@ -154,7 +214,7 @@ const TravelAgencyGeorgia = () => {
             </div>
             
             {/* Georgia Specific FAQ */}
-            <div className="lg:w-1/2 bg-white p-10 rounded-3xl shadow-xl border border-slate-100">
+            <div className="lg:w-1/2 bg-white p-10 rounded-[3rem] shadow-xl border border-slate-100">
                <h4 className="text-2xl font-bold text-[#005a31] mb-8 border-b-2 border-orange-500 pb-2 inline-block">Georgia Travel FAQ</h4>
                <div className="space-y-8">
                   <div className="group">
@@ -169,14 +229,20 @@ const TravelAgencyGeorgia = () => {
             </div>
           </div>
         </section>
+
+        {/* Mobile Sticky WhatsApp */}
+        <a href="https://wa.me/995574446218" className="fixed bottom-8 right-8 bg-[#25D366] text-white p-5 rounded-full shadow-2xl z-50 md:hidden animate-bounce transition-all">
+          <MessageCircle size={28}/>
+        </a>
       </main>
     </>
   );
 };
 
+// --- HELPER COMPONENT (Preserved) ---
 const ServiceBlock = ({ icon, title, desc }) => (
-  <div className="group bg-white p-10 rounded-2xl border border-slate-100 hover:border-orange-500 hover:shadow-2xl transition-all">
-    <div className="w-12 h-12 bg-[#005a31] text-white rounded-lg flex items-center justify-center mb-6 group-hover:bg-orange-500 transition-colors">
+  <div className="group bg-white p-10 rounded-[2.5rem] border border-slate-100 hover:border-orange-500 hover:shadow-2xl transition-all h-full">
+    <div className="w-12 h-12 bg-[#005a31] text-white rounded-lg flex items-center justify-center mb-6 group-hover:bg-orange-500 transition-colors shadow-md">
       {React.cloneElement(icon, { size: 24 })}
     </div>
     <h3 className="text-xl font-bold text-[#005a31] mb-3">{title}</h3>

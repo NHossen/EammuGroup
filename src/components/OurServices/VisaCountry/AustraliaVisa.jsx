@@ -24,7 +24,7 @@ const AustraliaVisa = () => {
 
   <meta name="robots" content="index, follow" />
 
-  <link rel="canonical" href="https://eammu.com/australia-visa-application" />
+  <link rel="canonical" href="https://eammu.com/visa-services/australia-visa-application" />
 
 
 
@@ -42,13 +42,13 @@ const AustraliaVisa = () => {
 
   <meta property="og:type" content="website" />
 
-  <meta property="og:url" content="https://eammu.com/australia-visa-application" />
+  <meta property="og:url" content="https://eammu.com/visa-services/australia-visa-application" />
 
   <meta 
 
     property="og:image" 
 
-    content="https://www.eammu.com/images/australia-visa-banner.jpg" 
+    content="/sylhet_eammu.webp" 
 
   />
 
@@ -96,7 +96,7 @@ const AustraliaVisa = () => {
 
         "name": "Eammu Holidays",
 
-        "url": "https://eammu.com/australia-visa-application",
+        "url": "https://eammu.com/visa-services/australia-visa-application",
 
         "logo": "https://www.eammu.com/images/logo.png",
 

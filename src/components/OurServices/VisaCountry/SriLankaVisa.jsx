@@ -12,7 +12,7 @@ const SriLankaVisa = () => {
       <Helmet>
         <title>Sri Lanka Visa Application From Dubai | Study Abroad From Sri Lanka</title>
         <meta name="description" content="Apply for your Sri Lanka e-Visa or Tourist ETA in 2026. Expert consultancy for Dubai residents, document verification, and fast-track 24-hour approval." />
-        <link rel="canonical" href="https://eammu.com/sri-lanka-visa-application" />
+        <link rel="canonical" href="https://eammu.com/visa-services/srilanka-visa-application" />
       </Helmet>
 
       <main className="bg-white min-h-screen font-sans text-slate-900">
