@@ -21,9 +21,9 @@ const Header = () => {
       {/* 🔹 Fixed Notice Bar */}
       <div className="w-full fixed top-0 left-0 z-50 bg-[#005a31] dark:bg-[#005a31] flex items-center justify-center px-2 py-2">
         <p className="text-white dark:text-white text-sm text-center leading-snug sm:text-base sm:px-4">
-          📢 Enjoy <span className="text-yellow-300 font-bold">20% OFF</span> +
+          📢 Enjoy <span className="text-[#ffcc00] font-bold">20% OFF</span> +
           <span className="text-blue-200 font-semibold"> FREE Visa Assistance</span>.
-          One place for everything — <span className="text-yellow-300 font-bold">With Eammu</span> !
+          One place for everything — <span className="text-[#ffcc00] font-bold">With Eammu</span> !
         </p>
         
         <button

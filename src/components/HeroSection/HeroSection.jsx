@@ -11,11 +11,11 @@ const HeroSection = () => {
 const bgSlides = [
   {
     url: "/sylhet_eammu.webp",
-    alt: "Eammu Holidays travel and tourism banner"
+    alt: "Eammu Holidays travel and tourism Bangladesh"
   },
   {
     url: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1920&q=80",
-    alt: "Beautiful mountain landscape travel destination"
+    alt: "Beautiful mountain landscape travel destination Bangladesh"
   },
   {
     url: "/eammu_holidays_bg.webp",
@@ -133,7 +133,7 @@ const bgSlides = [
               <div className="text-white text-center lg:text-left">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
                   Your Trusted Travel Partner <br />
-                  to the World <span className="text-yellow-400">Since 2022</span>
+                  to the World <span className="text-[#ffcc00]">Since 2022</span>
                 </h1>
 
                 <p className="text-sm md:text-base leading-relaxed mb-5 opacity-90">
@@ -142,13 +142,63 @@ const bgSlides = [
                 </p>
 
                 <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-5">
-                  <a href="/our-services" className="flex items-center gap-2 bg-white text-gray-700 px-5 py-2 rounded-full font-medium shadow-lg hover:bg-gray-100 transition text-sm">
-                    <Binoculars className="text-[#005a31]" /> Explore More
-                  </a>
+                <motion.a
+  href="/our-services"
+  /* 1. Animated Gradient: Uses a 'bg-size' trick to move the colors.
+     2. Shadow: Added a colored shadow to match the gold theme.
+  */
+  className="relative flex items-center gap-2 px-6 py-2.5 rounded-full font-bold text-sm text-[#005a31] shadow-[0_10px_20px_-10px_rgba(255,204,0,0.5)] 
+             bg-gradient-to-r from-[#ffcc00] via-[#ffeca1] to-[#ffcc00] bg-[length:200%_auto]
+             hover:bg-right transition-all duration-500 overflow-hidden"
+  
+  /* Framer Motion Animations */
+  whileHover={{ 
+    scale: 1.05,
+    boxShadow: "0_15px_25px_-5px_rgba(255,204,0,0.6)" 
+  }}
+  whileTap={{ scale: 0.95 }}
+  initial={{ opacity: 0, y: 10 }}
+  animate={{ opacity: 1, y: 0 }}
+>
+  {/* Shimmer Effect Overlay */}
+  <motion.div 
+    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent w-full h-full"
+    animate={{ x: ['-100%', '200%'] }}
+    transition={{ repeat: Infinity, duration: 2, ease: "linear", repeatDelay: 1 }}
+  />
 
-                  <a href="/testimonials" className="flex items-center gap-2 bg-white text-gray-700 px-5 py-2 rounded-full font-medium shadow-lg hover:bg-gray-100 transition text-sm">
-                    <Star className="text-[#005a31]" /> Customer Review
-                  </a>
+  <Binoculars size={20} className="relative z-10" />
+  <span className="relative z-10">Explore More</span>
+</motion.a>
+
+                <motion.a
+  href="/testimonials"
+  /* 1. Animated Gradient: Uses a 'bg-size' trick to move the colors.
+     2. Shadow: Added a colored shadow to match the gold theme.
+  */
+  className="relative flex items-center gap-2 px-6 py-2.5 rounded-full font-bold text-sm text-white shadow-[0_10px_20px_-10px_rgba(0, 90, 49, 0.6)] 
+             bg-gradient-to-r from-[#005a31] via-[#00a45a] to-[#005a31] bg-[length:200%_auto]
+             hover:bg-right transition-all duration-500 overflow-hidden"
+  
+  /* Framer Motion Animations */
+  whileHover={{ 
+    scale: 1.05,
+    boxShadow: "0_15px_25px_-5px_rgba(0, 90, 49, 0.6)" 
+  }}
+  whileTap={{ scale: 0.95 }}
+  initial={{ opacity: 0, y: 10 }}
+  animate={{ opacity: 1, y: 0 }}
+>
+  {/* Shimmer Effect Overlay */}
+  <motion.div 
+    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent w-full h-full"
+    animate={{ x: ['-100%', '200%'] }}
+    transition={{ repeat: Infinity, duration: 2, ease: "linear", repeatDelay: 1 }}
+  />
+
+  <Star size={20} className="relative z-10" />
+  <span className="relative z-10"> Customer Review</span>
+</motion.a>
                 </div>
 
                 <div className="flex flex-wrap justify-center lg:justify-start gap-3 text-xs">
@@ -238,48 +288,65 @@ const bgSlides = [
         </div>
       </div>
 
-      {/* ================= BOTTOM CAROUSEL ================= */}
-      <div className="bg-white py-10 px-4">
-        <div className="max-w-7xl mx-auto relative">
-          <div
-            ref={bottomRef}
-            className="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 hide-scrollbar"
-          >
-            {bottomSlides.map((slide, index) => (
-              <motion.div 
-                key={index}
-                className="snap-center min-w-[85%] sm:min-w-[70%] md:min-w-[40%] h-48 rounded-xl overflow-hidden relative shadow-md"
-                whileHover={{ scale: 1.02 }}
-              >
-                <a href={slide.link}>
-                  <img src={slide.img} alt={slide.title} className="w-full h-full object-cover" loading="eager"/>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
-                    <p className="text-white font-bold">{slide.title}</p>
-                  </div>
-                </a>
-              </motion.div>
-            ))}
-          </div>
+    {/* ================= BOTTOM CAROUSEL ================= */}
+<div className="bg-white py-10 px-4">
+  <div className="max-w-[1280px] mx-auto relative">
+    <div
+      ref={bottomRef}
+      className="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 hide-scrollbar"
+    >
+      {bottomSlides.map((slide, index) => (
+        <motion.div 
+          key={index}
+          /* LOGIC UPDATE:
+             1. Removed fixed 'h-48' which causes cropping.
+             2. Added 'aspect-[3/1]' to match your banner shape. 
+             3. Changed widths to be more consistent across devices.
+          */
+          className="snap-center min-w-[90%] sm:min-w-[60%] md:min-w-[45%] lg:min-w-[32%] aspect-[3/1.3] rounded-xl overflow-hidden relative shadow-md bg-gray-100"
+          whileHover={{ scale: 1.01 }}
+        >
+          <a href={slide.link} className="block w-full h-full">
+            <img 
+              src={slide.img} 
+              alt={slide.title} 
+              /* 'object-stretch' or 'w-full h-full' ensures the banner 
+                 fits the container perfectly. Since your images are 
+                 already wide rectangles, this won't look distorted.
+              */
+              className="w-full h-full object-fill" 
+              loading="eager"
+            />
+            
+            {/* Since your images already have text (like 'Akbar Special Fares'), 
+                I've made the overlay gradient very subtle so it doesn't 
+                clash with the text already inside your image.
+            */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent flex items-end p-3 pointer-events-none">
+              <p className="text-white font-bold text-xs sm:text-sm md:text-base line-clamp-1">
+                {slide.title}
+              </p>
+            </div>
+          </a>
+        </motion.div>
+      ))}
+    </div>
 
-          {/* arrows only desktop */}
-          <button
-            className="hidden md:flex absolute left-[-20px] top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-lg text-gray-800 z-30"
-            onClick={() =>
-              setBottomIndex((prev) => (prev - 1 + bottomSlides.length) % bottomSlides.length)
-            }
-          >
-            <ChevronLeft size={24} />
-          </button>
-          <button
-            className="hidden md:flex absolute right-[-20px] top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-lg text-gray-800 z-30"
-            onClick={() =>
-              setBottomIndex((prev) => (prev + 1) % bottomSlides.length)
-            }
-          >
-            <ChevronRight size={24} />
-          </button>
-        </div>
-      </div>
+    {/* Navigation Arrows */}
+    <button
+      className="hidden md:flex absolute left-[-20px] top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-lg text-gray-800 z-30 hover:bg-gray-50"
+      onClick={() => setBottomIndex((prev) => (prev - 1 + bottomSlides.length) % bottomSlides.length)}
+    >
+      <ChevronLeft size={24} />
+    </button>
+    <button
+      className="hidden md:flex absolute right-[-20px] top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-lg text-gray-800 z-30 hover:bg-gray-50"
+      onClick={() => setBottomIndex((prev) => (prev + 1) % bottomSlides.length)}
+    >
+      <ChevronRight size={24} />
+    </button>
+  </div>
+</div>
     </div>
   );
 };
