@@ -9,6 +9,7 @@ import {
   Button,
 } from 'flowbite-react';
 import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Header = () => {
   const [langOpen, setLangOpen] = useState(false);
@@ -50,14 +51,29 @@ const Header = () => {
             <img src={logo} className="h-10 mr-3" alt="Eammu Logo" />
           </NavbarBrand>
 
-          <div className="flex md:order-2 items-center gap-1 sm:gap-2 flex-wrap">
-            <Link to="/contact">
-              <Button className="!bg-[#005a31] dark:!bg-[#005a31] !text-white dark:!text-white hover:!bg-white hover:!text-[#005a31] hover:border hover:border-[#005a31] text-xs sm:text-sm px-2 sm:px-4 py-1 sm:py-2">
-                Enroll Now
-              </Button>
-            </Link>
-            <NavbarToggle className="dark:!text-[#005a31]" />
-          </div>
+        <div className="flex md:order-2 items-center gap-1 sm:gap-2 flex-wrap">
+  <Link to="/contact">
+    <motion.button
+      // Framer Motion Logic
+      whileHover={{ scale: 1.03 }}
+      whileTap={{ scale: 0.97 }}
+      transition={{ type: "spring", stiffness: 400, damping: 17 }}
+      
+      // Your Specific Modern Gradient Classes
+      className="relative flex items-center gap-2 px-6 py-2.5 rounded-[10px] font-bold text-sm text-white 
+                 shadow-[0_10px_20px_-10px_rgba(0,90,49,0.6)] 
+                 bg-gradient-to-r from-[#005a31] via-[#00a45a] to-[#005a31] bg-[length:200%_auto]
+                 hover:bg-right transition-all duration-500 overflow-hidden group"
+    >
+      {/* The Text with a subtle nudge animation */}
+      <span className="relative z-10">Contact Us</span>
+
+      {/* Glossy Overlay (Glass Reflection) */}
+      <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+    </motion.button>
+  </Link>
+  <NavbarToggle className="dark:!text-[#005a31]" />
+</div>
 
           <NavbarCollapse className="dark:!bg-white">
             <NavbarLink as={NavLink} to="/" className={navLinkClass}>
