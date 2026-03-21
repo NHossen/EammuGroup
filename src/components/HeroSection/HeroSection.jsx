@@ -204,7 +204,7 @@ const bgSlides = [
               {/* ================= PROMO CARD ================= */}
               <div className="w-full flex justify-center lg:justify-end">
 <div className="relative w-full max-w-md h-[300px] sm:h-[260px] rounded-2xl overflow-hidden border border-white/30 shadow-2xl 
-                bg-gradient-to-r from-[#005a31] via-[#009552] to-[#005a31]] bg-[length:200%_auto]
+                bg-gradient-to-r from-[#005a31] via-[#009552] to-[#005a31] bg-[length:200%_auto]
                 hover:bg-right transition-all duration-1000">
 
   {/* Shimmer Effect Overlay */}

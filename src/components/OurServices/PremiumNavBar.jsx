@@ -44,7 +44,7 @@ const PremiumNavBar = () => {
   {/* SHIMMER LAYER: Wrapped to respect rounded corners without clipping the liquid indicator */}
   <div className="absolute inset-0 overflow-hidden rounded-[15px] pointer-events-none">
     <motion.div 
-      className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent w-full h-full"
+      className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent w-full h-full"
       animate={{ x: ['-100%', '200%'] }}
       transition={{ 
         repeat: Infinity, 
