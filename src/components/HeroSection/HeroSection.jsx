@@ -112,19 +112,8 @@ const bgSlides = [
         {/* ================= CONTENT WRAPPER ================= */}
         <div className="relative z-10 min-h-[520px] sm:min-h-[600px] lg:min-h-[50vh] flex flex-col">
 
-          {/* ================= TOP NAV ================= */}
-          <div className="pt-6 sm:pt-10 flex justify-center mt-8">
-            <div className="w-[95%] max-w-5xl">
-              <div className="bg-white/95 backdrop-blur rounded-2xl py-3 px-2 grid grid-cols-3 sm:grid-cols-6 gap-2 shadow-2xl">
-                <a href="/visa-services"><NavItem icon={<CreditCard className="text-[#005a31]" />} label="Global Visa" /></a>
-                <a href="/air-tickets"><NavItem icon={<Plane className="text-[#005a31]" />} label="Flight Tickets" /></a>
-                <a href="/tour-packages"><NavItem icon={<Map className="text-[#005a31]" />} label="Holidays" /></a>
-                <a href="/activities"><NavItem icon={<Wind className="text-[#005a31]" />} label="Activities" /></a>
-                <a href="/visa-services/student-visa-application-from-bangladesh"><NavItem icon={<GraduationCap className="text-[#005a31]" />} label="Study Abroad" /></a>
-                <a href="/offer"><NavItem icon={<Gift className="text-[#005a31]" />} label="Special Offers" /></a>
-              </div>
-            </div>
-          </div>
+ 
+          <PremiumNavBar />
 
     
          
@@ -151,7 +140,7 @@ const bgSlides = [
   /* 1. Animated Gradient: Uses a 'bg-size' trick to move the colors.
      2. Shadow: Added a colored shadow to match the gold theme.
   */
-  className="relative flex items-center gap-2 px-6 py-2.5 rounded-full font-bold text-sm text-[#005a31] shadow-[0_10px_20px_-10px_rgba(255,204,0,0.5)] 
+  className="relative flex items-center gap-2 px-6 py-2.5 rounded-[10px] font-bold text-sm text-[#005a31] shadow-[0_10px_20px_-10px_rgba(255,204,0,0.5)] 
              bg-gradient-to-r from-[#ffcc00] via-[#ffeca1] to-[#ffcc00] bg-[length:200%_auto]
              hover:bg-right transition-all duration-500 overflow-hidden"
   
@@ -180,7 +169,7 @@ const bgSlides = [
   /* 1. Animated Gradient: Uses a 'bg-size' trick to move the colors.
      2. Shadow: Added a colored shadow to match the gold theme.
   */
-  className="relative flex items-center gap-2 px-6 py-2.5 rounded-full font-bold text-sm text-white shadow-[0_10px_20px_-10px_rgba(0, 90, 49, 0.6)] 
+  className="relative flex items-center gap-2 px-6 py-2.5 rounded-[10px] font-bold text-sm text-white shadow-[0_10px_20px_-10px_rgba(0, 90, 49, 0.6)] 
              bg-gradient-to-r from-[#005a31] via-[#00a45a] to-[#005a31] bg-[length:200%_auto]
              hover:bg-right transition-all duration-500 overflow-hidden"
   
@@ -214,29 +203,42 @@ const bgSlides = [
 
               {/* ================= PROMO CARD ================= */}
               <div className="w-full flex justify-center lg:justify-end">
-                <div className="relative w-full max-w-md h-[300px] sm:h-[260px] rounded-2xl overflow-hidden border border-white/30 shadow-2xl 
-                bg-gradient-to-br from-[#006b3c] via-[#005a31] to-[#003d22]">
+<div className="relative w-full max-w-md h-[300px] sm:h-[260px] rounded-2xl overflow-hidden border border-white/30 shadow-2xl 
+                bg-gradient-to-r from-[#005a31] via-[#009552] to-[#005a31]] bg-[length:200%_auto]
+                hover:bg-right transition-all duration-1000">
 
-                  <AnimatePresence mode="wait">
-                    <motion.div
-                      key={promoIndex}
-                      initial={{ y: 20, opacity: 0 }}
-                      animate={{ y: 0, opacity: 1 }}
-                      exit={{ y: -20, opacity: 0 }}
-                      transition={{ duration: 0.4 }}
-                      className="absolute inset-0 flex flex-col sm:flex-row"
-                    >
-                      {/* Image */}
-                      <div className="w-full sm:w-1/2 h-[45%] sm:h-full">
-                        <img 
-  src={promoSlides[promoIndex].img} 
-  alt={`${promoSlides[promoIndex].title} cheap flight ticket deal`}
-  width={1562}
-  height={536}
-  loading="eager"
-  fetchPriority="high"
-  className="inset-0 w-full h-full object-cover"
-/>
+  {/* Shimmer Effect Overlay */}
+  <motion.div 
+    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent w-full h-full z-10 pointer-events-none"
+    animate={{ x: ['-100%', '200%'] }}
+    transition={{ 
+      repeat: Infinity, 
+      duration: 3, 
+      ease: "linear", 
+      repeatDelay: 2 
+    }}
+  />
+
+  <AnimatePresence mode="wait">
+    <motion.div
+      key={promoIndex}
+      initial={{ y: 20, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      exit={{ y: -20, opacity: 0 }}
+      transition={{ duration: 0.4 }}
+      className="absolute inset-0 flex flex-col sm:flex-row"
+    >
+      {/* Image Container */}
+      <div className="w-full sm:w-1/2 h-[45%] sm:h-full">
+        <img 
+          src={promoSlides[promoIndex].img} 
+          alt={`${promoSlides[promoIndex].title} cheap flight ticket deal`}
+          width={1562}
+          height={536}
+          loading="eager"
+          fetchPriority="high"
+          className="w-full h-full object-cover"
+        />
                       </div>
 
                       {/* Content */}

@@ -11,11 +11,11 @@ import {
 } from "lucide-react";
 
 const menuItems = [
-  { id: 0, label: "Visa", icon: Globe, path: "/visa" },
-  { id: 1, label: "Flights", icon: Plane, path: "/flights" },
-  { id: 2, label: "Holidays", icon: Map, path: "/holidays" },
+  { id: 0, label: "Visa", icon: Globe, path: "/visa-services" },
+  { id: 1, label: "Flights", icon: Plane, path: "/air-tickets" },
+  { id: 2, label: "Holidays", icon: Map, path: "/tour-packages" },
   { id: 3, label: "Activities", icon: Wind, path: "/activities" },
-  { id: 4, label: "Abroad", icon: GraduationCap, path: "/study-abroad" },
+  { id: 4, label: "Abroad", icon: GraduationCap, path: "/visa-services/student-visa-application-from-bangladesh" },
   { id: 5, label: "Offers", icon: Gift, path: "/offers" },
 ];
 
@@ -36,17 +36,34 @@ const PremiumNavBar = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-center w-full p-2 sm:p-6">
-      <nav className="relative flex items-center justify-around w-full max-w-4xl h-[65px] sm:h-[80px] 
-                    bg-[#ffcc00] rounded-[25px] sm:rounded-[35px] shadow-2xl overflow-visible">
-        
-        {/* LIQUID INDICATOR UNIT */}
-        <motion.div
-          className="absolute top-0 h-full flex justify-center pointer-events-none"
-          animate={{ x: `${activeIndex * 100}%` }} 
-          transition={{ type: "spring", stiffness: 220, damping: 28 }}
-          style={{ width: `${100 / menuItems.length}%`, left: 0 }}
-        >
+    <div className="flex items-center justify-center w-full p-2 sm:p-6 mt-16">
+<nav className="relative flex items-center justify-around w-full max-w-5xl h-[65px] sm:h-[80px] 
+                bg-gradient-to-r from-[#ffcc00] via-[#ffeca1] to-[#ffcc00] bg-[length:200%_auto]
+                hover:bg-right transition-all duration-1000 rounded-[15px] shadow-2xl overflow-visible">
+  
+  {/* SHIMMER LAYER: Wrapped to respect rounded corners without clipping the liquid indicator */}
+  <div className="absolute inset-0 overflow-hidden rounded-[15px] pointer-events-none">
+    <motion.div 
+      className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent w-full h-full"
+      animate={{ x: ['-100%', '200%'] }}
+      transition={{ 
+        repeat: Infinity, 
+        duration: 2.5, 
+        ease: "linear", 
+        repeatDelay: 1.5 
+      }}
+    />
+  </div>
+
+  {/* LIQUID INDICATOR UNIT (Kept as is) */}
+  <motion.div
+    className="absolute top-0 h-full flex justify-center pointer-events-none"
+    animate={{ x: `${activeIndex * 100}%` }} 
+    transition={{ type: "spring", stiffness: 220, damping: 28 }}
+    style={{ width: `${100 / menuItems.length}%`, left: 0 }}
+  >
+    {/* Your indicator SVG/Div here */}
+  
          {/* REMOVED DEEP CURVE SVG - Container now transparent */}
   <div className="relative w-[120px] -top-[1.2px] pointer-events-none bg-transparent">
      {/* SVG removed as per request */}
@@ -55,9 +72,10 @@ const PremiumNavBar = () => {
           {/* FLOATING CIRCLE LINK */}
           <Link
             to={menuItems[activeIndex].path}
-            className="absolute -top-8 sm:-top-12 w-14 h-14 sm:w-20 sm:h-20 bg-[#ffcc00] rounded-full 
-                       border-[8px] sm:border-[8px] border-white flex items-center justify-center 
-                       shadow-[0_10px_20px_rgba(0,0,0,0.3)] z-30 pointer-events-auto"
+            className="absolute -top-8 sm:-top-12 w-[50px] h-[50px] sm:w-20 sm:h-20  bg-gradient-to-r from-[#ffcc00] via-[#ffeca1] to-[#ffcc00] bg-[length:200%_auto]
+             hover:bg-right transition-all duration-500  rounded-full 
+                       border-[6px] sm:border-[6px] border-white flex items-center justify-center 
+                       shadow-[0_10px_20px_-10px_rgba(255,204,0,0.5)] z-30 pointer-events-auto"
           >
             <AnimatePresence mode="wait">
               <motion.div
@@ -65,7 +83,7 @@ const PremiumNavBar = () => {
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.5 }}
-                className="text-white"
+                className="text-[#037742]"
               >
                 {React.createElement(menuItems[activeIndex].icon, {
                   size: window.innerWidth < 640 ? 22 : 32,
@@ -94,7 +112,7 @@ const PremiumNavBar = () => {
               </div>
 
               <span className={`text-[8px] xs:text-[10px] sm:text-xs font-bold transition-all duration-500
-                ${isActive ? "text-[#005a31] translate-y-1 sm:translate-y-2" : "text-black translate-y-2 sm:translate-y-4"}`}>
+                ${isActive ? "text-[#005a31] translate-y-1 sm:translate-y-2" : "text-[#037742] translate-y-2 sm:translate-y-4"}`}>
                 {item.label}
               </span>
             </Link>
