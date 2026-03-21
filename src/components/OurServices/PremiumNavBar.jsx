@@ -55,8 +55,8 @@ const PremiumNavBar = () => {
           {/* FLOATING CIRCLE LINK */}
           <Link
             to={menuItems[activeIndex].path}
-            className="absolute -top-8 sm:-top-12 w-14 h-14 sm:w-20 sm:h-20 bg-[#005a31] rounded-full 
-                       border-[8px] sm:border-[8px] border-[#e8ede7] flex items-center justify-center 
+            className="absolute -top-8 sm:-top-12 w-14 h-14 sm:w-20 sm:h-20 bg-[#ffcc00] rounded-full 
+                       border-[8px] sm:border-[8px] border-white flex items-center justify-center 
                        shadow-[0_10px_20px_rgba(0,0,0,0.3)] z-30 pointer-events-auto"
           >
             <AnimatePresence mode="wait">
@@ -65,7 +65,7 @@ const PremiumNavBar = () => {
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.5 }}
-                className="text-[#ffffff]"
+                className="text-white"
               >
                 {React.createElement(menuItems[activeIndex].icon, {
                   size: window.innerWidth < 640 ? 22 : 32,
@@ -90,11 +90,11 @@ const PremiumNavBar = () => {
             >
               <div className={`transition-all duration-700 ease-in-out 
                 ${isActive ? "opacity-0 -translate-y-12 sm:-translate-y-16 scale-50" : "opacity-40 hover:opacity-100"}`}>
-                <Icon size={window.innerWidth < 640 ? 20 : 24} className="text-white" />
+                <Icon size={window.innerWidth < 640 ? 20 : 24} className="text-[#005a31]" />
               </div>
 
               <span className={`text-[8px] xs:text-[10px] sm:text-xs font-bold transition-all duration-500
-                ${isActive ? "text-white translate-y-1 sm:translate-y-2" : "text-gray-500 translate-y-2 sm:translate-y-4"}`}>
+                ${isActive ? "text-[#005a31] translate-y-1 sm:translate-y-2" : "text-black translate-y-2 sm:translate-y-4"}`}>
                 {item.label}
               </span>
             </Link>
