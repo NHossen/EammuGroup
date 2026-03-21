@@ -15,7 +15,7 @@ const menuItems = [
   { id: 1, label: "Flights", icon: Plane, path: "/air-tickets" },
   { id: 2, label: "Holidays", icon: Map, path: "/tour-packages" },
   { id: 3, label: "Activities", icon: Wind, path: "/activities" },
-  { id: 4, label: "Abroad", icon: GraduationCap, path: "/visa-services/student-visa-application-from-bangladesh" },
+  { id: 4, label: "Study Abroad", icon: GraduationCap, path: "/visa-services/student-visa-application-from-bangladesh" },
   { id: 5, label: "Offers", icon: Gift, path: "/offers" },
 ];
 
@@ -112,7 +112,7 @@ const PremiumNavBar = () => {
               </div>
 
               <span className={`text-[8px] xs:text-[10px] sm:text-xs font-bold transition-all duration-500
-                ${isActive ? "text-[#005a31] translate-y-1 sm:translate-y-2" : "text-[#037742] translate-y-2 sm:translate-y-4"}`}>
+                ${isActive ? "text-[#005a31] translate-y-1 sm:translate-y-2" : "text-black translate-y-2 sm:translate-y-4"}`}>
                 {item.label}
               </span>
             </Link>

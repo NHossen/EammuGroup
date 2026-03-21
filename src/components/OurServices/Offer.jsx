@@ -213,8 +213,6 @@ const OfferPage = () => {
   </div>
 </section>
 
-<PremiumNavBar />
-
       {/* SECTION 3: EXPLORE GRID (Clickable Images) */}
       <section className="py-20 px-4 md:px-6">
         <div className="max-w-7xl mx-auto">

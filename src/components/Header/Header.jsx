@@ -20,12 +20,37 @@ const Header = () => {
   return (
     <>
       {/* 🔹 Fixed Notice Bar */}
-      <div className="w-full fixed top-0 left-0 z-50 bg-[#005a31] dark:bg-[#005a31] flex items-center justify-center px-2 py-2">
-        <p className="text-white dark:text-white text-sm text-center leading-snug sm:text-base sm:px-4">
-          📢 Enjoy <span className="text-[#ffcc00] font-bold">20% OFF</span> +
-          <span className="text-blue-200 font-semibold"> FREE Visa Assistance</span>.
-          One place for everything — <span className="text-[#ffcc00] font-bold">With Eammu</span> !
-        </p>
+      <motion.div 
+  className="w-full fixed top-0 left-0 z-50 flex items-center justify-center px-2 py-2 overflow-hidden
+             bg-gradient-to-r from-[#005a31] via-[#00a35a] to-[#005a31] bg-[length:200%_auto]"
+  /* This part makes the background move automatically */
+  animate={{ 
+    backgroundPosition: ["0% center", "100% center", "0% center"] 
+  }}
+  transition={{ 
+    duration: 10, 
+    repeat: Infinity, 
+    ease: "linear" 
+  }}
+>
+  
+  {/* The white shimmer streak moving across */}
+  <motion.div 
+    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent w-full h-full pointer-events-none"
+    animate={{ x: ['-100%', '200%'] }}
+    transition={{ 
+      repeat: Infinity, 
+      duration: 4, 
+      ease: "linear", 
+      repeatDelay: 2 
+    }}
+  />
+
+  <p className="relative z-10 text-white text-sm text-center leading-snug sm:text-base sm:px-4">
+    📢 Enjoy <span className="text-[#ffcc00] font-bold">20% OFF</span> +
+    <span className="text-blue-200 font-semibold"> FREE Visa Assistance</span>.
+    One place for everything — <span className="text-[#ffcc00] font-bold">With Eammu</span> !
+  </p>
         
         <button
           onClick={() => setLangOpen(!langOpen)}
@@ -42,7 +67,7 @@ const Header = () => {
             <button className="block w-full text-left px-2 py-1 hover:bg-gray-100 text-black dark:text-black">Русский</button>
           </div>
         )}
-      </div>
+      </motion.div>
 
       {/* 🔹 Fixed Navbar Below Notice */}
       <div className="w-full fixed left-0 z-40 bg-white dark:bg-white shadow-md top-[65px] sm:top-[40px] pt-[6px]">
