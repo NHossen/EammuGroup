@@ -38,6 +38,7 @@
     "rss-parser": "^3.13.0",
     "sitemap": "^8.0.0",
     "sort-by": "^1.2.0",
+    "styled-components": "^6.3.12",
     "swiper": "^12.1.2"
   },
   "devDependencies": {

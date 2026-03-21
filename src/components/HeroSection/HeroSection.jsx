@@ -5,6 +5,7 @@ import {
   Wind, Binoculars, Star, 
   ChevronLeft, ChevronRight, GraduationCap
 } from 'lucide-react';
+import PremiumNavBar from '../OurServices/PremiumNavBar';
 
 const HeroSection = () => {
   // Data for background slider
@@ -124,6 +125,9 @@ const bgSlides = [
               </div>
             </div>
           </div>
+
+    
+         
 
           {/* ================= HERO BODY ================= */}
           <div className="flex-1 flex items-center py-10">
