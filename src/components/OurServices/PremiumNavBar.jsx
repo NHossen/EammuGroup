@@ -38,7 +38,7 @@ const PremiumNavBar = () => {
   return (
     <div className="flex items-center justify-center w-full p-2 sm:p-6 mt-16">
 <nav className="relative flex items-center justify-around w-full max-w-5xl h-[65px] sm:h-[80px] 
-                bg-gradient-to-r from-[#ffcc00] via-[#ffeca1] to-[#ffcc00] bg-[length:200%_auto]
+                bg-gradient-to-r from-[#005a31] via-[#009552] to-[#005a31] bg-[length:200%_auto]
                 hover:bg-right transition-all duration-1000 rounded-[15px] shadow-2xl overflow-visible">
   
   {/* SHIMMER LAYER: Wrapped to respect rounded corners without clipping the liquid indicator */}
@@ -72,9 +72,9 @@ const PremiumNavBar = () => {
           {/* FLOATING CIRCLE LINK */}
           <Link
             to={menuItems[activeIndex].path}
-            className="absolute -top-8 sm:-top-12 w-[50px] h-[50px] sm:w-20 sm:h-20  bg-gradient-to-r from-[#ffcc00] via-[#ffeca1] to-[#ffcc00] bg-[length:200%_auto]
+            className="absolute -top-8 sm:-top-12 w-[55px] h-[55px] sm:w-[80px] sm:h-[80px]  bg-gradient-to-r from-[#005a31] via-[#009552] to-[#005a31] bg-[length:200%_auto]
              hover:bg-right transition-all duration-500  rounded-full 
-                       border-[6px] sm:border-[6px] border-white flex items-center justify-center 
+                       border-[3px] sm:border-[4px] border-[#ffffff] flex items-center justify-center 
                        shadow-[0_10px_20px_-10px_rgba(255,204,0,0.5)] z-30 pointer-events-auto"
           >
             <AnimatePresence mode="wait">
@@ -83,7 +83,7 @@ const PremiumNavBar = () => {
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.5 }}
-                className="text-[#037742]"
+                className="text-[#ffffff]"
               >
                 {React.createElement(menuItems[activeIndex].icon, {
                   size: window.innerWidth < 640 ? 22 : 32,
@@ -107,12 +107,12 @@ const PremiumNavBar = () => {
               className="relative z-10 flex flex-col items-center justify-center w-full h-full no-underline"
             >
               <div className={`transition-all duration-700 ease-in-out 
-                ${isActive ? "opacity-0 -translate-y-12 sm:-translate-y-16 scale-50" : "opacity-40 hover:opacity-100"}`}>
-                <Icon size={window.innerWidth < 640 ? 20 : 24} className="text-[#005a31]" />
+                ${isActive ? "opacity-0 -translate-y-12 sm:-translate-y-16 scale-50" : "hover:opacity-100"}`}>
+                <Icon size={window.innerWidth < 640 ? 20 : 24} className="text-[#ffcc00]" />
               </div>
 
               <span className={`text-[8px] xs:text-[10px] sm:text-xs font-bold transition-all duration-500
-                ${isActive ? "text-[#005a31] translate-y-1 sm:translate-y-2" : "text-black translate-y-2 sm:translate-y-4"}`}>
+                ${isActive ? "text-[#ffcc00] translate-y-1 sm:translate-y-2" : "text-white translate-y-2 sm:translate-y-4"}`}>
                 {item.label}
               </span>
             </Link>
