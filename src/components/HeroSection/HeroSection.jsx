@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  Plane, Gift, Map, CreditCard, 
-  Wind, Binoculars, Star, 
-  ChevronLeft, ChevronRight, GraduationCap
+  Binoculars, Star, 
+  ChevronLeft, ChevronRight,
 } from 'lucide-react';
 import PremiumNavBar from '../OurServices/PremiumNavBar';
 
@@ -15,19 +14,15 @@ const bgSlides = [
     alt: "Eammu Holidays travel and tourism Bangladesh"
   },
   {
-    url: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1920&q=80",
+    url: "https://res.cloudinary.com/jerrick/image/upload/v1700547867/655c4d1a4132f6001d3a9423.jpg",
     alt: "Beautiful mountain landscape travel destination Bangladesh"
   },
   {
-    url: "/eammu_holidays_bg.webp",
-    alt: "Thailand tourism beach destination"
+    url: "/beautiful-places-in-bangladesh.jpg",
+    alt: "beautiful-places-in-bangladesh"
   },
   {
-    url: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80",
-    alt: "Nature travel destination with lake and mountains"
-  },
-  {
-    url: "/eammu_banner.webp",
+    url: "https://res.klook.com/image/upload/fl_lossy.progressive,q_60/Mobile/City/afmqgg5h0jl9wnr1dfmf.jpg",
     alt: "Eammu Holidays travel services banner"
   }
 ];
