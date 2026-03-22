@@ -22,7 +22,7 @@ const Header = () => {
       {/* 🔹 Fixed Notice Bar */}
       <motion.div 
   className="w-full fixed top-0 left-0 z-50 flex items-center justify-center px-2 py-2 overflow-hidden
-             bg-gradient-to-r from-[#005a31] via-[#009552] to-[#005a31] bg-[length:200%_auto]"
+             bg-gradient-to-r from-[#005a31] via-[#007842] to-[#005a31] bg-[length:200%_auto]"
   /* This part makes the background move automatically */
   animate={{ 
     backgroundPosition: ["0% center", "100% center", "0% center"] 
