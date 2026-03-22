@@ -34,7 +34,7 @@ const bgSlides = [
 
   // Data for inner promo carousel
   const promoSlides = [
-    { id: 1, title: "SHARJAH TO YEREVAN", price1: "135", price2: "255", img: "https://cms.musafir.com/uploads/temple-of-garni5ee506e413a06dce84b1ff000062a8f2_6aj8h4iejdl.jpg" },
+    { id: 1, title: "SHARJAH TO YEREVAN", price1: "135", price2: "255", img: "https://armenianweekly.com/wp-content/uploads/2024/08/Der-Tadeos-Barseghyan-and-parishioners-of-the-Armenian-Church-of-Our-Savior-at-Haghpat-monastery-Photo_-Armenian-Church-of-Our-Savior-Facebook.jpg" },
     { id: 2, title: "DUBAI TO DHAKA", price1: "110", price2: "300", img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" },
     { id: 3, title: "DHAKA TO DUBAI", price1: "300", price2: "355", img: "https://tripjive.com/wp-content/uploads/2024/09/Khasia-Polli-in-Sylhet-travel-guide-1024x585.jpg" },
     { id: 4, title: "JAPAN TO DHAKA", price1: "499", price2: "999", img: "https://japandeluxetours.com/uploads/2025/10/20251009212409_68e827f99d19b.jpg" },

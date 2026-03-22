@@ -4,8 +4,8 @@ import { X, CheckCircle } from 'lucide-react';
 import { toast, Toaster } from 'react-hot-toast';
 
 const carouselImages = [
-  { url: "/eid_promo_eammu.webp", title: "Eid Offer" },
   { url: "https://www.dubaidesertsafaris.com/wp-content/uploads/2025/01/95100e6bbb4e0728dbb90a5033802b73.webp", title: "Desert Safari" },
+  { url: "https://feelfreetravel.b-cdn.net/uploads/destinations/a29e2a7f2437fcaee966e61a2878bb518013adbb6158f387fbcce0ab359cfb50.jpg?width=1600", title: "Thailand Tour" },
   { url: "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=800&q=80", title: "Dubai Luxury" }
 ];
 

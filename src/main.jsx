@@ -229,7 +229,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <div className="text-center py-10 flex flex-col items-center justify-center gap-4">
     <div className="relative h-28 w-28">
       {/* Outer spinning ring for extra effect (Optional) */}
-      <div className="absolute inset-0 animate-spin rounded-full border-t-2 border-b-2 border-[#fd8403]"></div>
+      <div className="absolute inset-0 animate-spin rounded-full border-t-2 border-b-2 border-[#ffcc00]"></div>
       
       {/* Your Animated Logo */}
       <img 
