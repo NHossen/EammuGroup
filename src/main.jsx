@@ -5,6 +5,7 @@ import "./i18n/i18n";
 
 import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async';
+import B2BHero from './components/Home/B2bHero.jsx';
 
 
 // =================== LAZY LOAD ALL PAGES ===================
@@ -124,6 +125,7 @@ const router = createBrowserRouter([
       { path: "/tour-packages", element: <TourPackages /> },
       { path: "/offers", element: <Offer /> },
       { path: "/activities", element: <ActivitiesPage /> },
+      { path: "/b2b_agent", element: <B2BHero /> },
 
 
       // ===== IMMIGRATION =====

@@ -83,7 +83,7 @@ const bgSlides = [
     <div className="relative w-full overflow-hidden font-sans">
 
       {/* ================= HERO SECTION ================= */}
-      <div className="relative w-full bg-gradient-to-br from-[#0181a8] via-[#074901] to-[#c4da00] overflow-hidden">
+      <div className="relative w-full bg-gradient-to-br from-[#72deff] via-[#d8ffd4] to-[#f5ff9e] overflow-hidden">
 
         {/* ================= BACKGROUND SLIDER ================= */}
         <div className="absolute inset-0 z-0">
@@ -101,7 +101,7 @@ const bgSlides = [
 </AnimatePresence>
 
           {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/15 via-black/20 to-black/40" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />
         </div>
 
         {/* ================= CONTENT WRAPPER ================= */}
