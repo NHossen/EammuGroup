@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from "framer-motion";
-import SampleCode from "../SampleCode/SampleCode";
+
 
 
 const offers = [
@@ -213,8 +213,6 @@ const OfferPage = () => {
     ))}
   </div>
 </section>
-
-<SampleCode />
 
       {/* SECTION 3: EXPLORE GRID (Clickable Images) */}
       <section className="py-20 px-4 md:px-6">

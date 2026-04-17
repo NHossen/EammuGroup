@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
-import VisaPhotoGallery from "./VisaPhotoGallery";
+
 
 // Lazy-loaded YouTube component for Shorts
 const LazyYouTube = ({ videoId, title }) => {
